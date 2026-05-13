@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/app/what-we-do/cabins/ruffen/page.tsx"  ],
   "exclude": ["node_modules"]
 }
