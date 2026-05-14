@@ -9,7 +9,7 @@ import SVG from '../../../public/SVG.png'
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center py-2.75 px-7">
+    <header className="flex justify-between items-center py-2.75 px-7 bg-(--bg-white)">
       <Link href="/" className="md:hidden">
         <Image src={HSSlogo} alt='HSS-LOGO' className="w-11 h-10.5" />
       </Link>
