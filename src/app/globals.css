@@ -18,4 +18,31 @@
     --color-pink: #DA005E;
 
     --color-lightGray: #CCCCCC;
+
+
+    /* Font */
+    --font-fraunces: "Fraunces", serif;
+    --font-varela: "Varela Round", sans-serif;
+    --font-albert: "Albert Sans", sans-serif;
+
+    
+    --text-hero--font-family: var(--font-fraunces);
+    --text-hero: 32px;
+
+    --text-h1--font-family: var(--font-varela);
+    --text-h1: 26px;
+
+    --text-h2--font-family: var(--font-varela);
+    --text-h2: 22px;
+
+    --text-h3--font-family: var(--font-varela);
+    --text-h3: 18px;
+
+    --text-body--font-family: var(--font-albert);
+    --text-body: 16px;
+
+    --text-accent--font-family: var(--font-albert);
+    --text-accent: 12px;
+    --text-accent--font-weight: 700;
+
 }
