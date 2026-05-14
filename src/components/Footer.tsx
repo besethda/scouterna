@@ -8,7 +8,7 @@ import bagIcon from '../../public/bag-icon.png'
 import schoolIcon from '../../public/school-icon.png'
 import footerHSSIcon from '../../public/footer-hss-logo.png'
 
-const FooterMobile = () => {
+const Footer = () => {
     return (
         <footer className="bg-primary text-white py-6 px-5 flex flex-col gap-4 xl:py-20 xl:px-2.5 xl:gap-16.5">
             <div className='xl:flex xl:flex-row  xl:w-[90%] xl:mx-auto flex flex-col gap-2.5 xl:gap-60'>
@@ -57,4 +57,4 @@ const FooterMobile = () => {
     )
 }
 
-export default FooterMobile
+export default Footer
