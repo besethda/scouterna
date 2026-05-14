@@ -46,7 +46,7 @@ const FooterMobile = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full border-t border-gray flex text-lightGray text-footer-bold pt-4 font-normal xl:justify-between  xl:w-[90%] xl:mx-auto leading-loose">
+            <div className="w-full border-t border-gray flex text-lightGray text-footer-bold pt-4 font-normal xl:justify-between xl:w-[90%] xl:mx-auto leading-loose">
                 <div className='flex gap-3'>
                     <Image src={footerHSSIcon} alt='HSS icon' className='w-6 h-6'/>
                     <p>© 2026 HSS Hässelby Strands Sjöscoutkår</p>
