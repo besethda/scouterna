@@ -27,7 +27,10 @@ type Params = {
 
 export default function RootLayout({children, params}: Readonly<{children: React.ReactNode; params: Promise<Params>}>) 
 {
+  console.log(params);
+  
   const { locale } = use(params)
+  console.log(locale)
   const messages = locale === "en" ? En : Sv
   return (
     <html
