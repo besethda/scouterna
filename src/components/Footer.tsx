@@ -16,37 +16,37 @@ const Footer = () => {
                 <p className="text-body xl:hidden">Hässelby Strands Sjöscoutkår</p>
                 <div className='xl:flex  xl:justify-between gap-30'>
                     <div className='xl:flex xl:flex-col gap-3 hidden'>
-                        <p  className="text-accent text-body-bold">Scouternas tjänster</p>
+                        <p  className="text-accent text-body-bold">SCOUTERNAS TJÄNSTER</p>
                         <div className='flex gap-2.5 leading-none'>
                             <Image src={schoolIcon} alt='school icon' className='w-4 h-4 xl:w-5 xl:h-7' />
-                            <p className="text-body xl:text-h3">Scouternas Folkhögskola</p>
+                            <p className="text-body-desktop">Scouternas Folkhögskola</p>
                         </div>
                         <div className='flex gap-2.5 leading-none'>
                             <Image src={bagIcon} alt='bag icon' className='w-4 h-4 xl:w-5 xl:h-6' />
-                            <p className="text-body xl:text-h3">Scoutshop</p>
+                            <p className="text-body-desktop">Scoutshop</p>
                         </div>
                         <div className='flex gap-2.5 leading-none'>
                             <Image src={keyIcon} alt='key icon' className='w-4 h-4 xl:w-5.5 xl:h-5.5' />
-                            <p className="text-body xl:text-h3">Scoutnet</p>
+                            <p className="text-body-desktop">Scoutnet</p>
                         </div>
                     </div>
                     <div className='flex flex-col gap-2 pb-5'>
-                        <p  className="text-accent text-footer-bold">KONTAKT</p>
+                        <p  className="text-accent text-body-bold">KONTAKT</p>
                         <a href="mailto:info@hss-scout.org" className='flex gap-2.5 leading-none'>
                             <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
-                            <p className="text-body xl:text-h3">info@hss-scout.org</p>
+                            <p className="text-body xl:text-body-desktop">info@hss-scout.org</p>
                         </a>
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <p className="text-accent text-footer-bold">FÖLJ OSS</p>
+                        <p className="text-accent text-body-bold">FÖLJ OSS</p>
                         <a href="https://www.instagram.com/hss_scout/" target='_blank' className='flex gap-2.5 leading-none'>
                             <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-5' />
-                            <p className="text-body xl:text-h3">@hss_scout</p>
+                            <p className="text-body xl:text-body-desktop">@hss_scout</p>
                         </a>
                     </div>
                 </div>
             </div>
-            <div className="w-full border-t border-gray flex text-lightGray text-footer-bold pt-4 font-normal xl:justify-between xl:w-[90%] xl:mx-auto leading-loose">
+            <div className="w-full border-t border-gray flex text-lightGray text-body-bold pt-4 font-normal xl:justify-between xl:w-[90%] xl:mx-auto leading-loose">
                 <div className='flex gap-3'>
                     <Image src={footerHSSIcon} alt='HSS icon' className='w-6 h-6'/>
                     <p>© 2026 HSS Hässelby Strands Sjöscoutkår</p>
