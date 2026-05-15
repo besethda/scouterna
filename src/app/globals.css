@@ -41,8 +41,8 @@
     --text-body--font-family: var(--font-albert);
     --text-body: 16px;
 
-    --text-accent--font-family: var(--font-albert);
-    --text-accent: 12px;
-    --text-accent--font-weight: 700;
+    --text-footer-bold--font-family: var(--font-albert);
+    --text-footer-bold: 12px;
+    --text-footer-bold--font-weight: 700;
 
 }
