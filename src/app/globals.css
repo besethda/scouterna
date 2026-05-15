@@ -30,6 +30,7 @@
     /* Dektop */
     --text-hero-desktop--font-family: var(--font-fraunces);
     --text-hero-desktop: 64px;
+    --text-hero-desktop-bold--font-weight:700;
 
     --text-h1-desktop--font-family: var(--font-varela);
     --text-h1-desktop: 48px;
