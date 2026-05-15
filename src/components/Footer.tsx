@@ -16,7 +16,7 @@ const Footer = () => {
                 <p className="text-body xl:hidden">Hässelby Strands Sjöscoutkår</p>
                 <div className='xl:flex  xl:justify-between gap-30'>
                     <div className='xl:flex xl:flex-col gap-3 hidden'>
-                        <p  className="text-accent text-footer-bold">Scouternas tjänster</p>
+                        <p  className="text-accent text-body-bold">Scouternas tjänster</p>
                         <div className='flex gap-2.5 leading-none'>
                             <Image src={schoolIcon} alt='school icon' className='w-4 h-4 xl:w-5 xl:h-7' />
                             <p className="text-body xl:text-h3">Scouternas Folkhögskola</p>
