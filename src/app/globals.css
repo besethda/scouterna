@@ -61,6 +61,7 @@
     /* Mobile */
     --text-hero--font-family: var(--font-fraunces);
     --text-hero: 32px;
+    --text-hero-bold--font-weight:700;
 
     --text-h1--font-family: var(--font-varela);
     --text-h1: 26px;
