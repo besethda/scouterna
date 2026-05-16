@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { use } from "react"
 import { TranslateContent } from "@/translateContent/translate";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv"
+import { use } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,10 +27,7 @@ type Params = {
 
 export default function RootLayout({children, params}: Readonly<{children: React.ReactNode; params: Promise<Params>}>) 
 {
-  console.log(params);
-  
-  const { locale } = use(params)
-  console.log(locale)
+  const { locale } = use(params) 
   const messages = locale === "en" ? En : Sv
   return (
     <html
