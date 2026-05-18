@@ -19,9 +19,9 @@ const HeroSection = ({bgImage, title01,title02, description}:HeroSectionProps) =
                         </p>
                     </div>
                     <div className="w-[323] xl:w-[527] mx-auto text-white flex flex-col gap-11">
-                        <p className="text-hero font-bold xl:text-hero-desktop">{title01}<br />
+                        <h1 className="text-hero font-bold xl:text-hero-desktop">{title01}<br />
                             <span className="text-accent">{title02}</span>
-                        </p>
+                        </h1>
                         <p className="text-body xl:text-body-desktop">{description}</p>
                     </div>
                 </div>
