@@ -7,6 +7,13 @@ type MessagesSvType = {
   about: {
     title: string;
   };
+  footer: {
+    footer_service: string
+    footer_school: string
+    footer_shop: string,
+    footer_contact: string,
+    footer_followUs: string
+  }
 };
 
 export const Sv: MessagesSvType = {
@@ -16,4 +23,12 @@ export const Sv: MessagesSvType = {
   about: {
     title: "Om HSS"
   },
+  footer: {
+    footer_service: "Scouternas tjänster",
+    footer_school: "Scouternas Folkhögskola",
+    footer_shop: "Scoutshop",
+    footer_contact: "Kontact",
+    footer_followUs: "Följ oss"
+  },
+
 };
