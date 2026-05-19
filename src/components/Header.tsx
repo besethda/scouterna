@@ -3,7 +3,6 @@ import Link from 'next/link'
 import HSSlogo from '../../public/HSSHeader.png'
 import Image from 'next/image'
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoCloseOutline } from "react-icons/io5"; // X icon for hamburger
 import Hand from '../../public/hand.png'
 import Key from '../../public/HeaderKey.png'
 import useMessages from '@/hook/useMessages'
