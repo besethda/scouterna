@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { use } from "react"
 import { TranslateContent } from "@/translateContent/translate";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv"
+import { use } from "react";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,12 +26,8 @@ type Params = {
   locale: string;
 };
 
-export default function RootLayout({children, params}: Readonly<{children: React.ReactNode; params: Promise<Params>}>) 
-{
-  console.log(params);
-  
+export default function RootLayout({ children, params }: Readonly<{ children: React.ReactNode; params: Promise<Params> }>) {
   const { locale } = use(params)
-  console.log(locale)
   const messages = locale === "en" ? En : Sv
   return (
     <html
@@ -40,6 +37,7 @@ export default function RootLayout({children, params}: Readonly<{children: React
       <body className="min-h-full flex flex-col">
         <TranslateContent value={messages}>
           {children}
+          <Footer />
         </TranslateContent>
       </body>
     </html>
