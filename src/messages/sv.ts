@@ -21,7 +21,8 @@ type MessagesSvType = {
   }, 
   homePage: {
     title: string, 
-    subtitle: string
+    subtitle: string, 
+    subtitle2: string
   }
 };
 
@@ -46,6 +47,7 @@ export const Sv: MessagesSvType = {
   }, 
   homePage: {
     title: "HSS välkomnar alla", 
-    subtitle: "Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig."
+    subtitle: "Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig.", 
+    subtitle2: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare."
   }
 };

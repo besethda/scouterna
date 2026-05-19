@@ -19,7 +19,8 @@ export type MessagesEngType = {
   },
   homePage: {
     title: string,
-    subtitle: string
+    subtitle: string, 
+    subtitle2: string
   }
 };
 
@@ -44,6 +45,7 @@ export const En: MessagesEngType = {
   },
   homePage: {
     title: "HSS welcomes everyone",
-    subtitle: "No matter who you are or your level of experience, there is a place for you here."
+    subtitle: "No matter who you are or your level of experience, there is a place for you here.", 
+    subtitle2: "No matter who you are or your level of experience, there is a place for you here. Join us as a Scout, or get involved as a parent or Scout leader."
   }
 };
