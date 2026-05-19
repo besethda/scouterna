@@ -37,7 +37,13 @@ export type MessagesEngType = {
     footer_shop: string,
     footer_contact: string,
     footer_followUs: string
+  };
+  header: {
+    header_title: string,
+    header_subtitle: string,
+    header_join: string
   }
+
 };
 
 export const En: MessagesEngType = {
@@ -80,6 +86,11 @@ export const En: MessagesEngType = {
     footer_contact: "Contact",
     footer_followUs: "Follow us"
   },
+  header: {
+    header_title: "Hässelby Strand",
+    header_subtitle: "Sea Scouts",
+    header_join: "Become a Scout"
+  }
 
 
 };

@@ -39,6 +39,11 @@ type MessagesSvType = {
     footer_shop: string,
     footer_contact: string,
     footer_followUs: string
+  };
+  header: {
+    header_title: string,
+    header_subtitle: string,
+    header_join: string
   }
 };
 
@@ -82,5 +87,9 @@ export const Sv: MessagesSvType = {
     footer_contact: "Kontakt",
     footer_followUs: "Följ oss"
   },
-
+  header: {
+    header_title: "Hässelby Strands",
+    header_subtitle: "Sjöscouter",
+    header_join: "Bli Scout"
+  }
 };
