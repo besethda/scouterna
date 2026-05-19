@@ -47,7 +47,7 @@ export const Sv: MessagesSvType = {
     header_join: "Bli Scout"
   },
   hero: {
-    hero_title: "HÄSSELBY STRANDS SJÖSCOUTER",
+    hero_title: "Hässelby Strands Sjöscouter",
     hero_subtitle01:"Äventyr börjar",
     hero_subtitle02:"vid vattenbrynet",
     hero_description:"På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
