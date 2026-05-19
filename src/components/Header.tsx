@@ -6,6 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Hand from '../../public/hand.png'
 import Key from '../../public/HeaderKey.png'
 import useMessages from '@/hook/useMessages'
+import LanguageSelector from './LanguageSelector';
 
 const Header = () => {
 
@@ -34,9 +35,7 @@ const Header = () => {
           <Image src={Key} alt='key' className='h-5.75 w-auto' />
           <p className="font-albert tracking-[3%]">ScoutNet</p>
         </Link>
-        <Link href="" className="flex gap-2.5 items-center">
-          {/* SV/ENG HERE */}SV
-        </Link>
+        <LanguageSelector />
       </div>
       <RxHamburgerMenu className="size-5.75 md:hidden" />
     </header>
