@@ -17,6 +17,11 @@ export type MessagesEngType = {
     button_text: string,
     text: string
   };
+  header: {
+    header_title: string,
+    header_subtitle: string,
+    header_join: string
+  }
 
 };
 
@@ -39,5 +44,11 @@ export const En: MessagesEngType = {
     button_text: "Follow us",
     text: "We use Instagram to share our adventures. There you can follow our excursions, camps and everyday moments in nature."
   },
+  header: {
+    header_title: "Hässelby Strand",
+    header_subtitle: "Sea Scouts",
+    header_join: "Become a Scout"
+  }
+
 
 };

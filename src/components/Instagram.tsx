@@ -73,7 +73,7 @@ const Instagram = ({infoText = false}: {infoText: boolean}) => {
 
   return (
     <div className="flex justify-center">
-      <div className="py-10 px-4 w-full md:max-w-200 lg:max-w-400">
+      <div className="py-10 px-4 w-full md:px-8 md:max-w-200 lg:max-w-400">
         {!infoText ? <div className="text-h2 md:text-h2-desktop text-primary font-varela mx-[1.5%]">{messages?.instagram.head}</div>
                    : <div className="mx-[1.5%]">
                         <div className="text-h2 md:text-h2-desktop text-primary font-varela mb-3">Instagram</div>

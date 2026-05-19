@@ -19,6 +19,11 @@ type MessagesSvType = {
     button_text: string,
     text: string
   };
+  header: {
+    header_title: string,
+    header_subtitle: string,
+    header_join: string
+  }
 };
 
 export const Sv: MessagesSvType = {
@@ -41,4 +46,9 @@ export const Sv: MessagesSvType = {
     text: "Vi på Scouterna använder Instagram för att dela med oss av våra äventyr. Där kan du följa våra utflykter, läger och vardagsstunder i naturen."
   },
 
+  header: {
+    header_title: "Hässelby Strands",
+    header_subtitle: "Sjöscouter",
+    header_join: "Bli Scout"
+  }
 };
