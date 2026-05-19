@@ -17,43 +17,43 @@ const Footer = () => {
 
     return (
         <footer className="bg-primary text-white py-6 px-5 flex flex-col gap-4 xl:py-20 xl:px-2.5 xl:gap-16.5">
-            <div className='xl:flex xl:flex-row  xl:w-[90%] xl:mx-auto flex flex-col gap-2.5 xl:gap-50'>
-                <Image src={scautLogo} alt="Scaut-logo" className='w-[130] h-[auto] xl:h-[28]' />
-                <p className="text-body xl:hidden">Hässelby Strands Sjöscoutkår</p>
-                <div className='xl:flex  xl:justify-between gap-20'>
-                    <div className='xl:flex xl:flex-col gap-5 hidden'>
-                        <p className="text-accent text-body-bold mb-2">{messages?.footer?.footer_service}</p>
-                        <div className='flex gap-2.5 leading-none'>
-                            <Image src={schoolIcon} alt='school icon' className='w-4 h-4 xl:w-5 xl:h-7' />
-                            <p className="text-body-desktop">{messages?.footer?.footer_school}</p>
-                        </div>
-                        <div className='flex gap-2.5 leading-none'>
-                            <Image src={bagIcon} alt='bag icon' className='w-4 h-4 xl:w-5 xl:h-6' />
-                            <p className="text-body-desktop">{messages?.footer?.footer_shop}</p>
-                        </div>
-                        <div className='flex gap-2.5 leading-none'>
-                            <Image src={keyIcon} alt='key icon' className='w-4 h-4 xl:w-5.5 xl:h-5.5' />
-                            <p className="text-body-desktop">Scoutnet</p>
-                        </div>
+            <div className='flex flex-col gap-2.5 xl:flex xl:flex-row xl:justify-around xl:w-[90%] xl:mx-auto'>
+                <div className='xl:flex-1'>
+                    <Image src={scautLogo} alt="Scaut-logo" className='w-[130] h-auto xl:h-[28]' />
+                    <p className="text-body xl:hidden">Hässelby Strands Sjöscoutkår</p>
+                </div>
+                <div className='xl:flex xl:flex-col gap-5 hidden xl:flex-1'>
+                    <p className="text-accent text-body-bold mb-2 uppercase text-xs xl:text-sm">{messages?.footer?.footer_service}</p>
+                    <div className='flex gap-2.5 leading-none'>
+                        <Image src={schoolIcon} alt='school icon' className='w-4 h-4 xl:w-5 xl:h-7' />
+                        <p className="text-body-desktop xl:text-lg">{messages?.footer?.footer_school}</p>
                     </div>
-                    <div className='flex flex-col gap-2 xl:gap-7 pb-5'>
-                        <p className="text-accent text-body-bold">{messages?.footer?.footer_contact}</p>
-                        <a href="mailto:info@hss-scout.org" className='flex gap-2.5 leading-none'>
-                            <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
-                            <p className="text-body xl:text-body-desktop">info@hss-scout.org</p>
-                        </a>
-                        <div className='hidden xl:flex gap-2.5 leading-[1.2]' >
-                            <Image src={locationIcon} alt='email icon' className='w-6 h-6' />
-                            <p className="text-body xl:text-body-desktop">Maltesholmsbadet <br />165 73 Hässelby</p>
-                        </div>
+                    <div className='flex gap-2.5 leading-none'>
+                        <Image src={bagIcon} alt='bag icon' className='w-4 h-4 xl:w-5 xl:h-6' />
+                        <p className="text-body-desktop xl:text-lg">{messages?.footer?.footer_shop}</p>
                     </div>
-                    <div className='flex flex-col gap-2 xl:gap-7'>
-                        <p className="text-accent text-body-bold">{messages?.footer?.footer_followUs}</p>
-                        <a href="https://www.instagram.com/hss_scout/" target='_blank' className='flex gap-2.5 leading-[1.2]'>
-                            <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-7' />
-                            <p className="text-body">@hss_scout</p>
-                        </a>
+                    <div className='flex gap-2.5 leading-none'>
+                        <Image src={keyIcon} alt='key icon' className='w-4 h-4 xl:w-5.5 xl:h-5.5' />
+                        <p className="text-body-desktop xl:text-lg">Scoutnet</p>
                     </div>
+                </div>
+                <div className='flex flex-col gap-2 xl:gap-7 pb-5 xl:flex-1'>
+                    <p className="text-accent text-body-bold uppercase text-xs xl:text-sm">{messages?.footer?.footer_contact}</p>
+                    <a href="mailto:info@hss-scout.org" className='flex gap-2.5 leading-none'>
+                        <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
+                        <p className="text-body xl:text-body-desktop xl:text-lg">info@hss-scout.org</p>
+                    </a>
+                    <div className='hidden xl:flex gap-2.5 leading-[1.2]' >
+                        <Image src={locationIcon} alt='email icon' className='w-6 h-6' />
+                        <p className="text-body xl:text-body-desktop xl:text-lg">Maltesholmsbadet <br />165 73 Hässelby</p>
+                    </div>
+                </div>
+                <div className='flex flex-col gap-2 xl:gap-7 xl:flex-1'>
+                    <p className="text-accent text-body-bold uppercase  text-xs xl:text-sm">{messages?.footer?.footer_followUs}</p>
+                    <a href="https://www.instagram.com/hss_scout/" target='_blank' className='flex gap-2.5 leading-[1.2]'>
+                        <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-7' />
+                        <p className="text-body xl:text-lg">@hss_scout</p>
+                    </a>
                 </div>
             </div>
             <div className="w-full border-t border-gray flex text-lightGray text-body-bold pt-4 font-normal xl:justify-between xl:w-[90%] xl:mx-auto leading-loose">
