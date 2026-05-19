@@ -7,6 +7,32 @@ type MessagesSvType = {
   about: {
     title: string;
   };
+  navigation: {
+    nav_joinScout: string,
+    nav_becomeScout: string,
+    nav_faq: string,
+    nav_ourUnits: string,
+    nav_ourUnitStructure: string,
+    nav_unit1: string,
+    nav_unit2: string,
+    nav_unit3: string,
+    nav_unit4: string,
+    nav_whatWeDo: string,
+    nav_LifeScout: string,
+    nav_boats: string,
+    nav_cabins: string,
+    nav_myset: string,
+    nav_ruffen: string,
+    nav_members: string
+    nav_information: string,
+    nav_lifeJacketPolicy: string,
+    nav_communication: string,
+    nav_aboutUs: string,
+    nav_history: string,
+    nav_contact: string,
+    nav_board: string,
+    nav_gdpr: string
+  };
   footer: {
     footer_service: string
     footer_school: string
@@ -22,6 +48,32 @@ export const Sv: MessagesSvType = {
   },
   about: {
     title: "Om HSS"
+  },
+  navigation: {
+    nav_joinScout: "Gå med i Scouterna",
+    nav_becomeScout: "Bli Sjöscout",
+    nav_faq: "Frågor och svar",
+    nav_ourUnits: "Våra avdelningar",
+    nav_ourUnitStructure: "Vår avdelningsstruktur",
+    nav_unit1: "Sjöhumlorna",
+    nav_unit2: "Kaparna",
+    nav_unit3: "Konvojen",
+    nav_unit4: "Utmanare",
+    nav_whatWeDo: "Vad vi gör",
+    nav_LifeScout: "Livet som Sjöscout",
+    nav_boats: "Våra båtar",
+    nav_cabins: "Våra Scoutstugor",
+    nav_myset: "Myset",
+    nav_ruffen: "Ruffen",
+    nav_members: "För medlemmar",
+    nav_information: "Information för medlemmar",
+    nav_lifeJacketPolicy: "HSS flytvästpolicy",
+    nav_communication: "HSS kommunikationskanaler",
+    nav_aboutUs: "Om HSS",
+    nav_history: "Vår historia",
+    nav_contact: "Contact",
+    nav_board: "Styrelsen",
+    nav_gdpr: "GDPR"
   },
   footer: {
     footer_service: "Scouternas tjänster",

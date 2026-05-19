@@ -5,6 +5,7 @@ import { TranslateContent } from "@/translateContent/translate";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv"
 import { use } from "react";
+import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
@@ -36,6 +37,7 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
     >
       <body className="min-h-full flex flex-col">
         <TranslateContent value={messages}>
+          <Navigation />
           {children}
           <Footer />
         </TranslateContent>
