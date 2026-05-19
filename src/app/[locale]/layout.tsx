@@ -6,6 +6,8 @@ import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv"
 import { use } from "react";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +38,7 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
     >
       <body className="min-h-full flex flex-col">
         <TranslateContent value={messages}>
+          <Header />
           {children}
           <Footer />
         </TranslateContent>
