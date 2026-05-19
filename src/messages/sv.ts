@@ -27,7 +27,7 @@ export const Sv: MessagesSvType = {
     footer_service: "Scouternas tjänster",
     footer_school: "Scouternas Folkhögskola",
     footer_shop: "Scoutshop",
-    footer_contact: "Kontact",
+    footer_contact: "Kontakt",
     footer_followUs: "Följ oss"
   },
 
