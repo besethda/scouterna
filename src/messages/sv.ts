@@ -71,7 +71,7 @@ export const Sv: MessagesSvType = {
     nav_communication: "HSS kommunikationskanaler",
     nav_aboutUs: "Om HSS",
     nav_history: "Vår historia",
-    nav_contact: "Contact",
+    nav_contact: "Kontakt",
     nav_board: "Styrelsen",
     nav_gdpr: "GDPR"
   },

@@ -5,7 +5,7 @@ export const menuList = [
         submenu: [
             {
                 nameKey: "nav_becomeScout",
-                href: "/join/form",
+                href: "/join/become-a-scout",
                 icon: "/menu-scouterna-icon.svg"
             },
             {
@@ -114,7 +114,7 @@ export const menuList = [
             },
             {
                 nameKey: "nav_board",
-                href: "",
+                href: "/about-us/board",
                 icon: "/menu-members-icon.svg"
             },
             {
