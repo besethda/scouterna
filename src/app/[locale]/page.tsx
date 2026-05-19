@@ -1,5 +1,5 @@
 'use client'
-0
+
 import useMessages from "@/hook/useMessages";
 import HeroSection from "@/components/Hero-section";
 import bgImage01 from "../../../public/images/hero-img01.png"
