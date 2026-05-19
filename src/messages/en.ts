@@ -37,5 +37,5 @@ export const En: MessagesEngType = {
     header_title: "Hässelby Strand",
     header_subtitle: "Sea Scouts",
     header_join: "Become a Scout"
-  },
+  }
 };

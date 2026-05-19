@@ -1,12 +1,14 @@
 interface CTAprops {
-    text?:string
+    text?:string,
+    onClick?:() => void,
+
 } 
 
-const CTABtn = ({text}:CTAprops) => {
+const CTABtn = ({text,onClick}:CTAprops) => {
     return (
         <div className="w-[222]">
-            <p className="text-body-desktop bg-accent text-primary overflow-hidden rounded-[24]
-            p-2.5 text-center">{text}</p>
+            <button className="text-body-desktop bg-accent text-primary overflow-hidden rounded-[24]
+            p-2.5 text-center cursor-pointer" onClick={onClick}>{text}</button>
         </div>
     )
 }
