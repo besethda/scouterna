@@ -18,7 +18,7 @@ type MessagesSvType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
-  }
+  };
 };
 
 export const Sv: MessagesSvType = {
@@ -39,5 +39,5 @@ export const Sv: MessagesSvType = {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
-  }
+  },
 };

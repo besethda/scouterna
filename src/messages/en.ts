@@ -16,8 +16,7 @@ export type MessagesEngType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
-  }
-
+  };
 };
 
 export const En: MessagesEngType = {
@@ -38,7 +37,5 @@ export const En: MessagesEngType = {
     header_title: "Hässelby Strand",
     header_subtitle: "Sea Scouts",
     header_join: "Become a Scout"
-  }
-
-
+  },
 };
