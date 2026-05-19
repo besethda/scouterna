@@ -35,7 +35,7 @@ const Header = () => {
           <p className="font-albert tracking-[3%]">ScoutNet</p>
         </Link>
         <Link href="" className="flex gap-2.5 items-center">
-        {/* SV/ENG here */}
+  
         </Link>
       </div>
       <RxHamburgerMenu className="size-5.75 md:hidden" />
