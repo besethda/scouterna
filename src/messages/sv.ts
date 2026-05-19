@@ -13,7 +13,12 @@ type MessagesSvType = {
     footer_shop: string,
     footer_contact: string,
     footer_followUs: string
-  }
+  };
+  instagram: {
+    head: string,
+    button_text: string,
+    text: string
+  };
 };
 
 export const Sv: MessagesSvType = {
@@ -29,6 +34,11 @@ export const Sv: MessagesSvType = {
     footer_shop: "Scoutshop",
     footer_contact: "Kontakt",
     footer_followUs: "Följ oss"
+  },
+  instagram: {
+    head: "Följ våra äventyr på Instagram",
+    button_text: "Följ oss",
+    text: "Vi på Scouterna använder Instagram för att dela med oss av våra äventyr. Där kan du följa våra utflykter, läger och vardagsstunder i naturen."
   },
 
 };

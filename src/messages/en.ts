@@ -11,7 +11,13 @@ export type MessagesEngType = {
     footer_shop: string,
     footer_contact: string,
     footer_followUs: string
-  }
+  };
+  instagram: {
+    head: string,
+    button_text: string,
+    text: string
+  };
+
 };
 
 export const En: MessagesEngType = {
@@ -28,6 +34,10 @@ export const En: MessagesEngType = {
     footer_contact: "Contact",
     footer_followUs: "Follow us"
   },
-
+  instagram: {
+    head: "Follow our adventure on Instagram",
+    button_text: "Follow us",
+    text: "We use Instagram to share our adventures. There you can follow our excursions, camps and everyday moments in nature."
+  },
 
 };
