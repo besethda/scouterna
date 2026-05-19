@@ -18,6 +18,10 @@ type MessagesSvType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
+  }, 
+  homePage: {
+    title: string, 
+    subtitle: string
   }
 };
 
@@ -39,5 +43,9 @@ export const Sv: MessagesSvType = {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
+  }, 
+  homePage: {
+    title: "HSS välkomnar alla", 
+    subtitle: "Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig."
   }
 };
