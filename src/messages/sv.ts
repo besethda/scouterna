@@ -19,6 +19,9 @@ type MessagesSvType = {
     header_subtitle: string,
     header_join: string
   };
+  CTABtn: {
+    text:string
+  }
 };
 
 export const Sv: MessagesSvType = {
@@ -40,4 +43,7 @@ export const Sv: MessagesSvType = {
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
   },
+  CTABtn: {
+    text:"Se planlösning"
+  }
 };

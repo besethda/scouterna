@@ -17,6 +17,9 @@ export type MessagesEngType = {
     header_subtitle: string,
     header_join: string
   };
+  CTABtn: {
+    text:string
+  }
 };
 
 export const En: MessagesEngType = {
@@ -38,4 +41,7 @@ export const En: MessagesEngType = {
     header_subtitle: "Sea Scouts",
     header_join: "Become a Scout"
   },
+  CTABtn: {
+    text:"See floor plan See floor plan"
+  }
 };
