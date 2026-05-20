@@ -26,7 +26,6 @@ type MessagesSvType = {
     nav_members: string
     nav_information: string,
     nav_lifeJacketPolicy: string,
-    nav_communication: string,
     nav_aboutUs: string,
     nav_history: string,
     nav_contact: string,
@@ -73,7 +72,6 @@ export const Sv: MessagesSvType = {
     nav_members: "För medlemmar",
     nav_information: "Information för medlemmar",
     nav_lifeJacketPolicy: "HSS flytvästpolicy",
-    nav_communication: "HSS kommunikationskanaler",
     nav_aboutUs: "Om HSS",
     nav_history: "Vår historia",
     nav_contact: "Kontakt",

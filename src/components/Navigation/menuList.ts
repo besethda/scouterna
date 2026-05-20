@@ -91,11 +91,6 @@ export const menuList = [
                 href: "/members/safety",
                 icon: "/menu-vest-icon.svg"
             },
-            {
-                nameKey: "nav_communication",
-                href: "/members/communication",
-                icon: "/menu-communication-icon.svg"
-            },
         ]
     },
     {

@@ -24,7 +24,6 @@ export type MessagesEngType = {
     nav_members: string
     nav_information: string,
     nav_lifeJacketPolicy: string,
-    nav_communication: string,
     nav_aboutUs: string,
     nav_history: string,
     nav_contact: string,
@@ -72,7 +71,6 @@ export const En: MessagesEngType = {
     nav_members: "For Members",
     nav_information: "Member Information",
     nav_lifeJacketPolicy: "HSS Life Jacket Policy",
-    nav_communication: "HSS Communication Channels",
     nav_aboutUs: "About HSS",
     nav_history: "Our History",
     nav_contact: "Contact",
