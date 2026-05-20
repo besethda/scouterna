@@ -16,9 +16,9 @@ const Navigation = () => {
     }
 
     return (
-        <div className="absolute lg:static w-full bg-white rounded-b-lg overflow-hidden font-albert tracking-[0.03em] top-16  lg:bg-primary lg:h-25.5 lg:text-white lg:text-lg lg:rounded-none">
-            <div className="w-full rounded-b-lg  lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-3xl lg:mx-auto xl:max-w-5xl 2xl:max-w-7xl">
-                <div className="bg-[#D6EAF8] flex flex-row-reverse text-base h-69px px-2 py-4 font-bold border-b border-lightGray lg:hidden">
+        <div className="absolute lg:static w-full bg-white rounded-b-lg font-albert tracking-[0.03em] top-16  lg:bg-primary lg:h-25.5 lg:text-white lg:text-lg lg:rounded-none">
+            <div className="w-full lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-3xl lg:mx-auto xl:max-w-5xl 2xl:max-w-7xl">
+                <div className="bg-[#D6EAF8] flex justify-end text-base h-69px px-2 py-4 font-bold border-b border-lightGray lg:hidden">
                     <LanguageSelector />
                 </div>
                 {menuList.map((menu, index) => (
@@ -44,7 +44,7 @@ const Navigation = () => {
                             }
                         </div>
                         {openId === menu.id && (
-                            <div onClick={() => handleToggle(menu.id)} className="px-2 py-4 border-b border-lightGray z-40 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0  lg:top-54.75 lg:border-none">
+                            <div onClick={() => handleToggle(menu.id)} className="px-2 py-4 border-b border-lightGray z-0 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0  lg:top-54.75 lg:border-none">
                                 {menu.submenu && menu.submenu.map((sub, index) => (
                                     <div key={index} className={`py-4 flex lg:h-18.5  lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
                                         <Image src={sub.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
