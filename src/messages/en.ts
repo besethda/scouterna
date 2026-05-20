@@ -53,6 +53,9 @@ export type MessagesEngType = {
     hero_subtitle02:string,
     hero_description:string
   };
+  CTABtn :{
+    text: string
+  }
 
 };
 
@@ -110,6 +113,9 @@ export const En: MessagesEngType = {
     hero_subtitle01: "Adventures begin",
     hero_subtitle02: "at the water's edge",
     hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand."
+  },
+  CTABtn: {
+    text:"Join the Sea Scouts"
   }
 
 

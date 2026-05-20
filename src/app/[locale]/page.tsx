@@ -5,6 +5,7 @@ import Instagram from "@/components/Instagram";
 
 import HeroSection from "@/components/Hero-section";
 import bgImage01 from "../../../public/images/hero-img01.png"
+import CTABtn from "@/components/CTA-button";
 
 const Home = () => {
   const messages = useMessages()
@@ -17,6 +18,9 @@ const Home = () => {
         title02={messages?.hero.hero_subtitle02}
         description={messages?.hero.hero_description}
       >
+        <CTABtn 
+        text={messages?.CTABtn.text}
+        onClick={() => {}}/>
       </HeroSection>
       <Instagram infoText={true}/>
     </div>
