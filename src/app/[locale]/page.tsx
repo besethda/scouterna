@@ -1,6 +1,7 @@
 'use client'
 
 import useMessages from "@/hook/useMessages";
+import WhiteImageBox from "@/components/WhiteImageBox";
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
 
   return (
     <div className="">
+      <WhiteImageBox />
     </div>
   );
 }
