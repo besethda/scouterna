@@ -57,11 +57,6 @@ type MessagesSvType = {
     hero_subtitle02:string,
     hero_description:string
   };
-<<<<<<< HEAD
-  CTABtn: {
-    text:string
-  }
-=======
   CTAButton: {
     text:string
   }, 
@@ -71,7 +66,6 @@ type MessagesSvType = {
     text: string,
   }
   
->>>>>>> a6829434e3055e247cf9cb135e9047c1a9d217ef
 };
 
 export const Sv: MessagesSvType = {
@@ -139,7 +133,6 @@ export const Sv: MessagesSvType = {
     headline: "Bli Scout",
     title: "Vågorna väntar", 
     text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra – ute i naturen och till sjöss – och du får både kunskap, vänner och minnen för livet.",
-<<<<<<< HEAD
   },
   division: {
     sjohumlorna_title: "Sjöhumlorna",
@@ -180,7 +173,5 @@ export const Sv: MessagesSvType = {
   },
   CTABtn: {
     text:"Gå med i Scouterna"
-=======
->>>>>>> a6829434e3055e247cf9cb135e9047c1a9d217ef
   }
 };
