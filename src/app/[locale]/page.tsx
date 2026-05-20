@@ -2,11 +2,11 @@
 
 import DivisionsBox from "@/components/DivisionsBox";
 import useMessages from "@/hook/useMessages";
+import CardWithImage from "@/components/CardWithImage";
 import Instagram from "@/components/Instagram";
 import HeroSection from "@/components/Hero-section";
 import bgImage01 from "../../../public/images/hero-img01.png"
 import CTABtn from "@/components/CTA-button";
-import CardWithImage from "@/components/CardWithImage";
 
 const Home = () => {
   const messages = useMessages()
