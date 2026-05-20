@@ -34,9 +34,9 @@ const Home = () => {
         <div className="px-5 text-body font-albert text-text-black w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions_text}</div>
         <div className="flex flex-col md:flex-row my-3 px-4 w-full md:max-w-200 lg:max-w-400">
           <DivisionsBox division={"sjohumlorna"} boxStyle={"basic"} />
-          <DivisionsBox division={"utmanare"} boxStyle={"basic"} />
-          <DivisionsBox division={"konvojen"} boxStyle={"basic"} />
           <DivisionsBox division={"kaparna"} boxStyle={"basic"} />
+          <DivisionsBox division={"konvojen"} boxStyle={"basic"} />
+          <DivisionsBox division={"utmanare"} boxStyle={"basic"} />
         </div>
         <Instagram infoText={true}/>
         </div>
