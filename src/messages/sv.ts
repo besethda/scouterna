@@ -18,6 +18,9 @@ type MessagesSvType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
+  };
+  whiteImageBox: {
+    title:string
   }
 };
 
@@ -39,5 +42,9 @@ export const Sv: MessagesSvType = {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
+  },
+  whiteImageBox: {
+    title:"Segling & sjöliv"
   }
+
 };
