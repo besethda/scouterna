@@ -16,7 +16,8 @@ const Home = () => {
         title01={messages?.hero.hero_subtitle01}
         title02={messages?.hero.hero_subtitle02}
         description={messages?.hero.hero_description}
-      />
+      >
+      </HeroSection>
       <Instagram infoText={true}/>
     </div>
   );
