@@ -48,7 +48,13 @@ type MessagesSvType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
-  };
+  }, 
+  homePageCard: {
+    headline: string, 
+    title: string, 
+    text: string,
+  }
+
   hero: {
     hero_title: string,
     hero_subtitle01:string,
@@ -109,6 +115,11 @@ export const Sv: MessagesSvType = {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
+  }, 
+   homePageCard: {
+    headline: "Bli Scout",
+    title: "Vågorna väntar", 
+    text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra – ute i naturen och till sjöss – och du får både kunskap, vänner och minnen för livet.",
   },
   hero: {
     hero_title: "Hässelby Strands Sjöscouter",

@@ -46,6 +46,11 @@ export type MessagesEngType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
+  }, 
+    homePageCard: {
+    headline: string,
+    title: string,
+    text: string,
   };
   hero: {
     hero_title: string,
@@ -108,7 +113,12 @@ export const En: MessagesEngType = {
     header_subtitle: "Sea Scouts",
     header_join: "Become a Scout"
   },
-  hero: {
+  homePageCard: {
+    headline: "Become a Scout",
+    title: "The waves are waiting",
+    text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
+  }, 
+    hero: {
     hero_title: "Hässelby Strand Sea Scouts",
     hero_subtitle01: "Adventures begin",
     hero_subtitle02: "at the water's edge",
@@ -117,6 +127,5 @@ export const En: MessagesEngType = {
   CTABtn: {
     text:"Join the Sea Scouts"
   }
-
 
 };

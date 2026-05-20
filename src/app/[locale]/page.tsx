@@ -1,6 +1,7 @@
 'use client'
 
 import useMessages from "@/hook/useMessages";
+import CardWithImage from "@/components/CardWithImage";
 import Instagram from "@/components/Instagram";
 
 import HeroSection from "@/components/Hero-section";
@@ -9,8 +10,14 @@ import CTABtn from "@/components/CTA-button";
 
 const Home = () => {
   const messages = useMessages()
+  
+  if (!messages) {
+    return null
+  }
 
   return (
+    <div>
+      <CardWithImage headline={messages?.homePageCard?.headline} logo="/heartIcon.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
     <div className="">
       <HeroSection 
         bgImage={bgImage01} 
@@ -23,6 +30,7 @@ const Home = () => {
         onClick={()=>{}}/>
         </HeroSection>
       <Instagram infoText={true}/>
+    </div>
     </div>
   );
 }
