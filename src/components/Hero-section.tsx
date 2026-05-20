@@ -5,7 +5,8 @@ interface HeroSectionProps{
     bgImage? :{src: string};
     title01? : string;
     title02? :string;
-    description? :string
+    description? :string;
+    children?: React.ReactNode;
 
 }
 
