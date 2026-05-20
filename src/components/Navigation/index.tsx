@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { menuList } from "./menuList";
 import Link from "next/link";
-import { AiOutlineDownCircle, AiFillUpCircle, AiOutlineDown } from "react-icons/ai";
+import { AiOutlineDownCircle, AiFillUpCircle, AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import useMessages from '@/hook/useMessages'
 
 const Navigation = () => {
@@ -23,10 +23,12 @@ const Navigation = () => {
                             className="flex justify-between text-base h-69px px-2 py-4 font-bold border-b border-lightGray lg:font-normal lg:border-none lg:static">
                             <p> {messages?.navigation?.[menu.nameKey]} </p>
                             <AiOutlineDownCircle size={28} className="lg:hidden" />
-                            <AiOutlineDown size={16} className="hidden lg:block lg:ml-2 lg:mt-1.5" />
+                            {openId === menu.id
+                                ? <AiOutlineUp size={16} className="hidden lg:block lg:ml-2 lg:mt-1.25" />
+                                : <AiOutlineDown className="hidden lg:block lg:ml-2 lg:mt-1.25" />}
                         </div>
                         {openId === menu.id && (
-                            <div onClick={() => handleToggle(menu.id)} className="px-2 py-4 pt-10 border-b border-lightGray lg:py-0 lg:bg-white lg:text-black lg:w-87.5 lg:pt-0 lg:absolute lg:top-62.5 lg:border-none">
+                            <div onClick={() => handleToggle(menu.id)} className="px-2 py-4 pt-10 border-b border-lightGray lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-87.5  lg:pt-0 lg:absolute lg:top-54.75 lg:border-none">
                                 <div className="flex justify-between py-4 lg:hidden">
                                     <p className="font-bold">{messages?.navigation?.[menu.nameKey]}</p>
                                     <AiFillUpCircle size={28} />
