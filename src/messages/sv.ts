@@ -57,7 +57,13 @@ type MessagesSvType = {
   };
   CTABtn :{
     text: string
+  }, 
+  homePageCard: {
+    headline: string, 
+    title: string, 
+    text: string,
   }
+  
 };
 
 export const Sv: MessagesSvType = {
@@ -118,5 +124,10 @@ export const Sv: MessagesSvType = {
   },
   CTABtn: {
     text: "Gå med i Scouterna"
+  }, 
+   homePageCard: {
+    headline: "Bli Scout",
+    title: "Vågorna väntar", 
+    text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra – ute i naturen och till sjöss – och du får både kunskap, vänner och minnen för livet.",
   }
 };
