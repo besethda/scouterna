@@ -9,7 +9,10 @@ const Home = () => {
 
   return (
     <div className="">
-      <DivisionsBox text={{title: "Sjöhumlorna", ages:"8-9 år"}} color={{border: "border-lightBlue", background: "bg-lightBlue-opaque"}} logo={"/kaparna.png"} buttonStyle={"border"} boxStyle={"}large"} />
+      <DivisionsBox division={"kaparna"} imageUrl={"/images/IMG_1943.JPEG"} boxStyle={"basic"} />
+      <DivisionsBox division={"utmanare"} imageUrl={"/images/IMG_5129.JPG"} boxStyle={"basic"} />
+      <DivisionsBox division={"konvojen"} imageUrl={"/images/IMG_8213.JPG"} boxStyle={"basic"} />
+      <DivisionsBox division={"sjohumlorna"} imageUrl={"/images/IMG_9863.JPEG"} boxStyle={"basic"} />
     </div>
   );
 }

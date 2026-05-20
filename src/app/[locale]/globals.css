@@ -4,13 +4,13 @@
     --color-primary: #003660;
     --color-accent: #FDB715;
 
-    --bg-white: #FFFFFF;
-    --bg-blue: #D6EAF8;
+    --color-bg-white: #FFFFFF;
+    --color-bg-blue: #D6EAF8;
 
-    --text-black: #3B3A3A;
-    --text-gray: #717D7E;
-    --text-white: #FFFFFF;
-    --text-blue: #1F74AD;
+    --color-text-black: #3B3A3A;
+    --color-text-gray: #717D7E;
+    --color-text-white: #FFFFFF;
+    --color-text-blue: #1F74AD;
 
     --color-green: #41A62A;
     --color-lightBlue: #00A8E1;

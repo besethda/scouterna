@@ -16,8 +16,38 @@ export type MessagesEngType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
+  };
+  division: {
+    sjohumlorna_title: string,
+    sjohumlorna_ages: string,
+    sjohumlorna_day: string,
+    sjohumlorna_time: string,
+    sjohumlorna_place: string,
+    sjohumlorna_paragraph: string,
+    kaparna_title: string,
+    kaparna_ages: string,
+    kaparna_day: string,
+    kaparna_time: string,
+    kaparna_place: string,
+    kaparna_paragraph: string,
+    konvojen_title: string,
+    konvojen_ages: string,
+    konvojen_day: string,
+    konvojen_time: string,
+    konvojen_place: string,
+    konvojen_paragraph: string,
+    utmanare_title: string,
+    utmanare_ages: string,
+    utmanare_day: string,
+    utmanare_time: string,
+    utmanare_place: string,
+    utmanare_paragraph: string,
+    image_message: string,
+    basic_message: string,
+    day: string,
+    time: string,
+    place: string
   }
-
 };
 
 export const En: MessagesEngType = {
@@ -38,6 +68,37 @@ export const En: MessagesEngType = {
     header_title: "Hässelby Strand",
     header_subtitle: "Sea Scouts",
     header_join: "Become a Scout"
+  },
+  division: {
+    sjohumlorna_title: "Sjöhumlorna",
+    sjohumlorna_ages: "8-9 Years",
+    sjohumlorna_day: "Monday",
+    sjohumlorna_time: "18:00",
+    sjohumlorna_place: "Ruffen",
+    sjohumlorna_paragraph: "The youngest scouts discover marine life through play, singing and small adventures by the water. Here they learn to cooperate, tie their first knots and feel at home in nature.",
+    kaparna_title: "Kaparna",
+    kaparna_ages: "10-11 Years",
+    kaparna_day: "Tuesday",
+    kaparna_time: "18:00",
+    kaparna_place: "Ruffen",
+    kaparna_paragraph: "You do more sailing and longer excursions in the archipelago. The Kaparna take on more responsibility, learn the basics of navigation and build friendships that last far beyond the scout corps.",
+    konvojen_title: "Konvojen",
+    konvojen_ages: "12-14 Years",
+    konvojen_day: "Thursday",
+    konvojen_time: "18:00",
+    konvojen_place: "Ruffen",
+    konvojen_paragraph: "You will sail larger dinghies and plan their own trips together with the leaders. The Konvojen learns to lead, make decisions and handle challenges both at sea and on land.",
+    utmanare_title: "Utmanare",
+    utmanare_ages: "15+",
+    utmanare_day: "Tuesday or Thursday",
+    utmanare_time: "18:00",
+    utmanare_place: "Ruffen",
+    utmanare_paragraph: "The oldest scouts run their own projects, participate in international camps and take on leadership roles for the younger ones. Scouting becomes a way to shape themselves and their surroundings.",
+    image_message: "Read more about ",
+    basic_message: "Check out ",
+    day: "Day: ",
+    time: "Time: ",
+    place: "Place: "
   }
 
 
