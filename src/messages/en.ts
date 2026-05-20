@@ -1,6 +1,8 @@
 export type MessagesEngType = {
   home: {
     title: string;
+    divisions: string;
+    divisions_text: string;
   };
   about: {
     title: string;
@@ -83,6 +85,8 @@ export type MessagesEngType = {
 export const En: MessagesEngType = {
   home: {
     title: "Welcome to HSS",
+    divisions: "Groups",
+    divisions_text: "We have age-based groups for children from 8 years old and up."
   },
   about: {
     title: "About HSS"

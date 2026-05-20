@@ -3,6 +3,8 @@
 type MessagesSvType = {
   home: {
     title: string;
+    divisions: string;
+    divisions_text: string;
   };
   about: {
     title: string;
@@ -85,6 +87,8 @@ type MessagesSvType = {
 export const Sv: MessagesSvType = {
   home: {
     title: "Välkommen to HSS",
+    divisions: "Avdelningar",
+    divisions_text: "Vi har åldersindelade avdelningar från och med 8 års ålder."
   },
   about: {
     title: "Om HSS"
