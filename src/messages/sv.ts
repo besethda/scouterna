@@ -30,7 +30,11 @@ type MessagesSvType = {
     nav_history: string,
     nav_contact: string,
     nav_board: string,
-    nav_gdpr: string
+    nav_gdpr: string,
+    nav__service: string,
+    nav_school: string,
+    nav_shop: string,
+    nav_scoutnet: string
   };
   footer: {
     footer_service: string
@@ -76,7 +80,11 @@ export const Sv: MessagesSvType = {
     nav_history: "Vår historia",
     nav_contact: "Kontakt",
     nav_board: "Styrelsen",
-    nav_gdpr: "GDPR"
+    nav_gdpr: "GDPR",
+    nav__service: "Scouternas tjänster",
+    nav_school: "Scouternas Folkhögskola",
+    nav_shop: "Scoutshop",
+    nav_scoutnet: "Scoutnet"
   },
   footer: {
     footer_service: "Scouternas tjänster",
