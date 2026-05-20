@@ -1,6 +1,7 @@
 'use client'
 
 import useMessages from "@/hook/useMessages";
+import Instagram from "@/components/Instagram";
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
 
   return (
     <div className="">
+      <Instagram infoText={true}/>
     </div>
   );
 }

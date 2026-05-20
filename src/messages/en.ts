@@ -37,6 +37,11 @@ export type MessagesEngType = {
     footer_contact: string,
     footer_followUs: string
   };
+  instagram: {
+    head: string,
+    button_text: string,
+    text: string
+  };
   header: {
     header_title: string,
     header_subtitle: string,
@@ -83,6 +88,11 @@ export const En: MessagesEngType = {
     footer_shop: "Scout shop",
     footer_contact: "Contact",
     footer_followUs: "Follow us"
+  },
+  instagram: {
+    head: "Follow our adventure on Instagram",
+    button_text: "Follow us",
+    text: "We use Instagram to share our adventures. There you can follow our excursions, camps and everyday moments in nature."
   },
   header: {
     header_title: "Hässelby Strand",
