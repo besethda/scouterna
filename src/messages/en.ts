@@ -55,6 +55,11 @@ export type MessagesEngType = {
   };
   CTAButton: {
   text:string
+  }, 
+    homePageCard: {
+    headline: string,
+    title: string,
+    text: string,
   };
 
 };
@@ -116,7 +121,11 @@ export const En: MessagesEngType = {
   },
   CTAButton: {
     text: "Join the Scouts"
+  }, 
+  homePageCard: {
+    headline: "Become a Scout",
+    title: "The waves are waiting",
+    text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
   }
-
 
 };
