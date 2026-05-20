@@ -10,27 +10,27 @@ import CTABtn from "@/components/CTA-button";
 
 const Home = () => {
   const messages = useMessages()
-  
+
   if (!messages) {
     return null
   }
 
   return (
     <div>
-      <CardWithImage headline={messages?.homePageCard?.headline} logo="/heartIcon.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
-    <div className="">
-      <HeroSection 
-        bgImage={bgImage01} 
-        title01={messages?.hero.hero_subtitle01}
-        title02={messages?.hero.hero_subtitle02}
-        description={messages?.hero.hero_description}
-      >
-        <CTABtn 
-        text={messages?.CTABtn.text}
-        onClick={()=>{}}/>
+      <div className="">
+        <HeroSection
+          bgImage={bgImage01}
+          title01={messages?.hero.hero_subtitle01}
+          title02={messages?.hero.hero_subtitle02}
+          description={messages?.hero.hero_description}
+        >
+          <CTABtn
+            text={messages?.CTABtn.text}
+            onClick={() => { }} />
         </HeroSection>
-      <Instagram infoText={true}/>
-    </div>
+        <CardWithImage headline={messages?.homePageCard?.headline} logo="/heartIcon.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
+        <Instagram infoText={true} />
+      </div>
     </div>
   );
 }
