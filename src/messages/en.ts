@@ -80,6 +80,13 @@ export type MessagesEngType = {
     time: string,
     place: string
   }
+  hero: {
+    hero_title: string,
+    hero_subtitle01:string,
+    hero_subtitle02:string,
+    hero_description:string
+  };
+
 };
 
 export const En: MessagesEngType = {
@@ -163,6 +170,12 @@ export const En: MessagesEngType = {
     day: "Day: ",
     time: "Time: ",
     place: "Place: "
+  }, 
+  hero: {
+    hero_title: "Hässelby Strand Sea Scouts",
+    hero_subtitle01: "Adventures begin",
+    hero_subtitle02: "at the water's edge",
+    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand."
   }
 
 

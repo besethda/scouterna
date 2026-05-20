@@ -25,7 +25,7 @@ const DivisionsBox = ({division, imageUrl, boxStyle = "basic"}:
       </div>
       <div className={`mt-3 order-2 ${boxStyle === "image" && "md:max-w-[50%] lg:max-w-[70%] lg:pr-5"}`}>
         {boxStyle !== "image" && <div className="text-h3 font-varela text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
-        {boxStyle === "info" && <div className="text-text-black pt-1">
+        {boxStyle === "info" && <div className="text-text-black pt-1 pb-3">
           <div className="text-body font-varela">{messages?.division.day} {messages?.division[`${division}_day`] ?? ""}</div>
           <div className="text-body font-varela">{messages?.division.time} {messages?.division[`${division}_time`] ?? ""}</div>
           <div className="text-body font-varela">{messages?.division.place} {messages?.division[`${division}_place`] ?? ""}</div>
