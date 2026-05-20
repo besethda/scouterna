@@ -35,7 +35,7 @@ const Header = () => {
             </div>
           </div>
         </Link>
-        <div className='hidden md:flex gap-6 font-semibold text-link-desktop tracking-[0.03em]'>
+        <div className='hidden lg:flex gap-6 font-semibold text-link-desktop tracking-[0.03em]'>
           <Link href="" className="flex gap-2.5 items-center">
             <Image src={Hand} alt='HandLogo' className='h-8.25 w-auto' />
             <p className="font-albert tracking-[3%]">{messages?.header?.header_join}</p>
