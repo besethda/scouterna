@@ -30,7 +30,7 @@ const Home = () => {
       <div className="flex flex-col items-center">
         <CardWithImage headline={messages?.homePageCard?.headline} logo="/heartIcon.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
         <div className="text-h2 md:text-h2-desktop text-primary mt-8 px-5 w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions}</div>
-        <div className="px-5 text-body font-albert text-text-black w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions_text}</div>
+        <div className="px-5 text-body font-albert md:text-body-desktop text-text-black w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions_text}</div>
         <div className="flex flex-col md:flex-row my-3 px-4 w-full md:max-w-200 lg:max-w-400">
           <DivisionsBox division={"sjohumlorna"} boxStyle={"basic"} />
           <DivisionsBox division={"kaparna"} boxStyle={"basic"} />
