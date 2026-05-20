@@ -15,7 +15,7 @@ const WhiteImageBox = ({icon, title, image}:WhiteImageBoxProps) => {
                 <div  className="w-6 h-6 md:flex hidden">
                     <Image src={icon} alt={title || "icon"} className="object-contain" />
                 </div>
-                <h1 className="text-h2">{title}</h1>
+                <h1 className="text-h2 md:text-h3-desktop">{title}</h1>
                 <div className="flex md:hidden w-4.5 h-4.5">
                     <Image src={icon} alt={title} className="object-contain" />
                 </div>
