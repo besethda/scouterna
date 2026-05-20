@@ -18,11 +18,10 @@ const Header = () => {
   const handleToggle = () => {
     setIsOpen(!isOpen)
   }
-  console.log("isOpen", isOpen)
 
   return (
     <>
-      <header className="flex justify-between items-center py-2.75 px-7 bg-white border-b border-text-gray lg:border-hidden">
+      <header className="flex justify-between items-center py-2.75 px-7 bg-white border-b border-text-gray z-50 lg:border-hidden">
         <Link href="/" className="md:hidden">
           <Image src={HSSlogo} alt='HSS-LOGO' className="w-11 h-10.5" />
         </Link>
@@ -52,7 +51,7 @@ const Header = () => {
           <RxHamburgerMenu onClick={() => handleToggle()} className="size-5.75 lg:hidden" />}
 
       </header>
-      <div className={`${isOpen ? "block" : "hidden"} lg:block`}>
+      <div className={`${isOpen ? "fixed inset-0 bg-black/50 z-40 " : "hidden"} lg:block`}>
         <Navigation />
       </div >
     </>

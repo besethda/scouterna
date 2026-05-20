@@ -108,11 +108,6 @@ export const menuList = [
                 icon: "/menu-communication-icon.svg"
             },
             {
-                nameKey: "nav_board",
-                href: "/about-us/board",
-                icon: "/menu-members-icon.svg"
-            },
-            {
                 nameKey: "nav_gdpr",
                 href: "/about-us/gdpr",
                 icon: "/menu-info-icon.svg"
