@@ -55,6 +55,9 @@ type MessagesSvType = {
     hero_subtitle02:string,
     hero_description:string
   };
+  CTABtn: {
+    text:string
+  }
 };
 
 export const Sv: MessagesSvType = {
@@ -112,5 +115,8 @@ export const Sv: MessagesSvType = {
     hero_subtitle01:"Äventyr börjar",
     hero_subtitle02:"vid vattenbrynet",
     hero_description:"På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
+  },
+  CTABtn: {
+    text:"Gå med i Scouterna"
   }
 };
