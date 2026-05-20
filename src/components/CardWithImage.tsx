@@ -17,10 +17,10 @@ const CardWithImage = ({ headline, logo, title, text, image }: CardWithImageProp
             <p className="h-4.25 uppercase font-bold text-acc tracking-[1.5px] text-(--text-blue) ">{headline}</p>
             <p className="w-5 h-4.25">{logo}</p>
           </div>
-          <div className="tracking-[-0.5%] text-h1 font-normal text-primary">{title}</div>
-          <div className="text-[16px] tracking-[3%] font-normal text-(--text-black)">{text}</div>
+          <div className="tracking-[-0.5%] text-h1 md:text-h1-desktop font-normal text-primary font-varela">{title}</div>
+          <div className="text-acc-desktop tracking-[3%] font-normal text-black font-albert">{text}</div>
         </div>
-        <Image src={image} alt={title} width={357} height={257} className="bg-amber-200 pt-4 rounded-2xl md:w-100 md:h-60" />
+        <Image src={image} alt={title} width={357} height={257} className="bg-amber-200 pt-4 rounded-2xl md:w-100 md:h-60 object-cover" />
       </div>
     </>
   )
