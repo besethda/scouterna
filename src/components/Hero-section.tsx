@@ -10,7 +10,7 @@ interface HeroSectionProps{
 
 }
 
-const HeroSection = ({bgImage, title01,title02, description}:HeroSectionProps) => {
+const HeroSection = ({bgImage, title01,title02, description,children}:HeroSectionProps) => {
 
     const messages = useMessages()
     const finalBg = bgImage ? bgImage.src : undefinedBg.src
@@ -31,6 +31,7 @@ const HeroSection = ({bgImage, title01,title02, description}:HeroSectionProps) =
                             <span className="text-accent">{title02}</span>
                         </h1>
                         <p className="text-body md:text-body-desktop">{description}</p>
+                        {children}
                     </div>
                 </div>
         </div>
