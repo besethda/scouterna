@@ -1,5 +1,6 @@
 import Image from "next/image"
 import useMessages from "@/hook/useMessages"
+import Link from "next/link"
 
 type divisionName = "sjohumlorna" | "kaparna" | "utmanare" | "konvojen"
 
@@ -38,13 +39,13 @@ const DivisionsBox = ({division, imageUrl, boxStyle = "basic"}:
                                   </div>
                                 </div>}
       <div className={`${boxStyle === "info" && "md:hidden"} flex grow justify-center md:justify-start pt-2 text-primary items-end md:pb-3 order-4 md:order-3`}>
-        {boxStyle !== "image" ? <button className={`${colorReference[division][0]} ${colorReference[division][1]} h-fit cursor-pointer hover:brightness-140 active:brightness-80 duration-150 font-albert text-body border rounded-3xl py-3.5 w-full`}>{`${messages?.division.basic_message} ${messages?.division[`${division}_title`] ?? ""}`}</button>
-                              : <button className={`${colorReference[division][0]} ${colorReference[division][1]} h-fit cursor-pointer hover:brightness-140 active:brightness-80 duration-150 font-albert flex items-center justify-center text-body border rounded-3xl`}>
-                                  <div className="pr-1 pl-3">{`${messages?.division.image_message} ${messages?.division[`${division}_title`] ?? ""}`}</div>
+        {boxStyle !== "image" ? <Link href={`/groups/${division}`} className={`${colorReference[division][0]} ${colorReference[division][1]} h-fit cursor-pointer hover:brightness-140 active:brightness-80 duration-150 text-center font-albert text-body border rounded-3xl py-3.5 w-full`}>{`${messages?.division.basic_message} ${messages?.division[`${division}_title`] ?? ""}`}</Link>
+                              : <Link href={`/groups/${division}`} className={`${colorReference[division][0]} ${colorReference[division][1]} h-fit cursor-pointer hover:brightness-140 active:brightness-80 duration-150 font-albert flex items-center justify-center text-body border rounded-3xl`}>
+                                  <div className="pr-1 pl-3 ">{`${messages?.division.image_message} ${messages?.division[`${division}_title`] ?? ""}`}</div>
                                   <div className={`flex justify-center pl-1 items-center`}>
                                     <Image src={`/${division.toLowerCase()}.png`} width={48} height={48} alt={messages?.division[`${division}_title`] ?? ""} />
                                   </div>
-                                </button>
+                                </Link>
         }
       </div>
     </div>
