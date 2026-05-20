@@ -48,6 +48,18 @@ export type MessagesEngType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
+<<<<<<< HEAD
+=======
+  };
+  hero: {
+    hero_title: string,
+    hero_subtitle01:string,
+    hero_subtitle02:string,
+    hero_description:string
+  };
+  CTAButton: {
+  text:string
+>>>>>>> a6829434e3055e247cf9cb135e9047c1a9d217ef
   }, 
     homePageCard: {
     headline: string,
@@ -148,6 +160,7 @@ export const En: MessagesEngType = {
     header_subtitle: "Sea Scouts",
     header_join: "Become a Scout"
   },
+<<<<<<< HEAD
   division: {
     sjohumlorna_title: "Sjöhumlorna",
     sjohumlorna_ages: "8-9 Years",
@@ -178,6 +191,16 @@ export const En: MessagesEngType = {
     day: "Day: ",
     time: "Time: ",
     place: "Place: "
+=======
+  hero: {
+    hero_title: "Hässelby Strand Sea Scouts",
+    hero_subtitle01: "Adventures begin",
+    hero_subtitle02: "at the water's edge",
+    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand."
+  },
+  CTAButton: {
+    text: "Join the Scouts"
+>>>>>>> a6829434e3055e247cf9cb135e9047c1a9d217ef
   }, 
   homePageCard: {
     headline: "Become a Scout",

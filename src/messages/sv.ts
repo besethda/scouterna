@@ -51,51 +51,27 @@ type MessagesSvType = {
     header_subtitle: string,
     header_join: string
   };
-  division: {
-    sjohumlorna_title: string,
-    sjohumlorna_ages: string,
-    sjohumlorna_day: string,
-    sjohumlorna_time: string,
-    sjohumlorna_place: string,
-    sjohumlorna_paragraph: string,
-    kaparna_title: string,
-    kaparna_ages: string,
-    kaparna_day: string,
-    kaparna_time: string,
-    kaparna_place: string,
-    kaparna_paragraph: string,
-    konvojen_title: string,
-    konvojen_ages: string,
-    konvojen_day: string,
-    konvojen_time: string,
-    konvojen_place: string,
-    konvojen_paragraph: string,
-    utmanare_title: string,
-    utmanare_ages: string,
-    utmanare_day: string,
-    utmanare_time: string,
-    utmanare_place: string,
-    utmanare_paragraph: string,
-    image_message: string,
-    basic_message: string,
-    day: string,
-    time: string,
-    place: string
-  },
-  homePageCard: {
-    headline: string, 
-    title: string, 
-    text: string,
-  }
   hero: {
     hero_title: string,
     hero_subtitle01:string,
     hero_subtitle02:string,
     hero_description:string
   };
+<<<<<<< HEAD
   CTABtn: {
     text:string
   }
+=======
+  CTAButton: {
+    text:string
+  }, 
+  homePageCard: {
+    headline: string, 
+    title: string, 
+    text: string,
+  }
+  
+>>>>>>> a6829434e3055e247cf9cb135e9047c1a9d217ef
 };
 
 export const Sv: MessagesSvType = {
@@ -149,11 +125,21 @@ export const Sv: MessagesSvType = {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
+  },
+  hero: {
+    hero_title: "Hässelby Strands Sjöscouter",
+    hero_subtitle01:"Äventyr börjar",
+    hero_subtitle02:"vid vattenbrynet",
+    hero_description:"På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
+  },
+  CTAButton: {
+    text: "Gå med i Scouterna"
   }, 
    homePageCard: {
     headline: "Bli Scout",
     title: "Vågorna väntar", 
     text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra – ute i naturen och till sjöss – och du får både kunskap, vänner och minnen för livet.",
+<<<<<<< HEAD
   },
   division: {
     sjohumlorna_title: "Sjöhumlorna",
@@ -194,5 +180,7 @@ export const Sv: MessagesSvType = {
   },
   CTABtn: {
     text:"Gå med i Scouterna"
+=======
+>>>>>>> a6829434e3055e247cf9cb135e9047c1a9d217ef
   }
 };
