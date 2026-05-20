@@ -22,17 +22,26 @@ const Navigation = () => {
                         <div onClick={() => handleToggle(menu.id)}
                             className="flex justify-between text-base h-69px px-2 py-4 font-bold border-b border-lightGray lg:font-normal lg:border-none lg:static">
                             <p> {messages?.navigation?.[menu.nameKey]} </p>
-                            <AiOutlineDownCircle size={28} className="lg:hidden" />
+
                             {openId === menu.id
-                                ? <AiOutlineUp size={16} className="hidden lg:block lg:ml-2 lg:mt-1.25" />
-                                : <AiOutlineDown className="hidden lg:block lg:ml-2 lg:mt-1.25" />}
+                                ? (
+                                    <>
+                                        <AiFillUpCircle size={28} className="lg:hidden" />
+                                        <AiOutlineUp size={16} className="hidden lg:block lg:ml-2 lg:mt-1.25" />
+
+                                    </>
+                                )
+                                : (
+                                    <>
+                                        <AiOutlineDownCircle size={28} className="lg:hidden" />
+                                        <AiOutlineDown className="hidden lg:block lg:ml-2 lg:mt-1.25" />
+                                    </>
+                                )
+                            }
                         </div>
                         {openId === menu.id && (
-                            <div onClick={() => handleToggle(menu.id)} className="px-2 py-4 pt-10 border-b border-lightGray lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-87.5  lg:pt-0 lg:absolute lg:top-54.75 lg:border-none">
-                                <div className="flex justify-between py-4 lg:hidden">
-                                    <p className="font-bold">{messages?.navigation?.[menu.nameKey]}</p>
-                                    <AiFillUpCircle size={28} />
-                                </div>
+                            <div onClick={() => handleToggle(menu.id)} className="px-2 py-4 border-b border-lightGray lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-87.5  lg:pt-0 lg:absolute lg:top-54.75 lg:border-none">
+
                                 {menu.submenu && menu.submenu.map((sub, index) => (
                                     <div key={index} className={`py-4 flex lg:h-18.5  lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
                                         <Image src={sub.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
