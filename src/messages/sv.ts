@@ -48,7 +48,13 @@ type MessagesSvType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
-  }
+  };
+  hero: {
+    hero_title: string,
+    hero_subtitle01:string,
+    hero_subtitle02:string,
+    hero_description:string
+  };
 };
 
 export const Sv: MessagesSvType = {
@@ -100,5 +106,11 @@ export const Sv: MessagesSvType = {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
+  },
+  hero: {
+    hero_title: "Hässelby Strands Sjöscouter",
+    hero_subtitle01:"Äventyr börjar",
+    hero_subtitle02:"vid vattenbrynet",
+    hero_description:"På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
   }
 };
