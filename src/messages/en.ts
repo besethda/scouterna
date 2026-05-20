@@ -48,6 +48,11 @@ export type MessagesEngType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
+  }, 
+    homePageCard: {
+    headline: string,
+    title: string,
+    text: string,
   };
   division: {
     sjohumlorna_title: string,
@@ -86,6 +91,9 @@ export type MessagesEngType = {
     hero_subtitle02:string,
     hero_description:string
   };
+  CTABtn: {
+    text:string
+  }
 
 };
 
@@ -171,12 +179,19 @@ export const En: MessagesEngType = {
     time: "Time: ",
     place: "Place: "
   }, 
-  hero: {
+  homePageCard: {
+    headline: "Become a Scout",
+    title: "The waves are waiting",
+    text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
+  }, 
+    hero: {
     hero_title: "Hässelby Strand Sea Scouts",
     hero_subtitle01: "Adventures begin",
     hero_subtitle02: "at the water's edge",
     hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand."
+  },
+  CTABtn: {
+    text:"Join the Sea Scouts"
   }
-
 
 };

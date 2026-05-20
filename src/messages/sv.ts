@@ -81,6 +81,11 @@ type MessagesSvType = {
     day: string,
     time: string,
     place: string
+  },
+  homePageCard: {
+    headline: string, 
+    title: string, 
+    text: string,
   }
   hero: {
     hero_title: string,
@@ -88,7 +93,10 @@ type MessagesSvType = {
     hero_subtitle02:string,
     hero_description:string
   };
-}
+  CTABtn: {
+    text:string
+  }
+};
 
 export const Sv: MessagesSvType = {
   home: {
@@ -141,6 +149,11 @@ export const Sv: MessagesSvType = {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
+  }, 
+   homePageCard: {
+    headline: "Bli Scout",
+    title: "Vågorna väntar", 
+    text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra – ute i naturen och till sjöss – och du får både kunskap, vänner och minnen för livet.",
   },
   division: {
     sjohumlorna_title: "Sjöhumlorna",
@@ -178,5 +191,8 @@ export const Sv: MessagesSvType = {
     hero_subtitle01:"Äventyr börjar",
     hero_subtitle02:"vid vattenbrynet",
     hero_description:"På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
+  },
+  CTABtn: {
+    text:"Gå med i Scouterna"
   }
 };
