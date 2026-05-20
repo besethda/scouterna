@@ -6,9 +6,9 @@ interface CTAprops {
 
 const CTABtn = ({text,onClick}:CTAprops) => {
     return (
-        <div className="w-[222] ">
-            <button className="text-body-desktop bg-accent text-primary overflow-hidden rounded-[24]
-                p-2.5 text-center cursor-pointer transition-colors duration-300 ease-in-out hover:bg-lightYellow" 
+        <div className="w:232px">
+            <button className="!w-[232px] text-body bg-accent text-primary overflow-hidden rounded-3xl
+                p-3 text-center cursor-pointer transition-colors duration-300 ease-in-out hover:bg-lightYellow" 
                 onClick={onClick}>
                 {text}
             </button>
