@@ -26,22 +26,22 @@ export const menuList = [
             },
             {
                 nameKey: "nav_unit1",
-                href: "/groups/sea-bumblebees",
+                href: "/groups/sjohumlorna",
                 icon: "/menu-fox-illustration.png"
             },
             {
                 nameKey: "nav_unit2",
-                href: "/groups/pirates",
+                href: "/groups/kaparna",
                 icon: "/menu-torch-illustration.png"
             },
             {
                 nameKey: "nav_unit3",
-                href: "/groups/convoy",
+                href: "/groups/konvojen",
                 icon: "/menu-fire-illustration.png"
             },
             {
                 nameKey: "nav_unit4",
-                href: "/groups/challengers",
+                href: "/groups/utmanare",
                 icon: "/menu-megaphone-illustration.png"
             },
         ]

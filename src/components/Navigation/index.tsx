@@ -46,7 +46,7 @@ const Navigation = () => {
                                     <div key={index} className={`py-4 flex lg:h-18.5  lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
                                         <Image src={sub.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
                                         <div className="px-4 flex items-center">
-                                            <Link href={sub.href} className=""> {messages?.navigation?.[sub.nameKey]} </Link>
+                                            <Link href={messages?.path + sub.href} className=""> {messages?.navigation?.[sub.nameKey]} </Link>
                                         </div>
                                     </div>
                                 ))}

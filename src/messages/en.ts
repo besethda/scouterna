@@ -1,4 +1,5 @@
 export type MessagesEngType = {
+  path:string;
   home: {
     title: string;
     divisions: string;
@@ -99,7 +100,38 @@ export type MessagesEngType = {
   };
   CTABtn: {
     text: string
+  },
+  breadcrumbs:{
+    title:string,
+    path: string,
+    page: {
+     "about-us": string,
+      history: string,
+      contact: string,
+      pdpr: string,
+      members:string,
+      "scout-life": string,
+      safety: string,
+      "what-we-do": string,
+      lifestyle: string,
+      boats: string,
+      cabins: string,
+      myset:string,
+      ruffen:string,
+      groups: string,
+      "age-sections": string,
+      sjohumlorna: string,
+      kaparna: string,
+      utmanare: string,
+      konvojen: string,
+      join: string,
+      "become-a-scout": string,
+      faq: string,
+      [key: string]: string
+   }
   }
+
+
 };
 
 export const En: MessagesEngType = {
@@ -203,6 +235,35 @@ export const En: MessagesEngType = {
   },
   CTABtn: {
     text: "Join the Sea Scouts"
-  }
+  }, 
+   breadcrumbs:{
+    title:"Home",
+    path:  "/en",
+    page: {
+      "about-us": "About HSS",
+      history: "History",
+      contact: "Contact",
+      pdpr: "PDPR",
+      members:"Members",
+      "scout-life": "Scout Life",
+      safety: "Safety",
+      "what-we-do": "What we do",
+      lifestyle: "Lifestyle",
+      boats: "Boats",
+      cabins: "Cabins",
+      myset:"Myset",
+      ruffen:"Ruffen",
+      groups: "Groups",
+      "age-sections": "Age Groups",
+      sjohumlorna: "Sjöhumlorna",
+      kaparna: "Kaparna",
+      utmanare: "Utmanare",
+      konvojen: "Konvojen",
+      join: "Join",
+      "become-a-scout": "Become a Scout",
+      faq: "FAQ"
+   }
+  },
+  path:"/en"
 
 };
