@@ -53,6 +53,12 @@ export type MessagesEngType = {
     header_subtitle: string,
     header_join: string
   },
+  homePage: {
+    title: string, 
+    subtitle: string, 
+    subtitle2: string, 
+    button: string
+  },
   homePageCard: {
     headline: string,
     title: string,
