@@ -29,13 +29,13 @@
     --font-fraunces: "Fraunces", serif;
     --font-varela: "Varela Round", sans-serif;
     --font-albert: "Albert Sans", sans-serif;
-    --font-public:"public sans", sans-serif;
+    --font-public: "public sans", sans-serif;
 
-    
+
     /* Dektop */
     --text-hero-desktop--font-family: var(--font-fraunces);
     --text-hero-desktop: 64px;
-    --text-hero-desktop-bold--font-weight:700;
+    --text-hero-desktop-bold--font-weight: 700;
 
     --text-h1-desktop--font-family: var(--font-varela);
     --text-h1-desktop: 48px;
@@ -57,7 +57,7 @@
     --text-button-desktop: 18px;
 
     --text-link-desktop--font-family: var(--font-albert);
-    --text-link-desktop:18px;
+    --text-link-desktop: 18px;
 
     --text-acc-desktop--font-family: var(--font-albert);
     --text-acc-desktop: 16px;
@@ -67,7 +67,7 @@
     /* Mobile */
     --text-hero--font-family: var(--font-fraunces);
     --text-hero: 32px;
-    --text-hero-bold--font-weight:700;
+    --text-hero-bold--font-weight: 700;
 
     --text-h1--font-family: var(--font-varela);
     --text-h1: 26px;
@@ -89,7 +89,7 @@
     --text-button: 16px;
 
     --text-link--font-family: var(--font-albert);
-    --text-link:16px;
+    --text-link: 16px;
 
     --text-acc--font-family: var(--font-albert);
     --text-acc: 12px;

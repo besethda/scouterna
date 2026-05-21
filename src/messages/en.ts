@@ -1,5 +1,5 @@
 export type MessagesEngType = {
-  path:string;
+  path: string;
   home: {
     title: string;
     divisions: string;
@@ -30,8 +30,11 @@ export type MessagesEngType = {
     nav_aboutUs: string,
     nav_history: string,
     nav_contact: string,
-    nav_board: string,
-    nav_gdpr: string
+    nav_gdpr: string,
+    nav__service: string,
+    nav_school: string,
+    nav_shop: string,
+    nav_scoutnet: string
   };
   footer: {
     footer_service: string;
@@ -49,8 +52,8 @@ export type MessagesEngType = {
     header_title: string,
     header_subtitle: string,
     header_join: string
-  }, 
-    homePageCard: {
+  },
+  homePageCard: {
     headline: string,
     title: string,
     text: string,
@@ -88,30 +91,30 @@ export type MessagesEngType = {
   }
   hero: {
     hero_title: string,
-    hero_subtitle01:string,
-    hero_subtitle02:string,
-    hero_description:string
+    hero_subtitle01: string,
+    hero_subtitle02: string,
+    hero_description: string
   };
   CTABtn: {
-    text:string
+    text: string
   };
-  breadcrumbs:{
-    title:string,
+  breadcrumbs: {
+    title: string,
     path: string,
     page: {
-     "about-us": string,
+      "about-us": string,
       history: string,
       contact: string,
       pdpr: string,
-      members:string,
+      members: string,
       "scout-life": string,
       safety: string,
       "what-we-do": string,
       lifestyle: string,
       boats: string,
       cabins: string,
-      myset:string,
-      ruffen:string,
+      myset: string,
+      ruffen: string,
       groups: string,
       "age-sections": string,
       sjohumlorna: string,
@@ -122,7 +125,7 @@ export type MessagesEngType = {
       "become-a-scout": string,
       faq: string,
       [key: string]: string
-   }
+    }
   }
 
 
@@ -141,12 +144,12 @@ export const En: MessagesEngType = {
     nav_joinScout: "Join the Scouts",
     nav_becomeScout: "Become a Sea Scout",
     nav_faq: "FAQ",
-    nav_ourUnits: "Our Units",
-    nav_ourUnitStructure: "Our Unit Structure",
-    nav_unit1: "The Sea Bumblebees",
-    nav_unit2: "The Pirates",
-    nav_unit3: "The Convoy",
-    nav_unit4: "Explorers",
+    nav_ourUnits: "Our Groups",
+    nav_ourUnitStructure: "Our Group Structure",
+    nav_unit1: "Sjöhumlorna",
+    nav_unit2: "Kaparna",
+    nav_unit3: "Konvojen",
+    nav_unit4: "Utmanare",
     nav_whatWeDo: "What We Do",
     nav_LifeScout: "Life as a Sea Scout",
     nav_boats: "Our Boats",
@@ -159,8 +162,11 @@ export const En: MessagesEngType = {
     nav_aboutUs: "About HSS",
     nav_history: "Our History",
     nav_contact: "Contact",
-    nav_board: "The Board",
-    nav_gdpr: "GDPR"
+    nav_gdpr: "GDPR",
+    nav__service: "Scout Services",
+    nav_school: "The Scouts' Folk High School",
+    nav_shop: "Scout shop",
+    nav_scoutnet: "Scout net"
   },
   footer: {
     footer_service: "Scout Services",
@@ -209,38 +215,38 @@ export const En: MessagesEngType = {
     day: "Day: ",
     time: "Time: ",
     place: "Place: "
-  }, 
+  },
   homePageCard: {
     headline: "Become a Scout",
     title: "The waves are waiting",
     text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
-  }, 
-    hero: {
+  },
+  hero: {
     hero_title: "Hässelby Strand Sea Scouts",
     hero_subtitle01: "Adventures begin",
     hero_subtitle02: "at the water's edge",
     hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand."
   },
   CTABtn: {
-    text:"Join the Sea Scouts"
-  }, 
-   breadcrumbs:{
-    title:"Home",
-    path:  "/en",
+    text: "Join the Sea Scouts"
+  },
+  breadcrumbs: {
+    title: "Home",
+    path: "/en",
     page: {
       "about-us": "About HSS",
       history: "History",
       contact: "Contact",
       pdpr: "PDPR",
-      members:"Members",
+      members: "Members",
       "scout-life": "Scout Life",
       safety: "Safety",
       "what-we-do": "What we do",
       lifestyle: "Lifestyle",
       boats: "Boats",
       cabins: "Cabins",
-      myset:"Myset",
-      ruffen:"Ruffen",
+      myset: "Myset",
+      ruffen: "Ruffen",
       groups: "Groups",
       "age-sections": "Age Groups",
       sjohumlorna: "Sjöhumlorna",
@@ -250,8 +256,8 @@ export const En: MessagesEngType = {
       join: "Join",
       "become-a-scout": "Become a Scout",
       faq: "FAQ"
-   }
+    }
   },
-  path:"/en"
+  path: "/en"
 
 };

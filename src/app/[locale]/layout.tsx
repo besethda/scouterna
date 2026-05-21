@@ -5,7 +5,6 @@ import { TranslateContent } from "@/translateContent/translate";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv"
 import { use } from "react";
-import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -51,7 +50,6 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
       <body className="min-h-full flex flex-col">
         <TranslateContent value={messages}>
           <Header />
-          <Navigation />
           <Breadcrumbs />
           {children}
           <Footer />

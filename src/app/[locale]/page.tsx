@@ -1,5 +1,4 @@
 'use client'
-
 import DivisionsBox from "@/components/DivisionsBox";
 import useMessages from "@/hook/useMessages";
 import Instagram from "@/components/Instagram";
@@ -19,16 +18,16 @@ const Home = () => {
 
   return (
     <div className="">
-    <HeroSection
-      bgImage={bgImage01}
-      title01={messages?.hero.hero_subtitle01}
-      title02={messages?.hero.hero_subtitle02}
-      description={messages?.hero.hero_description}
-    >
-      <CTABtn
-        text={messages?.CTABtn.text}
-        onClick={() => { }} />
-    </HeroSection>
+      <HeroSection
+        bgImage={bgImage01}
+        title01={messages?.hero.hero_subtitle01}
+        title02={messages?.hero.hero_subtitle02}
+        description={messages?.hero.hero_description}
+      >
+        <CTABtn
+          text={messages?.CTABtn.text}
+          onClick={() => { }} />
+      </HeroSection>
       <div className="flex flex-col items-center">
         <CardWithImage headline={messages?.homePageCard?.headline} logo="/heartIcon.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
         <div className="text-h2 md:text-h2-desktop text-primary mt-8 px-5 w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions}</div>
@@ -39,9 +38,9 @@ const Home = () => {
           <DivisionsBox division={"konvojen"} boxStyle={"basic"} />
           <DivisionsBox division={"utmanare"} boxStyle={"basic"} />
         </div>
-        <Instagram infoText={true}/>
-        </div>
+        <Instagram infoText={true} />
       </div>
+    </div>
   );
 }
 
