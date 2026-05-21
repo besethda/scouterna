@@ -16,13 +16,13 @@ const CardWithImage = ({ headline, logo, title, text, image }: CardWithImageProp
           <div className="flex gap-2 items-center ">
             <p className="h-4.25 uppercase font-bold text-acc tracking-[1.5px] text-(--text-blue) md:text-[14px] ">{headline}</p>
             <div className=" flex items-center justify-center rounded-[50%] md:hidden">
-              <Image src={logo} alt="logo" width={20} height={17} className="w-5 h-4.25" />
+              <Image src={logo} alt="logo" width={24} height={17} className="w-6 h-4.25" />
             </div>
           </div>
           <div className="md:flex md:flex-row md:items-center md:gap-2.5">
             <div className="font-varela tracking-[-0.5%] text-h1 font-normal text-primary md:text-h1-desktop">{title}</div>
             <div className="hidden md:flex items-center justify-center md:bg-accent md:h-11 md:w-11 rounded-[50%] ">
-              <Image src={logo} alt="logo" width={20} height={17} className="w-5 h-4.25" />
+              <Image src={logo} alt="logo" width={24} height={17} className="w-6 h-4.25" />
             </div>
           </div>
           <div className="text-[16px] tracking-[3%] font-normal text-(--text-black)">{text}</div>
