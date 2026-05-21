@@ -14,7 +14,10 @@ const Header = () => {
 
   const messages = useMessages()
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  console.log(isOpen)
+
+  const handleClose = () => {
+    setIsOpen(false)
+  }
 
   const handleToggle = () => {
     setIsOpen(!isOpen)
@@ -53,10 +56,10 @@ const Header = () => {
       </header>
       {isOpen && (<div className="fixed inset-0 z-10 bg-black/50 lg:hidden"></div>)}
       <div className={`fixed left-0 h-full w-full transition-all duration-300 ease-in-out z-30 ${!isOpen ? " -translate-y-full " : ""}`}>
-        <Navigation />
+        <Navigation onClose={handleClose} />
       </div >
       <div className="hidden lg:block lg:z-60">
-        <Navigation />
+        <Navigation onClose={handleClose} />
       </div>
     </>
   )

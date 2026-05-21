@@ -7,11 +7,15 @@ import { AiOutlineDownCircle, AiFillUpCircle, AiOutlineDown, AiOutlineUp } from 
 import useMessages from '@/hook/useMessages'
 import LanguageSelector from "../LanguageSelector";
 
-const Navigation = () => {
+interface NavigationProps {
+    onClose: () => void;
+}
+
+const Navigation = ({ onClose }: NavigationProps) => {
     const messages = useMessages()
     const [openId, setOpenId] = useState<number | null>(null)
 
-    const handleToggle = (id: number) => {
+    const handleToggle = (id: number | null) => {
         setOpenId(openId === id ? null : id)
     }
 
@@ -23,7 +27,7 @@ const Navigation = () => {
                 </div>
                 {menuList.map((menu, index) => (
                     <div key={index}>
-                        <div onClick={() => handleToggle(menu.id)}
+                        <div onClick={() => { handleToggle(menu.id); }}
                             className="flex justify-between text-base h-69px px-2 py-4 font-bold border-b border-lightGray cursor-pointer lg:font-normal lg:border-none lg:static">
                             <p> {messages?.navigation?.[menu.nameKey]} </p>
 
@@ -44,7 +48,7 @@ const Navigation = () => {
                             }
                         </div>
                         {openId === menu.id && (
-                            <div onClick={() => handleToggle(menu.id)} className="px-2 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0  lg:top-54.75 lg:border-none">
+                            <div onClick={() => { handleToggle(menu.id); onClose() }} className="px-2 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0  lg:top-54.75 lg:border-none">
                                 {menu.submenu && menu.submenu.map((sub, index) => (
                                     <Link href={messages?.path + sub.href} className="">
                                         <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
@@ -62,7 +66,7 @@ const Navigation = () => {
                 <div className="rounded-b-lg  p-4 flex flex-col lg:h-18.5 lg:items-center lg:hidden">
                     <p className="text-black font-bold uppercase text-xs pb-3">{messages?.navigation?.nav__service}</p>
                     {mobileMenuList && mobileMenuList.map((menu, index) => (
-                        <Link key={index} href={menu.href} className="py-2 flex lg:h-18.5  w-full lg:items-center ">
+                        <Link onClick={() => { handleToggle(null); onClose() }} key={index} href={menu.href} className="py-2 flex lg:h-18.5  w-full lg:items-center ">
                             <Image src={menu.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
                             <div className="px-4 flex items-center">
                                 {messages?.navigation?.[menu.nameKey]}
