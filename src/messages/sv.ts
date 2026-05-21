@@ -19,6 +19,11 @@ type MessagesSvType = {
     header_subtitle: string,
     header_join: string
   };
+  whiteImageBox: {
+    title01:string,
+    title02:string,
+    title03:string
+  }
 };
 
 export const Sv: MessagesSvType = {
@@ -40,4 +45,9 @@ export const Sv: MessagesSvType = {
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
   },
+  whiteImageBox: {
+    title01:"Segling & sjöliv",
+    title02:"Safe Community",
+    title03:"Discovery & Learning"
+  }
 };

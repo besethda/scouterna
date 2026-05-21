@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export type MessagesEngType = {
   home: {
     title: string;
@@ -17,6 +19,11 @@ export type MessagesEngType = {
     header_subtitle: string,
     header_join: string
   };
+  whiteImageBox: {
+    title01:string,
+    title02:string,
+    title03:string
+  }
 };
 
 export const En: MessagesEngType = {
@@ -38,4 +45,9 @@ export const En: MessagesEngType = {
     header_subtitle: "Sea Scouts",
     header_join: "Become a Scout"
   },
+  whiteImageBox: {
+    title01:"Sailing & Sea Life",
+    title02:"Safe Community",
+    title03:"Discovery & Learning"
+  }
 };
