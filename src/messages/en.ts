@@ -30,7 +30,11 @@ export type MessagesEngType = {
     nav_aboutUs: string,
     nav_history: string,
     nav_contact: string,
-    nav_gdpr: string
+    nav_gdpr: string,
+    nav__service: string,
+    nav_school: string,
+    nav_shop: string,
+    nav_scoutnet: string
   };
   footer: {
     footer_service: string;
@@ -158,7 +162,11 @@ export const En: MessagesEngType = {
     nav_aboutUs: "About HSS",
     nav_history: "Our History",
     nav_contact: "Contact",
-    nav_gdpr: "GDPR"
+    nav_gdpr: "GDPR",
+     nav__service: "Scout Services",
+    nav_school: "The Scouts' Folk High School",
+    nav_shop: "Scout shop",
+    nav_scoutnet: "Scout net"
   },
   footer: {
     footer_service: "Scout Services",
