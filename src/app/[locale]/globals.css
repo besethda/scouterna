@@ -4,18 +4,22 @@
     --color-primary: #003660;
     --color-accent: #FDB715;
 
-    --bg-white: #FFFFFF;
-    --bg-blue: #D6EAF8;
+    --color-bg-white: #FFFFFF;
+    --color-bg-blue: #D6EAF8;
 
-    --text-black: #3B3A3A;
-    --text-gray: #717D7E;
-    --text-white: #FFFFFF;
-    --text-blue: #1F74AD;
+    --color-text-black: #3B3A3A;
+    --color-text-gray: #717D7E;
+    --color-text-white: #FFFFFF;
+    --color-text-blue: #1F74AD;
 
     --color-green: #41A62A;
     --color-lightBlue: #00A8E1;
     --color-orange: #E95F13;
     --color-pink: #DA005E;
+    --color-green-opaque: #41A62A1F;
+    --color-lightBlue-opaque: #00A8E11F;
+    --color-orange-opaque: #E95F131F;
+    --color-pink-opaque: #DA005E1F;
 
     --color-lightGray: #CCCCCC;
     --color-lightYellow:#EBC86C;
@@ -25,13 +29,13 @@
     --font-fraunces: "Fraunces", serif;
     --font-varela: "Varela Round", sans-serif;
     --font-albert: "Albert Sans", sans-serif;
-    --font-public:"public sans", sans-serif;
+    --font-public: "public sans", sans-serif;
 
-    
+
     /* Dektop */
     --text-hero-desktop--font-family: var(--font-fraunces);
     --text-hero-desktop: 64px;
-    --text-hero-desktop-bold--font-weight:700;
+    --text-hero-desktop-bold--font-weight: 700;
 
     --text-h1-desktop--font-family: var(--font-varela);
     --text-h1-desktop: 48px;
@@ -53,7 +57,7 @@
     --text-button-desktop: 18px;
 
     --text-link-desktop--font-family: var(--font-albert);
-    --text-link-desktop:18px;
+    --text-link-desktop: 18px;
 
     --text-acc-desktop--font-family: var(--font-albert);
     --text-acc-desktop: 16px;
@@ -63,7 +67,7 @@
     /* Mobile */
     --text-hero--font-family: var(--font-fraunces);
     --text-hero: 32px;
-    --text-hero-bold--font-weight:700;
+    --text-hero-bold--font-weight: 700;
 
     --text-h1--font-family: var(--font-varela);
     --text-h1: 26px;
@@ -85,9 +89,10 @@
     --text-button: 16px;
 
     --text-link--font-family: var(--font-albert);
-    --text-link:16px;
+    --text-link: 16px;
 
     --text-acc--font-family: var(--font-albert);
     --text-acc: 12px;
     --text-acc-bold--font-weight: 700;
+
 }
