@@ -1,7 +1,6 @@
 'use client'
 
 import useMessages from "@/hook/useMessages";
-import GoodToKnow from "@/components/GoodToKnow-home";
 
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
 
   return (
     <div className="">
-      <GoodToKnow />
+ 
 
 
     </div>
