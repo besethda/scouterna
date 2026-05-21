@@ -25,7 +25,7 @@ const CardWithImage = ({ headline, logo, title, text, image }: CardWithImageProp
               <Image src={logo} alt="logo" width={24} height={17} className="w-6 h-4.25" />
             </div>
           </div>
-          <div className="text-[16px] tracking-[3%] font-normal text-(--text-black) md:text-[18px]">{text}</div>
+          <div className="text-[16px] tracking-[3%] font-albert font-normal text-(--text-black) md:text-[18px]">{text}</div>
         </div>
         <div>
           <Image src={image} alt={title} width={357} height={257} className="rounded-2xl md:w-100 md:h-60 object-cover" />
