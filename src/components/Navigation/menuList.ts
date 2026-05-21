@@ -83,7 +83,7 @@ export const menuList = [
         submenu: [
             {
                 nameKey: "nav_information",
-                href: "/members/scout-life",
+                href: "/members/information",
                 icon: "/menu-scouterna-icon.svg"
             },
             {

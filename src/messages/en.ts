@@ -1,5 +1,5 @@
 export type MessagesEngType = {
-  path:string;
+  path: string;
   home: {
     title: string;
     divisions: string;
@@ -56,7 +56,7 @@ export type MessagesEngType = {
   homePage: {
     title: string,
     subtitle: string,
-    subtitle2: string, 
+    subtitle2: string,
     button: string
   },
   homePageCard: {
@@ -103,24 +103,24 @@ export type MessagesEngType = {
   };
   CTABtn: {
     text: string
-  },
-  breadcrumbs:{
-    title:string,
+  };
+  breadcrumbs: {
+    title: string,
     path: string,
     page: {
-     "about-us": string,
+      "about-us": string,
       history: string,
       contact: string,
       pdpr: string,
-      members:string,
+      members: string,
       "scout-life": string,
       safety: string,
       "what-we-do": string,
       lifestyle: string,
       boats: string,
       cabins: string,
-      myset:string,
-      ruffen:string,
+      myset: string,
+      ruffen: string,
       groups: string,
       "age-sections": string,
       sjohumlorna: string,
@@ -131,7 +131,7 @@ export type MessagesEngType = {
       "become-a-scout": string,
       faq: string,
       [key: string]: string
-   }
+    }
   }
 
 
@@ -150,9 +150,9 @@ export const En: MessagesEngType = {
     nav_joinScout: "Join the Scouts",
     nav_becomeScout: "Become a Sea Scout",
     nav_faq: "FAQ",
-    nav_ourUnits: "Our Units",
+    nav_ourUnits: "Our Groups",
     nav_ourUnitStructure: "Our Unit Structure",
-    nav_unit1: "Sjohumlorna",
+    nav_unit1: "Sjöhumlorna",
     nav_unit2: "Kaparna",
     nav_unit3: "Konvojen",
     nav_unit4: "Utmanare",
@@ -221,7 +221,7 @@ export const En: MessagesEngType = {
     day: "Day: ",
     time: "Time: ",
     place: "Place: "
-  }, 
+  },
   homePage: {
     title: "HSS welcomes everyone",
     subtitle: "No matter who you are or your level of experience, there is a place for you here.",
@@ -241,24 +241,24 @@ export const En: MessagesEngType = {
   },
   CTABtn: {
     text: "Join the Sea Scouts"
-  }, 
-   breadcrumbs:{
-    title:"Home",
-    path:  "/en",
+  },
+  breadcrumbs: {
+    title: "Home",
+    path: "/en",
     page: {
       "about-us": "About HSS",
       history: "History",
       contact: "Contact",
       pdpr: "PDPR",
-      members:"Members",
+      members: "Members",
       "scout-life": "Scout Life",
       safety: "Safety",
       "what-we-do": "What we do",
       lifestyle: "Lifestyle",
       boats: "Boats",
       cabins: "Cabins",
-      myset:"Myset",
-      ruffen:"Ruffen",
+      myset: "Myset",
+      ruffen: "Ruffen",
       groups: "Groups",
       "age-sections": "Age Groups",
       sjohumlorna: "Sjöhumlorna",
@@ -268,8 +268,8 @@ export const En: MessagesEngType = {
       join: "Join",
       "become-a-scout": "Become a Scout",
       faq: "FAQ"
-   }
+    }
   },
-  path:"/en"
+  path: "/en"
 
 };
