@@ -30,11 +30,7 @@ export type MessagesEngType = {
     nav_aboutUs: string,
     nav_history: string,
     nav_contact: string,
-    nav_gdpr: string,
-    nav__service: string,
-    nav_school: string,
-    nav_shop: string,
-    nav_scoutnet: string
+    nav_gdpr: string
   };
   footer: {
     footer_service: string;
@@ -105,9 +101,9 @@ export type MessagesEngType = {
       "about-us": string,
       history: string,
       contact: string,
-      pdpr: string,
-      members: string,
-      "scout-life": string,
+      gdpr: string,
+      members:string,
+      information: string,
       safety: string,
       "what-we-do": string,
       lifestyle: string,
@@ -162,11 +158,7 @@ export const En: MessagesEngType = {
     nav_aboutUs: "About HSS",
     nav_history: "Our History",
     nav_contact: "Contact",
-    nav_gdpr: "GDPR",
-    nav__service: "Scout Services",
-    nav_school: "The Scouts' Folk High School",
-    nav_shop: "Scout shop",
-    nav_scoutnet: "Scout net"
+    nav_gdpr: "GDPR"
   },
   footer: {
     footer_service: "Scout Services",
@@ -237,23 +229,23 @@ export const En: MessagesEngType = {
       "about-us": "About HSS",
       history: "History",
       contact: "Contact",
-      pdpr: "PDPR",
-      members: "Members",
-      "scout-life": "Scout Life",
-      safety: "Safety",
-      "what-we-do": "What we do",
+      gdpr: "GDPR",
+      members:"Members",
+      information: "Member Information",
+      safety: "HSS Life Jacket Policy",
+      "what-we-do": "What We Do",
       lifestyle: "Lifestyle",
-      boats: "Boats",
-      cabins: "Cabins",
-      myset: "Myset",
-      ruffen: "Ruffen",
-      groups: "Groups",
+      boats: "Our Boats",
+      cabins: " Our Scout Cabins",
+      myset:"Myset",
+      ruffen:"Ruffen",
+      groups: "Group Structure",
       "age-sections": "Age Groups",
       sjohumlorna: "Sjöhumlorna",
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
-      join: "Join",
+      join: "Join The Scouts",
       "become-a-scout": "Become a Scout",
       faq: "FAQ"
     }
