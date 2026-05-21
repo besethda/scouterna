@@ -20,12 +20,12 @@ const CardWithImage = ({ headline, logo, title, text, image }: CardWithImageProp
             </div>
           </div>
           <div className="md:flex md:flex-row md:items-center md:gap-2.5">
-            <div className="font-varela tracking-[-0.5%] text-h1 font-normal text-primary md:text-h1-desktop">{title}</div>
+            <div className="font-varela tracking-[-0.5%]  text-h1 font-normal text-primary md:text-h1-desktop">{title}</div>
             <div className="hidden md:flex items-center justify-center md:bg-accent md:h-11 md:w-11 rounded-[50%] ">
               <Image src={logo} alt="logo" width={24} height={17} className="w-6 h-4.25" />
             </div>
           </div>
-          <div className="text-[16px] tracking-[3%] font-albert font-normal text-(--text-black) md:text-[18px]">{text}</div>
+          <div className="text-[16px] text-text-black tracking-[3%] font-albert font-normal md:text-[18px]">{text}</div>
         </div>
         <div>
           <Image src={image} alt={title} width={357} height={257} className="rounded-2xl md:w-100 md:h-60 object-cover" />
