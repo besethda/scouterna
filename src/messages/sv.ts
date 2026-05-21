@@ -26,7 +26,7 @@ type MessagesSvType = {
     nav_cabins: string,
     nav_myset: string,
     nav_ruffen: string,
-    nav_members: string
+    nav_members: string,
     nav_information: string,
     nav_lifeJacketPolicy: string,
     nav_aboutUs: string,
@@ -86,10 +86,33 @@ type MessagesSvType = {
     time: string,
     place: string
   },
+  homePage: {
+    title: string, 
+    subtitle: string, 
+    subtitle2: string, 
+    button: string
+  },
   homePageCard: {
     headline: string, 
     title: string, 
     text: string,
+  },
+  goodToKnow: {
+    headline: string,
+    card_title_1: string,
+    card_headline_1: string,
+    card_text_1: string,
+    card_title_2: string,
+    card_headline_2: string,
+    card_text_2: string,
+    card_title_3: string,
+    card_headline_3: string,
+    card_text_3: string,
+    span_3: string,
+    card_title_4: string,
+    card_headline_4: string,
+    card_text_4: string,
+    span_4: string
   }
   hero: {
     hero_title: string,
@@ -107,9 +130,9 @@ type MessagesSvType = {
       "about-us": string,
       history: string,
       contact: string,
-      pdpr: string,
+      gdpr: string,
       members:string,
-      "scout-life": string,
+      information: string,
       safety: string,
       "what-we-do": string,
       lifestyle: string,
@@ -168,6 +191,7 @@ export const Sv: MessagesSvType = {
     nav_school: "Scouternas Folkhögskola",
     nav_shop: "Scoutshop",
     nav_scoutnet: "Scoutnet"
+  
   },
   footer: {
     footer_service: "Scouternas tjänster",
@@ -187,7 +211,13 @@ export const Sv: MessagesSvType = {
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
   }, 
-   homePageCard: {
+  homePage: {
+    title: "HSS välkomnar alla", 
+    subtitle: "Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig.", 
+    subtitle2: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare.",
+    button: "Gå med i Scouterna"
+  },
+    homePageCard: {
     headline: "Bli Scout",
     title: "Vågorna väntar", 
     text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra – ute i naturen och till sjöss – och du får både kunskap, vänner och minnen för livet.",
@@ -239,9 +269,9 @@ export const Sv: MessagesSvType = {
       "about-us": "Om HSS",
       history: "Vår historia",
       contact: "Kontakt",
-      pdpr: "GDPR",
+      gdpr: "GDPR",
       members:"För medlemmar",
-      "scout-life": "Information för medlemmar",
+      information: "Information för medlemmar",
       safety: "HSS flytvästpolicy",
       "what-we-do": "Vad vi gör",
       lifestyle: "Livet som Sjöscout",
@@ -260,5 +290,23 @@ export const Sv: MessagesSvType = {
       faq: "Frågor & svar"
    }
   },
-  path:"/sv"
+  path:"/sv",
+  
+  goodToKnow: {
+    headline: "Bra att veta",
+    card_title_1: "Tid",
+    card_headline_1: "En kväll i veckan",
+    card_text_1: "Scouternas avdelningar träffas en gång i veckan för att göra aktiviteter, samarbeta och utvecklas tillsammans.",
+    card_title_2: "Inkluderande",
+    card_headline_2: "Spännande för alla åldrar",
+    card_text_2: "HSS har åldersindelade avdelningar från och med 8 års ålder och uppåt.",
+    card_title_3: "Värderingar",
+    card_headline_3: "Respekt & ansvar",
+    card_text_3: "Vi är en inkluderande förening där vi tar hand om varandra.",
+    span_3: "Här är alla välkomna, oavsett bakgrund och förmågor.",
+    card_title_4: "Trygghet",
+    card_headline_4: "Utbildade ledare",
+    card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
+    span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
+  }
 };
