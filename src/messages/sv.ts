@@ -26,17 +26,13 @@ type MessagesSvType = {
     nav_cabins: string,
     nav_myset: string,
     nav_ruffen: string,
-    nav_members: string
+    nav_members: string,
     nav_information: string,
     nav_lifeJacketPolicy: string,
     nav_aboutUs: string,
     nav_history: string,
     nav_contact: string,
-    nav_gdpr: string,
-    nav__service: string,
-    nav_school: string,
-    nav_shop: string,
-    nav_scoutnet: string
+    nav_gdpr: string
   };
   footer: {
     footer_service: string
@@ -90,6 +86,23 @@ type MessagesSvType = {
     headline: string, 
     title: string, 
     text: string,
+  },
+  goodToKnow: {
+    headline: string,
+    card_title_1: string,
+    card_headline_1: string,
+    card_text_1: string,
+    card_title_2: string,
+    card_headline_2: string,
+    card_text_2: string,
+    card_title_3: string,
+    card_headline_3: string,
+    card_text_3: string,
+    span_3: string,
+    card_title_4: string,
+    card_headline_4: string,
+    card_text_4: string,
+    span_4: string
   }
   hero: {
     hero_title: string,
@@ -107,9 +120,9 @@ type MessagesSvType = {
       "about-us": string,
       history: string,
       contact: string,
-      pdpr: string,
+      gdpr: string,
       members:string,
-      "scout-life": string,
+      information: string,
       safety: string,
       "what-we-do": string,
       lifestyle: string,
@@ -163,11 +176,7 @@ export const Sv: MessagesSvType = {
     nav_aboutUs: "Om HSS",
     nav_history: "Vår historia",
     nav_contact: "Kontakt",
-    nav_gdpr: "GDPR",
-    nav__service: "Scouternas tjänster",
-    nav_school: "Scouternas Folkhögskola",
-    nav_shop: "Scoutshop",
-    nav_scoutnet: "Scoutnet"
+    nav_gdpr: "GDPR"
   },
   footer: {
     footer_service: "Scouternas tjänster",
@@ -239,9 +248,9 @@ export const Sv: MessagesSvType = {
       "about-us": "Om HSS",
       history: "Vår historia",
       contact: "Kontakt",
-      pdpr: "GDPR",
+      gdpr: "GDPR",
       members:"För medlemmar",
-      "scout-life": "Information för medlemmar",
+      information: "Information för medlemmar",
       safety: "HSS flytvästpolicy",
       "what-we-do": "Vad vi gör",
       lifestyle: "Livet som Sjöscout",
@@ -260,5 +269,23 @@ export const Sv: MessagesSvType = {
       faq: "Frågor & svar"
    }
   },
-  path:"/sv"
+  path:"/sv",
+  
+  goodToKnow: {
+    headline: "Bra att veta",
+    card_title_1: "Tid",
+    card_headline_1: "En kväll i veckan",
+    card_text_1: "Scouternas avdelningar träffas en gång i veckan för att göra aktiviteter, samarbeta och utvecklas tillsammans.",
+    card_title_2: "Inkluderande",
+    card_headline_2: "Spännande för alla åldrar",
+    card_text_2: "HSS har åldersindelade avdelningar från och med 8 års ålder och uppåt.",
+    card_title_3: "Värderingar",
+    card_headline_3: "Respekt & ansvar",
+    card_text_3: "Vi är en inkluderande förening där vi tar hand om varandra.",
+    span_3: "Här är alla välkomna, oavsett bakgrund och förmågor.",
+    card_title_4: "Trygghet",
+    card_headline_4: "Utbildade ledare",
+    card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
+    span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
+  }
 };

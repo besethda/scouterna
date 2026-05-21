@@ -27,7 +27,7 @@ const routes: routesType = {
   "/what-we-do/cabins/ruffen": true,
 
   "/members": false,
-  "/members/scout-life": true,
+  "/members/information": true,
   "/members/safety": true,
 
   "/about-us": false,
@@ -44,18 +44,18 @@ const Breadcrumbs = () => {
   return (
     <div className="shrink-0">
       {pathname !== "/en" && pathname !== "/sv" && (
-        <div className="flex items-center gap-1 text-sm md:text-lg py-2 px-3 md:px-45 text-[#3b3a3a]">
-          <a href={messages?.breadcrumbs.path}>{messages?.breadcrumbs.title}</a>
+        <div className="flex items-center gap-1 text-xs md:text-lg py-2 px-3 md:px-45 text-[#3b3a3a]">
+          <a href={messages?.breadcrumbs.path} className="text-albert">{messages?.breadcrumbs.title}</a>
           {breadcrumbsArray.map((item: string, index: number) => {
             const currentPath =
               "/" + breadcrumbsArray.slice(0, index + 1).join("/"); // get  string  /about   /about/history
             const href = messages?.breadcrumbs.path + currentPath;  //get href  /en/about/history or /sv/about/history
 
             return ( // page["about-us"] = page.about-us, item is a variable like let item = "about-us" 
-              <span key={index}>
+              <span key={index} className="text-albert">
                 <span> / </span>
                 {routes[currentPath] ? (
-                  <Link href={href} className={index +1 === breadcrumbsArray.length? "text-black" : "text-[#3b3a3a]"}>
+                  <Link href={href} className={index +1 === breadcrumbsArray.length? "text-black font-bold" : "text-[#3b3a3a]"}>
                     {messages?.breadcrumbs.page[item]} 
                   </Link>
                 ) : (

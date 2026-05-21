@@ -1,9 +1,8 @@
 const Information = () => {
-
-    return (
-        <div>
-        </div>
-    );
+  
+  return(
+      <div>
+      </div>
+  );
 }
-
 export default Information
