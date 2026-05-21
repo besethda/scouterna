@@ -197,6 +197,7 @@ export const Sv: MessagesSvType = {
     nav_school: "Scouternas Folkhögskola",
     nav_shop: "Scoutshop",
     nav_scoutnet: "Scoutnet"
+  
   },
   footer: {
     footer_service: "Scouternas tjänster",
