@@ -13,7 +13,7 @@ const Header = () => {
   const messages = useMessages()
 
   return (
-    <header className="flex justify-between items-center py-2.75 px-7 bg-white">
+    <header className="flex justify-between items-center py-2.5 px-7 bg-white">
       <Link href="/" className="md:hidden">
         <Image src={HSSlogo} alt='HSS-LOGO' className="w-11 h-10.5" />
       </Link>
