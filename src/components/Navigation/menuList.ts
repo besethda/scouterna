@@ -108,15 +108,28 @@ export const menuList = [
                 icon: "/menu-communication-icon.svg"
             },
             {
-                nameKey: "nav_board",
-                href: "/about-us/board",
-                icon: "/menu-members-icon.svg"
-            },
-            {
                 nameKey: "nav_gdpr",
                 href: "/about-us/gdpr",
                 icon: "/menu-info-icon.svg"
             },
         ]
     }
+] as const;
+
+export const mobileMenuList = [
+    {
+        nameKey: "nav_school",
+        href: "",
+        icon: "/menu-book-circle-icon.svg"
+    },
+    {
+        nameKey: "nav_shop",
+        href: "",
+        icon: "/menu-bag-circle-icon.svg"
+    },
+    {
+        nameKey: "nav_scoutnet",
+        href: "",
+        icon: "/menu-key-circle-icon.svg"
+    },
 ] as const;
