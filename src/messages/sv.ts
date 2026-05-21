@@ -20,9 +20,9 @@ type MessagesSvType = {
     header_join: string
   };
   whiteImageBox: {
-    title01:string,
-    title02:string,
-    title03:string
+    title1:string,
+    title2:string,
+    title3:string
   }
 };
 
@@ -46,8 +46,8 @@ export const Sv: MessagesSvType = {
     header_join: "Bli Scout"
   },
   whiteImageBox: {
-    title01:"Segling & sjöliv",
-    title02:"Safe Community",
-    title03:"Discovery & Learning"
+    title1:"Segling & sjöliv",
+    title2:"Safe Community",
+    title3:"Discovery & Learning"
   }
 };
