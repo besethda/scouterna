@@ -185,7 +185,7 @@ export const Sv: MessagesSvType = {
       konvojen: "konvojen",
       join: "Gå med i Scouterna",
       "become-a-scout": "Bli Sjöscout",
-      faq: "Frågor & svar",
+      faq: "Frågor & svar"
    }
   }
 };

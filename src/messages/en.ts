@@ -182,7 +182,7 @@ export const En: MessagesEngType = {
       konvojen: "konvojen",
       join: "join",
       "become-a-scout": "become-a-scout",
-      faq: "faq",
+      faq: "faq"
    }
   }
 
