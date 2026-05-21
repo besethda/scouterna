@@ -1,10 +1,10 @@
 "use client"
 import Link from 'next/link'
 import Image from 'next/image'
-import scautLogo from '../../public/scauterna-logo.png'
-import emailIcon from '../../public/email-lcon.png'
-import instagramIcon from '../../public/instagram-icon.png'
-import keyIcon from '../../public/key-icon.png'
+import scautLogo from '../../public/scouterna-logo.svg'
+import emailIcon from '../../public/email-icon.svg'
+import instagramIcon from '../../public/instagram-icon.svg'
+import keyIcon from '../../public/key-icon.svg'
 import bagIcon from '../../public/bag-icon.png'
 import schoolIcon from '../../public/school-icon.png'
 import footerHSSIcon from '../../public/footer-hss-logo.png'
@@ -20,9 +20,11 @@ const Footer = () => {
             <div className='flex flex-col gap-2.5 xl:flex xl:flex-row xl:justify-around xl:w-[90%] xl:mx-auto'>
                 <div className='xl:flex-1'>
                     <Link href="/Home">
-                        <Image src={scautLogo} alt="Scaut-logo" className='w-[130] h-auto xl:h-[28]' />
+                        <Image src={scautLogo} alt="Scaut-logo" className='w-32.5 h-7 xl:h-[28]' />
                     </Link>
-                    <p className="text-body xl:hidden">Hässelby Strands Sjöscoutkår</p>
+                    <div className='pt-3'>
+                        <p className="text-body xl:hidden">Hässelby Strands Sjöscoutkår</p>
+                    </div>
                 </div>
                 <div className='xl:flex xl:flex-col gap-5 hidden xl:flex-1'>
                     <p className="text-accent text-body-bold mb-2 uppercase text-xs xl:text-sm">{messages?.footer?.footer_service}</p>
@@ -39,7 +41,7 @@ const Footer = () => {
                         <p className="text-body-desktop xl:text-lg">Scoutnet</p>
                     </div>
                 </div>
-                <div className='flex flex-col gap-2 xl:gap-7 pb-5 xl:flex-1'>
+                <div className='flex flex-col gap-2 xl:gap-7 pb-2 xl:flex-1'>
                     <p className="text-accent text-body-bold uppercase text-xs xl:text-sm">{messages?.footer?.footer_contact}</p>
                     <a href="mailto:info@hss-scout.org" className='flex gap-2.5 leading-none'>
                         <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
@@ -53,7 +55,7 @@ const Footer = () => {
                 <div className='flex flex-col gap-2 xl:gap-7 xl:flex-1'>
                     <p className="text-accent text-body-bold uppercase  text-xs xl:text-sm">{messages?.footer?.footer_followUs}</p>
                     <a href="https://www.instagram.com/hss_scout/" target='_blank' className='flex gap-2.5 leading-[1.2]'>
-                        <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-7' />
+                        <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-5' />
                         <p className="text-body xl:text-lg">@hss_scout</p>
                     </a>
                 </div>

@@ -17,7 +17,7 @@ const LanguageSelector = () => {
     router.push(currentLang)
   }
   return (
-    <div className="flex items-center -mt-[2px] gap-1" >
+    <div className="flex items-center -mt-0.5 gap-1" >
       <Globe color="#1F74AD" size={24} />
       <select name="choice" id="choice" className="outline-0 text-lg" onChange={changeClick} value={selectValue}>
         <option value="en">EN</option>
