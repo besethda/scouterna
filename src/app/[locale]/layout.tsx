@@ -8,6 +8,7 @@ import { use } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { redirect } from 'next/navigation';
 
 const varela = Varela_Round({
   variable: "--font-varela",
@@ -40,8 +41,10 @@ type Params = {
 };
 
 export default function RootLayout({ children, params }: Readonly<{ children: React.ReactNode; params: Promise<Params> }>) {
+
   const { locale } = use(params)
   const messages = locale === "en" ? En : Sv
+   
   return (
     <html
       lang={locale}
