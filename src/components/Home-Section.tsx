@@ -28,7 +28,7 @@ const HomeSection = () => {
         </div>
       </section>
 
-      <section className="hidden md:flex flex-row p-25 gap-25 bg-(--bg-blue) min-h-110 lg:max-w-440">
+      <section className="hidden md:flex flex-row px-22 py-10 gap-25 bg-(--bg-blue) min-h-110 lg:max-w-430">
         <div className="relative flex-1 w-full min-w-73.5 max-w-100 min-h-60">
           <Image
             src={Placeholder}
