@@ -56,6 +56,7 @@ export type MessagesEngType = {
     header_join: string
   },
   whiteImageBox: {
+    header: string
     title1:string,
     title2:string,
     title3:string
@@ -214,6 +215,7 @@ export const En: MessagesEngType = {
     header_join: "Become a Scout"
   },
   whiteImageBox: {
+    header: "What we offer",
     title1:"Sailing & Sea Life",
     title2:"Safe Community",
     title3:"Discovery & Learning"

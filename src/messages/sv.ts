@@ -121,6 +121,7 @@ type MessagesSvType = {
     hero_description:string
   };
   whiteImageBox: {
+    header:string,
     title1:string,
     title2:string,
     title3:string
@@ -267,6 +268,7 @@ export const Sv: MessagesSvType = {
     text:"Gå med i Scouterna"
   },
   whiteImageBox: {
+    header: "Vad vi erbjuder",
     title1:"Segling & sjöliv",
     title2:"Trygg gemenskap",
     title3:"Friluftsliv"
