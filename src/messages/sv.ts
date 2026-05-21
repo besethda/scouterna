@@ -1,6 +1,7 @@
 //data files depends on what you fill in, blew is example
 
 type MessagesSvType = {
+  path:string;
   home: {
     title: string;
   };
@@ -187,5 +188,6 @@ export const Sv: MessagesSvType = {
       "become-a-scout": "Bli Sjöscout",
       faq: "Frågor & svar"
    }
-  }
+  },
+  path:"/sv"
 };

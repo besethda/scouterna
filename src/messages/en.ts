@@ -1,4 +1,5 @@
 export type MessagesEngType = {
+  path:string;
   home: {
     title: string;
   };
@@ -184,6 +185,7 @@ export const En: MessagesEngType = {
       "become-a-scout": "Become a Scout",
       faq: "FAQ"
    }
-  }
+  },
+  path:"/en"
 
 };
