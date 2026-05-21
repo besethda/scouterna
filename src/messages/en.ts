@@ -1,4 +1,5 @@
 export type MessagesEngType = {
+  path: string,
   home: {
     title: string;
     divisions: string;
@@ -23,14 +24,17 @@ export type MessagesEngType = {
     nav_cabins: string,
     nav_myset: string,
     nav_ruffen: string,
-    nav_members: string
+    nav_members: string,
     nav_information: string,
     nav_lifeJacketPolicy: string,
     nav_aboutUs: string,
     nav_history: string,
     nav_contact: string,
-    nav_board: string,
-    nav_gdpr: string
+    nav_gdpr: string,
+    nav__service: string,
+    nav_school: string,
+    nav_shop: string,
+    nav_scoutnet: string
   };
   footer: {
     footer_service: string;
@@ -50,8 +54,8 @@ export type MessagesEngType = {
     header_join: string
   },
   homePage: {
-    title: string,
-    subtitle: string,
+    title: string, 
+    subtitle: string, 
     subtitle2: string, 
     button: string
   },
@@ -90,6 +94,23 @@ export type MessagesEngType = {
     day: string,
     time: string,
     place: string
+  },
+  goodToKnow: {
+    headline: string,
+    card_title_1: string,
+    card_headline_1: string,
+    card_text_1: string,
+    card_title_2: string,
+    card_headline_2: string,
+    card_text_2: string,
+    card_title_3: string,
+    card_headline_3: string,
+    card_text_3: string,
+    span_3: string,
+    card_title_4: string,
+    card_headline_4: string,
+    card_text_4: string,
+    span_4: string
   }
   hero: {
     hero_title: string,
@@ -99,6 +120,35 @@ export type MessagesEngType = {
   };
   CTABtn: {
     text: string
+  };
+  breadcrumbs: {
+    title: string,
+    path: string,
+    page: {
+      "about-us": string,
+      history: string,
+      contact: string,
+      gdpr: string,
+      members:string,
+      information: string,
+      safety: string,
+      "what-we-do": string,
+      lifestyle: string,
+      boats: string,
+      cabins: string,
+      myset: string,
+      ruffen: string,
+      groups: string,
+      "age-sections": string,
+      sjohumlorna: string,
+      kaparna: string,
+      utmanare: string,
+      konvojen: string,
+      join: string,
+      "become-a-scout": string,
+      faq: string,
+      [key: string]: string
+    }
   }
 };
 
@@ -115,12 +165,12 @@ export const En: MessagesEngType = {
     nav_joinScout: "Join the Scouts",
     nav_becomeScout: "Become a Sea Scout",
     nav_faq: "FAQ",
-    nav_ourUnits: "Our Units",
-    nav_ourUnitStructure: "Our Unit Structure",
-    nav_unit1: "The Sea Bumblebees",
-    nav_unit2: "The Pirates",
-    nav_unit3: "The Convoy",
-    nav_unit4: "Explorers",
+    nav_ourUnits: "Our Groups",
+    nav_ourUnitStructure: "Our Group Structure",
+    nav_unit1: "Sjöhumlorna",
+    nav_unit2: "Kaparna",
+    nav_unit3: "Konvojen",
+    nav_unit4: "Utmanare",
     nav_whatWeDo: "What We Do",
     nav_LifeScout: "Life as a Sea Scout",
     nav_boats: "Our Boats",
@@ -133,8 +183,11 @@ export const En: MessagesEngType = {
     nav_aboutUs: "About HSS",
     nav_history: "Our History",
     nav_contact: "Contact",
-    nav_board: "The Board",
-    nav_gdpr: "GDPR"
+    nav_gdpr: "GDPR",
+    nav__service: "Scout Services",
+    nav_school: "The Scouts' Folk High School",
+    nav_shop: "Scout shop",
+    nav_scoutnet: "Scout net"
   },
   footer: {
     footer_service: "Scout Services",
@@ -183,7 +236,7 @@ export const En: MessagesEngType = {
     day: "Day: ",
     time: "Time: ",
     place: "Place: "
-  }, 
+  },
   homePage: {
     title: "HSS welcomes everyone",
     subtitle: "No matter who you are or your level of experience, there is a place for you here.",
@@ -203,6 +256,52 @@ export const En: MessagesEngType = {
   },
   CTABtn: {
     text: "Join the Sea Scouts"
-  }
+  },
+  breadcrumbs: {
+    title: "Home",
+    path: "/en",
+    page: {
+      "about-us": "About HSS",
+      history: "History",
+      contact: "Contact",
+      gdpr: "GDPR",
+      members:"Members",
+      information: "Member Information",
+      safety: "HSS Life Jacket Policy",
+      "what-we-do": "What We Do",
+      lifestyle: "Lifestyle",
+      boats: "Our Boats",
+      cabins: " Our Scout Cabins",
+      myset:"Myset",
+      ruffen:"Ruffen",
+      groups: "Group Structure",
+      "age-sections": "Age Groups",
+      sjohumlorna: "Sjöhumlorna",
+      kaparna: "Kaparna",
+      utmanare: "Utmanare",
+      konvojen: "Konvojen",
+      join: "Join The Scouts",
+      "become-a-scout": "Become a Scout",
+      faq: "FAQ"
+    }
+  },
+  path: "/en",
 
+  goodToKnow: {
+    headline: "Good to know",
+    card_title_1: "Time",
+    card_headline_1: "One evening a week",
+    card_text_1: "The Scout units meet once a week to do activities, collaborate, and grow together.",
+    card_title_2: "Inclusive",
+    card_headline_2: "Exciting for all ages",
+    card_text_2: "HSS has age-specific units starting from 8 years old and up.",
+    card_title_3: "Values",
+    card_headline_3: "Respect & responsibility",
+    card_text_3: "We are an inclusive association where we take care of one another.",
+    span_3: "Everyone is welcome here, regardless of background and abilities..",
+    card_title_4: "Safety & Security",
+    card_headline_4: "Trained leaders",
+    card_text_4: "Our leaders have extensive experience and training in Scouting and maritime safety.",
+    span_4: "Anyone who wants to become a Scout leader must present a criminal record check."
+  }
 };

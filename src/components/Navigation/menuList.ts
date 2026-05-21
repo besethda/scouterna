@@ -26,22 +26,22 @@ export const menuList = [
             },
             {
                 nameKey: "nav_unit1",
-                href: "/groups/sea-bumblebees",
+                href: "/groups/sjohumlorna",
                 icon: "/menu-fox-illustration.png"
             },
             {
                 nameKey: "nav_unit2",
-                href: "/groups/pirates",
+                href: "/groups/kaparna",
                 icon: "/menu-torch-illustration.png"
             },
             {
                 nameKey: "nav_unit3",
-                href: "/groups/convoy",
+                href: "/groups/konvojen",
                 icon: "/menu-fire-illustration.png"
             },
             {
                 nameKey: "nav_unit4",
-                href: "/groups/challengers",
+                href: "/groups/utmanare",
                 icon: "/menu-megaphone-illustration.png"
             },
         ]
@@ -83,7 +83,7 @@ export const menuList = [
         submenu: [
             {
                 nameKey: "nav_information",
-                href: "/members/scout-life",
+                href: "/members/information",
                 icon: "/menu-scouterna-icon.svg"
             },
             {
@@ -108,15 +108,28 @@ export const menuList = [
                 icon: "/menu-communication-icon.svg"
             },
             {
-                nameKey: "nav_board",
-                href: "/about-us/board",
-                icon: "/menu-members-icon.svg"
-            },
-            {
                 nameKey: "nav_gdpr",
                 href: "/about-us/gdpr",
                 icon: "/menu-info-icon.svg"
             },
         ]
     }
+] as const;
+
+export const mobileMenuList = [
+    {
+        nameKey: "nav_school",
+        href: "",
+        icon: "/menu-book-circle-icon.svg"
+    },
+    {
+        nameKey: "nav_shop",
+        href: "",
+        icon: "/menu-bag-circle-icon.svg"
+    },
+    {
+        nameKey: "nav_scoutnet",
+        href: "",
+        icon: "/menu-key-circle-icon.svg"
+    },
 ] as const;

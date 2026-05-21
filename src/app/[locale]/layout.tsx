@@ -5,10 +5,10 @@ import { TranslateContent } from "@/translateContent/translate";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv"
 import { use } from "react";
-import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { redirect } from 'next/navigation';
 
 const varela = Varela_Round({
   variable: "--font-varela",
@@ -41,8 +41,10 @@ type Params = {
 };
 
 export default function RootLayout({ children, params }: Readonly<{ children: React.ReactNode; params: Promise<Params> }>) {
+
   const { locale } = use(params)
   const messages = locale === "en" ? En : Sv
+   
   return (
     <html
       lang={locale}
@@ -51,7 +53,7 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
       <body className="min-h-full flex flex-col">
         <TranslateContent value={messages}>
           <Header />
-          <Navigation />
+          <Breadcrumbs />
           {children}
           <Footer />
         </TranslateContent >

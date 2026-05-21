@@ -8,6 +8,7 @@ import bgImage01 from "../../../public/images/hero-img01.png"
 import CTABtn from "@/components/CTA-button";
 import HomeSection from "@/components/Home-Section";
 import CardWithImage from "@/components/CardWithImage";
+import GoodToKnow from "@/components/GoodToKnow-home";
 
 
 const Home = () => {
@@ -27,11 +28,12 @@ const Home = () => {
       >
         <CTABtn
           text={messages?.CTABtn.text}
-          onClick={() => { }} />
+          onClick={() => { }} 
+          width="mobile"/>
       </HeroSection>
-      <HomeSection />
+      <CardWithImage headline={messages?.homePageCard?.headline} logo="/heartIcon.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
+      <GoodToKnow />
       <div className="flex flex-col items-center">
-        <CardWithImage headline={messages?.homePageCard?.headline} logo="/heartIcon.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
         <div className="text-h2 md:text-h2-desktop text-primary mt-8 px-5 w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions}</div>
         <div className="px-5 text-body font-albert md:text-body-desktop text-text-black w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions_text}</div>
         <div className="flex flex-col md:flex-row my-3 px-4 w-full md:max-w-200 lg:max-w-400">
