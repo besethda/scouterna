@@ -18,10 +18,10 @@ const HeroSection = ({bgImage, title01,title02, description, children}:HeroSecti
     return (
         <div className="h-175 w-full bg-cover bg-center bg-no-repeat flex flex-col gap-10"
             style={{backgroundImage: `url(${finalBg})`}}>
-                <div className="flex flex-col gap-10 md:text-left md:w-150 md:ml-37.5 md:gap-7 mx-auto text-left">
-                    <div className="flex gap-2 w-87.5 h-9 bg-primary mx-auto rounded-3xl 
+                <div className="flex flex-col gap-10 md:w-150 md:ml-37.5 md:gap-7 mx-auto text-left">
+                    <div className="flex w-64 h-9 bg-primary mx-auto rounded-3xl 
                         border border-solid border-accent mt-16 md:opacity-60 md:ml-0">
-                        <p className="text-body-bold leading-[3] mx-auto text-accent flex gap-2 uppercase">
+                        <p className="text-body-bold items-center leading-[3] ml-4 text-accent flex gap-2 uppercase">
                             <span className="w-2 h-2 rounded-full bg-accent hidden md:block"/>
                             {messages?.hero.hero_title}
                         </p>
