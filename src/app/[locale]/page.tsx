@@ -28,10 +28,10 @@ const Home = () => {
       >
         <CTABtn
           text={messages?.CTABtn.text}
-          onClick={() => { }} />
+          onClick={() => { }} 
+          width="mobile"/>
       </HeroSection>
       <CardWithImage headline={messages?.homePageCard?.headline} logo="/heartIcon.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
-      <HomeSection />
       <GoodToKnow />
       <div className="flex flex-col items-center">
         <div className="text-h2 md:text-h2-desktop text-primary mt-8 px-5 w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions}</div>

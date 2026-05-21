@@ -53,12 +53,6 @@ export type MessagesEngType = {
     header_subtitle: string,
     header_join: string
   },
-  homePage: {
-    title: string,
-    subtitle: string,
-    subtitle2: string,
-    button: string
-  },
   homePageCard: {
     headline: string,
     title: string,
@@ -94,7 +88,7 @@ export type MessagesEngType = {
     day: string,
     time: string,
     place: string
-  }
+  },
   goodToKnow: {
     headline: string,
     card_title_1: string,
@@ -285,6 +279,8 @@ export const En: MessagesEngType = {
       faq: "FAQ"
     }
   },
+  path: "/en",
+
   goodToKnow: {
     headline: "Good to know",
     card_title_1: "Time",
@@ -301,6 +297,5 @@ export const En: MessagesEngType = {
     card_headline_4: "Trained leaders",
     card_text_4: "Our leaders have extensive experience and training in Scouting and maritime safety.",
     span_4: "Anyone who wants to become a Scout leader must present a criminal record check."
-  }, 
-   path: "/en",
+  }
 };

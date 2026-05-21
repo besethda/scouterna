@@ -1,14 +1,14 @@
 interface CTAprops {
-    text?:string,
+    text?: string,
     onClick?:() => void,
-
+    width?: string
 } 
-
-const CTABtn = ({text,onClick}:CTAprops) => {
+//!w-[232px]
+const CTABtn = ({text, onClick, width = "fit"}:CTAprops) => {
     return (
-        <div className="w:232px">
-            <button className="!w-[232px] text-body bg-accent text-primary overflow-hidden rounded-3xl
-                p-3 text-center cursor-pointer transition-colors duration-300 ease-in-out hover:bg-lightYellow" 
+        <div className="">
+            <button className={`py-[18.6] px-[24] ${width === "fit" ? "w-fit" : width === "full" ? "w-full" : "w-full md:w-fit"} font-albert text-body md:text-body-desktop bg-accent text-primary overflow-hidden rounded-4xl
+                px-6 py-4 text-center cursor-pointer transition-colors duration-300 ease-in-out hover:bg-lightYellow`} 
                 onClick={onClick}>
                 {text}
             </button>

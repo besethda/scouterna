@@ -26,7 +26,7 @@ type MessagesSvType = {
     nav_cabins: string,
     nav_myset: string,
     nav_ruffen: string,
-    nav_members: string
+    nav_members: string,
     nav_information: string,
     nav_lifeJacketPolicy: string,
     nav_aboutUs: string,
@@ -289,8 +289,8 @@ export const Sv: MessagesSvType = {
       faq: "Frågor & svar"
    }
   },
-
-
+  path:"/sv",
+  
   goodToKnow: {
     headline: "Bra att veta",
     card_title_1: "Tid",
@@ -307,6 +307,5 @@ export const Sv: MessagesSvType = {
     card_headline_4: "Utbildade ledare",
     card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
     span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
-  },
-    path:"/sv"
+  }
 };
