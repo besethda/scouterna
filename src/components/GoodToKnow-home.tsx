@@ -37,9 +37,9 @@ const GoodToKnow = () => {
   ]
 
   return (
-    <div className="flex flex-col min-w-97.5 min-h-120 gap-4 px-4 py-10 bg-bg-blue md:p-25 md:bg-white ">
+    <div className="flex flex-col md:max-w-200 lg:max-w-440 min-w-97.5 min-h-120 gap-4 px-4 pb-10 bg-bg-blue md:px-25 md:pb-15 pt-10 md:bg-white ">
       <p className="text-[#00355F] font-varela font-normal text-h2 tracking-[-0.5%] md:text-h2-desktop">{messages?.goodToKnow?.headline}</p>
-      <div className="flex flex-col gap-4 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-6 md:py-2.5 md:text-[#FFFFFF]">
+      <div className="flex flex-col gap-4 md:grid lg:max-w-393 md:grid-cols-2 md:grid-rows-2 md:gap-6 md:py-2.5 md:text-[#FFFFFF]">
 
         {cards.map((card, index) => (
           <div key={index} className="flex flex-row gap-4 font-normal md:bg-primary md:rounded-2xl md:p-5 ">

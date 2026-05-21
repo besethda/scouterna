@@ -31,14 +31,14 @@ const Home = () => {
           onClick={() => { }} 
           width="mobile"/>
       </HeroSection>
-      <CardWithImage headline={messages?.homePageCard?.headline} logo="/heart.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
-     <HomeSection />
-     <GoodToKnow />
-     <WhiteImageBox/>
       <div className="flex flex-col items-center">
-        <div className="text-h2 md:text-h2-desktop text-primary mt-8 px-5 w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions}</div>
+        <HomeSection />
+        <CardWithImage headline={messages?.homePageCard?.headline} logo="/heart.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
+        <GoodToKnow />
+        <WhiteImageBox/>
+        <div className="text-h2 md:text-h2-desktop text-primary mt-10 px-5 w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions}</div>
         <div className="px-5 text-body font-albert md:text-body-desktop text-text-black w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions_text}</div>
-        <div className="flex flex-col md:flex-row my-3 px-4 w-full md:max-w-200 lg:max-w-400">
+        <div className="flex flex-col md:flex-row my-3 mb-25  px-4 md:px-10 lg:px-20 w-full md:max-w-200 lg:max-w-430">
           <DivisionsBox division={"sjohumlorna"} boxStyle={"basic"} />
           <DivisionsBox division={"kaparna"} boxStyle={"basic"} />
           <DivisionsBox division={"konvojen"} boxStyle={"basic"} />
