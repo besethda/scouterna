@@ -5,5 +5,4 @@ const Information = () => {
         </div>
     );
 }
-
 export default Information
