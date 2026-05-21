@@ -120,6 +120,12 @@ type MessagesSvType = {
     hero_subtitle02:string,
     hero_description:string
   };
+  whiteImageBox: {
+    header:string,
+    title1:string,
+    title2:string,
+    title3:string
+  };
   CTABtn: {
     text:string
   },
@@ -261,6 +267,12 @@ export const Sv: MessagesSvType = {
   },
   CTABtn: {
     text:"Gå med i Scouterna"
+  },
+  whiteImageBox: {
+    header: "Vad vi erbjuder",
+    title1:"Segling & sjöliv",
+    title2:"Trygg gemenskap",
+    title3:"Friluftsliv"
   },
   breadcrumbs:{
     title:"Startsidan",

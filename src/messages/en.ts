@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export type MessagesEngType = {
   path: string,
   home: {
@@ -53,6 +55,12 @@ export type MessagesEngType = {
     header_subtitle: string,
     header_join: string
   },
+  whiteImageBox: {
+    header: string
+    title1:string,
+    title2:string,
+    title3:string
+  }
   homePage: {
     title: string, 
     subtitle: string, 
@@ -205,6 +213,12 @@ export const En: MessagesEngType = {
     header_title: "Hässelby Strand",
     header_subtitle: "Sea Scouts",
     header_join: "Become a Scout"
+  },
+  whiteImageBox: {
+    header: "What we offer",
+    title1:"Sailing & Sea Life",
+    title2:"Safe Community",
+    title3:"Discovery & Learning"
   },
   division: {
     sjohumlorna_title: "Sjöhumlorna",

@@ -1,8 +1,8 @@
 'use client'
 import DivisionsBox from "@/components/DivisionsBox";
+import WhiteImageBox from "@/components/WhiteImageBox";
 import useMessages from "@/hook/useMessages";
 import Instagram from "@/components/Instagram";
-
 import HeroSection from "@/components/Hero-section";
 import bgImage01 from "../../../public/images/hero-img01.png"
 import CTABtn from "@/components/CTA-button";
@@ -34,6 +34,7 @@ const Home = () => {
       <CardWithImage headline={messages?.homePageCard?.headline} logo="/heart.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
      <HomeSection />
      <GoodToKnow />
+     <WhiteImageBox/>
       <div className="flex flex-col items-center">
         <div className="text-h2 md:text-h2-desktop text-primary mt-8 px-5 w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions}</div>
         <div className="px-5 text-body font-albert md:text-body-desktop text-text-black w-full md:max-w-200 lg:max-w-400">{messages?.home.divisions_text}</div>
