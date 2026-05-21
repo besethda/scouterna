@@ -10,7 +10,7 @@ const Home = () => {
 
 
   return (
-    <div className="w-full items-center flex flex-col gap-[24] md:flex-row md:justify-center">
+    <div>
       <WhiteImageBox/>
     </div>
   );
