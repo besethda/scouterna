@@ -60,7 +60,37 @@ export type MessagesEngType = {
   };
   CTABtn: {
     text:string
+  };
+  breadcrumbs:{
+    title:string,
+    path: string,
+    page: {
+     "about-us": string,
+      history: string,
+      contact: string,
+      pdpr: string,
+      members:string,
+      "scout-life": string,
+      safety: string,
+      "what-we-do": string,
+      lifestyle: string,
+      boats: string,
+      cabins: string,
+      myset:string,
+      ruffen:string,
+      groups: string,
+      "age-sections": string,
+      sjohumlorna: string,
+      kaparna: string,
+      utmanare: string,
+      konvojen: string,
+      join: string,
+      "become-a-scout": string,
+      faq: string,
+      [key: string]: string
+   }
   }
+
 
 };
 
@@ -126,6 +156,34 @@ export const En: MessagesEngType = {
   },
   CTABtn: {
     text:"Join the Sea Scouts"
+  }, 
+   breadcrumbs:{
+    title:"StartSide",
+    path:  "/en",
+    page: {
+      "about-us": "About HSS",
+      history: "history",
+      contact: "contact",
+      pdpr: "gdpr",
+      members:"members",
+      "scout-life": "scout-life",
+      safety: "safety",
+      "what-we-do": "what-to-do",
+      lifestyle: "lifestyle",
+      boats: "boats",
+      cabins: "cabins",
+      myset:"myset",
+      ruffen:"ruffen",
+      groups: "groups",
+      "age-sections": "age-sections",
+      sjohumlorna: "sjöhumlorna",
+      kaparna: "kaparna",
+      utmanare: "utmanare",
+      konvojen: "konvojen",
+      join: "join",
+      "become-a-scout": "become-a-scout",
+      faq: "faq",
+   }
   }
 
 };

@@ -8,7 +8,7 @@ import { use } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const varela = Varela_Round({
   variable: "--font-varela",
@@ -52,6 +52,7 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
         <TranslateContent value={messages}>
           <Header />
           <Navigation />
+          <Breadcrumbs />
           {children}
           <Footer />
         </TranslateContent >
