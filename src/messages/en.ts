@@ -1,5 +1,5 @@
 export type MessagesEngType = {
-  path: string;
+  path: string,
   home: {
     title: string;
     divisions: string;
@@ -24,7 +24,7 @@ export type MessagesEngType = {
     nav_cabins: string,
     nav_myset: string,
     nav_ruffen: string,
-    nav_members: string
+    nav_members: string,
     nav_information: string,
     nav_lifeJacketPolicy: string,
     nav_aboutUs: string,
@@ -95,6 +95,23 @@ export type MessagesEngType = {
     time: string,
     place: string
   }
+  goodToKnow: {
+    headline: string,
+    card_title_1: string,
+    card_headline_1: string,
+    card_text_1: string,
+    card_title_2: string,
+    card_headline_2: string,
+    card_text_2: string,
+    card_title_3: string,
+    card_headline_3: string,
+    card_text_3: string,
+    span_3: string,
+    card_title_4: string,
+    card_headline_4: string,
+    card_text_4: string,
+    span_4: string
+  }
   hero: {
     hero_title: string,
     hero_subtitle01: string,
@@ -133,8 +150,6 @@ export type MessagesEngType = {
       [key: string]: string
     }
   }
-
-
 };
 
 export const En: MessagesEngType = {
@@ -270,6 +285,22 @@ export const En: MessagesEngType = {
       faq: "FAQ"
     }
   },
-  path: "/en"
-
+  goodToKnow: {
+    headline: "Good to know",
+    card_title_1: "Time",
+    card_headline_1: "One evening a week",
+    card_text_1: "The Scout units meet once a week to do activities, collaborate, and grow together.",
+    card_title_2: "Inclusive",
+    card_headline_2: "Exciting for all ages",
+    card_text_2: "HSS has age-specific units starting from 8 years old and up.",
+    card_title_3: "Values",
+    card_headline_3: "Respect & responsibility",
+    card_text_3: "We are an inclusive association where we take care of one another.",
+    span_3: "Everyone is welcome here, regardless of background and abilities..",
+    card_title_4: "Safety & Security",
+    card_headline_4: "Trained leaders",
+    card_text_4: "Our leaders have extensive experience and training in Scouting and maritime safety.",
+    span_4: "Anyone who wants to become a Scout leader must present a criminal record check."
+  }, 
+   path: "/en",
 };
