@@ -4,5 +4,5 @@ const Information = () => {
       <div>
       </div>
   );
-
+}
 export default Information
