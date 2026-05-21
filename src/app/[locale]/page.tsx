@@ -31,7 +31,7 @@ const Home = () => {
           onClick={() => { }} 
           width="mobile"/>
       </HeroSection>
-      <CardWithImage headline={messages?.homePageCard?.headline} logo="/heartIcon.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
+      <CardWithImage headline={messages?.homePageCard?.headline} logo="/heart.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
      <HomeSection />
      <GoodToKnow />
      <WhiteImageBox/>
