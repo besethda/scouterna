@@ -10,7 +10,7 @@ const WhiteImageBox = () => {
     const messages = useMessages()
     
     return (
-        <div className="w-full md:bg-bg-blue flex flex-col items-center pt-12 pb-8">
+        <div className="w-full md:bg-bg-blue flex flex-col items-center pt-12 pb-2">
             <div className="text-h2 pl-4 pb-3 w-full md:max-w-200 lg:max-w-400 md:text-h2-desktop text-primary font-varela mx-[1.5%]">{messages?.instagram.head}</div>
             <div className="w-full items-center flex px-4 py-4 flex-col gap-[24] md:flex-row md:justify-center">
                 {iconList.map((icon, index)=> {
