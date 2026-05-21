@@ -1,6 +1,7 @@
 //data files depends on what you fill in, blew is example
 
 type MessagesSvType = {
+  path:string;
   home: {
     title: string;
     divisions: string;
@@ -95,7 +96,37 @@ type MessagesSvType = {
   };
   CTABtn: {
     text:string
+  },
+   breadcrumbs:{
+    title:string,
+    path: string,
+    page: {
+      "about-us": string,
+      history: string,
+      contact: string,
+      pdpr: string,
+      members:string,
+      "scout-life": string,
+      safety: string,
+      "what-we-do": string,
+      lifestyle: string,
+      boats: string,
+      cabins: string,
+      myset:string,
+      ruffen:string,
+      groups: string,
+      "age-sections": string,
+      sjohumlorna: string,
+      kaparna: string,
+      utmanare: string,
+      konvojen: string,
+      join: string,
+      "become-a-scout": string,
+      faq: string,
+      [key: string]: string
+   }
   }
+
 };
 
 export const Sv: MessagesSvType = {
@@ -194,5 +225,34 @@ export const Sv: MessagesSvType = {
   },
   CTABtn: {
     text:"Gå med i Scouterna"
-  }
+  },
+  breadcrumbs:{
+    title:"Startsidan",
+    path: "/sv",
+    page: {
+      "about-us": "Om HSS",
+      history: "Vår historia",
+      contact: "Kontakt",
+      pdpr: "GDPR",
+      members:"För medlemmar",
+      "scout-life": "Information för medlemmar",
+      safety: "HSS flytvästpolicy",
+      "what-we-do": "Vad vi gör",
+      lifestyle: "Livet som Sjöscout",
+      boats: "Våra båtar",
+      cabins: "Våra Scoutstugor",
+      myset:"Myset",
+      ruffen:"Ruffen",
+      groups: "Våra avdelningar",
+      "age-sections": "Åldersanpassade avdelningar",
+      sjohumlorna: "Sjöhumlorna",
+      kaparna: "Kaparna",
+      utmanare: "Utmanare",
+      konvojen: "Konvojen",
+      join: "Gå med i Scouterna",
+      "become-a-scout": "Bli Sjöscout",
+      faq: "Frågor & svar"
+   }
+  },
+  path:"/sv"
 };
