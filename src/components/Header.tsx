@@ -14,7 +14,10 @@ const Header = () => {
 
   const messages = useMessages()
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  console.log(isOpen)
+
+  const handleClose = () => {
+    setIsOpen(false)
+  }
 
   const handleToggle = () => {
     setIsOpen(!isOpen)
@@ -29,7 +32,7 @@ const Header = () => {
         <Link href="/" className="hidden md:flex items-center">
           <div className="flex gap-2 items-center">
             <Image src={HSSlogo} alt='HSS-LOGO' className=" w-25 h-23.75" />
-            <div className=" p-2.5 items-center text-xl/6 ">
+            <div className=" p-2.5 items-center text-xl/6 tracking-[1px]">
               <div className="font-normal font-fraunces">{messages?.header?.header_title}</div>
               <div className="font-bold font-fraunces">{messages?.header?.header_subtitle}</div>
             </div>
@@ -38,11 +41,11 @@ const Header = () => {
         <div className='hidden lg:flex gap-6 font-semibold text-link-desktop tracking-[0.03em]'>
           <Link href="" className="flex gap-2.5 items-center">
             <Image src={Hand} alt='HandLogo' className='h-8.25 w-auto' />
-            <p className="font-albert tracking-[3%]">{messages?.header?.header_join}</p>
+            <p className="font-albert  tracking-[3%] leading-[100%] text-text-black ">{messages?.header?.header_join}</p>
           </Link>
           <Link href="" className="flex gap-2.5 items-center">
             <Image src={Key} alt='key' className='h-5.75 w-auto' />
-            <p className="font-albert tracking-[3%]">ScoutNet</p>
+            <p className="font-albert tracking-[3%] leading-[100%] text-text-black  ">ScoutNet</p>
           </Link>
           <LanguageSelector />
         </div>
@@ -53,10 +56,10 @@ const Header = () => {
       </header>
       {isOpen && (<div className="fixed inset-0 z-10 bg-black/50 lg:hidden"></div>)}
       <div className={`fixed left-0 h-full w-full transition-all duration-300 ease-in-out z-30 ${!isOpen ? " -translate-y-full " : ""}`}>
-        <Navigation />
+        <Navigation onClose={handleClose} />
       </div >
       <div className="hidden lg:block lg:z-60">
-        <Navigation />
+        <Navigation onClose={handleClose} />
       </div>
     </>
   )

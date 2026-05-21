@@ -3,7 +3,7 @@ interface CTAprops {
     onClick?:() => void,
     width?: string
 } 
-//!w-[232px]
+
 const CTABtn = ({text, onClick, width = "fit"}:CTAprops) => {
     return (
         <div className="">

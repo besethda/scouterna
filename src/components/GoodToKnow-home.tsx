@@ -48,7 +48,7 @@ const GoodToKnow = () => {
             </div>
 
             <div className="flex flex-col">
-              <p className="hidden md:block font-public font-bold uppercase text-[14px] tracking-[1.5px] text-[#1F74AD]">
+              <p className="hidden md:block font-public font-bold uppercase text-[14px] tracking-[1.5px] text-text-blue">
                 {card.title}
               </p>
               <p className="text-[#003061] font-varela text-h3 tracking-[-0.5%] gap-1 md:text-h3-desktop md:text-[#FFFFFF] mb-2">
