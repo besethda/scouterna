@@ -145,7 +145,7 @@ export const En: MessagesEngType = {
     nav_becomeScout: "Become a Sea Scout",
     nav_faq: "FAQ",
     nav_ourUnits: "Our Groups",
-    nav_ourUnitStructure: "Our Unit Structure",
+    nav_ourUnitStructure: "Our Group Structure",
     nav_unit1: "Sjöhumlorna",
     nav_unit2: "Kaparna",
     nav_unit3: "Konvojen",
