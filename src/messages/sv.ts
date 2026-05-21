@@ -231,8 +231,8 @@ export const Sv: MessagesSvType = {
   },
   whiteImageBox: {
     title1:"Segling & sjöliv",
-    title2:"Safe Community",
-    title3:"Discovery & Learning"
+    title2:"Trygg gemenskap",
+    title3:"Friluftsliv"
   },
   breadcrumbs:{
     title:"Startsidan",
