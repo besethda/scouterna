@@ -29,14 +29,14 @@ const HomeSection = () => {
       </section>
 
       <section className="hidden md:flex flex-row px-22 py-10 gap-25 bg-(--bg-blue) min-h-110 lg:max-w-430">
-        <div className="relative flex-1 w-full min-w-73.5 max-w-100 min-h-60">
+        <div className="relative aspect-video max-w-100 max-h-60">
           <Image
             src={Placeholder}
             alt="image"
             fill
-            className="object-cover rounded-2xl" />
+            className="rounded-2xl object-cover" />
         </div>
-        <div className="flex flex-col flex-1 gap-6">
+        <div className="flex flex-col flex-1 gap-4">
           <div className="text-h2-desktop font-normal font-varela text-primary tracking-[-0.5%]">{messages?.homePage?.title}</div>
           <div className=" font-normal font-albert text-[18px] tracking-[3%] text-black">{messages?.homePage?.subtitle2}</div>
           <CTABtn text={messages?.homePage?.button} />
