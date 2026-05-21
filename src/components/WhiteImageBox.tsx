@@ -7,11 +7,9 @@ interface WhiteImageBoxProps {
     desktopIcon : any;
 } 
 
-// md:bg-white md:text-primary
-
 const WhiteImageBox = ({icon, title, image,desktopIcon}:WhiteImageBoxProps) => {
     return (
-        <div className="w-[358] h-[328]  bg-primary text-white rounded-2xl md:w-[337] md:h-[368]">
+        <div className="w-[358] h-[328]  bg-primary text-white md:bg-white md:text-primary rounded-2xl md:w-[337] md:h-[368]">
             <div className="flex pl-4 py-4 gap-2.5 leading-[0.8] md:leading-none md:pl-6 md:py-6 md:gap-4">
                 <div  className="w-6 h-6 md:flex hidden relative">
                     <Image src={desktopIcon} alt={title || "desktop icon"} fill className="object-contain" />
