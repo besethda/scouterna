@@ -30,7 +30,6 @@ type MessagesSvType = {
     nav_aboutUs: string,
     nav_history: string,
     nav_contact: string,
-    nav_board: string,
     nav_gdpr: string
   };
   footer: {
@@ -72,9 +71,9 @@ type MessagesSvType = {
       "about-us": string,
       history: string,
       contact: string,
-      pdpr: string,
+      gdpr: string,
       members:string,
-      "scout-life": string,
+      information: string,
       safety: string,
       "what-we-do": string,
       lifestyle: string,
@@ -126,7 +125,6 @@ export const Sv: MessagesSvType = {
     nav_aboutUs: "Om HSS",
     nav_history: "Vår historia",
     nav_contact: "Kontakt",
-    nav_board: "Styrelsen",
     nav_gdpr: "GDPR"
   },
   footer: {
@@ -168,9 +166,9 @@ export const Sv: MessagesSvType = {
       "about-us": "Om HSS",
       history: "Vår historia",
       contact: "Kontakt",
-      pdpr: "GDPR",
+      gdpr: "GDPR",
       members:"För medlemmar",
-      "scout-life": "Information för medlemmar",
+      information: "Information för medlemmar",
       safety: "HSS flytvästpolicy",
       "what-we-do": "Vad vi gör",
       lifestyle: "Livet som Sjöscout",
