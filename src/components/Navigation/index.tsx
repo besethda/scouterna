@@ -46,12 +46,14 @@ const Navigation = () => {
                         {openId === menu.id && (
                             <div onClick={() => handleToggle(menu.id)} className="px-2 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0  lg:top-54.75 lg:border-none">
                                 {menu.submenu && menu.submenu.map((sub, index) => (
-                                    <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
-                                        <Image src={sub.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
-                                        <div className="px-4 flex items-center">
-                                            <Link href={messages?.path + sub.href} className=""> {messages?.navigation?.[sub.nameKey]} </Link>
+                                    <Link href={messages?.path + sub.href} className="">
+                                        <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
+                                            <Image src={sub.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
+                                            <div className="px-4 flex items-center">
+                                                {messages?.navigation?.[sub.nameKey]}
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 ))}
                             </div>
                         )}
@@ -60,12 +62,12 @@ const Navigation = () => {
                 <div className="rounded-b-lg  p-4 flex flex-col lg:h-18.5 lg:items-center lg:hidden">
                     <p className="text-black font-bold uppercase text-xs pb-3">{messages?.navigation?.nav__service}</p>
                     {mobileMenuList && mobileMenuList.map((menu, index) => (
-                        <div key={index} className="py-2 flex lg:h-18.5  lg:items-center ">
+                        <Link key={index} href={menu.href} className="py-2 flex lg:h-18.5  w-full lg:items-center ">
                             <Image src={menu.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
                             <div className="px-4 flex items-center">
-                                <Link href={menu.href} className=""> {messages?.navigation?.[menu.nameKey]} </Link>
+                                {messages?.navigation?.[menu.nameKey]}
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
