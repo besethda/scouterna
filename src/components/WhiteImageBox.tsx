@@ -13,7 +13,7 @@ const WhiteImageBox = () => {
         <div className="w-full items-center flex px-4 py-4 flex-col gap-[24] md:flex-row md:justify-center md:bg-bg-blue md:border-gray-400">
             {iconList.map((icon, index)=> {
                 return (
-                    <div key={index} className="w-90 md:w-70 lg:w-100 md:max-w-[30%] my-2 px-4 aspect-6/5 md:aspect-12/11  md:mx-4 flex flex-col items-center bg-primary text-white md:bg-white md:text-primary rounded-2xl">
+                    <div key={index} className="w-90 md:w-70 lg:w-100 md:max-w-[30%] my-2 px-4 aspect-5/4 md:aspect-12/11  md:mx-4 flex flex-col items-center bg-primary text-white md:bg-white md:text-primary rounded-2xl">
                         <div className="flex w-full py-4 leading-[0.8] md:leading-none md:py-0 md:pt-6">
                             <div  className="w-6 h-6 md:flex hidden relative">
                                 <Image src={`/${icon.icon}Icon.png`} alt={`${icon}`} fill className="object-contain" />
