@@ -54,7 +54,7 @@ const GoodToKnow = () => {
               <p className="text-[#003061] font-varela text-h3 tracking-[-0.5%] gap-1 md:text-h3-desktop md:text-[#FFFFFF] mb-2">
                 {card.headline}
               </p>
-              <p className="gap-2.5 text-body font-albert tracking-[3%] md:text-[18px] pr-12">
+              <p className="gap-2.5 text-body font-albert tracking-[3%] md:text-[18px] pr-12 sm:text-text-black md:text-text-white">
                 {card.text}
               </p>
             </div>
