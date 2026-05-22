@@ -36,7 +36,7 @@ const Home = () => {
         <HomeSection />
         <GoodToKnow />
         <WhiteImageBox/>
-        <div className="text-h2 md:text-h2-desktop text-primary mt-15 lg:px-22 px-5 w-full md:max-w-200 lg:max-w-430">{messages?.home.divisions}</div>
+        <div className="text-h2 font-varela md:text-h2-desktop text-primary mt-15 lg:px-22 px-5 w-full md:max-w-200 lg:max-w-430">{messages?.home.divisions}</div>
         <div className="px-5 text-body font-albert md:text-body-desktop lg:px-22 text-text-black w-full md:max-w-200 lg:max-w-430">{messages?.home.divisions_text}</div>
         <div className="flex flex-col md:flex-row my-3 md:mb-25 mb-10 px-4 md:px-10 lg:px-20 w-full md:max-w-200 lg:max-w-430">
           <DivisionsBox division={"sjohumlorna"} boxStyle={"basic"} />
