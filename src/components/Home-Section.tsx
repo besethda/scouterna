@@ -29,7 +29,7 @@ const HomeSection = () => {
       </section>
 
       <section className="hidden md:flex flex-row px-22 py-10 gap-25 bg-(--bg-blue) md:pb-25 lg:max-w-430">
-        <div className="relative aspect-video max-w-100 max-h-60">
+        <div className="relative aspect-video max-w-100 h-60">
           <Image
             src={Placeholder}
             alt="image"
