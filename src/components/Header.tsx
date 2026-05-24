@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from 'next/link'
 import HSSlogo from '../../public/HSSHeader.png'
 import Image from 'next/image'
@@ -23,9 +23,34 @@ const Header = () => {
     setIsOpen(!isOpen)
   }
 
+  useEffect(() => {
+    const responsible = () => {
+      const isDesktop = window.innerWidth >= 1024
+      if (isDesktop) {
+        document.body.classList.remove("overflow-hidden");
+        return
+      }
+
+      if (isOpen) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden")
+      }
+    }
+
+    responsible();
+
+    const changedSize = window.addEventListener("resize", responsible);
+
+    return () => {
+      document.body.classList.remove("overflow-hidden"),
+        changedSize
+    }
+  }, [isOpen])
+
   return (
     <>
-      <header className="flex justify-between items-center py-2.5 px-7 bg-white border-b border-text-gray z-50 lg:border-hidden">
+      <header className="flex justify-between items-center py-2.5 px-7 bg-white border-b border-text-gray z-50 sticky top-0 lg:border-hidden lg:static">
         <Link href="/" className="md:hidden">
           <Image src={HSSlogo} alt='HSS-LOGO' className="w-11 h-10.5" />
         </Link>
@@ -58,7 +83,7 @@ const Header = () => {
       <div className={`fixed left-0 h-full w-full transition-all duration-300 ease-in-out z-30 ${!isOpen ? " -translate-y-full " : ""}`}>
         <Navigation onClose={handleClose} />
       </div >
-      <div className="hidden lg:block lg:z-60">
+      <div className="hidden lg:block lg:z-60 lg:sticky lg:top-0">
         <Navigation onClose={handleClose} />
       </div>
     </>

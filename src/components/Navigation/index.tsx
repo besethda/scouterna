@@ -48,9 +48,9 @@ const Navigation = ({ onClose }: NavigationProps) => {
                             }
                         </div>
                         {openId === menu.id && (
-                            <div onClick={() => { handleToggle(menu.id); onClose() }} className="px-2 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0  lg:top-[13.55rem] lg:border-none">
+                            <div onClick={() => { handleToggle(menu.id); onClose() }} className="px-2 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0 lg:top-25.5 lg:border-none lg:shadow-md lg:rounded-b-2xl">
                                 {menu.submenu && menu.submenu.map((sub, index) => (
-                                    <Link href={messages?.path + sub.href} className="">
+                                    <Link href={messages?.path + sub.href} key={index} className="">
                                         <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
                                             <Image src={sub.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
                                             <div className="px-4 flex items-center">
