@@ -1,5 +1,6 @@
 'use client'
 import { Globe } from "@deemlol/next-icons"
+import { useState } from "react"
 import { usePathname, useRouter } from "next/navigation"
 
 
@@ -7,6 +8,13 @@ import { usePathname, useRouter } from "next/navigation"
 type handleClickType = (event: React.ChangeEvent<HTMLSelectElement>) => void
 
 const LanguageSelector = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleDropdpwn = () => {
+    setIsOpen(!isOpen)
+  }
+
+
   const pathname = usePathname()
   const router = useRouter()
   const selectValue = pathname.slice(1, 3)

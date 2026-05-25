@@ -20,7 +20,7 @@ const Home = async ({params}: {params: Promise<{locale:string}>}) =>{
   return (
     <div className="">
       <HeroSection
-        bgImage={bgImage01}
+        bgImages={{mobile: "bg-[url('/images/IMG_3420.JPEG')]", desktop:"md:bg-[url('/images/IMG_3752.JPEG')]"}}
         title01={messages?.hero.hero_subtitle01}
         title02={messages?.hero.hero_subtitle02}
         description={messages?.hero.hero_description}
