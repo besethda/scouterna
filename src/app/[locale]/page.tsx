@@ -4,19 +4,18 @@ import WhiteImageBox from "@/components/WhiteImageBox";
 import useMessages from "@/hook/useMessages";
 import Instagram from "@/components/Instagram/Instagram";
 import HeroSection from "@/components/Hero-section";
-import bgImage01 from "../../../public/images/hero-img01.png"
+import bgImage01 from "../../public/images/hero-img01.png"
 import CTABtn from "@/components/CTA-button";
 import HomeSection from "@/components/Home-Section";
 import CardWithImage from "@/components/CardWithImage";
 import GoodToKnow from "@/components/GoodToKnow-home";
+import { En } from "@/messages/en";
+import { Sv } from "@/messages/sv";
 
 
-const Home = () => {
-  const messages = useMessages()
-
-  if (!messages) {
-    return null
-  }
+const Home = async ({params}: {params: Promise<{locale:string}>}) =>{
+  const { locale } = await params
+  const messages = locale === "sv" ? Sv : En
 
   return (
     <div className="">
