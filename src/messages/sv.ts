@@ -158,11 +158,6 @@ type MessagesSvType = {
       [key: string]: string
     }
   };
-  fragorSvar: {
-    question: string,
-    answer: string
-  }
-
 };
 
 export const Sv: MessagesSvType = {
@@ -325,9 +320,4 @@ export const Sv: MessagesSvType = {
     card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
     span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
   },
-  fragorSvar: {
-    question: "Behöver vi köpa en <br class='md:hidden' /> Scoutuniform på en gång?",
-    answer:" SVAR"
-  }
-
 };

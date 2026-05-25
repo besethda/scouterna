@@ -158,10 +158,6 @@ export type MessagesEngType = {
       [key: string]: string
     }
   };
-    fragorSvar: {
-    question: string,
-    answer: string
-  }
 };
 
 export const En: MessagesEngType = {
@@ -322,8 +318,4 @@ export const En: MessagesEngType = {
     card_text_4: "Our leaders have extensive experience and training in Scouting and maritime safety.",
     span_4: "Anyone who wants to become a Scout leader must present a criminal record check."
   },
-    fragorSvar: {
-    question: "question",
-    answer: "answer"
-  }
 };
