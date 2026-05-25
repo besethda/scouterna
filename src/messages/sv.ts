@@ -166,6 +166,26 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
+  }, 
+  groupsCard: {
+    headline: string,
+    title: string,
+    text: string,
+  },
+  boatsCard: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  cabinsCard: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  mysetCard: {
+    headline: string,
+    title: string,
+    text: string,
   }
 
 };
@@ -338,5 +358,25 @@ export const Sv: MessagesSvType = {
     headline: "Bli Scout",
     title: "Bli en del av HSS",
     text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
+  }, 
+  groupsCard: {
+    headline: "Avdelningar",
+    title: "Åldersanpassade avdelningar",
+    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem. Barn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder. ",
+  },
+  boatsCard: {
+    headline: "Scoutliv",
+    title: "Våra båtar",
+    text: "Våra båtar är en viktig del av scoutlivet. Här lär vi oss samarbeta, utveckla sjömanskap och uppleva äventyr tillsammans på vattnet.",
+  }, 
+  cabinsCard: {
+    headline: "Scoutliv",
+    title: "Våra Scoutstugor",
+    text: "Livet som sjöscout är fyllt av äventyr, gemenskap och frihet. Du möter havet och naturen tillsammans med andra och skapar minnen för livet. Här börjar äventyret.",
+  }, 
+  mysetCard: {
+    headline: "Scoutstugor",
+    title: "Myset",
+    text: "I skogen mellan Lövsta och Gåseborg ligger Myset – vår stora och fina scoutstuga. Här samlas kåren för en mängd olika aktiviteter, inte minst hajker som bjuder på både äventyr och gemenskap.",
   }
 };
