@@ -9,6 +9,7 @@ import CTABtn from "@/components/CTA-button";
 import HomeSection from "@/components/Home-Section";
 import CardWithImage from "@/components/CardWithImage";
 import GoodToKnow from "@/components/GoodToKnow-home";
+import FragorSvar from "@/components/Fragor-svar";
 
 
 const Home = () => {
@@ -31,6 +32,10 @@ const Home = () => {
           onClick={() => { }} 
           width="mobile"/>
       </HeroSection>
+      <FragorSvar 
+      question={messages?.fragorSvar?.question}
+      answer={messages?.fragorSvar?.answer}
+      />
       <div className="flex flex-col items-center">
         <CardWithImage headline={messages?.homePageCard?.headline} logo="/heart.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
         <HomeSection />

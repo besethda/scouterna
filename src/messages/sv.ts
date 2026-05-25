@@ -129,7 +129,7 @@ type MessagesSvType = {
   CTABtn: {
     text:string
   },
-   breadcrumbs:{
+  breadcrumbs:{
     title:string,
     path: string,
     page: {
@@ -156,7 +156,11 @@ type MessagesSvType = {
       "become-a-scout": string,
       faq: string,
       [key: string]: string
-   }
+    }
+  };
+  fragorSvar: {
+    question: string,
+    answer: string
   }
 
 };
@@ -320,5 +324,10 @@ export const Sv: MessagesSvType = {
     card_headline_4: "Utbildade ledare",
     card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
     span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
+  },
+  fragorSvar: {
+    question: "Behöver vi köpa en <br class='md:hidden' /> Scoutuniform på en gång?",
+    answer:" SVAR"
   }
+
 };
