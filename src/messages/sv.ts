@@ -157,6 +157,10 @@ type MessagesSvType = {
       faq: string,
       [key: string]: string
    }
+  }, 
+  faqCard: {
+    title: string, 
+    text: string
   }
 
 };
@@ -320,5 +324,9 @@ export const Sv: MessagesSvType = {
     card_headline_4: "Utbildade ledare",
     card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
     span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
+  }, 
+  faqCard: {
+    title: "Frågor & svar", 
+    text: "Här har vi samlat vanliga frågor vi får från blivande och nuvarande medlemmar i föreningen."
   }
 };
