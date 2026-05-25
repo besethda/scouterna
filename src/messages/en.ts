@@ -57,14 +57,14 @@ export type MessagesEngType = {
   },
   whiteImageBox: {
     header: string
-    title1:string,
-    title2:string,
-    title3:string
+    title1: string,
+    title2: string,
+    title3: string
   }
   homePage: {
-    title: string, 
-    subtitle: string, 
-    subtitle2: string, 
+    title: string,
+    subtitle: string,
+    subtitle2: string,
     button: string
   },
   homePageCard: {
@@ -137,7 +137,7 @@ export type MessagesEngType = {
       history: string,
       contact: string,
       gdpr: string,
-      members:string,
+      members: string,
       information: string,
       safety: string,
       "what-we-do": string,
@@ -157,6 +157,11 @@ export type MessagesEngType = {
       faq: string,
       [key: string]: string
     }
+  },
+  joinCard: {
+    headline: string,
+    title: string,
+    text: string
   }
 };
 
@@ -216,9 +221,9 @@ export const En: MessagesEngType = {
   },
   whiteImageBox: {
     header: "What we offer",
-    title1:"Sailing & Sea Life",
-    title2:"Safe Community",
-    title3:"Discovery & Learning"
+    title1: "Sailing & Sea Life",
+    title2: "Safe Community",
+    title3: "Discovery & Learning"
   },
   division: {
     sjohumlorna_title: "Sjöhumlorna",
@@ -279,15 +284,15 @@ export const En: MessagesEngType = {
       history: "History",
       contact: "Contact",
       gdpr: "GDPR",
-      members:"Members",
+      members: "Members",
       information: "Member Information",
       safety: "HSS Life Jacket Policy",
       "what-we-do": "What We Do",
       lifestyle: "Lifestyle",
       boats: "Our Boats",
       cabins: " Our Scout Cabins",
-      myset:"Myset",
-      ruffen:"Ruffen",
+      myset: "Myset",
+      ruffen: "Ruffen",
       groups: "Group Structure",
       "age-sections": "Age Groups",
       sjohumlorna: "Sjöhumlorna",
@@ -317,5 +322,10 @@ export const En: MessagesEngType = {
     card_headline_4: "Trained leaders",
     card_text_4: "Our leaders have extensive experience and training in Scouting and maritime safety.",
     span_4: "Anyone who wants to become a Scout leader must present a criminal record check."
+  },
+  joinCard: {
+    headline: "Become a scout",
+    title: "Become a part of HSS",
+    text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
   }
 };
