@@ -11,7 +11,7 @@ const FragorSvar = ({question, answer}:FragorSvarProps) => {
     const [isOpen, setIseOpen] = useState<boolean>(false)
 
     return (
-        <div className="text-text-white w-75 md:w-125 text-body md:text-body-desktop tracking-[0.03em]">
+        <div className="text-text-white w-full max-w-75 md:max-w-125 text-body md:text-body-desktop tracking-[0.03em] mx-auto">
                 <button onClick={() => setIseOpen(!isOpen)} className={`text-left flex flex-row gap-7 md:gap-8
                     w-full bg-primary px-4 py-3.25 md:py-5.25 transition-all ${isOpen ? "rounded-t-lg" : "rounded-lg"}`}>
                     <span dangerouslySetInnerHTML={{ __html: question }} />
