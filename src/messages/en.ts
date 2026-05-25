@@ -158,6 +158,10 @@ export type MessagesEngType = {
       [key: string]: string
     }
   },
+  faqCard: {
+    title: string,
+    text: string
+  },
   joinCard: {
     headline: string,
     title: string,
@@ -322,6 +326,10 @@ export const En: MessagesEngType = {
     card_headline_4: "Trained leaders",
     card_text_4: "Our leaders have extensive experience and training in Scouting and maritime safety.",
     span_4: "Anyone who wants to become a Scout leader must present a criminal record check."
+  },
+  faqCard: {
+    title: "Frequently asked questions",
+    text: "Here, we have gathered frequently asked questions from both future and current members of the association."
   },
   joinCard: {
     headline: "Become a scout",
