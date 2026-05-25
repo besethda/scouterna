@@ -16,7 +16,7 @@ export const languageList = [
   },
 ]
 
-type handleClickType = (event: React.MouseEvent<HTMLButtonElement>) => void
+type handleClickType = (languageCode: string) => void
 
 const LanguageSelector = () => {
 
@@ -29,8 +29,8 @@ const LanguageSelector = () => {
   const pathname = usePathname()
   const router = useRouter()
   const selectValue = pathname.slice(1, 3)
-  const changeClick: handleClickType = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const selectedLang = e.currentTarget.value
+  const changeClick: handleClickType = (languageCode: string) => {
+    const selectedLang = languageCode
     const currentLang = pathname.replace(/^\/(en|sv)/, `/${selectedLang}`)
     if (currentLang === pathname) return
     router.push(currentLang)
@@ -46,8 +46,8 @@ const LanguageSelector = () => {
         <div className="flex flex-col items-start justify-around origin-top-right absolute right-5 mt-8 w-38 h-25 p-4 gap-2 
         rounded-md shadow-xl bg-white z-100 lg:w-45 lg:mt-10 lg:shadow-2xl">
           {languageList.map((lang, index) => (
-            <div key={index} className="flex w-full justify-between">
-              <button onClick={changeClick} value={lang.languageCode} className="font-albert font-normal hover:text-accent">{lang.language}</button>
+            <div onClick={() => changeClick(lang.languageCode)} key={index} className="flex w-full justify-between hover:text-accent cursor-pointer">
+              <p className="font-albert font-normal ">{lang.language}</p>
               {selectValue === lang.languageCode ? <AiOutlineCheck /> : ""}
             </div>
           ))}
