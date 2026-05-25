@@ -2,22 +2,10 @@
 
 import useMessages from "@/hook/useMessages"
 import Image from "next/image"
-import footerHSSIcon from '../../public/footer-hss-logo.png'
+import footerHSSIcon from '../../../public/footer-hss-logo.png'
 import Gallery from "../Gallery"
 
-type instaType = {
-  "biography": string,
-  "profilePictureUrl": string,
-  "website": string,
-  "followersCount": number,
-  "followsCount": number,
-  "posts": {}
-}
-
-const Instagram = async ({ infoText = false }: { infoText: boolean }) => {
-
-  const response = await fetch("https://feeds.behold.so/3JS61tNj0rPJBZc2QNTD")
-  console.log(await response.json())
+const Instagram = ({ infoText = false }: { infoText?: boolean }) => {
 
   const messages = useMessages()
 

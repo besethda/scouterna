@@ -1,3 +1,5 @@
+"use client"
+
 interface CTAprops {
     text?: string,
     onClick?:() => void,

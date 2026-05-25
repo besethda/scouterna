@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import useMessages from "@/hook/useMessages"
 import Link from "next/link"
