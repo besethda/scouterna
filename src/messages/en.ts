@@ -325,7 +325,7 @@ export const En: MessagesEngType = {
   },
   joinCard: {
     headline: "Become a scout",
-    title: "Bli a part of HSS",
+    title: "Become a part of HSS",
     text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
   }
 };
