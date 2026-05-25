@@ -3,7 +3,7 @@
 import useMessages from "@/hook/useMessages"
 import Image from "next/image"
 import footerHSSIcon from '../../../public/footer-hss-logo.png'
-import Gallery from "../Gallery"
+// import Gallery from "../Gallery"
 
 const Instagram = ({ infoText = false }: { infoText?: boolean }) => {
 
