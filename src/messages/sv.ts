@@ -162,8 +162,31 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
-  }
-
+  },
+  tabTitle:{
+      history:string,
+      join:string, 
+      "become-a-scout": string,
+      faq:string, 
+      "age-sections":string, 
+      sjohumlorna:string, 
+      kaparna:string,
+      konvojen:string, 
+      utmanare:string, 
+      familjescouterna:string, 
+      lifestyle:string, 
+      boats:string,
+      cabins:string, 
+      myset:string, 
+      ruffen:string, 
+      members:string, 
+      information:string,
+      safety:string,
+      contact:string, 
+      gdpr:string,
+      [key: string]: string
+     },
+     description:string
 };
 
 export const Sv: MessagesSvType = {
@@ -330,5 +353,28 @@ export const Sv: MessagesSvType = {
     headline: "Bli Scout",
     title: "Bli en del av HSS",
     text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
-  }
+  },
+  tabTitle:{
+      history:"HSS | Historia",
+      join:"HSS | Gå med i Scouterna", 
+      "become-a-scout": "HSS | Bli Sjöscout",
+      faq:"HSS | FAQ", 
+      "age-sections":"HSS | Våra avdelningar", 
+      sjohumlorna:"HSS | Sjöhumlorna", 
+      kaparna: "HSS | Kaparna",
+      konvojen:"HSS | Konvojen", 
+      utmanare:"HSS | Utmanare", 
+      familjescouterna:"HSS | Familjescouterna", 
+      lifestyle:"HSS | Livet som Sjöscout", 
+      boats:"HSS | Båtar",
+      cabins:"HSS | Scoutstugor", 
+      myset:"HSS | Myset", 
+      ruffen:"HSS | Ruffen", 
+      members:"HSS | För medlemma", 
+      information:"HSS | Information för medlemmar",
+      safety:"HSS | Flytvästpolicy",
+      contact:"HSS | Kontakt", 
+      gdpr:"HSS | GDPR"
+    }, 
+    description:"HSS webplats"
 };

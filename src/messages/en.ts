@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export type MessagesEngType = {
   path: string,
   home: {
@@ -162,7 +160,32 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string
-  }
+  }, 
+    tabTitle: {
+      history:string,
+      join:string, 
+      "become-a-scout": string,
+      faq:string, 
+      "age-sections":string, 
+      sjohumlorna:string, 
+      kaparna:string,
+      konvojen:string, 
+      utmanare:string, 
+      familjescouterna:string, 
+      lifestyle:string, 
+      boats:string,
+      cabins:string, 
+      myset:string, 
+      ruffen:string, 
+      members:string, 
+      information:string,
+      safety:string,
+      contact:string, 
+      gdpr:string,
+      [key: string]: string
+     },
+    description: string,
+  
 };
 
 export const En: MessagesEngType = {
@@ -327,5 +350,28 @@ export const En: MessagesEngType = {
     headline: "Become a scout",
     title: "Become a part of HSS",
     text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
-  }
+  }, 
+  tabTitle:{
+    history:"HSS | History",
+    join:"HSS | Join", 
+    "become-a-scout": "HSS | Become a scout",
+    faq:"HSS | FAQ", 
+    "age-sections":"HSS | Groups", 
+    sjohumlorna:"HSS | Sjöhumlorna", 
+    kaparna: "HSS | Kaparna",
+    konvojen:"HSS | Konvojen", 
+    utmanare:"HSS | Utmanare", 
+    familjescouterna:"HSS | Familjescouterna", 
+    lifestyle:"HSS | Lifestyle", 
+    boats:"HSS | Boats",
+    cabins:"HSS | Cabins", 
+    myset:"HSS | Myset", 
+    ruffen:"HSS | Ruffen", 
+    members:"HSS | Members", 
+    information:"HSS | Members Infomation",
+    safety:"HSS | Life Jacket Policy",
+    contact:"HSS | Contact", 
+    gdpr:"HSS | GDPR"
+    },
+    description:"HSS website"
 };
