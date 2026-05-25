@@ -6,6 +6,7 @@ type MessagesSvType = {
     title: string;
     divisions: string;
     divisions_text: string;
+    divisions_family_title: string;
   };
   about: {
     title: string;
@@ -80,6 +81,12 @@ type MessagesSvType = {
     utmanare_time: string,
     utmanare_place: string,
     utmanare_paragraph: string,
+    familjescouter_title: string,
+    familjescouter_ages: string,
+    familjescouter_day: string,
+    familjescouter_time: string,
+    familjescouter_place: string,
+    familjescouter_paragraph: string,
     image_message: string,
     basic_message: string,
     day: string,
@@ -194,7 +201,8 @@ export const Sv: MessagesSvType = {
   home: {
     title: "Välkommen to HSS",
     divisions: "Avdelningar",
-    divisions_text: "Vi har åldersindelade avdelningar från och med 8 års ålder."
+    divisions_text: "Vi har åldersindelade avdelningar från och med 8 års ålder.",
+    divisions_family_title: "Familjescouting",
   },
   about: {
     title: "Om HSS"
@@ -282,6 +290,12 @@ export const Sv: MessagesSvType = {
     utmanare_time: "18:00",
     utmanare_place: "Ruffen",
     utmanare_paragraph: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.",
+    familjescouter_title: "Familjescouter",
+    familjescouter_ages: "Under 8 år",
+    familjescouter_day: "Fredag",
+    familjescouter_time: "18:00",
+    familjescouter_place: "Ruffen",
+    familjescouter_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
     image_message: "Läs mer om ",
     basic_message: "Gå till ",
     day: "Dag: ",

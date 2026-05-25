@@ -6,6 +6,7 @@ export type MessagesEngType = {
     title: string;
     divisions: string;
     divisions_text: string;
+    divisions_family_title: string,
   };
   about: {
     title: string;
@@ -97,6 +98,12 @@ export type MessagesEngType = {
     utmanare_time: string,
     utmanare_place: string,
     utmanare_paragraph: string,
+    familjescouter_title: string,
+    familjescouter_ages: string,
+    familjescouter_day: string,
+    familjescouter_time: string,
+    familjescouter_place: string,
+    familjescouter_paragraph: string,
     image_message: string,
     basic_message: string,
     day: string,
@@ -193,7 +200,8 @@ export const En: MessagesEngType = {
   home: {
     title: "Welcome to HSS",
     divisions: "Groups",
-    divisions_text: "We have age-based groups for children from 8 years old and up."
+    divisions_text: "We have age-based groups for children from 8 years old and up.",
+    divisions_family_title: "Familjescouting",
   },
   about: {
     title: "About HSS"
@@ -274,6 +282,12 @@ export const En: MessagesEngType = {
     utmanare_time: "18:00",
     utmanare_place: "Ruffen",
     utmanare_paragraph: "The oldest scouts run their own projects, participate in international camps and take on leadership roles for the younger ones. Scouting becomes a way to shape themselves and their surroundings.",
+    familjescouter_title: "Familjescouter",
+    familjescouter_ages: "Under 8 Years",
+    familjescouter_day: "Friday",
+    familjescouter_time: "18:00",
+    familjescouter_place: "Ruffen",
+    familjescouter_paragraph: "Familjescouter is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
     image_message: "Read more about ",
     basic_message: "Check out ",
     day: "Day: ",
