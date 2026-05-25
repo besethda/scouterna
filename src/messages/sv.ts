@@ -1,7 +1,7 @@
 //data files depends on what you fill in, blew is example
 
 type MessagesSvType = {
-  path:string;
+  path: string;
   home: {
     title: string;
     divisions: string;
@@ -87,14 +87,14 @@ type MessagesSvType = {
     place: string
   },
   homePage: {
-    title: string, 
-    subtitle: string, 
-    subtitle2: string, 
+    title: string,
+    subtitle: string,
+    subtitle2: string,
     button: string
   },
   homePageCard: {
-    headline: string, 
-    title: string, 
+    headline: string,
+    title: string,
     text: string,
   },
   goodToKnow: {
@@ -116,36 +116,36 @@ type MessagesSvType = {
   }
   hero: {
     hero_title: string,
-    hero_subtitle01:string,
-    hero_subtitle02:string,
-    hero_description:string
+    hero_subtitle01: string,
+    hero_subtitle02: string,
+    hero_description: string
   };
   whiteImageBox: {
-    header:string,
-    title1:string,
-    title2:string,
-    title3:string
+    header: string,
+    title1: string,
+    title2: string,
+    title3: string
   };
   CTABtn: {
-    text:string
+    text: string
   },
-   breadcrumbs:{
-    title:string,
+  breadcrumbs: {
+    title: string,
     path: string,
     page: {
       "about-us": string,
       history: string,
       contact: string,
       gdpr: string,
-      members:string,
+      members: string,
       information: string,
       safety: string,
       "what-we-do": string,
       lifestyle: string,
       boats: string,
       cabins: string,
-      myset:string,
-      ruffen:string,
+      myset: string,
+      ruffen: string,
       groups: string,
       "age-sections": string,
       sjohumlorna: string,
@@ -156,7 +156,12 @@ type MessagesSvType = {
       "become-a-scout": string,
       faq: string,
       [key: string]: string
-   }
+    }
+  },
+  joinCard: {
+    headline: string,
+    title: string,
+    text: string,
   }
 
 };
@@ -197,7 +202,7 @@ export const Sv: MessagesSvType = {
     nav_school: "Scouternas Folkhögskola",
     nav_shop: "Scoutshop",
     nav_scoutnet: "Scoutnet"
-  
+
   },
   footer: {
     footer_service: "Scouternas tjänster",
@@ -216,16 +221,16 @@ export const Sv: MessagesSvType = {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
     header_join: "Bli Scout"
-  }, 
+  },
   homePage: {
-    title: "HSS välkomnar alla", 
-    subtitle: "Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig.", 
+    title: "HSS välkomnar alla",
+    subtitle: "Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig.",
     subtitle2: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare.",
     button: "Gå med i Scouterna"
   },
-    homePageCard: {
+  homePageCard: {
     headline: "Bli Scout",
-    title: "Vågorna väntar", 
+    title: "Vågorna väntar",
     text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra – ute i naturen och till sjöss – och du får både kunskap, vänner och minnen för livet.",
   },
   division: {
@@ -261,36 +266,36 @@ export const Sv: MessagesSvType = {
   },
   hero: {
     hero_title: "Hässelby Strands Sjöscouter",
-    hero_subtitle01:"Äventyr börjar",
-    hero_subtitle02:"vid vattenbrynet",
-    hero_description:"På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
+    hero_subtitle01: "Äventyr börjar",
+    hero_subtitle02: "vid vattenbrynet",
+    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
   },
   CTABtn: {
-    text:"Gå med i Scouterna"
+    text: "Gå med i Scouterna"
   },
   whiteImageBox: {
     header: "Vad vi erbjuder",
-    title1:"Segling & sjöliv",
-    title2:"Trygg gemenskap",
-    title3:"Friluftsliv"
+    title1: "Segling & sjöliv",
+    title2: "Trygg gemenskap",
+    title3: "Friluftsliv"
   },
-  breadcrumbs:{
-    title:"Startsidan",
+  breadcrumbs: {
+    title: "Startsidan",
     path: "/sv",
     page: {
       "about-us": "Om HSS",
       history: "Vår historia",
       contact: "Kontakt",
       gdpr: "GDPR",
-      members:"För medlemmar",
+      members: "För medlemmar",
       information: "Information för medlemmar",
       safety: "HSS flytvästpolicy",
       "what-we-do": "Vad vi gör",
       lifestyle: "Livet som Sjöscout",
       boats: "Våra båtar",
       cabins: "Våra Scoutstugor",
-      myset:"Myset",
-      ruffen:"Ruffen",
+      myset: "Myset",
+      ruffen: "Ruffen",
       groups: "Våra avdelningar",
       "age-sections": "Åldersanpassade avdelningar",
       sjohumlorna: "Sjöhumlorna",
@@ -300,10 +305,10 @@ export const Sv: MessagesSvType = {
       join: "Gå med i Scouterna",
       "become-a-scout": "Bli Sjöscout",
       faq: "Frågor & svar"
-   }
+    }
   },
-  path:"/sv",
-  
+  path: "/sv",
+
   goodToKnow: {
     headline: "Bra att veta",
     card_title_1: "Tid",
@@ -320,5 +325,10 @@ export const Sv: MessagesSvType = {
     card_headline_4: "Utbildade ledare",
     card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
     span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
+  },
+  joinCard: {
+    headline: "Bli Scout",
+    title: "Bli en del av HSS",
+    text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
   }
 };
