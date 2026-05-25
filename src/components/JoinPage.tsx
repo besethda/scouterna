@@ -6,20 +6,25 @@ interface JoinPageProps {
     buttonText?:string;
     buttonOnClick?:() => void;
     width?: string;
+    btnWidth?: "fit" | "full" | "mobile-full";
 
 }
 
-const JoinPage = ({title, text, buttonText,buttonOnClick,width = "full"}:JoinPageProps) => {
+const JoinPage = ({title, text, buttonText,buttonOnClick,btnWidth,width = "full"}:JoinPageProps) => {
     return (
-        <div className={width === "full" ? "w-full" : "w-[80%] h-[254] rounded-2xl  bg-bg-blue p-8 flex flex-col gap-6"}>
+        /*<div className={width === "full" ? "w-full" : "w-[358] h-[254] rounded-2xl  bg-bg-blue p-8 flex flex-col gap-6"}>*/
+        <div className={`${width === "box" ? "w-[358px] h-[254px] rounded-2xl md:flex-row md:w-full md:w-[]" : "w-full"}  p-8 flex flex-col gap-6 bg-bg-blue mx-auto`}>
             <div className="flex flex-col gap-2"> 
-                <h2>{title}</h2>
-                <p>{text}</p>
+                <h2 className="text-h2">{title}</h2>
+                <p className="text-body">{text}</p>
             </div>
             {buttonText &&(
-                <CTABtn onClick={buttonOnClick} 
-                text={buttonText}
+                <div className="mx-auto w-full md:w-fit">
+                    <CTABtn onClick={buttonOnClick} 
+                    text={buttonText}
+                    width={btnWidth}
                 />
+                </div>
             )}
         </div>
     )

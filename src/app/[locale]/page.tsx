@@ -37,6 +37,7 @@ const Home = () => {
       text={messages?.joinPage.text}
       buttonText={messages?.joinPage.buttonText}
       width="box"
+      btnWidth="full"
       />
       <div className="flex flex-col items-center">
         <CardWithImage headline={messages?.homePageCard?.headline} logo="/heart.png" title={messages?.homePageCard?.title} text={messages?.homePageCard?.text} image="/images/IMG_9122.jpeg" />
