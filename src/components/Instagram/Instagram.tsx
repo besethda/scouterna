@@ -3,11 +3,14 @@
 import useMessages from "@/hook/useMessages"
 import Image from "next/image"
 import footerHSSIcon from '../../../public/footer-hss-logo.png'
-// import Gallery from "../Gallery"
+import { instaType } from "../Gallery"
+import Gallery from "../Gallery"
 
-const Instagram = ({ infoText = false }: { infoText?: boolean }) => {
+const Instagram = ({ infoText = false, photoObject }: { infoText?: boolean, photoObject:instaType }) => {
 
   const messages = useMessages()
+
+  
 
   return (
     <div className="flex w-full justify-center">
@@ -27,7 +30,7 @@ const Instagram = ({ infoText = false }: { infoText?: boolean }) => {
             <a href="https://www.instagram.com/hss_scout/" className="font-albert bg-primary hover:bg-[#0D3F6A] active:bg-[#2D4D6B] shadow-md active:shadow-none active:scale-95 duration-150 h-fit text-white text-acc-desktop md:text-button-desktop py-2 px-5 rounded-3xl">{messages?.instagram.button_text}</a>
           </div>
           <div className="">
-            {/* <Gallery photoArray={{}}/> */}
+            <Gallery photoObject={photoObject}/>
           </div>
         </div>
       </div>
