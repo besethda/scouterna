@@ -129,13 +129,10 @@ type MessagesSvType = {
   CTABtn: {
     text: string
   },
-<<<<<<< HEAD
   breadcrumbs: {
     title: string,
-=======
   breadcrumbs:{
     title:string,
->>>>>>> HSS-042-Fragor-and-svar
     path: string,
     page: {
       "about-us": string,
@@ -191,8 +188,11 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
+  },
+  fragorSvar: {
+    question: string,
+    answer: string
   }
-
   };
 };
 
@@ -355,7 +355,6 @@ export const Sv: MessagesSvType = {
     card_headline_4: "Utbildade ledare",
     card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
     span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
-<<<<<<< HEAD
   }, 
   faqCard: {
     title: "Frågor & svar", 
@@ -385,8 +384,13 @@ export const Sv: MessagesSvType = {
     headline: "Scoutstugor",
     title: "Myset",
     text: "I skogen mellan Lövsta och Gåseborg ligger Myset – vår stora och fina scoutstuga. Här samlas kåren för en mängd olika aktiviteter, inte minst hajker som bjuder på både äventyr och gemenskap.",
-  }
-=======
   },
->>>>>>> HSS-042-Fragor-and-svar
-};
+  fragorSvar: [
+    { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
+    { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
+    { question: "Hålls möten alltid utomhus?", answer: "svar" },
+    { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
+    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
+    { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
+  ]
+  }
