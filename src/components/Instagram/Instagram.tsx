@@ -6,7 +6,7 @@ import footerHSSIcon from '../../../public/footer-hss-logo.png'
 import { instaType } from "../Gallery"
 import Gallery from "../Gallery"
 
-const Instagram = ({ infoText = false, photoObject }: { infoText?: boolean, photoObject:instaType }) => {
+const Instagram = ({ infoText = false, photoObject }: { infoText?: boolean, photoObject:instaType[] }) => {
 
   const messages = useMessages()
 
