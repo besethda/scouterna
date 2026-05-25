@@ -1,8 +1,8 @@
 interface CardWithoutImageProps {
-  headline: string,
-  logo: string,
-  title: string,
-  text: string,
+  headline?: string,
+  logo?: string,
+  title?: string,
+  text?: string,
 }
 
 const CardWithoutImage = ({ headline, logo, title, text }: CardWithoutImageProps) => {

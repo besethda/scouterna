@@ -162,6 +162,26 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string
+  }, 
+    groupsCard: {
+    headline: string,
+    title: string,
+    text: string,
+  },
+  boatsCard: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  cabinsCard: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  mysetCard: {
+    headline: string,
+    title: string,
+    text: string,
   }
 };
 
@@ -327,5 +347,25 @@ export const En: MessagesEngType = {
     headline: "Become a scout",
     title: "Become a part of HSS",
     text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
+  },
+  groupsCard: {
+    headline: "Groups",
+    title: "Age Groups",
+    text: "We have four age-appropriate sections. The program's content is tailored to the scouts' ages to ensure they get experiences and adventures that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout section, you can join from the age of 15.",
+  },
+  boatsCard: {
+    headline: "Scout Life",
+    title: "Our Boats",
+    text: "Our boats are an important part of scout life. Here, we learn to cooperate, develop seamanship, and experience adventures together on the water.",
+  }, 
+  cabinsCard: {
+    headline: "Scout Life",
+    title: "Our Scout Cabins",
+    text: "Life as a sea scout is full of adventure, community, and freedom. You encounter the sea and nature together with others and create memories for life. This is where the adventure begins.",
+  }, 
+  mysetCard: {
+    headline: "Scout Cabins",
+    title: "Myset",
+    text: "In the forest between Lövsta and Gåseborg lies Myset – our large and beautiful scout cabin. This is where the troop gathers for a variety of activities, especially hikes that offer both adventure and fellowship.",
   }
 };
