@@ -12,7 +12,7 @@ const BecomeAScout = () => {
 
     return (
         <div>
-            <CardWithImage headline={messages?.joinCard?.headline} logo="/heart.png" title={messages?.joinCard?.title} text={messages?.joinCard?.text} image="/images/DSCF3017.jpg" />
+            <CardWithImage sectionTitle={"joinCard"} logo="/heart.png" image="/images/DSCF3017.jpg" />
         </div>
     );
 }

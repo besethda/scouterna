@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Placeholder from '../../public/images/DSCF3071.jpg'
 import useMessages from "@/hook/useMessages";
@@ -28,8 +30,8 @@ const HomeSection = () => {
         </div>
       </section>
 
-      <section className="hidden md:flex flex-row px-22 py-10 gap-25 bg-(--bg-blue) md:pb-25 lg:max-w-430">
-        <div className="relative aspect-video max-w-100 h-60">
+      <section className="hidden md:flex flex-row px-22 py-10 gap-25 bg-(--bg-blue) md:pb-25 lg:mt-6 lg:max-w-430">
+        <div className="relative aspect-video max-w-100  md:h-40 lg:h-60">
           <Image
             src={Placeholder}
             alt="image"
