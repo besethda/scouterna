@@ -162,6 +162,11 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string
+  },
+  joinPage: {
+    title: string,
+    text: string,
+    buttonText: string
   }
 };
 
@@ -327,5 +332,10 @@ export const En: MessagesEngType = {
     headline: "Become a scout",
     title: "Become a part of HSS",
     text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
+  },
+  joinPage: {
+    title: "Anmäl ditt intresse",
+    text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
+    buttonText: "Gå med i Scouterna"
   }
 };

@@ -162,6 +162,11 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
+  },
+  joinPage: {
+    title: string,
+    text: string,
+    buttonText: string
   }
 
 };
@@ -330,5 +335,10 @@ export const Sv: MessagesSvType = {
     headline: "Bli Scout",
     title: "Bli en del av HSS",
     text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
+  },
+  joinPage: {
+    title: "Anmäl ditt intresse",
+    text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
+    buttonText: "Gå med i Scouterna"
   }
 };
