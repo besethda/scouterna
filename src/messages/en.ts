@@ -157,6 +157,7 @@ export type MessagesEngType = {
       faq: string,
       [key: string]: string
     }
+<<<<<<< HEAD
   },
   faqCard: {
     title: string,
@@ -187,6 +188,9 @@ export type MessagesEngType = {
     title: string,
     text: string,
   }
+=======
+  };
+>>>>>>> HSS-042-Fragor-and-svar
 };
 
 export const En: MessagesEngType = {
