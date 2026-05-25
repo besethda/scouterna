@@ -1,7 +1,9 @@
+"use client"
+
 import useMessages from "@/hook/useMessages"
 import Image from "next/image"
 import footerHSSIcon from '../../public/footer-hss-logo.png'
-import Gallery from "./Gallery"
+import Gallery from "../Gallery"
 
 type instaType = {
   "biography": string,
@@ -37,7 +39,7 @@ const Instagram = async ({ infoText = false }: { infoText: boolean }) => {
             <a href="https://www.instagram.com/hss_scout/" className="font-albert bg-primary hover:bg-[#0D3F6A] active:bg-[#2D4D6B] shadow-md active:shadow-none active:scale-95 duration-150 h-fit text-white text-acc-desktop md:text-button-desktop py-2 px-5 rounded-3xl">{messages?.instagram.button_text}</a>
           </div>
           <div className="">
-            <Gallery photoArray={{}}/>
+            {/* <Gallery photoArray={{}}/> */}
           </div>
         </div>
       </div>
