@@ -14,6 +14,7 @@ const Header = () => {
 
   const messages = useMessages()
   const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [opacity, setOpacity] = useState<boolean>(false)
 
   const handleClose = () => {
     setIsOpen(false)
@@ -46,6 +47,7 @@ const Header = () => {
       document.body.classList.remove("overflow-hidden"),
         changedSize
     }
+
   }, [isOpen])
 
   return (

@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { menuList, mobileMenuList } from "./menuList";
 import Link from "next/link";
@@ -14,13 +14,23 @@ interface NavigationProps {
 const Navigation = ({ onClose }: NavigationProps) => {
     const messages = useMessages()
     const [openId, setOpenId] = useState<number | null>(null)
+    const [isScroll, setIsScroll] = useState<boolean>(false)
 
     const handleToggle = (id: number | null) => {
         setOpenId(openId === id ? null : id)
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScroll(window.scrollY > 200)
+        }
+
+        window.addEventListener("scroll", handleScroll)
+        return () => { window.removeEventListener("scroll", handleScroll) }
+    }, [])
+
     return (
-        <div className="absolute lg:static w-full bg-white rounded-b-lg font-albert tracking-[0.03em] top-16 md:top-29 lg:bg-primary lg:h-25.5 lg:text-white lg:text-lg lg:rounded-none">
+        <div className={`absolute lg:static w-full bg-white rounded-b-lg font-albert tracking-[0.03em] top-16 md:top-29 lg:bg-primary lg:h-25.5 lg:text-white lg:text-lg lg:rounded-none ${isScroll ? "lg:bg-primary/80" : ""}`}>
             <div className="w-full lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-4xl lg:mx-auto xl:max-w-5xl 2xl:max-w-7xl">
                 <div className="bg-bg-blue flex justify-end text-base h-69px px-4 py-4 font-bold border-b border-lightGray lg:hidden">
                     <LanguageSelector />
