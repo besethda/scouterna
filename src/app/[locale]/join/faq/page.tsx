@@ -14,6 +14,7 @@ const Faq = () => {
     return (
         <div>
             <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png"/>
+            <div>
             <div className="bg-bg-blue py-10">
             <h2 className="pb-2 text-h2 text-center md:text-h1-desktop"> {messages?.faq.title} </h2>
             <div className="flex flex-col gap-2.5">
@@ -39,7 +40,7 @@ const Faq = () => {
             </div>
         </div>
         </div>
-        
+        </div>
     );
 }
 

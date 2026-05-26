@@ -196,7 +196,7 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string,
-  }
+  },
   faq: {
     title: string,
     title02: string;
@@ -408,7 +408,7 @@ export const En: MessagesEngType = {
     title: "Myset",
     text: "In the forest between Lövsta and Gåseborg lies Myset – our large and beautiful scout cabin. This is where the troop gathers for a variety of activities, especially hikes that offer both adventure and fellowship.",
   },
-    faq: {
+  faq: {
     title: "Join the Scouts",
     title02: "Membership Questions"
   },

@@ -4,7 +4,7 @@ import { AiOutlineDownCircle, AiFillUpCircle } from "react-icons/ai";
 interface FragorSvarProps {
     question : string;
     answer : string;
-}
+} 
 
 const FragorSvar = ({question, answer}:FragorSvarProps) => {
 

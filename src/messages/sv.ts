@@ -167,7 +167,7 @@ type MessagesSvType = {
       faq: string,
       [key: string]: string
     }
-  }, 
+  };
   faqCard: {
     title: string, 
     text: string
@@ -196,15 +196,15 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
-  };
+  },
   faq:{
     title: string,
     title02: string
-  };
+  },
   fragorSvar: {
     question: string;
     answer: string;
-  }[];
+  }[],
   fragorSvar02: {
     question: string;
     answer: string;
@@ -436,7 +436,7 @@ export const Sv: MessagesSvType = {
     },
     { 
       question: "Jag har tappat bort min faktura. Vad gör jag?", 
-      answer: `Skicka ett mejl till support@scouterna.se med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.` 
+      answer: `Skicka ett mejl till support@scouterna.se med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.` 
     },
     { 
       question: "Vad ingår i min medlemsavgift?", 
@@ -448,11 +448,11 @@ export const Sv: MessagesSvType = {
     },
     { 
       question: "Min faktura har felaktigt belopp. Vad gör jag?", 
-      answer: `Skicka ett mejl till support@scouterna.se och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.` 
+      answer: `Skicka ett mejl till support@scouterna.se och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.` 
     },
     { 
       question: "Hur ändrar jag mina kontaktuppgifter?", 
-      answer: `Logga in på www.scoutnet.se där kan du uppdatera dina uppgifter.` 
+      answer: `Logga in på www.scoutnet.se där kan du uppdatera dina uppgifter.` 
     },
   ]
 };
