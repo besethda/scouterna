@@ -7,3 +7,5 @@ const GroupStructure = () => {
     </div>
   )
 }
+
+export default GroupStructure
