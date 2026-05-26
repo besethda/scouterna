@@ -526,14 +526,14 @@ export const Sv: MessagesSvType = {
     p5: "I och med medlemskapet är man försäkrad via Scouternas gruppförsäkring och försäkringsbolaget kräver att uppgifterna sparas i upp till tio år, vilket är den tidsbegränsning som man kan kräva ersättning för ett försäkringsärende."
   },
   email : {
-    h0: "E-post",
+    t0: "E-post",
     s0: "E-post till kåren",
     p0: "info@hss-scout.org",
     s1: "E-post för medlemsärenden",
     p1: "register@hss-scout.org"
   },
   bank: {
-    h0: "Bankuppgifter",
+    t0: "Bankuppgifter",
     s0: "Postgiro",
     p0: "404418 - 6",
     s1: "Organisationsnummer",

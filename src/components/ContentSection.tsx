@@ -16,7 +16,7 @@ const ContentSection = ({sectionLayout, page, background="white", padding="both"
     let result = characterLayout.reduce((acc, element:string, index)=> {
       const count = characterLayout.slice(0, index).filter(e=> e === element)
       if(element === "l") {
-        acc.push(<ul key={index} className="w-fit text-body my-3 md:text-body-desktop text-text-black font-albert list-disc pl-5"><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
+        acc.push(<ul key={index} className="w-fit text-body my-3 md:text-body-desktop text-text-black font-albert lg:max-w-[55%] list-disc pl-5"><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
       } else {
         acc.push(<div key={index} className={`
           ${element === "p" ? "w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[55%]" :

@@ -522,14 +522,14 @@ export const En: MessagesEngType = {
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
   email : {
-    h0: "E-post",
+    t0: "E-post",
     s0: "E-post till kåren",
     p0: "info@hss-scout.org",
     s1: "E-post för medlemsärenden",
     p1: "register@hss-scout.org"
   },
   bank: {
-    h0: "Bankuppgifter",
+    t0: "Bankuppgifter",
     s0: "Postgiro",
     p0: "404418 - 6",
     s1: "Organisationsnummer",

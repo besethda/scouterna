@@ -1,17 +1,21 @@
-'use client'
 import CardWithImage from "@/components/CardWithImage";
 import CTABtn from "@/components/CTA-button"
-import useMessages from "@/hook/useMessages";
+import { En} from "@/messages/en";
+import { Sv } from "@/messages/sv";
+import { use } from "react";
 import ContentSection from "@/components/ContentSection";
 
-const Safety = () => {
-    const messages = useMessages()
+const Safety = ({params}:{params: Promise<{locale: string}>}) => {
+
+    const {locale} = use(params)
+    const messages = locale === "en" ? En : Sv
+
     return (
         <>
             <div className="flex flex-col">
                 <div className="h-fit pb-13">
                     <CardWithImage sectionTitle="safetyCard" logo="/blue-lifejacket.svg" image="/images/DSCF3070.jpg" />
-                    <div className="hidden lg:block px-4 pt-0 md:w-full md:flex md:justify-center ">
+                    <div className="hidden lg:block lg:px-22 px-4 pt-0 md:w-full md:flex md:justify-center ">
                         <CTABtn text={messages?.safetyBtn?.btnDesktop} />
                     </div>
                     <div className="pl-4 pb-13 md:hidden">
