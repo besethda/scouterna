@@ -390,14 +390,6 @@ export const En: MessagesEngType = {
     title: "Myset",
     text: "In the forest between Lövsta and Gåseborg lies Myset – our large and beautiful scout cabin. This is where the troop gathers for a variety of activities, especially hikes that offer both adventure and fellowship.",
   },
-  fragorSvar: [
-    { question: "Do we need to buy a scout uniform right away?", answer: "answer" },
-    { question: "What kind of clothes do scouts usually wear?", answer: "answer" },
-    { question: "Are meetings always held outdoors?", answer: "answer" },
-    { question: "How much does it cost to join the scouts?", answer: "answer" },
-    { question: "Does the child need to have prior experience with sailing or scouting?", answer: "answer" },
-    { question: "We have become members—what happens now?", answer: "answer" },
-]as any,
   faq: {
     title: "Join the Scouts",
     title02: "Membership Questions"
