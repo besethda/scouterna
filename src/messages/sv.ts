@@ -6,10 +6,10 @@ type MessagesSvType = {
     title: string;
     divisions: string;
     divisions_text: string;
-  };
+  },
   about: {
     title: string;
-  };
+  },
   navigation: {
     nav_joinScout: string,
     nav_becomeScout: string,
@@ -38,24 +38,24 @@ type MessagesSvType = {
     nav_school: string,
     nav_shop: string,
     nav_scoutnet: string
-  };
+  },
   footer: {
     footer_service: string
     footer_school: string
     footer_shop: string,
     footer_contact: string,
     footer_followUs: string
-  };
+  },
   instagram: {
     head: string,
     button_text: string,
     text: string
-  };
+  },
   header: {
     header_title: string,
     header_subtitle: string,
     header_join: string
-  };
+  },
   division: {
     sjohumlorna_title: string,
     sjohumlorna_ages: string,
@@ -129,13 +129,13 @@ type MessagesSvType = {
     hero_subtitle01: string,
     hero_subtitle02: string,
     hero_description: string
-  };
+  },
   whiteImageBox: {
     header: string,
     title1: string,
     title2: string,
     title3: string
-  };
+  },
   CTABtn: {
     text: string
   },
@@ -168,7 +168,7 @@ type MessagesSvType = {
       faq: string,
       [key: string]: string
     }
-  };
+  },
   faqCard: {
     title: string,
     text: string
@@ -209,7 +209,7 @@ type MessagesSvType = {
   fragorSvar02: {
     question: string;
     answer: string;
-  }[];
+  }[],
   lifestyle: {
     headline: string,
     title: string,
@@ -508,10 +508,10 @@ export const Sv: MessagesSvType = {
   safetyCard: {
     headline: "Säkerhet",
     title: "HSS Flytvästpolicy",
-    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy.  Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
-    }, 
+    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
+    },
   safetyBtn: {
-  btobile: "Ladda ner PDF",
+    btnMobile: "Ladda ner PDF",
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
   },
   becomeScoutSmallCard: {
