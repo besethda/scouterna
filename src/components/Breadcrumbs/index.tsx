@@ -18,6 +18,7 @@ const routes: routesType = {
   "/groups/kaparna": true,
   "/groups/utmanare": true,
   "/groups/konvojen": true,
+  "/groups/familjescouter": true,
 
   "/what-we-do": false,
   "/what-we-do/lifestyle": true,
