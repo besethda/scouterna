@@ -162,6 +162,7 @@ type MessagesSvType = {
       kaparna: string,
       utmanare: string,
       konvojen: string,
+      familjescouter:string,
       join: string,
       "become-a-scout": string,
       faq: string,
@@ -382,6 +383,7 @@ export const Sv: MessagesSvType = {
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
+      familjescouter:"Familjescouter",
       join: "Gå med i Scouterna",
       "become-a-scout": "Bli Sjöscout",
       faq: "Frågor & svar"
