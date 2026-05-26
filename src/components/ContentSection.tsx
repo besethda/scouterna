@@ -7,7 +7,7 @@ import useMessages from "@/hook/useMessages"
 
 //h is h1, t is h2, s is h3, p is paragraph, w is bold line, l is bullet point
 
-const ContentSection = ({sectionLayout, page, background="white", padding="both"}:{sectionLayout:string[], page:string, background?:string, padding?:string}) => {
+const ContentSection = ({sectionLayout, page, background="white", padding="both", display="both"}:{sectionLayout:string[], page:string, background?:string, padding?:string, display?:string }) => {
 
   const messages = useMessages()
   if(!messages) return null
@@ -32,7 +32,8 @@ const ContentSection = ({sectionLayout, page, background="white", padding="both"
 
   return (
     <div className={`${background==="white" ? "bg-bg-white" : background === "blue" ? "bg-bg-blue" : "bg-bg-white md:bg-bg-blue"} 
-    ${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-16 pt-7" : "none"} px-4`}>
+    ${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-16 pt-7" : "none"} 
+    ${display === "phone" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} px-4`}>
       {createLayout(sectionLayout)}
     </div>
   )
