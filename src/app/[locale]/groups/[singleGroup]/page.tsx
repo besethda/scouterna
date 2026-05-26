@@ -9,6 +9,7 @@ const pageItems = [
   "kaparna",
   "utmanare",
   "konvojen",
+  "familjscouter"
 ];
 export async function generateMetadata({
   params,
@@ -41,6 +42,8 @@ const Groups = ({
       return <p>Konvojen page</p>;
   }else if (singleGroup === "age-sections") {
       return <p> Age group page</p>;
+  }else if (singleGroup === "familjscouter") {
+      return <p> familjscouter page</p>;
   }
 };
 
