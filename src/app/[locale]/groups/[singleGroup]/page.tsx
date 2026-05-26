@@ -1,7 +1,6 @@
 import { getPageHeadTitle } from "@/lib/utils";
 import { use } from "react";
-import { En } from "@/messages/en";
-import { Sv } from "@/messages/sv";
+
 
 const pageItems = [
   "age-sections",
@@ -18,7 +17,7 @@ export async function generateMetadata({
 }) {
   const { locale, singleGroup } = await params;
   const IsSingleGroup = pageItems.includes(singleGroup)
-  const tabTitle = IsSingleGroup ? getPageHeadTitle(locale, singleGroup) : getPageHeadTitle(locale, "HSS | Home")
+  const tabTitle = IsSingleGroup ? getPageHeadTitle(locale, singleGroup) : getPageHeadTitle(locale, "HSS | Hem")
   return  tabTitle
 }
 
@@ -27,11 +26,8 @@ const Groups = ({
 }: {
   params: Promise<{ locale: string; singleGroup: string }>;
 }) => {
-  const { locale, singleGroup } = use(params);
-  const messages = locale === "en" ? En : Sv;
-  //If you want to messages, it's like useMessage() for example {messages.header.title}
-  //If you don't use it, you can put component inside it
-  //All contents put in return
+  const { singleGroup } = use(params);
+
   if (singleGroup === "sjohumlorna") {
       return <p>Sjöhumlorna page</p>;
   } else if (singleGroup === "kaparna") {
