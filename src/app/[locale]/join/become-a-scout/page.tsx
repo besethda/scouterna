@@ -14,7 +14,7 @@ const BecomeAScout = () => {
     return (
         <div>
             <CardWithImage sectionTitle={"joinCard"} logo="/heart.png" image="/images/DSCF3017.jpg" />
-            <SmallCard title="Scoutliv för ung som vuxen" subtitle="Vi har åldersanpassade avdelningar för våra scouter. Som vuxen kan du engagera dig som ledare, eller hjälpa till som förälder." image="/images/DSCF3017.jpg" /> 
+            <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image="/images/DSCF3361.jpg" secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} /> 
         </div>
     );
 }

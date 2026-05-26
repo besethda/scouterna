@@ -87,9 +87,9 @@ type MessagesSvType = {
     familjescouter_time: string,
     familjescouter_place: string,
     familjescouter_paragraph: string,
-    scouts_title:string,
+    scouts_title: string,
     scouts_paragraph: string,
-    family_title:string,
+    family_title: string,
     image_message: string,
     basic_message: string,
     day: string,
@@ -139,8 +139,8 @@ type MessagesSvType = {
   CTABtn: {
     text: string
   },
-  breadcrumbs:{
-    title:string,
+  breadcrumbs: {
+    title: string,
     path: string,
     page: {
       "about-us": string,
@@ -197,7 +197,7 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
-  faq:{
+  faq: {
     title: string,
     title02: string
   },
@@ -213,25 +213,33 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   ruffen: {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   memberInfo: {
     headline: string,
     title: string,
     text: string
-  }, 
+  },
   safetyCard: {
     headline: string,
     title: string,
     text: string
-  }, 
+  },
   safetyBtn: {
     btnMobile: string,
     btnDesktop: string
+  },
+  becomeScoutSmallCard: {
+    title: string,
+    subtitle: string,
+    secondTitle: string,
+    secondText: string,
+    thirdtext: string,
+    button: string
   }
 
 };
@@ -440,51 +448,51 @@ export const Sv: MessagesSvType = {
     title02: "Medlemsfrågor"
   },
   fragorSvar: [
-  { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
-  { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
-  { question: "Hålls möten alltid utomhus?", answer: "svar" },
-  { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
-  { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
-  { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
+    { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
+    { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
+    { question: "Hålls möten alltid utomhus?", answer: "svar" },
+    { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
+    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
+    { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
   ],
   fragorSvar02: [
-    { 
-      question: "Varför har vi en scoutdräkt?", 
+    {
+      question: "Varför har vi en scoutdräkt?",
       answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra.
       Så här kommer du igång med Trygga möten >> 
       Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas.
-      Läs mer om Leda socuting här >> När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att wybrać mellan. Du hittar dem alla på Ledarskapsön. Läs mer om dem här >>` 
+      Läs mer om Leda socuting här >> När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att wybrać mellan. Du hittar dem alla på Ledarskapsön. Läs mer om dem här >>`
     },
-    { 
-      question: "Jag är ny scoutledare! Vilken utbildning ska jag gå först?", 
-      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.` 
+    {
+      question: "Jag är ny scoutledare! Vilken utbildning ska jag gå först?",
+      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.`
     },
-    { 
-      question: "Jag har tappat bort min faktura. Vad gör jag?", 
-      answer: `Skicka ett mejl till support@scouterna.se med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.` 
+    {
+      question: "Jag har tappat bort min faktura. Vad gör jag?",
+      answer: `Skicka ett mejl till support@scouterna.se med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.`
     },
-    { 
-      question: "Vad ingår i min medlemsavgift?", 
-      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.` 
+    {
+      question: "Vad ingår i min medlemsavgift?",
+      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.`
     },
-    { 
-      question: "Hur ändrar jag min fakturaadress?", 
-      answer: "Gå till www.scoutnet.se, logga in och ändra din fakturaadress." 
+    {
+      question: "Hur ändrar jag min fakturaadress?",
+      answer: "Gå till www.scoutnet.se, logga in och ändra din fakturaadress."
     },
-    { 
-      question: "Min faktura har felaktigt belopp. Vad gör jag?", 
-      answer: `Skicka ett mejl till support@scouterna.se och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.` 
+    {
+      question: "Min faktura har felaktigt belopp. Vad gör jag?",
+      answer: `Skicka ett mejl till support@scouterna.se och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.`
     },
-    { 
-      question: "Hur ändrar jag mina kontaktuppgifter?", 
-      answer: `Logga in på www.scoutnet.se där kan du uppdatera dina uppgifter.` 
+    {
+      question: "Hur ändrar jag mina kontaktuppgifter?",
+      answer: `Logga in på www.scoutnet.se där kan du uppdatera dina uppgifter.`
     },
   ],
   lifestyle: {
     headline: "Scoutliv",
     title: "Vågorna Väntar",
     text: "Livet som sjöscout är fyllt av äventyr, gemenskap och frihet. Du möter havet och naturen tillsammans med andra och skapar minnen för livet. Här börjar äventyret."
-  }, 
+  },
   ruffen: {
     headline: "Scoutstugor",
     title: "Ruffen",
@@ -494,14 +502,22 @@ export const Sv: MessagesSvType = {
     headline: "Scoutliv",
     title: "Information",
     text: "Här har vi samlat information som är bra att veta för våra medlemmar."
-  }, 
+  },
   safetyCard: {
     headline: "Säkerhet",
     title: "HSS Flytvästpolicy",
     text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy.  Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
     }, 
   safetyBtn: {
-    btnMobile: "Ladda ner PDF",
+  btobile: "Ladda ner PDF",
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
+  },
+  becomeScoutSmallCard: {
+    title: "Scoutliv för ung som vuxen",
+    subtitle: "Vi har åldersanpassade avdelningar för våra scouter. Som vuxen kan du engagera dig som ledare, eller hjälpa till som förälder. ",
+    secondTitle: "Scout",
+    secondText: "Man kan bli Scout från och med 8 års ålder. Medlemmarna på avdelningen för våra äldsta Scouter är 15 år och uppåt.",
+    thirdtext: "Avdelningarnas innehåll är anpassat efter Scouternas ålder för att göra Scoutlivet tryggt, roligt och spännande för alla våra Scouter.",
+    button: "Läs mer om våra avdelningar"
   }
 };

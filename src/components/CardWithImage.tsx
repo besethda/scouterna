@@ -32,7 +32,7 @@ const CardWithImage = ({ sectionTitle, logo, image }: CardWithImageProps) => {
           </div>
           <div className="text-[16px] text-text-black tracking-[3%] font-albert font-normal md:text-[18px]">{messages?.[sectionTitle as string]?.text}</div>
         </div>
-        <div className="relative w-full aspect-video max-w-100 lg: max-h-60 min-h-40 md:mb-34 lg:mb-0">
+        <div className="relative w-full aspect-video max-w-100 lg:max-h-60 min-h-40 md:mb-34 lg:mb-0">
           <Image src={image} alt={messages?.[sectionTitle as string]?.title} fill className="rounded-2xl object-cover" />
         </div>
       </div>
