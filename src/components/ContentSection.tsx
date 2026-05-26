@@ -33,7 +33,7 @@ const ContentSection = ({sectionLayout, page, background="white", padding="both"
   return (
     <div className={`${background==="white" ? "bg-bg-white" : background === "blue" ? "bg-bg-blue" : "bg-bg-white md:bg-bg-blue"} 
     ${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-16 pt-7" : "none"} 
-    ${display === "phone" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} px-4`}>
+    ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} px-4`}>
       {createLayout(sectionLayout)}
     </div>
   )
