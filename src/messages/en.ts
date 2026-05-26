@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export type MessagesEngType = {
   path: string,
   home: {
@@ -374,11 +372,12 @@ export const En: MessagesEngType = {
       myset: "Myset",
       ruffen: "Ruffen",
       groups: "Group Structure",
-      "age-sections": "Age Groups",
+      "age-sections": "Age groups",
       sjohumlorna: "Sjöhumlorna",
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
+      familjescouter:"Familjescouter",
       join: "Join The Scouts",
       "become-a-scout": "Become a Scout",
       faq: "FAQ"
