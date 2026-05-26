@@ -610,4 +610,4 @@ export const Sv: MessagesSvType = {
     btnMobile: "Ladda ner PDF",
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
   }
-}
+};
