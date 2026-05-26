@@ -187,8 +187,12 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
-  }
-
+  },
+  history: Record <string, string>
+  guidelines: Record <string, string>
+  safeScout: Record <string, string>
+  vests: Record <string, string>
+  gdpr: Record <string, string>
 };
 
 export const Sv: MessagesSvType = {
@@ -380,5 +384,74 @@ export const Sv: MessagesSvType = {
     headline: "Scoutstugor",
     title: "Myset",
     text: "I skogen mellan Lövsta och Gåseborg ligger Myset – vår stora och fina scoutstuga. Här samlas kåren för en mängd olika aktiviteter, inte minst hajker som bjuder på både äventyr och gemenskap.",
+  },
+  history: {
+    h0: "Historian om HSS",
+    p0: "Kåren grundades år 1959 och växte snabbt.",
+    p1: "Engagemanget var stort, inte minst från föräldrar som hjälpte till att ordna aktiviteter, samla in pengar och bygga upp verksamheten.",
+    p2: "Den allra första båten, Blekingeekan “Inga-Lunda”, blev starten på kårens sjöliv, och med tiden kunde fler båtar köpas in tack vare basarer, lotterier och hårt arbete.",
+    p3: "I början av 60-talet hade kåren vuxit rejält, med många scouter som ville ut på Mälaren. Nya båtar sjösattes och segling blev en självklar del av scoutlivet.",
+    p4: "Samtidigt växte behovet av en egen plats på land. En scoutstuga byggdes upp under flera år av ideella krafter och invigdes 1968. Stugan fick namnet Myset och används än idag som en plats för gemenskap, läger och minnen. ",
+    p5: "Sedan starten 1959 har HSS varit en sjöscoutkår byggd på engagemang, samarbete och viljan att ge unga äventyr och gemenskap, och den lågan brinner fortfarande starkt idag."
+  },
+  guidelines: {
+    t0: "HSS riktlinjer",
+    p0: "Vi har skapat riktlinjer för vilka typer av flytvästar som ska användas av Scouter som inte kan simma, och Scouter som kan simma. ",
+    p1: "Det är bra att utgå från att alla, oavsett simkunnighet, ska ha på sig flytväst på bryggor och i båtar. Det är också viktigt att flytvästen är rätt knäppt eller knuten.",
+    p2: "Scouter som för HSS ej kunnat uppvisa simkunnighet om 200 m bör bära räddningsväst.",
+    p3: "Scouter som för HSS kunnat uppvisa simkunnighet om 200 m kan bära en seglarväst.",
+    p4: "Det finns flera risker med att använda uppblåsbara flytvästar. Använd i stället räddningsväst eller seglarväst, beroende på simkunskap.",
+    t1: "Ej simkunniga scouter",
+    t2: "Simkunniga scouter",
+    t3: "Uppblåsbara västar",
+    w0: "HSS krav på räddningsväst:",
+    w1: "HSS krav på seglarväst:",
+    w2: "HSS avråder från användning av uppblåsbara flytvästar.",
+    l0: "Flytkraft minst 90 N",
+    l1: "Storlek och passform anpassad till scoutens vikt",
+    l2: "Grenrem",
+    l3: "Flytkraft minst 45 N",
+    l4: "Storlek och passform anpassad till scoutens vikt",
+    l5: "Grenrem (Sjöhumlor och Kapare)"
+  },
+  safeScout: {
+    h0: "Säker scout",
+    s0: "Bad från brygga",
+    s1: "Bad från båt",
+    s2: "Seglingshajk eller eskader",
+    t0: "Undantag",
+    w0: "Alla som är på bryggor eller i båtar ska ha flytväst.",
+    p0: "Man ska inte gå ut på brygga eller i båt utan flytväst, om inte kåren och skepparen bestämmer något annat i särskilda fall. Flytvästen måste vara hel, fungera som den ska och passa personen i storlek.",
+    p1: "Vid bad från brygga kan man ta av sig flytvästen om en ledare med flytväst övervakar badet och är redo att livrädda om något händer. Det är bara okej om ledaren känner sig trygg med att låta deltagarna bada utan flytväst.",
+    p2: "Vid bad från båt kan flytvästen tas av om båten är förtöjd och en ledare eller skeppare med flytväst är kvar och kan hjälpa, så länge som ledaren/skepparen ger sin tillåtelse och är trygg med situationen.",
+    p3: "Vid seglingshajk eller eskader, när båtarna ligger förtöjda över natten, behövs inte flytväst i sittbrunnen eller ruffen. Men flytväst rekommenderas när man går mellan båt och land."
+  },
+  vests: {
+    h0: "Uppblåsbara västar",
+    w0: "HSS avråder från användning av uppblåsbara flytvästar.",
+    p0: "Det finns flera risker med att använda uppblåsbara flytvästar. Använd i stället räddningsväst eller seglarväst, beroende på simkunskap."
+  },
+  gdpr: {
+    t0: "Uppgiftsinsamling via Scoutnet",
+    p0: "Scoutnet är Scouternas gemensamma medlemsregister och där samlar vi följande information om varje medlem:",
+    p1: "*Dessa uppgifter samlar vi även in för barn i anmälningsregistret (kölistan) som är en del av Scoutnet. Informationen om syskon och föräldrar är för att erbjuda syskonförtur och kunna prioritera barn vars föräldrar har en roll i kåren.",
+    p2: "Syftet med uppgiftsinsamlingen i Scoutnet är att veta vilka våra medlemmar är, för att kunna nå ut med information till dem, för närvaroregistrering, för att se avdelnings- och patrulltillhörighet, och för fakturering.",
+    s0: "Personuppgifter",
+    s1: "Kårinformation",
+    s2: "Uppgiftsinsamlingens syfte",
+    l0: "Namn*",
+    l1: "Personnummer*",
+    l2: "Adress*",
+    l3: "Telefonnummer* (minst ett telefonnummer till föräldrar för omyndig scout, och frivilligt till scout)",
+    l4: "E-postadress* (minst en e-postadress till föräldrar för omyndig scout, och frivilligt till scout)",
+    l5: "Avdelning",
+    l6: "Patrull",
+    l7: "Startdatum i kåren",
+    l8: "Medlemsavgift",
+    l9: "Ev om förälder har roll i kåren*",
+    l10: "Ev om syskon är medlemmar i kåren*",
+    l11: "Genomförda utbildningar (aktuellt framförallt för ledare)",
+    l12: "Roll i kåren (aktuellt endast för ledare)",
+    l13: "Eventuella utmärkelser"
   }
 };

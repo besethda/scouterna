@@ -187,7 +187,12 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string,
-  }
+  },
+  history: Record <string, string>
+  guidelines: Record <string, string>
+  safeScout: Record <string, string>
+  vests: Record <string, string>
+  gdpr: Record <string, string>
 };
 
 export const En: MessagesEngType = {
@@ -377,5 +382,74 @@ export const En: MessagesEngType = {
     headline: "Scout Cabins",
     title: "Myset",
     text: "In the forest between Lövsta and Gåseborg lies Myset – our large and beautiful scout cabin. This is where the troop gathers for a variety of activities, especially hikes that offer both adventure and fellowship.",
+  },
+  history: {
+    h0: "The History of HSS",
+    p0: "The scout group was founded in 1959 and grew rapidly.",
+    p1: "The commitment was immense, especially from parents who helped organize activities, raise funds, and build up the operations.",
+    p2: "The very first boat, a 'Blekingeeka' (traditional wooden boat) named 'Inga-Lunda', marked the beginning of the group's seafaring life. Over time, more boats could be purchased thanks to bazaars, lotteries, and hard work.",
+    p3: "By the early '60s, the group had grown substantially, with many scouts wanting to venture out onto Lake Mälaren. New boats were launched and sailing became an integral part of scout life.",
+    p4: "At the same time, the need for a dedicated place on land grew. A scout hut was built over several years by volunteers and was inaugurated in 1968. The cabin was named 'Myset' and is still used today as a place for fellowship, camps, and memories.",
+    p5: "Since its inception in 1959, HSS has been a sea scout group built on dedication, cooperation, and the desire to give young people adventure and community—and that flame still burns brightly today."
+  },
+  guidelines: {
+    t0: "HSS guidelines",
+    p0: "We have created guidelines for which types of life jackets should be used by Scouts who cannot swim, and Scouts who can swim.",
+    p1: "It is best to assume that everyone, regardless of swimming ability, should wear a life jacket on docks and in boats. It is also important that the life jacket is properly buckled or tied.",
+    p2: "Scouts who have not been able to demonstrate a 200m swimming proficiency to HSS should wear a life jacket (buoyancy aid/life vest with collar).",
+    p3: "Scouts who have been able to demonstrate a 200m swimming proficiency to HSS can wear a sailing vest.",
+    p4: "There are several risks associated with using inflatable life jackets. Use a traditional life jacket or sailing vest instead, depending on swimming ability.",
+    t1: "Non-swimming scouts",
+    t2: "Swimming scouts",
+    t3: "Inflatable vests",
+    w0: "HSS requirements for life jackets (with collar):",
+    w1: "HSS requirements for sailing vests:",
+    w2: "HSS advises against the use of inflatable life jackets.",
+    l0: "Buoyancy of at least 90 N",
+    l1: "Size and fit adapted to the scout's weight",
+    l2: "Crotch strap",
+    l3: "Buoyancy of at least 45 N",
+    l4: "Size and fit adapted to the scout's weight",
+    l5: "Crotch strap (Sjöhumlor and Kapare branches)"
+  },
+  safeScout: {
+    h0: "Safe Scout",
+    s0: "Swimming from a dock",
+    s1: "Swimming from a boat",
+    s2: "Sailing hike or flotilla",
+    t0: "Exceptions",
+    w0: "Everyone on docks or in boats must wear a life jacket.",
+    p0: "No one should go out onto a dock or into a boat without a life jacket, unless the scout group and the skipper decide otherwise in special cases. The life jacket must be intact, function properly, and be the correct size for the person.",
+    p1: "When swimming from a dock, the life jacket can be removed if a leader wearing a life jacket supervises the swimming and is ready to perform a rescue if anything happens. This is only okay if the leader feels safe and confident allowing the participants to swim without life jackets.",
+    p2: "When swimming from a boat, the life jacket can be removed if the boat is moored and a leader or skipper wearing a life jacket remains on board to help, provided that the leader/skipper gives their permission and feels safe and confident with the situation.",
+    p3: "During a sailing hike or flotilla, when the boats are moored overnight, a life jacket is not needed in the cockpit or the cabin. However, a life jacket is recommended when moving between the boat and land."
+  },
+  vests: {
+    h0: "Inflatable vests",
+    w0: "HSS advises against the use of inflatable life jackets.",
+    p0: "There are several risks associated with using inflatable life jackets. Use a traditional life jacket or sailing vest instead, depending on swimming ability."
+  },
+  gdpr: {
+    t0: "Data Collection via Scoutnet",
+    p0: "Scoutnet is the Scouts' joint member registry, where we collect the following information about each member:",
+    p1: "*We also collect this information for children in the registration registry (waiting list), which is a part of Scoutnet. The information regarding siblings and parents is used to offer sibling priority and to prioritize children whose parents hold a role within the scout group.",
+    p2: "The purpose of collecting data in Scoutnet is to know who our members are, to be able to reach them with information, for attendance registration, to track section and patrol affiliation, and for invoicing.",
+    s0: "Personal Data",
+    s1: "Scout Group Information",
+    s2: "Purpose of Data Collection",
+    l0: "Name*",
+    l1: "Personal identity number*",
+    l2: "Address*",
+    l3: "Phone number* (at least one phone number to a parent/guardian for a minor scout, and optional for the scout)",
+    l4: "Email address* (at least one email address to a parent/guardian for a minor scout, and optional for the scout)",
+    l5: "Section",
+    l6: "Patrol",
+    l7: "Start date in the scout group",
+    l8: "Membership fee",
+    l9: "If applicable, whether a parent holds a role in the scout group*",
+    l10: "If applicable, whether siblings are members of the scout group*",
+    l11: "Completed training/courses (primarily relevant for leaders)",
+    l12: "Role in the scout group (only relevant for leaders)",
+    l13: "Any awards or decorations"
   }
 };
