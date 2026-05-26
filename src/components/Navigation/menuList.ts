@@ -21,7 +21,7 @@ export const menuList = [
         submenu: [
             {
                 nameKey: "nav_ourUnitStructure",
-                href: "/groups/age-sections",
+                href: "/groups",
                 icon: "/menu-scouterna-icon.svg"
             },
             {

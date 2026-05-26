@@ -3,7 +3,6 @@ import { use } from "react";
 
 
 const pageItems = [
-  "age-sections",
   "sjohumlorna",
   "kaparna",
   "utmanare",
@@ -36,8 +35,6 @@ const Groups = ({
       return <p>Utmanare page</p>;
   }else if (singleGroup === "konvojen") {
       return <p>Konvojen page</p>;
-  }else if (singleGroup === "age-sections") {
-      return <p> Age group page</p>;
   }else if (singleGroup === "familjescouter") {
       return <p> familjescouter page</p>;
   }

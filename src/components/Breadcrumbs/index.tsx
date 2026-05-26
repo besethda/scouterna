@@ -12,8 +12,7 @@ const routes: routesType = {
   "/join/become-a-scout": true,
   "/join/faq": true,
 
-  "/groups": false,
-  "/groups/age-sections": true,
+  "/groups": true,
   "/groups/sjohumlorna": true,
   "/groups/kaparna": true,
   "/groups/utmanare": true,
