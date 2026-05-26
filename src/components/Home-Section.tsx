@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Placeholder from '../../public/images/DSCF3071.jpg'
 import useMessages from "@/hook/useMessages";

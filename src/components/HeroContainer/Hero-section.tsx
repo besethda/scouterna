@@ -1,3 +1,5 @@
+"use client"
+
 import useMessages from '@/hook/useMessages'
 import undefinedBg from "../../public/images/DSCF3020.jpg"
 

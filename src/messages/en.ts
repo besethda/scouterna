@@ -20,6 +20,7 @@ export type MessagesEngType = {
     nav_unit2: string,
     nav_unit3: string,
     nav_unit4: string,
+    nav_unit5: string,
     nav_whatWeDo: string,
     nav_LifeScout: string,
     nav_boats: string,
@@ -166,8 +167,8 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string
-  }, 
-    groupsCard: {
+  },
+  groupsCard: {
     headline: string,
     title: string,
     text: string,
@@ -176,12 +177,12 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   cabinsCard: {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   mysetCard: {
     headline: string,
     title: string,
@@ -213,6 +214,7 @@ export const En: MessagesEngType = {
     nav_unit2: "Kaparna",
     nav_unit3: "Konvojen",
     nav_unit4: "Utmanare",
+    nav_unit5: "Familjescouter",
     nav_whatWeDo: "What We Do",
     nav_LifeScout: "Life as a Sea Scout",
     nav_boats: "Our Boats",
@@ -370,12 +372,12 @@ export const En: MessagesEngType = {
     headline: "Scout Life",
     title: "Our Boats",
     text: "Our boats are an important part of scout life. Here, we learn to cooperate, develop seamanship, and experience adventures together on the water.",
-  }, 
+  },
   cabinsCard: {
     headline: "Scout Life",
     title: "Our Scout Cabins",
     text: "Life as a sea scout is full of adventure, community, and freedom. You encounter the sea and nature together with others and create memories for life. This is where the adventure begins.",
-  }, 
+  },
   mysetCard: {
     headline: "Scout Cabins",
     title: "Myset",

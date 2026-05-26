@@ -44,6 +44,11 @@ export const menuList = [
                 href: "/groups/utmanare",
                 icon: "/menu-megaphone-illustration.png"
             },
+            {
+                nameKey: "nav_unit5",
+                href: "/groups/familjescouter",
+                icon: "/familjescouter.svg"
+            },
         ]
     },
     {
