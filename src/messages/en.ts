@@ -192,6 +192,7 @@ export type MessagesEngType = {
   guidelines: Record <string, string>
   safeScout: Record <string, string>
   vests: Record <string, string>
+  lockable: Record <string, string>
   gdpr: Record <string, string>
 };
 
@@ -397,7 +398,6 @@ export const En: MessagesEngType = {
     p0: "We have created guidelines for which types of life jackets should be used by Scouts who cannot swim, and Scouts who can swim.",
     p1: "It is best to assume that everyone, regardless of swimming ability, should wear a life jacket on docks and in boats. It is also important that the life jacket is properly buckled or tied.",
     p2: "Scouts who have not been able to demonstrate a 200m swimming proficiency to HSS should wear a life jacket (buoyancy aid/life vest with collar).",
-    p3: "Scouts who have been able to demonstrate a 200m swimming proficiency to HSS can wear a sailing vest.",
     t1: "Non-swimming scouts",
     t2: "Swimming scouts",
     w0: "HSS requirements for life jackets (with collar):",
@@ -425,6 +425,12 @@ export const En: MessagesEngType = {
     h0: "Inflatable vests",
     w0: "HSS advises against the use of inflatable life jackets.",
     p0: "There are several risks associated with using inflatable life jackets. Use a traditional life jacket or sailing vest instead, depending on swimming ability."
+  },
+  lockable: {
+    h0: "Inflatable life jackets",
+    w0: "HSS advises against the use of inflatable life jackets.",
+    p0: "There are several risks associated with using inflatable life jackets. Once inflated, it becomes bulky and can make it harder to move around, swim, and climb out of the water. Additionally, an inflatable life jacket gets ruined if it deploys during a swim. It cannot be used for the remainder of the activity, which means a spare life jacket is always required.",
+    w1: "Use a traditional life jacket or sailing vest instead, depending on swimming ability."
   },
   gdpr: {
     t0: "Data Collection via Scoutnet",

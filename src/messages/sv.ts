@@ -192,6 +192,7 @@ type MessagesSvType = {
   guidelines: Record <string, string>
   safeScout: Record <string, string>
   vests: Record <string, string>
+  lockable: Record <string, string>
   gdpr: Record <string, string>
 };
 
@@ -427,6 +428,12 @@ export const Sv: MessagesSvType = {
     h0: "Uppblåsbara västar",
     w0: "HSS avråder från användning av uppblåsbara flytvästar.",
     p0: "Det finns flera risker med att använda uppblåsbara flytvästar. Använd i stället räddningsväst eller seglarväst, beroende på simkunskap."
+  },
+  lockable: {
+    h0: "Upplåsbara flytvästar",
+    w0: "HSS avråder från användning av uppblåsbara flytvästar.",
+    p0: "Det finns flera risker med att använda uppblåsbara flytvästar. När den blåsts upp blir den stor och kan göra det svårare att röra sig, simma och ta sig upp ur vattnet. Dessutom blir en uppblåsbar flytväst förstörd om den löser ut vid bad. Då kan den inte användas mer under aktiviteten, och därför behövs alltid en extra flytväst.",
+    w1: "Använd i stället räddningsväst eller seglarväst, beroende på simkunskap."
   },
   gdpr: {
     t0: "Uppgiftsinsamling via Scoutnet",
