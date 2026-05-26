@@ -98,6 +98,15 @@ export type MessagesEngType = {
     utmanare_time: string,
     utmanare_place: string,
     utmanare_paragraph: string,
+    familjescouter_title: string,
+    familjescouter_ages: string,
+    familjescouter_day: string,
+    familjescouter_time: string,
+    familjescouter_place: string,
+    familjescouter_paragraph: string,
+    scouts_title:string,
+    scouts_paragraph: string,
+    family_title:string,
     image_message: string,
     basic_message: string,
     day: string,
@@ -187,6 +196,42 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string,
+  },
+  faq: {
+    title: string,
+    title02: string;
+  };
+  fragorSvar: {
+      question: string,
+      answer: string
+  }[];
+  fragorSvar02: {
+      question: string,
+      answer: string
+    }[]; 
+  lifestyle: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  ruffen: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  memberInfo: {
+    headline: string,
+    title: string,
+    text: string
+  }, 
+  safetyCard: {
+    headline: string,
+    title: string,
+    text: string
+  }, 
+  safetyBtn: {
+    btnMobile: string,
+    btnDesktop: string
   }
 };
 
@@ -194,7 +239,7 @@ export const En: MessagesEngType = {
   home: {
     title: "Welcome to HSS",
     divisions: "Groups",
-    divisions_text: "We have age-based groups for children from 8 years old and up."
+    divisions_text: "We divide our departments by age. The content is adapted to the Scouts' interests and needs, and is designed to be fun, rewarding and safe for everyone.",
   },
   about: {
     title: "About HSS"
@@ -276,6 +321,15 @@ export const En: MessagesEngType = {
     utmanare_time: "18:00",
     utmanare_place: "Ruffen",
     utmanare_paragraph: "The oldest scouts run their own projects, participate in international camps and take on leadership roles for the younger ones. Scouting becomes a way to shape themselves and their surroundings.",
+    familjescouter_title: "Familjescouter",
+    familjescouter_ages: "Under 8 Years",
+    familjescouter_day: "Friday",
+    familjescouter_time: "18:00",
+    familjescouter_place: "Ruffen",
+    familjescouter_paragraph: "Familjescouter is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
+    scouts_title: "Scouts",
+    scouts_paragraph: "We have age-separated departments from the age of 8.",
+    family_title: "Familjescouter",
     image_message: "Read more about ",
     basic_message: "Check out ",
     day: "Day: ",
@@ -377,5 +431,75 @@ export const En: MessagesEngType = {
     headline: "Scout Cabins",
     title: "Myset",
     text: "In the forest between Lövsta and Gåseborg lies Myset – our large and beautiful scout cabin. This is where the troop gathers for a variety of activities, especially hikes that offer both adventure and fellowship.",
+  },
+  faq: {
+    title: "Join the Scouts",
+    title02: "Membership Questions"
+  },
+  fragorSvar: [
+  { question: "Do we need to buy a scout uniform right away?", answer: "answer" },
+  { question: "What kind of clothes do scouts usually wear?", answer: "answer" },
+  { question: "Are meetings always held outdoors?", answer: "answer" },
+  { question: "How much does it cost to join the scouts?", answer: "answer" },
+  { question: "Does the child need to have prior experience with sailing or scouting?", answer: "answer" },
+  { question: "We have become members—what happens now?", answer: "answer" },
+  ],
+  fragorSvar02: [
+  { 
+    question: "Why do we have a scout uniform?", 
+    answer: `The very first training you should take is "Safe Meetings" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour.
+    Here is how you get started with Safe Meetings >> 
+    After Safe Meetings, it is appropriate to take "Leading Scouting" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further.
+    Read more about Leading Scouting here >> When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. Read more about them here >>` 
+  },
+  { 
+    question: "I am a new scout leader! Which training should I take first?", 
+    answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.` 
+    },
+    { 
+      question: "I have lost my invoice. What should I do?", 
+      answer: `Send an email to support@scouterna.se with your name and membership number, and you will receive a copy of the invoice via email.` 
+  },
+  { 
+    question: "What is included in my membership fee?", 
+    answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.` 
+  },
+  { 
+    question: "How do I change my billing address?", 
+    answer: "Go to www.scoutnet.se, log in, and change your billing address." 
+  },
+  { 
+    question: "My invoice has the wrong amount. What should I do?", 
+    answer: `Send an email to support@scouterna.se and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.` 
+  },
+  { 
+    question: "How do I change my contact information?", 
+    answer: `Log in to www.scoutnet.se, where you can update your information.` 
+  }, 
+],
+  lifestyle: {
+    headline: "Scout Life",
+    title: "The Waves are Waiting",
+    text: "Life as a sea scout is filled with adventure, community, and freedom. You encounter the sea and nature together with others and create memories for life. This is where the adventure begins."
+  }, 
+  ruffen: {
+    headline: "Scout Cabins",
+    title: "Ruffen",
+    text: "Ruffen is our premises located by Hässelby Strandbad. This is where we hold our troop meetings, and it also houses our Optimist dinghies.",
+  }, 
+  memberInfo: {
+    headline: "Scout Life",
+    title: "Information",
+    text: "Here we have gathered useful information for our members to know."
+  }, 
+  safetyCard: {
+    headline: "Safety",
+    title: "HSS Life Jacket Policy",
+    text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF."
+  }, 
+  safetyBtn: {
+    btnMobile: "Download PDF",
+    btnDesktop: "Download the life jacket policy as PDF"
   }
+  
 };

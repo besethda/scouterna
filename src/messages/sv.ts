@@ -81,6 +81,15 @@ type MessagesSvType = {
     utmanare_time: string,
     utmanare_place: string,
     utmanare_paragraph: string,
+    familjescouter_title: string,
+    familjescouter_ages: string,
+    familjescouter_day: string,
+    familjescouter_time: string,
+    familjescouter_place: string,
+    familjescouter_paragraph: string,
+    scouts_title:string,
+    scouts_paragraph: string,
+    family_title:string,
     image_message: string,
     basic_message: string,
     day: string,
@@ -130,8 +139,8 @@ type MessagesSvType = {
   CTABtn: {
     text: string
   },
-  breadcrumbs: {
-    title: string,
+  breadcrumbs:{
+    title:string,
     path: string,
     page: {
       "about-us": string,
@@ -158,16 +167,16 @@ type MessagesSvType = {
       faq: string,
       [key: string]: string
     }
-  }, 
+  };
   faqCard: {
-    title: string, 
+    title: string,
     text: string
   },
   joinCard: {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   groupsCard: {
     headline: string,
     title: string,
@@ -177,16 +186,52 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   cabinsCard: {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   mysetCard: {
     headline: string,
     title: string,
     text: string,
+  },
+  faq:{
+    title: string,
+    title02: string
+  },
+  fragorSvar: {
+    question: string;
+    answer: string;
+  }[],
+  fragorSvar02: {
+    question: string;
+    answer: string;
+  }[];
+  lifestyle: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  ruffen: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  memberInfo: {
+    headline: string,
+    title: string,
+    text: string
+  }, 
+  safetyCard: {
+    headline: string,
+    title: string,
+    text: string
+  }, 
+  safetyBtn: {
+    btnMobile: string,
+    btnDesktop: string
   }
 
 };
@@ -195,7 +240,7 @@ export const Sv: MessagesSvType = {
   home: {
     title: "Välkommen to HSS",
     divisions: "Avdelningar",
-    divisions_text: "Vi har åldersindelade avdelningar från och med 8 års ålder."
+    divisions_text: "Vi delar in våra avdelningar efter åldrar. Innehållet anpassas efter Scouternas intressen och behov, och utformas för att vara roligt, givande och tryggt för alla.",
   },
   about: {
     title: "Om HSS"
@@ -284,6 +329,15 @@ export const Sv: MessagesSvType = {
     utmanare_time: "18:00",
     utmanare_place: "Ruffen",
     utmanare_paragraph: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.",
+    familjescouter_title: "Familjescouter",
+    familjescouter_ages: "Under 8 år",
+    familjescouter_day: "Fredag",
+    familjescouter_time: "18:00",
+    familjescouter_place: "Ruffen",
+    familjescouter_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
+    scouts_title: "Scouter",
+    scouts_paragraph: "Vi har åldersindelade avdelningar från och med 8 års ålder. ",
+    family_title: "Familjescouting",
     image_message: "Läs mer om ",
     basic_message: "Gå till ",
     day: "Dag: ",
@@ -351,16 +405,16 @@ export const Sv: MessagesSvType = {
     card_headline_4: "Utbildade ledare",
     card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
     span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
-  }, 
+  },
   faqCard: {
-    title: "Frågor & svar", 
+    title: "Frågor & svar",
     text: "Här har vi samlat vanliga frågor vi får från blivande och nuvarande medlemmar i föreningen."
   },
   joinCard: {
     headline: "Bli Scout",
     title: "Bli en del av HSS",
     text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
-  }, 
+  },
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -370,15 +424,84 @@ export const Sv: MessagesSvType = {
     headline: "Scoutliv",
     title: "Våra båtar",
     text: "Våra båtar är en viktig del av scoutlivet. Här lär vi oss samarbeta, utveckla sjömanskap och uppleva äventyr tillsammans på vattnet.",
-  }, 
+  },
   cabinsCard: {
     headline: "Scoutliv",
     title: "Våra Scoutstugor",
     text: "Livet som sjöscout är fyllt av äventyr, gemenskap och frihet. Du möter havet och naturen tillsammans med andra och skapar minnen för livet. Här börjar äventyret.",
-  }, 
+  },
   mysetCard: {
     headline: "Scoutstugor",
     title: "Myset",
     text: "I skogen mellan Lövsta och Gåseborg ligger Myset – vår stora och fina scoutstuga. Här samlas kåren för en mängd olika aktiviteter, inte minst hajker som bjuder på både äventyr och gemenskap.",
+  },
+  faq: {
+    title: "Bli Scout",
+    title02: "Medlemsfrågor"
+  },
+  fragorSvar: [
+  { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
+  { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
+  { question: "Hålls möten alltid utomhus?", answer: "svar" },
+  { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
+  { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
+  { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
+  ],
+  fragorSvar02: [
+    { 
+      question: "Varför har vi en scoutdräkt?", 
+      answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra.
+      Så här kommer du igång med Trygga möten >> 
+      Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas.
+      Läs mer om Leda socuting här >> När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att wybrać mellan. Du hittar dem alla på Ledarskapsön. Läs mer om dem här >>` 
+    },
+    { 
+      question: "Jag är ny scoutledare! Vilken utbildning ska jag gå först?", 
+      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.` 
+    },
+    { 
+      question: "Jag har tappat bort min faktura. Vad gör jag?", 
+      answer: `Skicka ett mejl till support@scouterna.se med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.` 
+    },
+    { 
+      question: "Vad ingår i min medlemsavgift?", 
+      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.` 
+    },
+    { 
+      question: "Hur ändrar jag min fakturaadress?", 
+      answer: "Gå till www.scoutnet.se, logga in och ändra din fakturaadress." 
+    },
+    { 
+      question: "Min faktura har felaktigt belopp. Vad gör jag?", 
+      answer: `Skicka ett mejl till support@scouterna.se och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.` 
+    },
+    { 
+      question: "Hur ändrar jag mina kontaktuppgifter?", 
+      answer: `Logga in på www.scoutnet.se där kan du uppdatera dina uppgifter.` 
+    },
+  ],
+  lifestyle: {
+    headline: "Scoutliv",
+    title: "Vågorna Väntar",
+    text: "Livet som sjöscout är fyllt av äventyr, gemenskap och frihet. Du möter havet och naturen tillsammans med andra och skapar minnen för livet. Här börjar äventyret."
+  }, 
+  ruffen: {
+    headline: "Scoutstugor",
+    title: "Ruffen",
+    text: "Ruffen är vår lokal vid Hässelby Strandbad. Här har vi våra avdelningsmöten och den huserar även våra optimistjollar."
+  },
+  memberInfo: {
+    headline: "Scoutliv",
+    title: "Information",
+    text: "Här har vi samlat information som är bra att veta för våra medlemmar."
+  }, 
+  safetyCard: {
+    headline: "Säkerhet",
+    title: "HSS Flytvästpolicy",
+    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy.  Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
+    }, 
+  safetyBtn: {
+    btnMobile: "Ladda ner PDF",
+    btnDesktop: "Ladda ner flytvästpolicyn som PDF"
   }
 };
