@@ -6,7 +6,6 @@ type MessagesSvType = {
     title: string;
     divisions: string;
     divisions_text: string;
-    divisions_family_title: string;
   };
   about: {
     title: string;
@@ -87,6 +86,9 @@ type MessagesSvType = {
     familjescouter_time: string,
     familjescouter_place: string,
     familjescouter_paragraph: string,
+    scouts_title:string,
+    scouts_paragraph: string,
+    family_title:string,
     image_message: string,
     basic_message: string,
     day: string,
@@ -201,8 +203,7 @@ export const Sv: MessagesSvType = {
   home: {
     title: "Välkommen to HSS",
     divisions: "Avdelningar",
-    divisions_text: "Vi har åldersindelade avdelningar från och med 8 års ålder.",
-    divisions_family_title: "Familjescouting",
+    divisions_text: "Vi delar in våra avdelningar efter åldrar. Innehållet anpassas efter Scouternas intressen och behov, och utformas för att vara roligt, givande och tryggt för alla.",
   },
   about: {
     title: "Om HSS"
@@ -296,6 +297,9 @@ export const Sv: MessagesSvType = {
     familjescouter_time: "18:00",
     familjescouter_place: "Ruffen",
     familjescouter_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
+    scouts_title: "Scouter",
+    scouts_paragraph: "Vi har åldersindelade avdelningar från och med 8 års ålder. ",
+    family_title: "Familjescouting",
     image_message: "Läs mer om ",
     basic_message: "Gå till ",
     day: "Dag: ",

@@ -6,7 +6,6 @@ export type MessagesEngType = {
     title: string;
     divisions: string;
     divisions_text: string;
-    divisions_family_title: string,
   };
   about: {
     title: string;
@@ -104,6 +103,9 @@ export type MessagesEngType = {
     familjescouter_time: string,
     familjescouter_place: string,
     familjescouter_paragraph: string,
+    scouts_title:string,
+    scouts_paragraph: string,
+    family_title:string,
     image_message: string,
     basic_message: string,
     day: string,
@@ -200,8 +202,7 @@ export const En: MessagesEngType = {
   home: {
     title: "Welcome to HSS",
     divisions: "Groups",
-    divisions_text: "We have age-based groups for children from 8 years old and up.",
-    divisions_family_title: "Familjescouting",
+    divisions_text: "We divide our departments by age. The content is adapted to the Scouts' interests and needs, and is designed to be fun, rewarding and safe for everyone.",
   },
   about: {
     title: "About HSS"
@@ -288,6 +289,9 @@ export const En: MessagesEngType = {
     familjescouter_time: "18:00",
     familjescouter_place: "Ruffen",
     familjescouter_paragraph: "Familjescouter is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
+    scouts_title: "Scouts",
+    scouts_paragraph: "We have age-separated departments from the age of 8.",
+    family_title: "Familjescouter",
     image_message: "Read more about ",
     basic_message: "Check out ",
     day: "Day: ",
