@@ -169,14 +169,14 @@ type MessagesSvType = {
     }
   };
   faqCard: {
-    title: string, 
+    title: string,
     text: string
   },
   joinCard: {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   groupsCard: {
     headline: string,
     title: string,
@@ -186,12 +186,12 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   cabinsCard: {
     headline: string,
     title: string,
     text: string,
-  }, 
+  },
   mysetCard: {
     headline: string,
     title: string,
@@ -209,6 +209,31 @@ type MessagesSvType = {
     question: string;
     answer: string;
   }[];
+  lifestyle: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  ruffen: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  memberInfo: {
+    headline: string,
+    title: string,
+    text: string
+  }, 
+  safetyCard: {
+    headline: string,
+    title: string,
+    text: string
+  }, 
+  safetyBtn: {
+    btnMobile: string,
+    btnDesktop: string
+  }
+
 };
 
 export const Sv: MessagesSvType = {
@@ -380,16 +405,16 @@ export const Sv: MessagesSvType = {
     card_headline_4: "Utbildade ledare",
     card_text_4: "Våra ledare har gedigen erfarenhet och utbildning inom Scouting och sjösäkerhet.",
     span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
-  }, 
+  },
   faqCard: {
-    title: "Frågor & svar", 
+    title: "Frågor & svar",
     text: "Här har vi samlat vanliga frågor vi får från blivande och nuvarande medlemmar i föreningen."
   },
   joinCard: {
     headline: "Bli Scout",
     title: "Bli en del av HSS",
     text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
-  }, 
+  },
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -399,12 +424,12 @@ export const Sv: MessagesSvType = {
     headline: "Scoutliv",
     title: "Våra båtar",
     text: "Våra båtar är en viktig del av scoutlivet. Här lär vi oss samarbeta, utveckla sjömanskap och uppleva äventyr tillsammans på vattnet.",
-  }, 
+  },
   cabinsCard: {
     headline: "Scoutliv",
     title: "Våra Scoutstugor",
     text: "Livet som sjöscout är fyllt av äventyr, gemenskap och frihet. Du möter havet och naturen tillsammans med andra och skapar minnen för livet. Här börjar äventyret.",
-  }, 
+  },
   mysetCard: {
     headline: "Scoutstugor",
     title: "Myset",
@@ -454,5 +479,29 @@ export const Sv: MessagesSvType = {
       question: "Hur ändrar jag mina kontaktuppgifter?", 
       answer: `Logga in på www.scoutnet.se där kan du uppdatera dina uppgifter.` 
     },
-  ]
+  ],
+  lifestyle: {
+    headline: "Scoutliv",
+    title: "Vågorna Väntar",
+    text: "Livet som sjöscout är fyllt av äventyr, gemenskap och frihet. Du möter havet och naturen tillsammans med andra och skapar minnen för livet. Här börjar äventyret."
+  }, 
+  ruffen: {
+    headline: "Scoutstugor",
+    title: "Ruffen",
+    text: "Ruffen är vår lokal vid Hässelby Strandbad. Här har vi våra avdelningsmöten och den huserar även våra optimistjollar."
+  },
+  memberInfo: {
+    headline: "Scoutliv",
+    title: "Information",
+    text: "Här har vi samlat information som är bra att veta för våra medlemmar."
+  }, 
+  safetyCard: {
+    headline: "Säkerhet",
+    title: "HSS Flytvästpolicy",
+    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy.  Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
+    }, 
+  safetyBtn: {
+    btnMobile: "Ladda ner PDF",
+    btnDesktop: "Ladda ner flytvästpolicyn som PDF"
+  }
 };

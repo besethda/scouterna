@@ -208,7 +208,31 @@ export type MessagesEngType = {
   fragorSvar02: {
       question: string,
       answer: string
-    }[];
+    }[]; 
+  lifestyle: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  ruffen: {
+    headline: string,
+    title: string,
+    text: string,
+  }, 
+  memberInfo: {
+    headline: string,
+    title: string,
+    text: string
+  }, 
+  safetyCard: {
+    headline: string,
+    title: string,
+    text: string
+  }, 
+  safetyBtn: {
+    btnMobile: string,
+    btnDesktop: string
+  }
 };
 
 export const En: MessagesEngType = {
@@ -451,6 +475,31 @@ export const En: MessagesEngType = {
   { 
     question: "How do I change my contact information?", 
     answer: `Log in to www.scoutnet.se, where you can update your information.` 
+  }, 
+],
+  lifestyle: {
+    headline: "Scout Life",
+    title: "The Waves are Waiting",
+    text: "Life as a sea scout is filled with adventure, community, and freedom. You encounter the sea and nature together with others and create memories for life. This is where the adventure begins."
+  }, 
+  ruffen: {
+    headline: "Scout Cabins",
+    title: "Ruffen",
+    text: "Ruffen is our premises located by Hässelby Strandbad. This is where we hold our troop meetings, and it also houses our Optimist dinghies.",
+  }, 
+  memberInfo: {
+    headline: "Scout Life",
+    title: "Information",
+    text: "Here we have gathered useful information for our members to know."
+  }, 
+  safetyCard: {
+    headline: "Safety",
+    title: "HSS Life Jacket Policy",
+    text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF."
+  }, 
+  safetyBtn: {
+    btnMobile: "Download PDF",
+    btnDesktop: "Download the life jacket policy as PDF"
   }
-  ]
+  
 };
