@@ -10,6 +10,18 @@ import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 
+
+
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params
+    return {
+      title: locale === 'en' ? "HSS | Home" : "HSS | Hem",
+      description: "HSS Website",
+    }
+}
+
+
 const varela = Varela_Round({
   variable: "--font-varela",
   subsets: ["latin"],
@@ -31,10 +43,10 @@ const public_sans = Public_Sans({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "HSS | Hem",
-  description: "HSS Website",
-};
+// export const metadata: Metadata = {
+//   title: "HSS | Hem",
+//   description: "HSS Website",
+// };
 
 type Params = {
   locale: string;

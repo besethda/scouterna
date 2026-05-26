@@ -155,7 +155,6 @@ export type MessagesEngType = {
       myset: string,
       ruffen: string,
       groups: string,
-      "age-sections": string,
       sjohumlorna: string,
       kaparna: string,
       utmanare: string,
@@ -239,7 +238,31 @@ export type MessagesEngType = {
   safetyBtn: {
     btnMobile: string,
     btnDesktop: string
-  }
+  },
+    tabTitle: {
+      history:string,
+      join:string, 
+      "become-a-scout": string,
+      faq:string, 
+      "groups":string, 
+      sjohumlorna:string, 
+      kaparna:string,
+      konvojen:string, 
+      utmanare:string, 
+      familjescouter:string, 
+      lifestyle:string, 
+      boats:string,
+      cabins:string, 
+      myset:string, 
+      ruffen:string, 
+      members:string, 
+      information:string,
+      safety:string,
+      contact:string, 
+      gdpr:string,
+      [key: string]: string
+     },
+    description: string,
 };
 
 export const En: MessagesEngType = {
@@ -381,7 +404,6 @@ export const En: MessagesEngType = {
       myset: "Myset",
       ruffen: "Ruffen",
       groups: "Group Structure",
-      "age-sections": "Age groups",
       sjohumlorna: "Sjöhumlorna",
       kaparna: "Kaparna",
       utmanare: "Utmanare",
@@ -602,5 +624,28 @@ export const En: MessagesEngType = {
   safetyBtn: {
     btnMobile: "Download PDF",
     btnDesktop: "Download the life jacket policy as PDF"
-  }
+  }, 
+  tabTitle:{
+    history:"HSS | History",
+    join:"HSS | Join", 
+    "become-a-scout": "HSS | Become a scout",
+    faq:"HSS | FAQ", 
+    "groups":"HSS | Groups", 
+    sjohumlorna:"HSS | Sjöhumlorna", 
+    kaparna: "HSS | Kaparna",
+    konvojen:"HSS | Konvojen", 
+    utmanare:"HSS | Utmanare", 
+    familjescouter:"HSS | Familjescouterna", 
+    lifestyle:"HSS | Lifestyle", 
+    boats:"HSS | Boats",
+    cabins:"HSS | Cabins", 
+    myset:"HSS | Myset", 
+    ruffen:"HSS | Ruffen", 
+    members:"HSS | Members", 
+    information:"HSS | Members Infomation",
+    safety:"HSS | Life Jacket Policy",
+    contact:"HSS | Contact", 
+    gdpr:"HSS | GDPR"
+    },
+    description:"HSS website"
 };

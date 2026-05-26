@@ -157,7 +157,6 @@ type MessagesSvType = {
       myset: string,
       ruffen: string,
       groups: string,
-      "age-sections": string,
       sjohumlorna: string,
       kaparna: string,
       utmanare: string,
@@ -244,6 +243,30 @@ type MessagesSvType = {
     btnDesktop: string
   }
 
+  tabTitle:{
+      history:string,
+      join:string, 
+      "become-a-scout": string,
+      faq:string, 
+      "groups":string, 
+      sjohumlorna:string, 
+      kaparna:string,
+      konvojen:string, 
+      utmanare:string, 
+      familjescouter:string, 
+      lifestyle:string, 
+      boats:string,
+      cabins:string, 
+      myset:string, 
+      ruffen:string, 
+      members:string, 
+      information:string,
+      safety:string,
+      contact:string, 
+      gdpr:string,
+      [key: string]: string
+     },
+     description:string
 };
 
 export const Sv: MessagesSvType = {
@@ -387,7 +410,6 @@ export const Sv: MessagesSvType = {
       myset: "Myset",
       ruffen: "Ruffen",
       groups: "Våra avdelningar",
-      "age-sections": "Åldersanpassade avdelningar",
       sjohumlorna: "Sjöhumlorna",
       kaparna: "Kaparna",
       utmanare: "Utmanare",
@@ -609,5 +631,28 @@ export const Sv: MessagesSvType = {
   safetyBtn: {
     btnMobile: "Ladda ner PDF",
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
-  }
+  },
+  tabTitle:{
+      history:"HSS | Historia",
+      join:"HSS | Gå med i Scouterna", 
+      "become-a-scout": "HSS | Bli Sjöscout",
+      faq:"HSS | FAQ", 
+      "groups":"HSS | Våra avdelningar", 
+      sjohumlorna:"HSS | Sjöhumlorna", 
+      kaparna: "HSS | Kaparna",
+      konvojen:"HSS | Konvojen", 
+      utmanare:"HSS | Utmanare", 
+      familjescouter:"HSS | Familjescouterna", 
+      lifestyle:"HSS | Livet som Sjöscout", 
+      boats:"HSS | Båtar",
+      cabins:"HSS | Scoutstugor", 
+      myset:"HSS | Myset", 
+      ruffen:"HSS | Ruffen", 
+      members:"HSS | För medlemma", 
+      information:"HSS | Information för medlemmar",
+      safety:"HSS | Flytvästpolicy",
+      contact:"HSS | Kontakt", 
+      gdpr:"HSS | GDPR"
+    }, 
+    description:"HSS webplats"
 };

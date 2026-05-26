@@ -1,18 +1,48 @@
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
-import useMessages from "@/hook/useMessages";
+import { getPageHeadTitle } from "@/lib/utils";
 
-const Groups = ({params}:{params: Promise<{locale: string}>}) => {
 
-    const {locale} = use(params)
-    const messages = locale === "en" ? En : Sv
 
-    return (
-        <div>
-
-        </div>
-    );
+const pageItems = [
+  "sjohumlorna",
+  "kaparna",
+  "utmanare",
+  "konvojen",
+  "familjescouter"
+];
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; singleGroup: string }>;
+}) {
+  const { locale, singleGroup } = await params;
+  const IsSingleGroup = pageItems.includes(singleGroup)
+  const tabTitle = IsSingleGroup ? getPageHeadTitle(locale, singleGroup) : getPageHeadTitle(locale, "HSS | Hem")
+  return  tabTitle
 }
 
-export default Groups
+const Groups = ({
+  params,
+}: {
+  params: Promise<{ locale: string; singleGroup: string }>;
+}) => {
+  const { singleGroup } = use(params);
+  const {locale} = use(params)
+  const messages = locale === "en" ? En : Sv
+
+  if (singleGroup === "sjohumlorna") {
+      return <p>Sjöhumlorna page</p>;
+  } else if (singleGroup === "kaparna") {
+      return <p>Kaparna page</p>;
+  }else if (singleGroup === "utmanare") {
+      return <p>Utmanare page</p>;
+  }else if (singleGroup === "konvojen") {
+      return <p>Konvojen page</p>;
+  }else if (singleGroup === "familjescouter") {
+      return <p> familjescouter page</p>;
+  }
+};
+
+export default Groups;

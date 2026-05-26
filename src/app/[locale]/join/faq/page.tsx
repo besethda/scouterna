@@ -3,6 +3,18 @@ import FragorSvar from "@/components/Fragor-svar";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
+import { getPageHeadTitle } from "@/lib/utils"
+
+
+
+
+
+
+const pageItem = "faq"
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params
+    return getPageHeadTitle(locale, pageItem)
+}
 
 const Faq = ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = use(params)
