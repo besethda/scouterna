@@ -130,8 +130,6 @@ type MessagesSvType = {
   CTABtn: {
     text: string
   },
-  breadcrumbs: {
-    title: string,
   breadcrumbs:{
     title:string,
     path: string,
@@ -160,7 +158,7 @@ type MessagesSvType = {
       faq: string,
       [key: string]: string
     }
-  }, 
+  };
   faqCard: {
     title: string, 
     text: string
@@ -190,15 +188,14 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
-    };
   faq:{
     title: string,
     title02: string
-  };
+  },
   fragorSvar: {
     question: string;
     answer: string;
-  }[];
+  }[],
   fragorSvar02: {
     question: string;
     answer: string;
