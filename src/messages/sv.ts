@@ -190,11 +190,19 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
-  fragorSvar: {
-    question: string,
-    answer: string
-  }
+    };
+  faq:{
+    title: string,
+    title02: string
   };
+  fragorSvar: {
+    question: string;
+    answer: string;
+  }[];
+  fragorSvar02: {
+    question: string;
+    answer: string;
+  }[];
 };
 
 export const Sv: MessagesSvType = {
@@ -387,12 +395,49 @@ export const Sv: MessagesSvType = {
     title: "Myset",
     text: "I skogen mellan Lövsta och Gåseborg ligger Myset – vår stora och fina scoutstuga. Här samlas kåren för en mängd olika aktiviteter, inte minst hajker som bjuder på både äventyr och gemenskap.",
   },
+  faq: {
+    title: "Bli Scout",
+    title02: "Medlemsfrågor"
+  },
   fragorSvar: [
-    { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
-    { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
-    { question: "Hålls möten alltid utomhus?", answer: "svar" },
-    { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
-    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
-    { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
+  { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
+  { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
+  { question: "Hålls möten alltid utomhus?", answer: "svar" },
+  { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
+  { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
+  { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
+  ],
+  fragorSvar02: [
+    { 
+      question: "Varför har vi en scoutdräkt?", 
+      answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra.
+      Så här kommer du igång med Trygga möten >> 
+      Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas.
+      Läs mer om Leda socuting här >> När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att wybrać mellan. Du hittar dem alla på Ledarskapsön. Läs mer om dem här >>` 
+    },
+    { 
+      question: "Jag är ny scoutledare! Vilken utbildning ska jag gå först?", 
+      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.` 
+    },
+    { 
+      question: "Jag har tappat bort min faktura. Vad gör jag?", 
+      answer: `Skicka ett mejl till support@scouterna.se med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.` 
+    },
+    { 
+      question: "Vad ingår i min medlemsavgift?", 
+      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.` 
+    },
+    { 
+      question: "Hur ändrar jag min fakturaadress?", 
+      answer: "Gå till www.scoutnet.se, logga in och ändra din fakturaadress." 
+    },
+    { 
+      question: "Min faktura har felaktigt belopp. Vad gör jag?", 
+      answer: `Skicka ett mejl till support@scouterna.se och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.` 
+    },
+    { 
+      question: "Hur ändrar jag mina kontaktuppgifter?", 
+      answer: `Logga in på www.scoutnet.se där kan du uppdatera dina uppgifter.` 
+    },
   ]
-  }
+};

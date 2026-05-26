@@ -188,12 +188,19 @@ export type MessagesEngType = {
     title: string,
     text: string,
   },
-  fragorSvar: {
-    question: string,
-    answer: string
-  }
+  faq: {
+    title: string,
+    title02: string;
   };
-
+  fragorSvar: {
+      question: string,
+      answer: string
+  }[];
+  fragorSvar02: {
+      question: string,
+      answer: string
+    }[];
+};
 
 export const En: MessagesEngType = {
   home: {
@@ -391,4 +398,49 @@ export const En: MessagesEngType = {
     { question: "Does the child need to have prior experience with sailing or scouting?", answer: "answer" },
     { question: "We have become members—what happens now?", answer: "answer" },
 ]as any,
+  faq: {
+    title: "Join the Scouts",
+    title02: "Membership Questions"
+  },
+  fragorSvar: [
+  { question: "Do we need to buy a scout uniform right away?", answer: "answer" },
+  { question: "What kind of clothes do scouts usually wear?", answer: "answer" },
+  { question: "Are meetings always held outdoors?", answer: "answer" },
+  { question: "How much does it cost to join the scouts?", answer: "answer" },
+  { question: "Does the child need to have prior experience with sailing or scouting?", answer: "answer" },
+  { question: "We have become members—what happens now?", answer: "answer" },
+  ],
+  fragorSvar02: [
+  { 
+    question: "Why do we have a scout uniform?", 
+    answer: `The very first training you should take is "Safe Meetings" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour.
+    Here is how you get started with Safe Meetings >> 
+    After Safe Meetings, it is appropriate to take "Leading Scouting" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further.
+    Read more about Leading Scouting here >> When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. Read more about them here >>` 
+  },
+  { 
+    question: "I am a new scout leader! Which training should I take first?", 
+    answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.` 
+    },
+    { 
+      question: "I have lost my invoice. What should I do?", 
+      answer: `Send an email to support@scouterna.se with your name and membership number, and you will receive a copy of the invoice via email.` 
+  },
+  { 
+    question: "What is included in my membership fee?", 
+    answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.` 
+  },
+  { 
+    question: "How do I change my billing address?", 
+    answer: "Go to www.scoutnet.se, log in, and change your billing address." 
+  },
+  { 
+    question: "My invoice has the wrong amount. What should I do?", 
+    answer: `Send an email to support@scouterna.se and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.` 
+  },
+  { 
+    question: "How do I change my contact information?", 
+    answer: `Log in to www.scoutnet.se, where you can update your information.` 
+  }
+  ]
 };
