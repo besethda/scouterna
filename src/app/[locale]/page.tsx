@@ -15,7 +15,7 @@ const Home = () => {
         <CardWithImage sectionTitle={"homePageCard"} logo="/heart.png" image="/images/IMG_9122.jpeg" />
         <HomeSection />
         <GoodToKnow />
-        <WhiteImageBox/>
+        <WhiteImageBox />
         <DivisionsContainer />
         <InstagramContainer />
       </div>

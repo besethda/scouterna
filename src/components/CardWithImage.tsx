@@ -7,12 +7,12 @@ interface CardWithImageProps {
   sectionTitle: string,
   logo: string,
   image: string
-} 
+}
 
 const CardWithImage = ({ sectionTitle, logo, image }: CardWithImageProps) => {
 
-  const messages= useMessages() as any
- 
+  const messages = useMessages() as any
+
 
   return (
     <>

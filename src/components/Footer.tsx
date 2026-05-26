@@ -8,7 +8,7 @@ import keyIcon from '../../public/key-icon.svg'
 import bagIcon from '../../public/bag-icon.png'
 import schoolIcon from '../../public/school-icon.png'
 import footerHSSIcon from '../../public/footer-hss-logo.png'
-import locationIcon from '../../public/location-icon.png'
+import locationIcon from '../../public/hss-pin-icon.svg'
 import useMessages from '@/hook/useMessages'
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
             <div className='flex flex-col gap-2.5 xl:flex xl:flex-row xl:justify-around xl:w-[90%] xl:mx-auto'>
                 <div className='xl:flex-1'>
                     <Link href="/Home">
-                        <Image src={scautLogo} alt="Scaut-logo" className='w-32.5 h-7 xl:h-[28]' />
+                        <Image src={scautLogo} alt="Scaut-logo" className='w-32.5 h-7 xl:h-[28] xl:w-auto' />
                     </Link>
                     <div className='pt-3'>
                         <p className="text-body xl:hidden">Hässelby Strands Sjöscoutkår</p>
