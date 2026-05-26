@@ -334,8 +334,8 @@ export const En: MessagesEngType = {
     text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
   },
   joinPage: {
-    title: "Anmäl ditt intresse",
-    text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
-    buttonText: "Gå med i Scouterna"
-  }
+  title: "Express Your Interest",
+  text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
+  buttonText: "Join the Scouts"
+}
 };
