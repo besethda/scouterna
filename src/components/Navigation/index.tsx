@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { menuList, mobileMenuList } from "./menuList";
 import Link from "next/link";
@@ -38,7 +38,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
                 {menuList.map((menu, index) => (
                     <div key={index}>
                         <div onClick={() => { handleToggle(menu.id); }}
-                            className="flex justify-between text-base h-69px px-3 py-4 font-semibold border-b border-lightGray cursor-pointer lg:font-normal lg:border-none lg:static">
+                            className="flex justify-between text-base h-69px px-3 py-4 font-semibold border-b border-lightGray cursor-pointer lg:font-normal lg:border-none lg:static lg:hover:text-gray-300">
                             <p> {messages?.navigation?.[menu.nameKey]} </p>
 
                             {openId === menu.id
@@ -60,10 +60,10 @@ const Navigation = ({ onClose }: NavigationProps) => {
                         {openId === menu.id && (
                             <div onClick={() => { handleToggle(menu.id); onClose() }} className="px-2 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0 lg:top-25.5 lg:border-none lg:shadow-md lg:rounded-b-2xl">
                                 {menu.submenu && menu.submenu.map((sub, index) => (
-                                    <Link href={messages?.path + sub.href} key={index} className="">
+                                    <Link href={messages?.path + sub.href} key={index} className="hover:text-text-gray">
                                         <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
                                             <Image src={sub.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
-                                            <div className="px-4 flex items-center">
+                                            <div className="px-4 flex items-center ">
                                                 {messages?.navigation?.[sub.nameKey]}
                                             </div>
                                         </div>
