@@ -1,11 +1,10 @@
-import BoatImages from "@/components/BoatImages";
+import Optimister from "@/components/Optimister";
 
 const History = () => {
 
     return (
         <div>
-            <BoatImages 
-             />
+            <Optimister />
         </div>
     );
 }
