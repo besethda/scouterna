@@ -204,6 +204,8 @@ export type MessagesEngType = {
   lockable: Record <string, string>
   gdpr: Record <string, string>
   ethics: Record<string, string>
+  email: Record<string, string>
+  bank: Record<string, string>
   faq: {
     title: string,
     title02: string;
@@ -518,6 +520,20 @@ export const En: MessagesEngType = {
     p3: "Relevant data from the list above is shared with the municipality in our attendance reporting, for the purpose of receiving grants for our operations. When a member terminates their membership, all information about that member disappears from HSS's view in Scoutnet.",
     p4: "The member data does remain in Scoutnet, however, as long as the person does not have an active membership, only a few employees at the National Scout Office can access the information.",
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
+  },
+  email : {
+    h0: "E-post",
+    s0: "E-post till kåren",
+    p0: "info@hss-scout.org",
+    s1: "E-post för medlemsärenden",
+    p1: "register@hss-scout.org"
+  },
+  bank: {
+    h0: "Bankuppgifter",
+    s0: "Postgiro",
+    p0: "404418 - 6",
+    s1: "Organisationsnummer",
+    p1: "802006 - 2389"
   },
   faq: {
     title: "Join the Scouts",

@@ -1,6 +1,12 @@
+import ContentSection from "@/components/ContentSection"
+
 const Contact = () => {
   return (
-    <div></div>
+    <div>
+
+      <ContentSection sectionLayout={["h", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
+      <ContentSection sectionLayout={["h", "s", "p", "s", "p"]} page={"bank"}/>
+    </div>
   )
 }
 

@@ -204,6 +204,8 @@ type MessagesSvType = {
   lockable: Record <string, string>
   gdpr: Record <string, string>
   ethics: Record<string, string>
+  email: Record<string, string>
+  bank: Record<string, string>
   faq:{
     title: string,
     title02: string
@@ -522,6 +524,20 @@ export const Sv: MessagesSvType = {
     p3: "Relevanta uppgifter i listan ovan delas med kommunen i vår närvarorapportering, i syfte att få bidrag till vår verksamhet. När en medlem avslutar sitt medlemskap försvinner alla uppgifter om medlemmen från HSS:s vy i Scoutnet.",
     p4: "Medlemsuppgifterna finns dock kvar i Scoutnet, men så länge personen inte har något aktivt medlemskap, är det endast ett fåtal anställda på Scouternas kansli som kan komma åt uppgifterna.",
     p5: "I och med medlemskapet är man försäkrad via Scouternas gruppförsäkring och försäkringsbolaget kräver att uppgifterna sparas i upp till tio år, vilket är den tidsbegränsning som man kan kräva ersättning för ett försäkringsärende."
+  },
+  email : {
+    h0: "E-post",
+    s0: "E-post till kåren",
+    p0: "info@hss-scout.org",
+    s1: "E-post för medlemsärenden",
+    p1: "register@hss-scout.org"
+  },
+  bank: {
+    h0: "Bankuppgifter",
+    s0: "Postgiro",
+    p0: "404418 - 6",
+    s1: "Organisationsnummer",
+    p1: "802006 - 2389"
   },
   faq: {
     title: "Bli Scout",
