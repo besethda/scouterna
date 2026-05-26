@@ -1,8 +1,18 @@
+import About from "@/components/About/about";
+
 const Gdpr = () => {
 
     return (
-        <div>
-        </div>
+    //     <About
+    //   title=""
+    //   mobileTitle=""
+    //   sub_title=""
+    //   icon={}
+    //   mobileIcon={}
+    //   content=""
+    //   image={}
+    // />
+    <div></div>
     );
 }
 
