@@ -501,5 +501,4 @@ export const En: MessagesEngType = {
     btnMobile: "Download PDF",
     btnDesktop: "Download the life jacket policy as PDF"
   }
-
 };
