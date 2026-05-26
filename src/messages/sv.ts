@@ -203,6 +203,7 @@ type MessagesSvType = {
   vests: Record <string, string>
   lockable: Record <string, string>
   gdpr: Record <string, string>
+  ethics: Record<string, string>
   faq:{
     title: string,
     title02: string
@@ -512,6 +513,15 @@ export const Sv: MessagesSvType = {
     l11: "Genomförda utbildningar (aktuellt framförallt för ledare)",
     l12: "Roll i kåren (aktuellt endast för ledare)",
     l13: "Eventuella utmärkelser"
+  },
+  ethics: {
+    s0: "Etiska riktlinjer för uppgiftsinsamling",
+    p0: "Vi skriver aldrig in hälsouppgifter om en medlem i Scoutnet.",
+    p1: "Ledare och styrelse kan ta ut rapporter på våra medlemmar från registret. Inga personer utanför HSS har tillgång till matrikeln, och den finns inte att ladda ned från hemsidan.",
+    p2: "Alla medlemsuppgifter som ska sparas läggs in i Scoutnet och all e-postkorrespondens raderas efteråt.",
+    p3: "Relevanta uppgifter i listan ovan delas med kommunen i vår närvarorapportering, i syfte att få bidrag till vår verksamhet. När en medlem avslutar sitt medlemskap försvinner alla uppgifter om medlemmen från HSS:s vy i Scoutnet.",
+    p4: "Medlemsuppgifterna finns dock kvar i Scoutnet, men så länge personen inte har något aktivt medlemskap, är det endast ett fåtal anställda på Scouternas kansli som kan komma åt uppgifterna.",
+    p5: "I och med medlemskapet är man försäkrad via Scouternas gruppförsäkring och försäkringsbolaget kräver att uppgifterna sparas i upp till tio år, vilket är den tidsbegränsning som man kan kräva ersättning för ett försäkringsärende."
   },
   faq: {
     title: "Bli Scout",

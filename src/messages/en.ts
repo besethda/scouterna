@@ -203,6 +203,7 @@ export type MessagesEngType = {
   vests: Record <string, string>
   lockable: Record <string, string>
   gdpr: Record <string, string>
+  ethics: Record<string, string>
   faq: {
     title: string,
     title02: string;
@@ -508,6 +509,15 @@ export const En: MessagesEngType = {
     l11: "Completed training/courses (primarily relevant for leaders)",
     l12: "Role in the scout group (only relevant for leaders)",
     l13: "Any awards or decorations"
+  },
+  ethics: {
+    s0: "Ethical guidelines for data collection",
+    p0: "We never enter a member's health information into Scoutnet.",
+    p1: "Leaders and the board can export reports regarding our members from the registry. No individuals outside of HSS have access to the roster, and it cannot be downloaded from the website.",
+    p2: "All member data that needs to be saved is entered into Scoutnet, and all email correspondence is deleted afterward.",
+    p3: "Relevant data from the list above is shared with the municipality in our attendance reporting, for the purpose of receiving grants for our operations. When a member terminates their membership, all information about that member disappears from HSS's view in Scoutnet.",
+    p4: "The member data does remain in Scoutnet, however, as long as the person does not have an active membership, only a few employees at the National Scout Office can access the information.",
+    p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
   faq: {
     title: "Join the Scouts",
