@@ -1,13 +1,12 @@
-'use client'
 import CardWithoutImage from "@/components/CardWithoutImage";
-import useMessages from "@/hook/useMessages";
+import { En} from "@/messages/en";
+import { Sv } from "@/messages/sv";
+import { use } from "react";
 
-const Boats = () => {
-    const messages = useMessages()
+const Boats = ({params}:{params: Promise<{locale: string}>}) => {
 
-    if (!messages) {
-        return null
-    }
+    const {locale} = use(params)
+    const messages = locale === "en" ? En : Sv
 
     return (
         <div>

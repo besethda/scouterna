@@ -1,13 +1,12 @@
-'use client'
 import CardWithoutImage from "@/components/CardWithoutImage";
-import useMessages from "@/hook/useMessages";
+import { En} from "@/messages/en";
+import { Sv } from "@/messages/sv";
+import { use } from "react";
 
-const Myset = () => {
-    const messages = useMessages()
-
-    if (!messages) {
-        return null
-    }
+const Myset = ({params}:{params: Promise<{locale: string}>}) => {
+    
+    const {locale} = use(params)
+    const messages = locale === "en" ? En : Sv
 
     return (
         <div>
