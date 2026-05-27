@@ -419,8 +419,8 @@ export const En: MessagesEngType = {
   },
   joinHero: {
     hero_title: "Hässelby Strand Sea Scouts",
-    hero_subtitle01: "The waves are waiting—",
-    hero_subtitle02: "join HSS",
+    hero_subtitle01: "The waves are waiting-",
+    hero_subtitle02: "Join HSS",
     hero_description: "At HSS Scouts, we offer a safe and active free time for children and young people.",
     button: "Join the Scouts"
   },
