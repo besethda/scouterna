@@ -16,7 +16,7 @@ const LifeStyleSection = ({}) => {
       <div className="flex flex-col md:flex-row md:justify-center md:flex-wrap w-full md:max-w-300">
         {[...Array(4)].map((e, index)=> {
           return(
-            <div className="my-5 flex w-full md:w-[47.5%] md:mx-[1.25%] md:min-h-30 md:max-w-150 md:p-6 md:bg-bg-white md:rounded-xl" key={`key${index}`}>
+            <div className="my-5 flex w-full md:w-[47.5%] md:mx-[1.25%] md:min-h-48 md:max-w-150 md:p-6 md:bg-bg-white md:rounded-xl" key={`key${index}`}>
               <div className="h-full pt-1">
                 <div className="w-9 h-9">
                   <Image src={`${imageArray[index]}`} alt={`img${index}`} width={36} height={36} className="object-cover"/>
