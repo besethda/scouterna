@@ -77,6 +77,9 @@
     --text-h2--font-family: var(--font-varela);
     --text-h2: 22px;
 
+    --text-h2-albert--font-family: var(--font-albert);
+    --text-h2-albert: 22px;
+
     --text-h3--font-family: var(--font-varela);
     --text-h3: 18px;
 
