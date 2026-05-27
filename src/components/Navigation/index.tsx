@@ -30,7 +30,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
     }, [])
 
     return (
-        <div className={`absolute lg:static w-full bg-white rounded-b-lg font-albert tracking-[0.03em] top-16 md:top-29 lg:bg-primary lg:h-25.5 lg:text-white lg:text-lg lg:rounded-none ${isScroll ? "lg:bg-primary/80" : ""}`}>
+        <div className={`absolute lg:static w-full bg-white text-primary rounded-b-lg font-albert tracking-[0.03em] top-16 md:top-29 lg:bg-primary lg:h-25.5 lg:text-white lg:text-lg lg:rounded-none ${isScroll ? "lg:bg-primary/80" : ""}`}>
             <div className="w-full lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-4xl lg:mx-auto xl:max-w-5xl 2xl:max-w-7xl">
                 <div className="bg-bg-blue flex justify-end text-base h-69px px-4 py-4 font-bold border-b border-lightGray lg:hidden">
                     <LanguageSelector />
@@ -40,29 +40,31 @@ const Navigation = ({ onClose }: NavigationProps) => {
                         <div onClick={() => { handleToggle(menu.id); }}
                             className="flex justify-between text-base h-69px px-3 py-4 font-semibold border-b border-lightGray cursor-pointer lg:font-normal lg:border-none lg:static lg:hover:text-gray-300">
                             <p> {messages?.navigation?.[menu.nameKey]} </p>
+                            <div className="relative w-7 h-7 lg:hidden">
+                                <AiOutlineDownCircle
+                                    size={28}
+                                    className={`absolute transform transition-transform duration-200 
+                                            ${openId === menu.id ? "rotate-180 opacity-0" : "rotate-0  opacity-100"}`}
+                                />
+                                <AiFillUpCircle
+                                    size={28}
+                                    className={`lg:absolute transform transition-transform duration-200 
+                                            ${openId === menu.id ? "rotate-180 opacity-100" : "rotate-0 opacity-0"}`}
+                                />
+                            </div>
+                            <div className="hidden lg:block ">
+                                <AiOutlineDown
+                                    className={`lg:ml-2 lg:mt-1.25 transform  transition-transform duration-200
+                                        ${openId === menu.id ? "rotate-180" : "rotate-0"}`} />
+                            </div>
 
-                            {openId === menu.id
-                                ? (
-                                    <>
-                                        <AiFillUpCircle size={28} className="lg:hidden" />
-                                        <AiOutlineUp size={16} className="hidden lg:block lg:ml-2 lg:mt-1.25" />
-
-                                    </>
-                                )
-                                : (
-                                    <>
-                                        <AiOutlineDownCircle size={28} className="lg:hidden" />
-                                        <AiOutlineDown className="hidden lg:block lg:ml-2 lg:mt-1.25" />
-                                    </>
-                                )
-                            }
                         </div>
                         {openId === menu.id && (
-                            <div onClick={() => { handleToggle(menu.id); onClose() }} className="px-2 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0 lg:top-25.5 lg:border-none lg:shadow-md lg:rounded-b-2xl">
+                            <div onClick={() => { handleToggle(menu.id); onClose() }} className="px-4 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-black lg:w-60 xl:w-85 lg:pt-0 lg:top-25.5 lg:border-none lg:shadow-md lg:rounded-b-2xl">
                                 {menu.submenu && menu.submenu.map((sub, index) => (
                                     <Link href={messages?.path + sub.href} key={index} className="hover:text-text-gray">
                                         <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
-                                            <Image src={sub.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
+                                            <Image src={sub.iconBg} alt="image" width={44} height={44} className="w-11 h-auto" />
                                             <div className="px-4 flex items-center ">
                                                 {messages?.navigation?.[sub.nameKey]}
                                             </div>
