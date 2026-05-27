@@ -11,7 +11,7 @@ const BecomeAScout = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <div>
             <CardWithImage sectionTitle={"joinCard"} logo="/heart.png" image="/images/DSCF3017.jpg" />
-            <WhiteGridContainer backgroundBlue={true}/>
+            <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife"/>
         </div>
     );
 }

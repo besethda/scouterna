@@ -208,6 +208,7 @@ type MessagesSvType = {
   email: Record<string, string>
   bank: Record<string, string>
   scoutLife: Record<string, string>
+  learning: Record<string, string>
   faq:{
     title: string,
     title02: string
@@ -550,6 +551,15 @@ export const Sv: MessagesSvType = {
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
     text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att prova nya saker.",
     text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
+  },
+  learning: {
+    t0: "Lärande för livet",
+    header1: "Sjömanskunskap",
+    header2: "Naturkunskap",
+    header3: "Friluftskunskap",
+    text1: "Vi lär oss att hantera båtar, knyta knopar och röra oss säkert på sjön.",
+    text2: "Vi lär oss om djur och växter, naturens kretslopp och hur vi kan ta hand om miljön.",
+    text3: "Vi lär oss att laga mat ute, sätta upp tält och vistas i naturen på ett tryggt och säkert sätt."
   },
   faq: {
     title: "Bli Scout",

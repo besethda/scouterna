@@ -16,7 +16,7 @@ const WhiteGridBox = ({logoUrl, messageTitle, messageTextIndex, backgroundWhite}
       lg:pb-0 pb-3 text-h2 font-albert text-text-white ${isOpen ? "rounded-t-xl" : "rounded-xl lg:rounded-t-xl lg:rounded-b-none"} px-4`}>
         <div className="flex items-center">
           <div className="h-10 w-10">
-            <Image src={`${logoUrl}`} alt={logoUrl} width={40} height={40} className="object-contain"/>
+            <Image src={`${logoUrl}`} alt={`${messageTextIndex + messageTitle}`} width={40} height={40} className="object-contain"/>
           </div>
           <div className="px-3 whitespace-nowrap">{(messages as any)?.[messageTitle][`header${messageTextIndex}`]}</div>
         </div>
