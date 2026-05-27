@@ -9,8 +9,8 @@ const WhiteGridContainer = ({backgroundBlue=true, messageTitle}: {backgroundBlue
       </div>
       <div className={`flex flex-col lg:flex-row pt-4 w-full max-w-280 items-center`}>
         <WhiteGridBox logoUrl={"/shipIcon-desktop.svg"} messageTitle={messageTitle} messageTextIndex={"0"} backgroundWhite={backgroundBlue}/>
-        <WhiteGridBox logoUrl={"/heartIcon-desktop.svg"} messageTitle={messageTitle} messageTextIndex={"1"} backgroundWhite={backgroundBlue}/>
-        <WhiteGridBox logoUrl={"/shipIcon-desktop.svg"} messageTitle={messageTitle} messageTextIndex={"2"} backgroundWhite={backgroundBlue}/>
+        <WhiteGridBox logoUrl={backgroundBlue ? "/heartIcon-desktop.svg" : "/treeIcon.svg"} messageTitle={messageTitle} messageTextIndex={"1"} backgroundWhite={backgroundBlue}/>
+        <WhiteGridBox logoUrl={backgroundBlue ? "/HandHeart.png" : "/triangleIcon.svg"} messageTitle={messageTitle} messageTextIndex={"2"} backgroundWhite={backgroundBlue}/>
       </div>
     </div>
   )
