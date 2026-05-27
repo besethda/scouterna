@@ -72,7 +72,7 @@ const Header = () => {
           </Link>
           <Link href="" className="flex gap-2.5 items-center">
             <Image src={Key} alt='key' className='h-5.75 w-auto' />
-            <p className="font-albert tracking-[3%] leading-[100%] text-text-black  ">ScoutNet</p>
+            <p className="font-albert tracking-[3%] leading-[100%] text-text-black  ">Scoutnet</p>
           </Link>
           <LanguageSelector />
         </div>
