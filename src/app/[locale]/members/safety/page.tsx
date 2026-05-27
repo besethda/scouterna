@@ -1,10 +1,11 @@
+import { getPageHeadTitle } from "@/lib/utils"
 import CardWithImage from "@/components/CardWithImage";
 import CTABtn from "@/components/CTA-button"
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import ContentSection from "@/components/ContentSection";
-import { getPageHeadTitle } from "@/lib/utils"
+
 
 
 

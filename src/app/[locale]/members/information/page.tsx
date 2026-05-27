@@ -1,8 +1,9 @@
+import { getPageHeadTitle } from "@/lib/utils"
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import CardWithImage from "@/components/CardWithImage";
-import { getPageHeadTitle } from "@/lib/utils"
+
 
 
 

@@ -177,6 +177,30 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
+  tabTitle:{
+      history:string,
+      join:string, 
+      "become-a-scout": string,
+      faq:string, 
+      "groups":string, 
+      sjohumlorna:string, 
+      kaparna:string,
+      konvojen:string, 
+      utmanare:string, 
+      familjescouterna:string, 
+      lifestyle:string, 
+      boats:string,
+      cabins:string, 
+      myset:string, 
+      ruffen:string, 
+      members:string, 
+      information:string,
+      safety:string,
+      contact:string, 
+      gdpr:string,
+      [key: string]: string
+     },
+    description:string,
   groupsCard: {
     headline: string,
     title: string,
@@ -241,32 +265,7 @@ type MessagesSvType = {
   safetyBtn: {
     btnMobile: string,
     btnDesktop: string
-  }
-
-  tabTitle:{
-      history:string,
-      join:string, 
-      "become-a-scout": string,
-      faq:string, 
-      "groups":string, 
-      sjohumlorna:string, 
-      kaparna:string,
-      konvojen:string, 
-      utmanare:string, 
-      familjescouter:string, 
-      lifestyle:string, 
-      boats:string,
-      cabins:string, 
-      myset:string, 
-      ruffen:string, 
-      members:string, 
-      information:string,
-      safety:string,
-      contact:string, 
-      gdpr:string,
-      [key: string]: string
-     },
-     description:string
+  },
 };
 
 export const Sv: MessagesSvType = {
@@ -448,6 +447,29 @@ export const Sv: MessagesSvType = {
     title: "Bli en del av HSS",
     text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
   },
+  tabTitle:{
+      history:"HSS | Historia",
+      join:"HSS | Gå med i Scouterna", 
+      "become-a-scout": "HSS | Bli Sjöscout",
+      faq:"HSS | FAQ", 
+      "groups":"HSS | Våra avdelningar", 
+      sjohumlorna:"HSS | Sjöhumlorna", 
+      kaparna: "HSS | Kaparna",
+      konvojen:"HSS | Konvojen", 
+      utmanare:"HSS | Utmanare", 
+      familjescouterna:"HSS | Familjescouterna", 
+      lifestyle:"HSS | Livet som Sjöscout", 
+      boats:"HSS | Båtar",
+      cabins:"HSS | Scoutstugor", 
+      myset:"HSS | Myset", 
+      ruffen:"HSS | Ruffen", 
+      members:"HSS | För medlemma", 
+      information:"HSS | Information för medlemmar",
+      safety:"HSS | Flytvästpolicy",
+      contact:"HSS | Kontakt", 
+      gdpr:"HSS | GDPR"
+    }, 
+    description:"HSS webplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -466,7 +488,7 @@ export const Sv: MessagesSvType = {
   mysetCard: {
     headline: "Scoutstugor",
     title: "Myset",
-    text: "I skogen mellan Lövsta och Gåseborg ligger Myset – vår stora och fina scoutstuga. Här samlas kåren för en mängd olika aktiviteter, inte minst hajker som bjuder på både äventyr och gemenskap.",
+    text: "I skogen mellan Lövsta och Gåseborg ligger Myset - vår stora och fina scoutstuga. Här samlas kåren för en mängd olika aktiviteter, inte minst hajker som bjuder på både äventyr och gemenskap.",
   },
   history: {
     h0: "Historian om HSS",
@@ -632,27 +654,4 @@ export const Sv: MessagesSvType = {
     btnMobile: "Ladda ner PDF",
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
   },
-  tabTitle:{
-      history:"HSS | Historia",
-      join:"HSS | Gå med i Scouterna", 
-      "become-a-scout": "HSS | Bli Sjöscout",
-      faq:"HSS | FAQ", 
-      "groups":"HSS | Våra avdelningar", 
-      sjohumlorna:"HSS | Sjöhumlorna", 
-      kaparna: "HSS | Kaparna",
-      konvojen:"HSS | Konvojen", 
-      utmanare:"HSS | Utmanare", 
-      familjescouter:"HSS | Familjescouterna", 
-      lifestyle:"HSS | Livet som Sjöscout", 
-      boats:"HSS | Båtar",
-      cabins:"HSS | Scoutstugor", 
-      myset:"HSS | Myset", 
-      ruffen:"HSS | Ruffen", 
-      members:"HSS | För medlemma", 
-      information:"HSS | Information för medlemmar",
-      safety:"HSS | Flytvästpolicy",
-      contact:"HSS | Kontakt", 
-      gdpr:"HSS | GDPR"
-    }, 
-    description:"HSS webplats"
 };

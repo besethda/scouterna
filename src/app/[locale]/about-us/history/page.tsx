@@ -1,15 +1,9 @@
-<<<<<<< HEAD
+
+import { getPageHeadTitle } from "@/lib/utils"
 import ContentSection from "@/components/ContentSection";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
-
-const History = ({params}:{params: Promise<{locale: string}>}) => {
-
-    const {locale} = use(params)
-    const messages = locale === "en" ? En : Sv
-=======
-import { getPageHeadTitle } from "@/lib/utils"
 
 
 
@@ -19,8 +13,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return getPageHeadTitle(locale, pageItem)
 }
 
-const History = () => {
->>>>>>> HSS-049-Page-Tab-Title
+
+const History = ({params}:{params: Promise<{locale: string}>}) => {
+
+    const {locale} = use(params)
+    const messages = locale === "en" ? En : Sv
+
 
     return (
         <div>

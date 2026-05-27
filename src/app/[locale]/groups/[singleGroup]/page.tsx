@@ -4,7 +4,6 @@ import { use } from "react";
 import { getPageHeadTitle } from "@/lib/utils";
 
 
-
 const pageItems = [
   "sjohumlorna",
   "kaparna",
@@ -32,6 +31,7 @@ const Groups = ({
   const {locale} = use(params)
   const messages = locale === "en" ? En : Sv
 
+  
   if (singleGroup === "sjohumlorna") {
       return <p>Sjöhumlorna page</p>;
   } else if (singleGroup === "kaparna") {
