@@ -172,7 +172,7 @@ export type MessagesEngType = {
   joinCard: {
     headline: string,
     title: string,
-    text: string
+    text: string,
   },
   tabTitle: {
       history:string,
