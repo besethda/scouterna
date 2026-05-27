@@ -231,6 +231,7 @@ type MessagesSvType = {
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
+  map: Record<string, string>
 
   faq: {
     title: string,
@@ -600,6 +601,11 @@ export const Sv: MessagesSvType = {
     p0: "404418 - 6",
     s1: "Organisationsnummer",
     p1: "802006 - 2389"
+  },
+  map: {
+    t0: "Vägbeskrivning",
+    p0: "Sväng ner på Hässelby Strandväg från Sandviksvägen. Vid badet finns en parkering som man kan parkera bilen på. ",
+    p1: "Gå ner mot vattnet och vik av mot vänster (mot kraftvärmeverket). Den grågröna stugan (Ruffen) ligger snett mittemot bryggan.",
   },
   faq: {
     title: "Bli Scout",

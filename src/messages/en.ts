@@ -227,6 +227,7 @@ export type MessagesEngType = {
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
+  map: Record<string, string>
   faq: {
     title: string,
     title02: string;
@@ -591,6 +592,11 @@ export const En: MessagesEngType = {
     p0: "404418 - 6",
     s1: "Organisationsnummer",
     p1: "802006 - 2389"
+  },
+  map: {
+    t0: "Directions",
+    p0: "Turn down onto Hässelby Strandväg from Sandviksvägen. There is a parking lot by the beach where you can park your car.",
+    p1: "Walk down toward the water and turn left (toward the power plant). The grey-green cabin (Ruffen) is located diagonally across from the dock.",
   },
   faq: {
     title: "Join the Scouts",
