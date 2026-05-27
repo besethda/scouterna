@@ -1,6 +1,7 @@
 import { getPageHeadTitle } from "@/lib/utils"
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { use } from "react";
 import CardWithImage from "@/components/CardWithImage";
 
@@ -24,6 +25,7 @@ const Information = ({params}:{params: Promise<{locale: string}>}) => {
     const messages = locale === "en" ? En : Sv
     return (
         <div>
+            <Breadcrumbs />
             <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG"/>
         </div>
     );

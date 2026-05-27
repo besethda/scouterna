@@ -1,6 +1,6 @@
-
 import { getPageHeadTitle } from "@/lib/utils"
 import ContentSection from "@/components/ContentSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
@@ -22,6 +22,7 @@ const History = ({params}:{params: Promise<{locale: string}>}) => {
 
     return (
         <div>
+            <Breadcrumbs />
             <ContentSection sectionLayout={["h", "p", "p", "p", "p", "p"]} page="history" background={"blue"} />
         </div>
     );

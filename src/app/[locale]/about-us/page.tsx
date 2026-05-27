@@ -1,5 +1,6 @@
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { use } from "react";
 
 const AboutUs = ({params}:{params: Promise<{locale: string}>}) =>{
@@ -8,7 +9,9 @@ const AboutUs = ({params}:{params: Promise<{locale: string}>}) =>{
     const messages = locale === "en" ? En : Sv
   
   return(
-    <div></div>
+    <div>
+      <Breadcrumbs />
+    </div>
   )
 }
 

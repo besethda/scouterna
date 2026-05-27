@@ -135,6 +135,20 @@ export type MessagesEngType = {
     hero_description: string
     button: string
   },
+  joinHero: {
+    hero_title: string,
+    hero_subtitle01: string,
+    hero_subtitle02: string,
+    hero_description: string
+    button: string
+  },
+  lifestyleHero: {
+    hero_title: string,
+    hero_subtitle01: string,
+    hero_subtitle02: string,
+    hero_description: string
+    button: string
+  },
   breadcrumbs: {
     title: string,
     path: string,
@@ -402,6 +416,20 @@ export const En: MessagesEngType = {
     hero_subtitle02: "at the water's edge",
     hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand.",
     button: "Join the Sea Scouts"
+  },
+  joinHero: {
+    hero_title: "Hässelby Strand Sea Scouts",
+    hero_subtitle01: "The waves are waiting—",
+    hero_subtitle02: "join HSS",
+    hero_description: "At HSS Scouts, we offer a safe and active free time for children and young people.",
+    button: "Join the Scouts"
+  },
+  lifestyleHero: {
+    hero_title: "Hässelby Strand Sea Scouts",
+    hero_subtitle01: "Toward new",
+    hero_subtitle02: "horizons",
+    hero_description: "Sail, discover, and grow together. Life as a sea scout is all about adventures at sea and a community that lasts.",
+    button: "Join the Scouts"
   },
   breadcrumbs: {
     title: "Home",

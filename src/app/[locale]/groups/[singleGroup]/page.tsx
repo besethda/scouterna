@@ -1,6 +1,7 @@
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { getPageHeadTitle } from "@/lib/utils";
 
 
@@ -31,18 +32,11 @@ const Groups = ({
   const {locale} = use(params)
   const messages = locale === "en" ? En : Sv
 
-  
-  if (singleGroup === "sjohumlorna") {
-      return <p>Sjöhumlorna page</p>;
-  } else if (singleGroup === "kaparna") {
-      return <p>Kaparna page</p>;
-  }else if (singleGroup === "utmanare") {
-      return <p>Utmanare page</p>;
-  }else if (singleGroup === "konvojen") {
-      return <p>Konvojen page</p>;
-  }else if (singleGroup === "familjescouter") {
-      return <p> familjescouter page</p>;
-  }
+  return (
+    <>
+      <Breadcrumbs />
+    </>
+  )
 };
 
 export default Groups;

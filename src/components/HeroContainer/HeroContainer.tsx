@@ -6,22 +6,25 @@ import CTABtn from "../CTA-button"
 
 type messageTypes = "hero_subtitle01" 
 
-const HeroContainer = ({bgImages, messageSection}:{bgImages:{mobile:string, desktop:string}, messageSection:Record<string, string>}) => {
+const HeroContainer = ({bgImages, messageSection, position}:{bgImages:{mobile:string, desktop:string}, messageSection:string, position?:string}) => {
 
   const messages= useMessages()
   if(!messages) return null
+
+  console.log((messages as any)?.[`${messageSection}`]?.button)
 
   return (
     <HeroSection
     bgImages={bgImages}
     title01={(messages as any)?.[`${messageSection}`]?.hero_subtitle01}
     title02={(messages as any)?.[`${messageSection}`]?.hero_subtitle02}
-    top={(messages as any)?.[`${messageSection}`]?.top}
+    top={(messages as any)?.[`${messageSection}`]?.hero_title}
     description={(messages as any)?.[`${messageSection}`]?.hero_description}
+    position={position}
   >
     <CTABtn
-      text={(messages as any)?.[`${messageSection}`]?.button}
-      onClick={() => { }} 
+      text={`${(messages as any)?.[`${messageSection}`]?.button}`}
+      onClick={() => {}} 
       width="mobile"/>
   </HeroSection>
   )
