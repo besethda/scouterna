@@ -20,11 +20,11 @@ const WhiteImageBox = () => {
                         <div key={index} className="w-90 md:w-70 lg:w-100 md:max-w-[30%] my-2 px-4 aspect-5/4 md:aspect-12/11 md:border-gray-300 md:border md:mx-4 flex flex-col items-center bg-primary text-white md:bg-white md:text-primary rounded-2xl">
                             <div className="flex w-full md:pl-2 pt-4 leading-[0.8] md:leading-none md:py-0 md:pt-6">
                                 <div className="w-8 h-8 md:flex md:mr-3 shrink-0 hidden relative">
-                                    <Image src={`/${icon.icon}Icon-desktop.png`} alt={`${icon}`} fill className="object-contain" />
+                                    <Image src={`/${icon.icon}Icon-desktop.svg`} alt={`${icon}`} fill className="object-contain" />
                                 </div>
                                 <h1 className="text-h2 pr-3 font-varela whitespace-nowrap min-h-5.5 md:min-h-7 overflow-hidden md:text-h3-desktop">{(messages?.whiteImageBox as Record<string, string>)[`title${index + 1}`]}</h1>
                                 <div className="flex md:hidden min-w-4.5 min-h-4.5  relative">
-                                    <Image src={`/${icon.icon}Icon.png`} alt={`a${icon}`} fill className="object-contain" />
+                                    <Image src={`/${icon.icon}Icon.svg`} alt={`a${icon}`} fill className="object-contain" />
                                 </div>
                             </div>
                             <div className="w-full h-full flex items-center lg:mb-4 lg:mt-2 justify-center overflow-hidden rounded-2xl">

@@ -6,10 +6,10 @@ type MessagesSvType = {
     title: string;
     divisions: string;
     divisions_text: string;
-  };
+  },
   about: {
     title: string;
-  };
+  },
   navigation: {
     nav_joinScout: string,
     nav_becomeScout: string,
@@ -38,24 +38,24 @@ type MessagesSvType = {
     nav_school: string,
     nav_shop: string,
     nav_scoutnet: string
-  };
+  },
   footer: {
     footer_service: string
     footer_school: string
     footer_shop: string,
     footer_contact: string,
     footer_followUs: string
-  };
+  },
   instagram: {
     head: string,
     button_text: string,
     text: string
-  };
+  },
   header: {
     header_title: string,
     header_subtitle: string,
     header_join: string
-  };
+  },
   division: {
     sjohumlorna_title: string,
     sjohumlorna_ages: string,
@@ -129,13 +129,13 @@ type MessagesSvType = {
     hero_subtitle01: string,
     hero_subtitle02: string,
     hero_description: string
-  };
+  },
   whiteImageBox: {
     header: string,
     title1: string,
     title2: string,
     title3: string
-  };
+  },
   CTABtn: {
     text: string
   },
@@ -157,7 +157,6 @@ type MessagesSvType = {
       myset: string,
       ruffen: string,
       groups: string,
-      "age-sections": string,
       sjohumlorna: string,
       kaparna: string,
       utmanare: string,
@@ -168,7 +167,7 @@ type MessagesSvType = {
       faq: string,
       [key: string]: string
     }
-  };
+  },
   faqCard: {
     title: string,
     text: string
@@ -178,6 +177,30 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
+  tabTitle:{
+      history:string,
+      join:string, 
+      "become-a-scout": string,
+      faq:string, 
+      "groups":string, 
+      sjohumlorna:string, 
+      kaparna:string,
+      konvojen:string, 
+      utmanare:string, 
+      familjescouter:string, 
+      lifestyle:string, 
+      boats:string,
+      cabins:string, 
+      myset:string, 
+      ruffen:string, 
+      members:string, 
+      information:string,
+      safety:string,
+      contact:string, 
+      gdpr:string,
+      [key: string]: string
+     },
+     description:string
   groupsCard: {
     headline: string,
     title: string,
@@ -198,6 +221,7 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
+
   history: Record <string, string>
   guidelines: Record <string, string>
   safeScout: Record <string, string>
@@ -209,7 +233,7 @@ type MessagesSvType = {
   bank: Record<string, string>
   scoutLife: Record<string, string>
   learning: Record<string, string>
-  faq:{
+  faq: {
     title: string,
     title02: string
   },
@@ -220,7 +244,7 @@ type MessagesSvType = {
   fragorSvar02: {
     question: string;
     answer: string;
-  }[];
+  }[],
   lifestyle: {
     headline: string,
     title: string,
@@ -244,6 +268,19 @@ type MessagesSvType = {
   safetyBtn: {
     btnMobile: string,
     btnDesktop: string
+  },
+  becomeScoutSmallCard: {
+    title: string,
+    subtitle: string,
+    secondTitle: string,
+    secondText: string,
+    thirdtext: string,
+    button: string
+  }, 
+  groupCard: {
+    headline: string, 
+    title: string, 
+    text: string
   }
 
 };
@@ -358,7 +395,7 @@ export const Sv: MessagesSvType = {
   },
   hero: {
     hero_title: "Hässelby Strands Sjöscouter",
-    hero_subtitle01: "Äventyr börjar",
+    hero_subtitle01: "Äventyret börjar",
     hero_subtitle02: "vid vattenbrynet",
     hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
   },
@@ -389,7 +426,6 @@ export const Sv: MessagesSvType = {
       myset: "Myset",
       ruffen: "Ruffen",
       groups: "Våra avdelningar",
-      "age-sections": "Åldersanpassade avdelningar",
       sjohumlorna: "Sjöhumlorna",
       kaparna: "Kaparna",
       utmanare: "Utmanare",
@@ -428,6 +464,29 @@ export const Sv: MessagesSvType = {
     title: "Bli en del av HSS",
     text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
   },
+  tabTitle:{
+      history:"HSS | Historia",
+      join:"HSS | Gå med i Scouterna", 
+      "become-a-scout": "HSS | Bli Sjöscout",
+      faq:"HSS | FAQ", 
+      "groups":"HSS | Våra avdelningar", 
+      sjohumlorna:"HSS | Sjöhumlorna", 
+      kaparna: "HSS | Kaparna",
+      konvojen:"HSS | Konvojen", 
+      utmanare:"HSS | Utmanare", 
+      familjescouter:"HSS | Familjescouter", 
+      lifestyle:"HSS | Livet som Sjöscout", 
+      boats:"HSS | Båtar",
+      cabins:"HSS | Scoutstugor", 
+      myset:"HSS | Myset", 
+      ruffen:"HSS | Ruffen", 
+      members:"HSS | För medlemmar", 
+      information:"HSS | Information för medlemmar",
+      safety:"HSS | Flytvästpolicy",
+      contact:"HSS | Kontakt", 
+      gdpr:"HSS | GDPR"
+    }, 
+    description:"HSS webplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -624,10 +683,23 @@ export const Sv: MessagesSvType = {
   safetyCard: {
     headline: "Säkerhet",
     title: "HSS Flytvästpolicy",
-    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy.Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
-  },
+    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
+    },
   safetyBtn: {
     btnMobile: "Ladda ner PDF",
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
+  },
+  becomeScoutSmallCard: {
+    title: "Scoutliv för ung som vuxen",
+    subtitle: "Vi har åldersanpassade avdelningar för våra scouter. Som vuxen kan du engagera dig som ledare, eller hjälpa till som förälder. ",
+    secondTitle: "Scout",
+    secondText: "Man kan bli Scout från och med 8 års ålder. Medlemmarna på avdelningen för våra äldsta Scouter är 15 år och uppåt.",
+    thirdtext: "Avdelningarnas innehåll är anpassat efter Scouternas ålder för att göra Scoutlivet tryggt, roligt och spännande för alla våra Scouter.",
+    button: "Läs mer om våra avdelningar"
+  }, 
+  groupCard: {
+    headline: "Avdelningar", 
+    title: "Åldersanpassade avdelningar", 
+    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
   }
 };

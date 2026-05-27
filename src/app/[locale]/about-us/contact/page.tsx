@@ -1,7 +1,17 @@
+import { getPageHeadTitle } from "@/lib/utils"
 import ContentSection from "@/components/ContentSection"
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
+
+
+const pageItem = "contact"
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params
+    return getPageHeadTitle(locale, pageItem)
+}
+
+
 
 const Contact = ({params}:{params: Promise<{locale: string}>}) => {
 

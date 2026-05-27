@@ -1,7 +1,17 @@
+import { getPageHeadTitle } from "@/lib/utils"
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import CardWithImage from "@/components/CardWithImage";
+
+
+const pageItem = "information"
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params
+    return getPageHeadTitle(locale, pageItem)
+}
+
+
 
 const Information = ({params}:{params: Promise<{locale: string}>}) => {
 
