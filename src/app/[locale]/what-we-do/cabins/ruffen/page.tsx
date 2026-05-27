@@ -1,10 +1,11 @@
-import { getPageHeadTitle } from "@/lib/utils"
 import CardWithImage from "@/components/CardWithImage";
 import MapWrapper from "@/components/Map/MapWrapper";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import ContentSection from "@/components/ContentSection";
+import { getPageHeadTitle } from "@/lib/utils"
+
 
 
 const pageItem = "ruffen"

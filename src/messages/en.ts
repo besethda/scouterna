@@ -228,6 +228,8 @@ export type MessagesEngType = {
   email: Record<string, string>
   bank: Record<string, string>
   map: Record<string, string>
+  scoutLife: Record<string, string>
+  learning: Record<string, string>
   faq: {
     title: string,
     title02: string;
@@ -276,6 +278,11 @@ export type MessagesEngType = {
     headline: string, 
     title: string, 
     text: string
+  },
+  joinPage: {
+    title: string,
+    text: string,
+    buttonText: string
   }
 };
 
@@ -455,7 +462,7 @@ export const En: MessagesEngType = {
     headline: "Become a scout",
     title: "Become a part of HSS",
     text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
-  }, 
+  },
   tabTitle:{
     history:"HSS | History",
     join:"HSS | Join", 
@@ -596,7 +603,25 @@ export const En: MessagesEngType = {
   map: {
     t0: "Directions",
     p0: "Turn down onto Hässelby Strandväg from Sandviksvägen. There is a parking lot by the beach where you can park your car.",
-    p1: "Walk down toward the water and turn left (toward the power plant). The grey-green cabin (Ruffen) is located diagonally across from the dock.",
+    p1: "Walk down toward the water and turn left (toward the power plant). The grey-green cabin (Ruffen) is located diagonally across from the dock."
+  },
+  scoutLife: {
+    t0: "Scoutlife within HSS",
+    header0: "Learning by doing",
+    header1: "We are brave",
+    header2: "Stronger together",
+    text0: "In the scouts, you learn by doing—testing things yourself and growing through practical experiences together with others.",
+    text1: "In the scouts, we dare to do more together and support each other in trying new things.",
+    text2: "In the scouts, we become stronger together, lifting each other up and sharing a warm, safe community."
+  },
+  learning: {
+    t0: "Learning for life",
+    header0: "Seamanship",
+    header1: "Nature education",
+    header2: "Outdoor skills",
+    text0: "We learn how to handle boats, tie knots, and navigate safely at sea.",
+    text1: "We learn about animals and plants, nature's cycles, and how we can take care of the environment.",
+    text2: "We learn how to cook outdoors, set up tents, and spend time in nature in a safe and secure way."
   },
   faq: {
     title: "Join the Scouts",
@@ -679,5 +704,10 @@ export const En: MessagesEngType = {
     headline: "groups", 
     title: "Age groups", 
     text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In the Senior Scouts (Utmanarna), our oldest scout group, members can join from the age of 15."
-  }
+  },
+  joinPage: {
+  title: "Express Your Interest",
+  text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
+  buttonText: "Join the Scouts"
+}
 };
