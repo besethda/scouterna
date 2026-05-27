@@ -128,15 +128,13 @@ export type MessagesEngType = {
     card_text_4: string,
     span_4: string
   }
-  hero: {
+  homeHero: {
     hero_title: string,
     hero_subtitle01: string,
     hero_subtitle02: string,
     hero_description: string
-  };
-  CTABtn: {
-    text: string
-  };
+    button: string
+  },
   breadcrumbs: {
     title: string,
     path: string,
@@ -398,14 +396,12 @@ export const En: MessagesEngType = {
     title: "The waves are waiting",
     text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
   },
-  hero: {
+  homeHero: {
     hero_title: "Hässelby Strand Sea Scouts",
     hero_subtitle01: "Adventures begin",
     hero_subtitle02: "at the water's edge",
-    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand."
-  },
-  CTABtn: {
-    text: "Join the Sea Scouts"
+    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand.",
+    button: "Join the Sea Scouts"
   },
   breadcrumbs: {
     title: "Home",

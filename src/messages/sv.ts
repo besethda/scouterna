@@ -124,20 +124,18 @@ type MessagesSvType = {
     card_text_4: string,
     span_4: string
   },
-  hero: {
+  homeHero: {
     hero_title: string,
     hero_subtitle01: string,
     hero_subtitle02: string,
     hero_description: string
+    button: string
   },
   whiteImageBox: {
     header: string,
     title1: string,
     title2: string,
     title3: string
-  },
-  CTABtn: {
-    text: string
   },
   breadcrumbs: {
     title: string,
@@ -397,14 +395,12 @@ export const Sv: MessagesSvType = {
     time: "Tid: ",
     place: "Plats: "
   },
-  hero: {
+  homeHero: {
     hero_title: "Hässelby Strands Sjöscouter",
     hero_subtitle01: "Äventyret börjar",
     hero_subtitle02: "vid vattenbrynet",
-    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
-  },
-  CTABtn: {
-    text: "Gå med i Scouterna"
+    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand.",
+    button: "Gå med i Scouterna"
   },
   whiteImageBox: {
     header: "Vad vi erbjuder",

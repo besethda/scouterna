@@ -4,15 +4,16 @@ import useMessages from '@/hook/useMessages'
 import undefinedBg from "../../public/images/DSCF3020.jpg"
 
 interface HeroSectionProps {
-    bgImages?: { mobile: string, desktop: string };
-    title01?: string;
-    title02?: string;
-    description?: string;
+    bgImages: { mobile: string, desktop: string };
+    title01: string;
+    title02: string;
+    description: string;
+    top: string
     children?: React.ReactNode;
 
 }
 
-const HeroSection = ({ bgImages, title01, title02, description, children }: HeroSectionProps) => {
+const HeroSection = ({ bgImages, title01, title02, description, top, children }: HeroSectionProps) => {
 
     const messages = useMessages()
 
@@ -24,7 +25,7 @@ const HeroSection = ({ bgImages, title01, title02, description, children }: Hero
                         border border-solid border-accent mt-16 md:opacity-60 md:ml-0">
                         <p className="text-body-bold items-center leading-[3] md:mr-2 text-accent flex gap-2 uppercase">
                             <span className="w-2 h-2 rounded-full bg-accent hidden md:block" />
-                            {messages?.hero.hero_title}
+                            {top}
                         </p>
                     </div>
                     <div className="w-80.75 md:w-150 font-albert mx-auto text-white flex flex-col gap-3">
