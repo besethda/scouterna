@@ -4,7 +4,7 @@ import useMessages from '@/hook/useMessages'
 import undefinedBg from "../../public/images/DSCF3020.jpg"
 
 interface HeroSectionProps {
-    bgImages?: { mobile:string, desktop:string };
+    bgImages?: { mobile: string, desktop: string };
     title01?: string;
     title02?: string;
     description?: string;
@@ -27,15 +27,15 @@ const HeroSection = ({ bgImages, title01, title02, description, children }: Hero
                             {messages?.hero.hero_title}
                         </p>
                     </div>
-                    <div className="w-80.75 md:w-150 font-fraunces mx-auto text-white flex flex-col gap-3">
+                    <div className="w-80.75 md:w-150 font-albert mx-auto text-white flex flex-col gap-3">
                         <h1 className="text-hero font-bold md:text-hero-desktop">{title01}<br />
                             <span className="text-accent">{title02}</span>
                         </h1>
                         <p className="text-body md:text-body-desktop font-albert font-normal">{description}</p>
                     </div>
                     <div className='pt-32 md:pt-16 w-60 '>
-                    {children}
-                </div>
+                        {children}
+                    </div>
                 </div>
             </div>
         </div>

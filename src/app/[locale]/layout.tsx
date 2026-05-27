@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const varela = Varela_Round({
   variable: "--font-varela",
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 const fraunces = Fraunces({
@@ -56,7 +56,7 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
 
   const { locale } = use(params)
   const messages = locale === "en" ? En : Sv
-   
+
   return (
     <html
       lang={locale}

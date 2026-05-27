@@ -8,7 +8,7 @@ import keyIcon from '../../public/key-icon.svg'
 import bagIcon from '../../public/bag-icon.png'
 import schoolIcon from '../../public/school-icon.png'
 import footerHSSIcon from '../../public/footer-hss-logo.png'
-import locationIcon from '../../public/location-icon.png'
+import locationIcon from '../../public/hss-pin-icon.svg'
 import useMessages from '@/hook/useMessages'
 
 const Footer = () => {

@@ -18,7 +18,7 @@ const CardWithoutImage = ({ headline, logo, title, text, MDlogo }: CardWithoutIm
               {headline}
             </p>
             <div className="flex w-5 h-4.25 items-center md:hidden mb-1">
-              <Image src={logo} alt="logo" width={20} height={17} className="h-4.25 w-auto"/>
+              <Image src={logo} alt="logo" width={20} height={17} className="h-4.25 w-auto" />
             </div>
           </div>
           <div className="flex gap-4">
@@ -26,7 +26,7 @@ const CardWithoutImage = ({ headline, logo, title, text, MDlogo }: CardWithoutIm
               {title}
             </div>
             <div className="hidden md:flex items-center ">
-              <Image src={MDlogo} alt="logo" width={44} height={44} />
+              <Image src={MDlogo} alt="logo" width={44} height={44} className="h-11 w-auto" />
             </div>
           </div>
           <div className="font-albert text-[16px] md:text-[18px] tracking-[3%] font-normal text-text-black">
