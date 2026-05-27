@@ -262,6 +262,19 @@ export type MessagesEngType = {
   safetyBtn: {
     btnMobile: string,
     btnDesktop: string
+  }, 
+  becomeScoutSmallCard: {
+    title: string,
+    subtitle: string,
+    secondTitle: string,
+    secondText: string,
+    thirdtext: string,
+    button: string
+  }, 
+  groupCard: {
+    headline: string, 
+    title: string, 
+    text: string
   }
 };
 
@@ -647,5 +660,18 @@ export const En: MessagesEngType = {
   safetyBtn: {
     btnMobile: "Download PDF",
     btnDesktop: "Download the life jacket policy as PDF"
+  }, 
+  becomeScoutSmallCard: {
+    title: "Scout Life for youth and adults",
+    subtitle: "We have age-appropriate groups for our scouts. As an adult, you can get involved as a leader, or help out as a parent.",
+    secondTitle: "Scout",
+    secondText: "You can become a Scout from the age of 8. The members in the group for our oldest Scouts are 15 years and older.",
+    thirdtext: "The content of each group is adapted to the Scouts' age to make Scout life safe, fun, and exciting for all our Scouts.",
+    button: "Read more about our groups"
+  },
+  groupCard: {
+    headline: "groups", 
+    title: "Age groups", 
+    text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In the Senior Scouts (Utmanarna), our oldest scout group, members can join from the age of 15."
   }
 };
