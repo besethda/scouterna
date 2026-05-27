@@ -231,6 +231,7 @@ type MessagesSvType = {
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
+  offers: Record<string, string>
 
   faq: {
     title: string,
@@ -600,6 +601,11 @@ export const Sv: MessagesSvType = {
     p0: "404418 - 6",
     s1: "Organisationsnummer",
     p1: "802006 - 2389"
+  },
+  offers: {
+    title: "Vad Scoutlivet erbjuder",
+    header0: "Livet på vågorna",
+    header1: "Naturligt spännande"
   },
   faq: {
     title: "Bli Scout",

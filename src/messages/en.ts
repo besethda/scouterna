@@ -227,6 +227,7 @@ export type MessagesEngType = {
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
+  offers: Record<string, string>
   faq: {
     title: string,
     title02: string;
