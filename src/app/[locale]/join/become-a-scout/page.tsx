@@ -3,6 +3,7 @@ import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import { getPageHeadTitle } from "@/lib/utils"
+import SmallCard from "@/components/SmallCard";
 
 
 
@@ -25,6 +26,7 @@ const BecomeAScout = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <div>
             <CardWithImage sectionTitle={"joinCard"} logo="/heart.png" image="/images/DSCF3017.jpg" />
+            <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image="/images/DSCF3361.jpg" secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} /> 
         </div>
     );
 }
