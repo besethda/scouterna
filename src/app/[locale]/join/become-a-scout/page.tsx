@@ -29,13 +29,12 @@ const BecomeAScout = ({params}:{params: Promise<{locale: string}>}) => {
         <div>
             <CardWithImage sectionTitle={"joinCard"} logo="/heart.png" image="/images/DSCF3017.jpg" />
             <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image="/images/DSCF3361.jpg" secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} /> 
-            <CardWithImage headline={messages?.joinCard?.headline} logo="/heart.png" title={messages?.joinCard?.title} text={messages?.joinCard?.text} image="/images/DSCF3017.jpg" />
             <JoinPage 
                 title={messages?.joinPage.title}
                 text={messages?.joinPage.text}
                 buttonText={messages?.joinPage.buttonText}
                 width="box"
-                btnWidth="full"
+                btnWidth="full" 
             />
         </div>
     );
