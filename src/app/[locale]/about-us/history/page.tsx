@@ -1,8 +1,11 @@
+
 import { getPageHeadTitle } from "@/lib/utils"
 import ContentSection from "@/components/ContentSection";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
+
+
 
 const pageItem = "history"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -15,6 +18,7 @@ const History = ({params}:{params: Promise<{locale: string}>}) => {
 
     const {locale} = use(params)
     const messages = locale === "en" ? En : Sv
+
 
     return (
         <div>

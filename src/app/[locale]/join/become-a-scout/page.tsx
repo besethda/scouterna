@@ -21,6 +21,7 @@ const BecomeAScout = ({params}:{params: Promise<{locale: string}>}) => {
     if (!messages) {
         return null
     }
+
     return (
         <div>
             <CardWithImage sectionTitle={"joinCard"} logo="/heart.png" image="/images/DSCF3017.jpg" />
@@ -31,7 +32,7 @@ const BecomeAScout = ({params}:{params: Promise<{locale: string}>}) => {
                 text={messages?.joinPage.text}
                 buttonText={messages?.joinPage.buttonText}
                 width="box"
-                btnWidth="full"
+                btnWidth="full" 
             />
         </div>
     );

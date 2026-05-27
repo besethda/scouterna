@@ -199,8 +199,8 @@ type MessagesSvType = {
       contact:string, 
       gdpr:string,
       [key: string]: string
-     },
-     description:string
+  },
+  description:string,
   groupsCard: {
     headline: string,
     title: string,
@@ -287,12 +287,11 @@ type MessagesSvType = {
     text: string,
     buttonText: string
   }
-
 };
 
 export const Sv: MessagesSvType = {
   home: {
-    title: "Välkommen to HSS",
+    title: "Välkommen till HSS",
     divisions: "Avdelningar",
     divisions_text: "Vi delar in våra avdelningar efter åldrar. Innehållet anpassas efter Scouternas intressen och behov, och utformas för att vara roligt, givande och tryggt för alla.",
   },
@@ -327,7 +326,6 @@ export const Sv: MessagesSvType = {
     nav_school: "Scouternas Folkhögskola",
     nav_shop: "Scoutshop",
     nav_scoutnet: "Scoutnet"
-
   },
   footer: {
     footer_service: "Scouternas tjänster",
@@ -490,8 +488,8 @@ export const Sv: MessagesSvType = {
       safety:"HSS | Flytvästpolicy",
       contact:"HSS | Kontakt", 
       gdpr:"HSS | GDPR"
-    }, 
-    description:"HSS webplats",
+  }, 
+  description:"HSS webplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -707,9 +705,10 @@ export const Sv: MessagesSvType = {
     title: "Åldersanpassade avdelningar", 
     text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
   },
-    joinPage: {
+  joinPage: {
     title: "Anmäl ditt intresse",
     text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
     buttonText: "Gå med i Scouterna"
   }
-};
+}
+

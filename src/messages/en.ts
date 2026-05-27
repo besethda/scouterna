@@ -461,7 +461,7 @@ export const En: MessagesEngType = {
     headline: "Become a scout",
     title: "Become a part of HSS",
     text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
-  }, 
+  },
   tabTitle:{
     history:"HSS | History",
     join:"HSS | Join", 
