@@ -1,6 +1,7 @@
 import { getPageHeadTitle } from "@/lib/utils"
-
-
+import { En} from "@/messages/en";
+import { Sv } from "@/messages/sv";
+import { use } from "react";
 
 const pageItem = "groups"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -9,11 +10,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
+const GroupStructure = ({params}:{params: Promise<{locale: string}>}) => {
 
+  const {locale} = use(params)
+  const messages = locale === "en" ? En : Sv
 
-const GroupStructure = () => {
-  return(
-    <div>hello</div>
+  return (
+    <div className="">
+      Group Structure
+    </div>
   )
 }
 

@@ -1,5 +1,9 @@
 import { getPageHeadTitle } from "@/lib/utils"
-
+import CardWithoutImage from "@/components/CardWithoutImage";
+import FragorSvar from "@/components/Fragor-svar";
+import { En} from "@/messages/en";
+import { Sv } from "@/messages/sv";
+import { use } from "react";
 
 
 const pageItem = "faq"
@@ -8,10 +12,41 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return getPageHeadTitle(locale, pageItem)
 }
 
-const Faq = () => {
+
+
+const Faq = ({params}:{params: Promise<{locale: string}>}) => {
+    const {locale} = use(params)
+    const messages = locale === "en" ? En : Sv
 
     return (
         <div>
+            <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png"/>
+            <div>
+            <div className="bg-bg-blue py-10">
+            <h2 className="pb-2 text-h2 text-center md:text-h1-desktop"> {messages?.faq.title} </h2>
+            <div className="flex flex-col gap-2.5">
+                {(messages as any)?.fragorSvar?.map((item:any,index:number ) =>(
+                    <FragorSvar 
+                    key={index}
+                    question={item.question}
+                    answer={item.answer} 
+                    />
+                ))}
+            </div>
+        </div>
+        <div className="py-10">
+            <h2 className="pb-2 text-h2 text-center  md:text-h1-desktop"> {messages?.faq.title02} </h2>
+            <div className="flex flex-col gap-2.5">
+                {(messages as any)?.fragorSvar02?.map((item:any,index:number ) =>(
+                    <FragorSvar 
+                    key={index}
+                    question={item.question}
+                    answer={item.answer} 
+                    />
+                ))}
+            </div>
+        </div>
+        </div>
         </div>
     );
 }

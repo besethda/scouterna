@@ -1,8 +1,10 @@
+"use client"
+
 import Image from "next/image"
 import useMessages from "@/hook/useMessages"
 import Link from "next/link"
 
-type divisionName = "sjohumlorna" | "kaparna" | "utmanare" | "konvojen"
+type divisionName = "sjohumlorna" | "kaparna" | "utmanare" | "konvojen" | "familjescouter"
 
 const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
   { division: divisionName, imageUrl?: string, boxStyle: string }) => {
@@ -12,7 +14,8 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
     sjohumlorna: ["border-green", "bg-green-opaque"],
     kaparna: ["border-lightBlue", "bg-lightBlue-opaque"],
     utmanare: ["border-pink", "bg-pink-opaque"],
-    konvojen: ["border-orange", "bg-orange-opaque"]
+    konvojen: ["border-orange", "bg-orange-opaque"],
+    familjescouter: ["border-purple", "bg-purple-opaque"]
   }
 
   return (

@@ -18,6 +18,7 @@ export type MessagesEngType = {
     nav_unit2: string,
     nav_unit3: string,
     nav_unit4: string,
+    nav_unit5: string,
     nav_whatWeDo: string,
     nav_LifeScout: string,
     nav_boats: string,
@@ -95,6 +96,15 @@ export type MessagesEngType = {
     utmanare_time: string,
     utmanare_place: string,
     utmanare_paragraph: string,
+    familjescouter_title: string,
+    familjescouter_ages: string,
+    familjescouter_day: string,
+    familjescouter_time: string,
+    familjescouter_place: string,
+    familjescouter_paragraph: string,
+    scouts_title: string,
+    scouts_paragraph: string,
+    family_title: string,
     image_message: string,
     basic_message: string,
     day: string,
@@ -155,6 +165,10 @@ export type MessagesEngType = {
       [key: string]: string
     }
   },
+  faqCard: {
+    title: string,
+    text: string
+  },
   joinCard: {
     headline: string,
     title: string,
@@ -184,14 +198,79 @@ export type MessagesEngType = {
       [key: string]: string
      },
     description: string,
-  
+  },
+  groupsCard: {
+    headline: string,
+    title: string,
+    text: string,
+  },
+  boatsCard: {
+    headline: string,
+    title: string,
+    text: string,
+  },
+  cabinsCard: {
+    headline: string,
+    title: string,
+    text: string,
+  },
+  mysetCard: {
+    headline: string,
+    title: string,
+    text: string,
+  },
+  history: Record <string, string>
+  guidelines: Record <string, string>
+  safeScout: Record <string, string>
+  vests: Record <string, string>
+  lockable: Record <string, string>
+  gdpr: Record <string, string>
+  ethics: Record<string, string>
+  email: Record<string, string>
+  bank: Record<string, string>
+  faq: {
+    title: string,
+    title02: string;
+  };
+  fragorSvar: {
+    question: string,
+    answer: string
+  }[];
+  fragorSvar02: {
+    question: string,
+    answer: string
+  }[];
+  lifestyle: {
+    headline: string,
+    title: string,
+    text: string,
+  },
+  ruffen: {
+    headline: string,
+    title: string,
+    text: string,
+  },
+  memberInfo: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  safetyCard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  safetyBtn: {
+    btnMobile: string,
+    btnDesktop: string
+  }
 };
 
 export const En: MessagesEngType = {
   home: {
     title: "Welcome to HSS",
     divisions: "Groups",
-    divisions_text: "We have age-based groups for children from 8 years old and up."
+    divisions_text: "We divide our departments by age. The content is adapted to the Scouts' interests and needs, and is designed to be fun, rewarding and safe for everyone.",
   },
   about: {
     title: "About HSS"
@@ -206,6 +285,7 @@ export const En: MessagesEngType = {
     nav_unit2: "Kaparna",
     nav_unit3: "Konvojen",
     nav_unit4: "Utmanare",
+    nav_unit5: "Familjescouter",
     nav_whatWeDo: "What We Do",
     nav_LifeScout: "Life as a Sea Scout",
     nav_boats: "Our Boats",
@@ -272,6 +352,15 @@ export const En: MessagesEngType = {
     utmanare_time: "18:00",
     utmanare_place: "Ruffen",
     utmanare_paragraph: "The oldest scouts run their own projects, participate in international camps and take on leadership roles for the younger ones. Scouting becomes a way to shape themselves and their surroundings.",
+    familjescouter_title: "Familjescouter",
+    familjescouter_ages: "Under 8 Years",
+    familjescouter_day: "Friday",
+    familjescouter_time: "18:00",
+    familjescouter_place: "Ruffen",
+    familjescouter_paragraph: "Familjescouter is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
+    scouts_title: "Scouts",
+    scouts_paragraph: "We have age-separated departments from the age of 8.",
+    family_title: "Familjescouter",
     image_message: "Read more about ",
     basic_message: "Check out ",
     day: "Day: ",
@@ -320,6 +409,7 @@ export const En: MessagesEngType = {
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
+      familjescouter:"Familjescouter",
       join: "Join The Scouts",
       "become-a-scout": "Become a Scout",
       faq: "FAQ"
@@ -343,6 +433,10 @@ export const En: MessagesEngType = {
     card_headline_4: "Trained leaders",
     card_text_4: "Our leaders have extensive experience and training in Scouting and maritime safety.",
     span_4: "Anyone who wants to become a Scout leader must present a criminal record check."
+  },
+  faqCard: {
+    title: "Frequently asked questions",
+    text: "Here, we have gathered frequently asked questions from both future and current members of the association."
   },
   joinCard: {
     headline: "Become a scout",
@@ -372,4 +466,188 @@ export const En: MessagesEngType = {
     gdpr:"HSS | GDPR"
     },
     description:"HSS website"
+  },
+  groupsCard: {
+    headline: "Groups",
+    title: "Age Groups",
+    text: "We have four age-appropriate sections. The program's content is tailored to the scouts' ages to ensure they get experiences and adventures that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout section, you can join from the age of 15.",
+  },
+  boatsCard: {
+    headline: "Scout Life",
+    title: "Our Boats",
+    text: "Our boats are an important part of scout life. Here, we learn to cooperate, develop seamanship, and experience adventures together on the water.",
+  },
+  cabinsCard: {
+    headline: "Scout Life",
+    title: "Our Scout Cabins",
+    text: "Life as a sea scout is full of adventure, community, and freedom. You encounter the sea and nature together with others and create memories for life. This is where the adventure begins.",
+  },
+  mysetCard: {
+    headline: "Scout Cabins",
+    title: "Myset",
+    text: "In the forest between Lövsta and Gåseborg lies Myset – our large and beautiful scout cabin. This is where the troop gathers for a variety of activities, especially hikes that offer both adventure and fellowship.",
+  },
+  history: {
+    h0: "The History of HSS",
+    p0: "The scout group was founded in 1959 and grew rapidly.",
+    p1: "The commitment was immense, especially from parents who helped organize activities, raise funds, and build up the operations.",
+    p2: "The very first boat, a 'Blekingeeka' (traditional wooden boat) named 'Inga-Lunda', marked the beginning of the group's seafaring life. Over time, more boats could be purchased thanks to bazaars, lotteries, and hard work.",
+    p3: "By the early '60s, the group had grown substantially, with many scouts wanting to venture out onto Lake Mälaren. New boats were launched and sailing became an integral part of scout life.",
+    p4: "At the same time, the need for a dedicated place on land grew. A scout hut was built over several years by volunteers and was inaugurated in 1968. The cabin was named 'Myset' and is still used today as a place for fellowship, camps, and memories.",
+    p5: "Since its inception in 1959, HSS has been a sea scout group built on dedication, cooperation, and the desire to give young people adventure and community—and that flame still burns brightly today."
+  },
+  guidelines: {
+    t0: "HSS guidelines",
+    p0: "We have created guidelines for which types of life jackets should be used by Scouts who cannot swim, and Scouts who can swim.",
+    p1: "It is best to assume that everyone, regardless of swimming ability, should wear a life jacket on docks and in boats. It is also important that the life jacket is properly buckled or tied.",
+    p2: "Scouts who have not been able to demonstrate a 200m swimming proficiency to HSS should wear a life jacket (buoyancy aid/life vest with collar).",
+    t1: "Non-swimming scouts",
+    t2: "Swimming scouts",
+    w0: "HSS requirements for life jackets (with collar):",
+    w1: "HSS requirements for sailing vests:",
+    l0: "Buoyancy of at least 90 N",
+    l1: "Size and fit adapted to the scout's weight",
+    l2: "Crotch strap",
+    l3: "Buoyancy of at least 45 N",
+    l4: "Size and fit adapted to the scout's weight",
+    l5: "Crotch strap (Sjöhumlor and Kapare branches)"
+  },
+  safeScout: {
+    h0: "Safe Scout",
+    s0: "Swimming from a dock",
+    s1: "Swimming from a boat",
+    s2: "Sailing hike or flotilla",
+    t0: "Exceptions",
+    w0: "Everyone on docks or in boats must wear a life jacket.",
+    p0: "No one should go out onto a dock or into a boat without a life jacket, unless the scout group and the skipper decide otherwise in special cases. The life jacket must be intact, function properly, and be the correct size for the person.",
+    p1: "When swimming from a dock, the life jacket can be removed if a leader wearing a life jacket supervises the swimming and is ready to perform a rescue if anything happens. This is only okay if the leader feels safe and confident allowing the participants to swim without life jackets.",
+    p2: "When swimming from a boat, the life jacket can be removed if the boat is moored and a leader or skipper wearing a life jacket remains on board to help, provided that the leader/skipper gives their permission and feels safe and confident with the situation.",
+    p3: "During a sailing hike or flotilla, when the boats are moored overnight, a life jacket is not needed in the cockpit or the cabin. However, a life jacket is recommended when moving between the boat and land."
+  },
+  vests: {
+    h0: "Inflatable vests",
+    w0: "HSS advises against the use of inflatable life jackets.",
+    p0: "There are several risks associated with using inflatable life jackets. Use a traditional life jacket or sailing vest instead, depending on swimming ability."
+  },
+  lockable: {
+    h0: "Inflatable life jackets",
+    w0: "HSS advises against the use of inflatable life jackets.",
+    p0: "There are several risks associated with using inflatable life jackets. Once inflated, it becomes bulky and can make it harder to move around, swim, and climb out of the water. Additionally, an inflatable life jacket gets ruined if it deploys during a swim. It cannot be used for the remainder of the activity, which means a spare life jacket is always required.",
+    w1: "Use a traditional life jacket or sailing vest instead, depending on swimming ability."
+  },
+  gdpr: {
+    t0: "Data Collection via Scoutnet",
+    p0: "Scoutnet is the Scouts' joint member registry, where we collect the following information about each member:",
+    p1: "*We also collect this information for children in the registration registry (waiting list), which is a part of Scoutnet. The information regarding siblings and parents is used to offer sibling priority and to prioritize children whose parents hold a role within the scout group.",
+    p2: "The purpose of collecting data in Scoutnet is to know who our members are, to be able to reach them with information, for attendance registration, to track section and patrol affiliation, and for invoicing.",
+    s0: "Personal Data",
+    s1: "Scout Group Information",
+    s2: "Purpose of Data Collection",
+    l0: "Name*",
+    l1: "Personal identity number*",
+    l2: "Address*",
+    l3: "Phone number* (at least one phone number to a parent/guardian for a minor scout, and optional for the scout)",
+    l4: "Email address* (at least one email address to a parent/guardian for a minor scout, and optional for the scout)",
+    l5: "Section",
+    l6: "Patrol",
+    l7: "Start date in the scout group",
+    l8: "Membership fee",
+    l9: "If applicable, whether a parent holds a role in the scout group*",
+    l10: "If applicable, whether siblings are members of the scout group*",
+    l11: "Completed training/courses (primarily relevant for leaders)",
+    l12: "Role in the scout group (only relevant for leaders)",
+    l13: "Any awards or decorations"
+  },
+  ethics: {
+    s0: "Ethical guidelines for data collection",
+    p0: "We never enter a member's health information into Scoutnet.",
+    p1: "Leaders and the board can export reports regarding our members from the registry. No individuals outside of HSS have access to the roster, and it cannot be downloaded from the website.",
+    p2: "All member data that needs to be saved is entered into Scoutnet, and all email correspondence is deleted afterward.",
+    p3: "Relevant data from the list above is shared with the municipality in our attendance reporting, for the purpose of receiving grants for our operations. When a member terminates their membership, all information about that member disappears from HSS's view in Scoutnet.",
+    p4: "The member data does remain in Scoutnet, however, as long as the person does not have an active membership, only a few employees at the National Scout Office can access the information.",
+    p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
+  },
+  email : {
+    t0: "E-post",
+    s0: "E-post till kåren",
+    p0: "info@hss-scout.org",
+    s1: "E-post för medlemsärenden",
+    p1: "register@hss-scout.org"
+  },
+  bank: {
+    t0: "Bankuppgifter",
+    s0: "Postgiro",
+    p0: "404418 - 6",
+    s1: "Organisationsnummer",
+    p1: "802006 - 2389"
+  },
+  faq: {
+    title: "Join the Scouts",
+    title02: "Membership Questions"
+  },
+  fragorSvar: [
+    { question: "Do we need to buy a scout uniform right away?", answer: "answer" },
+    { question: "What kind of clothes do scouts usually wear?", answer: "answer" },
+    { question: "Are meetings always held outdoors?", answer: "answer" },
+    { question: "How much does it cost to join the scouts?", answer: "answer" },
+    { question: "Does the child need to have prior experience with sailing or scouting?", answer: "answer" },
+    { question: "We have become members—what happens now?", answer: "answer" },
+  ],
+  fragorSvar02: [
+    {
+      question: "Why do we have a scout uniform?",
+      answer: `The very first training you should take is "Safe Meetings" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour.
+    Here is how you get started with Safe Meetings >> 
+    After Safe Meetings, it is appropriate to take "Leading Scouting" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further.
+    Read more about Leading Scouting here >> When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. Read more about them here >>`
+    },
+    {
+      question: "I am a new scout leader! Which training should I take first?",
+      answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.`
+    },
+    {
+      question: "I have lost my invoice. What should I do?",
+      answer: `Send an email to support@scouterna.se with your name and membership number, and you will receive a copy of the invoice via email.`
+    },
+    {
+      question: "What is included in my membership fee?",
+      answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.`
+    },
+    {
+      question: "How do I change my billing address?",
+      answer: "Go to www.scoutnet.se, log in, and change your billing address."
+    },
+    {
+      question: "My invoice has the wrong amount. What should I do?",
+      answer: `Send an email to support@scouterna.se and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.`
+    },
+    {
+      question: "How do I change my contact information?",
+      answer: `Log in to www.scoutnet.se, where you can update your information.`
+    }
+  ],
+  lifestyle: {
+    headline: "Scout Life",
+    title: "The Waves are Waiting",
+    text: "Life as a sea scout is filled with adventure, community, and freedom. You encounter the sea and nature together with others and create memories for life. This is where the adventure begins."
+  },
+  ruffen: {
+    headline: "Scout Cabins",
+    title: "Ruffen",
+    text: "Ruffen is our premises located by Hässelby Strandbad. This is where we hold our troop meetings, and it also houses our Optimist dinghies.",
+  },
+  memberInfo: {
+    headline: "Scout Life",
+    title: "Information",
+    text: "Here we have gathered useful information for our members to know."
+  },
+  safetyCard: {
+    headline: "Safety",
+    title: "HSS Life Jacket Policy",
+    text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF."
+  },
+  safetyBtn: {
+    btnMobile: "Download PDF",
+    btnDesktop: "Download the life jacket policy as PDF"
+  }
 };
