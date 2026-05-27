@@ -275,6 +275,7 @@ export type MessagesEngType = {
     headline: string, 
     title: string, 
     text: string
+  },
   joinPage: {
     title: string,
     text: string,
@@ -677,7 +678,7 @@ export const En: MessagesEngType = {
     headline: "groups", 
     title: "Age groups", 
     text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In the Senior Scouts (Utmanarna), our oldest scout group, members can join from the age of 15."
-  }
+  },
   joinPage: {
   title: "Express Your Interest",
   text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
