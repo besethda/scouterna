@@ -1,7 +1,7 @@
 "use client"
 
 import {useState} from "react"
-import { AiOutlineDownCircle, AiFillUpCircle } from "react-icons/ai";
+import { AiOutlineDownCircle } from "react-icons/ai";
 
 interface FragorSvarProps {
     question : string;

@@ -199,8 +199,8 @@ type MessagesSvType = {
       contact:string, 
       gdpr:string,
       [key: string]: string
-     },
-     description:string
+  },
+  description:string,
   groupsCard: {
     headline: string,
     title: string,
@@ -231,7 +231,8 @@ type MessagesSvType = {
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
-
+  scoutLife: Record<string, string>
+  learning: Record<string, string>
   faq: {
     title: string,
     title02: string
@@ -280,13 +281,17 @@ type MessagesSvType = {
     headline: string, 
     title: string, 
     text: string
+  },
+  joinPage: {
+    title: string,
+    text: string,
+    buttonText: string
   }
-
 };
 
 export const Sv: MessagesSvType = {
   home: {
-    title: "Välkommen to HSS",
+    title: "Välkommen till HSS",
     divisions: "Avdelningar",
     divisions_text: "Vi delar in våra avdelningar efter åldrar. Innehållet anpassas efter Scouternas intressen och behov, och utformas för att vara roligt, givande och tryggt för alla.",
   },
@@ -321,7 +326,6 @@ export const Sv: MessagesSvType = {
     nav_school: "Scouternas Folkhögskola",
     nav_shop: "Scoutshop",
     nav_scoutnet: "Scoutnet"
-
   },
   footer: {
     footer_service: "Scouternas tjänster",
@@ -484,8 +488,8 @@ export const Sv: MessagesSvType = {
       safety:"HSS | Flytvästpolicy",
       contact:"HSS | Kontakt", 
       gdpr:"HSS | GDPR"
-    }, 
-    description:"HSS webplats",
+  }, 
+  description:"HSS webplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -601,6 +605,24 @@ export const Sv: MessagesSvType = {
     s1: "Organisationsnummer",
     p1: "802006 - 2389"
   },
+  scoutLife: {
+    t0: "Scoutlivet inom HSS",
+    header0: "Learning by doing",
+    header1: "Vi vågar",
+    header2: "Starka tillsammans",
+    text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
+    text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att prova nya saker.",
+    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
+  },
+  learning: {
+    t0: "Lärande för livet",
+    header0: "Sjömanskunskap",
+    header1: "Naturkunskap",
+    header2: "Friluftskunskap",
+    text0: "Vi lär oss att hantera båtar, knyta knopar och röra oss säkert på sjön.",
+    text1: "Vi lär oss om djur och växter, naturens kretslopp och hur vi kan ta hand om miljön.",
+    text2: "Vi lär oss att laga mat ute, sätta upp tält och vistas i naturen på ett tryggt och säkert sätt."
+  },
   faq: {
     title: "Bli Scout",
     title02: "Medlemsfrågor"
@@ -682,5 +704,11 @@ export const Sv: MessagesSvType = {
     headline: "Avdelningar", 
     title: "Åldersanpassade avdelningar", 
     text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
+  },
+  joinPage: {
+    title: "Anmäl ditt intresse",
+    text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
+    buttonText: "Gå med i Scouterna"
   }
-};
+}
+
