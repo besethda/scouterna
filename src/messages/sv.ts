@@ -613,12 +613,12 @@ export const Sv: MessagesSvType = {
   },
   learning: {
     t0: "Lärande för livet",
-    header1: "Sjömanskunskap",
-    header2: "Naturkunskap",
-    header3: "Friluftskunskap",
-    text1: "Vi lär oss att hantera båtar, knyta knopar och röra oss säkert på sjön.",
-    text2: "Vi lär oss om djur och växter, naturens kretslopp och hur vi kan ta hand om miljön.",
-    text3: "Vi lär oss att laga mat ute, sätta upp tält och vistas i naturen på ett tryggt och säkert sätt."
+    header0: "Sjömanskunskap",
+    header1: "Naturkunskap",
+    header2: "Friluftskunskap",
+    text0: "Vi lär oss att hantera båtar, knyta knopar och röra oss säkert på sjön.",
+    text1: "Vi lär oss om djur och växter, naturens kretslopp och hur vi kan ta hand om miljön.",
+    text2: "Vi lär oss att laga mat ute, sätta upp tält och vistas i naturen på ett tryggt och säkert sätt."
   },
   faq: {
     title: "Bli Scout",

@@ -18,7 +18,7 @@ const LifeStyle = ({params}:{params: Promise<{locale: string}>}) => {
 
     return (
         <div>
-            <CardWithImage sectionTitle="learning" logo="/heart.png" image="/images/DSCF3033.jpg"/>
+            <CardWithImage sectionTitle="lifestyle" logo="/heart.png" image="/images/DSCF3033.jpg"/>
             <WhiteGridContainer backgroundBlue={false} messageTitle="learning"/>
         </div>
     );

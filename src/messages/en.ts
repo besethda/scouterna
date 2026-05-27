@@ -596,21 +596,21 @@ export const En: MessagesEngType = {
   },
   scoutLife: {
     t0: "Scoutlife within HSS",
-    header1: "Learning by doing",
-    header2: "We are brave",
-    header3: "Stronger together",
-    text1: "In the scouts, you learn by doing—testing things yourself and growing through practical experiences together with others.",
-    text2: "In the scouts, we dare to do more together and support each other in trying new things.",
-    text3: "In the scouts, we become stronger together, lifting each other up and sharing a warm, safe community."
+    header0: "Learning by doing",
+    header1: "We are brave",
+    header2: "Stronger together",
+    text0: "In the scouts, you learn by doing—testing things yourself and growing through practical experiences together with others.",
+    text1: "In the scouts, we dare to do more together and support each other in trying new things.",
+    text2: "In the scouts, we become stronger together, lifting each other up and sharing a warm, safe community."
   },
   learning: {
     t0: "Learning for life",
-    header1: "Seamanship",
-    header2: "Nature education",
-    header3: "Outdoor skills",
-    text1: "We learn how to handle boats, tie knots, and navigate safely at sea.",
-    text2: "We learn about animals and plants, nature's cycles, and how we can take care of the environment.",
-    text3: "We learn how to cook outdoors, set up tents, and spend time in nature in a safe and secure way."
+    header0: "Seamanship",
+    header1: "Nature education",
+    header2: "Outdoor skills",
+    text0: "We learn how to handle boats, tie knots, and navigate safely at sea.",
+    text1: "We learn about animals and plants, nature's cycles, and how we can take care of the environment.",
+    text2: "We learn how to cook outdoors, set up tents, and spend time in nature in a safe and secure way."
   },
   faq: {
     title: "Join the Scouts",
