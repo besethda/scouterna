@@ -207,6 +207,7 @@ type MessagesSvType = {
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
+  scoutLife: Record<string, string>
   faq:{
     title: string,
     title02: string
@@ -540,6 +541,15 @@ export const Sv: MessagesSvType = {
     p0: "404418 - 6",
     s1: "Organisationsnummer",
     p1: "802006 - 2389"
+  },
+  scoutLife: {
+    t0: "Scoutlivet inom HSS",
+    header0: "Learning by doing",
+    header1: "Vi vågar",
+    header2: "Starka tillsammans",
+    text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
+    text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att prova nya saker.",
+    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
   },
   faq: {
     title: "Bli Scout",

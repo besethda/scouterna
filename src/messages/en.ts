@@ -204,6 +204,7 @@ export type MessagesEngType = {
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
+  scoutLife: Record<string, string>
   faq: {
     title: string,
     title02: string;
@@ -533,6 +534,15 @@ export const En: MessagesEngType = {
     p0: "404418 - 6",
     s1: "Organisationsnummer",
     p1: "802006 - 2389"
+  },
+  scoutLife: {
+    t0: "Scoutlife within HSS",
+    header1: "Learning by doing",
+    header2: "We are brave",
+    header3: "Stronger together",
+    text1: "In the scouts, you learn by doing—testing things yourself and growing through practical experiences together with others.",
+    text2: "In the scouts, we dare to do more together and support each other in trying new things.",
+    text3: "In the scouts, we become stronger together, lifting each other up and sharing a warm, safe community."
   },
   faq: {
     title: "Join the Scouts",
