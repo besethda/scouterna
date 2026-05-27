@@ -470,7 +470,7 @@ export const Sv: MessagesSvType = {
       contact:"HSS | Kontakt", 
       gdpr:"HSS | GDPR"
     }, 
-    description:"HSS webplats"
+    description:"HSS webplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",

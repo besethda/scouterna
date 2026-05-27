@@ -198,7 +198,6 @@ export type MessagesEngType = {
       [key: string]: string
      },
     description: string,
-  },
   groupsCard: {
     headline: string,
     title: string,
@@ -465,8 +464,7 @@ export const En: MessagesEngType = {
     contact:"HSS | Contact", 
     gdpr:"HSS | GDPR"
     },
-    description:"HSS website"
-  },
+    description:"HSS website",
   groupsCard: {
     headline: "Groups",
     title: "Age Groups",
