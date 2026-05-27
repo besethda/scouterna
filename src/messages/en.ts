@@ -232,6 +232,10 @@ export type MessagesEngType = {
   safetyBtn: {
     btnMobile: string,
     btnDesktop: string
+  },
+  optimister: {
+    title: string,
+    text: string
   }
 };
 
@@ -500,6 +504,10 @@ export const En: MessagesEngType = {
   safetyBtn: {
     btnMobile: "Download PDF",
     btnDesktop: "Download the life jacket policy as PDF"
+  },
+  optimister: {
+    title:"",
+    text:""
   }
   
 };

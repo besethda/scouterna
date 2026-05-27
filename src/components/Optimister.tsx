@@ -2,29 +2,33 @@
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {Autoplay} from 'swiper/modules';
 import 'swiper/css';
 import Image from 'next/image';
 import Image01 from '../../public/images/DSCF3033.jpg';
 import Image02 from '../../public/images/DSCF3036.jpg'
 import Image03 from '../../public/images/DSCF3017.jpg'
 
+interface OptimisterProps {
+    title:string,
+    text:string
+}
 
 
-const Optimister = () => {
+
+const Optimister = ({title,text}:OptimisterProps) => {
     const images = [Image01, Image02,Image03,Image01,Image02,Image03];
     return (
         <div className='w-full '>
+            <div>
+                <h2>{title}</h2>
+                <p>{text}</p>
+            </div>
             <Swiper
-                modules={[Autoplay]}
                 slidesPerView={2} 
                 centeredSlides={true}
                 spaceBetween={12}
                 loop={true}
-                autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                }}
+                
                 breakpoints={{
                     1024: {
                     enabled: false, 
