@@ -275,6 +275,11 @@ type MessagesSvType = {
     secondText: string,
     thirdtext: string,
     button: string
+  }, 
+  groupCard: {
+    headline: string, 
+    title: string, 
+    text: string
   }
 
 };
@@ -389,7 +394,7 @@ export const Sv: MessagesSvType = {
   },
   hero: {
     hero_title: "Hässelby Strands Sjöscouter",
-    hero_subtitle01: "Äventyr börjar",
+    hero_subtitle01: "Äventyret börjar",
     hero_subtitle02: "vid vattenbrynet",
     hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
   },
@@ -672,5 +677,10 @@ export const Sv: MessagesSvType = {
     secondText: "Man kan bli Scout från och med 8 års ålder. Medlemmarna på avdelningen för våra äldsta Scouter är 15 år och uppåt.",
     thirdtext: "Avdelningarnas innehåll är anpassat efter Scouternas ålder för att göra Scoutlivet tryggt, roligt och spännande för alla våra Scouter.",
     button: "Läs mer om våra avdelningar"
+  }, 
+  groupCard: {
+    headline: "Avdelningar", 
+    title: "Åldersanpassade avdelningar", 
+    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
   }
 };
