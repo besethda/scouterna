@@ -1,7 +1,8 @@
-import { getPageHeadTitle } from "@/lib/utils";
-import { use } from "react";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
+import { use } from "react";
+import { getPageHeadTitle } from "@/lib/utils";
+
 
 const pageItems = [
   "sjohumlorna",
@@ -26,8 +27,10 @@ const Groups = ({
 }: {
   params: Promise<{ locale: string; singleGroup: string }>;
 }) => {
-  const { singleGroup, locale } = use(params);
+  const { singleGroup } = use(params);
+  const {locale} = use(params)
   const messages = locale === "en" ? En : Sv
+
   
   if (singleGroup === "sjohumlorna") {
       return <p>Sjöhumlorna page</p>;
@@ -42,7 +45,4 @@ const Groups = ({
   }
 };
 
-
-
-
-export default Groups
+export default Groups;

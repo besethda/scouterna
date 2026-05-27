@@ -1,10 +1,15 @@
-import { En} from "@/messages/en";
-import { Sv } from "@/messages/sv";
-import { use } from "react";
+"use client"
 
-const LifeStyleSection = ({params}:{params: Promise<{locale: string}>}) => {
-  const {locale} = use(params)
-  const messages = locale === "en" ? En : Sv
+import useMessages from "@/hook/useMessages"
+import Image from "next/image"
+
+const LifeStyleSection = ({}) => {
+
+  const messages = useMessages()
+  if(!messages) return null
+
+  const imageArray = ["/shipIcon.svg", "/t"]
+
   return (
     <div className="">
       <div className="">{messages.offers.title}</div>
@@ -12,7 +17,9 @@ const LifeStyleSection = ({params}:{params: Promise<{locale: string}>}) => {
         {[...Array(4)].map((e, index)=> {
           return(
             <div className="">
-
+              <div className="">
+                <Image src={} alt={} />
+              </div>
             </div>
           )
         })}
