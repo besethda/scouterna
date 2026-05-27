@@ -161,7 +161,7 @@ type MessagesSvType = {
       kaparna: string,
       utmanare: string,
       konvojen: string,
-      familjescouter:string,
+      familjescouter: string,
       join: string,
       "become-a-scout": string,
       faq: string,
@@ -177,30 +177,30 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
-  tabTitle:{
-      history:string,
-      join:string, 
-      "become-a-scout": string,
-      faq:string, 
-      "groups":string, 
-      sjohumlorna:string, 
-      kaparna:string,
-      konvojen:string, 
-      utmanare:string, 
-      familjescouter:string, 
-      lifestyle:string, 
-      boats:string,
-      cabins:string, 
-      myset:string, 
-      ruffen:string, 
-      members:string, 
-      information:string,
-      safety:string,
-      contact:string, 
-      gdpr:string,
-      [key: string]: string
+  tabTitle: {
+    history: string,
+    join: string,
+    "become-a-scout": string,
+    faq: string,
+    "groups": string,
+    sjohumlorna: string,
+    kaparna: string,
+    konvojen: string,
+    utmanare: string,
+    familjescouter: string,
+    lifestyle: string,
+    boats: string,
+    cabins: string,
+    myset: string,
+    ruffen: string,
+    members: string,
+    information: string,
+    safety: string,
+    contact: string,
+    gdpr: string,
+    [key: string]: string
   },
-  description:string,
+  description: string,
   groupsCard: {
     headline: string,
     title: string,
@@ -222,12 +222,12 @@ type MessagesSvType = {
     text: string,
   },
 
-  history: Record <string, string>
-  guidelines: Record <string, string>
-  safeScout: Record <string, string>
-  vests: Record <string, string>
-  lockable: Record <string, string>
-  gdpr: Record <string, string>
+  history: Record<string, string>
+  guidelines: Record<string, string>
+  safeScout: Record<string, string>
+  vests: Record<string, string>
+  lockable: Record<string, string>
+  gdpr: Record<string, string>
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
@@ -277,16 +277,22 @@ type MessagesSvType = {
     secondText: string,
     thirdtext: string,
     button: string
-  }, 
+  },
   groupCard: {
-    headline: string, 
-    title: string, 
+    headline: string,
+    title: string,
     text: string
   },
   joinPage: {
     title: string,
     text: string,
     buttonText: string
+  },
+  myset01: Record<string, string>,
+  myset02: Record<string, string>,
+  myset03: Record<string, string>,
+  mysetBtn: {
+    text: string
   }
 };
 
@@ -434,7 +440,7 @@ export const Sv: MessagesSvType = {
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
-      familjescouter:"Familjescouter",
+      familjescouter: "Familjescouter",
       join: "Gå med i Scouterna",
       "become-a-scout": "Bli Sjöscout",
       faq: "Frågor & svar"
@@ -468,29 +474,29 @@ export const Sv: MessagesSvType = {
     title: "Bli en del av HSS",
     text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
   },
-  tabTitle:{
-      history:"HSS | Historia",
-      join:"HSS | Gå med i Scouterna", 
-      "become-a-scout": "HSS | Bli Sjöscout",
-      faq:"HSS | FAQ", 
-      "groups":"HSS | Våra avdelningar", 
-      sjohumlorna:"HSS | Sjöhumlorna", 
-      kaparna: "HSS | Kaparna",
-      konvojen:"HSS | Konvojen", 
-      utmanare:"HSS | Utmanare", 
-      familjescouter:"HSS | Familjescouter", 
-      lifestyle:"HSS | Livet som Sjöscout", 
-      boats:"HSS | Båtar",
-      cabins:"HSS | Scoutstugor", 
-      myset:"HSS | Myset", 
-      ruffen:"HSS | Ruffen", 
-      members:"HSS | För medlemmar", 
-      information:"HSS | Information för medlemmar",
-      safety:"HSS | Flytvästpolicy",
-      contact:"HSS | Kontakt", 
-      gdpr:"HSS | GDPR"
-  }, 
-  description:"HSS webplats",
+  tabTitle: {
+    history: "HSS | Historia",
+    join: "HSS | Gå med i Scouterna",
+    "become-a-scout": "HSS | Bli Sjöscout",
+    faq: "HSS | FAQ",
+    "groups": "HSS | Våra avdelningar",
+    sjohumlorna: "HSS | Sjöhumlorna",
+    kaparna: "HSS | Kaparna",
+    konvojen: "HSS | Konvojen",
+    utmanare: "HSS | Utmanare",
+    familjescouter: "HSS | Familjescouter",
+    lifestyle: "HSS | Livet som Sjöscout",
+    boats: "HSS | Båtar",
+    cabins: "HSS | Scoutstugor",
+    myset: "HSS | Myset",
+    ruffen: "HSS | Ruffen",
+    members: "HSS | För medlemmar",
+    information: "HSS | Information för medlemmar",
+    safety: "HSS | Flytvästpolicy",
+    contact: "HSS | Kontakt",
+    gdpr: "HSS | GDPR"
+  },
+  description: "HSS webplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -592,7 +598,7 @@ export const Sv: MessagesSvType = {
     p4: "Medlemsuppgifterna finns dock kvar i Scoutnet, men så länge personen inte har något aktivt medlemskap, är det endast ett fåtal anställda på Scouternas kansli som kan komma åt uppgifterna.",
     p5: "I och med medlemskapet är man försäkrad via Scouternas gruppförsäkring och försäkringsbolaget kräver att uppgifterna sparas i upp till tio år, vilket är den tidsbegränsning som man kan kräva ersättning för ett försäkringsärende."
   },
-  email : {
+  email: {
     t0: "E-post",
     s0: "E-post till kåren",
     p0: "info@hss-scout.org",
@@ -693,7 +699,7 @@ export const Sv: MessagesSvType = {
     headline: "Säkerhet",
     title: "HSS Flytvästpolicy",
     text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
-    },
+  },
   safetyBtn: {
     btnMobile: "Ladda ner PDF",
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
@@ -705,16 +711,32 @@ export const Sv: MessagesSvType = {
     secondText: "Man kan bli Scout från och med 8 års ålder. Medlemmarna på avdelningen för våra äldsta Scouter är 15 år och uppåt.",
     thirdtext: "Avdelningarnas innehåll är anpassat efter Scouternas ålder för att göra Scoutlivet tryggt, roligt och spännande för alla våra Scouter.",
     button: "Läs mer om våra avdelningar"
-  }, 
+  },
   groupCard: {
-    headline: "Avdelningar", 
-    title: "Åldersanpassade avdelningar", 
+    headline: "Avdelningar",
+    title: "Åldersanpassade avdelningar",
     text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
   },
   joinPage: {
     title: "Anmäl ditt intresse",
     text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
     buttonText: "Gå med i Scouterna"
+  },
+  myset01: {
+    t0: "Nyfiken på att hyra Myset?",
+    p0: "Mejla myset.hss.scout@gmail.com för att göra en bokningsförfrågan.",
+  },
+  myset02: {
+    t0: "Bekvämligheter",
+    p0: "Myset är en trevlig och fräsch scoutstuga. Med element och ett modernt ventilationssystem är det lätt att hålla värmen, och stugan känns alltid välkomnande och hemtrevlig &ndash; oavsett årstid.",
+    p1: "Stugan rymmer ett stort samlingsrum där en mysig brasa blir en naturlig samlingspunkt. Här finns också ett väl tilltaget kök och två mindre ledarrum som ger plats för både planering och vila.",
+  },
+  myset03: {
+    t0: "Utrustning",
+    p0: "Köket är fullt utrustat med både el- och vedspis, diskmaskin, mikrovågsugn och ett rymligt kylskåp. Det är ett komplett kök som utan problem kan laga och servera mat till upp emot 30 personer &ndash; perfekt för läger, hajker och gemensamma måltider.",
+  },
+  mysetBtn: {
+    text: "Se planlösning"
   }
 }
 

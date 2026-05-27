@@ -173,31 +173,31 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string
-  }, 
-    tabTitle: {
-      history:string,
-      join:string, 
-      "become-a-scout": string,
-      faq:string, 
-      "groups":string, 
-      sjohumlorna:string, 
-      kaparna:string,
-      konvojen:string, 
-      utmanare:string, 
-      familjescouter:string, 
-      lifestyle:string, 
-      boats:string,
-      cabins:string, 
-      myset:string, 
-      ruffen:string, 
-      members:string, 
-      information:string,
-      safety:string,
-      contact:string, 
-      gdpr:string,
-      [key: string]: string
-     },
-    description: string,
+  },
+  tabTitle: {
+    history: string,
+    join: string,
+    "become-a-scout": string,
+    faq: string,
+    "groups": string,
+    sjohumlorna: string,
+    kaparna: string,
+    konvojen: string,
+    utmanare: string,
+    familjescouter: string,
+    lifestyle: string,
+    boats: string,
+    cabins: string,
+    myset: string,
+    ruffen: string,
+    members: string,
+    information: string,
+    safety: string,
+    contact: string,
+    gdpr: string,
+    [key: string]: string
+  },
+  description: string,
   groupsCard: {
     headline: string,
     title: string,
@@ -218,12 +218,12 @@ export type MessagesEngType = {
     title: string,
     text: string,
   },
-  history: Record <string, string>
-  guidelines: Record <string, string>
-  safeScout: Record <string, string>
-  vests: Record <string, string>
-  lockable: Record <string, string>
-  gdpr: Record <string, string>
+  history: Record<string, string>
+  guidelines: Record<string, string>
+  safeScout: Record<string, string>
+  vests: Record<string, string>
+  lockable: Record<string, string>
+  gdpr: Record<string, string>
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
@@ -265,7 +265,7 @@ export type MessagesEngType = {
   safetyBtn: {
     btnMobile: string,
     btnDesktop: string
-  }, 
+  },
   becomeScoutSmallCard: {
     title: string,
     subtitle: string,
@@ -273,16 +273,22 @@ export type MessagesEngType = {
     secondText: string,
     thirdtext: string,
     button: string
-  }, 
+  },
   groupCard: {
-    headline: string, 
-    title: string, 
+    headline: string,
+    title: string,
     text: string
   },
   joinPage: {
     title: string,
     text: string,
     buttonText: string
+  },
+  myset01: Record<string, string>
+  myset02: Record<string, string>
+  myset03: Record<string, string>,
+  mysetBtn: {
+    text: string
   }
 };
 
@@ -429,7 +435,7 @@ export const En: MessagesEngType = {
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
-      familjescouter:"Familjescouter",
+      familjescouter: "Familjescouter",
       join: "Join The Scouts",
       "become-a-scout": "Become a Scout",
       faq: "FAQ"
@@ -463,29 +469,29 @@ export const En: MessagesEngType = {
     title: "Become a part of HSS",
     text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
   },
-  tabTitle:{
-    history:"HSS | History",
-    join:"HSS | Join", 
+  tabTitle: {
+    history: "HSS | History",
+    join: "HSS | Join",
     "become-a-scout": "HSS | Become a scout",
-    faq:"HSS | FAQ", 
-    "groups":"HSS | Groups", 
-    sjohumlorna:"HSS | Sjöhumlorna", 
+    faq: "HSS | FAQ",
+    "groups": "HSS | Groups",
+    sjohumlorna: "HSS | Sjöhumlorna",
     kaparna: "HSS | Kaparna",
-    konvojen:"HSS | Konvojen", 
-    utmanare:"HSS | Utmanare", 
-    familjescouter:"HSS | Familjescouter", 
-    lifestyle:"HSS | Lifestyle", 
-    boats:"HSS | Boats",
-    cabins:"HSS | Cabins", 
-    myset:"HSS | Myset", 
-    ruffen:"HSS | Ruffen", 
-    members:"HSS | Members", 
-    information:"HSS | Members Infomation",
-    safety:"HSS | Life Jacket Policy",
-    contact:"HSS | Contact", 
-    gdpr:"HSS | GDPR"
-    },
-    description:"HSS website",
+    konvojen: "HSS | Konvojen",
+    utmanare: "HSS | Utmanare",
+    familjescouter: "HSS | Familjescouter",
+    lifestyle: "HSS | Lifestyle",
+    boats: "HSS | Boats",
+    cabins: "HSS | Cabins",
+    myset: "HSS | Myset",
+    ruffen: "HSS | Ruffen",
+    members: "HSS | Members",
+    information: "HSS | Members Infomation",
+    safety: "HSS | Life Jacket Policy",
+    contact: "HSS | Contact",
+    gdpr: "HSS | GDPR"
+  },
+  description: "HSS website",
   groupsCard: {
     headline: "Groups",
     title: "Age Groups",
@@ -586,7 +592,7 @@ export const En: MessagesEngType = {
     p4: "The member data does remain in Scoutnet, however, as long as the person does not have an active membership, only a few employees at the National Scout Office can access the information.",
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
-  email : {
+  email: {
     t0: "E-post",
     s0: "E-post till kåren",
     p0: "info@hss-scout.org",
@@ -691,7 +697,7 @@ export const En: MessagesEngType = {
   safetyBtn: {
     btnMobile: "Download PDF",
     btnDesktop: "Download the life jacket policy as PDF"
-  }, 
+  },
   becomeScoutSmallCard: {
     title: "Scout Life for youth and adults",
     subtitle: "We have age-appropriate groups for our scouts. As an adult, you can get involved as a leader, or help out as a parent.",
@@ -701,13 +707,31 @@ export const En: MessagesEngType = {
     button: "Read more about our groups"
   },
   groupCard: {
-    headline: "groups", 
-    title: "Age groups", 
+    headline: "groups",
+    title: "Age groups",
     text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In the Senior Scouts (Utmanarna), our oldest scout group, members can join from the age of 15."
   },
   joinPage: {
-  title: "Express Your Interest",
-  text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
-  buttonText: "Join the Scouts"
-}
+    title: "Express Your Interest",
+    text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
+    buttonText: "Join the Scouts"
+  },
+  myset01: {
+    t0: "Interested in renting Myset?",
+    p0: "Email myset.hss.scout@gmail.com to make a booking inquiry.",
+  },
+
+  myset02: {
+    s0: "Amenities",
+    t1: "Myset is a pleasant and well-maintained scout cabin. With radiators and a modern ventilation system, it is easy to keep warm, and the cabin always feels welcoming and cozy &ndash; regardless of the season.",
+    p2: "The cabin features a large gathering room where a cozy fireplace naturally becomes the center of attention. There is also a spacious kitchen and two smaller leader rooms that provide space for both planning and rest.",
+  },
+
+  myset03: {
+    t1: "Equipment",
+    p3: "The kitchen is fully equipped with both electric and wood-burning stoves, a dishwasher, microwave, and a large refrigerator. It is a complete kitchen that can easily prepare and serve meals for up to 30 people &ndash; perfect for camps, hikes, and shared meals.",
+  },
+  mysetBtn: {
+    text: "View floor plan"
+  }
 };
