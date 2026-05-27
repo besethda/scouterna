@@ -7,6 +7,7 @@ import DivisionsContainer from "@/components/DivisionsContainer/DivisionsContain
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
 
 
+
 const Home = () => {
   return (
     <div className="">
