@@ -21,7 +21,7 @@ const FragorSvar = ({question, answer}:FragorSvarProps) => {
                 ${isOpen ? "rotate-180" : "rotate-0"}`} />
                 </button>
             {isOpen && (
-                <div className="border border-primary rounded-b-lg rounded-t-none whitespace-pre-line border-t-0  text-text-black px-4 py-3.25 md:py-5.25
+                <div className="border border-primary rounded-b-lg rounded-t-none whitespace-pre-line border-t-0 text-primary px-4 py-3.25 md:py-5.25
                 mt-0.5">{answer}</div>
             )}
         </div>
