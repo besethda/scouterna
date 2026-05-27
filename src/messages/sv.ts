@@ -232,6 +232,10 @@ type MessagesSvType = {
   safetyBtn: {
     btnMobile: string,
     btnDesktop: string
+  },
+    optimister: {
+    title:string,
+    text:string
   }
 
 };
