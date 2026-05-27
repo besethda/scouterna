@@ -280,6 +280,10 @@ type MessagesSvType = {
     headline: string, 
     title: string, 
     text: string
+  }, 
+  faqContact: {
+    title: string, 
+    text: string
   }
 
 };
@@ -682,5 +686,9 @@ export const Sv: MessagesSvType = {
     headline: "Avdelningar", 
     title: "Åldersanpassade avdelningar", 
     text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
+  }, 
+  faqContact: {
+    title: "Kontakta oss", 
+    text: "Vi hoppas du fått svar på dina frågor, men är det någonting du fortfarande undrar över kan du kontakta kåren så hjälper vi dig."
   }
 };
