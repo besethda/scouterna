@@ -270,7 +270,12 @@ export type MessagesEngType = {
     secondText: string,
     thirdtext: string,
     button: string
-  },
+  }, 
+  groupCard: {
+    headline: string, 
+    title: string, 
+    text: string
+  }
 };
 
 export const En: MessagesEngType = {
@@ -663,5 +668,10 @@ export const En: MessagesEngType = {
     secondText: "You can become a Scout from the age of 8. The members in the group for our oldest Scouts are 15 years and older.",
     thirdtext: "The content of each group is adapted to the Scouts' age to make Scout life safe, fun, and exciting for all our Scouts.",
     button: "Read more about our groups"
-  }, 
+  },
+  groupCard: {
+    headline: "groups", 
+    title: "Age groups", 
+    text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In the Senior Scouts (Utmanarna), our oldest scout group, members can join from the age of 15."
+  }
 };
