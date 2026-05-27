@@ -14,12 +14,12 @@ import Image03 from '../../public/images/DSCF3017.jpg'
 const Optimister = () => {
     const images = [Image01, Image02,Image03,Image01,Image02,Image03];
     return (
-        <div className='w-full'>
+        <div className='w-full '>
             <Swiper
                 modules={[Autoplay]}
                 slidesPerView={2} 
                 centeredSlides={true}
-                spaceBetween={16}
+                spaceBetween={12}
                 loop={true}
                 autoplay={{
                     delay: 3000,
@@ -31,16 +31,16 @@ const Optimister = () => {
                     centeredSlides: false,
                     },
                 }}
-                className='w-full! md:flex! md:flex-row! md:justify-between! md:gap-6 md:transform-non!'
+                className='w-full! flex justify-center lg:gap-6 lg:transform-non!'
             >
                 {images.map((imageFile:any,index:number) => (
                     <SwiperSlide 
                         key={index}
-                        className={`h-auto w-52.5  md:w-[calc(40%-16px)]! 
-                            ${index >= 3 ? 'md:hidden' : ''}`}
+                        className={`h-auto w-[210px] shrink-0  lg:w-87.25! lg:shrink-0!
+                            ${index >= 3 ? 'lg:hidden' : ''}`}
                     >
                     <div className="flex  gap-3">
-                        <div className='relative w-52.5 h-25 overflow-hidden rounded-2xl md:w-48 md:h-52'>
+                        <div className='relative w-full h-25 overflow-hidden rounded-2xl lg:w-full lg:h-52'>
                             <Image 
                                 src={imageFile}
                                 alt={`slide img ${index + 1}`}
