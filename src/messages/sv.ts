@@ -275,8 +275,27 @@ type MessagesSvType = {
     secondText: string,
     thirdtext: string,
     button: string
-  }
-
+  }, 
+  sjohumlornaSpårarscouter: Record <string, string>
+  sjohumlornaAge:Record <string, string>
+  sjohumlorMeeting:Record <string, string>
+  sjohumlorPlace:Record <string, string>
+  sjohumlorButton: string,
+  kaparnaUpptäckarscouter: Record <string, string>
+  kaparnaAge:Record <string, string>
+  kaparnaMeeting:Record <string, string>
+  kaparnaPlace:Record <string, string>
+  kaparnaButton: string,
+  utmanarscouter: Record <string, string>
+  utmanareAge:Record <string, string>
+  utmanareMeeting:Record <string, string>
+  utmanarePlace:Record <string, string>
+  utmanareButton: string,
+  äventyrarscouter: Record <string, string>
+  konvojenAge:Record <string, string>
+  konvojenMeeting:Record <string, string>
+  konvojenPlace:Record <string, string>
+  konvojenButton: string,
 };
 
 export const Sv: MessagesSvType = {
@@ -672,5 +691,78 @@ export const Sv: MessagesSvType = {
     secondText: "Man kan bli Scout från och med 8 års ålder. Medlemmarna på avdelningen för våra äldsta Scouter är 15 år och uppåt.",
     thirdtext: "Avdelningarnas innehåll är anpassat efter Scouternas ålder för att göra Scoutlivet tryggt, roligt och spännande för alla våra Scouter.",
     button: "Läs mer om våra avdelningar"
-  }
+  },
+  sjohumlornaSpårarscouter:{
+      h0:"Spårarscouter",
+      p0:"Scouterna på avdelningen Sjöhumlorna är Spårarscouter. Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klara av.",
+    },
+    sjohumlornaAge:{
+      h0:"Ålder",
+      p0:"Barnen på Sjöhumlorna är mellan 8 och 9 år."
+    },
+    sjohumlorMeeting:{
+      h0:"Avdelingsmöten",
+      p0:"Dag: Måndag",
+      p1:"Ruffen vid Hässelby Strandbad.",
+    },
+    sjohumlorPlace:{
+      h0:"Märken",
+      p0:"För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Elle att får göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
+    },
+    sjohumlorButton:"Märkesplansch för Spårare",  
+  kaparnaUpptäckarscouter: {
+    h0:"Upptäckarscouter",
+    p0: "Många i den här åldern är nyfikna på världen runt omkring sig, och i Kaparna uppmuntrar vi det engagemanget. Vi jobbar ofta praktiskt och konkret - det kan vara allt från att lösa uppdrag tillsammans till att lära sig ta ansvar i små och stora situationer."
+  },
+  kaparnaAge: {
+    h0:"Ålder",
+    p0:"Barnen på Kaparna är mellan 10 och 11 år",
+  },
+  kaparnaMeeting:{
+    h0:"Avdelningsmöten",
+    p0:"Dag: Tisdag",
+    p1:"Ruffen vid Hässelby Strandbad"
+  },
+  kaparnaPlace:{
+    h0:"Märken",
+    p0:"Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemäkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
+  },
+  kaparnaButton: "Märkesplansch för Upptäckare",
+  utmanarscouter: {
+    h0:"Utmanarscouter",
+    p0:"I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv."
+  },
+  utmanareAge:{
+    h0:"Ålder",
+    p0:"Scouterna på Utmanaravdelningen är 15 år och uppåt."
+  },
+  utmanareMeeting:{
+    h0:"Avdelningsmöten",
+    p0:"Dag: Tisdag eller torsdag.",
+    p1:"Ruffen vid Hässelby Strandbad."
+  },
+  utmanarePlace:{
+    h0:"Utmaningar",
+    p0:"Det finns tio utmaningar. Två av dem görs på egen hand och resten görs tillsammans i utmanarlaget. De individuella utmaningarna har lite fastare regler. De andra bestäms tillsammans i utmanarlaget.",
+  },
+  utmanareButton: "Upptäck utmaningarna",
+  äventyrarscouter: {
+    h0:"Äventyrarscouter",
+    p0:"I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv.",
+  },
+  konvojenAge:{
+    h0:"Ålder",
+    p0:"Barnen på Kaparna är mellan 12 och 14 år.",
+  },
+  konvojenMeeting:{
+    h0:"Avdelningsmöten",
+    p0:"Dag: Torsdag",
+    p1:"Tid: 18:00",
+    p2:"Plats: Ruffen vid Hässelby Strandbad."
+  },
+  konvojenPlace:{
+    h0:"Märken",
+    p0:"Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
+  },
+  konvojenButton: "Märkesplansch för Äventyrare",
 };
