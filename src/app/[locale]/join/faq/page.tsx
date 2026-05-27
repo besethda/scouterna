@@ -1,15 +1,22 @@
-'use client'
-import useMessages from "@/hook/useMessages";
+import { getPageHeadTitle } from "@/lib/utils"
 import CardWithoutImage from "@/components/CardWithoutImage";
 import FragorSvar from "@/components/Fragor-svar";
+import { En} from "@/messages/en";
+import { Sv } from "@/messages/sv";
+import { use } from "react";
 
-const Faq = () => {
 
-    const messages = useMessages()
+const pageItem = "faq"
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params
+    return getPageHeadTitle(locale, pageItem)
+}
 
-    if (!messages) {
-        return null
-    }
+
+
+const Faq = ({params}:{params: Promise<{locale: string}>}) => {
+    const {locale} = use(params)
+    const messages = locale === "en" ? En : Sv
 
     return (
         <div>

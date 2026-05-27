@@ -1,13 +1,21 @@
-'use client'
+import { getPageHeadTitle } from "@/lib/utils"
 import CardWithoutImage from "@/components/CardWithoutImage";
-import useMessages from "@/hook/useMessages";
+import { En} from "@/messages/en";
+import { Sv } from "@/messages/sv";
+import { use } from "react";
 
-const Myset = () => {
-    const messages = useMessages()
 
-    if (!messages) {
-        return null
-    }
+const pageItem = "myset"
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params
+    return getPageHeadTitle(locale, pageItem)
+}
+
+
+const Myset = ({params}:{params: Promise<{locale: string}>}) => {
+    
+    const {locale} = use(params)
+    const messages = locale === "en" ? En : Sv
 
     return (
         <div>
