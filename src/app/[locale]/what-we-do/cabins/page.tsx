@@ -1,26 +1,27 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import CardWithoutImage from "@/components/CardWithoutImage";
+import CardWithImage from "@/components/CardWithImage";
+import MapWrapper from "@/components/Map/MapWrapper";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 
-
-const pageItem = "cabins"
+const pageItem = "ruffen"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
     return getPageHeadTitle(locale, pageItem)
 }
 
 
-const Cabins = ({params}:{params: Promise<{locale: string}>}) => {
+const Ruffen = ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = use(params)
     const messages = locale === "en" ? En : Sv
 
     return (
         <div>
-            <CardWithoutImage headline={messages?.cabinsCard?.headline} logo="/blueHouse.png" title={messages?.cabinsCard?.title} text={messages?.cabinsCard?.text} MDlogo="/blueHouseYellowBg.svg" />
+            <CardWithImage sectionTitle="ruffen" logo="/blueHouse.png" image="/images/IMG_3957.JPEG" />
+            <MapWrapper />
         </div>
     );
 }
 
-export default Cabins
+export default Ruffen
