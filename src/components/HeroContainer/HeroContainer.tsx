@@ -11,8 +11,6 @@ const HeroContainer = ({bgImages, messageSection, position}:{bgImages:{mobile:st
   const messages= useMessages()
   if(!messages) return null
 
-  console.log((messages as any)?.[`${messageSection}`]?.button)
-
   return (
     <HeroSection
     bgImages={bgImages}
