@@ -14,7 +14,6 @@ const Header = () => {
 
   const messages = useMessages()
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  const [opacity, setOpacity] = useState<boolean>(false)
 
   const handleClose = () => {
     setIsOpen(false)
@@ -28,14 +27,14 @@ const Header = () => {
     const responsible = () => {
       const isDesktop = window.innerWidth >= 1024
       if (isDesktop) {
-        document.body.classList.remove("overflow-hidden");
+        document.body.style.overflow = "";
         return
       }
 
       if (isOpen) {
-        document.body.classList.add("overflow-hidden");
+        document.body.style.overflow = "hidden";
       } else {
-        document.body.classList.remove("overflow-hidden")
+        document.body.style.overflow = "";
       }
     }
 
@@ -44,7 +43,7 @@ const Header = () => {
     window.addEventListener("resize", responsible);
 
     return () => {
-      document.body.classList.remove("overflow-hidden");
+      document.body.style.overflow = "";
       window.addEventListener("resize", responsible);
     }
 
@@ -52,7 +51,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center py-2.5 px-7 bg-white border-b border-text-gray z-50 sticky top-0 lg:border-hidden lg:static lg:z-60">
+      <header className="flex justify-between items-center py-2.5 px-7 bg-white text-primary border-b border-text-gray z-50 sticky top-0 lg:border-hidden lg:static lg:z-60">
         <Link href={messages?.path || "/sv"} className="md:hidden">
           <Image src={HSSlogo} alt='HSS-LOGO' className="w-11 h-10.5" />
         </Link>
@@ -65,7 +64,7 @@ const Header = () => {
             </div>
           </div>
         </Link>
-        <div className='hidden lg:flex gap-6 font-semibold text-link-desktop tracking-[0.03em] '>
+        <div className='hidden lg:flex gap-6 text-primary font-semibold text-link-desktop tracking-[0.03em] '>
           <Link href={messages?.path + '/join/become-a-scout'} className="flex gap-2.5 items-center">
             <Image src={Hand} alt='HandLogo' className='h-8.25 w-auto' />
             <p className="font-albert  tracking-[3%] leading-[100%] text-text-black ">{messages?.header?.header_join}</p>
@@ -81,8 +80,10 @@ const Header = () => {
           :
           <RxHamburgerMenu onClick={() => handleToggle()} className="size-5.75 lg:hidden" />}
       </header>
-      {isOpen && (<div className="fixed inset-0 z-10 bg-black/50 lg:hidden"></div>)}
-      <div className={`fixed left-0 h-full w-full transition-all duration-300 ease-in-out z-30 ${!isOpen ? " -translate-y-full " : ""}`}>
+      {isOpen && (
+        <div className="fixed inset-0 z-10 bg-black/50 lg:hidden"></div>
+      )}
+      <div className={`fixed left-0 h-full w-full transition-all duration-300 ease-in-out z-30 overflow-y-auto ${!isOpen ? " -translate-y-full overflow-hidden" : ""}`}>
         <Navigation onClose={handleClose} />
       </div >
       <div className="hidden lg:block lg:z-50 lg:sticky lg:top-0">
