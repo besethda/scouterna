@@ -346,6 +346,7 @@ export type MessagesEngType = {
     text02: string,
     text03: string,
   }
+  ruffenDivisions: Record<string, string>
 };
 
 export const En: MessagesEngType = {
@@ -912,5 +913,9 @@ export const En: MessagesEngType = {
     text: "Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
     text02: "Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
     text03: "Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
+  },
+  ruffenDivisions: {
+    t0: "Group Meetings",
+    p0: "HSS's four groups hold meetings once a week."
   }
 };

@@ -347,6 +347,7 @@ type MessagesSvType = {
     text02: string,
     text03: string,
   }
+  ruffenDivisions: Record<string, string>
 };
 
 export const Sv: MessagesSvType = {
@@ -911,5 +912,9 @@ export const Sv: MessagesSvType = {
     text: "Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
     text02: "Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
     text03: "Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
+  },
+  ruffenDivisions: {
+    t0: "Avdelningsmöten",
+    p0: "HSS fyra avdelningar har avdelningsmöten en gång i veckan. "
   }
 };

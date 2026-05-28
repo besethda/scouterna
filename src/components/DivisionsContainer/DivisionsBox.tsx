@@ -19,7 +19,7 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
   }
 
   return (
-    <div className={`${colorReference[division][0]} flex flex-col flex-wrap border border-b-4 m-1 rounded-2xl px-6 py-3 ${boxStyle !== "image" ? boxStyle === "info" ? "md:w-[49.5%] mx-[.25%]" : "md:w-[24%] mx-[0.5%]" : "md:max-h-81 lg:max-h-70 md:max-w-250"}`}>
+    <div className={`${colorReference[division][0]} flex flex-col flex-wrap border border-b-4 m-1 rounded-2xl px-6 py-3 ${boxStyle !== "image" ? boxStyle === "info" ? "md:w-[49.5%] bg-bg-white mx-[.25%]" : "md:w-[24%] mx-[0.5%] md:min-w-77 md:m-3" : "md:min-h-72  md:max-h-96 lg:max-h-71 md:max-w-250 md:my-4"}`}>
       <div className={`flex order-1 justify-between items-center ${boxStyle === "image" && "md:flex-col md:justify-start md:items-baseline md:min-w-[53%] lg:min-w-[70%]"}`}>
         {boxStyle !== "image" ? <div className={`w-16 h-16 rounded-xl flex justify-center items-center ${colorReference[division][1]}`}>
           <Image src={`/${division.toLowerCase()}.svg`} width={48} height={48} alt={messages?.division[`${division}_title`] ?? ""} className="bg-white" />
@@ -36,8 +36,8 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
         </div>}
         {boxStyle === "image" && <div className="text-body-desktop font-albert text-text-black">{messages?.division[`${division}_paragraph`] ?? ""}</div>}
       </div>
-      {boxStyle === "image" && <div className="order-3 md:order-4 w-full md:max-w-[70%] mt-5 md:mt-0">
-        <div className="aspect-6/5 mb-2 h-full w-auto relative lg:max-h-62 md:max-h-72">
+      {boxStyle === "image" && <div className="order-3 md:order-4 md:mt-7 lg:mt-2 w-full md:max-w-[70%] mt-5">
+        <div className={`aspect-6/5 mb-2 h-full w-auto relative lg:max-h-62 md:max-h-72`}>
           <Image src={imageUrl ? imageUrl : "/images/IMG_5129.JPG"} alt={messages?.division[`${division}_title`] ?? ""} fill className="object-cover aspect-6/5 rounded-2xl" />
         </div>
       </div>}
