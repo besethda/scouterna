@@ -48,47 +48,46 @@ const Navigation = ({ onClose }: NavigationProps) => {
                     </div>
                     <LanguageSelector />
                 </div>
-                {
-                    menuList.map((menu, index) => (
-                        <div key={index}>
-                            <div onClick={() => { handleToggle(menu.id); }}
-                                className="flex justify-between text-base  px-3 py-4 font-semibold border-b border-lightGray cursor-pointer lg:text-[18px] lg:font-normal lg:border-none lg:static lg:hover:text-gray-300">
-                                <p> {messages?.navigation?.[menu.nameKey]} </p>
-                                <div className="relative w-7 h-7 lg:hidden">
-                                    <AiOutlineDownCircle
-                                        size={28}
-                                        className={`absolute transform transition-transform duration-200 
+                {menuList.map((menu, index) => (
+                    <div key={index}>
+                        <div onClick={() => { handleToggle(menu.id); }}
+                            className="flex justify-between text-base  px-3 py-4 font-semibold border-b border-lightGray cursor-pointer lg:text-[18px] lg:font-normal lg:border-none lg:static lg:hover:text-gray-300">
+                            <p> {messages?.navigation?.[menu.nameKey]} </p>
+                            <div className="relative w-7 h-7 lg:hidden">
+                                <AiOutlineDownCircle
+                                    size={28}
+                                    className={`absolute transform transition-transform duration-200 
                                             ${openId === menu.id ? "rotate-180 opacity-0" : "rotate-0  opacity-100"}`}
-                                    />
-                                    <AiFillUpCircle
-                                        size={28}
-                                        className={`lg:absolute transform transition-transform duration-200 
+                                />
+                                <AiFillUpCircle
+                                    size={28}
+                                    className={`lg:absolute transform transition-transform duration-200 
                                             ${openId === menu.id ? "rotate-180 opacity-100" : "rotate-0 opacity-0"}`}
-                                    />
-                                </div>
-                                <div className="hidden lg:block ">
-                                    <AiOutlineDown
-                                        className={`lg:ml-2 lg:mt-1.25 transform  transition-transform duration-200
-                                        ${openId === menu.id ? "rotate-180" : "rotate-0"}`} />
-                                </div>
-
+                                />
                             </div>
-                            {openId === menu.id && (
-                                <div onClick={() => { handleToggle(menu.id); onClose() }} className="px-4 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-primary lg:text-[18px] lg:w-60 xl:w-85 lg:pt-0 lg:top-25.5 lg:border-none lg:shadow-md lg:rounded-b-2xl">
-                                    {menu.submenu && menu.submenu.map((sub, index) => (
-                                        <Link href={messages?.path + sub.href} key={index} className="hover:text-text-gray">
-                                            <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
-                                                <Image src={sub.iconBg} alt="image" width={44} height={44} className="w-11 h-auto" />
-                                                <div className="px-4 flex items-center ">
-                                                    {messages?.navigation?.[sub.nameKey]}
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    ))}
-                                </div>
-                            )}
+                            <div className="hidden lg:block ">
+                                <AiOutlineDown
+                                    className={`lg:ml-2 lg:mt-1.25 transform  transition-transform duration-200
+                                        ${openId === menu.id ? "rotate-180" : "rotate-0"}`} />
+                            </div>
                         </div>
-                    ))
+                        {openId === menu.id && (
+                            <div onClick={() => { handleToggle(menu.id); onClose() }} className={`px-4 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-primary lg:text-[18px] lg:w-60 xl:w-85 lg:pt-0 lg:top-25.5 lg:border-none lg:shadow-md lg:rounded-b-2xl 
+                            ${menu.id === 5 ? 'lg:right-2 right-auto-2000' : ''}`}>
+                                {menu.submenu && menu.submenu.map((sub, index) => (
+                                    <Link href={messages?.path + sub.href} key={index} className="hover:text-text-gray">
+                                        <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
+                                            <Image src={sub.iconBg} alt="image" width={44} height={44} className="w-11 h-auto" />
+                                            <div className="px-4 flex items-center ">
+                                                {messages?.navigation?.[sub.nameKey]}
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                ))
                 }
                 <div className="rounded-b-lg p-4 flex flex-col lg:h-18.5 lg:items-center lg:hidden">
                     <p className="text-text-black font-bold uppercase text-xs pb-3">{messages?.navigation?.nav__service}</p>
