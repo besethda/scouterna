@@ -17,45 +17,46 @@
     --color-orange: #E95F13;
     --color-pink: #DA005E;
     --color-purple: #642484;
-    --color-green-opaque: #41A62A1F;
-    --color-lightBlue-opaque: #00A8E11F;
-    --color-orange-opaque: #E95F131F;
-    --color-pink-opaque: #DA005E1F;
-    --color-purple-opaque: #6424841F;
+    --color-green-opaque: #e8f4e5;
+    --color-lightBlue-opaque: #e0f4fb;
+    --color-orange-opaque: #fcece2;
+    --color-pink-opaque: #fbe0eb;
+    --color-purple-opaque: #ece4f0;
 
     --color-lightGray: #CCCCCC;
     --color-lightYellow: #EBC86C;
 
 
     /* Font */
-    --font-fraunces: "Fraunces", serif;
-    --font-varela: "Varela Round", sans-serif;
+    --font-fraunces: "Albert Sans", sans-serif;
+    --font-varela: "Albert Sans", sans-serif;
     --font-albert: "Albert Sans", sans-serif;
-    --font-public: "public sans", sans-serif;
+    --font-public: "Albert Sans", sans-serif;
 
 
     /* Dektop */
-    --text-hero-desktop--font-family: var(--font-fraunces);
+    --text-hero-desktop--font-family: var(--font-albert);
     --text-hero-desktop: 64px;
     --text-hero-desktop-bold--font-weight: 700;
 
-    --text-h1-desktop--font-family: var(--font-varela);
-    --text-h1-desktop: 48px;
+    --text-h1-desktop--font-family: var(--font-albert);
+    --text-h1-desktop: 48px; 
+    /* 48 */
 
-    --text-h2-desktop--font-family: var(--font-varela);
+    --text-h2-desktop--font-family: var(--font-albert);
     --text-h2-desktop: 40px;
 
-    --text-h3-desktop--font-family: var(--font-varela);
-    --text-h3-desktop: 24px;
+    --text-h3-desktop--font-family: var(--font-albert);
+    --text-h3-desktop: 26px;
 
     --text-body-desktop--font-family: var(--font-albert);
-    --text-body-desktop: 18px;
+    --text-body-desktop: 21px;
 
     --text-body-bold-desktop--font-family: var(--font-albert);
-    --text-body-bold-desktop: 18px;
+    --text-body-bold-desktop: 21px;
     --text-body-bold-desktop--font-weight: 700;
 
-    --text-button-desktop--font-family: var(--font-public);
+    --text-button-desktop--font-family: var(--font-albert);
     --text-button-desktop: 18px;
 
     --text-link-desktop--font-family: var(--font-albert);
@@ -67,20 +68,20 @@
 
 
     /* Mobile */
-    --text-hero--font-family: var(--font-fraunces);
+    --text-hero--font-family: var(--font-albert);
     --text-hero: 32px;
     --text-hero-bold--font-weight: 700;
 
-    --text-h1--font-family: var(--font-varela);
+    --text-h1--font-family: var(--font-albert);
     --text-h1: 26px;
 
-    --text-h2--font-family: var(--font-varela);
+    --text-h2--font-family: var(--font-albert);
     --text-h2: 22px;
 
     --text-h2-albert--font-family: var(--font-albert);
     --text-h2-albert: 22px;
 
-    --text-h3--font-family: var(--font-varela);
+    --text-h3--font-family: var(--font-albert);
     --text-h3: 18px;
 
     --text-body--font-family: var(--font-albert);
@@ -90,7 +91,7 @@
     --text-body-bold: 16px;
     --text-body-bold--font-weight: 700;
 
-    --text-button--font-family: var(--font-public);
+    --text-button--font-family: var(--font-albert);
     --text-button: 16px;
 
     --text-link--font-family: var(--font-albert);

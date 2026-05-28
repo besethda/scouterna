@@ -30,7 +30,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
     }, [])
 
     return (
-        <div className={`absolute lg:static w-full bg-white text-primary rounded-b-lg font-albert tracking-[0.03em] top-16 md:top-29 lg:bg-primary lg:h-25.5 lg:text-white lg:text-lg lg:rounded-none ${isScroll ? "lg:bg-primary/80" : ""}`}>
+        <div className={`absolute lg:static w-full bg-white text-primary rounded-b-lg font-albert tracking-[0.03em] top-16 md:top-29 lg:bg-primary lg:h-25.5 lg:text-text-white lg:rounded-none ${isScroll ? "lg:bg-primary/80" : ""}`}>
             <div className="w-full lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-4xl lg:mx-auto xl:max-w-5xl 2xl:max-w-7xl">
                 <div className="bg-bg-blue flex justify-end text-base h-69px px-4 py-4 font-bold border-b border-lightGray lg:hidden">
                     <LanguageSelector />
@@ -38,7 +38,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
                 {menuList.map((menu, index) => (
                     <div key={index}>
                         <div onClick={() => { handleToggle(menu.id); }}
-                            className="flex justify-between text-base h-69px px-3 py-4 font-semibold border-b border-lightGray cursor-pointer lg:font-normal lg:border-none lg:static lg:hover:text-gray-300">
+                            className="flex justify-between text-base  h-69px px-3 py-4 font-semibold border-b border-lightGray cursor-pointer lg:font-normal lg:border-none lg:static lg:hover:text-gray-300">
                             <p> {messages?.navigation?.[menu.nameKey]} </p>
                             <div className="relative w-7 h-7 lg:hidden">
                                 <AiOutlineDownCircle
@@ -76,7 +76,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
                     </div>
                 ))}
                 <div className="rounded-b-lg p-4 flex flex-col lg:h-18.5 lg:items-center lg:hidden">
-                    <p className="text-black font-bold uppercase text-xs pb-3">{messages?.navigation?.nav__service}</p>
+                    <p className="text-text-black font-bold uppercase text-xs pb-3">{messages?.navigation?.nav__service}</p>
                     {mobileMenuList && mobileMenuList.map((menu, index) => (
                         <Link onClick={() => { handleToggle(null); onClose() }} key={index} href={menu.href} className="py-2 flex lg:h-18.5  w-full lg:items-center ">
                             <Image src={menu.icon} alt="image" width={44} height={44} className="w-11 h-auto" />

@@ -23,7 +23,7 @@ const History = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <div>
             <Breadcrumbs />
-            <ContentSection sectionLayout={["h", "p", "p", "p", "p", "p"]} page="history" background={"blue"} />
+            <ContentSection sectionLayout={["t", "p", "p", "p", "p", "p"]} page="history" background={"blue"} />
         </div>
     );
 }
