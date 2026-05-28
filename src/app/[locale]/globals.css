@@ -17,11 +17,11 @@
     --color-orange: #E95F13;
     --color-pink: #DA005E;
     --color-purple: #642484;
-    --color-green-opaque: #41A62A1F;
-    --color-lightBlue-opaque: #00A8E11F;
-    --color-orange-opaque: #E95F131F;
-    --color-pink-opaque: #DA005E1F;
-    --color-purple-opaque: #6424841F;
+    --color-green-opaque: #e8f4e5;
+    --color-lightBlue-opaque: #e0f4fb;
+    --color-orange-opaque: #fcece2;
+    --color-pink-opaque: #fbe0eb;
+    --color-purple-opaque: #ece4f0;
 
     --color-lightGray: #CCCCCC;
     --color-lightYellow: #EBC86C;
@@ -40,7 +40,7 @@
     --text-hero-desktop-bold--font-weight: 700;
 
     --text-h1-desktop--font-family: var(--font-albert);
-    --text-h1-desktop: 64px; 
+    --text-h1-desktop: 48px; 
     /* 48 */
 
     --text-h2-desktop--font-family: var(--font-albert);
