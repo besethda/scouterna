@@ -340,6 +340,11 @@ type MessagesSvType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  good: Record<string, string>
+  question: Record<string, string>
+  toFAQButton: string,
+  policy: Record<string, string>
+  moreButton: string,
 };
 
 export const Sv: MessagesSvType = {
@@ -882,4 +887,18 @@ export const Sv: MessagesSvType = {
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
+  good: {
+    h0:"Bra att veta"
+  },
+  question: {
+    t0:"Frågor och funderingar",
+    p0:"Undrar du över någonting kan du besöka vår FAQ. Om du inte hittar svar på dina frågor, höra av dig till någon i kåren."
+  },
+  toFAQButton: "Gå till vår FAQ",
+  policy: {
+    t0:"Flyvästpolicy",
+    p0:"Vi följer en flytvästpolicy för alla Scouters säkerhet.",
+    p1:"Flytvåst ska bäras av alla på bryggor och i båtar. Simkunniga Scouter ska använda seglarvästar, och ej simkunniga Scouter ska använda räddningsväst.",
+  },
+  moreButton: "Läs mer om vår flytvästpolicy",
 };

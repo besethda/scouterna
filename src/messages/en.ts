@@ -335,6 +335,11 @@ export type MessagesEngType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  good: Record<string, string>
+  question: Record<string, string>
+  toFAQButton: string,
+  policy: Record<string, string>
+  moreButton: string,
 };
 
 export const En: MessagesEngType = {
@@ -878,4 +883,18 @@ export const En: MessagesEngType = {
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
+  good: {
+    h0: "Good to know"
+},
+question: {
+    t0: "Questions and concerns",
+    p0: "If you are wondering about something, you can visit our FAQ. If you don't find answers to your questions, please contact someone in the organization."
+},
+toFAQButton: "Go to our FAQ",
+policy: {
+    t0: "Life jacket policy",
+    p0: "We follow a life jacket policy for the safety of all Scouts.",
+    p1: "Life jackets must be worn by everyone on docks and in boats. Scouts who can swim must use sailing vests, and Scouts who cannot swim must use rescue vests."
+},
+moreButton: "Read more about our life jacket policy",
 };
