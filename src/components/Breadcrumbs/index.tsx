@@ -44,7 +44,7 @@ const Breadcrumbs = () => {
   return (
     <div className="shrink-0">
       {pathname !== "/en" && pathname !== "/sv" && (
-        <div className="flex items-center gap-1 text-xs md:text-lg py-2 px-3 md:px-45 text-[#3b3a3a]">
+        <div className="flex items-center gap-1 text-xs md:text-lg py-2 px-3 md:px-45 text-primary">
           <a href={messages?.breadcrumbs.path} className="text-albert">{messages?.breadcrumbs.title}</a>
           {breadcrumbsArray.map((item: string, index: number) => {
             const currentPath =
@@ -55,7 +55,7 @@ const Breadcrumbs = () => {
               <span key={index} className="text-albert">
                 <span className="px-3">  /  </span>
                 {routes[currentPath] ? (
-                  <Link href={href} className={index +1 === breadcrumbsArray.length? "text-black font-bold" : "text-[#3b3a3a]"}>
+                  <Link href={href} className={index +1 === breadcrumbsArray.length? "text-black font-bold" : "text-primary"}>
                     {messages?.breadcrumbs.page[item]} 
                   </Link>
                 ) : (
