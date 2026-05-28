@@ -343,6 +343,21 @@ export type MessagesEngType = {
   konvojenButton: string,
   union: Record<string, string>
   download: string,
+
+  GroupIntro: {
+    FAMheadline: string, 
+    FAMtitle: string, 
+    FAMtext: string, 
+    SJMtitle: string, 
+    SJMtext: string, 
+    KAPtitle: string, 
+    KAPtext: string, 
+    KONtitle: string, 
+    KONtext: string, 
+    UTtitle: string, 
+    UTtext: string, 
+  },
+  
   optimisterSection: {
     title: string,
     title02: string,
@@ -910,6 +925,20 @@ export const En: MessagesEngType = {
     p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
   },
   download: "Download ",
+
+  GroupIntro: {
+    FAMheadline: "Groups", 
+    FAMtitle: "FamilyScouts", 
+    FAMtext: "Through Family Scouting, children under the age of eight, together with one or more adults, can experience scouting in a fun and playful way.",
+    SJMtitle: "Sjöhumlorna", 
+    SJMtext: "The youngest scouts discover sea life through games, singing, and small adventures by the water. Here, they learn to cooperate, tie their first knots, and feel at home in nature.", 
+    KAPtitle: "Kaparna", 
+    KAPtext: "At Kaparna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety", 
+    KONtitle: "Konvojen", 
+    KONtext: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
+    UTtitle: "Utmanare", 
+    UTtext: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them."
+   },
   optimisterSection: {
     title: "Optimists",
     title02: "2-kronor",
