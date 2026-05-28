@@ -31,10 +31,24 @@ const Navigation = ({ onClose }: NavigationProps) => {
 
     return (
         <div className={`absolute lg:static w-full bg-white text-primary rounded-b-lg font-albert tracking-[0.03em] top-16 md:top-29 lg:bg-primary lg:h-25.5 lg:text-white lg:text-lg lg:rounded-none ${isScroll ? "lg:bg-primary/80" : ""}`}>
+
             <div className="w-full lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-4xl lg:mx-auto xl:max-w-5xl 2xl:max-w-7xl">
-                <div className="bg-bg-blue flex justify-end text-base h-69px px-4 py-4 font-bold border-b border-lightGray lg:hidden">
-                    <LanguageSelector />
+
+                <div className="md:inline hidden pr-20 ">
+                    <Link href="https://www.scouterna.se/">
+                        <Image src="/SWEScoutLogo.svg" alt="scoutlogo" width={30} height={30} className="opacity-70" />
+                    </Link>
                 </div>
+
+                <div className="bg-bg-blue flex justify-between text-base h-69px px-4 py-4 font-bold border-b border-lightGray lg:hidden items-center">
+                    <div>
+                        <Link href="https://www.scouterna.se/" >
+                         <Image src="/blue-scoutLogo.svg" alt="scoutlogo" width={100} height={40} className="opacity-70 brightness-120" />
+                        </Link>
+                    </div>
+                    <LanguageSelector /> 
+                </div>
+
                 {menuList.map((menu, index) => (
                     <div key={index}>
                         <div onClick={() => { handleToggle(menu.id); }}
