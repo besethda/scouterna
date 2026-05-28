@@ -310,6 +310,11 @@ export type MessagesEngType = {
     text: string,
     buttonText: string
   },
+  interestBtn: {
+    title: string,
+    text: string,
+    buttonText: string
+  },
   myset01: Record<string, string>
   myset02: Record<string, string>
   myset03: Record<string, string>,
@@ -912,5 +917,10 @@ export const En: MessagesEngType = {
     text: "Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
     text02: "Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
     text03: "Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
-  }
+  },
+  interestBtn: {
+    title: "Want to join the Scouts?",
+    text: "If you are interested in joining HSS as a Scout, leader, or an engaged parent, you are welcome to submit your interest using our form.",
+    buttonText: "Join the Scouts"
+}
 };

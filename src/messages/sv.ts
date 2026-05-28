@@ -311,6 +311,11 @@ type MessagesSvType = {
     text: string,
     buttonText: string
   },
+  interestBtn: {
+    title: string,
+    text: string,
+    buttonText: string
+  },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
   myset03: Record<string, string>,
@@ -905,11 +910,16 @@ export const Sv: MessagesSvType = {
   },
   download: "Ladda ner ",
   optimisterSection: {
-    title: "Optimister",
-    title02: "2-kronor",
-    title03: "Kölbåtar",
-    text: "Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
-    text02: "Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
-    text03: "Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
+    title:"Optimister",
+    title02:"2-kronor",
+    title03:"Kölbåtar",
+    text:"Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
+    text02:"Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
+    text03:"Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
+  },
+  interestBtn: {
+    title: "Vill du gå med i Scouterna?",
+    text: "Om du är intresserad av att gå med i HSS som Scout, ledare eller engagerad förälder går det bra att anmäla ditt intresse via vårt formulär.",
+    buttonText: "Gå med i Scouterna"
   }
 };
