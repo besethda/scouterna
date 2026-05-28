@@ -17,10 +17,10 @@ const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext,
 
       <div className="flex flex-col px-4 gap-4 md:gap-10 md:col-start-1">
         <div className="flex flex-col gap-2  ">
-          <p className="font-medium text-h2 tracking-[-0.5%] text-[#00355F] md:text-h2-desktop">
+          <p className="font-normal font-albert text-h2 tracking-[-0.5%] text-primary md:text-h2-desktop">
             {title}
           </p>
-          <p className=" font-normal text-[16px] tracking-[3%] md:text-[20px]">
+          <p className="text-body text-text-black tracking-[3%] md:text-body-desktop">
             {subtitle}
           </p>
         </div>
@@ -33,10 +33,10 @@ const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext,
 
       <div className="flex flex-col px-4 gap-6 lg:col-start-1">
         <div className="flex flex-col gap-2">
-          <p className="font-medium text-[18px] tracking-[-0.5%] text-[#00355F] md:text-h3-desktop">
+          <p className="font-medium text-h3 tracking-[-0.5%] text-text-black md:text-h3-desktop">
             {secondTitle}
           </p>
-          <div className="flex flex-col gap-2 text-text-black font-normal text-[16px] tracking-[3%] md:text-[20px]">
+          <div className="flex flex-col gap-2 text-text-black font-normal text-body tracking-[3%] md:text-body-desktop">
             <p>{secondText}</p>
             <p>{thirdtext}</p>
           </div>

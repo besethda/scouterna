@@ -13,7 +13,7 @@ const WhiteImageBox = () => {
 
     return (
         <div className="w-full md:bg-bg-blue flex flex-col  items-center pt-12 pb-2 md:pb-22">
-            <div className="text-h2 pl-4 md:pb-3 pb-0 md:text-h2-desktop w-full lg:max-w-430 lg:px-22 text-primary font-varela mx-[1.5%]">{messages?.whiteImageBox.header}</div>
+            <div className="text-h2 pl-4 md:pb-3 pb-0 md:text-h2-desktop w-full lg:max-w-430 lg:px-22 text-primary font-albert mx-[1.5%]">{messages?.whiteImageBox.header}</div>
             <div className="w-full items-center lg:justify-center lg:max-w-400 flex px-4 py-4 lg:px-14 flex-col gap-[24] md:flex-row md:justify-center">
                 {iconList.map((icon, index) => {
                     return (
@@ -22,7 +22,7 @@ const WhiteImageBox = () => {
                                 <div className="w-8 h-8 md:flex md:mr-3 shrink-0 hidden relative">
                                     <Image src={`/${icon.icon}Icon-desktop.svg`} alt={`${icon}`} fill className="object-contain" />
                                 </div>
-                                <h1 className="text-h2 pr-3 font-varela whitespace-nowrap min-h-5.5 md:min-h-7 overflow-hidden md:text-h3-desktop">{(messages?.whiteImageBox as Record<string, string>)[`title${index + 1}`]}</h1>
+                                <h1 className="text-h2 pr-3 font-albert whitespace-nowrap min-h-5.5 md:min-h-7 overflow-hidden md:text-h3-desktop">{(messages?.whiteImageBox as Record<string, string>)[`title${index + 1}`]}</h1>
                                 <div className="flex md:hidden min-w-4.5 min-h-4.5  relative">
                                     <Image src={`/${icon.icon}Icon.svg`} alt={`a${icon}`} fill className="object-contain" />
                                 </div>

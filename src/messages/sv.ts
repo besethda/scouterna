@@ -580,7 +580,7 @@ export const Sv: MessagesSvType = {
     text: "I skogen mellan Lövsta och Gåseborg ligger Myset - vår stora och fina scoutstuga. Här samlas kåren för en mängd olika aktiviteter, inte minst hajker som bjuder på både äventyr och gemenskap.",
   },
   history: {
-    h0: "Historian om HSS",
+    t0: "Historian om HSS",
     p0: "Kåren grundades år 1959 och växte snabbt.",
     p1: "Engagemanget var stort, inte minst från föräldrar som hjälpte till att ordna aktiviteter, samla in pengar och bygga upp verksamheten.",
     p2: "Den allra första båten, Blekingeekan “Inga-Lunda”, blev starten på kårens sjöliv, och med tiden kunde fler båtar köpas in tack vare basarer, lotterier och hårt arbete.",
@@ -825,75 +825,75 @@ export const Sv: MessagesSvType = {
     text: "Se planlösning"
   },
   sjohumlornaSpårarscouter: {
-    h0: "Spårarscouter",
+    s0: "Spårarscouter",
     p0: "Scouterna på avdelningen Sjöhumlorna är Spårarscouter. Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klara av.",
   },
   sjohumlornaAge: {
-    h0: "Ålder",
+    s0: "Ålder",
     p0: "Barnen på Sjöhumlorna är mellan 8 och 9 år."
   },
   sjohumlorMeeting: {
-    h0: "Avdelingsmöten",
+    s0: "Avdelingsmöten",
     p0: "Dag: Måndag",
     p1: "Ruffen vid Hässelby Strandbad.",
   },
   sjohumlorPlace: {
-    h0: "Märken",
+    s0: "Märken",
     p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Elle att får göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
   },
   sjohumlorButton: "Märkesplansch för Spårare",
   kaparnaUpptäckarscouter: {
-    h0: "Upptäckarscouter",
+    s0: "Upptäckarscouter",
     p0: "Många i den här åldern är nyfikna på världen runt omkring sig, och i Kaparna uppmuntrar vi det engagemanget. Vi jobbar ofta praktiskt och konkret - det kan vara allt från att lösa uppdrag tillsammans till att lära sig ta ansvar i små och stora situationer."
   },
   kaparnaAge: {
-    h0: "Ålder",
+    s0: "Ålder",
     p0: "Barnen på Kaparna är mellan 10 och 11 år",
   },
   kaparnaMeeting: {
-    h0: "Avdelningsmöten",
+    s0: "Avdelningsmöten",
     p0: "Dag: Tisdag",
     p1: "Ruffen vid Hässelby Strandbad"
   },
   kaparnaPlace: {
-    h0: "Märken",
+    s0: "Märken",
     p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemäkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
   },
   kaparnaButton: "Märkesplansch för Upptäckare",
   utmanarscouter: {
-    h0: "Utmanarscouter",
+    s0: "Utmanarscouter",
     p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv."
   },
   utmanareAge: {
-    h0: "Ålder",
+    s0: "Ålder",
     p0: "Scouterna på Utmanaravdelningen är 15 år och uppåt."
   },
   utmanareMeeting: {
-    h0: "Avdelningsmöten",
+    s0: "Avdelningsmöten",
     p0: "Dag: Tisdag eller torsdag.",
     p1: "Ruffen vid Hässelby Strandbad."
   },
   utmanarePlace: {
-    h0: "Utmaningar",
+    s0: "Utmaningar",
     p0: "Det finns tio utmaningar. Två av dem görs på egen hand och resten görs tillsammans i utmanarlaget. De individuella utmaningarna har lite fastare regler. De andra bestäms tillsammans i utmanarlaget.",
   },
   utmanareButton: "Upptäck utmaningarna",
   äventyrarscouter: {
-    h0: "Äventyrarscouter",
+    s0: "Äventyrarscouter",
     p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv.",
   },
   konvojenAge: {
-    h0: "Ålder",
+    s0: "Ålder",
     p0: "Barnen på Kaparna är mellan 12 och 14 år.",
   },
   konvojenMeeting: {
-    h0: "Avdelningsmöten",
+    s0: "Avdelningsmöten",
     p0: "Dag: Torsdag",
     p1: "Tid: 18:00",
     p2: "Plats: Ruffen vid Hässelby Strandbad."
   },
   konvojenPlace: {
-    h0: "Märken",
+    s0: "Märken",
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",

@@ -24,11 +24,11 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
         {boxStyle !== "image" ? <div className={`w-16 h-16 rounded-xl flex justify-center items-center ${colorReference[division][1]}`}>
           <Image src={`/${division.toLowerCase()}.svg`} width={48} height={48} alt={messages?.division[`${division}_title`] ?? ""} className="bg-white" />
         </div>
-          : <div className="text-h2 font-varela pt-4 text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
+          : <div className="text-h2 font-albert pt-4 text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
         <div className="font-bold text-sm text-primary font-public tracking-widest uppercase text-right">{messages?.division[`${division}_ages`] ?? ""}</div>
       </div>
       <div className={`mt-3 order-2 ${boxStyle === "image" && "md:max-w-[50%] lg:max-w-[70%] lg:pr-5"}`}>
-        {boxStyle !== "image" && <div className="text-h3 font-varela text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
+        {boxStyle !== "image" && <div className="text-h3 font-albert text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
         {boxStyle === "info" && <div className="text-text-black pt-1 pb-3">
           <div className="text-body font-varela">{messages?.division.day} {messages?.division[`${division}_day`] ?? ""}</div>
           <div className="text-body font-varela">{messages?.division.time} {messages?.division[`${division}_time`] ?? ""}</div>
@@ -42,8 +42,8 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
         </div>
       </div>}
       <div className={`${boxStyle === "info" && "md:hidden"} flex grow justify-center md:justify-start pt-2 text-primary items-end md:pb-3 order-4 md:order-3`}>
-        {boxStyle !== "image" ? <Link href={messages?.path + `/groups/${division}`} className={`${colorReference[division][0]} ${colorReference[division][1]} h-fit cursor-pointer hover:brightness-140 shadow-md active:shadow-none active:scale-98 active:brightness-80 duration-150 text-center font-albert text-body md:text-body-desktop border rounded-3xl py-3.5 w-full`}>{`${messages?.division.basic_message} ${messages?.division[`${division}_title`] ?? ""}`}</Link>
-          : <Link href={messages?.path + `/groups/${division}`} className={`${colorReference[division][0]} ${colorReference[division][1]} h-fit cursor-pointer hover:brightness-140 shadow-md active:shadow-none active:scale-98 active:brightness-80 duration-150 font-albert flex items-center justify-center text-body md:text-body-desktop border rounded-3xl`}>
+        {boxStyle !== "image" ? <Link href={messages?.path + `/groups/${division}`} className={`${colorReference[division][0]} ${colorReference[division][1]} h-fit cursor-pointer hover:brightness-104 shadow-md active:shadow-none active:scale-98 active:brightness-80 duration-150 text-center font-albert text-button md:text-button-desktop border rounded-3xl py-3.5 w-full`}>{`${messages?.division.basic_message} ${messages?.division[`${division}_title`] ?? ""}`}</Link>
+          : <Link href={messages?.path + `/groups/${division}`} className={`${colorReference[division][0]} ${colorReference[division][1]} h-fit cursor-pointer hover:brightness-104 shadow-md active:shadow-none active:scale-98 active:brightness-80 duration-150 font-albert flex items-center justify-center text-button md:text-button-desktop border rounded-3xl`}>
             <div className="pr-1 pl-3 ">{`${messages?.division.image_message} ${messages?.division[`${division}_title`] ?? ""}`}</div>
             <div className={`flex justify-center pl-1 items-center`}>
               <Image src={`/${division.toLowerCase()}.png`} width={48} height={48} alt={messages?.division[`${division}_title`] ?? ""} />
