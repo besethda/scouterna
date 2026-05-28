@@ -336,6 +336,14 @@ export type MessagesEngType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  optimisterSection: {
+    title: string,
+    title02: string,
+    title03: string,
+    text: string,
+    text02: string,
+    text03: string,
+  }
 };
 
 export const En: MessagesEngType = {
@@ -890,4 +898,12 @@ export const En: MessagesEngType = {
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
+  optimisterSection: {
+    title:"Optimists",
+    title02:"2-kronor",
+    title03:"Keelboats",
+    text:"Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
+    text02:"Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
+    text03:"Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
+  }
 };
