@@ -21,7 +21,7 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
 
   return (
     <div>
-
+      
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"}/>
       <ContentSection sectionLayout={["t", "p"]} page={"form_title"} />
