@@ -44,22 +44,22 @@ const Breadcrumbs = () => {
   return (
     <div className="shrink-0">
       {pathname !== "/en" && pathname !== "/sv" && (
-        <div className="flex items-center gap-1 text-xs md:text-lg py-2 px-3 md:px-45 text-[#3b3a3a]">
-          <a href={messages?.breadcrumbs.path} className="text-albert">{messages?.breadcrumbs.title}</a>
+        <div className="flex items-center gap-1 text-body md:text-body-desktop py-2 px-3 md:px-45">
+          <a href={messages?.breadcrumbs.path} className="font-albert hover:text-accent duration-100 text-primary">{messages?.breadcrumbs.title}</a>
           {breadcrumbsArray.map((item: string, index: number) => {
             const currentPath =
               "/" + breadcrumbsArray.slice(0, index + 1).join("/"); // get  string  /about   /about/history
             const href = messages?.breadcrumbs.path + currentPath;  //get href  /en/about/history or /sv/about/history
 
             return ( // page["about-us"] = page.about-us, item is a variable like let item = "about-us" 
-              <span key={index} className="text-albert">
-                <span className="px-3">  /  </span>
+              <span key={index} className="font-albert text-primary">
+                <span className="px-1.5 md:px-3 text-primary font-albert">  /  </span>
                 {routes[currentPath] ? (
-                  <Link href={href} className={index +1 === breadcrumbsArray.length? "text-black font-bold" : "text-[#3b3a3a]"}>
+                  <Link href={href} className={index +1 === breadcrumbsArray.length? "text-primary hover:text-accent duration-100 font-albert text-body-bold md:text-body-bold-desktop" : "text-primary hover:text-accent duration-100 font-albert"}>
                     {messages?.breadcrumbs.page[item]} 
                   </Link>
                 ) : (
-                  <span>{messages?.breadcrumbs.page[item]}</span>
+                  <span className="text-primary cursor-default font-albert">{messages?.breadcrumbs.page[item]}</span>
                 )}
               </span>
             );

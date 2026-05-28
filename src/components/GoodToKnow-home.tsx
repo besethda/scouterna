@@ -48,13 +48,13 @@ const GoodToKnow = () => {
             </div>
 
             <div className="flex flex-col">
-              <p className="hidden md:block font-public font-bold uppercase text-[14px] tracking-[1.5px] text-text-blue">
+              <p className="hidden md:block font-albert uppercase text-acc md:text-acc-desktop tracking-[1.5px] text-text-blue">
                 {card.title}
               </p>
-              <p className="text-[#003061] font-varela text-h3 tracking-[-0.5%] gap-1 md:text-h3-desktop md:text-[#FFFFFF] mb-2">
+              <p className="text-[#003061] font-albert text-h3 tracking-[-0.5%] gap-1 md:text-h3-desktop md:text-[#FFFFFF] mb-2">
                 {card.headline}
               </p>
-              <p className="gap-2.5 text-body font-albert tracking-[3%] md:text-[18px] pr-12 sm:text-text-black md:text-text-white">
+              <p className="gap-2.5 text-body font-albert tracking-[3%] md:text-body-desktop pr-12 sm:text-text-black md:text-text-white">
                 {card.text}
               </p>
             </div>

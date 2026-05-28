@@ -35,27 +35,27 @@
 
 
     /* Dektop */
-    --text-hero-desktop--font-family: var(--font-fraunces);
+    --text-hero-desktop--font-family: var(--font-albert);
     --text-hero-desktop: 64px;
     --text-hero-desktop-bold--font-weight: 700;
 
-    --text-h1-desktop--font-family: var(--font-varela);
+    --text-h1-desktop--font-family: var(--font-albert);
     --text-h1-desktop: 48px;
 
-    --text-h2-desktop--font-family: var(--font-varela);
+    --text-h2-desktop--font-family: var(--font-albert);
     --text-h2-desktop: 40px;
 
-    --text-h3-desktop--font-family: var(--font-varela);
+    --text-h3-desktop--font-family: var(--font-albert);
     --text-h3-desktop: 24px;
 
     --text-body-desktop--font-family: var(--font-albert);
-    --text-body-desktop: 18px;
+    --text-body-desktop: 28px;
 
     --text-body-bold-desktop--font-family: var(--font-albert);
     --text-body-bold-desktop: 18px;
     --text-body-bold-desktop--font-weight: 700;
 
-    --text-button-desktop--font-family: var(--font-public);
+    --text-button-desktop--font-family: var(--font-albert);
     --text-button-desktop: 18px;
 
     --text-link-desktop--font-family: var(--font-albert);
@@ -67,20 +67,20 @@
 
 
     /* Mobile */
-    --text-hero--font-family: var(--font-fraunces);
+    --text-hero--font-family: var(--font-albert);
     --text-hero: 32px;
     --text-hero-bold--font-weight: 700;
 
-    --text-h1--font-family: var(--font-varela);
+    --text-h1--font-family: var(--font-albert);
     --text-h1: 26px;
 
-    --text-h2--font-family: var(--font-varela);
+    --text-h2--font-family: var(--font-albert);
     --text-h2: 22px;
 
     --text-h2-albert--font-family: var(--font-albert);
     --text-h2-albert: 22px;
 
-    --text-h3--font-family: var(--font-varela);
+    --text-h3--font-family: var(--font-albert);
     --text-h3: 18px;
 
     --text-body--font-family: var(--font-albert);
@@ -90,7 +90,7 @@
     --text-body-bold: 16px;
     --text-body-bold--font-weight: 700;
 
-    --text-button--font-family: var(--font-public);
+    --text-button--font-family: var(--font-albert);
     --text-button: 16px;
 
     --text-link--font-family: var(--font-albert);
