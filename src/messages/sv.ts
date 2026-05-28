@@ -173,7 +173,7 @@ type MessagesSvType = {
       kaparna: string,
       utmanare: string,
       konvojen: string,
-      familjescouter:string,
+      familjescouter: string,
       join: string,
       "become-a-scout": string,
       faq: string,
@@ -189,30 +189,30 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
-  tabTitle:{
-      history:string,
-      join:string, 
-      "become-a-scout": string,
-      faq:string, 
-      "groups":string, 
-      sjohumlorna:string, 
-      kaparna:string,
-      konvojen:string, 
-      utmanare:string, 
-      familjescouter:string, 
-      lifestyle:string, 
-      boats:string,
-      cabins:string, 
-      myset:string, 
-      ruffen:string, 
-      members:string, 
-      information:string,
-      safety:string,
-      contact:string, 
-      gdpr:string,
-      [key: string]: string
+  tabTitle: {
+    history: string,
+    join: string,
+    "become-a-scout": string,
+    faq: string,
+    "groups": string,
+    sjohumlorna: string,
+    kaparna: string,
+    konvojen: string,
+    utmanare: string,
+    familjescouter: string,
+    lifestyle: string,
+    boats: string,
+    cabins: string,
+    myset: string,
+    ruffen: string,
+    members: string,
+    information: string,
+    safety: string,
+    contact: string,
+    gdpr: string,
+    [key: string]: string
   },
-  description:string,
+  description: string,
   groupsCard: {
     headline: string,
     title: string,
@@ -234,12 +234,12 @@ type MessagesSvType = {
     text: string,
   },
 
-  history: Record <string, string>
-  guidelines: Record <string, string>
-  safeScout: Record <string, string>
-  vests: Record <string, string>
-  lockable: Record <string, string>
-  gdpr: Record <string, string>
+  history: Record<string, string>
+  guidelines: Record<string, string>
+  safeScout: Record<string, string>
+  vests: Record<string, string>
+  lockable: Record<string, string>
+  gdpr: Record<string, string>
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
@@ -289,24 +289,24 @@ type MessagesSvType = {
     secondText: string,
     thirdtext: string,
     button: string
-  }, 
+  },
   groupCard: {
-    headline: string, 
-    title: string, 
+    headline: string,
+    title: string,
     text: string
-  }, 
+  },
   faqContact: {
-    title: string, 
+    title: string,
     text: string
   },
 
   joinContent: {
-    title: string, 
-    text: string, 
-    button: string, 
-    text02: string, 
-    button02: string, 
-    title02: string, 
+    title: string,
+    text: string,
+    button: string,
+    text02: string,
+    button02: string,
+    title02: string,
     text03: string
   },
   joinPage: {
@@ -314,25 +314,31 @@ type MessagesSvType = {
     text: string,
     buttonText: string
   },
-  sjohumlornaSpårarscouter: Record <string, string>
-  sjohumlornaAge:Record <string, string>
-  sjohumlorMeeting:Record <string, string>
-  sjohumlorPlace:Record <string, string>
+  myset01: Record<string, string>,
+  myset02: Record<string, string>,
+  myset03: Record<string, string>,
+  mysetBtn: {
+    text: string
+  }
+  sjohumlornaSpårarscouter: Record<string, string>
+  sjohumlornaAge: Record<string, string>
+  sjohumlorMeeting: Record<string, string>
+  sjohumlorPlace: Record<string, string>
   sjohumlorButton: string,
-  kaparnaUpptäckarscouter: Record <string, string>
-  kaparnaAge:Record <string, string>
-  kaparnaMeeting:Record <string, string>
-  kaparnaPlace:Record <string, string>
+  kaparnaUpptäckarscouter: Record<string, string>
+  kaparnaAge: Record<string, string>
+  kaparnaMeeting: Record<string, string>
+  kaparnaPlace: Record<string, string>
   kaparnaButton: string,
-  utmanarscouter: Record <string, string>
-  utmanareAge:Record <string, string>
-  utmanareMeeting:Record <string, string>
-  utmanarePlace:Record <string, string>
+  utmanarscouter: Record<string, string>
+  utmanareAge: Record<string, string>
+  utmanareMeeting: Record<string, string>
+  utmanarePlace: Record<string, string>
   utmanareButton: string,
-  äventyrarscouter: Record <string, string>
-  konvojenAge:Record <string, string>
-  konvojenMeeting:Record <string, string>
-  konvojenPlace:Record <string, string>
+  äventyrarscouter: Record<string, string>
+  konvojenAge: Record<string, string>
+  konvojenMeeting: Record<string, string>
+  konvojenPlace: Record<string, string>
   konvojenButton: string,
 };
 
@@ -492,7 +498,7 @@ export const Sv: MessagesSvType = {
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
-      familjescouter:"Familjescouter",
+      familjescouter: "Familjescouter",
       join: "Gå med i Scouterna",
       "become-a-scout": "Bli Sjöscout",
       faq: "Frågor & svar"
@@ -526,29 +532,29 @@ export const Sv: MessagesSvType = {
     title: "Bli en del av HSS",
     text: "Hos HSS får du kunskaper för livet, härliga naturupplevelser och fin gemenskap"
   },
-  tabTitle:{
-      history:"HSS | Historia",
-      join:"HSS | Gå med i Scouterna", 
-      "become-a-scout": "HSS | Bli Sjöscout",
-      faq:"HSS | FAQ", 
-      "groups":"HSS | Våra avdelningar", 
-      sjohumlorna:"HSS | Sjöhumlorna", 
-      kaparna: "HSS | Kaparna",
-      konvojen:"HSS | Konvojen", 
-      utmanare:"HSS | Utmanare", 
-      familjescouter:"HSS | Familjescouter", 
-      lifestyle:"HSS | Livet som Sjöscout", 
-      boats:"HSS | Båtar",
-      cabins:"HSS | Scoutstugor", 
-      myset:"HSS | Myset", 
-      ruffen:"HSS | Ruffen", 
-      members:"HSS | För medlemmar", 
-      information:"HSS | Information för medlemmar",
-      safety:"HSS | Flytvästpolicy",
-      contact:"HSS | Kontakt", 
-      gdpr:"HSS | GDPR"
-  }, 
-  description:"HSS webplats",
+  tabTitle: {
+    history: "HSS | Historia",
+    join: "HSS | Gå med i Scouterna",
+    "become-a-scout": "HSS | Bli Sjöscout",
+    faq: "HSS | FAQ",
+    "groups": "HSS | Våra avdelningar",
+    sjohumlorna: "HSS | Sjöhumlorna",
+    kaparna: "HSS | Kaparna",
+    konvojen: "HSS | Konvojen",
+    utmanare: "HSS | Utmanare",
+    familjescouter: "HSS | Familjescouter",
+    lifestyle: "HSS | Livet som Sjöscout",
+    boats: "HSS | Båtar",
+    cabins: "HSS | Scoutstugor",
+    myset: "HSS | Myset",
+    ruffen: "HSS | Ruffen",
+    members: "HSS | För medlemmar",
+    information: "HSS | Information för medlemmar",
+    safety: "HSS | Flytvästpolicy",
+    contact: "HSS | Kontakt",
+    gdpr: "HSS | GDPR"
+  },
+  description: "HSS webplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -650,7 +656,7 @@ export const Sv: MessagesSvType = {
     p4: "Medlemsuppgifterna finns dock kvar i Scoutnet, men så länge personen inte har något aktivt medlemskap, är det endast ett fåtal anställda på Scouternas kansli som kan komma åt uppgifterna.",
     p5: "I och med medlemskapet är man försäkrad via Scouternas gruppförsäkring och försäkringsbolaget kräver att uppgifterna sparas i upp till tio år, vilket är den tidsbegränsning som man kan kräva ersättning för ett försäkringsärende."
   },
-  email : {
+  email: {
     t0: "E-post",
     s0: "E-post till kåren",
     p0: "info@hss-scout.org",
@@ -751,7 +757,7 @@ export const Sv: MessagesSvType = {
     headline: "Säkerhet",
     title: "HSS Flytvästpolicy",
     text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
-    },
+  },
   safetyBtn: {
     btnMobile: "Ladda ner PDF",
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
@@ -763,23 +769,23 @@ export const Sv: MessagesSvType = {
     secondText: "Man kan bli Scout från och med 8 års ålder. Medlemmarna på avdelningen för våra äldsta Scouter är 15 år och uppåt.",
     thirdtext: "Avdelningarnas innehåll är anpassat efter Scouternas ålder för att göra Scoutlivet tryggt, roligt och spännande för alla våra Scouter.",
     button: "Läs mer om våra avdelningar"
-  }, 
+  },
   groupCard: {
-    headline: "Avdelningar", 
-    title: "Åldersanpassade avdelningar", 
+    headline: "Avdelningar",
+    title: "Åldersanpassade avdelningar",
     text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
-  }, 
+  },
   faqContact: {
-    title: "Kontakta oss", 
+    title: "Kontakta oss",
     text: "Vi hoppas du fått svar på dina frågor, men är det någonting du fortfarande undrar över kan du kontakta kåren så hjälper vi dig."
   },
   joinContent: {
-    title: "Scoutledare", 
-    text: "Som vuxen kan du göra en viktig insats som scoutledare. Du coachar scouterna och skapar en trygg miljö för att ge scouterna utrymme att våga och utvecklas. Alla våra Scoutledare ska gå utbildningen Trygga Möten.", 
-    button: "Kom igång med trygga möten", 
-    text02: "Efter kursen Trygga Möten kan du, om du vill, fortsätta utbilda dig. Vi rekommenderar att gå kursen Leda Scouting. Du kan läsa mer om våra utbildningar på Ledarskapsön.", 
-    button02: "Besök Ledarskapsön", 
-    title02: "Förälder", 
+    title: "Scoutledare",
+    text: "Som vuxen kan du göra en viktig insats som scoutledare. Du coachar scouterna och skapar en trygg miljö för att ge scouterna utrymme att våga och utvecklas. Alla våra Scoutledare ska gå utbildningen Trygga Möten.",
+    button: "Kom igång med trygga möten",
+    text02: "Efter kursen Trygga Möten kan du, om du vill, fortsätta utbilda dig. Vi rekommenderar att gå kursen Leda Scouting. Du kan läsa mer om våra utbildningar på Ledarskapsön.",
+    button02: "Besök Ledarskapsön",
+    title02: "Förälder",
     text03: "Som förälder är du en viktig del av HSS Scouterna. Det är tack vare engagerade vuxna som som vi kan ge barnen alla de upplevelser och möjligheter som scouterna erbjuder. Du behöver inte ha någon tidigare erfarenhet av scouting – det viktigaste är viljan att hjälpa till. "
   },
   joinPage: {
@@ -787,78 +793,93 @@ export const Sv: MessagesSvType = {
     text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
     buttonText: "Gå med i Scouterna"
   },
-
-  sjohumlornaSpårarscouter:{
-      h0:"Spårarscouter",
-      p0:"Scouterna på avdelningen Sjöhumlorna är Spårarscouter. Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klara av.",
-    },
-    sjohumlornaAge:{
-      h0:"Ålder",
-      p0:"Barnen på Sjöhumlorna är mellan 8 och 9 år."
-    },
-    sjohumlorMeeting:{
-      h0:"Avdelingsmöten",
-      p0:"Dag: Måndag",
-      p1:"Ruffen vid Hässelby Strandbad.",
-    },
-    sjohumlorPlace:{
-      h0:"Märken",
-      p0:"För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Elle att får göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
-    },
-    sjohumlorButton:"Märkesplansch för Spårare",  
+  myset01: {
+    t0: "Nyfiken på att hyra Myset?",
+    p0: "Mejla myset.hss.scout@gmail.com för att göra en bokningsförfrågan.",
+  },
+  myset02: {
+    t0: "Bekvämligheter",
+    p0: "Myset är en trevlig och fräsch scoutstuga. Med element och ett modernt ventilationssystem är det lätt att hålla värmen, och stugan känns alltid välkomnande och hemtrevlig &ndash; oavsett årstid.",
+    p1: "Stugan rymmer ett stort samlingsrum där en mysig brasa blir en naturlig samlingspunkt. Här finns också ett väl tilltaget kök och två mindre ledarrum som ger plats för både planering och vila.",
+  },
+  myset03: {
+    t0: "Utrustning",
+    p0: "Köket är fullt utrustat med både el- och vedspis, diskmaskin, mikrovågsugn och ett rymligt kylskåp. Det är ett komplett kök som utan problem kan laga och servera mat till upp emot 30 personer &ndash; perfekt för läger, hajker och gemensamma måltider.",
+  },
+  mysetBtn: {
+    text: "Se planlösning"
+  },
+  sjohumlornaSpårarscouter: {
+    h0: "Spårarscouter",
+    p0: "Scouterna på avdelningen Sjöhumlorna är Spårarscouter. Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klara av.",
+  },
+  sjohumlornaAge: {
+    h0: "Ålder",
+    p0: "Barnen på Sjöhumlorna är mellan 8 och 9 år."
+  },
+  sjohumlorMeeting: {
+    h0: "Avdelingsmöten",
+    p0: "Dag: Måndag",
+    p1: "Ruffen vid Hässelby Strandbad.",
+  },
+  sjohumlorPlace: {
+    h0: "Märken",
+    p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Elle att får göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
+  },
+  sjohumlorButton: "Märkesplansch för Spårare",
   kaparnaUpptäckarscouter: {
-    h0:"Upptäckarscouter",
+    h0: "Upptäckarscouter",
     p0: "Många i den här åldern är nyfikna på världen runt omkring sig, och i Kaparna uppmuntrar vi det engagemanget. Vi jobbar ofta praktiskt och konkret - det kan vara allt från att lösa uppdrag tillsammans till att lära sig ta ansvar i små och stora situationer."
   },
   kaparnaAge: {
-    h0:"Ålder",
-    p0:"Barnen på Kaparna är mellan 10 och 11 år",
+    h0: "Ålder",
+    p0: "Barnen på Kaparna är mellan 10 och 11 år",
   },
-  kaparnaMeeting:{
-    h0:"Avdelningsmöten",
-    p0:"Dag: Tisdag",
-    p1:"Ruffen vid Hässelby Strandbad"
+  kaparnaMeeting: {
+    h0: "Avdelningsmöten",
+    p0: "Dag: Tisdag",
+    p1: "Ruffen vid Hässelby Strandbad"
   },
-  kaparnaPlace:{
-    h0:"Märken",
-    p0:"Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemäkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
+  kaparnaPlace: {
+    h0: "Märken",
+    p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemäkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
   },
   kaparnaButton: "Märkesplansch för Upptäckare",
   utmanarscouter: {
-    h0:"Utmanarscouter",
-    p0:"I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv."
+    h0: "Utmanarscouter",
+    p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv."
   },
-  utmanareAge:{
-    h0:"Ålder",
-    p0:"Scouterna på Utmanaravdelningen är 15 år och uppåt."
+  utmanareAge: {
+    h0: "Ålder",
+    p0: "Scouterna på Utmanaravdelningen är 15 år och uppåt."
   },
-  utmanareMeeting:{
-    h0:"Avdelningsmöten",
-    p0:"Dag: Tisdag eller torsdag.",
-    p1:"Ruffen vid Hässelby Strandbad."
+  utmanareMeeting: {
+    h0: "Avdelningsmöten",
+    p0: "Dag: Tisdag eller torsdag.",
+    p1: "Ruffen vid Hässelby Strandbad."
   },
-  utmanarePlace:{
-    h0:"Utmaningar",
-    p0:"Det finns tio utmaningar. Två av dem görs på egen hand och resten görs tillsammans i utmanarlaget. De individuella utmaningarna har lite fastare regler. De andra bestäms tillsammans i utmanarlaget.",
+  utmanarePlace: {
+    h0: "Utmaningar",
+    p0: "Det finns tio utmaningar. Två av dem görs på egen hand och resten görs tillsammans i utmanarlaget. De individuella utmaningarna har lite fastare regler. De andra bestäms tillsammans i utmanarlaget.",
   },
   utmanareButton: "Upptäck utmaningarna",
   äventyrarscouter: {
-    h0:"Äventyrarscouter",
-    p0:"I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv.",
+    h0: "Äventyrarscouter",
+    p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv.",
   },
-  konvojenAge:{
-    h0:"Ålder",
-    p0:"Barnen på Kaparna är mellan 12 och 14 år.",
+  konvojenAge: {
+    h0: "Ålder",
+    p0: "Barnen på Kaparna är mellan 12 och 14 år.",
   },
-  konvojenMeeting:{
-    h0:"Avdelningsmöten",
-    p0:"Dag: Torsdag",
-    p1:"Tid: 18:00",
-    p2:"Plats: Ruffen vid Hässelby Strandbad."
+  konvojenMeeting: {
+    h0: "Avdelningsmöten",
+    p0: "Dag: Torsdag",
+    p1: "Tid: 18:00",
+    p2: "Plats: Ruffen vid Hässelby Strandbad."
   },
-  konvojenPlace:{
-    h0:"Märken",
-    p0:"Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
+  konvojenPlace: {
+    h0: "Märken",
+    p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
 };
