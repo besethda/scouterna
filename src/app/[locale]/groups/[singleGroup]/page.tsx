@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
-=======
->>>>>>> 8449daa04912fdd67c2f594dcdd6f51e001e13d7
 import { getPageHeadTitle } from "@/lib/utils";
-import { use } from "react";
-import { En } from "@/messages/en";
-import { Sv } from "@/messages/sv";
 import ContentSection from "@/components/ContentSection";
 import Image from "next/image";
 import CTABtn from "@/components/CTA-button";
@@ -42,15 +36,10 @@ const Groups = ({
   const { singleGroup, locale } = use(params);
   const messages = locale === "en" ? En : Sv;
 
-<<<<<<< HEAD
-  return (
-    <>
-      <Breadcrumbs />
-    </>
-  )
-=======
   if (singleGroup === "sjohumlorna") {
     return (
+      <>
+      <Breadcrumbs />
       <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
@@ -108,9 +97,12 @@ const Groups = ({
           </div>
         </div>
       </div>
+      </>
     );
   } else if (singleGroup === "kaparna") {
     return (
+      <>
+      <Breadcrumbs />
       <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
@@ -168,9 +160,12 @@ const Groups = ({
           </div>
         </div>
       </div>
+      </>
     );
   } else if (singleGroup === "utmanare") {
     return (
+      <>
+      <Breadcrumbs />
       <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
@@ -228,9 +223,12 @@ const Groups = ({
           </div>
         </div>
       </div>
+      </>
     );
   } else if (singleGroup === "konvojen") {
     return (
+      <>
+      <Breadcrumbs />
       <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
@@ -288,11 +286,11 @@ const Groups = ({
           </div>
         </div>
       </div>
+      </>
     );
   } else if (singleGroup === "familjescouter") {
     return <p> familjescouter page</p>;
   }
->>>>>>> 8449daa04912fdd67c2f594dcdd6f51e001e13d7
 };
 
 export default Groups;

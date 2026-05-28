@@ -1,6 +1,5 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import CardWithImage from "@/components/CardWithImage";
-import MapWrapper from "@/components/Map/MapWrapper";
+import CardWithoutImage from "@/components/CardWithoutImage";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
@@ -20,8 +19,7 @@ const Ruffen = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <div>
             <Breadcrumbs />
-            <CardWithImage sectionTitle="ruffen" logo="/blueHouse.png" image="/images/IMG_3957.JPEG" />
-            <MapWrapper />
+            <CardWithoutImage headline={messages?.cabinsCard?.headline} logo="/blueHouse.png" title={messages?.cabinsCard?.title} text={messages?.cabinsCard?.text} MDlogo="/blueHouseYellowBg.svg" />
         </div>
     );
 }
