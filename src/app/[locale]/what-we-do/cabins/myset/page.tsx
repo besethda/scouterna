@@ -7,7 +7,7 @@ import Link from "next/link";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
-
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 
 const pageItem = "myset"
@@ -25,6 +25,7 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
 
     return (
         <div>
+            <Breadcrumbs />
             <CardWithoutImage
                 headline={messages?.mysetCard?.headline}
                 logo="/blueHouse.png"

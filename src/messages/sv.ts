@@ -124,20 +124,32 @@ type MessagesSvType = {
     card_text_4: string,
     span_4: string
   },
-  hero: {
+  homeHero: {
     hero_title: string,
     hero_subtitle01: string,
     hero_subtitle02: string,
     hero_description: string
+    button: string
+  },
+  joinHero: {
+    hero_title: string,
+    hero_subtitle01: string,
+    hero_subtitle02: string,
+    hero_description: string
+    button: string
+  },
+  lifestyleHero: {
+    hero_title: string,
+    hero_subtitle01: string,
+    hero_subtitle02: string,
+    hero_description: string
+    button: string
   },
   whiteImageBox: {
     header: string,
     title1: string,
     title2: string,
     title3: string
-  },
-  CTABtn: {
-    text: string
   },
   breadcrumbs: {
     title: string,
@@ -437,14 +449,26 @@ export const Sv: MessagesSvType = {
     time: "Tid: ",
     place: "Plats: "
   },
-  hero: {
+  homeHero: {
     hero_title: "Hässelby Strands Sjöscouter",
     hero_subtitle01: "Äventyret börjar",
     hero_subtitle02: "vid vattenbrynet",
-    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand."
+    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand.",
+    button: "Gå med i Scouterna"
   },
-  CTABtn: {
-    text: "Gå med i Scouterna"
+  joinHero: {
+    hero_title: "Hässelby Strands Sjöscouter",
+    hero_subtitle01: "Vågorna väntar-",
+    hero_subtitle02: "bli del av HSS",
+    hero_description: "Hos HSS Scouterna erbjuder vi en trygg och aktiv fritid för barn och unga.",
+    button: "Gå med i Scouterna"
+  },
+  lifestyleHero: {
+    hero_title: "Hässelby Strands Sjöscouter",
+    hero_subtitle01: "Mot nya",
+    hero_subtitle02: "horisonter",
+    hero_description: "Segla, upptäck och väx tillsammans. Livet som sjöscout handlar om äventyr till sjöss och gemenskap som varar.",
+    button: "Gå med i Scouterna"
   },
   whiteImageBox: {
     header: "Vad vi erbjuder",

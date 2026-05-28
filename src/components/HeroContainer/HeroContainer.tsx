@@ -4,20 +4,27 @@ import useMessages from "@/hook/useMessages"
 import HeroSection from "./Hero-section"
 import CTABtn from "../CTA-button"
 
-const HeroContainer = () => {
+type messageTypes = "hero_subtitle01" 
 
-  const messages = useMessages()
+const HeroContainer = ({bgImages, messageSection, position}:{bgImages:{mobile:string, desktop:string}, messageSection:string, position?:string}) => {
+
+  const messages= useMessages()
+  if(!messages) return null
+
+  console.log((messages as any)?.[`${messageSection}`]?.button)
 
   return (
     <HeroSection
-    bgImages={{mobile: "bg-[url('/images/IMG_3420.JPEG')]", desktop:"md:bg-[url('/images/IMG_3752.JPEG')]"}}
-    title01={messages?.hero.hero_subtitle01}
-    title02={messages?.hero.hero_subtitle02}
-    description={messages?.hero.hero_description}
+    bgImages={bgImages}
+    title01={(messages as any)?.[`${messageSection}`]?.hero_subtitle01}
+    title02={(messages as any)?.[`${messageSection}`]?.hero_subtitle02}
+    top={(messages as any)?.[`${messageSection}`]?.hero_title}
+    description={(messages as any)?.[`${messageSection}`]?.hero_description}
+    position={position}
   >
     <CTABtn
-      text={messages?.CTABtn.text}
-      onClick={() => { }} 
+      text={`${(messages as any)?.[`${messageSection}`]?.button}`}
+      onClick={() => {}} 
       width="mobile"/>
   </HeroSection>
   )
