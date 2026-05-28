@@ -40,7 +40,7 @@ const InstagramContainer = async () => {
       return {mediaUrl:post.mediaUrl, permalink: `link${index}`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
     })
     return (
-      <div className="">
+      <div className="md:bg-bg-blue md:pt-10">
         <Instagram photoObject={filteredData}/>
       </div>
     )
