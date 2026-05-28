@@ -1,5 +1,3 @@
-//data files depends on what you fill in, blew is example
-
 type MessagesSvType = {
   path: string;
   home: {
@@ -233,7 +231,6 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
-
   history: Record<string, string>
   guidelines: Record<string, string>
   safeScout: Record<string, string>
@@ -300,15 +297,6 @@ type MessagesSvType = {
     title: string,
     text: string
   },
-  optimisterSection: {
-    title: string,
-    title02: string,
-    title03: string,
-    text: string,
-    text02: string,
-    text03: string,
-  }
-
   joinContent: {
     title: string,
     text: string,
@@ -349,6 +337,14 @@ type MessagesSvType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  optimisterSection: {
+    title: string,
+    title02: string,
+    title03: string,
+    text: string,
+    text02: string,
+    text03: string,
+  }
 };
 
 export const Sv: MessagesSvType = {
@@ -401,7 +397,6 @@ export const Sv: MessagesSvType = {
     button_text: "Följ oss",
     text: "Vi på Scouterna använder Instagram för att dela med oss av våra äventyr. Där kan du följa våra utflykter, läger och vardagsstunder i naturen."
   },
-
   header: {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
