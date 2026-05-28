@@ -366,6 +366,7 @@ export type MessagesEngType = {
     text02: string,
     text03: string,
   }
+  ruffenDivisions: Record<string, string>
 };
 
 export const En: MessagesEngType = {
@@ -940,16 +941,20 @@ export const En: MessagesEngType = {
     UTtext: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them."
    },
   optimisterSection: {
-    title: "Optimists",
-    title02: "2-kronor",
-    title03: "Keelboats",
-    text: "Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
-    text02: "Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
-    text03: "Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
+    title:"Optimists",
+    title02:"2-kronor",
+    title03:"Keelboats",
+    text:"Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
+    text02:"Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
+    text03:"Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
   },
   interestBtn: {
     title: "Want to join the Scouts?",
     text: "If you are interested in joining HSS as a Scout, leader, or an engaged parent, you are welcome to submit your interest using our form.",
     buttonText: "Join the Scouts"
-}
+  },
+  ruffenDivisions: {
+    t0: "Group Meetings",
+    p0: "HSS's four groups hold meetings once a week."
+  }
 };
