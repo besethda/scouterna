@@ -1,5 +1,3 @@
-//data files depends on what you fill in, blew is example
-
 type MessagesSvType = {
   path: string;
   home: {
@@ -233,7 +231,6 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
-
   history: Record<string, string>
   guidelines: Record<string, string>
   safeScout: Record<string, string>
@@ -300,7 +297,6 @@ type MessagesSvType = {
     title: string,
     text: string
   },
-
   joinContent: {
     title: string,
     text: string,
@@ -346,18 +342,22 @@ type MessagesSvType = {
     FAMheadline: string, 
     FAMtitle: string, 
     FAMtext: string, 
-
     SJMtitle: string, 
     SJMtext: string, 
-
     KAPtitle: string, 
     KAPtext: string, 
-
     KONtitle: string, 
     KONtext: string, 
-
     UTtitle: string, 
     UTtext: string, 
+  }, 
+  optimisterSection: {
+    title: string,
+    title02: string,
+    title03: string,
+    text: string,
+    text02: string,
+    text03: string,
   }
 };
 
@@ -411,7 +411,6 @@ export const Sv: MessagesSvType = {
     button_text: "Följ oss",
     text: "Vi på Scouterna använder Instagram för att dela med oss av våra äventyr. Där kan du följa våra utflykter, läger och vardagsstunder i naturen."
   },
-
   header: {
     header_title: "Hässelby Strands",
     header_subtitle: "Sjöscouter",
@@ -925,5 +924,13 @@ export const Sv: MessagesSvType = {
     KONtext: "Här seglar man större jollar och planerar egna hajker tillsammans med ledarna. Konvojen lär sig leda, fatta beslut och hantera utmaningar både till sjöss och på land.", 
     UTtitle: "Utmanare", 
     UTtext: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.", 
+  },
+  optimisterSection: {
+    title:"Optimister",
+    title02:"2-kronor",
+    title03:"Kölbåtar",
+    text:"Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
+    text02:"Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
+    text03:"Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
   }
 };
