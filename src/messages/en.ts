@@ -810,7 +810,7 @@ export const En: MessagesEngType = {
 
   },
   joinPage: {
-    title: "Express Your Interest",
+    title:"Express Your Interest",
     text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
     buttonText: "Join the Scouts"
   },
