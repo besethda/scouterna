@@ -309,7 +309,7 @@ type MessagesSvType = {
     text: string,
     text02: string,
     text03: string,
-  }
+  },
 
   joinContent: {
     title: string,
