@@ -124,8 +124,6 @@ type MessagesSvType = {
     card_text_4: string,
     span_4: string
   },
-  homeHero: {
-  };
   hero: {
     hero_title: string,
     hero_subtitle01: string,
@@ -310,7 +308,6 @@ type MessagesSvType = {
     text02: string,
     text03: string,
   },
-
   joinContent: {
     title: string,
     text: string,
