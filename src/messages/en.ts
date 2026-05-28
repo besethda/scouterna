@@ -283,7 +283,27 @@ export type MessagesEngType = {
     title: string,
     text: string,
     buttonText: string
-  }
+  },
+  sjohumlornaSpårarscouter: Record <string, string>
+  sjohumlornaAge:Record <string, string>
+  sjohumlorMeeting:Record <string, string>
+  sjohumlorPlace:Record <string, string>
+  sjohumlorButton: string,
+  kaparnaUpptäckarscouter: Record <string, string>
+  kaparnaAge:Record <string, string>
+  kaparnaMeeting:Record <string, string>
+  kaparnaPlace:Record <string, string>
+  kaparnaButton: string,
+  utmanarscouter: Record <string, string>
+  utmanareAge:Record <string, string>
+  utmanareMeeting:Record <string, string>
+  utmanarePlace:Record <string, string>
+  utmanareButton: string,
+  äventyrarscouter: Record <string, string>
+  konvojenAge:Record <string, string>
+  konvojenMeeting:Record <string, string>
+  konvojenPlace:Record <string, string>
+  konvojenButton: string,
 };
 
 export const En: MessagesEngType = {
@@ -709,5 +729,78 @@ export const En: MessagesEngType = {
   title: "Express Your Interest",
   text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
   buttonText: "Join the Scouts"
-}
+},
+  sjohumlornaSpårarscouter: {
+  h0: "Spårarscouts",
+  p0: "The scouts at the Sjöhumlorna section are Spårarscouts. Spårarna is the beginning of the scouting journey, where each child gets to grow, explore, and feel pride in what they can accomplish.",
+},
+sjohumlornaAge: {
+  h0: "Age",
+  p0: "The children at Sjöhumlorna are between 8 and 9 years old.",
+},
+sjohumlorMeeting: {
+  h0: "Section meetings",
+  p0: "Day: Monday",
+  p1: "Ruffen at Hässelby Strandbad.",
+},
+sjohumlorPlace: {
+  h0: "Badges",
+  p0: "For Spårare, there are plenty of exciting badges. Lighting a lantern for the first time can be a big challenge. Or making popcorn on a storm kitchen. There are also badges that focus on how to be a good friend or how to take care of the environment.",
+},
+sjohumlorButton: "Badge poster for Spårare",
+kaparnaUpptäckarscouter: {
+  h0: "Upptäckarscouts",
+  p0: "Many at this age are curious about the world around them, and at Kaparna we encourage that engagement. We often work practically and concretely - it can range from solving missions together to learning to take responsibility in small and big situations."
+},
+kaparnaAge: {
+  h0: "Age",
+  p0: "The children at Kaparna are between 10 and 11 years old.",
+},
+kaparnaMeeting: {
+  h0: "Section meetings",
+  p0: "Day: Tuesday",
+  p1: "Ruffen at Hässelby Strandbad",
+},
+kaparnaPlace: {
+  h0: "Badges",
+  p0: "There are plenty of badges that suit Upptäckare. For example, they can show that they can handle a knife and axe. Or one of the many interest badges can serve as a framework for the program. There are badges for everything from first aid, fire-making and cooking to water, darkness and superheroes.",
+},
+kaparnaButton: "Badge poster for Upptäckare",
+utmanarscouter: {
+  h0: "Utmanarscouts",
+  p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
+},
+utmanareAge: {
+  h0: "Age",
+  p0: "The scouts in the Utmanare section are 15 years and older.",
+},
+utmanareMeeting: {
+  h0: "Section meetings",
+  p0: "Day: Tuesday or Thursday.",
+  p1: "Ruffen at Hässelby Strandbad.",
+},
+utmanarePlace: {
+  h0: "Challenges",
+  p0: "There are ten challenges. Two of them are done individually and the rest are done together in the Utmanare team. The individual challenges have slightly stricter rules. The others are decided together in the Utmanare team.",
+},
+utmanareButton: "Discover the challenges",
+äventyrarscouter: {
+  h0: "Äventyrarscouts",
+  p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
+},
+konvojenAge: {
+  h0: "Age",
+  p0: "The children at Kaparna are between 12 and 14 years old.",
+},
+konvojenMeeting: {
+  h0: "Section meetings",
+  p0: "Day: Thursday",
+  p1: "Time: 18:00",
+  p2: "Location: Ruffen at Hässelby Strandbad.",
+},
+konvojenPlace: {
+  h0: "Badges",
+  p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
+},
+konvojenButton: "Badge poster for Äventyrare",
 };
