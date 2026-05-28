@@ -1,12 +1,8 @@
 import { getPageHeadTitle } from "@/lib/utils"
 import CardWithoutImage from "@/components/CardWithoutImage";
 import FragorSvar from "@/components/Fragor-svar";
-<<<<<<< HEAD
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { En} from "@/messages/en";
-=======
 import { En } from "@/messages/en";
->>>>>>> 8449daa04912fdd67c2f594dcdd6f51e001e13d7
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Image from "next/image";
@@ -29,12 +25,8 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
 
     return (
         <div>
-<<<<<<< HEAD
             <Breadcrumbs />
-            <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png"/>
-=======
             <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png" />
->>>>>>> 8449daa04912fdd67c2f594dcdd6f51e001e13d7
             <div>
                 <div className="bg-bg-blue py-10">
                     <h2 className="pb-2 text-h2 text-center md:text-h1-desktop"> {messages?.faq.title} </h2>
