@@ -25,15 +25,19 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
         <div>
             <Breadcrumbs />
             <CardWithImage sectionTitle="ruffen" logo="/blueHouse.png" image="/images/IMG_3957.JPEG" />
-            <div className="flex flex-col p-4 gap-1 md:items-center">
+            <div className="flex flex-col p-4 gap-1 md:px-25 md:grid md:grid-cols-2 md:gap-2 md:items-stretch [&>*]:w-full">
                 <DivisionsBox division={"sjohumlorna"} boxStyle={"info"} />
                 <DivisionsBox division={"kaparna"} boxStyle={"info"} />
                 <DivisionsBox division={"utmanare"} boxStyle={"info"} />
                 <DivisionsBox division={"konvojen"} boxStyle={"info"} />
                 <DivisionsBox division={"familjescouter"} boxStyle={"info"} />
             </div>
-            <ContentSection sectionLayout={["t", "p", "p"]} page={"map"} />
-            <MapWrapper />
+            <div className="pt-3 pb-10 md:px-21 md:pt-18 md:pb-25">
+                <ContentSection sectionLayout={["t", "p", "p"]} page={"map"} padding="top" />
+                <div className="p-3 md:px-4">
+                    <MapWrapper />
+                </div>
+            </div>
         </div>
     );
 }

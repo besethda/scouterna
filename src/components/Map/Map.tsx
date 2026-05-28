@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility";
@@ -15,7 +16,11 @@ const Map = () => {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <Marker position={position}>
-                    <Popup>Ruffen | Hässelby Strands Sjöscoutkår</Popup>
+                    <Popup>
+                        <Link href="https://maps.app.goo.gl/sFxM5RaFKjgsMcVP8">
+                            Ruffen | Hässelby Strands Sjöscoutkår
+                        </Link>
+                    </Popup>
                 </Marker>
             </MapContainer>
         </div>
