@@ -366,6 +366,7 @@ export type MessagesEngType = {
     text02: string,
     text03: string,
   }
+  ruffenDivisions: Record<string, string>
 };
 
 export const En: MessagesEngType = {
@@ -951,5 +952,9 @@ export const En: MessagesEngType = {
     title: "Want to join the Scouts?",
     text: "If you are interested in joining HSS as a Scout, leader, or an engaged parent, you are welcome to submit your interest using our form.",
     buttonText: "Join the Scouts"
-}
+  },
+  ruffenDivisions: {
+    t0: "Group Meetings",
+    p0: "HSS's four groups hold meetings once a week."
+  }
 };

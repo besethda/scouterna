@@ -366,6 +366,7 @@ type MessagesSvType = {
     text02: string,
     text03: string,
   }
+  ruffenDivisions: Record<string, string>
 };
 
 export const Sv: MessagesSvType = {
@@ -949,5 +950,9 @@ export const Sv: MessagesSvType = {
     title: "Vill du gå med i Scouterna?",
     text: "Om du är intresserad av att gå med i HSS som Scout, ledare eller engagerad förälder går det bra att anmäla ditt intresse via vårt formulär.",
     buttonText: "Gå med i Scouterna"
+  },
+  ruffenDivisions: {
+    t0: "Avdelningsmöten",
+    p0: "HSS fyra avdelningar har avdelningsmöten en gång i veckan. "
   }
 };
