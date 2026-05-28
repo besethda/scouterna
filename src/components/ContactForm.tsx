@@ -1,6 +1,7 @@
 'use client'
 
 import {useForm} from "react-hook-form"
+import emailjs from '@emailjs/browser'
 
 interface EmailFormData {
     firstName: string;
@@ -29,12 +30,17 @@ const ContactForm = ({title,text,lastName,firstName,email,message,buttonText}:Em
         <div className="py-10 px-4 bg-bg-blue flex flex-col gap-2">
             <h2 className="font-albert text-h2 font-medium text-primary md:text-h2-desktop">{title}</h2>
             <p className="font-albert text-body text-text-black md:text-body-desktop pb-2">{text}</p>
-            <div className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-[24px] py-10 px-6 flex flex-col gap-6 text-body font-public">
+            <form 
+            onSubmit={handleSubmit(onSubmit)}
+            className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-[24px] py-10 px-6 flex flex-col gap-6 text-body font-public">
                 <div className="flex flex-col gap-2">
                     <p>{lastName}</p>
                     <input 
                     type="text"
                     placeholder="Efternamn"
+                    {...register("lastName", {
+                        required:"Write your last name"
+                    })}
                     className="border border-lightGray border-solid rounded-lg w-full h-10 p-3"
                     />
                 </div>
@@ -43,6 +49,9 @@ const ContactForm = ({title,text,lastName,firstName,email,message,buttonText}:Em
                     <input
                     type="text"
                     placeholder="Firstnamn"
+                    {...register("firstName", {
+                        required:"Write your first name"
+                    })}
                     className="border border-lightGray border-solid rounded-lg w-full h-10 p-3"
                     />
                     {errors.lastName && <p className="text-red-400 text-xs mt-1">{errors.lastName.message}</p>}
@@ -53,7 +62,7 @@ const ContactForm = ({title,text,lastName,firstName,email,message,buttonText}:Em
                     type="text"
                     placeholder="example@email.com"
                     {...register("email", {
-                        required:"Write email address here"
+                        required:"Write email address"
                     })}
                     className="border border-lightGray border-solid rounded-lg w-full h-10 p-3"
                     />
@@ -74,7 +83,7 @@ const ContactForm = ({title,text,lastName,firstName,email,message,buttonText}:Em
                 >
                 {buttonText}
                 </button>
-            </div>
+            </form>
         </div>
     )
 }
