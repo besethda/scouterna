@@ -46,7 +46,7 @@ const LanguageSelector = () => {
         <div className="flex flex-col items-start justify-around origin-top-right absolute right-5 mt-8 w-38 h-25 p-4 gap-2 
         rounded-md shadow-xl bg-white z-100 lg:w-45 lg:mt-10 lg:shadow-2xl">
           {languageList.map((lang, index) => (
-            <div onClick={() => changeClick(lang.languageCode)} key={index} className="flex w-full justify-between hover:text-accent cursor-pointer">
+            <div onClick={() => changeClick(lang.languageCode)} key={index} className="flex w-full justify-between text-primary hover:text-accent cursor-pointer">
               <p className="font-albert font-normal ">{lang.language}</p>
               {selectValue === lang.languageCode ? <AiOutlineCheck /> : ""}
             </div>
