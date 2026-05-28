@@ -53,10 +53,10 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-between items-center py-2.5 px-7 bg-white border-b border-text-gray z-50 sticky top-0 lg:border-hidden lg:static lg:z-60">
-        <Link href={messages?.path || "/en"} className="md:hidden">
+        <Link href={messages?.path || "/sv"} className="md:hidden">
           <Image src={HSSlogo} alt='HSS-LOGO' className="w-11 h-10.5" />
         </Link>
-        <Link href={messages?.path || "/en"} className="hidden md:flex items-center">
+        <Link href={messages?.path || "/sv"} className="hidden md:flex items-center">
           <div className="flex gap-2 items-center">
             <Image src={HSSlogo} alt='HSS-LOGO' className=" w-25 h-23.75" />
             <div className=" p-2.5 items-center text-xl/6 tracking-[1px]">
