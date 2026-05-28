@@ -5,6 +5,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 
 
+
 const pageItem = "contact"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
@@ -27,5 +28,11 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
     </div>
   )
 }
+
+
+
+
+
+
 
 export default Contact
