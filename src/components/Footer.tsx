@@ -19,7 +19,7 @@ const Footer = () => {
         <footer className="bg-primary text-white py-6 px-5 flex flex-col gap-4 xl:py-20 xl:px-2.5 xl:gap-16.5">
             <div className='flex flex-col gap-2.5 xl:flex xl:flex-row xl:justify-around xl:w-[90%] xl:mx-auto'>
                 <div className='xl:flex-1'>
-                    <Link href={messages?.path || "/en"}>
+                    <Link href={messages?.path || "/sv"}>
                         <Image src={scautLogo} alt="Scaut-logo" className='w-32.5 h-7 xl:h-[28]' />
                     </Link>
                     <div className='pt-3'>
@@ -30,15 +30,15 @@ const Footer = () => {
                     <p className="text-accent text-body-bold mb-2 uppercase text-xs xl:text-sm">{messages?.footer?.footer_service}</p>
                     <div className='flex gap-2.5 leading-none'>
                         <Image src={schoolIcon} alt='school icon' className='w-4 h-4 xl:w-5 xl:h-7' />
-                        <p className="text-body-desktop xl:text-lg">{messages?.footer?.footer_school}</p>
+                        <Link href="https://www.scouternasfolkhogskola.se/" className="text-body-desktop xl:text-lg">{messages?.footer?.footer_school}</Link>
                     </div>
                     <div className='flex gap-2.5 leading-none'>
                         <Image src={bagIcon} alt='bag icon' className='w-4 h-4 xl:w-5 xl:h-6' />
-                        <p className="text-body-desktop xl:text-lg">{messages?.footer?.footer_shop}</p>
+                        <Link href="https://www.scoutshop.se/" className="text-body-desktop xl:text-lg">{messages?.footer?.footer_shop}</Link>
                     </div>
                     <div className='flex gap-2.5 leading-none'>
                         <Image src={keyIcon} alt='key icon' className='w-4 h-4 xl:w-5.5 xl:h-5.5' />
-                        <p className="text-body-desktop xl:text-lg">Scoutnet</p>
+                        <Link href="https://www.scoutnet.se/f/login" className="text-body-desktop xl:text-lg">Scoutnet</Link>
                     </div>
                 </div>
                 <div className='flex flex-col gap-2 xl:gap-7 pb-2 xl:flex-1'>
@@ -47,8 +47,8 @@ const Footer = () => {
                         <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
                         <p className="text-body xl:text-body-desktop xl:text-lg">info@hss-scout.org</p>
                     </a>
-                    <div className='hidden xl:flex relative -translate-x-1 gap-2.5 leading-[1.2]' >
-                        <Image src={locationIcon} alt='email icon' className='w-8 h-8' />
+                    <div className='hidden xl:flex gap-2.5 leading-[1.2]' >
+                        <Image src={locationIcon} alt='email icon' className='w-6 h-6' />
                         <p className="text-body xl:text-body-desktop xl:text-lg">Maltesholmsbadet <br />165 73 Hässelby</p>
                     </div>
                 </div>

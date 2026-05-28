@@ -4,6 +4,7 @@ import CTABtn from "@/components/CTA-button"
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import ContentSection from "@/components/ContentSection";
 
 
@@ -25,6 +26,7 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
 
     return (
         <>
+            <Breadcrumbs />
             <div className="flex flex-col">
                 <div className="h-fit pb-13">
                     <CardWithImage sectionTitle="safetyCard" logo="/blue-lifejacket.svg" image="/images/DSCF3070.jpg" />

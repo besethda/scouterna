@@ -5,6 +5,8 @@ import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import LifeStyleSection from "./lifestyleSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import HeroContainer from "@/components/HeroContainer/HeroContainer";
 
 
 
@@ -23,6 +25,8 @@ const LifeStyle = ({params}:{params: Promise<{locale: string}>}) => {
 
     return (
         <div>
+            <HeroContainer bgImages={{mobile: "bg-[url('/images/IMG_1939.JPEG')]", desktop:"md:bg-[url('/images/rock.JPG')]"}} messageSection={"lifestyleHero"} position={"center"} />
+            <Breadcrumbs />
             <CardWithImage sectionTitle="lifestyle" logo="/heart.png" image="/images/DSCF3033.jpg"/>
             <WhiteGridContainer backgroundBlue={false} messageTitle="learning"/>
             <LifeStyleSection />

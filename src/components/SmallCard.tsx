@@ -13,14 +13,14 @@ interface SmallCardProps {
 
 const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext, button }: SmallCardProps) => {
   return (
-    <div className="font-albert md:p-25 md:gap-0 lg:grid lg:grid-cols-[1fr_auto] lg:gap-x-10 lg:gap-y-6  w-full mx-auto">
+    <div className="font-albert md:px-25 md:py-6 md:gap-0 lg:grid lg:grid-cols-[1fr_auto] lg:gap-x-10 lg:gap-y-6  w-full mx-auto">
 
       <div className="flex flex-col px-4 gap-4 md:gap-10 md:col-start-1">
         <div className="flex flex-col gap-2  ">
           <p className="font-medium text-h2 tracking-[-0.5%] text-[#00355F] md:text-h2-desktop">
             {title}
           </p>
-          <p className=" font-normal text-[16px] tracking-[3%] md:text-[18px]">
+          <p className=" font-normal text-[16px] tracking-[3%] md:text-[20px]">
             {subtitle}
           </p>
         </div>
@@ -36,7 +36,7 @@ const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext,
           <p className="font-medium text-[18px] tracking-[-0.5%] text-[#00355F] md:text-h3-desktop">
             {secondTitle}
           </p>
-          <div className="flex flex-col gap-2 text-text-black font-normal text-[16px] tracking-[3%] md:text-[18px]">
+          <div className="flex flex-col gap-2 text-text-black font-normal text-[16px] tracking-[3%] md:text-[20px]">
             <p>{secondText}</p>
             <p>{thirdtext}</p>
           </div>

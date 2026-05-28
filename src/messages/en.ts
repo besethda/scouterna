@@ -128,15 +128,27 @@ export type MessagesEngType = {
     card_text_4: string,
     span_4: string
   }
-  hero: {
+  homeHero: {
     hero_title: string,
     hero_subtitle01: string,
     hero_subtitle02: string,
     hero_description: string
-  };
-  CTABtn: {
-    text: string
-  };
+    button: string
+  },
+  joinHero: {
+    hero_title: string,
+    hero_subtitle01: string,
+    hero_subtitle02: string,
+    hero_description: string
+    button: string
+  },
+  lifestyleHero: {
+    hero_title: string,
+    hero_subtitle01: string,
+    hero_subtitle02: string,
+    hero_description: string
+    button: string
+  },
   breadcrumbs: {
     title: string,
     path: string,
@@ -173,31 +185,31 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string
-  }, 
-    tabTitle: {
-      history:string,
-      join:string, 
-      "become-a-scout": string,
-      faq:string, 
-      "groups":string, 
-      sjohumlorna:string, 
-      kaparna:string,
-      konvojen:string, 
-      utmanare:string, 
-      familjescouter:string, 
-      lifestyle:string, 
-      boats:string,
-      cabins:string, 
-      myset:string, 
-      ruffen:string, 
-      members:string, 
-      information:string,
-      safety:string,
-      contact:string, 
-      gdpr:string,
-      [key: string]: string
-     },
-    description: string,
+  },
+  tabTitle: {
+    history: string,
+    join: string,
+    "become-a-scout": string,
+    faq: string,
+    "groups": string,
+    sjohumlorna: string,
+    kaparna: string,
+    konvojen: string,
+    utmanare: string,
+    familjescouter: string,
+    lifestyle: string,
+    boats: string,
+    cabins: string,
+    myset: string,
+    ruffen: string,
+    members: string,
+    information: string,
+    safety: string,
+    contact: string,
+    gdpr: string,
+    [key: string]: string
+  },
+  description: string,
   groupsCard: {
     headline: string,
     title: string,
@@ -218,12 +230,12 @@ export type MessagesEngType = {
     title: string,
     text: string,
   },
-  history: Record <string, string>
-  guidelines: Record <string, string>
-  safeScout: Record <string, string>
-  vests: Record <string, string>
-  lockable: Record <string, string>
-  gdpr: Record <string, string>
+  history: Record<string, string>
+  guidelines: Record<string, string>
+  safeScout: Record<string, string>
+  vests: Record<string, string>
+  lockable: Record<string, string>
+  gdpr: Record<string, string>
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
@@ -266,7 +278,7 @@ export type MessagesEngType = {
   safetyBtn: {
     btnMobile: string,
     btnDesktop: string
-  }, 
+  },
   becomeScoutSmallCard: {
     title: string,
     subtitle: string,
@@ -274,17 +286,56 @@ export type MessagesEngType = {
     secondText: string,
     thirdtext: string,
     button: string
-  }, 
+  },
   groupCard: {
-    headline: string, 
-    title: string, 
+    headline: string,
+    title: string,
     text: string
+  },
+  faqContact: {
+    title: string,
+    text: string
+  },
+  joinContent: {
+    title: string,
+    text: string,
+    button: string,
+    text02: string,
+    button02: string,
+    title02: string,
+    text03: string
   },
   joinPage: {
     title: string,
     text: string,
     buttonText: string
-  }
+  },
+  myset01: Record<string, string>
+  myset02: Record<string, string>
+  myset03: Record<string, string>,
+  mysetBtn: {
+    text: string
+  },
+  sjohumlornaSpårarscouter: Record<string, string>
+  sjohumlornaAge: Record<string, string>
+  sjohumlorMeeting: Record<string, string>
+  sjohumlorPlace: Record<string, string>
+  sjohumlorButton: string,
+  kaparnaUpptäckarscouter: Record<string, string>
+  kaparnaAge: Record<string, string>
+  kaparnaMeeting: Record<string, string>
+  kaparnaPlace: Record<string, string>
+  kaparnaButton: string,
+  utmanarscouter: Record<string, string>
+  utmanareAge: Record<string, string>
+  utmanareMeeting: Record<string, string>
+  utmanarePlace: Record<string, string>
+  utmanareButton: string,
+  äventyrarscouter: Record<string, string>
+  konvojenAge: Record<string, string>
+  konvojenMeeting: Record<string, string>
+  konvojenPlace: Record<string, string>
+  konvojenButton: string,
 };
 
 export const En: MessagesEngType = {
@@ -399,14 +450,26 @@ export const En: MessagesEngType = {
     title: "The waves are waiting",
     text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
   },
-  hero: {
+  homeHero: {
     hero_title: "Hässelby Strand Sea Scouts",
     hero_subtitle01: "Adventures begin",
     hero_subtitle02: "at the water's edge",
-    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand."
+    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand.",
+    button: "Join the Sea Scouts"
   },
-  CTABtn: {
-    text: "Join the Sea Scouts"
+  joinHero: {
+    hero_title: "Hässelby Strand Sea Scouts",
+    hero_subtitle01: "The waves are waiting-",
+    hero_subtitle02: "Join HSS",
+    hero_description: "At HSS Scouts, we offer a safe and active free time for children and young people.",
+    button: "Join the Scouts"
+  },
+  lifestyleHero: {
+    hero_title: "Hässelby Strand Sea Scouts",
+    hero_subtitle01: "Toward new",
+    hero_subtitle02: "horizons",
+    hero_description: "Sail, discover, and grow together. Life as a sea scout is all about adventures at sea and a community that lasts.",
+    button: "Join the Scouts"
   },
   breadcrumbs: {
     title: "Home",
@@ -430,7 +493,7 @@ export const En: MessagesEngType = {
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
-      familjescouter:"Familjescouter",
+      familjescouter: "Familjescouter",
       join: "Join The Scouts",
       "become-a-scout": "Become a Scout",
       faq: "FAQ"
@@ -464,29 +527,29 @@ export const En: MessagesEngType = {
     title: "Become a part of HSS",
     text: "At HSS, you will gain skills for life, experience the great outdoors and enjoy a wonderful sense of community."
   },
-  tabTitle:{
-    history:"HSS | History",
-    join:"HSS | Join", 
+  tabTitle: {
+    history: "HSS | History",
+    join: "HSS | Join",
     "become-a-scout": "HSS | Become a scout",
-    faq:"HSS | FAQ", 
-    "groups":"HSS | Groups", 
-    sjohumlorna:"HSS | Sjöhumlorna", 
+    faq: "HSS | FAQ",
+    "groups": "HSS | Groups",
+    sjohumlorna: "HSS | Sjöhumlorna",
     kaparna: "HSS | Kaparna",
-    konvojen:"HSS | Konvojen", 
-    utmanare:"HSS | Utmanare", 
-    familjescouter:"HSS | Familjescouter", 
-    lifestyle:"HSS | Lifestyle", 
-    boats:"HSS | Boats",
-    cabins:"HSS | Cabins", 
-    myset:"HSS | Myset", 
-    ruffen:"HSS | Ruffen", 
-    members:"HSS | Members", 
-    information:"HSS | Members Infomation",
-    safety:"HSS | Life Jacket Policy",
-    contact:"HSS | Contact", 
-    gdpr:"HSS | GDPR"
-    },
-    description:"HSS website",
+    konvojen: "HSS | Konvojen",
+    utmanare: "HSS | Utmanare",
+    familjescouter: "HSS | Familjescouter",
+    lifestyle: "HSS | Lifestyle",
+    boats: "HSS | Boats",
+    cabins: "HSS | Cabins",
+    myset: "HSS | Myset",
+    ruffen: "HSS | Ruffen",
+    members: "HSS | Members",
+    information: "HSS | Members Infomation",
+    safety: "HSS | Life Jacket Policy",
+    contact: "HSS | Contact",
+    gdpr: "HSS | GDPR"
+  },
+  description: "HSS website",
   groupsCard: {
     headline: "Groups",
     title: "Age Groups",
@@ -587,7 +650,7 @@ export const En: MessagesEngType = {
     p4: "The member data does remain in Scoutnet, however, as long as the person does not have an active membership, only a few employees at the National Scout Office can access the information.",
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
-  email : {
+  email: {
     t0: "E-post",
     s0: "E-post till kåren",
     p0: "info@hss-scout.org",
@@ -703,7 +766,7 @@ export const En: MessagesEngType = {
   safetyBtn: {
     btnMobile: "Download PDF",
     btnDesktop: "Download the life jacket policy as PDF"
-  }, 
+  },
   becomeScoutSmallCard: {
     title: "Scout Life for youth and adults",
     subtitle: "We have age-appropriate groups for our scouts. As an adult, you can get involved as a leader, or help out as a parent.",
@@ -713,13 +776,118 @@ export const En: MessagesEngType = {
     button: "Read more about our groups"
   },
   groupCard: {
-    headline: "groups", 
-    title: "Age groups", 
+    headline: "groups",
+    title: "Age groups",
     text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In the Senior Scouts (Utmanarna), our oldest scout group, members can join from the age of 15."
   },
+  faqContact: {
+    title: "Contact us",
+    text: "We hope you've found the answers to your questions. However, if there is anything else you are still wondering about, feel free to contact us and we'll help you out."
+  },
+  joinContent: {
+    title: "Scout Leader",
+    text: "As an adult, you can make a vital impact as a scout leader. You will coach the scouts and create a safe environment that encourages them to challenge themselves and grow. All our Scout Leaders are required to complete the Safe Meetings (Trygga Möten) training.",
+    button: "Get started with Safe Meetings",
+    text02: "After completing the Safe Meetings course, you can continue your training if you wish. We highly recommend taking the Leading Scouting (Leda Scouting) course. You can read more about our training programs at Leadership Island (Ledarskapsön).",
+    button02: "Visit Leadership Island",
+    title02: "Parent",
+    text03: "As a parent, you play an important part in HSS Scouterna. It is thanks to committed adults that we are able to provide children with all the experiences and opportunities that scouting offers. You don't need any prior experience with scouting – the most important thing is your willingness to help out."
+
+  },
   joinPage: {
-  title: "Express Your Interest",
-  text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
-  buttonText: "Join the Scouts"
-}
+    title: "Express Your Interest",
+    text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
+    buttonText: "Join the Scouts"
+  },
+  myset01: {
+    t0: "Interested in renting Myset?",
+    p0: "Email myset.hss.scout@gmail.com to make a booking inquiry.",
+  },
+
+  myset02: {
+    s0: "Amenities",
+    t1: "Myset is a pleasant and well-maintained scout cabin. With radiators and a modern ventilation system, it is easy to keep warm, and the cabin always feels welcoming and cozy &ndash; regardless of the season.",
+    p2: "The cabin features a large gathering room where a cozy fireplace naturally becomes the center of attention. There is also a spacious kitchen and two smaller leader rooms that provide space for both planning and rest.",
+  },
+
+  myset03: {
+    t1: "Equipment",
+    p3: "The kitchen is fully equipped with both electric and wood-burning stoves, a dishwasher, microwave, and a large refrigerator. It is a complete kitchen that can easily prepare and serve meals for up to 30 people &ndash; perfect for camps, hikes, and shared meals.",
+  },
+  mysetBtn: {
+    text: "View floor plan"
+  },
+  sjohumlornaSpårarscouter: {
+    h0: "Spårarscouts",
+    p0: "The scouts at the Sjöhumlorna section are Spårarscouts. Spårarna is the beginning of the scouting journey, where each child gets to grow, explore, and feel pride in what they can accomplish.",
+  },
+  sjohumlornaAge: {
+    h0: "Age",
+    p0: "The children at Sjöhumlorna are between 8 and 9 years old.",
+  },
+  sjohumlorMeeting: {
+    h0: "Section meetings",
+    p0: "Day: Monday",
+    p1: "Ruffen at Hässelby Strandbad.",
+  },
+  sjohumlorPlace: {
+    h0: "Badges",
+    p0: "For Spårare, there are plenty of exciting badges. Lighting a lantern for the first time can be a big challenge. Or making popcorn on a storm kitchen. There are also badges that focus on how to be a good friend or how to take care of the environment.",
+  },
+  sjohumlorButton: "Badge poster for Spårare",
+  kaparnaUpptäckarscouter: {
+    h0: "Upptäckarscouts",
+    p0: "Many at this age are curious about the world around them, and at Kaparna we encourage that engagement. We often work practically and concretely - it can range from solving missions together to learning to take responsibility in small and big situations."
+  },
+  kaparnaAge: {
+    h0: "Age",
+    p0: "The children at Kaparna are between 10 and 11 years old.",
+  },
+  kaparnaMeeting: {
+    h0: "Section meetings",
+    p0: "Day: Tuesday",
+    p1: "Ruffen at Hässelby Strandbad",
+  },
+  kaparnaPlace: {
+    h0: "Badges",
+    p0: "There are plenty of badges that suit Upptäckare. For example, they can show that they can handle a knife and axe. Or one of the many interest badges can serve as a framework for the program. There are badges for everything from first aid, fire-making and cooking to water, darkness and superheroes.",
+  },
+  kaparnaButton: "Badge poster for Upptäckare",
+  utmanarscouter: {
+    h0: "Utmanarscouts",
+    p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
+  },
+  utmanareAge: {
+    h0: "Age",
+    p0: "The scouts in the Utmanare section are 15 years and older.",
+  },
+  utmanareMeeting: {
+    h0: "Section meetings",
+    p0: "Day: Tuesday or Thursday.",
+    p1: "Ruffen at Hässelby Strandbad.",
+  },
+  utmanarePlace: {
+    h0: "Challenges",
+    p0: "There are ten challenges. Two of them are done individually and the rest are done together in the Utmanare team. The individual challenges have slightly stricter rules. The others are decided together in the Utmanare team.",
+  },
+  utmanareButton: "Discover the challenges",
+  äventyrarscouter: {
+    h0: "Äventyrarscouts",
+    p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
+  },
+  konvojenAge: {
+    h0: "Age",
+    p0: "The children at Kaparna are between 12 and 14 years old.",
+  },
+  konvojenMeeting: {
+    h0: "Section meetings",
+    p0: "Day: Thursday",
+    p1: "Time: 18:00",
+    p2: "Location: Ruffen at Hässelby Strandbad.",
+  },
+  konvojenPlace: {
+    h0: "Badges",
+    p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
+  },
+  konvojenButton: "Badge poster for Äventyrare",
 };

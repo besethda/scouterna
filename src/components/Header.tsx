@@ -53,10 +53,10 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-between items-center py-2.5 px-7 bg-white border-b border-text-gray z-50 sticky top-0 lg:border-hidden lg:static lg:z-60">
-        <Link href="/" className="md:hidden">
+        <Link href={messages?.path || "/sv"} className="md:hidden">
           <Image src={HSSlogo} alt='HSS-LOGO' className="w-11 h-10.5" />
         </Link>
-        <Link href="/" className="hidden md:flex items-center">
+        <Link href={messages?.path || "/sv"} className="hidden md:flex items-center">
           <div className="flex gap-2 items-center">
             <Image src={HSSlogo} alt='HSS-LOGO' className=" w-25 h-23.75" />
             <div className=" p-2.5 items-center text-xl/6 tracking-[1px]">
@@ -66,11 +66,11 @@ const Header = () => {
           </div>
         </Link>
         <div className='hidden lg:flex gap-6 font-semibold text-link-desktop tracking-[0.03em] '>
-          <Link href="" className="flex gap-2.5 items-center">
+          <Link href={messages?.path + '/join/become-a-scout'} className="flex gap-2.5 items-center">
             <Image src={Hand} alt='HandLogo' className='h-8.25 w-auto' />
             <p className="font-albert  tracking-[3%] leading-[100%] text-text-black ">{messages?.header?.header_join}</p>
           </Link>
-          <Link href="" className="flex gap-2.5 items-center">
+          <Link href="https://www.scoutnet.se/f/login" className="flex gap-2.5 items-center">
             <Image src={Key} alt='key' className='h-5.75 w-auto' />
             <p className="font-albert tracking-[3%] leading-[100%] text-text-black  ">Scoutnet</p>
           </Link>
