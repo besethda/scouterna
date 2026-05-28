@@ -3,7 +3,7 @@
 import useMessages from "@/hook/useMessages"
 
 //background can be "white, blue, or custom (white on mobile, blue on desktop). White is the default if not defined
-//padding can be "bottom", "top", "both", or "none". Both is the default if not defined
+//padding can be "bottom", "top", "both", or "none". Both is the default if not defined 
 
 //h is h1, t is h2, s is h3, p is paragraph, w is bold line, l is bullet point
 
@@ -31,7 +31,7 @@ const ContentSection = ({sectionLayout, page, background="white", padding="both"
   }
 
   return (
-    <div className={`${background==="white" ? "bg-bg-white" : background === "blue" ? "bg-bg-blue" : background === "mobile" ? "bg-bg-blue md:bg-bg-white" : background === "desktop" ? "bg-bg-white md:bg-bg-blue": "bg-bg-white"} 
+    <div className={`${background==="white" ? "bg-bg-white" : background === "blue" ? "bg-bg-blue" : background === "mobile" ? "bg-bg-blue md:bg-bg-white" : background === "desktop" ? "bg-bg-white md:bg-bg-blue": background === "large" ? "bg-bg-white lg:bg-bg-blue": "bg-bg-white"} 
     ${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-16 pt-7" : padding === "bottom-mobile" ? "pb-16 md:pb-0" : padding === "top-mobile" ? "pt-7 md:pt-0" : padding === "bottom-desktop" ? "pb- md:pb-16" : padding === "top-desktop" ? "pt-0 md:pt-7" : ""} 
     ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} px-4`}>
       {createLayout(sectionLayout)}
