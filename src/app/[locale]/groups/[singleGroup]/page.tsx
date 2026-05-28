@@ -110,7 +110,7 @@ const Groups = ({
     return (
       <>
       <Breadcrumbs />
-      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle}  text={messages?.GroupIntro?.KAPtext}  logo="/kaparna-frame.svg"/>
+      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle}  text={messages?.GroupIntro?.KAPtext}  logo="/Kaparna-frame.svg"/>
       <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
@@ -176,7 +176,7 @@ const Groups = ({
     return (
       <>
       <Breadcrumbs />
-      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle}  text={messages?.GroupIntro?.UTtext}  logo="/utmanare-frame.svg" />
+      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle}  text={messages?.GroupIntro?.UTtext} logo="/Utmanare-frame.svg" />
       <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
@@ -242,7 +242,7 @@ const Groups = ({
     return (
       <>
       <Breadcrumbs />
-      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext}  logo="/konvojen-frame.svg" />
+      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext} logo="/Konvojen-frame.svg" />
       <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
@@ -308,7 +308,7 @@ const Groups = ({
     return (
     <>
     <Breadcrumbs />
-    <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/familje-frame.svg" />
+    <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
     </>
     )
   }
