@@ -4,15 +4,16 @@ import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import CabinsSection from "@/components/CabinsSection";
 
-const pageItem = "ruffen"
+const pageItem = "cabins"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
     return getPageHeadTitle(locale, pageItem)
 }
 
 
-const Ruffen = ({params}:{params: Promise<{locale: string}>}) => {
+const Cabins = ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = use(params)
     const messages = locale === "en" ? En : Sv
 
@@ -20,8 +21,9 @@ const Ruffen = ({params}:{params: Promise<{locale: string}>}) => {
         <div>
             <Breadcrumbs />
             <CardWithoutImage headline={messages?.cabinsCard?.headline} logo="/blueHouse.png" title={messages?.cabinsCard?.title} text={messages?.cabinsCard?.text} MDlogo="/blueHouseYellowBg.svg" />
+            <CabinsSection />
         </div>
     );
 }
 
-export default Ruffen
+export default Cabins

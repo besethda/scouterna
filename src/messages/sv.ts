@@ -328,7 +328,7 @@ type MessagesSvType = {
   myset03: Record<string, string>,
   mysetBtn: {
     text: string
-  }
+  },
   sjohumlornaSpårarscouter: Record<string, string>
   sjohumlornaAge: Record<string, string>
   sjohumlorMeeting: Record<string, string>
@@ -349,6 +349,10 @@ type MessagesSvType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  cabinsmyset: Record<string, string>
+  mysetbtn:string,
+  cabinsruffen: Record<string, string>
+  ruffenbtn:string,
 };
 
 export const Sv: MessagesSvType = {
@@ -909,5 +913,15 @@ export const Sv: MessagesSvType = {
     text:"Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
     text02:"Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
     text03:"Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
-  }
+  },
+  cabinsmyset:{
+    t0:"Myset",
+    p0:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet"
+  },
+  mysetbtn:"Läs mer om Myset",
+  cabinsruffen: {
+    t0:"Ruffen",
+    p0:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet"
+  },
+  ruffenbtn:"Läs mer om Ruffen",
 };

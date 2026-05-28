@@ -343,7 +343,11 @@ export type MessagesEngType = {
     text: string,
     text02: string,
     text03: string,
-  }
+  },
+  cabinsmyset: Record<string, string>
+  mysetbtn:string,
+  cabinsruffen: Record<string, string>
+  ruffenbtn:string,
 };
 
 export const En: MessagesEngType = {
@@ -905,5 +909,15 @@ export const En: MessagesEngType = {
     text:"Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
     text02:"Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
     text03:"Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
-  }
+  },
+  cabinsruffen: {
+    "t0": "Myset",
+    "p0": "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water"
+  },
+  ruffenbtn: "Read more about Ruffen",
+  cabinsmyset: {
+    "t0": "Myset",
+    "p0": "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water"
+  },
+  mysetbtn: "Read more about Myset",
 };
