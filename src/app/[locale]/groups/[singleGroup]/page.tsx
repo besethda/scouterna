@@ -44,9 +44,11 @@ const Groups = ({
     return (
       <>
       <Breadcrumbs />
-      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle}  text={messages?.GroupIntro?.SJMtext}  logo="/sjohumlor-frame.svg" />
-      <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
-        <div className="max-w-7xl mx-auto">
+      <div className="flex justify-center">
+        <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle}  text={messages?.GroupIntro?.SJMtext}  logo="/sjohumlor-frame.svg" />
+      </div>
+      <div className="bg-bg-blue pt-20 pb-20 flex flex-col items-center">
+        <div className="lg:max-w-430 lg:px-22">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
             <div className="flex-1">
               <ContentSection
@@ -54,6 +56,7 @@ const Groups = ({
                 page="sjohumlornaSpårarscouter"
                 background={"blue"}
                 padding={"5"}
+                child={true}
               />
             </div>
             <div className="flex-1 flex justify-center">
@@ -71,19 +74,22 @@ const Groups = ({
             page="sjohumlornaAge"
             background={"blue"}
             padding={"3"}
+            child={true}
           />
-          <div className="flex flex-col gap-4 justify-center pb-4">
+          <div className="flex flex-col pb-4 w-full">
             <ContentSection
               sectionLayout={["s", "p", "p"]}
               page="sjohumlorMeeting"
               background={"blue"}
               padding={"5"}
+              child={true}
             />
             <ContentSection
               sectionLayout={["s", "p"]}
               page="sjohumlorPlace"
               background={"blue"}
               padding={"5"}
+              child={true}
             />
           </div>
           <div
@@ -110,9 +116,11 @@ const Groups = ({
     return (
       <>
       <Breadcrumbs />
-      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle}  text={messages?.GroupIntro?.KAPtext}  logo="/Kaparna-frame.svg"/>
-      <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
-        <div className="max-w-7xl mx-auto">
+      <div className="flex justify-center">
+        <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle}  text={messages?.GroupIntro?.KAPtext}  logo="/Kaparna-frame.svg"/>
+      </div>
+      <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
+        <div className="lg:max-w-430 lg:px-22">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
             <div className="flex-1">
               <ContentSection
@@ -120,6 +128,7 @@ const Groups = ({
                 page="kaparnaUpptäckarscouter"
                 background={"blue"}
                 padding={"5"}
+                child={true}
               />
             </div>
             <div className="flex-1 flex justify-center">
@@ -137,6 +146,7 @@ const Groups = ({
             page="kaparnaAge"
             background={"blue"}
             padding={"3"}
+            child={true}
           />
           <div className="flex flex-col gap-4 justify-center pb-4">
             <ContentSection
@@ -144,12 +154,14 @@ const Groups = ({
               page="kaparnaMeeting"
               background={"blue"}
               padding={"5"}
+              child={true}
             />
             <ContentSection
               sectionLayout={["s", "p"]}
               page="kaparnaPlace"
               background={"blue"}
               padding={"5"}
+              child={true}
             />
           </div>
           <div
@@ -176,9 +188,11 @@ const Groups = ({
     return (
       <>
       <Breadcrumbs />
-      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle}  text={messages?.GroupIntro?.UTtext}  logo="/Utmanare-frame.svg" />
-      <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
-        <div className="max-w-7xl mx-auto">
+      <div className="flex justify-center">
+        <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle}  text={messages?.GroupIntro?.UTtext}  logo="/Utmanare-frame.svg" />
+      </div>
+      <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
+        <div className="lg:max-w-430 lg:px-22">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
             <div className="flex-1">
               <ContentSection
@@ -186,6 +200,7 @@ const Groups = ({
                 page="utmanarscouter"
                 background={"blue"}
                 padding={"5"}
+                child={true}
               />
             </div>
             <div className="flex-1 flex justify-center">
@@ -203,6 +218,7 @@ const Groups = ({
             page="utmanareAge"
             background={"blue"}
             padding={"3"}
+            child={true}
           />
           <div className="flex flex-col gap-4 justify-center pb-4">
             <ContentSection
@@ -210,12 +226,14 @@ const Groups = ({
               page="utmanareMeeting"
               background={"blue"}
               padding={"5"}
+              child={true}
             />
             <ContentSection
               sectionLayout={["s", "p"]}
               page="utmanarePlace"
               background={"blue"}
               padding={"5"}
+              child={true}
             />
           </div>
           <div
@@ -242,9 +260,11 @@ const Groups = ({
     return (
       <>
       <Breadcrumbs />
-      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext}  logo="/Konvojen-frame.svg" />
-      <div className="bg-bg-blue md:pl-5 pt-20 pb-20">
-        <div className="max-w-7xl mx-auto">
+      <div className="flex justify-center">
+        <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext}  logo="/Konvojen-frame.svg" />
+      </div>
+      <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
+        <div className="lg:max-w-430 lg:px-22">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
             <div className="flex-1">
               <ContentSection
@@ -252,6 +272,7 @@ const Groups = ({
                 page="äventyrarscouter"
                 background={"blue"}
                 padding={"5"}
+                child={true}
               />
             </div>
             <div className="flex-1 flex justify-center">
@@ -269,6 +290,7 @@ const Groups = ({
             page="konvojenAge"
             background={"blue"}
             padding={"3"}
+            child={true}
           />
           <div className="flex flex-col gap-4 justify-center pb-4">
             <ContentSection
@@ -276,12 +298,14 @@ const Groups = ({
               page="konvojenMeeting"
               background={"blue"}
               padding={"5"}
+              child={true}
             />
             <ContentSection
               sectionLayout={["s", "p"]}
               page="konvojenPlace"
               background={"blue"}
               padding={"5"}
+              child={true}
             />
           </div>
           <div
