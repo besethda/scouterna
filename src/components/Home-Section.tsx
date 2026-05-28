@@ -9,6 +9,10 @@ const HomeSection = () => {
 
   const messages = useMessages()
 
+  const handleClick = () => {
+    window.open("https://www.scoutnet.se/register/in/group/764")
+  }
+
   return (
     <>
       <section className="w-full py-10 px-4 md:hidden lg:max-w-380">
@@ -25,7 +29,7 @@ const HomeSection = () => {
               className=" bg-white rounded-2xl object-cover " />
           </div>
           <div>
-            <CTABtn text={messages?.homePage?.button} width="full" />
+            <CTABtn text={messages?.homePage?.button} width="full" onClick={handleClick} />
           </div>
         </div>
       </section>
@@ -41,7 +45,7 @@ const HomeSection = () => {
         <div className="flex flex-col flex-1 gap-4">
           <div className="text-h2 md:text-h2-desktop font-normal font-albert text-primary tracking-[-0.5%]">{messages?.homePage?.title}</div>
           <div className="font-albert text-body md:text-body-desktop tracking-[3%] text-text-black">{messages?.homePage?.subtitle2}</div>
-          <CTABtn text={messages?.homePage?.button} />
+          <CTABtn text={messages?.homePage?.button} onClick={handleClick}/>
         </div>
       </section>
     </>

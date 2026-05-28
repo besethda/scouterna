@@ -11,6 +11,7 @@ interface JoinPageProps {
 }
 
 const JoinPage = ({title, text, buttonText,buttonOnClick,btnWidth,width = "full"}:JoinPageProps) => {
+    
     return (
         <div className={`${width === "box" ? "w-89.5 h-63.5 md:h-83 rounded-2xl md:flex-row md:w-full md:rounded items-center" : "w-full"} p-8 flex flex-col gap-6 bg-bg-blue mx-auto md:p-25 mt-10`}>
             <div className="flex flex-col gap-2 md:w-[30vw]"> 
