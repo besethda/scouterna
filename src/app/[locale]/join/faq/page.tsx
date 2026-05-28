@@ -1,6 +1,7 @@
 import { getPageHeadTitle } from "@/lib/utils"
 import CardWithoutImage from "@/components/CardWithoutImage";
 import FragorSvar from "@/components/Fragor-svar";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
@@ -24,6 +25,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
 
     return (
         <div>
+            <Breadcrumbs />
             <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png" />
             <div>
                 <div className="bg-bg-blue py-10">

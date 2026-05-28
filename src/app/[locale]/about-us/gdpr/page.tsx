@@ -1,4 +1,5 @@
 import { getPageHeadTitle } from "@/lib/utils"
+import Breadcrumbs from "@/components/Breadcrumbs";
 import ContentSection from "@/components/ContentSection";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
@@ -18,6 +19,7 @@ const Gdpr = ({params}:{params: Promise<{locale: string}>}) => {
     const messages = locale === "en" ? En : Sv
     return (
         <div>
+            <Breadcrumbs />
             <ContentSection sectionLayout={["t", "p", "s", "l", "l", "l", "l", "l", "s", "l", "l", "l", "l", "l", "l", "l", "l", "l", "p", "s", "p"]} page={"gdpr"} background={"blue"}/>
             <ContentSection sectionLayout={["s", "p", "p", "p", "p", "p", "p"]} page={"ethics"} display={"mobile"}/>
         </div>
