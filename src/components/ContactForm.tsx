@@ -24,15 +24,38 @@ const ContactForm = ({title,text,lastName,firstName,email,message,buttonText}:Em
         console.log(data)
 
         alert(`이사람 ${data.lastName} ${data.firstName} 가 메세지 전송함`)
+        
+        const params = {
+        from_name: `${data.lastName} ${data.firstName}`,
+        from_email: data.email,
+        message:data.message
+        };
+        console.log("서비스ID 체크:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
+        console.log("퍼블릭키 체크:", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+
+        emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string, 
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string, 
+        params, //보낼 데이터 상자
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string, 
+        )
+        .then((response) => {
+            alert("이메일이 성공적으로 전송되었습니다!")
+        })
+        .catch((error) => {
+            alert("이메일 전송 실패!")
+            console.log("내용:", error)
+        })
     };
 
     return (
-        <div className="py-10 px-4 bg-bg-blue flex flex-col gap-2">
+        <div className="py-10 px-4 bg-bg-blue flex flex-col gap-2 md:pl-25">
             <h2 className="font-albert text-h2 font-medium text-primary md:text-h2-desktop">{title}</h2>
-            <p className="font-albert text-body text-text-black md:text-body-desktop pb-2">{text}</p>
+            <p className="font-albert text-body text-text-black md:text-body-desktop pb-2 md:pb-8">{text}</p>
             <form 
             onSubmit={handleSubmit(onSubmit)}
-            className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-[24px] py-10 px-6 flex flex-col gap-6 text-body font-public">
+            className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-[24px] py-10 px-6 flex flex-col gap-6 text-body font-public
+            md:w-137">
                 <div className="flex flex-col gap-2">
                     <p>{lastName}</p>
                     <input 
@@ -71,7 +94,7 @@ const ContactForm = ({title,text,lastName,firstName,email,message,buttonText}:Em
                 <div className="flex flex-col gap-2 pb-4">
                     <p>{message}</p>
                     <textarea 
-                    placeholder="내용을 입력해주세요"
+                    placeholder="Please enter the content"
                     {...register("message")}
                     className="border border-lightGray border-solid rounded-lg w-full h-10 p-3 h-[144px]"
                     />
