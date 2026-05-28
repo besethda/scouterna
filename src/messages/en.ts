@@ -317,6 +317,7 @@ export type MessagesEngType = {
   konvojenMeeting:Record <string, string>
   konvojenPlace:Record <string, string>
   konvojenButton: string,
+  avdelningsledare:Record <string, string>
 };
 
 export const En: MessagesEngType = {
@@ -830,4 +831,8 @@ konvojenPlace: {
   p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
 },
 konvojenButton: "Badge poster for Äventyrare",
+avdelningsledare:{
+  h0:"Group Manager",
+  p0:"Each department has a department manager. Our managers are trained and have completed the mandatory course Safe Meetings."
+},
 };

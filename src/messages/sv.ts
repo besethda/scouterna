@@ -322,6 +322,7 @@ type MessagesSvType = {
   konvojenMeeting:Record <string, string>
   konvojenPlace:Record <string, string>
   konvojenButton: string,
+  avdelningsledare:Record <string, string>
 };
 
 export const Sv: MessagesSvType = {
@@ -837,4 +838,8 @@ export const Sv: MessagesSvType = {
     p0:"Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
+  avdelningsledare:{
+  h0:"Avdelningsledare",
+  p0:"Varje avdelning har en avdelningsledare. Våra ledare är utbildade och har gått den obligatoriska kursen Trygga Möten."
+},
 };
