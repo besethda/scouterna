@@ -8,21 +8,17 @@ const DivisionsContainer = () => {
   const messages = useMessages()
 
   return (
-    <div className="w-full md:max-w-200 lg:max-w-430">
+    <div className="w-full md:max-w-200 lg:max-w-430 mb-9">
       <div className="text-h2 font-albert md:text-h2-desktop text-primary mt-5 md:mt-15 lg:px-22 px-5 ">{messages?.home.divisions}</div>
       <div className="px-5 text-body font-albert md:text-body-desktop lg:px-22 text-text-black w-full md:max-w-200 lg:max-w-230">{messages?.home.divisions_text}</div>
-      <div className="text-h3 font-albert md:text-h3-desktop text-primary mt-6 lg:px-22 px-5 w-full md:max-w-200 lg:max-w-430">{messages?.division.scouts_title}</div>
-      <div className="px-5 text-body font-albert md:text-body-desktop mb-3 lg:px-22 text-text-black w-full md:max-w-200 lg:max-w-430">{messages?.division.scouts_paragraph}</div>
-      <div className="flex flex-col md:flex-row mt-3 px-4 md:px-10 lg:px-20">
-        <DivisionsBox division={"sjohumlorna"} boxStyle={"basic"} />
-        <DivisionsBox division={"kaparna"} boxStyle={"basic"} />
-        <DivisionsBox division={"konvojen"} boxStyle={"basic"} />
-        <DivisionsBox division={"utmanare"} boxStyle={"basic"} />
-      </div>
-      <div className="text-h3 font-albert md:text-h3-desktop text-primary mt-6 lg:px-22 px-5 w-full md:max-w-200 lg:max-w-430">{messages?.division.family_title}</div>
-      <div className="px-5 text-body font-albert md:text-body-desktop mb-3 lg:px-22 text-text-black w-full md:max-w-200 lg:max-w-230">{messages?.division.familjescouter_paragraph}</div>
-      <div className="flex flex-col md:flex-row md:mb-16 mb-10 px-4 md:px-10 lg:px-20 w-full md:max-w-200 lg:max-w-430">
-        <DivisionsBox division={"familjescouter"} boxStyle={"basic"} />
+      <div className="flex justify-center w-full">
+        <div className="flex flex-col md:flex-row md:flex-wrap md:w-fit w-full md:max-w-290 mt-3 px-4 md:px-10 lg:px-20">
+          <DivisionsBox division={"sjohumlorna"} boxStyle={"basic"} />
+          <DivisionsBox division={"kaparna"} boxStyle={"basic"} />
+          <DivisionsBox division={"konvojen"} boxStyle={"basic"} />
+          <DivisionsBox division={"utmanare"} boxStyle={"basic"} />
+          <DivisionsBox division={"familjescouter"} boxStyle={"basic"} />
+        </div>
       </div>
     </div>
   )
