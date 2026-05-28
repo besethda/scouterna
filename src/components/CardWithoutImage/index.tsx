@@ -29,7 +29,7 @@ const CardWithoutImage = ({ headline, logo, title, text, MDlogo }: CardWithoutIm
               <Image src={MDlogo} alt="logo" width={44} height={44} className="h-11 w-auto" />
             </div>
           </div>
-          <div className="font-albert text-[16px] md:text-[18px] tracking-[3%] font-normal text-text-black">
+          <div className="font-albert text-[16px] md:text-[20px] tracking-[3%] font-normal text-text-black">
             {text}
           </div>
         </div>
