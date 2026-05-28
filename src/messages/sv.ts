@@ -311,6 +311,11 @@ type MessagesSvType = {
     text: string,
     buttonText: string
   },
+  interestBtn: {
+    title: string,
+    text: string,
+    buttonText: string
+  },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
   myset03: Record<string, string>,
@@ -339,6 +344,20 @@ type MessagesSvType = {
   konvojenButton: string,
   union: Record<string, string>,
   download: string,
+  
+  GroupIntro: {
+    FAMheadline: string, 
+    FAMtitle: string, 
+    FAMtext: string, 
+    SJMtitle: string, 
+    SJMtext: string, 
+    KAPtitle: string, 
+    KAPtext: string, 
+    KONtitle: string, 
+    KONtext: string, 
+    UTtitle: string, 
+    UTtext: string, 
+  }, 
   optimisterSection: {
     title: string,
     title02: string,
@@ -905,13 +924,32 @@ export const Sv: MessagesSvType = {
     p0: "Vi håller regelbundet kårstämmor för att fatta gemensamma beslut som rör föreningen. Kårstämmornas innehåll dokumenteras och går att ladda ner och läsa."
   },
   download: "Ladda ner ",
+
+  GroupIntro: {
+    FAMheadline: "Avdelningar", 
+    FAMtitle: "Familjescouter", 
+    FAMtext: "Genom Familjescouting får barn under åtta år tillsammans med en eller flera vuxna på ett roligt och lekfullt sätt möta scouting.", 
+    SJMtitle: "Sjöhumlorna", 
+    SJMtext: "De yngsta scouterna upptäcker sjölivet genom lek, sång och små äventyr vid vattnet. Här lär man sig samarbeta, knyta sina första knopar och känna sig hemma i naturen.", 
+    KAPtitle: "Kaparna",
+    KAPtext: "Nu blir det mer segling och längre utflykter i skärgården. Kaparna tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.", 
+    KONtitle: "Konvojen", 
+    KONtext: "Här seglar man större jollar och planerar egna hajker tillsammans med ledarna. Konvojen lär sig leda, fatta beslut och hantera utmaningar både till sjöss och på land.", 
+    UTtitle: "Utmanare", 
+    UTtext: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.", 
+  },
   optimisterSection: {
-    title: "Optimister",
-    title02: "2-kronor",
-    title03: "Kölbåtar",
-    text: "Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
-    text02: "Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
-    text03: "Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
+    title:"Optimister",
+    title02:"2-kronor",
+    title03:"Kölbåtar",
+    text:"Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
+    text02:"Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
+    text03:"Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
+  },
+  interestBtn: {
+    title: "Vill du gå med i Scouterna?",
+    text: "Om du är intresserad av att gå med i HSS som Scout, ledare eller engagerad förälder går det bra att anmäla ditt intresse via vårt formulär.",
+    buttonText: "Gå med i Scouterna"
   },
   ruffenDivisions: {
     t0: "Avdelningsmöten",

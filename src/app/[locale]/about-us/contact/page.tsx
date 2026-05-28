@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
+import JoinPage from "@/components/JoinPage";
 
 
 
@@ -26,6 +27,12 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"}/>
       <ContentSection sectionLayout={["t", "p"]} page={"form_title"} />
+      <JoinPage 
+      title={messages?.interestBtn.title}
+      text={messages?.interestBtn.text}
+      buttonText={messages?.interestBtn.buttonText}
+      className="items-start text-left"
+      />
     </div>
   )
 }
