@@ -58,13 +58,13 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                     <p className="font-medium text-h2 text-primary md:text-h2-desktop">
                         {messages?.faqContact?.title}
                     </p>
-                    <p className="text-[16px] font-normal text-text-black md:text-[18px]">
+                    <p className="text-body md:text-body-desktop font-normal text-text-black">
                         {messages?.faqContact?.text}
                     </p>
                 </div>
                 <div className="flex items-center gap-3">
                     <Image src="/blueMailYellowBg.svg" alt="logo" width={44} height={44} className="" />
-                    <a href="mailto:info@hss-scout.org" className="text-text-black font-normal text-[16px] md:text-[18px] hover:underline">
+                    <a href="mailto:info@hss-scout.org" className="text-text-black font-normal text-body md:text-body-desktop hover:underline">
                         info@hss-scout.org
                     </a>
                 </div>

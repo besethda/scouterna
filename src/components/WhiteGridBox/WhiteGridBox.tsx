@@ -18,7 +18,7 @@ const WhiteGridBox = ({logoUrl, messageTitle, messageTextIndex, backgroundWhite}
           <div className="h-10 w-10">
             <Image src={`${logoUrl}`} alt={`${messageTextIndex + messageTitle}`} width={40} height={40} className="object-contain"/>
           </div>
-          <div className="px-3 whitespace-nowrap">{(messages as any)?.[messageTitle][`header${messageTextIndex}`]}</div>
+          <div className="px-3 font-albert whitespace-nowrap">{(messages as any)?.[messageTitle][`header${messageTextIndex}`]}</div>
         </div>
         <AiOutlineDownCircle className={`w-7 h-7 lg:hidden cursor-pointer transform transition-transform duration-200 ${isOpen ? "rotate-180" : "rotate-0"}`} />
       </div>

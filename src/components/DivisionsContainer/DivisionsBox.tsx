@@ -24,11 +24,11 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
         {boxStyle !== "image" ? <div className={`w-16 h-16 rounded-xl flex justify-center items-center ${colorReference[division][1]}`}>
           <Image src={`/${division.toLowerCase()}.svg`} width={48} height={48} alt={messages?.division[`${division}_title`] ?? ""} className="bg-white" />
         </div>
-          : <div className="text-h2 font-varela pt-4 text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
+          : <div className="text-h2 font-albert pt-4 text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
         <div className="font-bold text-sm text-primary font-public tracking-widest uppercase text-right">{messages?.division[`${division}_ages`] ?? ""}</div>
       </div>
       <div className={`mt-3 order-2 ${boxStyle === "image" && "md:max-w-[50%] lg:max-w-[70%] lg:pr-5"}`}>
-        {boxStyle !== "image" && <div className="text-h3 font-varela text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
+        {boxStyle !== "image" && <div className="text-h3 font-albert text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
         {boxStyle === "info" && <div className="text-text-black pt-1 pb-3">
           <div className="text-body font-varela">{messages?.division.day} {messages?.division[`${division}_day`] ?? ""}</div>
           <div className="text-body font-varela">{messages?.division.time} {messages?.division[`${division}_time`] ?? ""}</div>

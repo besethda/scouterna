@@ -39,8 +39,8 @@ const HomeSection = () => {
             className="rounded-2xl object-cover" />
         </div>
         <div className="flex flex-col flex-1 gap-4">
-          <div className="text-h2-desktop font-normal font-varela text-primary tracking-[-0.5%]">{messages?.homePage?.title}</div>
-          <div className=" font-normal font-albert text-[18px] tracking-[3%] text-text-black">{messages?.homePage?.subtitle2}</div>
+          <div className="text-h2 md:text-h2-desktop font-normal font-albert text-primary tracking-[-0.5%]">{messages?.homePage?.title}</div>
+          <div className="font-albert text-body md:text-body-desktop tracking-[3%] text-text-black">{messages?.homePage?.subtitle2}</div>
           <CTABtn text={messages?.homePage?.button} />
         </div>
       </section>

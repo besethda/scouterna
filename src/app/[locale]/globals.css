@@ -28,10 +28,10 @@
 
 
     /* Font */
-    --font-fraunces: "Fraunces", serif;
-    --font-varela: "Varela Round", sans-serif;
+    --font-fraunces: "Albert Sans", sans-serif;
+    --font-varela: "Albert Sans", sans-serif;
     --font-albert: "Albert Sans", sans-serif;
-    --font-public: "public sans", sans-serif;
+    --font-public: "Albert Sans", sans-serif;
 
 
     /* Dektop */
@@ -40,7 +40,8 @@
     --text-hero-desktop-bold--font-weight: 700;
 
     --text-h1-desktop--font-family: var(--font-albert);
-    --text-h1-desktop: 48px;
+    --text-h1-desktop: 64px; 
+    /* 48 */
 
     --text-h2-desktop--font-family: var(--font-albert);
     --text-h2-desktop: 40px;
@@ -49,10 +50,10 @@
     --text-h3-desktop: 24px;
 
     --text-body-desktop--font-family: var(--font-albert);
-    --text-body-desktop: 28px;
+    --text-body-desktop: 21px;
 
     --text-body-bold-desktop--font-family: var(--font-albert);
-    --text-body-bold-desktop: 18px;
+    --text-body-bold-desktop: 21px;
     --text-body-bold-desktop--font-weight: 700;
 
     --text-button-desktop--font-family: var(--font-albert);

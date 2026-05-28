@@ -66,12 +66,12 @@ const Header = () => {
         </Link>
         <div className='hidden lg:flex gap-6 text-primary font-semibold text-link-desktop tracking-[0.03em] '>
           <Link href={messages?.path + '/join/become-a-scout'} className="flex gap-2.5 items-center">
-            <Image src={Hand} alt='HandLogo' className='h-8.25 w-auto' />
-            <p className="font-albert  tracking-[3%] leading-[100%] text-text-black ">{messages?.header?.header_join}</p>
+            <Image src={Hand} alt='HandLogo' className='h-7 w-auto' />
+            <p className="font-albert  tracking-[3%] leading-[100%] text-primary ">{messages?.header?.header_join}</p>
           </Link>
           <Link href="https://www.scoutnet.se/f/login" className="flex gap-2.5 items-center">
             <Image src={Key} alt='key' className='h-5.75 w-auto' />
-            <p className="font-albert tracking-[3%] leading-[100%] text-text-black  ">Scoutnet</p>
+            <p className="font-albert tracking-[3%] leading-[100%] text-primary  ">Scoutnet</p>
           </Link>
           <LanguageSelector />
         </div>
