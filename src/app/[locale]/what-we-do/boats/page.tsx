@@ -14,7 +14,17 @@ const Boats = () => {
         <div>
             <CardWithoutImage headline={messages?.boatsCard?.headline} logo="/blueBoat.svg" title={messages?.boatsCard?.title} text={messages?.boatsCard?.text} MDlogo="/blueBoatYellowBg.svg" />
             <Optimister 
-            title={messages.optimister.title}/>
+                title={messages?.optimisterSection?.title}
+                text={messages?.optimisterSection?.text}
+            />
+            {/*<Optimister 
+                title={messages?.optimisterSection?.title02}
+                text={messages?.optimisterSection?.text02}
+            />
+            <Optimister 
+                title={messages?.optimisterSection?.title03}
+                text={messages?.optimisterSection?.text03}
+            />*/}
         </div>
     );
 }

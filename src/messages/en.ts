@@ -233,9 +233,13 @@ export type MessagesEngType = {
     btnMobile: string,
     btnDesktop: string
   },
-  optimister: {
+  optimisterSection: {
     title: string,
-    text: string
+    title02: string,
+    title03: string,
+    text: string,
+    text02: string,
+    text03: string,
   }
 };
 
@@ -505,9 +509,12 @@ export const En: MessagesEngType = {
     btnMobile: "Download PDF",
     btnDesktop: "Download the life jacket policy as PDF"
   },
-  optimister: {
-    title:"",
-    text:""
+  optimisterSection: {
+    title:"Optimists",
+    title02:"02",
+    title03:"03",
+    text:"Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
+    text02:"02",
+    text03:"03"
   }
-  
 };

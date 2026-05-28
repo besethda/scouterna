@@ -123,7 +123,7 @@ type MessagesSvType = {
     card_headline_4: string,
     card_text_4: string,
     span_4: string
-  }
+  };
   hero: {
     hero_title: string,
     hero_subtitle01: string,
@@ -167,7 +167,7 @@ type MessagesSvType = {
       faq: string,
       [key: string]: string
     }
-  };
+  },
   faqCard: {
     title: string,
     text: string
@@ -233,9 +233,13 @@ type MessagesSvType = {
     btnMobile: string,
     btnDesktop: string
   },
-    optimister: {
-    title:string,
-    text:string
+  optimisterSection: {
+    title: string,
+    title02: string,
+    title03: string,
+    text: string,
+    text02: string,
+    text03: string,
   }
 
 };
@@ -502,10 +506,18 @@ export const Sv: MessagesSvType = {
   safetyCard: {
     headline: "Säkerhet",
     title: "HSS Flytvästpolicy",
-    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy.  Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
+    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
     }, 
   safetyBtn: {
     btnMobile: "Ladda ner PDF",
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
+  },
+  optimisterSection: {
+    title:"Optimister",
+    title02:"02",
+    title03:"03",
+    text:"Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
+    text02:"02",
+    text03:"03"
   }
 };

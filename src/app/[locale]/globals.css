@@ -80,6 +80,10 @@
     --text-h3--font-family: var(--font-varela);
     --text-h3: 18px;
 
+    --text-big-body--font-family: var(--font-albert);
+    --text-big-body: 22px;
+    --text-big-body--font-weight: 500;
+
     --text-body--font-family: var(--font-albert);
     --text-body: 16px;
 
