@@ -341,6 +341,24 @@ type MessagesSvType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  
+  GroupIntro: {
+    FAMheadline: string, 
+    FAMtitle: string, 
+    FAMtext: string, 
+
+    SJMtitle: string, 
+    SJMtext: string, 
+
+    KAPtitle: string, 
+    KAPtext: string, 
+
+    KONtitle: string, 
+    KONtext: string, 
+
+    UTtitle: string, 
+    UTtext: string, 
+  }
 };
 
 export const Sv: MessagesSvType = {
@@ -894,4 +912,18 @@ export const Sv: MessagesSvType = {
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
+
+  GroupIntro: {
+    FAMheadline: "Avdelningar", 
+    FAMtitle: "Familjescouter", 
+    FAMtext: "Genom Familjescouting får barn under åtta år tillsammans med en eller flera vuxna på ett roligt och lekfullt sätt möta scouting.", 
+    SJMtitle: "Sjöhumlorna", 
+    SJMtext: "De yngsta scouterna upptäcker sjölivet genom lek, sång och små äventyr vid vattnet. Här lär man sig samarbeta, knyta sina första knopar och känna sig hemma i naturen.", 
+    KAPtitle: "Kaparna",
+    KAPtext: "Nu blir det mer segling och längre utflykter i skärgården. Kaparna tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.", 
+    KONtitle: "Konvojen", 
+    KONtext: "Här seglar man större jollar och planerar egna hajker tillsammans med ledarna. Konvojen lär sig leda, fatta beslut och hantera utmaningar både till sjöss och på land.", 
+    UTtitle: "Utmanare", 
+    UTtext: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.", 
+  }
 };
