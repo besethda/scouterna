@@ -239,6 +239,7 @@ export type MessagesEngType = {
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
+  offers: Record<string, string>
   map: Record<string, string>
   scoutLife: Record<string, string>
   learning: Record<string, string>
@@ -685,6 +686,17 @@ export const En: MessagesEngType = {
     text0: "We learn how to handle boats, tie knots, and navigate safely at sea.",
     text1: "We learn about animals and plants, nature's cycles, and how we can take care of the environment.",
     text2: "We learn how to cook outdoors, set up tents, and spend time in nature in a safe and secure way."
+  },
+  offers: {
+    title: "What Scout Life Offers",
+    header0: "Life on the waves",
+    header1: "Naturally exciting",
+    header2: "Confidence in yourself",
+    header3: "Friends for life",
+    text0: "Together we explore, sail, and challenge ourselves with laughter, community, and the spray of salt water in the air. It’s real adventure—and it begins on the water.",
+    text1: "With soil on our hands and fresh air in our lungs, every meeting becomes an adventure—where nature is our playground and movement is a natural part of everything we do.",
+    text2: "We learn by doing things ourselves. With every step you take and every challenge you dare to face, your courage grows—and you discover just how much you can actually achieve.",
+    text3: "Through everything we experience together, strong bonds are formed. Here you can find good friends—the kind that stick around long after the adventure is over."
   },
   faq: {
     title: "Join the Scouts",

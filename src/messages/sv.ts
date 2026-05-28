@@ -243,6 +243,7 @@ type MessagesSvType = {
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
+  offers: Record<string, string>
   map: Record<string, string>
   scoutLife: Record<string, string>
   learning: Record<string, string>
@@ -669,6 +670,17 @@ export const Sv: MessagesSvType = {
     p0: "404418 - 6",
     s1: "Organisationsnummer",
     p1: "802006 - 2389"
+  },
+  offers: {
+    title: "Vad Scoutlivet erbjuder",
+    header0: "Livet på vågorna",
+    header1: "Naturligt spännande",
+    header2: "Trygghet i dig själv",
+    header3: "Vänner för livet",
+    text0: "Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
+    text1: "Med jord på händerna och frisk luft i lungorna blir varje möte ett äventyr - där naturen är vår plats och rörelse är en självklar del av allt vi gör.",
+    text2: "Vi lär oss genom att göra själva. För varje steg du tar, varje utmaning du vågar möta, växer modet - och du upptäcker hur mycket du faktiskt klarar av.",
+    text3: "Genom allt vi upplever tillsammans växer starka band fram. Här kan du finna goda vänner - sådana som finns kvar långt efter att äventyret är över."
   },
   map: {
     t0: "Vägbeskrivning",
