@@ -32,12 +32,9 @@ const Groups = ({
 }: {
   params: Promise<{ locale: string; singleGroup: string }>;
 }) => {
-<<<<<<< HEAD
 
 
   
-=======
->>>>>>> HSS-72-Contact-Us
   const { singleGroup, locale } = use(params);
   const messages = locale === "en" ? En : Sv;
 
