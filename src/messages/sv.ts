@@ -282,6 +282,15 @@ type MessagesSvType = {
     headline: string, 
     title: string, 
     text: string
+  }, 
+  joinContent: {
+    title: string, 
+    text: string, 
+    button: string, 
+    text02: string, 
+    button02: string, 
+    title02: string, 
+    text03: string
   },
   joinPage: {
     title: string,
@@ -730,6 +739,15 @@ export const Sv: MessagesSvType = {
     headline: "Avdelningar", 
     title: "Åldersanpassade avdelningar", 
     text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
+  }, 
+  joinContent: {
+    title: "Scoutledare", 
+    text: "Som vuxen kan du göra en viktig insats som scoutledare. Du coachar scouterna och skapar en trygg miljö för att ge scouterna utrymme att våga och utvecklas. Alla våra Scoutledare ska gå utbildningen Trygga Möten.", 
+    button: "Kom igång med trygga möten", 
+    text02: "Efter kursen Trygga Möten kan du, om du vill, fortsätta utbilda dig. Vi rekommenderar att gå kursen Leda Scouting. Du kan läsa mer om våra utbildningar på Ledarskapsön.", 
+    button02: "Besök Ledarskapsön", 
+    title02: "Förälder", 
+    text03: "Som förälder är du en viktig del av HSS Scouterna. Det är tack vare engagerade vuxna som som vi kan ge barnen alla de upplevelser och möjligheter som scouterna erbjuder. Du behöver inte ha någon tidigare erfarenhet av scouting – det viktigaste är viljan att hjälpa till. "
   },
   joinPage: {
     title: "Anmäl ditt intresse",
