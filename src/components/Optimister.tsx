@@ -24,9 +24,9 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
     return (
         <div className='w-full bg-bg-blue pb-13.25 overflow-hidden'>
             <div className='mx-auto w-[80%]'>
-                <div className='flex flex-col gap-2 py-4 md:w-120'>
-                    <h2 className='text-h2 font-albert text-primary md:text-h2-desktop'>{title}</h2>
-                    <p className='text-body font-albert md:text-body-desktop'>{text}</p>
+                <div className='flex flex-col gap-2 py-4 lg:w-120'>
+                    <h2 className='text-h2 font-albert text-primary lg:text-h2-desktop'>{title}</h2>
+                    <p className='text-body font-albert lg:text-body-desktop'>{text}</p>
                 </div>
                 <div
                     ref={middleImageRef}
@@ -37,7 +37,7 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
                         <div 
                             key={index}
                             className='w-52.5 h-25 snap-center shrink-0 relative overflow-hidden rounded-2xl 
-                            lg:w-full lg:flex-1 lg:h-52 lg:snap-none' 
+                            lg:w-[33vw] lg:flex-1 lg:h-52 lg:snap-none' 
                         >
                             <Image
                                 src={imgbox}
