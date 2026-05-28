@@ -336,6 +336,14 @@ export type MessagesEngType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  optimisterSection: {
+    title: string,
+    title02: string,
+    title03: string,
+    text: string,
+    text02: string,
+    text03: string,
+  }
 };
 
 export const En: MessagesEngType = {
@@ -664,6 +672,17 @@ export const En: MessagesEngType = {
     s1: "Organisationsnummer",
     p1: "802006 - 2389"
   },
+  offers: {
+    title: "What Scout Life Offers",
+    header0: "Life on the waves",
+    header1: "Naturally exciting",
+    header2: "Confidence in yourself",
+    header3: "Friends for life",
+    text0: "Together we explore, sail, and challenge ourselves with laughter, community, and the spray of salt water in the air. It’s real adventure—and it begins on the water.",
+    text1: "With soil on our hands and fresh air in our lungs, every meeting becomes an adventure—where nature is our playground and movement is a natural part of everything we do.",
+    text2: "We learn by doing things ourselves. With every step you take and every challenge you dare to face, your courage grows—and you discover just how much you can actually achieve.",
+    text3: "Through everything we experience together, strong bonds are formed. Here you can find good friends—the kind that stick around long after the adventure is over."
+  },
   map: {
     t0: "Directions",
     p0: "Turn down onto Hässelby Strandväg from Sandviksvägen. There is a parking lot by the beach where you can park your car.",
@@ -686,17 +705,6 @@ export const En: MessagesEngType = {
     text0: "We learn how to handle boats, tie knots, and navigate safely at sea.",
     text1: "We learn about animals and plants, nature's cycles, and how we can take care of the environment.",
     text2: "We learn how to cook outdoors, set up tents, and spend time in nature in a safe and secure way."
-  },
-  offers: {
-    title: "What Scout Life Offers",
-    header0: "Life on the waves",
-    header1: "Naturally exciting",
-    header2: "Confidence in yourself",
-    header3: "Friends for life",
-    text0: "Together we explore, sail, and challenge ourselves with laughter, community, and the spray of salt water in the air. It’s real adventure—and it begins on the water.",
-    text1: "With soil on our hands and fresh air in our lungs, every meeting becomes an adventure—where nature is our playground and movement is a natural part of everything we do.",
-    text2: "We learn by doing things ourselves. With every step you take and every challenge you dare to face, your courage grows—and you discover just how much you can actually achieve.",
-    text3: "Through everything we experience together, strong bonds are formed. Here you can find good friends—the kind that stick around long after the adventure is over."
   },
   faq: {
     title: "Join the Scouts",
@@ -890,4 +898,12 @@ export const En: MessagesEngType = {
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
+  optimisterSection: {
+    title:"Optimists",
+    title02:"2-kronor",
+    title03:"Keelboats",
+    text:"Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
+    text02:"Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
+    text03:"Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
+  }
 };
