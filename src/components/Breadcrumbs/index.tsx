@@ -42,7 +42,7 @@ const Breadcrumbs = () => {
   const messages = useMessages();
 
   return (
-    <div className="shrink-0">
+    <div className="shrink-0 mt-2">
       {pathname !== "/en" && pathname !== "/sv" && (
         <div className="flex items-center gap-1 text-body md:text-body-desktop py-2 px-3 md:px-45">
           <a href={messages?.breadcrumbs.path} className="font-albert hover:text-accent duration-100 text-primary">{messages?.breadcrumbs.title}</a>
