@@ -9,17 +9,17 @@ const unionList = [
     {
         name: "HSS kårstämma 2025-10",
         published: "2025-10",
-        url: ""
+        url: "/pdfs/HSS_kårstämma_2025-10.pdf"
     },
     {
         name: "HSS kårstämma 2025-06",
         published: "2025-06",
-        url: ""
+        url: "/pdfs/HSS_kårstämma_2025-06.pdf"
     },
     {
         name: "HSS kårstämma 2024-10",
         published: "2024-10",
-        url: ""
+        url: "/pdfs/HSS_kårstämma_2024-10.pdf"
     }
 ]
 
@@ -38,9 +38,9 @@ const Union = () => {
                 {unionList.map((item, index) => (
                     <div key={index} className="flex gap-2 items-center ">
                         <Image src={download} alt={item.name} />
-                        <Link href={item.url} className="justify-center underline tracking-[0.03em]">
+                        <a href={item.url} className="justify-center underline tracking-[0.03em]">
                             {messages?.download}HSS {messages?.union?.t0.toLowerCase()} {item.published}
-                        </Link>
+                        </a>
                     </div>
                 ))}
             </div>
