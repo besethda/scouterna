@@ -336,6 +336,8 @@ export type MessagesEngType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  scoutnet: Record<string, string>
+  scoutnetButton: string,
 };
 
 export const En: MessagesEngType = {
@@ -890,4 +892,10 @@ export const En: MessagesEngType = {
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
+  scoutnet: {
+    t0: "Scoutnet",
+    p0: "Scoutnet is the Scouts' common system where all information about members and activities is gathered.",
+    p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
+},
+  scoutnetButton: "Log in to Scoutnet",
 };

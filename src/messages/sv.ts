@@ -341,6 +341,8 @@ type MessagesSvType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  scoutnet: Record<string, string>
+  scoutnetButton: string,
 };
 
 export const Sv: MessagesSvType = {
@@ -894,4 +896,10 @@ export const Sv: MessagesSvType = {
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
+  scoutnet: {
+    t0:"Scoutnet",
+    p0:"Scoutnet är Scouternas gemensamma stystem där all information om medlemmar och aktiviteter finns samlad.",
+    p1:"Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
+  },
+  scoutnetButton: "Logga in på Scoutnet"
 };
