@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { getPageHeadTitle } from "@/lib/utils"
 import ContentSection from "@/components/ContentSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -25,15 +24,6 @@ const History = ({params}:{params: Promise<{locale: string}>}) => {
         <div>
             <Breadcrumbs />
             <ContentSection sectionLayout={["h", "p", "p", "p", "p", "p"]} page="history" background={"blue"} />
-=======
-
-
-const History = () => {
-
-    return (
-        <div>
-            
->>>>>>> HSS-059-Optimister
         </div>
     );
 }
