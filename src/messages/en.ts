@@ -309,6 +309,15 @@ export type MessagesEngType = {
     text: string,
     buttonText: string
   },
+  form: {
+    title:string,
+    text:string,
+    lastName:string,
+    firstName:string,
+    email:string,
+    message:string,
+    buttonText:string
+  },
   myset01: Record<string, string>
   myset02: Record<string, string>
   myset03: Record<string, string>,
@@ -878,4 +887,13 @@ export const En: MessagesEngType = {
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
+  form: {
+    title: "Send a message",
+    text: "You can send a message directly to our email using the form.",
+    firstName: "First name",
+    lastName: "Last name",
+    email: "Email",
+    message: "Message",
+    buttonText: "Send message"
+  }
 };

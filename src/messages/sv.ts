@@ -314,6 +314,15 @@ type MessagesSvType = {
     text: string,
     buttonText: string
   },
+  form: {
+    title:string,
+    text:string,
+    lastName:string,
+    firstName:string,
+    email:string,
+    message:string,
+    buttonText:string
+  },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
   myset03: Record<string, string>,
@@ -882,4 +891,13 @@ export const Sv: MessagesSvType = {
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
+  form: {
+    title:"Skicka ett meddelande",
+    text:"Det går bra att skicka ett meddelande direkt till vår e-post via formuläret.",
+    lastName:"Namn",
+    firstName:"Efternamn",
+    email:"E-post",
+    message:"Meddelande",
+    buttonText:"Skicka meddelande"
+  }
 };

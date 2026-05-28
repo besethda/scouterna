@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
+import ContactForm from "@/components/ContactForm";
 
 
 
@@ -26,6 +27,15 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"}/>
       <ContentSection sectionLayout={["t", "p"]} page={"form_title"} />
+      <ContactForm 
+      title={messages?.form.title}
+      text={messages?.form.text}
+      lastName={messages?.form.lastName}
+      firstName={messages?.form.firstName}
+      email={messages?.form.email}
+      message={messages?.form.message}
+      buttonText={messages?.form.buttonText}
+      />
     </div>
   )
 }
