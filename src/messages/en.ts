@@ -279,6 +279,10 @@ export type MessagesEngType = {
     title: string, 
     text: string
   }, 
+  faqContact: {
+    title: string, 
+    text: string
+  },
   joinContent: {
     title: string, 
     text: string, 
@@ -734,6 +738,10 @@ export const En: MessagesEngType = {
     title: "Age groups", 
     text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In the Senior Scouts (Utmanarna), our oldest scout group, members can join from the age of 15."
   }, 
+  faqContact: {
+    title: "Contact us", 
+    text: "We hope you've found the answers to your questions. However, if there is anything else you are still wondering about, feel free to contact us and we'll help you out."
+  },
   joinContent: {
     title: "Scout Leader", 
     text: "As an adult, you can make a vital impact as a scout leader. You will coach the scouts and create a safe environment that encourages them to challenge themselves and grow. All our Scout Leaders are required to complete the Safe Meetings (Trygga Möten) training.", 
@@ -742,6 +750,7 @@ export const En: MessagesEngType = {
     button02: "Visit Leadership Island", 
     title02: "Parent", 
     text03: "As a parent, you play an important part in HSS Scouterna. It is thanks to committed adults that we are able to provide children with all the experiences and opportunities that scouting offers. You don't need any prior experience with scouting – the most important thing is your willingness to help out."
+  
   },
   joinPage: {
   title: "Express Your Interest",

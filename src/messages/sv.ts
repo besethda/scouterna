@@ -283,6 +283,11 @@ type MessagesSvType = {
     title: string, 
     text: string
   }, 
+  faqContact: {
+    title: string, 
+    text: string
+  },
+
   joinContent: {
     title: string, 
     text: string, 
@@ -740,6 +745,10 @@ export const Sv: MessagesSvType = {
     title: "Åldersanpassade avdelningar", 
     text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
   }, 
+  faqContact: {
+    title: "Kontakta oss", 
+    text: "Vi hoppas du fått svar på dina frågor, men är det någonting du fortfarande undrar över kan du kontakta kåren så hjälper vi dig."
+  },
   joinContent: {
     title: "Scoutledare", 
     text: "Som vuxen kan du göra en viktig insats som scoutledare. Du coachar scouterna och skapar en trygg miljö för att ge scouterna utrymme att våga och utvecklas. Alla våra Scoutledare ska gå utbildningen Trygga Möten.", 
@@ -754,6 +763,7 @@ export const Sv: MessagesSvType = {
     text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
     buttonText: "Gå med i Scouterna"
   },
+
   sjohumlornaSpårarscouter:{
       h0:"Spårarscouter",
       p0:"Scouterna på avdelningen Sjöhumlorna är Spårarscouter. Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klara av.",
