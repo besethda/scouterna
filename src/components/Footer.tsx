@@ -47,8 +47,8 @@ const Footer = () => {
                         <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
                         <p className="text-body xl:text-body-desktop xl:text-lg">info@hss-scout.org</p>
                     </a>
-                    <div className='hidden xl:flex gap-2.5 leading-[1.2]' >
-                        <Image src={locationIcon} alt='email icon' className='w-6 h-6' />
+                    <div className='hidden xl:flex relative -translate-x-1 gap-2.5 leading-[1.2]' >
+                        <Image src={locationIcon} alt='email icon' className='w-8 h-8' />
                         <p className="text-body xl:text-body-desktop xl:text-lg">Maltesholmsbadet <br />165 73 Hässelby</p>
                     </div>
                 </div>

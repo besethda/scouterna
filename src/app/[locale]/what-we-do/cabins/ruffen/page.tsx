@@ -1,10 +1,12 @@
-import { getPageHeadTitle } from "@/lib/utils"
 import CardWithImage from "@/components/CardWithImage";
 import DivisionsBox from "@/components/DivisionsContainer/DivisionsBox";
 import MapWrapper from "@/components/Map/MapWrapper";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
+import ContentSection from "@/components/ContentSection";
+import { getPageHeadTitle } from "@/lib/utils"
+
 
 
 const pageItem = "ruffen"
@@ -28,6 +30,7 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <DivisionsBox division={"konvojen"} boxStyle={"info"} />
                 <DivisionsBox division={"familjescouter"} boxStyle={"info"} />
             </div>
+            <ContentSection sectionLayout={["t", "p", "p"]} page={"map"} />
             <MapWrapper />
         </div>
     );

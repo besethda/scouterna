@@ -53,7 +53,7 @@ const Breadcrumbs = () => {
 
             return ( // page["about-us"] = page.about-us, item is a variable like let item = "about-us" 
               <span key={index} className="text-albert">
-                <span> / </span>
+                <span className="px-3">  /  </span>
                 {routes[currentPath] ? (
                   <Link href={href} className={index +1 === breadcrumbsArray.length? "text-black font-bold" : "text-[#3b3a3a]"}>
                     {messages?.breadcrumbs.page[item]} 
