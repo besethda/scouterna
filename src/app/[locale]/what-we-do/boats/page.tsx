@@ -16,7 +16,10 @@ import Image08 from '../../../../../public/images/DSCF3089.jpg';
 import Image09 from '../../../../../public/images/DSCF3095.jpg';
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> HSS-096-Instagram-Fix
 const pageItem = "boats"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
@@ -25,11 +28,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 
 const Boats = ({params}:{params: Promise<{locale: string}>}) => {
+<<<<<<< HEAD
     
     const images = [Image01, Image02, Image03];
     const images02 = [Image04, Image05, Image06];
     const images03 = [Image07, Image08, Image09];
 
+=======
+    const images = [Image01, Image02, Image03];
+    const images02 = [Image04, Image05, Image06];
+    const images03 = [Image07, Image08, Image09];
+>>>>>>> HSS-096-Instagram-Fix
     const {locale} = use(params)
     const messages = locale === "en" ? En : Sv
     return (
