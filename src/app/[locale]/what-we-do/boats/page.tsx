@@ -16,12 +16,12 @@ import Image08 from '../../../../../public/images/DSCF3089.jpg';
 import Image09 from '../../../../../public/images/DSCF3095.jpg';
 
 
+
 const pageItem = "boats"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
     return getPageHeadTitle(locale, pageItem)
 }
-
 
 const Boats = ({params}:{params: Promise<{locale: string}>}) => {
     const images = [Image01, Image02, Image03];

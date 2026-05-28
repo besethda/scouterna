@@ -336,6 +336,8 @@ export type MessagesEngType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  union: Record<string, string>
+  download: string,
   optimisterSection: {
     title: string,
     title02: string,
@@ -579,7 +581,7 @@ export const En: MessagesEngType = {
     text: "In the forest between Lövsta and Gåseborg lies Myset – our large and beautiful scout cabin. This is where the troop gathers for a variety of activities, especially hikes that offer both adventure and fellowship.",
   },
   history: {
-    h0: "The History of HSS",
+    t0: "The History of HSS",
     p0: "The scout group was founded in 1959 and grew rapidly.",
     p1: "The commitment was immense, especially from parents who helped organize activities, raise funds, and build up the operations.",
     p2: "The very first boat, a 'Blekingeeka' (traditional wooden boat) named 'Inga-Lunda', marked the beginning of the group's seafaring life. Over time, more boats could be purchased thanks to bazaars, lotteries, and hard work.",
@@ -672,6 +674,17 @@ export const En: MessagesEngType = {
     s1: "Organisationsnummer",
     p1: "802006 - 2389"
   },
+  offers: {
+    title: "What Scout Life Offers",
+    header0: "Life on the waves",
+    header1: "Naturally exciting",
+    header2: "Confidence in yourself",
+    header3: "Friends for life",
+    text0: "Together we explore, sail, and challenge ourselves with laughter, community, and the spray of salt water in the air. It’s real adventure—and it begins on the water.",
+    text1: "With soil on our hands and fresh air in our lungs, every meeting becomes an adventure—where nature is our playground and movement is a natural part of everything we do.",
+    text2: "We learn by doing things ourselves. With every step you take and every challenge you dare to face, your courage grows—and you discover just how much you can actually achieve.",
+    text3: "Through everything we experience together, strong bonds are formed. Here you can find good friends—the kind that stick around long after the adventure is over."
+  },
   map: {
     t0: "Directions",
     p0: "Turn down onto Hässelby Strandväg from Sandviksvägen. There is a parking lot by the beach where you can park your car.",
@@ -694,17 +707,6 @@ export const En: MessagesEngType = {
     text0: "We learn how to handle boats, tie knots, and navigate safely at sea.",
     text1: "We learn about animals and plants, nature's cycles, and how we can take care of the environment.",
     text2: "We learn how to cook outdoors, set up tents, and spend time in nature in a safe and secure way."
-  },
-  offers: {
-    title: "What Scout Life Offers",
-    header0: "Life on the waves",
-    header1: "Naturally exciting",
-    header2: "Confidence in yourself",
-    header3: "Friends for life",
-    text0: "Together we explore, sail, and challenge ourselves with laughter, community, and the spray of salt water in the air. It’s real adventure—and it begins on the water.",
-    text1: "With soil on our hands and fresh air in our lungs, every meeting becomes an adventure—where nature is our playground and movement is a natural part of everything we do.",
-    text2: "We learn by doing things ourselves. With every step you take and every challenge you dare to face, your courage grows—and you discover just how much you can actually achieve.",
-    text3: "Through everything we experience together, strong bonds are formed. Here you can find good friends—the kind that stick around long after the adventure is over."
   },
   faq: {
     title: "Join the Scouts",
@@ -826,84 +828,89 @@ export const En: MessagesEngType = {
     text: "View floor plan"
   },
   sjohumlornaSpårarscouter: {
-    h0: "Spårarscouts",
+    s0: "Spårarscouts",
     p0: "The scouts at the Sjöhumlorna section are Spårarscouts. Spårarna is the beginning of the scouting journey, where each child gets to grow, explore, and feel pride in what they can accomplish.",
   },
   sjohumlornaAge: {
-    h0: "Age",
+    s0: "Age",
     p0: "The children at Sjöhumlorna are between 8 and 9 years old.",
   },
   sjohumlorMeeting: {
-    h0: "Section meetings",
+    s0: "Section meetings",
     p0: "Day: Monday",
     p1: "Ruffen at Hässelby Strandbad.",
   },
   sjohumlorPlace: {
-    h0: "Badges",
+    s0: "Badges",
     p0: "For Spårare, there are plenty of exciting badges. Lighting a lantern for the first time can be a big challenge. Or making popcorn on a storm kitchen. There are also badges that focus on how to be a good friend or how to take care of the environment.",
   },
   sjohumlorButton: "Badge poster for Spårare",
   kaparnaUpptäckarscouter: {
-    h0: "Upptäckarscouts",
+    s0: "Upptäckarscouts",
     p0: "Many at this age are curious about the world around them, and at Kaparna we encourage that engagement. We often work practically and concretely - it can range from solving missions together to learning to take responsibility in small and big situations."
   },
   kaparnaAge: {
-    h0: "Age",
+    s0: "Age",
     p0: "The children at Kaparna are between 10 and 11 years old.",
   },
   kaparnaMeeting: {
-    h0: "Section meetings",
+    s0: "Section meetings",
     p0: "Day: Tuesday",
     p1: "Ruffen at Hässelby Strandbad",
   },
   kaparnaPlace: {
-    h0: "Badges",
+    s0: "Badges",
     p0: "There are plenty of badges that suit Upptäckare. For example, they can show that they can handle a knife and axe. Or one of the many interest badges can serve as a framework for the program. There are badges for everything from first aid, fire-making and cooking to water, darkness and superheroes.",
   },
   kaparnaButton: "Badge poster for Upptäckare",
   utmanarscouter: {
-    h0: "Utmanarscouts",
+    s0: "Utmanarscouts",
     p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
   },
   utmanareAge: {
-    h0: "Age",
+    s0: "Age",
     p0: "The scouts in the Utmanare section are 15 years and older.",
   },
   utmanareMeeting: {
-    h0: "Section meetings",
+    s0: "Section meetings",
     p0: "Day: Tuesday or Thursday.",
     p1: "Ruffen at Hässelby Strandbad.",
   },
   utmanarePlace: {
-    h0: "Challenges",
+    s0: "Challenges",
     p0: "There are ten challenges. Two of them are done individually and the rest are done together in the Utmanare team. The individual challenges have slightly stricter rules. The others are decided together in the Utmanare team.",
   },
   utmanareButton: "Discover the challenges",
   äventyrarscouter: {
-    h0: "Äventyrarscouts",
+    s0: "Äventyrarscouts",
     p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
   },
   konvojenAge: {
-    h0: "Age",
+    s0: "Age",
     p0: "The children at Kaparna are between 12 and 14 years old.",
   },
   konvojenMeeting: {
-    h0: "Section meetings",
+    s0: "Section meetings",
     p0: "Day: Thursday",
     p1: "Time: 18:00",
     p2: "Location: Ruffen at Hässelby Strandbad.",
   },
   konvojenPlace: {
-    h0: "Badges",
+    s0: "Badges",
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
+  union: {
+    t0: "Union",
+    p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
+  },
+  download: "Download ",
   optimisterSection: {
-    title:"Optimists",
-    title02:"2-kronor",
-    title03:"Keelboats",
-    text:"Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
-    text02:"Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
-    text03:"Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
+    title: "Optimists",
+    title02: "2-kronor",
+    title03: "Keelboats",
+    text: "Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
+    text02: "Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
+    text03: "Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
   }
 };

@@ -10,14 +10,12 @@ const Instagram = ({ infoText = false, photoObject }: { infoText?: boolean, phot
 
   const messages = useMessages()
 
-  
-
   return (
     <div className="flex w-full justify-center">
       <div className="pb-25 px-4 w-full md:px-17 md:max-w-200 lg:max-w-430">
-        {!infoText ? <div className="text-h2 md:text-h2-desktop text-primary font-varela mx-[1.5%]">{messages?.instagram.head}</div>
+        {!infoText ? <div className="text-h2 md:text-h2-desktop text-primary font-albert mx-[1.5%]">{messages?.instagram.head}</div>
           : <div className="mx-[1.5%]">
-            <div className="text-h2 md:text-h2-desktop text-primary font-varela mb-3">Instagram</div>
+            <div className="text-h2 md:text-h2-desktop text-primary font-albert mb-3">Instagram</div>
             <div className="font-albert text-acc-desktop text-text-black md:text-body-desktop pb-2">{messages?.instagram.text}</div>
           </div>
         }

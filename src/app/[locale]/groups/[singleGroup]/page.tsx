@@ -48,7 +48,7 @@ const Groups = ({
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
             <div className="flex-1">
               <ContentSection
-                sectionLayout={["h", "p"]}
+                sectionLayout={["s", "p"]}
                 page="sjohumlornaSpårarscouter"
                 background={"blue"}
                 padding={"5"}
@@ -65,20 +65,20 @@ const Groups = ({
             </div>
           </div>
           <ContentSection
-            sectionLayout={["h", "p"]}
+            sectionLayout={["s", "p"]}
             page="sjohumlornaAge"
             background={"blue"}
             padding={"3"}
           />
           <div className="flex flex-col gap-4 justify-center pb-4">
             <ContentSection
-              sectionLayout={["h", "p", "p"]}
+              sectionLayout={["s", "p", "p"]}
               page="sjohumlorMeeting"
               background={"blue"}
               padding={"5"}
             />
             <ContentSection
-              sectionLayout={["h", "p"]}
+              sectionLayout={["s", "p"]}
               page="sjohumlorPlace"
               background={"blue"}
               padding={"5"}
@@ -93,6 +93,8 @@ const Groups = ({
            [&_button]:rounded-2xl
            [&_button]:px-6
            [&_button]:py-3
+           [&_button]:hover:bg-green-opaque
+           [&_button]:hover:brightness-102
            pl-4
            "
           >
@@ -111,7 +113,7 @@ const Groups = ({
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
             <div className="flex-1">
               <ContentSection
-                sectionLayout={["h", "p"]}
+                sectionLayout={["s", "p"]}
                 page="kaparnaUpptäckarscouter"
                 background={"blue"}
                 padding={"5"}
@@ -128,20 +130,20 @@ const Groups = ({
             </div>
           </div>
           <ContentSection
-            sectionLayout={["h", "p"]}
+            sectionLayout={["s", "p"]}
             page="kaparnaAge"
             background={"blue"}
             padding={"3"}
           />
           <div className="flex flex-col gap-4 justify-center pb-4">
             <ContentSection
-              sectionLayout={["h", "p", "p"]}
+              sectionLayout={["s", "p", "p"]}
               page="kaparnaMeeting"
               background={"blue"}
               padding={"5"}
             />
             <ContentSection
-              sectionLayout={["h", "p"]}
+              sectionLayout={["s", "p"]}
               page="kaparnaPlace"
               background={"blue"}
               padding={"5"}
@@ -156,6 +158,8 @@ const Groups = ({
            [&_button]:rounded-2xl
            [&_button]:px-6
            [&_button]:py-3
+           [&_button]:hover:bg-lightBlue-opaque
+           [&_button]:hover:brightness-102
            pl-4
            "
           >
@@ -174,7 +178,7 @@ const Groups = ({
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
             <div className="flex-1">
               <ContentSection
-                sectionLayout={["h", "p"]}
+                sectionLayout={["s", "p"]}
                 page="utmanarscouter"
                 background={"blue"}
                 padding={"5"}
@@ -191,20 +195,20 @@ const Groups = ({
             </div>
           </div>
           <ContentSection
-            sectionLayout={["h", "p"]}
+            sectionLayout={["s", "p"]}
             page="utmanareAge"
             background={"blue"}
             padding={"3"}
           />
           <div className="flex flex-col gap-4 justify-center pb-4">
             <ContentSection
-              sectionLayout={["h", "p", "p"]}
+              sectionLayout={["s", "p", "p"]}
               page="utmanareMeeting"
               background={"blue"}
               padding={"5"}
             />
             <ContentSection
-              sectionLayout={["h", "p"]}
+              sectionLayout={["s", "p"]}
               page="utmanarePlace"
               background={"blue"}
               padding={"5"}
@@ -219,6 +223,8 @@ const Groups = ({
            [&_button]:rounded-2xl
            [&_button]:px-6
            [&_button]:py-3
+           [&_button]:hover:bg-pink-opaque
+           [&_button]:hover:brightness-104
            pl-4
            "
           >
@@ -237,7 +243,7 @@ const Groups = ({
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
             <div className="flex-1">
               <ContentSection
-                sectionLayout={["h", "p"]}
+                sectionLayout={["s", "p"]}
                 page="äventyrarscouter"
                 background={"blue"}
                 padding={"5"}
@@ -254,20 +260,20 @@ const Groups = ({
             </div>
           </div>
           <ContentSection
-            sectionLayout={["h", "p"]}
+            sectionLayout={["s", "p"]}
             page="konvojenAge"
             background={"blue"}
             padding={"3"}
           />
           <div className="flex flex-col gap-4 justify-center pb-4">
             <ContentSection
-              sectionLayout={["h", "p", "p", "p"]}
+              sectionLayout={["s", "p", "p", "p"]}
               page="konvojenMeeting"
               background={"blue"}
               padding={"5"}
             />
             <ContentSection
-              sectionLayout={["h", "p"]}
+              sectionLayout={["s", "p"]}
               page="konvojenPlace"
               background={"blue"}
               padding={"5"}
@@ -282,6 +288,8 @@ const Groups = ({
            [&_button]:rounded-2xl
            [&_button]:px-6
            [&_button]:py-3
+           [&_button]:hover:bg-orange-opaque
+           [&_button]:hover:brightness-102
            pl-4
            "
           >
