@@ -124,7 +124,7 @@ type MessagesSvType = {
     card_text_4: string,
     span_4: string
   },
-  hero: {
+  homeHero: {
     hero_title: string,
     hero_subtitle01: string,
     hero_subtitle02: string,
