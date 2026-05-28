@@ -23,7 +23,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return getPageHeadTitle(locale, pageItem)
 }
 
-
 const Boats = ({params}:{params: Promise<{locale: string}>}) => {
     const images = [Image01, Image02, Image03];
     const images02 = [Image04, Image05, Image06];
