@@ -514,10 +514,10 @@ export const Sv: MessagesSvType = {
   },
   optimisterSection: {
     title:"Optimister",
-    title02:"02",
-    title03:"03",
+    title02:"2-kronor",
+    title03:"Kölbåtar",
     text:"Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
-    text02:"02",
-    text03:"03"
+    text02:"Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
+    text03:"Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
   }
 };

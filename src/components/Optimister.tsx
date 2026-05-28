@@ -28,7 +28,7 @@ const Optimister = ({ title, text }: OptimisterProps) => {
     return (
         <div className='w-full bg-bg-blue pb-13.25 overflow-hidden'>
             <div className='mx-auto w-[80%]'>
-                <div className='flex flex-col gap-2 py-4 '>
+                <div className='flex flex-col gap-2 py-4 md:w-120'>
                     <h2 className='text-big-body font-albert text-primary'>{title}</h2>
                     <p className='text-body font-albert'>{text}</p>
                 </div>

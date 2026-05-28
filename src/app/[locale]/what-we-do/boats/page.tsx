@@ -17,14 +17,14 @@ const Boats = () => {
                 title={messages?.optimisterSection?.title}
                 text={messages?.optimisterSection?.text}
             />
-            {/*<Optimister 
+            <Optimister 
                 title={messages?.optimisterSection?.title02}
                 text={messages?.optimisterSection?.text02}
             />
             <Optimister 
                 title={messages?.optimisterSection?.title03}
                 text={messages?.optimisterSection?.text03}
-            />*/}
+            />
         </div>
     );
 }
