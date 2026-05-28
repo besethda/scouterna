@@ -345,11 +345,6 @@ type MessagesSvType = {
     text02: string,
     text03: string,
   }
-  good: Record<string, string>
-  question: Record<string, string>
-  toFAQButton: string,
-  policy: Record<string, string>
-  moreButton: string,
 };
 
 export const Sv: MessagesSvType = {
@@ -909,19 +904,5 @@ export const Sv: MessagesSvType = {
     text:"Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
     text02:"Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
     text03:"Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
-  },
-  good: {
-    h0:"Bra att veta"
-  },
-  question: {
-    t0:"Frågor och funderingar",
-    p0:"Undrar du över någonting kan du besöka vår FAQ. Om du inte hittar svar på dina frågor, höra av dig till någon i kåren."
-  },
-  toFAQButton: "Gå till vår FAQ",
-  policy: {
-    t0:"Flyvästpolicy",
-    p0:"Vi följer en flytvästpolicy för alla Scouters säkerhet.",
-    p1:"Flytvåst ska bäras av alla på bryggor och i båtar. Simkunniga Scouter ska använda seglarvästar, och ej simkunniga Scouter ska använda räddningsväst.",
-  },
-  moreButton: "Läs mer om vår flytvästpolicy",
+  }
 };
