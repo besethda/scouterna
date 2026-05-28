@@ -336,6 +336,8 @@ export type MessagesEngType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  union: Record<string, string>
+  download: string,
 };
 
 export const En: MessagesEngType = {
@@ -890,4 +892,9 @@ export const En: MessagesEngType = {
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
+  union: {
+    t0: "General Meeting",
+    p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
+  },
+  download: "Download ",
 };

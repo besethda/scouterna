@@ -341,6 +341,8 @@ type MessagesSvType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
+  union: Record<string, string>,
+  download: string,
 };
 
 export const Sv: MessagesSvType = {
@@ -894,4 +896,9 @@ export const Sv: MessagesSvType = {
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
+  union: {
+    t0: "Kårstämma",
+    p0: "Vi håller regelbundet kårstämmor för att fatta gemensamma beslut som rör föreningen. Kårstämmornas innehåll dokumenteras och går att ladda ner och läsa."
+  },
+  download: "Ladda ner ",
 };
