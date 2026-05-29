@@ -26,7 +26,7 @@ const InstagramContainer = async () => {
 
   const response = await fetch("https://feeds.behold.so/cpFFCBnZsZUNtLg9vY4Y")
   const data = response.ok ? await response.json() : null
-  if(data.posts && data.posts.length < 5){
+  if(data.posts && data.posts.length > 5){
     const filteredData: instaType[]= data.posts.map((post: any, index:number)=> {
       return {mediaUrl:post.mediaUrl, permalink: post.permalink, mediaType:post.mediaType, caption:post.caption, timestamp:post.timestamp, imageIndex:index}
     })
