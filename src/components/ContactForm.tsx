@@ -2,6 +2,7 @@
 
 import { useForm } from "react-hook-form"
 import { sendContactEmail } from "../app/email"
+import toast, { Toaster } from 'react-hot-toast';
 
 interface EmailFormData {
     firstName: string;
@@ -37,7 +38,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
             });
 
             if (result.success) {
-                alert("Email Sent Successfully!");
+                toast.success("Email Sent Successfully!");
                 reset();
             } else {
                 console.log("server error:", result.error);
@@ -49,6 +50,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
 
     return (
         <div className="py-10 px-4 bg-bg-blue flex flex-col gap-2 md:pl-25">
+            <Toaster position="top-center"  reverseOrder={false} />
             <h2 className="font-albert text-h2 font-medium text-primary md:text-h2-desktop">{title}</h2>
             <p className="font-albert text-body text-text-black md:text-body-desktop pb-2 md:pb-8">{text}</p>
             <form 

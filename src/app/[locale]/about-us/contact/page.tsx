@@ -7,14 +7,11 @@ import { use } from "react";
 import ContactForm from "@/components/ContactForm";
 
 
-
 const pageItem = "contact"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
     return getPageHeadTitle(locale, pageItem)
 }
-
-
 
 const Contact = ({params}:{params: Promise<{locale: string}>}) => {
 
