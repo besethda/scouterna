@@ -22,8 +22,8 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
     }, []);
 
     return (
-        <div className='w-full bg-bg-blue pb-13.25 pt-13 overflow-hidden'>
-            <div className='mx-auto w-[80%]'>
+        <div className='w-full bg-bg-blue pb-13.25 pt-13 flex flex-col items-center overflow-hidden'>
+            <div className='lg:max-w-430 lg:px-22'>
                 <div className='flex flex-col gap-2 py-4 lg:w-120'>
                     <h2 className='text-h2 font-albert text-primary lg:text-h2-desktop'>{title}</h2>
                     <p className='text-body text-text-black font-albert lg:text-body-desktop'>{text}</p>

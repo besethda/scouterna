@@ -19,7 +19,9 @@ const Ruffen = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <div>
             <Breadcrumbs />
-            <CardWithoutImage headline={messages?.cabinsCard?.headline} logo="/blueHouse.png" title={messages?.cabinsCard?.title} text={messages?.cabinsCard?.text} MDlogo="/blueHouseYellowBg.svg" />
+            <div className="flex flex-col items-center">
+                <CardWithoutImage headline={messages?.cabinsCard?.headline} logo="/blueHouse.png" title={messages?.cabinsCard?.title} text={messages?.cabinsCard?.text} MDlogo="/blueHouseYellowBg.svg" />  
+            </div>
         </div>
     );
 }
