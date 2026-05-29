@@ -44,28 +44,30 @@ const Breadcrumbs = () => {
   return (
     <div className="shrink-0 mt-2 ">
       {pathname !== "/en" && pathname !== "/sv" && (
-        <div className="flex h-9 md:h-12 items-center gap-1 text-body md:text-body-desktop py-2 px-3 md:px-45">
-          <a href={messages?.breadcrumbs.path} className="font-albert hover:text-accent duration-100 text-primary">{messages?.breadcrumbs.title}</a>
-          {breadcrumbsArray.map((item: string, index: number) => {
-            const currentPath =
-              "/" + breadcrumbsArray.slice(0, index + 1).join("/"); // get  string  /about   /about/history
-            const href = messages?.breadcrumbs.path + currentPath;  //get href  /en/about/history or /sv/about/history
+        <div className="flex justify-center w-full">
+          <div className="flex h-9 md:h-12 items-center gap-1 text-body md:text-body-desktop py-2 px-3 w-full lg:max-w-430 lg:px-22">
+            <a href={messages?.breadcrumbs.path} className="font-albert hover:text-accent duration-100 text-primary">{messages?.breadcrumbs.title}</a>
+            {breadcrumbsArray.map((item: string, index: number) => {
+              const currentPath =
+                "/" + breadcrumbsArray.slice(0, index + 1).join("/"); // get  string  /about   /about/history
+              const href = messages?.breadcrumbs.path + currentPath;  //get href  /en/about/history or /sv/about/history
 
-            return ( // page["about-us"] = page.about-us, item is a variable like let item = "about-us" 
-              <span key={index} className="flex items-center h-9 md:h-10 font-albert overflow-hidden text-primary whitespace-nowrap">
-                <span className="px-1.5 md:px-3 text-primary font-albert">  /  </span>
-                {routes[currentPath] ? (
-                  <Link href={href} className={index +1 === breadcrumbsArray.length? 
-                  "text-primary hover:text-accent duration-100 font-albert text-body-bold md:text-body-bold-desktop whitespace-nowrap" 
-                  :"text-primary hover:text-accent duration-100 font-albert whitespace-nowrap"}>
-                    {messages?.breadcrumbs.page[item]} 
-                  </Link>
-                ) : (
-                  <span className="text-primary cursor-default font-albert">{messages?.breadcrumbs.page[item]}</span>
-                )}
-              </span>
-            );
-          })}
+              return ( // page["about-us"] = page.about-us, item is a variable like let item = "about-us" 
+                <span key={index} className="flex items-center h-9 md:h-10 font-albert overflow-hidden text-primary whitespace-nowrap">
+                  <span className="px-1.5 md:px-3 text-primary font-albert">  /  </span>
+                  {routes[currentPath] ? (
+                    <Link href={href} className={index +1 === breadcrumbsArray.length? 
+                    "text-primary hover:text-accent duration-100 font-albert text-body-bold md:text-body-bold-desktop whitespace-nowrap" 
+                    :"text-primary hover:text-accent duration-100 font-albert whitespace-nowrap"}>
+                      {messages?.breadcrumbs.page[item]} 
+                    </Link>
+                  ) : (
+                    <span className="text-primary cursor-default font-albert">{messages?.breadcrumbs.page[item]}</span>
+                  )}
+                </span>
+              );
+            })}
+          </div>
         </div>
       )}
     </div>

@@ -27,17 +27,17 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <>
             <Breadcrumbs />
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center">
                 <div className="h-fit pb-13">
                     <CardWithImage sectionTitle="safetyCard" logo="/blue-lifejacket.svg" image="/images/DSCF3070.jpg" />
-                    <div className="hidden lg:block lg:px-22 px-4 pt-0 md:w-full md:flex md:justify-center ">
+                    <div className="hidden lg:block px-4 pt-0 md:w-full lg:max-w-430 lg:px-22 w-full md:flex md:justify-center ">
                         <CTABtn text={messages?.safetyBtn?.btnDesktop} />
                     </div>
                     <div className="pl-4 pb-13 md:hidden">
                         <CTABtn text={messages?.safetyBtn?.btnMobile} />
                     </div>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col w-full">
                     <div className="order-1 md:order-2">
                         <ContentSection sectionLayout={["h", "w", "p", "t", "s", "p", "s", "p", "s", "p"]} page="safeScout" background={"mobile"} padding="both"/>
                     </div>
