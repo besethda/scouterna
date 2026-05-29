@@ -10,6 +10,7 @@ import schoolIcon from '../../public/school-icon.png'
 import footerHSSIcon from '../../public/footer-hss-logo.png'
 import locationIcon from '../../public/hss-pin-icon.svg'
 import useMessages from '@/hook/useMessages'
+import { Facebook } from "@deemlol/next-icons"
 
 const Footer = () => {
 
@@ -43,21 +44,33 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col gap-2 xl:gap-7 pb-2 xl:flex-1'>
                     <p className="text-accent text-body-bold uppercase text-xs xl:text-sm">{messages?.footer?.footer_contact}</p>
-                    <a href="mailto:info@hss-scout.org" className='flex gap-2.5 leading-none'>
-                        <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
-                        <p className="text-body xl:text-body-desktop xl:text-lg">info@hss-scout.org</p>
-                    </a>
+                    <div className='flex gap-2.5 leading-none'>
+                        <a href="mailto:info@hss-scout.org" className='flex gap-2.5 leading-none'>
+                           <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
+                           <p className="text-body xl:text-body-desktop xl:text-lg">info@hss-scout.org</p>
+                        </a>
+                    </div>
                     <div className='hidden xl:flex gap-2.5 leading-[1.2]' >
-                        <Image src={locationIcon} alt='email icon' className='w-6 h-6' />
-                        <p className="text-body xl:text-body-desktop xl:text-lg">Maltesholmsbadet <br />165 73 Hässelby</p>
+                        <a href="https://www.google.com/maps/place/Ruffen+%7C+H%C3%A4sselby+Strands+Sj%C3%B6scoutk%C3%A5r/@59.3620719,17.7818116,13z/data=!4m6!3m5!1s0x465f9f000adaa135:0xf7c26dadb80cbb2f!8m2!3d59.3632201!4d17.8220044!16s%2Fg%2F11y8fdsts1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNi4wIKXMDSoASAFQAw%3D%3D" target='_blank' className='flex gap-2.5 leading-[1.2]'>  
+                           <Image src={locationIcon} alt='email icon' className='w-6 h-6' />
+                           <p className="text-body xl:text-body-desktop xl:text-lg">Maltesholmsbadet <br />165 73 Hässelby</p>
+                        </a>     
                     </div>
                 </div>
                 <div className='flex flex-col gap-2 xl:gap-7 xl:flex-1'>
                     <p className="text-accent text-body-bold uppercase  text-xs xl:text-sm">{messages?.footer?.footer_followUs}</p>
-                    <a href="https://www.instagram.com/hss_scout/" target='_blank' className='flex gap-2.5 leading-[1.2]'>
-                        <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-5' />
-                        <p className="text-body xl:text-lg">@hss_scout</p>
-                    </a>
+                    <div className='flex gap-2.5 leading-none'>
+                        <a href="https://www.instagram.com/hss_scout/" target='_blank' className='flex gap-2.5 leading-[1.2]'>
+                          <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-5' />
+                          <p className="text-body xl:text-lg">@hss_scout</p>
+                        </a>
+                    </div>
+                    <div className='flex gap-2.5 leading-none'>
+                        <a href="https://www.facebook.com/HSSScout/" target='_blank' className='flex gap-2.5 leading-[1.2]'>
+                           <Facebook color="#FDB715" strokeWidth={1.5} className="w-4 h-auto xl:w-5"/>
+                           <p className="text-body xl:text-base">@HSSScout</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="w-full border-t border-gray flex text-lightGray text-body-bold pt-4 font-normal xl:justify-between xl:w-[90%] xl:mx-auto leading-loose">
