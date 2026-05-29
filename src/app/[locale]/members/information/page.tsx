@@ -20,9 +20,12 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
     return (
         <div>
             <Breadcrumbs />
-            <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
-            <Scoutnet />
-            <Union />
+                <div className="w-full flex flex-col items-center">
+                    <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
+                    <Scoutnet />
+                    <Union />
+                </div>
+
         </div>
     );
 }

@@ -27,22 +27,24 @@ const Union = () => {
     const messages = useMessages()
 
     return (
-        <div className="pt-3 pb-10 bg-bg-blue md:px-18 md:py-18">
+        <div className="pt-3 pb-10 w-full bg-bg-blue md:py-18">
             <ContentSection
                 sectionLayout={["t", "p"]}
                 page="union"
                 background={"blue"}
                 padding="top"
             />
-            <div className="pt-7 px-4 bg-bg-blue flex flex-col gap-2 font-albert text-text-black md:gap-9">
-                {unionList.map((item, index) => (
-                    <div key={index} className="flex gap-2 items-center ">
-                        <Image src={download} alt={item.name} />
-                        <a href={item.url} className="justify-center underline tracking-[0.03em]">
-                            {messages?.download}HSS {messages?.union?.t0.toLowerCase()} {item.published}
-                        </a>
-                    </div>
-                ))}
+            <div className="pt-7 bg-bg-blue flex flex-col items-center gap-2 font-albert text-text-black md:gap-9">
+                <div className="w-full px-4 lg:max-w-430 lg:px-22">
+                    {unionList.map((item, index) => (
+                        <div key={index} className="flex py-2 gap-2 w-full items-center ">
+                            <Image src={download} alt={item.name} />
+                            <a href={item.url} className="justify-center underline tracking-[0.03em]">
+                                {messages?.download}HSS {messages?.union?.t0.toLowerCase()} {item.published}
+                            </a>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )

@@ -27,9 +27,11 @@ const LifeStyle = ({params}:{params: Promise<{locale: string}>}) => {
         <div>
             <HeroContainer bgImages={{mobile: "bg-[url('/images/IMG_1939.JPEG')]", desktop:"md:bg-[url('/images/rock.JPG')]"}} messageSection={"lifestyleHero"} position={"center"} />
             <Breadcrumbs />
-            <CardWithImage sectionTitle="lifestyle" logo="/heart.png" image="/images/DSCF3033.jpg"/>
-            <WhiteGridContainer backgroundBlue={false} messageTitle="learning"/>
-            <LifeStyleSection />
+            <div className="flex flex-col items-center">
+                <CardWithImage sectionTitle="lifestyle" logo="/heart.png" image="/images/DSCF3033.jpg"/>
+                <WhiteGridContainer backgroundBlue={false} messageTitle="learning"/>
+                <LifeStyleSection />
+            </div>
         </div>
     );
 }

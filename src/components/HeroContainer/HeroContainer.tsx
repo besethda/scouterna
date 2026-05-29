@@ -15,8 +15,6 @@ const HeroContainer = ({ bgImages, messageSection, position }: { bgImages: { mob
     window.open("https://www.scoutnet.se/register/in/group/764")
   }
 
-  console.log((messages as any)?.[`${messageSection}`]?.button)
-
   return (
     <HeroSection
       bgImages={bgImages}
