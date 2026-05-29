@@ -75,6 +75,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                 </div>
             </div>
         </div>
-    );
+    )
+};
 
 export default BecomeAScout
