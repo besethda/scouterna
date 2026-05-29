@@ -110,11 +110,12 @@ const Groups = ({
             </div>
           </div>
         </div>
-        <div className="bg-white w-full mt-10 mb-10 max-w-7xl mx-auto">
+        <div className="bg-white lg:max-w-430 lg:px-22 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["h", "p"]}
             page="avdelningsledare"
             padding={"5"}
+            child={true}
           />
         </div>
       </>
@@ -189,11 +190,12 @@ const Groups = ({
             </div>
           </div>
         </div>
-        <div className="bg-white w-full mt-10 mb-10 max-w-7xl mx-auto">
+        <div className="bg-white w-full lg:max-w-430 lg:px-22 items-center mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["h", "p"]}
             page="avdelningsledare"
             padding={"5"}
+            child={true}
           />
         </div>
       </>
@@ -268,11 +270,12 @@ const Groups = ({
             </div>
           </div>
         </div>
-        <div className="bg-white w-full mt-10 mb-10 max-w-7xl mx-auto">
+        <div className="bg-white lg:max-w-430 lg:px-22 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["h", "p"]}
             page="avdelningsledare"
             padding={"5"}
+            child={true}
           />
         </div>
       </>
@@ -347,11 +350,12 @@ const Groups = ({
             </div>
           </div>
         </div>
-        <div className="bg-white w-full mt-10 mb-10 max-w-7xl mx-auto">
+        <div className="bg-white lg:max-w-430 lg:px-22 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["h", "p"]}
             page="avdelningsledare"
             padding={"5"}
+            child={true}
           />
         </div>
       </>
