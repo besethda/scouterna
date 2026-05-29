@@ -22,29 +22,25 @@ const ContactForm = ({title,text,lastName,firstName,email,message,buttonText}:Em
 
     const onSubmit = (data:EmailFormData) => {
         console.log(data)
-
-        alert(`이사람 ${data.lastName} ${data.firstName} 가 메세지 전송함`)
         
         const params = {
         from_name: `${data.lastName} ${data.firstName}`,
         from_email: data.email,
         message:data.message
         };
-        console.log("서비스ID 체크:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
-        console.log("퍼블릭키 체크:", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
 
         emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string, 
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string, 
-        params, //보낼 데이터 상자
+        params, 
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string, 
         )
         .then((response) => {
-            alert("이메일이 성공적으로 전송되었습니다!")
+            alert("Email sent successfully!")
         })
         .catch((error) => {
-            alert("이메일 전송 실패!")
-            console.log("내용:", error)
+            alert("Failed to send email. Please try again.")
+            console.log("Error:", error)
         })
     };
 
