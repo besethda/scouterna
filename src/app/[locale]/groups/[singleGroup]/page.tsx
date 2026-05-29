@@ -105,11 +105,18 @@ const Groups = ({
            [&_button]:hover:brightness-102
            pl-4
            "
-          >
-            <CTABtn text={messages?.sjohumlorButton} />
+            >
+              <CTABtn text={messages?.sjohumlorButton} />
+            </div>
           </div>
         </div>
-      </div>
+        <div className="bg-white w-full mt-10 mb-10 max-w-7xl mx-auto">
+          <ContentSection
+            sectionLayout={["h", "p"]}
+            page="avdelningsledare"
+            padding={"5"}
+          />
+        </div>
       </>
     );
   } else if (singleGroup === "kaparna") {
@@ -177,11 +184,18 @@ const Groups = ({
            [&_button]:hover:brightness-102
            pl-4
            "
-          >
-            <CTABtn text={messages?.kaparnaButton} />
+            >
+              <CTABtn text={messages?.kaparnaButton} />
+            </div>
           </div>
         </div>
-      </div>
+        <div className="bg-white w-full mt-10 mb-10 max-w-7xl mx-auto">
+          <ContentSection
+            sectionLayout={["h", "p"]}
+            page="avdelningsledare"
+            padding={"5"}
+          />
+        </div>
       </>
     );
   } else if (singleGroup === "utmanare") {
@@ -249,11 +263,18 @@ const Groups = ({
            [&_button]:hover:brightness-104
            pl-4
            "
-          >
-            <CTABtn text={messages?.utmanareButton} />
+            >
+              <CTABtn text={messages?.utmanareButton} />
+            </div>
           </div>
         </div>
-      </div>
+        <div className="bg-white w-full mt-10 mb-10 max-w-7xl mx-auto">
+          <ContentSection
+            sectionLayout={["h", "p"]}
+            page="avdelningsledare"
+            padding={"5"}
+          />
+        </div>
       </>
     );
   } else if (singleGroup === "konvojen") {
@@ -321,11 +342,18 @@ const Groups = ({
            [&_button]:hover:brightness-102
            pl-4
            "
-          >
-            <CTABtn text={messages?.konvojenButton} />
+            >
+              <CTABtn text={messages?.konvojenButton} />
+            </div>
           </div>
         </div>
-      </div>
+        <div className="bg-white w-full mt-10 mb-10 max-w-7xl mx-auto">
+          <ContentSection
+            sectionLayout={["h", "p"]}
+            page="avdelningsledare"
+            padding={"5"}
+          />
+        </div>
       </>
     );
   } else if (singleGroup === "familjescouter") {

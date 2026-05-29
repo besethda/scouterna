@@ -367,6 +367,9 @@ type MessagesSvType = {
     text03: string,
   }
   ruffenDivisions: Record<string, string>
+  avdelningsledare:Record <string, string>
+  scoutnet: Record<string, string>
+  scoutnetButton: string,
 };
 
 export const Sv: MessagesSvType = {
@@ -954,5 +957,15 @@ export const Sv: MessagesSvType = {
   ruffenDivisions: {
     t0: "Avdelningsmöten",
     p0: "HSS fyra avdelningar har avdelningsmöten en gång i veckan. "
-  }
+  },
+  avdelningsledare:{
+  h0:"Avdelningsledare",
+  p0:"Varje avdelning har en avdelningsledare. Våra ledare är utbildade och har gått den obligatoriska kursen Trygga Möten."
+},
+  scoutnet: {
+    t0:"Scoutnet",
+    p0:"Scoutnet är Scouternas gemensamma stystem där all information om medlemmar och aktiviteter finns samlad.",
+    p1:"Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
+  },
+  scoutnetButton: "Logga in på Scoutnet"
 };

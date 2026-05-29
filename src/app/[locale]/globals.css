@@ -40,7 +40,7 @@
     --text-hero-desktop-bold--font-weight: 700;
 
     --text-h1-desktop--font-family: var(--font-albert);
-    --text-h1-desktop: 48px; 
+    --text-h1-desktop: 48px;
     /* 48 */
 
     --text-h2-desktop--font-family: var(--font-albert);
@@ -101,4 +101,10 @@
     --text-acc: 12px;
     --text-acc-bold--font-weight: 700;
 
+}
+
+@media (min-width: 2000px) {
+    .right-auto-2000 {
+        right: auto;
+    }
 }
