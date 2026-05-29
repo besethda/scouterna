@@ -340,11 +340,12 @@ type MessagesSvType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
-  good: Record<string, string>
-  question: Record<string, string>
+  good: string,
+  question: {title:string, paraph:string},
   toFAQButton: string,
-  policy: Record<string, string>
+  policy:  {title:string, paraph:string, mer:string, desktop:string,},
   moreButton: string,
+  secondButton:string,
 };
 
 export const Sv: MessagesSvType = {
@@ -887,18 +888,18 @@ export const Sv: MessagesSvType = {
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
-  good: {
-    h0:"Bra att veta"
-  },
+  good: "Bra att veta",
   question: {
-    t0:"Frågor och funderingar",
-    p0:"Undrar du över någonting kan du besöka vår FAQ. Om du inte hittar svar på dina frågor, höra av dig till någon i kåren."
+    title:"Frågor och funderingar",
+    paraph:"Undrar du över någonting kan du besöka vår FAQ. Om du inte hittar svar på dina frågor, höra av dig till någon i kåren."
   },
   toFAQButton: "Gå till vår FAQ",
   policy: {
-    t0:"Flyvästpolicy",
-    p0:"Vi följer en flytvästpolicy för alla Scouters säkerhet.",
-    p1:"Flytvåst ska bäras av alla på bryggor och i båtar. Simkunniga Scouter ska använda seglarvästar, och ej simkunniga Scouter ska använda räddningsväst.",
+    title:"Flyvästpolicy",
+    paraph:"Vi följer en flytvästpolicy för alla Scouters säkerhet.",
+    mer:"Flytvåst ska bäras av alla på bryggor och i båtar. Simkunniga Scouter ska använda seglarvästar, och ej simkunniga Scouter ska använda räddningsväst.",
+    desktop:"Säkerhet är A och O hos Sjöscouterna. Läs på om vår flytvästpolicy för att lära dig mer om när väst ska användas, och vilka västar vi rekommenderar."
   },
-  moreButton: "Läs mer om vår flytvästpolicy",
+  moreButton: "Läs mer om policyn",
+  secondButton:"Läs mer om vår flytvästpolicy"
 };

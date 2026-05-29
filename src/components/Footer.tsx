@@ -11,6 +11,7 @@ import footerHSSIcon from '../../public/footer-hss-logo.png'
 import locationIcon from '../../public/hss-pin-icon.svg'
 import useMessages from '@/hook/useMessages'
 
+
 const Footer = () => {
 
     const messages = useMessages()
