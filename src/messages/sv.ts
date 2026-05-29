@@ -367,6 +367,7 @@ type MessagesSvType = {
     text03: string,
   }
   ruffenDivisions: Record<string, string>
+  avdelningsledare:Record <string, string>
 };
 
 export const Sv: MessagesSvType = {
@@ -954,5 +955,9 @@ export const Sv: MessagesSvType = {
   ruffenDivisions: {
     t0: "Avdelningsmöten",
     p0: "HSS fyra avdelningar har avdelningsmöten en gång i veckan. "
-  }
+  },
+  avdelningsledare:{
+  h0:"Avdelningsledare",
+  p0:"Varje avdelning har en avdelningsledare. Våra ledare är utbildade och har gått den obligatoriska kursen Trygga Möten."
+},
 };
