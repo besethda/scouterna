@@ -32,7 +32,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife" />
                 <div className="w-full h-0 md:h-8"></div>
                 <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image="/images/DSCF3361.jpg" secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
-                <div className="flex flex-col gap-6 font-albert pt-6 px-4 md:pb-14 lg:max-w-430 lg:px-22">
+                <div className="flex flex-col gap-6 font-albert pt-6 px-4 pb-8 md:pb-14 lg:max-w-430 lg:px-22">
                     <div className="flex flex-col gap-4">
                         <p className="text-h2 font-albert font-medium text-primary md:text-h3-desktop">
                             {messages?.joinContent?.title}
