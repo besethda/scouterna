@@ -7,7 +7,7 @@ import useMessages from "@/hook/useMessages"
 
 //h is h1, t is h2, s is h3, p is paragraph, w is bold line, l is bullet point
 
-const ContentSection = ({sectionLayout, page, background="white", padding="both", display="both"}:{sectionLayout:string[], page:string, background?:string, padding?:string, display?:string }) => {
+const ContentSection = ({sectionLayout, page, background="white", padding="both", display="both", child=false}:{sectionLayout:string[], page:string, background?:string, padding?:string, display?:string, child?:boolean }) => {
 
   const messages = useMessages()
   if(!messages) return null
@@ -16,10 +16,10 @@ const ContentSection = ({sectionLayout, page, background="white", padding="both"
     let result = characterLayout.reduce((acc, element:string, index)=> {
       const count = characterLayout.slice(0, index).filter(e=> e === element)
       if(element === "l") {
-        acc.push(<ul key={index} className="w-fit text-body my-3 md:text-body-desktop text-text-black font-albert lg:max-w-[55%] list-disc pl-5"><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
+        acc.push(<ul key={index} className="w-fit text-body my-3 md:text-body-desktop text-text-black font-albert lg:max-w-[63%] list-disc pl-5"><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
       } else {
         acc.push(<div key={index} className={`
-          ${element === "p" ? "w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[55%]" :
+          ${element === "p" ? "w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%]" :
             element === "w" ? "w-fit py-2 text-body-bold md:text-body-bold-desktop text-text-black font-albert" : 
             element === "h" ? "w-fit py-2 text-h1 md:text-h1-desktop text-primary font-albert" :
             element === "t" ? "w-fit py-2 text-h2 md:text-h2-desktop text-primary font-albert" : 
@@ -31,11 +31,14 @@ const ContentSection = ({sectionLayout, page, background="white", padding="both"
   }
 
   return (
-    <div className={`${background==="white" ? "bg-bg-white" : background === "blue" ? "bg-bg-blue" : background === "mobile" ? "bg-bg-blue md:bg-bg-white" : background === "desktop" ? "bg-bg-white md:bg-bg-blue": background === "large" ? "bg-bg-white lg:bg-bg-blue": "bg-bg-white"} 
-    ${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-16 pt-7" : padding === "bottom-mobile" ? "pb-16 md:pb-0" : padding === "top-mobile" ? "pt-7 md:pt-0" : padding === "bottom-desktop" ? "pb- md:pb-16" : padding === "top-desktop" ? "pt-0 md:pt-7" : ""} 
-    ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} px-4`}>
-      {createLayout(sectionLayout)}
+    <div className={`w-full flex justify-center ${background==="white" ? "bg-bg-white" : background === "blue" ? "bg-bg-blue" : background === "mobile" ? "bg-bg-blue md:bg-bg-white" : background === "desktop" ? "bg-bg-white md:bg-bg-blue": background === "large" ? "bg-bg-white lg:bg-bg-blue": "bg-bg-white"}
+      `}>
+      <div className={`${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-16 pt-7" : padding === "bottom-mobile" ? "pb-16 md:pb-0" : padding === "top-mobile" ? "pt-7 md:pt-0" : padding === "bottom-desktop" ? "pb- md:pb-16" : padding === "top-desktop" ? "pt-0 md:pt-7" : ""} 
+      ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} w-full px-4 ${child ? "" : "lg:max-w-430 lg:px-22"}`}>
+        {createLayout(sectionLayout)}
+      </div>
     </div>
+
   )
 }
 
