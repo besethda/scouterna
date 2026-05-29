@@ -316,7 +316,11 @@ export type MessagesEngType = {
     firstName:string,
     email:string,
     message:string,
-    buttonText:string
+    buttonText:string,
+    namn:string,
+    efternamn:string,
+    epost:string,
+    meddelande:string
   },
   myset01: Record<string, string>
   myset02: Record<string, string>
@@ -894,6 +898,10 @@ export const En: MessagesEngType = {
     lastName: "Last name",
     email: "Email",
     message: "Message",
-    buttonText: "Send message"
+    buttonText: "Send message",
+    namn:"First Name",
+    efternamn:"Last Name",
+    epost:"E-mail",
+    meddelande:"Message"
   }
 };

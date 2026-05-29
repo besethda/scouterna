@@ -1,47 +1,50 @@
 'use client'
 
-import {useForm} from "react-hook-form"
-import emailjs from '@emailjs/browser'
+import { useForm } from "react-hook-form"
+import { sendContactEmail } from "../app/email"
 
 interface EmailFormData {
     firstName: string;
     lastName: string;
     email: string;
     message: string;
-    title:string;
-    text:string;
-    buttonText:String
-}
+    title: string;
+    text: string;
+    buttonText: string;
+    namn:string;
+    efternamn:string;
+    epost:string;
+    meddelande:string
+};
 
-const ContactForm = ({title,text,lastName,firstName,email,message,buttonText}:EmailFormData) => {
+const ContactForm = ({ title, text, lastName, firstName, email, message, buttonText, namn,efternamn,epost,meddelande }: EmailFormData) => {
     const {
         register,
         handleSubmit,
-        formState: {errors},
-    } = useForm <EmailFormData>()
+        reset, 
+        formState: { errors, isSubmitting },
+    } = useForm<EmailFormData>()
 
-    const onSubmit = (data:EmailFormData) => {
-        console.log(data)
+    const onSubmit = async (data: EmailFormData) => {
+        console.log("form data", data);
         
-        const params = {
-        from_name: `${data.lastName} ${data.firstName}`,
-        from_email: data.email,
-        message:data.message
-        };
+        try {
+            const result = await sendContactEmail({
+                firstName: data.firstName,
+                lastName: data.lastName,
+                email: data.email,
+                message: data.message
+            });
 
-        emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string, 
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string, 
-        params, 
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string, 
-        )
-        .then((response) => {
-            alert("Email sent successfully!")
-        })
-        .catch((error) => {
-            alert("Failed to send email. Please try again.")
-            console.log("Error:", error)
-        })
+            if (result.success) {
+                alert("Email Sent Successfully!");
+                reset();
+            } else {
+                console.log("server error:", result.error);
+            }
+        } catch (error) {
+            console.log("Network error:", error);
+        }
     };
 
     return (
@@ -49,62 +52,58 @@ const ContactForm = ({title,text,lastName,firstName,email,message,buttonText}:Em
             <h2 className="font-albert text-h2 font-medium text-primary md:text-h2-desktop">{title}</h2>
             <p className="font-albert text-body text-text-black md:text-body-desktop pb-2 md:pb-8">{text}</p>
             <form 
-            onSubmit={handleSubmit(onSubmit)}
-            className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-[24px] py-10 px-6 flex flex-col gap-6 text-body font-public
-            md:w-137">
+                onSubmit={handleSubmit(onSubmit)}
+                className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-[24px] py-10 px-6 flex flex-col gap-6 text-body font-public md:w-137"
+            >
                 <div className="flex flex-col gap-2">
                     <p>{lastName}</p>
                     <input 
-                    type="text"
-                    placeholder="Efternamn"
-                    {...register("lastName", {
-                        required:"Write your last name"
-                    })}
-                    className="border border-lightGray border-solid rounded-lg w-full h-10 p-3"
-                    />
-                </div>
-                <div className="flex flex-col gap-2">
-                    <p>{firstName}</p>
-                    <input
-                    type="text"
-                    placeholder="Firstnamn"
-                    {...register("firstName", {
-                        required:"Write your first name"
-                    })}
-                    className="border border-lightGray border-solid rounded-lg w-full h-10 p-3"
+                        type="text"
+                        placeholder={namn}
+                        {...register("lastName", { required: "Write your last name" })}
+                        className="border border-lightGray border-solid rounded-lg w-full h-10 p-3"
                     />
                     {errors.lastName && <p className="text-red-400 text-xs mt-1">{errors.lastName.message}</p>}
                 </div>
                 <div className="flex flex-col gap-2">
+                    <p>{firstName}</p>
+                    <input
+                        type="text"
+                        placeholder={efternamn}
+                        {...register("firstName", { required: "Write your first name" })}
+                        className="border border-lightGray border-solid rounded-lg w-full h-10 p-3"
+                    />
+                    {errors.firstName && <p className="text-red-400 text-xs mt-1">{errors.firstName.message}</p>}
+                </div>
+                <div className="flex flex-col gap-2">
                     <p>{email}</p>
                     <input 
-                    type="text"
-                    placeholder="example@email.com"
-                    {...register("email", {
-                        required:"Write email address"
-                    })}
-                    className="border border-lightGray border-solid rounded-lg w-full h-10 p-3"
+                        type="text"
+                        placeholder={epost}
+                        {...register("email", { required: "Write email address" })}
+                        className="border border-lightGray border-solid rounded-lg w-full h-10 p-3"
                     />
                     {errors.email && <p className="text-red-400 text-xs mt-1">{errors.email.message}</p>}
                 </div>
                 <div className="flex flex-col gap-2 pb-4">
                     <p>{message}</p>
                     <textarea 
-                    placeholder="Please enter the content"
-                    {...register("message")}
-                    className="border border-lightGray border-solid rounded-lg w-full h-10 p-3 h-[144px]"
+                        placeholder={meddelande}
+                        {...register("message", { required: "Write your message" })}
+                        className="border border-lightGray border-solid rounded-lg w-full p-3 h-[144px]"
                     />
                     {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>}
                 </div>
                 <button
-                type="submit"
-                className="bg-primary p-4 border rounded-lg text-text-white font-public text-h3"
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="bg-primary p-4 border rounded-lg text-text-white font-public text-h3 disabled:opacity-50"
                 >
-                {buttonText}
+                    {isSubmitting ? "Sending..." : buttonText}
                 </button>
             </form>
         </div>
     )
 }
 
-export default ContactForm
+export default ContactForm;

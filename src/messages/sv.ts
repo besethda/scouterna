@@ -321,7 +321,11 @@ type MessagesSvType = {
     firstName:string,
     email:string,
     message:string,
-    buttonText:string
+    buttonText:string,
+    namn:string,
+    efternamn:string,
+    epost:string,
+    meddelande:string
   },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
@@ -898,6 +902,10 @@ export const Sv: MessagesSvType = {
     firstName:"Efternamn",
     email:"E-post",
     message:"Meddelande",
-    buttonText:"Skicka meddelande"
+    buttonText:"Skicka meddelande",
+    namn:"Namn",
+    efternamn:"Efter Namn",
+    epost:"E-post",
+    meddelande:"Meddelande"
   }
 };

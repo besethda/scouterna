@@ -35,6 +35,10 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       email={messages?.form.email}
       message={messages?.form.message}
       buttonText={messages?.form.buttonText}
+      namn={messages?.form.namn}
+      efternamn={messages?.form.efternamn}
+      epost={messages?.form.epost}
+      meddelande={messages?.form.meddelande}
       />
     </div>
   )
