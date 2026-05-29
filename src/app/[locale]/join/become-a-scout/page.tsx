@@ -56,23 +56,15 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             {messages?.joinContent?.text03}
                         </p>
                         <CTABtn text={messages?.joinContent?.button02} />
-                        <div className="flex flex-col gap-6">
-                            <p className="text-h3 font-medium text-[#00355F]  md:text-h3-desktop">
-                                {messages?.joinContent?.title02}
-                            </p>
-                            <p className="text-text-black pb-4 text-body md:text-body-desktop tracking-[3%]">
-                                {messages?.joinContent?.text03}
-                            </p>
-                        </div>
                     </div>
-                    <JoinPage 
+                </div>
+                <JoinPage 
                         title={messages?.joinPage.title}
                         text={messages?.joinPage.text}
                         buttonText={messages?.joinPage.buttonText}
                         width="box"
                         btnWidth="full" 
                     />
-                </div>
             </div>
         </div>
     )
