@@ -34,21 +34,23 @@ const Boats = ({params}:{params: Promise<{locale: string}>}) => {
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <CardWithoutImage headline={messages?.boatsCard?.headline} logo="/blueBoat.svg" title={messages?.boatsCard?.title} text={messages?.boatsCard?.text} MDlogo="/blueBoatYellowBg.svg" />
-                <Optimister 
-                    title={messages?.optimisterSection?.title}
-                    text={messages?.optimisterSection?.text}
-                    images={images}
-                />
-                <Optimister 
-                    title={messages?.optimisterSection?.title02}
-                    text={messages?.optimisterSection?.text02}
-                    images={images02}
-                />
-                <Optimister 
-                    title={messages?.optimisterSection?.title03}
-                    text={messages?.optimisterSection?.text03}
-                    images={images03}
-                />
+                <div className="bg-bg-blue w-full flex flex-col items-center">
+                    <Optimister 
+                        title={messages?.optimisterSection?.title}
+                        text={messages?.optimisterSection?.text}
+                        images={images}
+                    />
+                    <Optimister 
+                        title={messages?.optimisterSection?.title02}
+                        text={messages?.optimisterSection?.text02}
+                        images={images02}
+                    />
+                    <Optimister 
+                        title={messages?.optimisterSection?.title03}
+                        text={messages?.optimisterSection?.text03}
+                        images={images03}
+                    />
+                </div>
             </div>
 
         </div>

@@ -26,7 +26,6 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       <Breadcrumbs />
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"}/>
-      <ContentSection sectionLayout={["t", "p"]} page={"form_title"} />
       <JoinPage 
       title={messages?.interestBtn.title}
       text={messages?.interestBtn.text}

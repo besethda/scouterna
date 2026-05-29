@@ -13,13 +13,13 @@ interface JoinPageProps {
 const JoinPage = ({title, text, buttonText,buttonOnClick,btnWidth,width = "full", className}:JoinPageProps) => {
     return (
         <div className={`${width === "box" ? "bg-bg-blue" : ""} w-full`}>
-            <div className={`${width === "box" ? "w-89.5 h-64 md:h-83 rounded-2xl md:flex-row md:w-full md:rounded items-center  bg-bg-blue p-8" : "w-full"} pb-10 flex lg:max-w-430 lg:px-22 flex-col gap-4 md:gap-10  md:p-25 mt-3 mx-auto`}>
-                <div className={`flex flex-col gap-2 md:w-full lg:w-[55%] ${className || 'text-left'}`}> 
+            <div className={`${width === "box" ? "w-89.5 h-64 md:h-83 rounded-2xl md:flex-row md:w-full md:rounded items-center w-full bg-bg-blue p-8" : "w-full"} pb-10 flex px-4 lg:max-w-430 lg:px-22 flex-col gap-4 md:gap-10  md:p-25 mt-3 mx-auto`}>
+                <div className={`flex flex-col w-full gap-2 md:w-full lg:w-[55%] text-left`}> 
                     <h2 className="text-h2-albert md:text-h2-desktop font-albert text-primary md:w-[40vw]">{title}</h2>
                     <p className={"text-text-black text-body md:text-body-desktop font-albert"}>{text}</p>
                 </div>
                 {buttonText &&(
-                    <div className={`${width === "box" ?" mx-auto" : "w-full md:w-fit"}`}>
+                    <div className={`${width === "box" ?" mx-auto" : "w-full md:w-fit"} w-full`}>
                         <CTABtn onClick={buttonOnClick} 
                         text={buttonText}
                         width={btnWidth}

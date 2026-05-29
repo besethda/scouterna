@@ -49,7 +49,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center py-10 gap-2 font-albert md:bg-bg-blue md:py-25 md:gap-10 w-full ">
-                    <div className="flex flex-col w-full lg:max-w-430 lg:px-22">
+                    <div className="flex flex-col w-full px-4 lg:max-w-430 lg:px-22">
                         <p className="font-normal pb-3 text-h2 text-primary md:text-h2-desktop">
                             {messages?.faqContact?.title}
                         </p>
@@ -57,7 +57,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                             {messages?.faqContact?.text}
                         </p>
                     </div>
-                    <div className="flex items-center gap-3 w-full lg:max-w-430 lg:px-22">
+                    <div className="flex items-center gap-3 w-full px-4 lg:max-w-430 lg:px-22">
                         <Image src="/blueMailYellowBg.svg" alt="logo" width={44} height={44} className="" />
                         <a href="mailto:info@hss-scout.org" className="text-text-black font-normal text-body md:text-body-desktop hover:underline">
                             info@hss-scout.org

@@ -13,7 +13,7 @@ interface SmallCardProps {
 
 const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext, button }: SmallCardProps) => {
   return (
-    <div className="font-albert lg:max-w-430 lg:px-22 md:px-25 md:py-6 md:gap-0 lg:grid lg:grid-cols-[1fr_auto] lg:gap-x-10 lg:gap-y-6  w-full mx-auto">
+    <div className="font-albert lg:max-w-430 lg:px-22 px-4 md:px-25 md:py-6 md:gap-0 lg:grid lg:grid-cols-[1fr_auto] lg:gap-x-10 lg:gap-y-6  w-full mx-auto">
       <div className="flex flex-col gap-4 md:gap-10 md:col-start-1">
         <div className="flex flex-col gap-2">
           <p className="font-normal font-albert text-h2 tracking-[-0.5%] text-primary md:text-h2-desktop">
