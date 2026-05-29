@@ -10,6 +10,7 @@ interface JoinPageProps {
     className?:string;
 }
 
+
 const JoinPage = ({title, text, buttonText,buttonOnClick,btnWidth,width = "full", className}:JoinPageProps) => {
     return (
         <div className={`${width === "box" ? "bg-bg-blue" : ""} w-full`}>
