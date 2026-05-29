@@ -368,6 +368,8 @@ export type MessagesEngType = {
   }
   ruffenDivisions: Record<string, string>
   avdelningsledare:Record <string, string>
+  scoutnet: Record<string, string>
+  scoutnetButton: string,
 };
 
 export const En: MessagesEngType = {
@@ -962,4 +964,10 @@ avdelningsledare:{
   h0:"Group Manager",
   p0:"Each department has a department manager. Our managers are trained and have completed the mandatory course Safe Meetings."
 },
+  scoutnet: {
+    t0: "Scoutnet",
+    p0: "Scoutnet is the Scouts' common system where all information about members and activities is gathered.",
+    p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
+},
+  scoutnetButton: "Log in to Scoutnet",
 };
