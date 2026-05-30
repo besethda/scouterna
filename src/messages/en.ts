@@ -344,9 +344,10 @@ export type MessagesEngType = {
     text02: string,
     text03: string,
   },
-  cabinsmyset: Record<string, string>
+  cabinst:string,
+  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string}
   mysetbtn:string,
-  cabinsruffen: Record<string, string>
+  cabinsruffen: {title:string, p:string, dpOne:string, dpTwo:string}
   ruffenbtn:string,
 };
 
@@ -910,14 +911,19 @@ export const En: MessagesEngType = {
     text02:"Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
     text03:"Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
   },
+  cabinst:"We meet here",
   cabinsruffen: {
-    "t0": "Myset",
-    "p0": "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water"
+    title: "Myset",
+    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
+    dpOne: "Myset is beautifully situated and provides a perfect environment for our wonderful campfires and other adventures. The cottage itself is pleasant and spacious, making it an ideal place for our hikes.",
+    dpTwo: "Myset is available for rent, and booking inquiries can be emailed to myset.hss.scout@gmail.com."
   },
   ruffenbtn: "Read more about Ruffen",
   cabinsmyset: {
-    "t0": "Myset",
-    "p0": "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water"
+    title: "Myset",
+    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
+    dpOne: "Ruffen is located by Hässelby Beach and is used for section meetings for our sections Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
+    dpTwo: "The scout group also houses our Optimist dinghies here."
   },
   mysetbtn: "Read more about Myset",
 };

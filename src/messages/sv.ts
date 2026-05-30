@@ -349,9 +349,10 @@ type MessagesSvType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
-  cabinsmyset: Record<string, string>
+  cabinst:string,
+  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string},
   mysetbtn:string,
-  cabinsruffen: Record<string, string>
+  cabinsruffen:{title:string,p:string, dpOne:string, dpTwo:string},
   ruffenbtn:string,
 };
 
@@ -914,14 +915,19 @@ export const Sv: MessagesSvType = {
     text02:"Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
     text03:"Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
   },
+  cabinst:"Här träffas vi",
   cabinsmyset:{
-    t0:"Myset",
-    p0:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet"
+    title:"Myset",
+    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
+    dpOne:"Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
+    dpTwo:"Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
   },
   mysetbtn:"Läs mer om Myset",
   cabinsruffen: {
-    t0:"Ruffen",
-    p0:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet"
+    title:"Ruffen",
+    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
+    dpOne:"Ruffen ligger vid Hässelby Strandbad och används för avdelningsmöten för våra avdelningar Sjöhumlorna, Kaparna, Konvojen och Utmanarna.",
+    dpTwo:"Här huserar kåren även våra optimistjollar.",
   },
   ruffenbtn:"Läs mer om Ruffen",
 };
