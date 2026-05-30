@@ -365,11 +365,21 @@ export type MessagesEngType = {
     text: string,
     text02: string,
     text03: string,
-  }
+  },
   ruffenDivisions: Record<string, string>
   avdelningsledare:Record <string, string>
   scoutnet: Record<string, string>
   scoutnetButton: string,
+  historycard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  historymobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
 };
 
 export const En: MessagesEngType = {
@@ -970,4 +980,14 @@ avdelningsledare:{
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
 },
   scoutnetButton: "Log in to Scoutnet",
+  historycard: {
+    headline: "THE ASSOCIATION",
+    title: "At sea since 1959",
+    text: "Hässelby Strands Sea Scout Corps was founded in 1959 by engaged parents who came together to create something meaningful for their children. Since then, the corps has been filled with adventures, community, and memories - and many more are yet to come."
+  },
+  historymobilecard: {
+    headline: "HISTROY",
+    title: "At sea since 1959",
+    text: "Hässelby Strands Sea Scout Corps was founded in 1959 by engaged parents who came together to create something meaningful for their children. Since then, the corps has been filled with adventures, community, and memories - and many more are yet to come."
+  }
 };

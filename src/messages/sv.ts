@@ -370,6 +370,16 @@ type MessagesSvType = {
   avdelningsledare:Record <string, string>
   scoutnet: Record<string, string>
   scoutnetButton: string,
+  historycard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  historymobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
 };
 
 export const Sv: MessagesSvType = {
@@ -967,5 +977,15 @@ export const Sv: MessagesSvType = {
     p0:"Scoutnet är Scouternas gemensamma stystem där all information om medlemmar och aktiviteter finns samlad.",
     p1:"Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
   },
-  scoutnetButton: "Logga in på Scoutnet"
+  scoutnetButton: "Logga in på Scoutnet",
+  historycard: {
+    headline: "FÖRENINGEN",
+    title: "Till sjöss sedan 1959",
+    text: "Hässelby Strands Sjöscoutkår grundades 1959 av engagerade föräldrar som gick samman för att skapa något meningsfullt för sina barn. Sedan dess har kåren fyllts av äventyr, gemenskap och minnen - och många fler ska det bli."
+  },
+  historymobilecard: {
+    headline: "HISTORIA",
+    title: "Till sjöss sedan 1959",
+    text: "Hässelby Strands Sjöscoutkår grundades 1959 av engagerade föräldrar som gick samman för att skapa något meningsfullt för sina barn. Sedan dess har kåren fyllts av äventyr, gemenskap och minnen - och många fler ska det bli."
+  },
 };
