@@ -378,6 +378,26 @@ export type MessagesEngType = {
   historymobilecard: {
     headline: string,
     title: string,
+    text: string,
+  },
+  contactcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  contactmobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprmobilecard: {
+    headline: string,
+    title: string,
     text: string
   },
 };
@@ -989,5 +1009,25 @@ avdelningsledare:{
     headline: "HISTROY",
     title: "At sea since 1959",
     text: "Hässelby Strands Sea Scout Corps was founded in 1959 by engaged parents who came together to create something meaningful for their children. Since then, the corps has been filled with adventures, community, and memories - and many more are yet to come."
-  }
+  },
+   contactcard: {
+    headline: "THE ASSOCIATION",
+    title: "Contact",
+    text: "Do you have questions about our scouting activities, want to become a member, or engage as a leader? Don't hesitate to contact us - we will respond as soon as we can."
+  },
+  contactmobilecard: {
+    headline: "Communicate",
+    title: "Contact",
+    text: "Do you have questions about our scouting activities, want to become a member, or engage as a leader? Don't hesitate to contact us - we will respond as soon as we can."
+  },
+  gdprcard: {
+    headline: "DATA PROTECTION",
+    title: "HSS work with GDPR",
+    text: "GDPR requires us to inform our members that we collect data, what data we collect, and why we do it."
+  },
+  gdprmobilecard: {
+    headline: "DATA PROTECTION",
+    title: "HSS work with GDPR",
+    text: "GDPR requires us to inform our members that we collect data, what data we collect, and why we do it."
+  },
 };

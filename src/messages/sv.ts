@@ -380,6 +380,26 @@ type MessagesSvType = {
     title: string,
     text: string
   },
+   contactcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  contactmobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprmobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
 };
 
 export const Sv: MessagesSvType = {
@@ -987,5 +1007,25 @@ export const Sv: MessagesSvType = {
     headline: "HISTORIA",
     title: "Till sjöss sedan 1959",
     text: "Hässelby Strands Sjöscoutkår grundades 1959 av engagerade föräldrar som gick samman för att skapa något meningsfullt för sina barn. Sedan dess har kåren fyllts av äventyr, gemenskap och minnen - och många fler ska det bli."
+  },
+  contactcard: {
+    headline: "FÖRENINGEN",
+    title: "Kontakt",
+    text: "Har du frågor om vår scoutverksamhet, vill bli medlem eller engagera dig som ledare? Tveka inte att kontakta oss - vi svarar så snart vi kan."
+  },
+  contactmobilecard: {
+    headline: "KOMMUNIKATION",
+    title: "Kontakt",
+    text: "Har du frågor om vår scoutverksamhet, vill bli medlem eller engagera dig som ledare? Tveka inte att kontakta oss - vi svarar så snart vi kan."
+  },
+   gdprcard: {
+    headline: "DATASKYDD",
+    title: "HSS arbete med GDPR",
+    text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
+  },
+  gdprmobilecard: {
+    headline: "DATASKYDD",
+    title: "HSS arbete med GDPR",
+    text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
   },
 };

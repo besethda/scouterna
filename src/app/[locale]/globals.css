@@ -103,6 +103,18 @@
 
 }
 
+.contact-logo img[alt="logo"] {
+  width: 75px !important;
+  height: auto !important;
+  min-width: 75px !important;
+}
+
+@media (max-width:678px) {
+  .contact-logo img[alt="logo"] {
+    margin-left: -26px;
+  }
+}
+
 @media (min-width: 2000px) {
     .right-auto-2000 {
         right: auto;
