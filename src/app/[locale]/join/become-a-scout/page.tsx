@@ -55,7 +55,6 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                         <p className="text-text-black pb-4 text-body md:text-body-desktop tracking-[3%]">
                             {messages?.joinContent?.text03}
                         </p>
-                        <CTABtn text={messages?.joinContent?.button02} />
                     </div>
                 </div>
                 <JoinPage 

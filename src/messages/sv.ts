@@ -316,6 +316,19 @@ type MessagesSvType = {
     text: string,
     buttonText: string
   },
+  form: {
+    title:string,
+    text:string,
+    lastName:string,
+    firstName:string,
+    email:string,
+    message:string,
+    buttonText:string,
+    namn:string,
+    efternamn:string,
+    epost:string,
+    meddelande:string
+  },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
   myset03: Record<string, string>,
@@ -489,14 +502,14 @@ export const Sv: MessagesSvType = {
     hero_title: "Hässelby Strands Sjöscouter",
     hero_subtitle01: "Äventyret börjar",
     hero_subtitle02: "vid vattenbrynet",
-    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand.",
+    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap mitt i Hässelby Strand.",
     button: "Gå med i Scouterna"
   },
   joinHero: {
     hero_title: "Hässelby Strands Sjöscouter",
     hero_subtitle01: "Vågorna väntar-",
     hero_subtitle02: "bli del av HSS",
-    hero_description: "Hos HSS Scouterna erbjuder vi en trygg och aktiv fritid för barn och unga.",
+    hero_description: "Hos HSS erbjuder vi en trygg och aktiv fritid för barn och unga.",
     button: "Gå med i Scouterna"
   },
   lifestyleHero: {
@@ -590,11 +603,11 @@ export const Sv: MessagesSvType = {
     contact: "HSS | Kontakt",
     gdpr: "HSS | GDPR"
   },
-  description: "HSS webplats",
+  description: "HSS webbplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
-    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem. Barn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder. ",
+    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem. Barn kan gå med i scouterna från och med 8 års ålder. I Utmanarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder. ",
   },
   boatsCard: {
     headline: "Scoutliv",
@@ -728,7 +741,7 @@ export const Sv: MessagesSvType = {
     header1: "Vi vågar",
     header2: "Starka tillsammans",
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
-    text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att prova nya saker.",
+    text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att våga prova nya saker.",
     text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
   },
   learning: {
@@ -810,7 +823,7 @@ export const Sv: MessagesSvType = {
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
   },
   becomeScoutSmallCard: {
-    title: "Scoutliv för ung som vuxen",
+    title: "Scouting för ung som vuxen",
     subtitle: "Vi har åldersanpassade avdelningar för våra scouter. Som vuxen kan du engagera dig som ledare, eller hjälpa till som förälder. ",
     secondTitle: "Scout",
     secondText: "Man kan bli Scout från och med 8 års ålder. Medlemmarna på avdelningen för våra äldsta Scouter är 15 år och uppåt.",
@@ -865,13 +878,13 @@ export const Sv: MessagesSvType = {
     p0: "Barnen på Sjöhumlorna är mellan 8 och 9 år."
   },
   sjohumlorMeeting: {
-    s0: "Avdelingsmöten",
+    s0: "Avdelningsmöten",
     p0: "Dag: Måndag",
     p1: "Ruffen vid Hässelby Strandbad.",
   },
   sjohumlorPlace: {
     s0: "Märken",
-    p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Elle att får göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
+    p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Eller att få göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
   },
   sjohumlorButton: "Märkesplansch för Spårare",
   kaparnaUpptäckarscouter: {
@@ -880,7 +893,7 @@ export const Sv: MessagesSvType = {
   },
   kaparnaAge: {
     s0: "Ålder",
-    p0: "Barnen på Kaparna är mellan 10 och 11 år",
+    p0: "Barnen på Kaparna är mellan 10 och 11 år.",
   },
   kaparnaMeeting: {
     s0: "Avdelningsmöten",
@@ -889,7 +902,7 @@ export const Sv: MessagesSvType = {
   },
   kaparnaPlace: {
     s0: "Märken",
-    p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemäkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
+    p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemärkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
   },
   kaparnaButton: "Märkesplansch för Upptäckare",
   utmanarscouter: {
@@ -916,7 +929,7 @@ export const Sv: MessagesSvType = {
   },
   konvojenAge: {
     s0: "Ålder",
-    p0: "Barnen på Kaparna är mellan 12 och 14 år.",
+    p0: "Barnen på Konvojen är mellan 12 och 14 år.",
   },
   konvojenMeeting: {
     s0: "Avdelningsmöten",
@@ -982,4 +995,17 @@ export const Sv: MessagesSvType = {
     sub_title_two:"Hajker",
     p_two:"Vi anordnar hajker där deltagare får uppleva naturen, samarbeta och klara utmaningar tillsammans.",
   },
+  form: {
+    title:"Skicka ett meddelande",
+    text:"Det går bra att skicka ett meddelande direkt till vår e-post via formuläret.",
+    lastName:"Namn",
+    firstName:"Efternamn",
+    email:"E-post",
+    message:"Meddelande",
+    buttonText:"Skicka meddelande",
+    namn:"Namn",
+    efternamn:"Efternamn",
+    epost:"E-post",
+    meddelande:"Meddelande"
+  }
 };
