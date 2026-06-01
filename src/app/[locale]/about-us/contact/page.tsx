@@ -6,6 +6,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import JoinPage from "@/components/JoinPage";
 
+import ContactForm from "@/components/ContactForm";
 
 
 const pageItem = "contact"
@@ -13,8 +14,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params
     return getPageHeadTitle(locale, pageItem)
 }
-
-
 
 const Contact = ({params}:{params: Promise<{locale: string}>}) => {
 
@@ -31,6 +30,20 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       text={messages?.interestBtn.text}
       buttonText={messages?.interestBtn.buttonText}
       className="items-start text-left"
+      />
+      <ContentSection sectionLayout={["t", "p"]} page={"form_title"} />
+      <ContactForm 
+      title={messages?.form.title}
+      text={messages?.form.text}
+      lastName={messages?.form.lastName}
+      firstName={messages?.form.firstName}
+      email={messages?.form.email}
+      message={messages?.form.message}
+      buttonText={messages?.form.buttonText}
+      namn={messages?.form.namn}
+      efternamn={messages?.form.efternamn}
+      epost={messages?.form.epost}
+      meddelande={messages?.form.meddelande}
       />
     </div>
   )
