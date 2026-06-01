@@ -396,7 +396,7 @@ export const En: MessagesEngType = {
   home: {
     title: "Welcome to HSS",
     divisions: "Groups",
-    divisions_text: "We divide our departments by age. The content is adapted to the Scouts' interests and needs, and is designed to be fun, rewarding and safe for everyone.",
+    divisions_text: "We divide our groups by age. The content is adapted to the Scouts' interests and needs, and is designed to be fun, rewarding and safe for everyone.",
   },
   about: {
     title: "About HSS"
@@ -471,7 +471,7 @@ export const En: MessagesEngType = {
     konvojen_day: "Thursday",
     konvojen_time: "18:00",
     konvojen_place: "Ruffen",
-    konvojen_paragraph: "You will sail larger dinghies and plan their own trips together with the leaders. The Konvojen learns to lead, make decisions and handle challenges both at sea and on land.",
+    konvojen_paragraph: "You will sail larger dinghies and plan your own trips together with the leaders. The Konvojen learns to lead, make decisions and handle challenges both at sea and on land.",
     utmanare_title: "Utmanare",
     utmanare_ages: "15+",
     utmanare_day: "Tuesday or Thursday",
@@ -485,7 +485,7 @@ export const En: MessagesEngType = {
     familjescouter_place: "Ruffen",
     familjescouter_paragraph: "Familjescouter is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
     scouts_title: "Scouts",
-    scouts_paragraph: "We have age-separated departments from the age of 8.",
+    scouts_paragraph: "We have age-separated groups from the age of 8.",
     family_title: "Familjescouter",
     image_message: "Read more about ",
     basic_message: "Check out ",
@@ -508,12 +508,12 @@ export const En: MessagesEngType = {
     hero_title: "Hässelby Strand Sea Scouts",
     hero_subtitle01: "Adventures begin",
     hero_subtitle02: "at the water's edge",
-    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand.",
+    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow in a safe and caring community in Hässelby Strand.",
     button: "Join the Sea Scouts"
   },
   joinHero: {
     hero_title: "Hässelby Strand Sea Scouts",
-    hero_subtitle01: "The waves are waiting-",
+    hero_subtitle01: "The waves are waiting -",
     hero_subtitle02: "Join HSS",
     hero_description: "At HSS Scouts, we offer a safe and active free time for children and young people.",
     button: "Join the Scouts"
@@ -562,7 +562,7 @@ export const En: MessagesEngType = {
     card_text_1: "The Scout units meet once a week to do activities, collaborate, and grow together.",
     card_title_2: "Inclusive",
     card_headline_2: "Exciting for all ages",
-    card_text_2: "HSS has age-specific units starting from 8 years old and up.",
+    card_text_2: "HSS has age-specific groups starting from age 8.",
     card_title_3: "Values",
     card_headline_3: "Respect & responsibility",
     card_text_3: "We are an inclusive association where we take care of one another.",
@@ -735,7 +735,7 @@ export const En: MessagesEngType = {
     p1: "Walk down toward the water and turn left (toward the power plant). The grey-green cabin (Ruffen) is located diagonally across from the dock."
   },
   scoutLife: {
-    t0: "Scoutlife within HSS",
+    t0: "Scout life within HSS",
     header0: "Learning by doing",
     header1: "We are brave",
     header2: "Stronger together",
@@ -799,7 +799,7 @@ export const En: MessagesEngType = {
   ],
   lifestyle: {
     headline: "Scout Life",
-    title: "The Waves are Waiting",
+    title: "The Waves are waiting",
     text: "Life as a sea scout is filled with adventure, community, and freedom. You encounter the sea and nature together with others and create memories for life. This is where the adventure begins."
   },
   ruffen: {
@@ -832,7 +832,7 @@ export const En: MessagesEngType = {
   groupCard: {
     headline: "groups",
     title: "Age groups",
-    text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In the Senior Scouts (Utmanarna), our oldest scout group, members can join from the age of 15."
+    text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout group, members can join from the age of 15."
   },
   faqContact: {
     title: "Contact us",
@@ -840,7 +840,7 @@ export const En: MessagesEngType = {
   },
   joinContent: {
     title: "Scout Leader",
-    text: "As an adult, you can make a vital impact as a scout leader. You will coach the scouts and create a safe environment that encourages them to challenge themselves and grow. All our Scout Leaders are required to complete the Safe Meetings (Trygga Möten) training.",
+    text: "As an adult, you can make a real difference as a scout leader. You will coach the scouts and create a safe environment that encourages them to challenge themselves and grow. All our Scout Leaders are required to complete the Safe Meetings (Trygga Möten) training.",
     button: "Get started with Safe Meetings",
     text02: "After completing the Safe Meetings course, you can continue your training if you wish. We highly recommend taking the Leading Scouting (Leda Scouting) course. You can read more about our training programs at Leadership Island (Ledarskapsön).",
     button02: "Visit Leadership Island",
@@ -982,7 +982,7 @@ export const En: MessagesEngType = {
   },
 avdelningsledare:{
   h0:"Group Manager",
-  p0:"Each department has a department manager. Our managers are trained and have completed the mandatory course Safe Meetings."
+  p0:"Each group has a group manager. Our managers are trained and have completed the mandatory course Safe Meetings."
 },
   scoutnet: {
     t0: "Scoutnet",
