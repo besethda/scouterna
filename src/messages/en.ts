@@ -338,6 +338,12 @@ export type MessagesEngType = {
   konvojenButton: string,
   scoutnet: Record<string, string>
   scoutnetButton: string,
+  good: string,
+  question: {title:string, paraph:string},
+  toFAQButton: string,
+  policy:  {title:string, paraph:string, mer:string, desktop:string,},
+  moreButton: string,
+  secondButton:string,
 };
 
 export const En: MessagesEngType = {
@@ -898,4 +904,19 @@ export const En: MessagesEngType = {
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
 },
   scoutnetButton: "Log in to Scoutnet",
+  good: "Good to know",
+  question: {
+    title: "Questions and concerns",
+    paraph: "If you are wondering about something, you can visit our FAQ. If you don't find answers to your questions, please contact someone in the organization."
+},
+toFAQButton: "Go to our FAQ",
+policy: {
+    title: "Life jacket policy",
+    paraph: "We follow a life jacket policy for the safety of all Scouts.",
+    mer: "Life jackets must be worn by everyone on docks and in boats. Scouts who can swim must use sailing vests, and Scouts who cannot swim must use rescue vests.",
+    desktop:"Safety is the be-all and end-all for the Sea Scouts. Read up on our life jacket policy to learn more about when the vest should be used, and which vests we recommend."
+},
+moreButton: "Read more about policy",
+secondButton:"Read more about our life jacket policy",
 };
+

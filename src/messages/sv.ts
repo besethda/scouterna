@@ -343,6 +343,12 @@ type MessagesSvType = {
   konvojenButton: string,
   scoutnet: Record<string, string>
   scoutnetButton: string,
+  good: string,
+  question: {title:string, paraph:string},
+  toFAQButton: string,
+  policy:  {title:string, paraph:string, mer:string, desktop:string,},
+  moreButton: string,
+  secondButton:string,
 };
 
 export const Sv: MessagesSvType = {
@@ -901,5 +907,19 @@ export const Sv: MessagesSvType = {
     p0:"Scoutnet är Scouternas gemensamma stystem där all information om medlemmar och aktiviteter finns samlad.",
     p1:"Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
   },
-  scoutnetButton: "Logga in på Scoutnet"
+  scoutnetButton: "Logga in på Scoutnet",
+  good: "Bra att veta",
+  question: {
+    title:"Frågor och funderingar",
+    paraph:"Undrar du över någonting kan du besöka vår FAQ. Om du inte hittar svar på dina frågor, höra av dig till någon i kåren."
+  },
+  toFAQButton: "Gå till vår FAQ",
+  policy: {
+    title:"Flyvästpolicy",
+    paraph:"Vi följer en flytvästpolicy för alla Scouters säkerhet.",
+    mer:"Flytväst ska bäras av alla på bryggor och i båtar. Simkunniga Scouter ska använda seglarvästar, och ej simkunniga Scouter ska använda räddningsväst.",
+    desktop:"Säkerhet är A och O hos Sjöscouterna. Läs på om vår flytvästpolicy för att lära dig mer om när väst ska användas, och vilka västar vi rekommenderar."
+  },
+  moreButton: "Läs mer om policyn",
+  secondButton:"Läs mer om vår flytvästpolicy",
 };
