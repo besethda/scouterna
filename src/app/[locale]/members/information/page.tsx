@@ -21,12 +21,15 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
     return (
         <div>
             <Breadcrumbs />
-                <div className="w-full flex flex-col items-center">
-                    <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
-                    <ScoutInfo />
-                    <Scoutnet />
-                    <Union />
-                </div>
+            <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
+            <ScoutInfo />
+            <Scoutnet />
+            <div className="w-full flex flex-col items-center">
+                <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
+                <ScoutInfo />
+                <Scoutnet />
+                <Union />
+            </div>
 
         </div>
     );

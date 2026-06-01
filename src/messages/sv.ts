@@ -317,17 +317,17 @@ type MessagesSvType = {
     buttonText: string
   },
   form: {
-    title:string,
-    text:string,
-    lastName:string,
-    firstName:string,
-    email:string,
-    message:string,
-    buttonText:string,
-    namn:string,
-    efternamn:string,
-    epost:string,
-    meddelande:string
+    title: string,
+    text: string,
+    lastName: string,
+    firstName: string,
+    email: string,
+    message: string,
+    buttonText: string,
+    namn: string,
+    efternamn: string,
+    epost: string,
+    meddelande: string
   },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
@@ -362,20 +362,20 @@ type MessagesSvType = {
   Familjescoutsagor: Record<string, string>,
   Märken: Record<string, string>,
   familjescouterButton: string
-  
+
   GroupIntro: {
-    FAMheadline: string, 
-    FAMtitle: string, 
-    FAMtext: string, 
-    SJMtitle: string, 
-    SJMtext: string, 
-    KAPtitle: string, 
-    KAPtext: string, 
-    KONtitle: string, 
-    KONtext: string, 
-    UTtitle: string, 
-    UTtext: string, 
-  }, 
+    FAMheadline: string,
+    FAMtitle: string,
+    FAMtext: string,
+    SJMtitle: string,
+    SJMtext: string,
+    KAPtitle: string,
+    KAPtext: string,
+    KONtitle: string,
+    KONtext: string,
+    UTtitle: string,
+    UTtext: string,
+  },
   optimisterSection: {
     title: string,
     title02: string,
@@ -385,15 +385,15 @@ type MessagesSvType = {
     text03: string,
   }
   ruffenDivisions: Record<string, string>
-  avdelningsledare:Record <string, string>
+  avdelningsledare: Record<string, string>
   scoutnet: Record<string, string>
   scoutnetButton: string,
   good: string,
-  question: {title:string, paraph:string},
+  question: { title: string, paraph: string },
   toFAQButton: string,
-  policy:  {title:string, paraph:string, mer:string, desktop:string,},
+  policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
-  secondButton:string,
+  secondButton: string,
 };
 
 export const Sv: MessagesSvType = {
@@ -974,25 +974,25 @@ export const Sv: MessagesSvType = {
   familjescouterButton: "Upptäck alla våra Scoutmärken",
 
   GroupIntro: {
-    FAMheadline: "Avdelningar", 
-    FAMtitle: "Familjescouter", 
-    FAMtext: "Genom Familjescouting får barn under åtta år tillsammans med en eller flera vuxna på ett roligt och lekfullt sätt möta scouting.", 
-    SJMtitle: "Sjöhumlorna", 
-    SJMtext: "De yngsta scouterna upptäcker sjölivet genom lek, sång och små äventyr vid vattnet. Här lär man sig samarbeta, knyta sina första knopar och känna sig hemma i naturen.", 
+    FAMheadline: "Avdelningar",
+    FAMtitle: "Familjescouter",
+    FAMtext: "Genom Familjescouting får barn under åtta år tillsammans med en eller flera vuxna på ett roligt och lekfullt sätt möta scouting.",
+    SJMtitle: "Sjöhumlorna",
+    SJMtext: "De yngsta scouterna upptäcker sjölivet genom lek, sång och små äventyr vid vattnet. Här lär man sig samarbeta, knyta sina första knopar och känna sig hemma i naturen.",
     KAPtitle: "Kaparna",
-    KAPtext: "Nu blir det mer segling och längre utflykter i skärgården. Kaparna tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.", 
-    KONtitle: "Konvojen", 
-    KONtext: "Här seglar man större jollar och planerar egna hajker tillsammans med ledarna. Konvojen lär sig leda, fatta beslut och hantera utmaningar både till sjöss och på land.", 
-    UTtitle: "Utmanare", 
-    UTtext: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.", 
+    KAPtext: "Nu blir det mer segling och längre utflykter i skärgården. Kaparna tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.",
+    KONtitle: "Konvojen",
+    KONtext: "Här seglar man större jollar och planerar egna hajker tillsammans med ledarna. Konvojen lär sig leda, fatta beslut och hantera utmaningar både till sjöss och på land.",
+    UTtitle: "Utmanare",
+    UTtext: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.",
   },
   optimisterSection: {
-    title:"Optimister",
-    title02:"2-kronor",
-    title03:"Kölbåtar",
-    text:"Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
-    text02:"Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
-    text03:"Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
+    title: "Optimister",
+    title02: "2-kronor",
+    title03: "Kölbåtar",
+    text: "Våra optimister är perfekta nybörjarbåtar där scouter lär sig grunderna i segling på ett tryggt och roligt sätt.",
+    text02: "Våra 2-kronor är snabba och roliga segelbåtar som passar bra för både träning och tursegling. De kräver samarbete i besättningen och ger en härlig seglingsupplevelse.",
+    text03: "Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
   },
   interestBtn: {
     title: "Vill du gå med i Scouterna?",
@@ -1003,42 +1003,41 @@ export const Sv: MessagesSvType = {
     t0: "Avdelningsmöten",
     p0: "HSS fyra avdelningar har avdelningsmöten en gång i veckan. "
   },
-  avdelningsledare:{
-    h0:"Avdelningsledare",
-    p0:"Varje avdelning har en avdelningsledare. Våra ledare är utbildade och har gått den obligatoriska kursen Trygga Möten."
+  avdelningsledare: {
+    h0: "Avdelningsledare",
+    p0: "Varje avdelning har en avdelningsledare. Våra ledare är utbildade och har gått den obligatoriska kursen Trygga Möten."
   },
   scoutnet: {
-    t0:"Scoutnet",
-    p0:"Scoutnet är Scouternas gemensamma stystem där all information om medlemmar och aktiviteter finns samlad.",
-    p1:"Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
+    t0: "Scoutnet",
+    p0: "Scoutnet är Scouternas gemensamma stystem där all information om medlemmar och aktiviteter finns samlad.",
+    p1: "Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
   },
   scoutnetButton: "Logga in på Scoutnet",
   form: {
-    title:"Skicka ett meddelande",
-    text:"Det går bra att skicka ett meddelande direkt till vår e-post via formuläret.",
-    lastName:"Namn",
-    firstName:"Efternamn",
-    email:"E-post",
-    message:"Meddelande",
-    buttonText:"Skicka meddelande",
-    namn:"Namn",
-    efternamn:"Efternamn",
-    epost:"E-post",
-    meddelande:"Meddelande"
+    title: "Skicka ett meddelande",
+    text: "Det går bra att skicka ett meddelande direkt till vår e-post via formuläret.",
+    lastName: "Namn",
+    firstName: "Efternamn",
+    email: "E-post",
+    message: "Meddelande",
+    buttonText: "Skicka meddelande",
+    namn: "Namn",
+    efternamn: "Efternamn",
+    epost: "E-post",
+    meddelande: "Meddelande"
   },
   good: "Bra att veta",
   question: {
-    title:"Frågor och funderingar",
-    paraph:"Undrar du över någonting kan du besöka vår FAQ. Om du inte hittar svar på dina frågor, kan du höra av dig till någon i kåren."
+    title: "Frågor och funderingar",
+    paraph: "Undrar du över någonting kan du besöka vår FAQ. Om du inte hittar svar på dina frågor, kan du höra av dig till någon i kåren."
   },
   toFAQButton: "Gå till vår FAQ",
   policy: {
-    title:"Flyvästpolicy",
-    paraph:"Vi följer en flytvästpolicy för alla Scouters säkerhet.",
-    mer:"Flytväst ska bäras av alla på bryggor och i båtar. Simkunniga Scouter ska använda seglarvästar, och ej simkunniga Scouter ska använda räddningsväst.",
-    desktop:"Säkerhet är A och O hos Sjöscouterna. Läs på om vår flytvästpolicy för att lära dig mer om när väst ska användas, och vilka västar vi rekommenderar."
+    title: "Flyvästpolicy",
+    paraph: "Vi följer en flytvästpolicy för alla Scouters säkerhet.",
+    mer: "Flytväst ska bäras av alla på bryggor och i båtar. Simkunniga Scouter ska använda seglarvästar, och ej simkunniga Scouter ska använda räddningsväst.",
+    desktop: "Säkerhet är A och O hos Sjöscouterna. Läs på om vår flytvästpolicy för att lära dig mer om när väst ska användas, och vilka västar vi rekommenderar."
   },
   moreButton: "Läs mer om policyn",
-  secondButton:"Läs mer om vår flytvästpolicy"
-  
+  secondButton: "Läs mer om vår flytvästpolicy",
 };
