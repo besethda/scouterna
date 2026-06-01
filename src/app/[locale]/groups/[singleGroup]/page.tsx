@@ -365,8 +365,8 @@ const Groups = ({
     <>
       <Breadcrumbs />
       <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-      <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
-        <div className="lg:max-w-430 lg:px-22">
+      <div className="bg-bg-blue md:pl-5 pt-10 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+        <div className="lg:max-w-430 lg:px-22 flex flex-col gap-6">
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
             <div className="flex-1">
               <ContentSection 
@@ -377,7 +377,7 @@ const Groups = ({
                 child={true}
               />
             </div>
-            <div className="flex-1 flex justify-center">
+            <div className="flex justify-center">
               <Image
                 src={Sjohulorna}
                 alt="konvojen"
@@ -386,22 +386,28 @@ const Groups = ({
                 height={257}
                 />
             </div>
-            <ContentSection
-              sectionLayout={["s", "p", "p"]}
-              page="ParumMagna"
-              background={"blue"}
-              padding={"3"}
-              child={true}
-            />
-            <div className="flex-1 flex justify-center">
+          </div>
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
+            <div className="flex-1">
+              <ContentSection
+                sectionLayout={["s", "p", "p"]}
+                page="ParumMagna"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+            </div>
+            <div className="flex justify-center">
               <Image
                 src={Sjohulorna}
                 alt="Familjescouter img"
-                className="rounded-2xl object-cover"
+                className="rounded-2xl object-cover "
                 width={358}
                 height={257}
               />
             </div>
+          </div>
+          <div className="flex flex-col gap-4 justify-center pb-4">
             <ContentSection
               sectionLayout={["s", "p", "p"]}
               page="Familjescoutsagor"
@@ -416,9 +422,21 @@ const Groups = ({
               padding={"3"}
               child={true} 
             />
-            <div>
-              <CTABtn text={messages?.familjescouterButton} />
-            </div>
+          </div>
+          <div className="
+            [&_button]:border 
+            [&_button]:border-purple
+          [&_button]:bg-purple-opaque
+          [&_button]:text-primary
+            [&_button]:rounded-2xl
+            [&_button]:px-6
+            [&_button]:py-3
+            [&_button]:hover:bg-purple-opaque
+            [&_button]:hover:hover:brightness-104
+            pl-4
+            pt-2
+          ">
+            <CTABtn text={messages?.familjescouterButton} />
           </div>
         </div>
       </div>
