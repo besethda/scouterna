@@ -343,6 +343,11 @@ export type MessagesEngType = {
   konvojenButton: string,
   union: Record<string, string>
   download: string,
+  BarnOchVuxnaTillsammans: Record<string, string>,
+  ParumMagna: Record<string, string>,
+  Familjescoutsagor: Record<string, string>,
+  Märken: Record<string, string>,
+  familjescouterButton: string
 
   GroupIntro: {
     FAMheadline: string, 
@@ -930,6 +935,7 @@ export const En: MessagesEngType = {
   },
   download: "Download ",
 
+
   GroupIntro: {
     FAMheadline: "Groups", 
     FAMtitle: "FamilyScouts", 
@@ -970,4 +976,5 @@ avdelningsledare:{
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
 },
   scoutnetButton: "Log in to Scoutnet",
+
 };

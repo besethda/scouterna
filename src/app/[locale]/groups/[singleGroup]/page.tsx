@@ -363,9 +363,66 @@ const Groups = ({
   } else if (singleGroup === "familjescouter") {
     return (
     <>
-    <Breadcrumbs />
-    <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-    </>
+      <Breadcrumbs />
+      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
+      <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
+        <div className="lg:max-w-430 lg:px-22">
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
+            <div className="flex-1">
+              <ContentSection 
+                sectionLayout={["s", "p", "p", "p"]}
+                page="BarnOchVuxnaTillsammans"
+                background={"blue"}
+                padding={"5"}
+                child={true}
+              />
+            </div>
+            <div className="flex-1 flex justify-center">
+              <Image
+                src={Sjohulorna}
+                alt="konvojen"
+                className="rounded-2xl object-cover"
+                width={358}
+                height={257}
+                />
+            </div>
+            <ContentSection
+              sectionLayout={["s", "p", "p"]}
+              page="ParumMagna"
+              background={"blue"}
+              padding={"3"}
+              child={true}
+            />
+            <div className="flex-1 flex justify-center">
+              <Image
+                src={Sjohulorna}
+                alt="Familjescouter img"
+                className="rounded-2xl object-cover"
+                width={358}
+                height={257}
+              />
+            </div>
+            <ContentSection
+              sectionLayout={["s", "p", "p"]}
+              page="Familjescoutsagor"
+              background={"blue"}
+              padding={"3"}
+              child={true} 
+            />
+            <ContentSection
+              sectionLayout={["s", "p"]}
+              page="Märken"
+              background={"blue"}
+              padding={"3"}
+              child={true} 
+            />
+            <div>
+              <CTABtn text={messages?.familjescouterButton} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </> 
     )
   }
 };
