@@ -11,9 +11,10 @@ import JoinPage from "@/components/JoinPage";
 import CTABtn from "@/components/CTA-button";
 
 const pageItem = "become-a-scout"
+const headDescription = "become-a-scout"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {

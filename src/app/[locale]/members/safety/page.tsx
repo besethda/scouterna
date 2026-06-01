@@ -10,9 +10,10 @@ import ContentSection from "@/components/ContentSection";
 
 
 const pageItem = "safety"
+const headDescription = "safety"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 

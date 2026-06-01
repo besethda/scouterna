@@ -11,9 +11,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 
 const pageItem = "ruffen"
+const headDescription = "ruffen"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
