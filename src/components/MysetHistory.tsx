@@ -10,19 +10,19 @@ const MysetHistory = () => {
   const cards = [
     {
       img: "/images/myset1.jpg",
-      alt: ""
+      alt: "myset"
     },
     {
       img: "/images/myset2.jpg",
-      alt: ""
+      alt: "myset"
     },
     {
       img: "/images/myset3.jpg",
-      alt: ""
+      alt: "myset"
     },
     {
       img: "/images/myset4.jpg",
-      alt: ""
+      alt: "myset"
     }
   ]
 
