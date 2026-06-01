@@ -396,10 +396,10 @@ export type MessagesEngType = {
   secondButton: string,
 
   mysetHistory: {
-    title: string, 
-    text1: string, 
-    text2: string, 
-    subtitle: string 
+    title: string,
+    text1: string,
+    text2: string,
+    subtitle: string
   }
 };
 
@@ -1052,10 +1052,10 @@ export const En: MessagesEngType = {
   secondButton: "Read more about our life jacket policy",
 
   mysetHistory: {
-    title: "The History of Myset", 
-    text1: "On Sunday, January 28 1968, Myset was inaugurated after three years of voluntary work by the HSS Parents' Association. Through bazaars and lotteries, nearly 50,000 SEK was raised. Around 400 proud scouts and parents attended the inauguration.", 
-    text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.", 
-    subtitle: "Images from the archives" 
+    title: "The History of Myset",
+    text1: "On Sunday, January 28 1968, Myset was inaugurated after three years of voluntary work by the HSS Parents' Association. Through bazaars and lotteries, nearly 50,000 SEK was raised. Around 400 proud scouts and parents attended the inauguration.",
+    text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.",
+    subtitle: "Images from the archives"
   }
 
 };

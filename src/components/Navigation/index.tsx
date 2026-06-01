@@ -72,7 +72,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
                             </div>
                         </div>
                         {openId === menu.id && (
-                            <div onClick={() => { handleToggle(menu.id); onClose() }} className={`px-4 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-primary lg:text-[18px] lg:w-60 xl:w-85 lg:pt-0 lg:top-25.5 lg:border-none lg:shadow-md lg:rounded-b-2xl 
+                            <div onClick={() => { handleToggle(menu.id); onClose() }} className={`px-4 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-primary lg:text-[18px] lg:w-70 xl:w-85 lg:pt-0 lg:top-25.5 lg:border-none lg:shadow-md lg:rounded-b-2xl 
                             ${menu.id === 5 ? 'lg:right-2 right-auto-2000' : ''}`}>
                                 {menu.submenu && menu.submenu.map((sub, index) => (
                                     <Link href={messages?.path + sub.href} key={index} className="hover:text-text-gray">

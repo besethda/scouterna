@@ -1,12 +1,16 @@
 "use client"
 import dynamic from "next/dynamic";
 
+interface mapWrapperProps {
+    page: string,
+}
+
 const Map = dynamic(() => import("@/components/Map/Map"),
     { ssr: false });
 
-const MapWrapper = () => {
+const MapWrapper = ({ page }: mapWrapperProps) => {
     return (
-        <Map />
+        <Map page={page} />
     )
 }
 
