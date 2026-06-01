@@ -315,6 +315,19 @@ export type MessagesEngType = {
     text: string,
     buttonText: string
   },
+  form: {
+    title:string,
+    text:string,
+    lastName:string,
+    firstName:string,
+    email:string,
+    message:string,
+    buttonText:string,
+    namn:string,
+    efternamn:string,
+    epost:string,
+    meddelande:string
+  },
   myset01: Record<string, string>
   myset02: Record<string, string>
   myset03: Record<string, string>,
@@ -942,7 +955,7 @@ export const En: MessagesEngType = {
     KONtext: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
     UTtitle: "Utmanare", 
     UTtext: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them."
-   },
+  },
   optimisterSection: {
     title:"Optimists",
     title02:"2-kronor",
@@ -960,14 +973,27 @@ export const En: MessagesEngType = {
     t0: "Group Meetings",
     p0: "HSS's four groups hold meetings once a week."
   },
-avdelningsledare:{
-  h0:"Group Manager",
-  p0:"Each department has a department manager. Our managers are trained and have completed the mandatory course Safe Meetings."
-},
+  avdelningsledare:{
+    h0:"Group Manager",
+    p0:"Each department has a department manager. Our managers are trained and have completed the mandatory course Safe Meetings."
+  },
   scoutnet: {
     t0: "Scoutnet",
     p0: "Scoutnet is the Scouts' common system where all information about members and activities is gathered.",
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
-},
+  },
   scoutnetButton: "Log in to Scoutnet",
+  form: {
+    title: "Send a message",
+    text: "You can send a message directly to our email using the form.",
+    firstName: "First name",
+    lastName: "Last name",
+    email: "Email",
+    message: "Message",
+    buttonText: "Send message",
+    namn:"First Name",
+    efternamn:"Last Name",
+    epost:"E-mail",
+    meddelande:"Message"
+  }
 };
