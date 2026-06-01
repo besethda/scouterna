@@ -587,7 +587,7 @@ export const Sv: MessagesSvType = {
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
-    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem. Barn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder. ",
+    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem. Barn kan gå med i scouterna från och med 8 års ålder. I Utmanarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder. ",
   },
   boatsCard: {
     headline: "Scoutliv",
@@ -721,7 +721,7 @@ export const Sv: MessagesSvType = {
     header1: "Vi vågar",
     header2: "Starka tillsammans",
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
-    text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att prova nya saker.",
+    text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att våga prova nya saker.",
     text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
   },
   learning: {
@@ -803,7 +803,7 @@ export const Sv: MessagesSvType = {
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
   },
   becomeScoutSmallCard: {
-    title: "Scoutliv för ung som vuxen",
+    title: "Scouting för ung som vuxen",
     subtitle: "Vi har åldersanpassade avdelningar för våra scouter. Som vuxen kan du engagera dig som ledare, eller hjälpa till som förälder. ",
     secondTitle: "Scout",
     secondText: "Man kan bli Scout från och med 8 års ålder. Medlemmarna på avdelningen för våra äldsta Scouter är 15 år och uppåt.",

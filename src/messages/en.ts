@@ -465,7 +465,7 @@ export const En: MessagesEngType = {
     familjescouter_place: "Ruffen",
     familjescouter_paragraph: "Familjescouter is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
     scouts_title: "Scouts",
-    scouts_paragraph: "We have age-separated departments from the age of 8.",
+    scouts_paragraph: "We have age-separated groups from the age of 8.",
     family_title: "Familjescouter",
     image_message: "Read more about ",
     basic_message: "Check out ",
@@ -488,7 +488,7 @@ export const En: MessagesEngType = {
     hero_title: "Hässelby Strand Sea Scouts",
     hero_subtitle01: "Adventures begin",
     hero_subtitle02: "at the water's edge",
-    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow within a safe community in Hässelby Strand.",
+    hero_description: "On the waves of Lake Mälaren, children learn to sail, collaborate, and grow in a safe and caring community in Hässelby Strand.",
     button: "Join the Sea Scouts"
   },
   joinHero: {
@@ -962,7 +962,7 @@ export const En: MessagesEngType = {
   },
 avdelningsledare:{
   h0:"Group Manager",
-  p0:"Each department has a department manager. Our managers are trained and have completed the mandatory course Safe Meetings."
+  p0:"Each group has a group manager. Our managers are trained and have completed the mandatory course Safe Meetings."
 },
   scoutnet: {
     t0: "Scoutnet",
