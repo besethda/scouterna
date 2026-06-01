@@ -1003,7 +1003,7 @@ export const Sv: MessagesSvType = {
   good: "Bra att veta",
   question: {
     title:"Frågor och funderingar",
-    paraph:"Undrar du över någonting kan du besöka vår FAQ. Om du inte hittar svar på dina frågor, höra av dig till någon i kåren."
+    paraph:"Undrar du över någonting kan du besöka vår FAQ. Om du inte hittar svar på dina frågor, kan du höra av dig till någon i kåren."
   },
   toFAQButton: "Gå till vår FAQ",
   policy: {
