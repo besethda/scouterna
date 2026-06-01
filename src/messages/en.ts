@@ -315,6 +315,19 @@ export type MessagesEngType = {
     text: string,
     buttonText: string
   },
+  form: {
+    title:string,
+    text:string,
+    lastName:string,
+    firstName:string,
+    email:string,
+    message:string,
+    buttonText:string,
+    namn:string,
+    efternamn:string,
+    epost:string,
+    meddelande:string
+  },
   myset01: Record<string, string>
   myset02: Record<string, string>
   myset03: Record<string, string>,
@@ -970,4 +983,17 @@ avdelningsledare:{
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
 },
   scoutnetButton: "Log in to Scoutnet",
+  form: {
+    title: "Send a message",
+    text: "You can send a message directly to our email using the form.",
+    firstName: "First name",
+    lastName: "Last name",
+    email: "Email",
+    message: "Message",
+    buttonText: "Send message",
+    namn:"First Name",
+    efternamn:"Last Name",
+    epost:"E-mail",
+    meddelande:"Message"
+  }
 };

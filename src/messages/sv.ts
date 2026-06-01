@@ -316,6 +316,19 @@ type MessagesSvType = {
     text: string,
     buttonText: string
   },
+  form: {
+    title:string,
+    text:string,
+    lastName:string,
+    firstName:string,
+    email:string,
+    message:string,
+    buttonText:string,
+    namn:string,
+    efternamn:string,
+    epost:string,
+    meddelande:string
+  },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
   myset03: Record<string, string>,
@@ -967,5 +980,18 @@ export const Sv: MessagesSvType = {
     p0:"Scoutnet är Scouternas gemensamma stystem där all information om medlemmar och aktiviteter finns samlad.",
     p1:"Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
   },
-  scoutnetButton: "Logga in på Scoutnet"
+  scoutnetButton: "Logga in på Scoutnet",
+  form: {
+    title:"Skicka ett meddelande",
+    text:"Det går bra att skicka ett meddelande direkt till vår e-post via formuläret.",
+    lastName:"Namn",
+    firstName:"Efternamn",
+    email:"E-post",
+    message:"Meddelande",
+    buttonText:"Skicka meddelande",
+    namn:"Namn",
+    efternamn:"Efternamn",
+    epost:"E-post",
+    meddelande:"Meddelande"
+  }
 };
