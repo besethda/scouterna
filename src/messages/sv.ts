@@ -897,7 +897,7 @@ export const Sv: MessagesSvType = {
   policy: {
     title:"Flyvästpolicy",
     paraph:"Vi följer en flytvästpolicy för alla Scouters säkerhet.",
-    mer:"Flytvåst ska bäras av alla på bryggor och i båtar. Simkunniga Scouter ska använda seglarvästar, och ej simkunniga Scouter ska använda räddningsväst.",
+    mer:"Flytväst ska bäras av alla på bryggor och i båtar. Simkunniga Scouter ska använda seglarvästar, och ej simkunniga Scouter ska använda räddningsväst.",
     desktop:"Säkerhet är A och O hos Sjöscouterna. Läs på om vår flytvästpolicy för att lära dig mer om när väst ska användas, och vilka västar vi rekommenderar."
   },
   moreButton: "Läs mer om policyn",
