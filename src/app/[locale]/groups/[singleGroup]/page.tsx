@@ -407,7 +407,7 @@ const Groups = ({
               />
             </div>
           </div>
-          <div className="flex flex-col gap-4 justify-center pb-4">
+          <div className="flex flex-col gap-4 justify-center">
             <ContentSection
               sectionLayout={["s", "p", "p"]}
               page="Familjescoutsagor"
@@ -434,7 +434,6 @@ const Groups = ({
             [&_button]:hover:bg-purple-opaque
             [&_button]:hover:hover:brightness-104
             pl-4
-            pt-2
           ">
             <CTABtn text={messages?.familjescouterButton} />
           </div>
