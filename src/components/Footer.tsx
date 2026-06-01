@@ -10,6 +10,7 @@ import schoolIcon from '../../public/school-icon.png'
 import footerHSSIcon from '../../public/footer-hss-logo.png'
 import locationIcon from '../../public/hss-pin-icon.svg'
 import useMessages from '@/hook/useMessages'
+import MapWrapper from './Map/MapWrapper'
 
 const Footer = () => {
 
@@ -58,6 +59,11 @@ const Footer = () => {
                         <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-5' />
                         <p className="text-body xl:text-lg">@hss_scout</p>
                     </a>
+                </div>
+            </div>
+            <div className='w-full flex justify-center'>
+                <div className='w-full max-w-6xl'>
+                    <MapWrapper page="footer" />
                 </div>
             </div>
             <div className="w-full border-t border-gray flex text-lightGray text-body-bold pt-4 font-normal xl:justify-between xl:w-[90%] xl:mx-auto leading-loose">
