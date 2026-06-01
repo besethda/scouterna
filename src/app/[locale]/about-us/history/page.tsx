@@ -23,9 +23,7 @@ const History = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <div>
             <Breadcrumbs />
-            <div className="bg-transparent">
-              <CardAbout page="historycard" card="historymobilecard" logo="/heart.png" image="/images/IMG_1943.jpeg" MDlogo="/bg-heart.svg" />
-            </div>
+            <CardAbout page="historycard" card="historymobilecard" logo="/heart.png" image="/images/IMG_1943.jpeg" MDlogo="/bg-heart.svg" />
             <ContentSection sectionLayout={["t", "p", "p", "p", "p", "p"]} page="history" background={"blue"} />
         </div>
     );
