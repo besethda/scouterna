@@ -8,6 +8,7 @@ import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import MysetHistory from "@/components/MysetHistory";
 
 
 const pageItem = "myset"
@@ -36,19 +37,20 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                 />
                 <div className="px-4 md:py-3 w-full flex flex-col items-center bg-bg-blue ">
                     <div className="lg:max-w-430 lg:px-22 w-full">
-                        <ContentSection sectionLayout={["t", "p"]} page="myset01" background="blue" padding="top" child={true}/>
+                        <ContentSection sectionLayout={["t", "p"]} page="myset01" background="blue" padding="top" child={true} />
                         <div className="bg-bg-blue pt-2">
                             <ImageContainer />
                         </div>
-                        <ContentSection sectionLayout={["t", "p", "p"]} page="myset02" background="blue" padding="top" child={true}/>
+                        <ContentSection sectionLayout={["t", "p", "p"]} page="myset02" background="blue" padding="top" child={true} />
                         <div className="bg-bg-blue py-4">
                             <a href="https://web.cdn.scouterna.net/uploads/sites/322/2020/02/mysetplanlosning.pdf">
                                 <CTABtn text={messages?.mysetBtn?.text} />
                             </a>
                         </div>
-                        <ContentSection sectionLayout={["t", "p"]} page="myset03" background="blue" padding="bottom" child={true}/>
+                        <ContentSection sectionLayout={["t", "p"]} page="myset03" background="blue" padding="bottom" child={true} />
                     </div>
                 </div>                          
+                <MysetHistory />
             </div>
         </div>
     );
