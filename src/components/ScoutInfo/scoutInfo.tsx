@@ -7,7 +7,7 @@ import Image from "next/image";
 const ScoutInfo = () => {
   const messages = useMessages();
   return (
-    <div className="bg-bg-blue pt-20 pb-30 md:px-23">
+    <div className="bg-bg-blue pt-20 pb-20 md:px-23">
       <div className="text-3xl text-primary px-5 md:px-1">{messages?.good}</div>
       <div className="flex gap-5 flex-col md:flex-row md:mt-5 md:items-stretch">
           <div className="md:bg-bg-white flex flex-col shrink flex-1 md:border md:border-lightGray rounded-2xl px-5 py-5">
