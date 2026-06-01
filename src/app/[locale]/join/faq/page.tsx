@@ -65,7 +65,6 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }

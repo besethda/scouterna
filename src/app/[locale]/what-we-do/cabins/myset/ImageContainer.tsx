@@ -14,8 +14,8 @@ const ImageContainer = () => {
           alt="image"
           width={800}
           height={600}
-
-          className=" bg-white rounded-2xl object-cover md:max-w-150 md:max-h-109" />
+          className=" bg-white rounded-2xl object-cover md:max-w-150 md:max-h-109" 
+        />
       </div>
     </>
   )

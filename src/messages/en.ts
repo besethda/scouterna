@@ -968,7 +968,7 @@ export const En: MessagesEngType = {
     KONtext: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
     UTtitle: "Utmanare", 
     UTtext: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them."
-   },
+  },
   optimisterSection: {
     title:"Optimists",
     title02:"2-kronor",

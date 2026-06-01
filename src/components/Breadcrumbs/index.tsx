@@ -51,7 +51,6 @@ const Breadcrumbs = () => {
               const currentPath =
                 "/" + breadcrumbsArray.slice(0, index + 1).join("/"); // get  string  /about   /about/history
               const href = messages?.breadcrumbs.path + currentPath;  //get href  /en/about/history or /sv/about/history
-
               return ( // page["about-us"] = page.about-us, item is a variable like let item = "about-us" 
                 <span key={index} className="flex items-center h-9 md:h-10 font-albert overflow-hidden text-primary whitespace-nowrap">
                   <span className="px-1.5 md:px-3 text-primary font-albert">  /  </span>
