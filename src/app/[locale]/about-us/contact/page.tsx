@@ -33,17 +33,17 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       />
       <ContentSection sectionLayout={["t", "p"]} page={"form_title"} />
       <ContactForm 
-        title={messages?.form.title}
-        text={messages?.form.text}
-        lastName={messages?.form.lastName}
-        firstName={messages?.form.firstName}
-        email={messages?.form.email}
-        message={messages?.form.message}
-        buttonText={messages?.form.buttonText}
-        namn={messages?.form.namn}
-        efternamn={messages?.form.efternamn}
-        epost={messages?.form.epost}
-        meddelande={messages?.form.meddelande}
+      title={messages?.form.title}
+      text={messages?.form.text}
+      lastName={messages?.form.lastName}
+      firstName={messages?.form.firstName}
+      email={messages?.form.email}
+      message={messages?.form.message}
+      buttonText={messages?.form.buttonText}
+      namn={messages?.form.namn}
+      efternamn={messages?.form.efternamn}
+      epost={messages?.form.epost}
+      meddelande={messages?.form.meddelande}
       />
     </div>
   )
