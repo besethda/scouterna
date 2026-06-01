@@ -8,6 +8,7 @@ import Image from "next/image";
 import CTABtn from "@/components/CTA-button";
 import Sjohulorna from "../../../../../public/images/DSCF3033.jpg";
 import GroupIntro from "@/components/GroupIntro";
+import Link from 'next/link';
 
 const pageItems = [
   "sjohumlorna",
