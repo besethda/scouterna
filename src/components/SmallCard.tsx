@@ -39,11 +39,9 @@ const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext,
             <p>{thirdtext}</p>
           </div>
         </div>
-
         <div>
           <CTABtn text={button} />
         </div>
-
       </div>
     </div>
   )

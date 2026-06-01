@@ -22,14 +22,13 @@ const JoinPage = ({title, text, buttonText,buttonOnClick,btnWidth,width = "full"
                 {buttonText &&(
                     <div className={`${width === "box" ?" mx-auto" : "w-full md:w-fit"} w-full`}>
                         <CTABtn onClick={buttonOnClick} 
-                        text={buttonText}
-                        width={btnWidth}
-                    />
+                            text={buttonText}
+                            width={btnWidth}
+                        />
                     </div>
                 )}
             </div>
         </div>
-
     )
 }
 
