@@ -4,12 +4,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
-<<<<<<< HEAD
 import JoinPage from "@/components/JoinPage";
 
-=======
 import ContactForm from "@/components/ContactForm";
->>>>>>> HSS-076-Form
 
 
 const pageItem = "contact"
@@ -28,13 +25,12 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       <Breadcrumbs />
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"}/>
-<<<<<<< HEAD
       <JoinPage 
       title={messages?.interestBtn.title}
       text={messages?.interestBtn.text}
       buttonText={messages?.interestBtn.buttonText}
       className="items-start text-left"
-=======
+      />
       <ContentSection sectionLayout={["t", "p"]} page={"form_title"} />
       <ContactForm 
       title={messages?.form.title}
@@ -48,7 +44,6 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       efternamn={messages?.form.efternamn}
       epost={messages?.form.epost}
       meddelande={messages?.form.meddelande}
->>>>>>> HSS-076-Form
       />
     </div>
   )
