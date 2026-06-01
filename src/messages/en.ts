@@ -370,6 +370,13 @@ export type MessagesEngType = {
   avdelningsledare:Record <string, string>
   scoutnet: Record<string, string>
   scoutnetButton: string,
+  activity:{
+    title:string,
+    sub_title_one:string,
+    p_one:string,
+    sub_title_two:string,
+    p_two:string,
+  },
 };
 
 export const En: MessagesEngType = {
@@ -970,4 +977,11 @@ avdelningsledare:{
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
 },
   scoutnetButton: "Log in to Scoutnet",
+  activity:{
+    title:"Activities",
+    sub_title_one:"Camps",
+    p_one:"We organize scout camps featuring nature, community, and fun activities where children and youth develop life skills and create lasting memories.",
+    sub_title_two:"Hikes",
+    p_two:"We organize hikes where participants experience nature, work together, and tackle challenges as a team.",
+},
 };

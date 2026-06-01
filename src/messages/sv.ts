@@ -370,6 +370,13 @@ type MessagesSvType = {
   avdelningsledare:Record <string, string>
   scoutnet: Record<string, string>
   scoutnetButton: string,
+  activity:{
+    title:string,
+    sub_title_one:string,
+    p_one:string,
+    sub_title_two:string,
+    p_two:string,
+  },
 };
 
 export const Sv: MessagesSvType = {
@@ -967,5 +974,12 @@ export const Sv: MessagesSvType = {
     p0:"Scoutnet är Scouternas gemensamma stystem där all information om medlemmar och aktiviteter finns samlad.",
     p1:"Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
   },
-  scoutnetButton: "Logga in på Scoutnet"
+  scoutnetButton: "Logga in på Scoutnet",
+  activity:{
+    title:"Aktiviteter",
+    sub_title_one:"Läger",
+    p_one:"Vi anordnar scoutläger med natur, gemenskap och roliga aktiviteter där barn och unga utvecklas och får minnen för livet.",
+    sub_title_two:"Hajker",
+    p_two:"Vi anordnar hajker där deltagare får uppleva naturen, samarbeta och klara utmaningar tillsammans.",
+  },
 };
