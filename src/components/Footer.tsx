@@ -47,13 +47,13 @@ const Footer = () => {
                     <div className='flex gap-2.5 leading-none'>
                         <a href="mailto:info@hss-scout.org" className='flex gap-2.5 leading-none'>
                            <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
-                           <p className="text-body xl:text-body-desktop xl:text-lg">info@hss-scout.org</p>
+                           <p className="xl:text-lg text-body">info@hss-scout.org</p>
                         </a>
                     </div>
                     <div className='hidden xl:flex gap-2.5 leading-[1.2]' >
                         <a href="https://www.google.com/maps/place/Ruffen+%7C+H%C3%A4sselby+Strands+Sj%C3%B6scoutk%C3%A5r/@59.3620719,17.7818116,13z/data=!4m6!3m5!1s0x465f9f000adaa135:0xf7c26dadb80cbb2f!8m2!3d59.3632201!4d17.8220044!16s%2Fg%2F11y8fdsts1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNi4wIKXMDSoASAFQAw%3D%3D" target='_blank' className='flex gap-2.5 leading-[1.2]'>  
                            <Image src={locationIcon} alt='email icon' className='w-6 h-6' />
-                           <p className="text-body xl:text-body-desktop xl:text-lg">Maltesholmsbadet <br />165 73 Hässelby</p>
+                           <p className="text-body xl:text-lg">Maltesholmsbadet <br />165 73 Hässelby</p>
                         </a>     
                     </div>
                 </div>
@@ -67,8 +67,8 @@ const Footer = () => {
                     </div>
                     <div className='flex gap-2.5 leading-none'>
                         <a href="https://www.facebook.com/HSSScout/" target='_blank' className='flex gap-2.5 leading-[1.2]'>
-                           <Facebook color="#FDB715" strokeWidth={1.5} className="w-4 h-auto xl:w-5"/>
-                           <p className="text-body xl:text-base">@HSSScout</p>
+                           <Facebook color="#FDB715" className="w-4 h-auto xl:w-5"/>
+                           <p className="text-body xl:text-lg">@HSSScout</p>
                         </a>
                     </div>
                 </div>
