@@ -357,6 +357,11 @@ type MessagesSvType = {
   konvojenButton: string,
   union: Record<string, string>,
   download: string,
+  BarnOchVuxnaTillsammans: Record<string, string>,
+  ParumMagna: Record<string, string>,
+  Familjescoutsagor: Record<string, string>,
+  Märken: Record<string, string>,
+  familjescouterButton: string
   
   GroupIntro: {
     FAMheadline: string, 
@@ -501,14 +506,14 @@ export const Sv: MessagesSvType = {
     hero_title: "Hässelby Strands Sjöscouter",
     hero_subtitle01: "Äventyret börjar",
     hero_subtitle02: "vid vattenbrynet",
-    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand.",
+    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap mitt i Hässelby Strand.",
     button: "Gå med i Scouterna"
   },
   joinHero: {
     hero_title: "Hässelby Strands Sjöscouter",
     hero_subtitle01: "Vågorna väntar-",
     hero_subtitle02: "bli del av HSS",
-    hero_description: "Hos HSS Scouterna erbjuder vi en trygg och aktiv fritid för barn och unga.",
+    hero_description: "Hos HSS erbjuder vi en trygg och aktiv fritid för barn och unga.",
     button: "Gå med i Scouterna"
   },
   lifestyleHero: {
@@ -602,11 +607,11 @@ export const Sv: MessagesSvType = {
     contact: "HSS | Kontakt",
     gdpr: "HSS | GDPR"
   },
-  description: "HSS webplats",
+  description: "HSS webbplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
-    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem. Barn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder. ",
+    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem. Barn kan gå med i scouterna från och med 8 års ålder. I Utmanarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder. ",
   },
   boatsCard: {
     headline: "Scoutliv",
@@ -740,7 +745,7 @@ export const Sv: MessagesSvType = {
     header1: "Vi vågar",
     header2: "Starka tillsammans",
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
-    text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att prova nya saker.",
+    text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att våga prova nya saker.",
     text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
   },
   learning: {
@@ -822,7 +827,7 @@ export const Sv: MessagesSvType = {
     btnDesktop: "Ladda ner flytvästpolicyn som PDF"
   },
   becomeScoutSmallCard: {
-    title: "Scoutliv för ung som vuxen",
+    title: "Scouting för ung som vuxen",
     subtitle: "Vi har åldersanpassade avdelningar för våra scouter. Som vuxen kan du engagera dig som ledare, eller hjälpa till som förälder. ",
     secondTitle: "Scout",
     secondText: "Man kan bli Scout från och med 8 års ålder. Medlemmarna på avdelningen för våra äldsta Scouter är 15 år och uppåt.",
@@ -877,13 +882,13 @@ export const Sv: MessagesSvType = {
     p0: "Barnen på Sjöhumlorna är mellan 8 och 9 år."
   },
   sjohumlorMeeting: {
-    s0: "Avdelingsmöten",
+    s0: "Avdelningsmöten",
     p0: "Dag: Måndag",
     p1: "Ruffen vid Hässelby Strandbad.",
   },
   sjohumlorPlace: {
     s0: "Märken",
-    p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Elle att får göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
+    p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Eller att få göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
   },
   sjohumlorButton: "Märkesplansch för Spårare",
   kaparnaUpptäckarscouter: {
@@ -892,7 +897,7 @@ export const Sv: MessagesSvType = {
   },
   kaparnaAge: {
     s0: "Ålder",
-    p0: "Barnen på Kaparna är mellan 10 och 11 år",
+    p0: "Barnen på Kaparna är mellan 10 och 11 år.",
   },
   kaparnaMeeting: {
     s0: "Avdelningsmöten",
@@ -901,7 +906,7 @@ export const Sv: MessagesSvType = {
   },
   kaparnaPlace: {
     s0: "Märken",
-    p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemäkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
+    p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemärkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
   },
   kaparnaButton: "Märkesplansch för Upptäckare",
   utmanarscouter: {
@@ -928,7 +933,7 @@ export const Sv: MessagesSvType = {
   },
   konvojenAge: {
     s0: "Ålder",
-    p0: "Barnen på Kaparna är mellan 12 och 14 år.",
+    p0: "Barnen på Konvojen är mellan 12 och 14 år.",
   },
   konvojenMeeting: {
     s0: "Avdelningsmöten",
@@ -946,6 +951,27 @@ export const Sv: MessagesSvType = {
     p0: "Vi håller regelbundet kårstämmor för att fatta gemensamma beslut som rör föreningen. Kårstämmornas innehåll dokumenteras och går att ladda ner och läsa."
   },
   download: "Ladda ner ",
+  BarnOchVuxnaTillsammans: {
+    s0: "Barn och vuxna tillsammans",
+    p0: "Familjescouting är till för barn under åtta år och en vuxen som barnet känner sig trygg med. Tillsammans upptäcker ni scouting genom lek, äventyr och roliga aktiviteter.",
+    p1: "Barn och vuxna är med sida vid sida och hjälps åt i aktiviteterna. Den vuxna ansvarar för barnet, men är också en viktig del av gemenskapen och deltar lika mycket som barnen.",
+    p2: "Den vuxna kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära person. Fokus i Familjescouting är att barn och vuxna får uppleva saker tillsammans och stärka sin relation."
+  },
+  ParumMagna: {
+    s0: "Parum & Magna",
+    p0: "I familjescouting får barn och vuxna följa björnarna Parum och Magna på olika äventyr. Parum är nyfiken och tycker om att upptäcka och prova nya saker, medan Magna är klok och funderar över hur saker hänger ihop. Tillsammans leker de, träffar nya vänner och hjälper varandra.",
+    p1: "Sagan och fantasin är viktiga delar i familjescouting. Genom berättelserna får barn och vuxna något att prata och fundera kring tillsammans. Sagorna hjälper också till att skapa nyfikenhet, spänning och en mysig känsla under träffarna."
+  },
+  Familjescoutsagor: {
+    s0: "Familjescoutsagor",
+    p0: "I familjescouting använder vi sagor som ett verktyg i våra träffar. Genom berättelser får barn och vuxna upptäcka nya teman tillsammans, väcka fantasin och skapa nyfikenhet och gemenskap.",
+    p1: "Det finns flera olika familjescoutsagor – både längre och kortare berättelser, med och utan rim. Sagorna är kopplade till olika teman och aktiviteter. Sagorna hjälper till att skapa en varm och lekfull känsla där barn och vuxna tillsammans får lyssna, fundera och uppleva äventyr."
+  },
+  Märken: {
+    s0: "Märken",
+    p0: "Familjescouting har sina egna märken som man kan få genom delaktighet. Märken är ett roligt sätt att skapa stolhet kring deltagande och en härlig känsla av samhörighet!"
+  },
+  familjescouterButton: "Upptäck alla våra Scoutmärken",
 
   GroupIntro: {
     FAMheadline: "Avdelningar", 
@@ -1014,4 +1040,5 @@ export const Sv: MessagesSvType = {
   },
   moreButton: "Läs mer om policyn",
   secondButton:"Läs mer om vår flytvästpolicy"
+  
 };

@@ -8,6 +8,7 @@ import Image from "next/image";
 import CTABtn from "@/components/CTA-button";
 import Sjohulorna from "../../../../../public/images/DSCF3033.jpg";
 import GroupIntro from "@/components/GroupIntro";
+import Link from 'next/link';
 
 const pageItems = [
   "sjohumlorna",
@@ -363,9 +364,79 @@ const Groups = ({
   } else if (singleGroup === "familjescouter") {
     return (
     <>
-    <Breadcrumbs />
-    <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-    </>
+      <Breadcrumbs />
+      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
+      <div className="bg-bg-blue lg:pl-5 pt-10 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+        <div className="lg:max-w-430 lg:px-22 flex flex-col gap-6">
+          <div className="flex flex-col gap-4 items-center lg:items-start lg:pt-10">
+            <div className="flex-1">
+              <ContentSection 
+                sectionLayout={["s", "p", "p", "p"]}
+                page="BarnOchVuxnaTillsammans"
+                background={"blue"}
+                padding={"5"}
+                child={true}
+              />
+            </div>
+            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125">
+              <Image
+                src={Sjohulorna}
+                alt="konvojen"
+                className="rounded-2xl object-cover w-full"
+                />
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 items-center lg:items-start lg:pt-10">
+            <div className="flex-1">
+              <ContentSection
+                sectionLayout={["s", "p", "p"]}
+                page="ParumMagna"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+            </div>
+            <div className="flex lg:items-start w-89.5 h-auto lg:w-125">
+              <Image
+                src={Sjohulorna}
+                alt="Familjescouter img"
+                className="rounded-2xl object-cover w-full"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 justify-center">
+            <ContentSection
+              sectionLayout={["s", "p", "p"]}
+              page="Familjescoutsagor"
+              background={"blue"}
+              padding={"3"}
+              child={true} 
+            />
+            <ContentSection
+              sectionLayout={["s", "p"]}
+              page="Märken"
+              background={"blue"}
+              padding={"3"}
+              child={true} 
+            />
+          </div>
+          <div className="
+            [&_button]:border 
+            [&_button]:border-purple
+          [&_button]:bg-purple-opaque
+          [&_button]:text-primary
+            [&_button]:rounded-2xl
+            [&_button]:px-6
+            [&_button]:py-3
+            [&_button]:hover:bg-purple-opaque
+            [&_button]:hover:hover:brightness-104
+            pl-4
+          ">
+            <CTABtn text={messages?.familjescouterButton} />
+          </div>
+        </div>
+      </div>
+    </> 
     )
   }
 };

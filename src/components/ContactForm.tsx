@@ -49,13 +49,13 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
     };
 
     return (
-        <div className="py-10 px-4 bg-bg-blue flex flex-col gap-2 md:pl-25 font-albert">
+        <div className="py-10 px-4 bg-bg-blue flex flex-col gap-2 lg:pl-25 lg:py-25 font-albert">
             <Toaster position="top-center"  reverseOrder={false} />
             <h2 className="text-h2 font-medium text-primary md:text-h2-desktop">{title}</h2>
             <p className="text-body text-text-black md:text-body-desktop pb-2 md:pb-8">{text}</p>
             <form 
                 onSubmit={handleSubmit(onSubmit)}
-                className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-[24px] py-10 px-6 flex flex-col gap-6 text-body md:w-137"
+                className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-3xl py-10 px-6 flex flex-col gap-6 text-body md:w-137"
             >
                 <div className="flex flex-col gap-2">
                     <p>{lastName}</p>

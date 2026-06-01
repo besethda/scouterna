@@ -14,11 +14,12 @@ interface SendEmailParams {
 export async function sendContactEmail({ firstName, lastName, email, message }: SendEmailParams) {
     try {
         if (!process.env.RESEND_API_KEY) {
+            console.log("서버 에러: RESEND_API_KEY가 환경변수에 없슴")
             return { success: false, error: "Wrong RESEND_API_KEY" };
         }
 
         const { data, error } = await resend.emails.send({
-            from: 'onboarding@resend.dev',
+            from: 'Contact From <onboarding@resend.dev>',
             to: ['dobin0301@gmail.com'], 
             subject: `New Contact Message from ${lastName} ${firstName}`,
             html: `
