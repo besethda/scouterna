@@ -583,7 +583,7 @@ export const Sv: MessagesSvType = {
     contact: "HSS | Kontakt",
     gdpr: "HSS | GDPR"
   },
-  description: "HSS webplats",
+  description: "HSS webbplats",
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
