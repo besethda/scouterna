@@ -366,9 +366,9 @@ const Groups = ({
     <>
       <Breadcrumbs />
       <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-      <div className="bg-bg-blue md:pl-5 pt-10 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+      <div className="bg-bg-blue lg:pl-5 pt-10 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
         <div className="lg:max-w-430 lg:px-22 flex flex-col gap-6">
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
+          <div className="flex flex-col gap-4 items-center lg:items-start lg:pt-10">
             <div className="flex-1">
               <ContentSection 
                 sectionLayout={["s", "p", "p", "p"]}
@@ -378,17 +378,15 @@ const Groups = ({
                 child={true}
               />
             </div>
-            <div className="flex justify-center">
+            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125">
               <Image
                 src={Sjohulorna}
                 alt="konvojen"
-                className="rounded-2xl object-cover"
-                width={358}
-                height={257}
+                className="rounded-2xl object-cover w-full"
                 />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
+          <div className="flex flex-col gap-4 items-center lg:items-start lg:pt-10">
             <div className="flex-1">
               <ContentSection
                 sectionLayout={["s", "p", "p"]}
@@ -398,13 +396,11 @@ const Groups = ({
                 child={true}
               />
             </div>
-            <div className="flex justify-center">
+            <div className="flex lg:items-start w-89.5 h-auto lg:w-125">
               <Image
                 src={Sjohulorna}
                 alt="Familjescouter img"
-                className="rounded-2xl object-cover "
-                width={358}
-                height={257}
+                className="rounded-2xl object-cover w-full"
               />
             </div>
           </div>
