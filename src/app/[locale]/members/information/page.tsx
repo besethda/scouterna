@@ -6,6 +6,7 @@ import { use } from "react";
 import CardWithImage from "@/components/CardWithImage";
 import Union from "./union";
 import Scoutnet from "@/components/Scoutnet/scoutnet";
+import ScoutInfo from "@/components/ScoutInfo/scoutInfo";
 
 const pageItem = "information"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -22,6 +23,7 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
             <Breadcrumbs />
                 <div className="w-full flex flex-col items-center">
                     <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
+                    <ScoutInfo />
                     <Scoutnet />
                     <Union />
                 </div>

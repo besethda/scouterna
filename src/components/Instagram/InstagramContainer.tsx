@@ -46,6 +46,11 @@ const InstagramContainer = async () => {
     )
   }
   }
+  const response = await fetch("https://feeds.behold.so/cpFFCBnZsZUNtLg9vY4Y")
+  const data = await response.json()
+  const filteredData: instaType[]= data.posts.map((post: any, index:number)=> {
+    return {mediaUrl:post.mediaUrl, permalink: post.permalink, mediaType:post.mediaType, caption:post.caption, timestamp:post.timestamp, imageIndex:index}
+  })
 
 
 export default InstagramContainer

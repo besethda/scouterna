@@ -12,6 +12,7 @@ import locationIcon from '../../public/hss-pin-icon.svg'
 import useMessages from '@/hook/useMessages'
 import { Facebook } from "@deemlol/next-icons"
 
+
 const Footer = () => {
 
     const messages = useMessages()
