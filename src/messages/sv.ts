@@ -934,7 +934,7 @@ export const Sv: MessagesSvType = {
   download: "Ladda ner ",
   BarnOchVuxnaTillsammans: {
     s0: "Barn och vuxna tillsammans",
-    p0: "Familjescouting är till för barn under åtta år och en vuxen som barnet känner sig tryggt med. Tillsammans upptäcker ni scouting genom lek, äventyr och roliga aktiviteter.",
+    p0: "Familjescouting är till för barn under åtta år och en vuxen som barnet känner sig trygg med. Tillsammans upptäcker ni scouting genom lek, äventyr och roliga aktiviteter.",
     p1: "Barn och vuxna är med sida vid sida och hjälps åt i aktiviteterna. Den vuxna ansvarar för barnet, men är också en viktig del av gemenskapen och deltar lika mycket som barnen.",
     p2: "Den vuxna kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära person. Fokus i Familjescouting är att barn och vuxna får uppleva saker tillsammans och stärka sin relation."
   },
