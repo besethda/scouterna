@@ -489,7 +489,7 @@ export const Sv: MessagesSvType = {
     hero_title: "Hässelby Strands Sjöscouter",
     hero_subtitle01: "Vågorna väntar-",
     hero_subtitle02: "bli del av HSS",
-    hero_description: "Hos HSS Scouterna erbjuder vi en trygg och aktiv fritid för barn och unga.",
+    hero_description: "Hos HSS erbjuder vi en trygg och aktiv fritid för barn och unga.",
     button: "Gå med i Scouterna"
   },
   lifestyleHero: {
