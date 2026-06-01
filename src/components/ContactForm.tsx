@@ -49,13 +49,13 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
     };
 
     return (
-        <div className="py-10 px-4 bg-bg-blue flex flex-col gap-2 md:pl-25">
+        <div className="py-10 px-4 bg-bg-blue flex flex-col gap-2 md:pl-25 font-albert">
             <Toaster position="top-center"  reverseOrder={false} />
-            <h2 className="font-albert text-h2 font-medium text-primary md:text-h2-desktop">{title}</h2>
-            <p className="font-albert text-body text-text-black md:text-body-desktop pb-2 md:pb-8">{text}</p>
+            <h2 className="text-h2 font-medium text-primary md:text-h2-desktop">{title}</h2>
+            <p className="text-body text-text-black md:text-body-desktop pb-2 md:pb-8">{text}</p>
             <form 
                 onSubmit={handleSubmit(onSubmit)}
-                className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-[24px] py-10 px-6 flex flex-col gap-6 text-body font-public md:w-137"
+                className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-[24px] py-10 px-6 flex flex-col gap-6 text-body md:w-137"
             >
                 <div className="flex flex-col gap-2">
                     <p>{lastName}</p>
@@ -92,14 +92,14 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                     <textarea 
                         placeholder={meddelande}
                         {...register("message", { required: "Write your message" })}
-                        className="border border-lightGray border-solid rounded-lg w-full p-3 h-[144px]"
+                        className="border border-lightGray border-solid rounded-lg w-full p-3 h-36"
                     />
                     {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>}
                 </div>
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-primary p-4 border rounded-lg text-text-white font-public text-h3 disabled:opacity-50"
+                    className="bg-primary p-4 border rounded-lg text-text-white text-h3 disabled:opacity-50"
                 >
                     {isSubmitting ? "Sending..." : buttonText}
                 </button>
