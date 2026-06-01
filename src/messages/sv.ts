@@ -858,13 +858,13 @@ export const Sv: MessagesSvType = {
     p0: "Barnen på Sjöhumlorna är mellan 8 och 9 år."
   },
   sjohumlorMeeting: {
-    s0: "Avdelingsmöten",
+    s0: "Avdelningsmöten",
     p0: "Dag: Måndag",
     p1: "Ruffen vid Hässelby Strandbad.",
   },
   sjohumlorPlace: {
     s0: "Märken",
-    p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Elle att får göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
+    p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Eller att få göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
   },
   sjohumlorButton: "Märkesplansch för Spårare",
   kaparnaUpptäckarscouter: {
@@ -873,7 +873,7 @@ export const Sv: MessagesSvType = {
   },
   kaparnaAge: {
     s0: "Ålder",
-    p0: "Barnen på Kaparna är mellan 10 och 11 år",
+    p0: "Barnen på Kaparna är mellan 10 och 11 år.",
   },
   kaparnaMeeting: {
     s0: "Avdelningsmöten",
@@ -882,7 +882,7 @@ export const Sv: MessagesSvType = {
   },
   kaparnaPlace: {
     s0: "Märken",
-    p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemäkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
+    p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemärkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
   },
   kaparnaButton: "Märkesplansch för Upptäckare",
   utmanarscouter: {
@@ -909,7 +909,7 @@ export const Sv: MessagesSvType = {
   },
   konvojenAge: {
     s0: "Ålder",
-    p0: "Barnen på Kaparna är mellan 12 och 14 år.",
+    p0: "Barnen på Konvojen är mellan 12 och 14 år.",
   },
   konvojenMeeting: {
     s0: "Avdelningsmöten",
