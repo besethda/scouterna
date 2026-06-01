@@ -482,7 +482,7 @@ export const Sv: MessagesSvType = {
     hero_title: "Hässelby Strands Sjöscouter",
     hero_subtitle01: "Äventyret börjar",
     hero_subtitle02: "vid vattenbrynet",
-    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap i Hässelby Strand.",
+    hero_description: "På Mälarens vågor lär sig barn att segla, samarbeta och växa i en trygg gemenskap mitt i Hässelby Strand.",
     button: "Gå med i Scouterna"
   },
   joinHero: {
