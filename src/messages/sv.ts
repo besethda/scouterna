@@ -904,7 +904,7 @@ export const Sv: MessagesSvType = {
     message:"Meddelande",
     buttonText:"Skicka meddelande",
     namn:"Namn",
-    efternamn:"Efter Namn",
+    efternamn:"Efternamn",
     epost:"E-post",
     meddelande:"Meddelande"
   }
