@@ -25,7 +25,6 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
                     <Scoutnet />
                     <Union />
                 </div>
-
         </div>
     );
 }

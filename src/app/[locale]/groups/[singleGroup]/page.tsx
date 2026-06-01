@@ -277,68 +277,66 @@ const Groups = ({
   } else if (singleGroup === "konvojen") {
     return (
       <>
-      <Breadcrumbs />
-      <div className="flex justify-center">
-        <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext}  logo="/Konvojen-frame.svg" />
-      </div>
-      <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
-        <div className="lg:max-w-430 lg:px-22">
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
-            <div className="flex-1">
+        <Breadcrumbs />
+        <div className="flex justify-center">
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext}  logo="/Konvojen-frame.svg" />
+        </div>
+        <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
+          <div className="lg:max-w-430 lg:px-22">
+            <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
+              <div className="flex-1">
+                <ContentSection
+                  sectionLayout={["s", "p"]}
+                  page="äventyrarscouter"
+                  background={"blue"}
+                  padding={"5"}
+                  child={true}
+                />
+              </div>
+              <div className="flex-1 flex justify-center">
+                <Image
+                  src={Sjohulorna}
+                  alt="konvojen"
+                  className="rounded-2xl object-cover"
+                  width={358}
+                  height={257}
+                />
+              </div>
+            </div>
+            <ContentSection
+              sectionLayout={["s", "p"]}
+              page="konvojenAge"
+              background={"blue"}
+              padding={"3"}
+              child={true}
+            />
+            <div className="flex flex-col gap-4 justify-center pb-4">
+              <ContentSection
+                sectionLayout={["s", "p", "p", "p"]}
+                page="konvojenMeeting"
+                background={"blue"}
+                padding={"5"}
+                child={true}
+              />
               <ContentSection
                 sectionLayout={["s", "p"]}
-                page="äventyrarscouter"
+                page="konvojenPlace"
                 background={"blue"}
                 padding={"5"}
                 child={true}
               />
             </div>
-            <div className="flex-1 flex justify-center">
-              <Image
-                src={Sjohulorna}
-                alt="konvojen"
-                className="rounded-2xl object-cover"
-                width={358}
-                height={257}
-              />
-            </div>
-          </div>
-          <ContentSection
-            sectionLayout={["s", "p"]}
-            page="konvojenAge"
-            background={"blue"}
-            padding={"3"}
-            child={true}
-          />
-          <div className="flex flex-col gap-4 justify-center pb-4">
-            <ContentSection
-              sectionLayout={["s", "p", "p", "p"]}
-              page="konvojenMeeting"
-              background={"blue"}
-              padding={"5"}
-              child={true}
-            />
-            <ContentSection
-              sectionLayout={["s", "p"]}
-              page="konvojenPlace"
-              background={"blue"}
-              padding={"5"}
-              child={true}
-            />
-          </div>
-          <div
-            className="
-           [&_button]:border 
-           [&_button]:border-orange
-         [&_button]:bg-orange-opaque
-         [&_button]:text-primary
-           [&_button]:rounded-2xl
-           [&_button]:px-6
-           [&_button]:py-3
-           [&_button]:hover:bg-orange-opaque
-           [&_button]:hover:brightness-102
-           pl-4
-           "
+            <div className="
+              [&_button]:border 
+            [&_button]:border-orange
+            [&_button]:bg-orange-opaque
+            [&_button]:text-primary
+              [&_button]:rounded-2xl
+              [&_button]:px-6
+              [&_button]:py-3
+            [&_button]:hover:bg-orange-opaque
+              [&_button]:hover:brightness-102
+              pl-4"
             >
               <CTABtn text={messages?.konvojenButton} />
             </div>
@@ -357,8 +355,8 @@ const Groups = ({
   } else if (singleGroup === "familjescouter") {
     return (
     <>
-    <Breadcrumbs />
-    <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
+      <Breadcrumbs />
+      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
     </>
     )
   }

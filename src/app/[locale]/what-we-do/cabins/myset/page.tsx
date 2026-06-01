@@ -48,7 +48,6 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                         </div>
                         <ContentSection sectionLayout={["t", "p"]} page="myset03" background="blue" padding="bottom" child={true}/>
                     </div>
-
                 </div>                          
             </div>
         </div>
