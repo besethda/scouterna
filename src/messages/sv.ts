@@ -394,6 +394,13 @@ type MessagesSvType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
+
+  mysetHistory: {
+    title: string, 
+    text1: string, 
+    text2: string, 
+    subtitle: string 
+  }
 };
 
 export const Sv: MessagesSvType = {
@@ -1040,4 +1047,12 @@ export const Sv: MessagesSvType = {
   },
   moreButton: "Läs mer om policyn",
   secondButton: "Läs mer om vår flytvästpolicy",
+
+  mysetHistory: {
+    title: "Mysets historia", 
+    text1: "Söndagen den 28 januari 1968 invigdes Myset efter tre års ideellt arbete av HSS Föräldraförening. Genom basarer och lotterier samlades nära 50 000 kronor in. Vid invigningen deltog omkring 400 stolta scouter och föräldrar.", 
+    text2: "Invigningen blev starten på en plats för gemenskap, äventyr och minnen för generationer av scouter.", 
+    subtitle: "Bilder från arkiven" 
+  }
+
 };

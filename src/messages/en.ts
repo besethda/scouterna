@@ -394,6 +394,13 @@ export type MessagesEngType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
+
+  mysetHistory: {
+    title: string, 
+    text1: string, 
+    text2: string, 
+    subtitle: string 
+  }
 };
 
 export const En: MessagesEngType = {
@@ -1042,6 +1049,13 @@ export const En: MessagesEngType = {
     desktop: "Safety is the be-all and end-all for the Sea Scouts. Read up on our life jacket policy to learn more about when the vest should be used, and which vests we recommend."
   },
   moreButton: "Read more about policy",
-  secondButton: "Read more about our life jacket policy"
-};
+  secondButton: "Read more about our life jacket policy",
 
+  mysetHistory: {
+    title: "The History of Myset", 
+    text1: "On Sunday, January 28 1968, Myset was inaugurated after three years of voluntary work by the HSS Parents' Association. Through bazaars and lotteries, nearly 50,000 SEK was raised. Around 400 proud scouts and parents attended the inauguration.", 
+    text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.", 
+    subtitle: "Images from the archives" 
+  }
+
+};
