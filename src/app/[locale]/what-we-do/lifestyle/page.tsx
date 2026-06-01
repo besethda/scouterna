@@ -7,7 +7,7 @@ import { use } from "react";
 import LifeStyleSection from "./lifestyleSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import HeroContainer from "@/components/HeroContainer/HeroContainer";
-
+import Activities from "@/components/Activities";
 
 
 
@@ -32,6 +32,7 @@ const LifeStyle = ({params}:{params: Promise<{locale: string}>}) => {
                 <WhiteGridContainer backgroundBlue={false} messageTitle="learning"/>
                 <LifeStyleSection />
             </div>
+            <Activities />
         </div>
     );
 }
