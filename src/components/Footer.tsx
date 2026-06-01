@@ -23,7 +23,7 @@ const Footer = () => {
                         <Image src={scautLogo} alt="Scaut-logo" className='w-32.5 h-7 xl:h-[28]' />
                     </Link>
                     <div className='pt-3'>
-                        <p className="text-body xl:hidden">Hässelby Strands Sjöscoutkår</p>
+                        <p className="text-body xl:hidden">Hässelby Strands Sjöscouter</p>
                     </div>
                 </div>
                 <div className='xl:flex xl:flex-col gap-5 hidden xl:flex-1'>
@@ -49,7 +49,7 @@ const Footer = () => {
                     </a>
                     <div className='hidden xl:flex gap-2.5 leading-[1.2]' >
                         <Image src={locationIcon} alt='email icon' className='w-6 h-6' />
-                        <p className="text-body xl:text-body-desktop xl:text-lg">Maltesholmsbadet <br />165 73 Hässelby</p>
+                        <p className="text-body xl:text-body-desktop xl:text-lg">Hässelby strandväg<br />165 73 Hässelby</p>
                     </div>
                 </div>
                 <div className='flex flex-col gap-2 xl:gap-7 xl:flex-1'>
