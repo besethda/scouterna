@@ -16,6 +16,13 @@ const pageItems = [
   "konvojen",
   "familjescouter",
 ];
+const headDescriptions = [
+  "sjohumlorna",
+  "kaparna",
+  "utmanare",
+  "konvojen",
+  "familjescouter",
+]
 export async function generateMetadata({
   params,
 }: {
@@ -23,11 +30,12 @@ export async function generateMetadata({
 }) {
   const { locale, singleGroup } = await params;
   const IsSingleGroup = pageItems.includes(singleGroup);
-  const tabTitle = IsSingleGroup
-    ? getPageHeadTitle(locale, singleGroup)
-    : getPageHeadTitle(locale, "HSS | Hem");
-  return tabTitle;
-}
+  const matchedTabTitle = headDescriptions.find(title => title === singleGroup)
+  const tabTitle = IsSingleGroup && matchedTabTitle
+    ? getPageHeadTitle(locale, singleGroup, matchedTabTitle)
+    : getPageHeadTitle(locale, "HSS | Hem", "Hem sidan");
+  return tabTitle
+}  
 
 const Groups = ({
   params,
