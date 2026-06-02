@@ -5,7 +5,6 @@ import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import JoinPage from "@/components/JoinPage";
-
 import ContactForm from "@/components/ContactForm";
 import CardAbout from "@/components/AddCardAbout";
 
