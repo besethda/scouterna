@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { use } from "react";
 import CardWithImage from "@/components/CardWithImage";
 import Scoutnet from "@/components/Scoutnet/scoutnet";
-import ScoutInfo from "@/components/ScoutInfo";
+import ScoutInfo from "@/components/ScoutInfo/scoutInfo";
 
 const pageItem = "information"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
