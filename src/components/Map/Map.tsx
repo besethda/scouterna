@@ -8,7 +8,7 @@ import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import { LocationList } from './locationList';
 import yellowLocationIcon from '../../../public/yellow-location.svg'
-import blueLocationIcon from '../../../public/blue-location.svg'
+import blueLocationIcon from '../../../public/blue-location-icon.svg'
 import L from 'leaflet';
 
 interface mapProps {
