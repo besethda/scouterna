@@ -25,7 +25,7 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
     <div>
       <Breadcrumbs />
       <div className="contact-logo">
-        <CardAbout page="contactcard" card="contactmobilecard" logo="/person.svg" image="/images/IMG_0184.jpeg" MDlogo="/bg-communication.svg"  />
+        <CardAbout page="contactcard" card="contactmobilecard" logo="/person.svg" image="/images/DSCF3034.jpg" MDlogo="/bg-communication.svg"  />
       </div>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"}/>
