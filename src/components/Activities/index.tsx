@@ -2,7 +2,7 @@
 
 import useMessages from "@/hook/useMessages"
 import Image from "next/image"
-import Img from '../../../public/images/IMG_8266.jpg'
+import Img from '../../../public/images/DSCF3361.jpg'
 
 const Activities = () => {
   const messages =useMessages()
