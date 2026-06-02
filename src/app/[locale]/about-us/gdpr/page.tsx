@@ -7,9 +7,10 @@ import { use } from "react";
 import CardAbout from "@/components/AddCardAbout";
 
 const pageItem = "gdpr"
+const headDescription = "gdpr"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 

@@ -8,9 +8,10 @@ import CardAbout from "@/components/AddCardAbout";
 
 
 const pageItem = "history"
+const headDescription = "history"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 
