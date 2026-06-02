@@ -723,8 +723,8 @@ export const Sv: MessagesSvType = {
     t0: "HSS riktlinjer",
     p0: "Vi har skapat riktlinjer för vilka typer av flytvästar som ska användas av Scouter som inte kan simma, och Scouter som kan simma. ",
     p1: "Det är bra att utgå från att alla, oavsett simkunnighet, ska ha på sig flytväst på bryggor och i båtar. Det är också viktigt att flytvästen är rätt knäppt eller knuten.",
-    p2: "Scouter som för HSS ej kunnat uppvisa simkunnighet om 200 m bör bära räddningsväst.",
-    p3: "Scouter som för HSS kunnat uppvisa simkunnighet om 200 m kan bära en seglarväst.",
+    p2: "Scouter som för HSS ej kunnat uppvisa simkunnighet om 200m bör bära räddningsväst.",
+    p3: "Scouter som för HSS kunnat uppvisa simkunnighet om 200m kan bära en seglarväst.",
     t1: "Ej simkunniga scouter",
     t2: "Simkunniga scouter",
     w0: "HSS krav på räddningsväst:",
@@ -1129,6 +1129,7 @@ export const Sv: MessagesSvType = {
     text2: "Invigningen blev starten på en plats för gemenskap, äventyr och minnen för generationer av scouter.",
     subtitle: "Bilder från arkiven"
   },
+
   cabinst:"Här träffas vi",
   cabinsmyset:{
     title:"Myset",
