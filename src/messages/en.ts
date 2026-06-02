@@ -729,7 +729,7 @@ export const En: MessagesEngType = {
     p0: "We have created guidelines for which types of life jackets should be used by Scouts who cannot swim, and Scouts who can swim.",
     p1: "It is best to assume that everyone, regardless of swimming ability, should wear a life jacket on docks and in boats. It is also important that the life jacket is properly buckled or tied.",
     p2: "Scouts who have not been able to demonstrate a 200m swimming proficiency to HSS should wear a life jacket (buoyancy aid/life vest with collar).",
-    p3: "Scouts who have demonstrated a 200-meter swimming ability to HSS may wear a sailing vest.",
+    p3: "Scouts who have demonstrated a 200m swimming ability to HSS may wear a sailing vest.",
     t1: "Non-swimming scouts",
     t2: "Swimming scouts",
     w0: "HSS requirements for life jackets (with collar):",
@@ -1170,7 +1170,7 @@ export const En: MessagesEngType = {
     title: "At sea since 1959",
     text: "Hässelby Strands Sea Scout Corps was founded in 1959 by engaged parents who came together to create something meaningful for their children. Since then, the corps has been filled with adventures, community, and memories - and many more are yet to come."
   },
-   contactcard: {
+  contactcard: {
     headline: "THE ASSOCIATION",
     title: "Contact",
     text: "Do you have questions about our scouting activities, want to become a member, or engage as a leader? Don't hesitate to contact us - we will respond as soon as we can."

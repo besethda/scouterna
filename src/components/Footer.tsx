@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import scautLogo from '../../public/scouterna-logo.svg'
 import emailIcon from '../../public/email-icon.svg'
 import instagramIcon from '../../public/instagram-icon.svg'
@@ -17,6 +18,10 @@ import { Facebook } from "@deemlol/next-icons"
 const Footer = () => {
 
     const messages = useMessages()
+    const searchPath = usePathname()
+    console.log(searchPath)
+    const hidePath = ["/ruffen"]
+    const checkHide = hidePath.some(path => searchPath.includes(path))
 
     return (
         <footer className="bg-primary text-white py-6 px-5 flex flex-col gap-4 xl:py-20 xl:px-2.5 xl:gap-16.5">
@@ -75,11 +80,13 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full flex justify-center'>
-                <div className='w-full max-w-6xl'>
-                    <MapWrapper page="footer" />
+            {!checkHide &&
+                <div className='w-full flex justify-center'>
+                    <div className='w-full max-w-6xl'>
+                        <MapWrapper page="footer" />
+                    </div>
                 </div>
-            </div>
+            }
             <div className="w-full border-t border-gray flex text-lightGray text-body-bold pt-4 font-normal xl:justify-between xl:w-[90%] xl:mx-auto leading-loose">
                 <div className='flex gap-3'>
                     <Image src={footerHSSIcon} alt='HSS icon' className='w-6 h-6' />
