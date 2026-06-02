@@ -422,14 +422,11 @@ type MessagesSvType = {
     text2: string,
     subtitle: string
   }
-<<<<<<< HEAD
-=======
   cabinst:string,
   cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string},
   mysetbtn:string,
   cabinsruffen:{title:string,p:string, dpOne:string, dpTwo:string},
   ruffenbtn:string,
->>>>>>> HSS-101-footermap-function
   historycard: {
     headline: string,
     title: string,
@@ -459,16 +456,7 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string
-<<<<<<< HEAD
-  },
-  cabinst:string,
-  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string},
-  mysetbtn:string,
-  cabinsruffen:{title:string,p:string, dpOne:string, dpTwo:string},
-  ruffenbtn:string,
-=======
   }
->>>>>>> HSS-101-footermap-function
   activity:{
     title:string,
     sub_title_one:string,
@@ -1156,8 +1144,6 @@ export const Sv: MessagesSvType = {
     subtitle: "Bilder från arkiven"
   },
 
-<<<<<<< HEAD
-=======
   cabinst:"Här träffas vi",
   cabinsmyset:{
     title:"Myset",
@@ -1173,7 +1159,6 @@ export const Sv: MessagesSvType = {
     dpTwo:"Här huserar kåren även våra optimistjollar.",
   },
   ruffenbtn:"Läs mer om Ruffen",
->>>>>>> HSS-101-footermap-function
   historycard: {
     headline: "FÖRENINGEN",
     title: "Till sjöss sedan 1959",
@@ -1204,22 +1189,4 @@ export const Sv: MessagesSvType = {
     title: "HSS arbete med GDPR",
     text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
   },
-<<<<<<< HEAD
-  cabinst:"Här träffas vi",
-  cabinsmyset:{
-    title:"Myset",
-    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
-    dpOne:"Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
-    dpTwo:"Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
-  },
-  mysetbtn:"Läs mer om Myset",
-  cabinsruffen: {
-    title:"Ruffen",
-    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
-    dpOne:"Ruffen ligger vid Hässelby Strandbad och används för avdelningsmöten för våra avdelningar Sjöhumlorna, Kaparna, Konvojen och Utmanarna.",
-    dpTwo:"Här huserar kåren även våra optimistjollar.",
-  },
-  ruffenbtn:"Läs mer om Ruffen",
-=======
->>>>>>> HSS-101-footermap-function
 };
