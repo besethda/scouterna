@@ -376,6 +376,11 @@ export type MessagesEngType = {
   konvojenButton: string,
   union: Record<string, string>
   download: string,
+  BarnOchVuxnaTillsammans: Record<string, string>,
+  ParumMagna: Record<string, string>,
+  Familjescoutsagor: Record<string, string>,
+  Märken: Record<string, string>,
+  familjescouterButton: string
 
   GroupIntro: {
     FAMheadline: string, 
@@ -1030,6 +1035,28 @@ export const En: MessagesEngType = {
     p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
   },
   download: "Download ",
+  BarnOchVuxnaTillsammans: {
+    s0: "Children and Adults Together",
+    p0: "Family Scouting is for children under the age of eight and an adult they feel safe with. Together, you discover scouting through play, adventure, and fun activities.",
+    p1: "Children and adults participate side by side, helping each other with the activities. The adult is responsible for the child, but is also an important part of the community and participates just as much as the children.",
+    p2: "The adult can be a parent, grandparent, relative, or another close person. The focus of Family Scouting is for children and adults to experience things together and strengthen their relationship."
+  },
+  ParumMagna: {
+    s0: "Parum & Magna",
+    p0: "In Family Scouting, children and adults get to follow the bears Parum and Magna on various adventures. Parum is curious and loves to discover and try new things, while Magna is wise and thinks about how everything connects. Together, they play, meet new friends, and help each other.",
+    p1: "Stories and imagination are important parts of Family Scouting. Through the stories, children and adults get something to talk about and reflect on together. The stories also help spark curiosity, excitement, and a cozy atmosphere during the meetings."
+  },
+  Familjescoutsagor: {
+    s0: "Family Scouting Stories",
+    p0: "In Family Scouting, we use stories as a tool in our meetings. Through these narratives, children and adults can discover new themes together, spark their imagination, and build curiosity and community.",
+    p1: "There are several different Family Scouting stories – both long and short, with and without rhymes. The stories are linked to various themes and activities. They help create a warm and playful feeling where children and adults can listen, reflect, and experience adventures together."
+  },
+  Märken: {
+    s0: "Badges",
+    p0: "Family Scouting has its own badges that you can earn through participation. Badges are a fun way to create pride in participating and a wonderful sense of togetherness!"
+  },
+  familjescouterButton: "Discover All Our Scout Badges",
+
 
   GroupIntro: {
     FAMheadline: "Groups", 
@@ -1130,7 +1157,7 @@ secondButton:"Read more about our life jacket policy",
     title: "At sea since 1959",
     text: "Hässelby Strands Sea Scout Corps was founded in 1959 by engaged parents who came together to create something meaningful for their children. Since then, the corps has been filled with adventures, community, and memories - and many more are yet to come."
   },
-   contactcard: {
+  contactcard: {
     headline: "THE ASSOCIATION",
     title: "Contact",
     text: "Do you have questions about our scouting activities, want to become a member, or engage as a leader? Don't hesitate to contact us - we will respond as soon as we can."
