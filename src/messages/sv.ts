@@ -451,6 +451,13 @@ type MessagesSvType = {
   mysetbtn:string,
   cabinsruffen:{title:string,p:string, dpOne:string, dpTwo:string},
   ruffenbtn:string,
+  activity:{
+    title:string,
+    sub_title_one:string,
+    p_one:string,
+    sub_title_two:string,
+    p_two:string,
+  },
 };
 
 export const Sv: MessagesSvType = {
@@ -1068,6 +1075,13 @@ export const Sv: MessagesSvType = {
     p1:"Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
   },
   scoutnetButton: "Logga in på Scoutnet",
+  activity:{
+    title:"Aktiviteter",
+    sub_title_one:"Läger",
+    p_one:"Vi anordnar scoutläger med natur, gemenskap och roliga aktiviteter där barn och unga utvecklas och får minnen för livet.",
+    sub_title_two:"Hajker",
+    p_two:"Vi anordnar hajker där deltagare får uppleva naturen, samarbeta och klara utmaningar tillsammans.",
+  },
   form: {
     title:"Skicka ett meddelande",
     text:"Det går bra att skicka ett meddelande direkt till vår e-post via formuläret.",
