@@ -14,6 +14,7 @@ import useMessages from '@/hook/useMessages'
 import MapWrapper from './Map/MapWrapper'
 import { Facebook } from "@deemlol/next-icons"
 
+
 const Footer = () => {
 
     const messages = useMessages()
