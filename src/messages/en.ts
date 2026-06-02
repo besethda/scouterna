@@ -383,7 +383,7 @@ export type MessagesEngType = {
     text: string,
     text02: string,
     text03: string,
-  }
+  },
   ruffenDivisions: Record<string, string>
   avdelningsledare: Record<string, string>
   scoutnet: Record<string, string>
@@ -394,13 +394,17 @@ export type MessagesEngType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
-
   mysetHistory: {
     title: string,
     text1: string,
     text2: string,
     subtitle: string
-  }
+  },
+  cabinst:string,
+  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string}
+  mysetbtn:string,
+  cabinsruffen: {title:string, p:string, dpOne:string, dpTwo:string}
+  ruffenbtn:string,
 };
 
 export const En: MessagesEngType = {
@@ -1056,6 +1060,20 @@ export const En: MessagesEngType = {
     text1: "On Sunday, January 28 1968, Myset was inaugurated after three years of voluntary work by the HSS Parents' Association. Through bazaars and lotteries, nearly 50,000 SEK was raised. Around 400 proud scouts and parents attended the inauguration.",
     text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.",
     subtitle: "Images from the archives"
-  }
-
+  },
+  cabinst:"We meet here",
+  cabinsruffen: {
+    title: "Myset",
+    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
+    dpOne: "Myset is beautifully situated and provides a perfect environment for our wonderful campfires and other adventures. The cottage itself is pleasant and spacious, making it an ideal place for our hikes.",
+    dpTwo: "Myset is available for rent, and booking inquiries can be emailed to myset.hss.scout@gmail.com."
+  },
+  ruffenbtn: "Read more about Ruffen",
+  cabinsmyset: {
+    title: "Myset",
+    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
+    dpOne: "Ruffen is located by Hässelby Beach and is used for section meetings for our sections Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
+    dpTwo: "The scout group also houses our Optimist dinghies here."
+  },
+  mysetbtn: "Read more about Myset",
 };
