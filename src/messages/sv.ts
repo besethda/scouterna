@@ -377,6 +377,11 @@ type MessagesSvType = {
   konvojenButton: string,
   union: Record<string, string>,
   download: string,
+  BarnOchVuxnaTillsammans: Record<string, string>,
+  ParumMagna: Record<string, string>,
+  Familjescoutsagor: Record<string, string>,
+  Märken: Record<string, string>,
+  familjescouterButton: string
   
   GroupIntro: {
     FAMheadline: string, 
@@ -416,6 +421,14 @@ type MessagesSvType = {
     text2: string, 
     subtitle: string 
   }
+<<<<<<< HEAD
+=======
+  cabinst:string,
+  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string},
+  mysetbtn:string,
+  cabinsruffen:{title:string,p:string, dpOne:string, dpTwo:string},
+  ruffenbtn:string,
+>>>>>>> HSS-101-footermap-function
   historycard: {
     headline: string,
     title: string,
@@ -445,12 +458,16 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string
+<<<<<<< HEAD
   },
   cabinst:string,
   cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string},
   mysetbtn:string,
   cabinsruffen:{title:string,p:string, dpOne:string, dpTwo:string},
   ruffenbtn:string,
+=======
+  }
+>>>>>>> HSS-101-footermap-function
   activity:{
     title:string,
     sub_title_one:string,
@@ -724,8 +741,8 @@ export const Sv: MessagesSvType = {
     t0: "HSS riktlinjer",
     p0: "Vi har skapat riktlinjer för vilka typer av flytvästar som ska användas av Scouter som inte kan simma, och Scouter som kan simma. ",
     p1: "Det är bra att utgå från att alla, oavsett simkunnighet, ska ha på sig flytväst på bryggor och i båtar. Det är också viktigt att flytvästen är rätt knäppt eller knuten.",
-    p2: "Scouter som för HSS ej kunnat uppvisa simkunnighet om 200 m bör bära räddningsväst.",
-    p3: "Scouter som för HSS kunnat uppvisa simkunnighet om 200 m kan bära en seglarväst.",
+    p2: "Scouter som för HSS ej kunnat uppvisa simkunnighet om 200m bör bära räddningsväst.",
+    p3: "Scouter som för HSS kunnat uppvisa simkunnighet om 200m kan bära en seglarväst.",
     t1: "Ej simkunniga scouter",
     t2: "Simkunniga scouter",
     w0: "HSS krav på räddningsväst:",
@@ -1034,6 +1051,27 @@ export const Sv: MessagesSvType = {
     p0: "Vi håller regelbundet kårstämmor för att fatta gemensamma beslut som rör föreningen. Kårstämmornas innehåll dokumenteras och går att ladda ner och läsa."
   },
   download: "Ladda ner ",
+  BarnOchVuxnaTillsammans: {
+    s0: "Barn och vuxna tillsammans",
+    p0: "Familjescouting är till för barn under åtta år och en vuxen som barnet känner sig trygg med. Tillsammans upptäcker ni scouting genom lek, äventyr och roliga aktiviteter.",
+    p1: "Barn och vuxna är med sida vid sida och hjälps åt i aktiviteterna. Den vuxna ansvarar för barnet, men är också en viktig del av gemenskapen och deltar lika mycket som barnen.",
+    p2: "Den vuxna kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära person. Fokus i Familjescouting är att barn och vuxna får uppleva saker tillsammans och stärka sin relation."
+  },
+  ParumMagna: {
+    s0: "Parum & Magna",
+    p0: "I familjescouting får barn och vuxna följa björnarna Parum och Magna på olika äventyr. Parum är nyfiken och tycker om att upptäcka och prova nya saker, medan Magna är klok och funderar över hur saker hänger ihop. Tillsammans leker de, träffar nya vänner och hjälper varandra.",
+    p1: "Sagan och fantasin är viktiga delar i familjescouting. Genom berättelserna får barn och vuxna något att prata och fundera kring tillsammans. Sagorna hjälper också till att skapa nyfikenhet, spänning och en mysig känsla under träffarna."
+  },
+  Familjescoutsagor: {
+    s0: "Familjescoutsagor",
+    p0: "I familjescouting använder vi sagor som ett verktyg i våra träffar. Genom berättelser får barn och vuxna upptäcka nya teman tillsammans, väcka fantasin och skapa nyfikenhet och gemenskap.",
+    p1: "Det finns flera olika familjescoutsagor – både längre och kortare berättelser, med och utan rim. Sagorna är kopplade till olika teman och aktiviteter. Sagorna hjälper till att skapa en varm och lekfull känsla där barn och vuxna tillsammans får lyssna, fundera och uppleva äventyr."
+  },
+  Märken: {
+    s0: "Märken",
+    p0: "Familjescouting har sina egna märken som man kan få genom delaktighet. Märken är ett roligt sätt att skapa stolhet kring deltagande och en härlig känsla av samhörighet!"
+  },
+  familjescouterButton: "Upptäck alla våra Scoutmärken",
 
   GroupIntro: {
     FAMheadline: "Avdelningar", 
@@ -1118,6 +1156,24 @@ export const Sv: MessagesSvType = {
     subtitle: "Bilder från arkiven" 
   },
 
+<<<<<<< HEAD
+=======
+  cabinst:"Här träffas vi",
+  cabinsmyset:{
+    title:"Myset",
+    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
+    dpOne:"Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
+    dpTwo:"Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
+  },
+  mysetbtn:"Läs mer om Myset",
+  cabinsruffen: {
+    title:"Ruffen",
+    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
+    dpOne:"Ruffen ligger vid Hässelby Strandbad och används för avdelningsmöten för våra avdelningar Sjöhumlorna, Kaparna, Konvojen och Utmanarna.",
+    dpTwo:"Här huserar kåren även våra optimistjollar.",
+  },
+  ruffenbtn:"Läs mer om Ruffen",
+>>>>>>> HSS-101-footermap-function
   historycard: {
     headline: "FÖRENINGEN",
     title: "Till sjöss sedan 1959",
@@ -1148,6 +1204,7 @@ export const Sv: MessagesSvType = {
     title: "HSS arbete med GDPR",
     text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
   },
+<<<<<<< HEAD
   cabinst:"Här träffas vi",
   cabinsmyset:{
     title:"Myset",
@@ -1163,4 +1220,6 @@ export const Sv: MessagesSvType = {
     dpTwo:"Här huserar kåren även våra optimistjollar.",
   },
   ruffenbtn:"Läs mer om Ruffen",
+=======
+>>>>>>> HSS-101-footermap-function
 };

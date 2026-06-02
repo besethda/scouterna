@@ -40,13 +40,11 @@ const GoodToKnow = () => {
     <div className="flex flex-col md:max-w-200 lg:max-w-430 min-w-97.5 min-h-120 gap-4 px-4 pb-10 bg-bg-blue md:px-22 md:pb-15 pt-5 md:pt-0 md:bg-white ">
       <p className="text-primary font-albert font-normal text-h2 tracking-[-0.5%] md:text-h2-desktop">{messages?.goodToKnow?.headline}</p>
       <div className="flex flex-col gap-4 md:grid lg:max-w-393 md:grid-cols-2 md:grid-rows-2 md:gap-6 md:py-2.5 md:text-[#FFFFFF]">
-
         {cards.map((card, index) => (
           <div key={index} className="flex flex-row gap-4 font-normal md:bg-primary md:rounded-2xl md:p-5 ">
             <div className="hidden md:flex  min-w-11 h-11 rounded-full items-center justify-center">
               <img src={card.icon} alt={card.alt} height={44} width={44} />
             </div>
-
             <div className="flex flex-col">
               <p className="hidden md:block font-bold font-albert uppercase text-acc md:text-acc-desktop tracking-[1.5px] text-text-blue">
                 {card.title}

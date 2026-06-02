@@ -376,6 +376,11 @@ export type MessagesEngType = {
   konvojenButton: string,
   union: Record<string, string>
   download: string,
+  BarnOchVuxnaTillsammans: Record<string, string>,
+  ParumMagna: Record<string, string>,
+  Familjescoutsagor: Record<string, string>,
+  Märken: Record<string, string>,
+  familjescouterButton: string
 
   GroupIntro: {
     FAMheadline: string, 
@@ -415,7 +420,16 @@ export type MessagesEngType = {
     text1: string, 
     text2: string, 
     subtitle: string 
+<<<<<<< HEAD
   }
+=======
+  },
+  cabinst:string,
+  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string}
+  mysetbtn:string,
+  cabinsruffen: {title:string, p:string, dpOne:string, dpTwo:string}
+  ruffenbtn:string,
+>>>>>>> HSS-101-footermap-function
   historycard: {
     headline: string,
     title: string,
@@ -445,12 +459,16 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string
+<<<<<<< HEAD
   },
   cabinst:string,
   cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string}
   mysetbtn:string,
   cabinsruffen: {title:string, p:string, dpOne:string, dpTwo:string}
   ruffenbtn:string,
+=======
+  }
+>>>>>>> HSS-101-footermap-function
   activity:{
     title:string,
     sub_title_one:string,
@@ -725,6 +743,7 @@ export const En: MessagesEngType = {
     p0: "We have created guidelines for which types of life jackets should be used by Scouts who cannot swim, and Scouts who can swim.",
     p1: "It is best to assume that everyone, regardless of swimming ability, should wear a life jacket on docks and in boats. It is also important that the life jacket is properly buckled or tied.",
     p2: "Scouts who have not been able to demonstrate a 200m swimming proficiency to HSS should wear a life jacket (buoyancy aid/life vest with collar).",
+    p3: "Scouts who have demonstrated a 200m swimming ability to HSS may wear a sailing vest.",
     t1: "Non-swimming scouts",
     t2: "Swimming scouts",
     w0: "HSS requirements for life jackets (with collar):",
@@ -1036,6 +1055,28 @@ export const En: MessagesEngType = {
     p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
   },
   download: "Download ",
+  BarnOchVuxnaTillsammans: {
+    s0: "Children and Adults Together",
+    p0: "Family Scouting is for children under the age of eight and an adult they feel safe with. Together, you discover scouting through play, adventure, and fun activities.",
+    p1: "Children and adults participate side by side, helping each other with the activities. The adult is responsible for the child, but is also an important part of the community and participates just as much as the children.",
+    p2: "The adult can be a parent, grandparent, relative, or another close person. The focus of Family Scouting is for children and adults to experience things together and strengthen their relationship."
+  },
+  ParumMagna: {
+    s0: "Parum & Magna",
+    p0: "In Family Scouting, children and adults get to follow the bears Parum and Magna on various adventures. Parum is curious and loves to discover and try new things, while Magna is wise and thinks about how everything connects. Together, they play, meet new friends, and help each other.",
+    p1: "Stories and imagination are important parts of Family Scouting. Through the stories, children and adults get something to talk about and reflect on together. The stories also help spark curiosity, excitement, and a cozy atmosphere during the meetings."
+  },
+  Familjescoutsagor: {
+    s0: "Family Scouting Stories",
+    p0: "In Family Scouting, we use stories as a tool in our meetings. Through these narratives, children and adults can discover new themes together, spark their imagination, and build curiosity and community.",
+    p1: "There are several different Family Scouting stories – both long and short, with and without rhymes. The stories are linked to various themes and activities. They help create a warm and playful feeling where children and adults can listen, reflect, and experience adventures together."
+  },
+  Märken: {
+    s0: "Badges",
+    p0: "Family Scouting has its own badges that you can earn through participation. Badges are a fun way to create pride in participating and a wonderful sense of togetherness!"
+  },
+  familjescouterButton: "Discover All Our Scout Badges",
+
 
   GroupIntro: {
     FAMheadline: "Groups", 
@@ -1049,7 +1090,7 @@ export const En: MessagesEngType = {
     KONtext: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
     UTtitle: "Utmanare", 
     UTtext: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them."
-   },
+  },
   optimisterSection: {
     title:"Optimists",
     title02:"2-kronor",
@@ -1118,6 +1159,24 @@ secondButton:"Read more about our life jacket policy",
     text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.", 
     subtitle: "Images from the archives" 
   },
+<<<<<<< HEAD
+=======
+  cabinst:"We meet here",
+  cabinsruffen: {
+    title: "Myset",
+    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
+    dpOne: "Myset is beautifully situated and provides a perfect environment for our wonderful campfires and other adventures. The cottage itself is pleasant and spacious, making it an ideal place for our hikes.",
+    dpTwo: "Myset is available for rent, and booking inquiries can be emailed to myset.hss.scout@gmail.com."
+  },
+  ruffenbtn: "Read more about Ruffen",
+  cabinsmyset: {
+    title: "Myset",
+    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
+    dpOne: "Ruffen is located by Hässelby Beach and is used for section meetings for our sections Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
+    dpTwo: "The scout group also houses our Optimist dinghies here."
+  },
+  mysetbtn: "Read more about Myset",
+>>>>>>> HSS-101-footermap-function
   historycard: {
     headline: "THE ASSOCIATION",
     title: "At sea since 1959",
@@ -1128,7 +1187,7 @@ secondButton:"Read more about our life jacket policy",
     title: "At sea since 1959",
     text: "Hässelby Strands Sea Scout Corps was founded in 1959 by engaged parents who came together to create something meaningful for their children. Since then, the corps has been filled with adventures, community, and memories - and many more are yet to come."
   },
-   contactcard: {
+  contactcard: {
     headline: "THE ASSOCIATION",
     title: "Contact",
     text: "Do you have questions about our scouting activities, want to become a member, or engage as a leader? Don't hesitate to contact us - we will respond as soon as we can."
@@ -1148,6 +1207,7 @@ secondButton:"Read more about our life jacket policy",
     title: "HSS work with GDPR",
     text: "GDPR requires us to inform our members that we collect data, what data we collect, and why we do it."
   },
+<<<<<<< HEAD
   cabinst:"We meet here",
   cabinsruffen: {
     title: "Myset",
@@ -1163,4 +1223,6 @@ secondButton:"Read more about our life jacket policy",
     dpTwo: "The scout group also houses our Optimist dinghies here."
   },
   mysetbtn: "Read more about Myset",
+=======
+>>>>>>> HSS-101-footermap-function
 };
