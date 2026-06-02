@@ -8,9 +8,10 @@ import { use } from "react";
 import Image from "next/image";
 
 const pageItem = "faq"
+const headDescription = "faq"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
@@ -65,7 +66,6 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }

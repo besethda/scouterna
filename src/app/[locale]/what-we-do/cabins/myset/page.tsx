@@ -12,9 +12,10 @@ import MysetHistory from "@/components/MysetHistory";
 
 
 const pageItem = "myset"
+const headDescription = "myset"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 
@@ -49,8 +50,7 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                         </div>
                         <ContentSection sectionLayout={["t", "p"]} page="myset03" background="blue" padding="bottom" child={true} />
                     </div>
-
-                </div>
+                </div>                          
                 <MysetHistory />
             </div>
         </div>
