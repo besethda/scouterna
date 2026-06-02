@@ -53,7 +53,7 @@ const Map = ({ page }: mapProps) => {
                             >
                                 <Popup
                                 >
-                                    <Link href={location.url}>
+                                    <Link href={location.url} target="_blank">
                                         {location.name} | Hässelby Strands Sjöscoutkår
                                     </Link>
                                 </Popup>
@@ -65,7 +65,7 @@ const Map = ({ page }: mapProps) => {
                         {
                             <Marker position={[LocationList[1].Latitude, LocationList[1].Longitude]}>
                                 <Popup>
-                                    <Link href={LocationList[1].url}>
+                                    <Link href={LocationList[1].url} target="_blank">
                                         {LocationList[1].name} | Hässelby Strands Sjöscoutkår
                                     </Link>
                                 </Popup>
