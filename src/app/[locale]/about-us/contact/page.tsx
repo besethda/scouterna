@@ -9,10 +9,11 @@ import JoinPage from "@/components/JoinPage";
 import ContactForm from "@/components/ContactForm";
 
 
-const pageItem = "contact"
+const pageItem = "contact";
+const headDescription = "contact"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 const Contact = ({params}:{params: Promise<{locale: string}>}) => {

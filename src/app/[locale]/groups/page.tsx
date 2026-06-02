@@ -7,9 +7,10 @@ import CardWithoutImage from "@/components/CardWithoutImage"
 import DivisionsBox from "@/components/DivisionsContainer/DivisionsBox";
 
 const pageItem = "groups"
+const headDescription = "groups"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  return getPageHeadTitle(locale, pageItem)
+  return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 

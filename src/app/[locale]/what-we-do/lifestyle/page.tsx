@@ -13,9 +13,10 @@ import HeroContainer from "@/components/HeroContainer/HeroContainer";
 
 
 const pageItem = "lifestyle"
+const headDescription = "lifestyle"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 
