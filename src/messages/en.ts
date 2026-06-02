@@ -415,17 +415,10 @@ export type MessagesEngType = {
   moreButton: string,
   secondButton: string,
   mysetHistory: {
-<<<<<<< HEAD
     title: string,
     text1: string,
     text2: string,
     subtitle: string
-=======
-    title: string, 
-    text1: string, 
-    text2: string, 
-    subtitle: string 
->>>>>>> HSS-102-Spelling
   },
   cabinst:string,
   cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string}
