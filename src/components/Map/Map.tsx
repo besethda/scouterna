@@ -45,9 +45,15 @@ const Map = ({ page }: mapProps) => {
                                 ref={(ref) => {
                                     markerRef.current[location.id] = ref
                                 }}
+                                eventHandlers={{
+                                    click: () => {
+                                        setSelectedId(location.id);
+                                    }
+                                }}
                             >
-                                <Popup>
-                                    <Link href="https://maps.app.goo.gl/sFxM5RaFKjgsMcVP8">
+                                <Popup
+                                >
+                                    <Link href={location.url}>
                                         {location.name} | Hässelby Strands Sjöscoutkår
                                     </Link>
                                 </Popup>
@@ -59,8 +65,8 @@ const Map = ({ page }: mapProps) => {
                         {
                             <Marker position={[LocationList[1].Latitude, LocationList[1].Longitude]}>
                                 <Popup>
-                                    <Link href="https://maps.app.goo.gl/sFxM5RaFKjgsMcVP8">
-                                        Ruffen | Hässelby Strands Sjöscoutkår
+                                    <Link href={LocationList[1].url}>
+                                        {LocationList[1].name} | Hässelby Strands Sjöscoutkår
                                     </Link>
                                 </Popup>
                             </Marker>
