@@ -4,7 +4,7 @@ import ContentSection from "@/components/ContentSection";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
-
+import CardAbout from "@/components/AddCardAbout";
 
 const pageItem = "gdpr"
 const headDescription = "gdpr"
@@ -21,6 +21,7 @@ const Gdpr = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <div>
             <Breadcrumbs />
+            <CardAbout page="gdprcard" card="gdprmobilecard" logo="/faq.png" image="/images/DSCF3034.jpg" MDlogo="/bg-information.svg"/>
             <ContentSection sectionLayout={["t", "p", "s", "l", "l", "l", "l", "l", "s", "l", "l", "l", "l", "l", "l", "l", "l", "l", "p", "s", "p"]} page={"gdpr"} background={"blue"}/>
             <ContentSection sectionLayout={["s", "p", "p", "p", "p", "p", "p"]} page={"ethics"} display={"mobile"}/>
         </div>

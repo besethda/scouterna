@@ -416,6 +416,36 @@ type MessagesSvType = {
     text2: string, 
     subtitle: string 
   }
+  historycard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  historymobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+   contactcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  contactmobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprmobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
 };
 
 export const Sv: MessagesSvType = {
@@ -1067,6 +1097,36 @@ export const Sv: MessagesSvType = {
     text1: "Söndagen den 28 januari 1968 invigdes Myset efter tre års ideellt arbete av HSS Föräldraförening. Genom basarer och lotterier samlades nära 50 000 kronor in. Vid invigningen deltog omkring 400 stolta scouter och föräldrar.", 
     text2: "Invigningen blev starten på en plats för gemenskap, äventyr och minnen för generationer av scouter.", 
     subtitle: "Bilder från arkiven" 
-  }
+  },
 
+  historycard: {
+    headline: "FÖRENINGEN",
+    title: "Till sjöss sedan 1959",
+    text: "Hässelby Strands Sjöscoutkår grundades 1959 av engagerade föräldrar som gick samman för att skapa något meningsfullt för sina barn. Sedan dess har kåren fyllts av äventyr, gemenskap och minnen - och många fler ska det bli."
+  },
+  historymobilecard: {
+    headline: "HISTORIA",
+    title: "Till sjöss sedan 1959",
+    text: "Hässelby Strands Sjöscoutkår grundades 1959 av engagerade föräldrar som gick samman för att skapa något meningsfullt för sina barn. Sedan dess har kåren fyllts av äventyr, gemenskap och minnen - och många fler ska det bli."
+  },
+  contactcard: {
+    headline: "FÖRENINGEN",
+    title: "Kontakt",
+    text: "Har du frågor om vår scoutverksamhet, vill bli medlem eller engagera dig som ledare? Tveka inte att kontakta oss - vi svarar så snart vi kan."
+  },
+  contactmobilecard: {
+    headline: "KOMMUNIKATION",
+    title: "Kontakt",
+    text: "Har du frågor om vår scoutverksamhet, vill bli medlem eller engagera dig som ledare? Tveka inte att kontakta oss - vi svarar så snart vi kan."
+  },
+   gdprcard: {
+    headline: "DATASKYDD",
+    title: "HSS arbete med GDPR",
+    text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
+  },
+  gdprmobilecard: {
+    headline: "DATASKYDD",
+    title: "HSS arbete med GDPR",
+    text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
+  },
 };

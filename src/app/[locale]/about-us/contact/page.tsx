@@ -5,8 +5,8 @@ import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import JoinPage from "@/components/JoinPage";
-
 import ContactForm from "@/components/ContactForm";
+import CardAbout from "@/components/AddCardAbout";
 
 
 const pageItem = "contact";
@@ -24,6 +24,9 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
   return (
     <div>
       <Breadcrumbs />
+      <div className="contact-logo">
+        <CardAbout page="contactcard" card="contactmobilecard" logo="/person.svg" image="/images/DSCF3034.jpg" MDlogo="/bg-communication.svg"  />
+      </div>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"}/>
       <JoinPage 

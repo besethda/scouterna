@@ -3,6 +3,7 @@ import { Sv } from "@/messages/sv";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { use } from "react";
 
+
 const AboutUs = ({params}:{params: Promise<{locale: string}>}) =>{
 
     const {locale} = use(params)
@@ -11,6 +12,7 @@ const AboutUs = ({params}:{params: Promise<{locale: string}>}) =>{
   return(
     <div>
       <Breadcrumbs />
+      
     </div>
   )
 }
