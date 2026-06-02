@@ -24,7 +24,7 @@ const HomeSection = () => {
           <div className="relative min-w-73.5 min-h-64.25">
             <Image
               src={hood}
-              alt="image"
+              alt="HSS hood"
               fill
               className=" bg-white rounded-2xl object-cover " />
           </div>
@@ -38,7 +38,7 @@ const HomeSection = () => {
         <div className="relative aspect-video max-w-100  md:h-40 lg:h-60">
           <Image
             src={hood}
-            alt="image"
+            alt="HSS hood"
             fill
             className="rounded-2xl object-cover" />
         </div>
