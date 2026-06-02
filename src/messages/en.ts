@@ -336,17 +336,17 @@ export type MessagesEngType = {
     buttonText: string
   },
   form: {
-    title:string,
-    text:string,
-    lastName:string,
-    firstName:string,
-    email:string,
-    message:string,
-    buttonText:string,
-    namn:string,
-    efternamn:string,
-    epost:string,
-    meddelande:string
+    title: string,
+    text: string,
+    lastName: string,
+    firstName: string,
+    email: string,
+    message: string,
+    buttonText: string,
+    namn: string,
+    efternamn: string,
+    epost: string,
+    meddelande: string
   },
   myset01: Record<string, string>
   myset02: Record<string, string>
@@ -383,19 +383,19 @@ export type MessagesEngType = {
   familjescouterButton: string
 
   GroupIntro: {
-    FAMheadline: string, 
-    FAMtitle: string, 
-    FAMtext: string, 
-    SJMtitle: string, 
-    SJMtext: string, 
-    KAPtitle: string, 
-    KAPtext: string, 
-    KONtitle: string, 
-    KONtext: string, 
-    UTtitle: string, 
-    UTtext: string, 
+    FAMheadline: string,
+    FAMtitle: string,
+    FAMtext: string,
+    SJMtitle: string,
+    SJMtext: string,
+    KAPtitle: string,
+    KAPtext: string,
+    KONtitle: string,
+    KONtext: string,
+    UTtitle: string,
+    UTtext: string,
   },
-  
+
   optimisterSection: {
     title: string,
     title02: string,
@@ -405,27 +405,26 @@ export type MessagesEngType = {
     text03: string,
   },
   ruffenDivisions: Record<string, string>
-  avdelningsledare:Record <string, string>
+  avdelningsledare: Record<string, string>
   scoutnet: Record<string, string>
   scoutnetButton: string,
   good: string,
-  question: {title:string, paraph:string},
+  question: { title: string, paraph: string },
   toFAQButton: string,
-  policy:  {title:string, paraph:string, mer:string, desktop:string,},
+  policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
-  secondButton:string,
-
+  secondButton: string,
   mysetHistory: {
     title: string, 
     text1: string, 
     text2: string, 
     subtitle: string 
   },
-  cabinst:string,
+  cabinst: string,
   cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string}
   mysetbtn:string,
   cabinsruffen: {title:string, p:string, dpOne:string, dpTwo:string}
-  ruffenbtn:string,
+  ruffenbtn: string,
   historycard: {
     headline: string,
     title: string,
@@ -942,7 +941,7 @@ export const En: MessagesEngType = {
 
   },
   joinPage: {
-    title:"Express Your Interest",
+    title: "Express Your Interest",
     text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
     buttonText: "Join the Scouts"
   },
@@ -1066,25 +1065,25 @@ export const En: MessagesEngType = {
 
 
   GroupIntro: {
-    FAMheadline: "Groups", 
-    FAMtitle: "FamilyScouts", 
+    FAMheadline: "Groups",
+    FAMtitle: "FamilyScouts",
     FAMtext: "Through Family Scouting, children under the age of eight, together with one or more adults, can experience scouting in a fun and playful way.",
-    SJMtitle: "Sjöhumlorna", 
-    SJMtext: "The youngest scouts discover sea life through games, singing, and small adventures by the water. Here, they learn to cooperate, tie their first knots, and feel at home in nature.", 
-    KAPtitle: "Kaparna", 
-    KAPtext: "At Kaparna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety", 
-    KONtitle: "Konvojen", 
+    SJMtitle: "Sjöhumlorna",
+    SJMtext: "The youngest scouts discover sea life through games, singing, and small adventures by the water. Here, they learn to cooperate, tie their first knots, and feel at home in nature.",
+    KAPtitle: "Kaparna",
+    KAPtext: "At Kaparna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety",
+    KONtitle: "Konvojen",
     KONtext: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
-    UTtitle: "Utmanare", 
+    UTtitle: "Utmanare",
     UTtext: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them."
   },
   optimisterSection: {
-    title:"Optimists",
-    title02:"2-kronor",
-    title03:"Keelboats",
-    text:"Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
-    text02:"Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
-    text03:"Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
+    title: "Optimists",
+    title02: "2-kronor",
+    title03: "Keelboats",
+    text: "Our Optimists are the perfect boats for beginners, where scouts learn the basics of sailing in a safe and fun way.",
+    text02: "Our 2-kronor are fast and fun sailboats, perfect for both training and cruising. They require teamwork among the crew and offer a wonderful sailing experience.",
+    text03: "Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
   },
   interestBtn: {
     title: "Want to join the Scouts?",
@@ -1095,15 +1094,15 @@ export const En: MessagesEngType = {
     t0: "Group Meetings",
     p0: "HSS's four groups hold meetings once a week."
   },
-avdelningsledare:{
-  h0:"Group Manager",
-  p0:"Each group has a group manager. Our managers are trained and have completed the mandatory course Safe Meetings."
-},
+  avdelningsledare: {
+    h0: "Group Manager",
+    p0: "Each group has a group manager. Our managers are trained and have completed the mandatory course Safe Meetings."
+  },
   scoutnet: {
     t0: "Scoutnet",
     p0: "Scoutnet is the Scouts' common system where all information about members and activities is gathered.",
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
-},
+  },
   scoutnetButton: "Log in to Scoutnet",
   activity:{
     title:"Activities",
@@ -1120,31 +1119,31 @@ avdelningsledare:{
     email: "Email",
     message: "Message",
     buttonText: "Send message",
-    namn:"First Name",
-    efternamn:"Last Name",
-    epost:"E-mail",
-    meddelande:"Message"
+    namn: "First Name",
+    efternamn: "Last Name",
+    epost: "E-mail",
+    meddelande: "Message"
   },
   good: "Good to know",
   question: {
     title: "Questions and concerns",
     paraph: "If you are wondering about something, you can visit our FAQ. If you don't find answers to your questions, please contact someone in the organization."
-},
-toFAQButton: "Go to our FAQ",
-policy: {
+  },
+  toFAQButton: "Go to our FAQ",
+  policy: {
     title: "Life jacket policy",
     paraph: "We follow a life jacket policy for the safety of all Scouts.",
     mer: "Life jackets must be worn by everyone on docks and in boats. Scouts who can swim must use sailing vests, and Scouts who cannot swim must use rescue vests.",
-    desktop:"Safety is the be-all and end-all for the Sea Scouts. Read up on our life jacket policy to learn more about when the vest should be used, and which vests we recommend."
-},
-moreButton: "Read more about policy",
-secondButton:"Read more about our life jacket policy",
+    desktop: "Safety is the be-all and end-all for the Sea Scouts. Read up on our life jacket policy to learn more about when the vest should be used, and which vests we recommend."
+  },
+  moreButton: "Read more about policy",
+  secondButton: "Read more about our life jacket policy",
 
   mysetHistory: {
-    title: "The History of Myset", 
-    text1: "On Sunday, January 28 1968, Myset was inaugurated after three years of voluntary work by the HSS Parents' Association. Through bazaars and lotteries, nearly 50,000 SEK was raised. Around 400 proud scouts and parents attended the inauguration.", 
-    text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.", 
-    subtitle: "Images from the archives" 
+    title: "The History of Myset",
+    text1: "On Sunday, January 28 1968, Myset was inaugurated after three years of voluntary work by the HSS Parents' Association. Through bazaars and lotteries, nearly 50,000 SEK was raised. Around 400 proud scouts and parents attended the inauguration.",
+    text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.",
+    subtitle: "Images from the archives"
   },
   cabinst:"We meet here",
   cabinsruffen: {
