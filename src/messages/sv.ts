@@ -354,7 +354,7 @@ type MessagesSvType = {
   myset03: Record<string, string>,
   mysetBtn: {
     text: string
-  }
+  },
   sjohumlornaSpårarscouter: Record<string, string>
   sjohumlornaAge: Record<string, string>
   sjohumlorMeeting: Record<string, string>
@@ -446,6 +446,11 @@ type MessagesSvType = {
     title: string,
     text: string
   },
+  cabinst:string,
+  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string},
+  mysetbtn:string,
+  cabinsruffen:{title:string,p:string, dpOne:string, dpTwo:string},
+  ruffenbtn:string,
 };
 
 export const Sv: MessagesSvType = {
@@ -1129,4 +1134,19 @@ export const Sv: MessagesSvType = {
     title: "HSS arbete med GDPR",
     text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
   },
+  cabinst:"Här träffas vi",
+  cabinsmyset:{
+    title:"Myset",
+    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
+    dpOne:"Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
+    dpTwo:"Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
+  },
+  mysetbtn:"Läs mer om Myset",
+  cabinsruffen: {
+    title:"Ruffen",
+    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
+    dpOne:"Ruffen ligger vid Hässelby Strandbad och används för avdelningsmöten för våra avdelningar Sjöhumlorna, Kaparna, Konvojen och Utmanarna.",
+    dpTwo:"Här huserar kåren även våra optimistjollar.",
+  },
+  ruffenbtn:"Läs mer om Ruffen",
 };
