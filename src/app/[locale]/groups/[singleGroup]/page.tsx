@@ -378,7 +378,7 @@ const Groups = ({
                 child={true}
               />
             </div>
-            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4">
+            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4 md:pt-3">
               <Image
                 src={Sjohulorna}
                 alt="konvojen"
@@ -396,7 +396,7 @@ const Groups = ({
                 child={true}
               />
             </div>
-            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4">
+            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4 md:pt-3">
               <Image
                 src={Sjohulorna}
                 alt="Familjescouter img"
