@@ -18,9 +18,9 @@ const CabinsSection = () => {
             </div>
             <div className="flex flex-col flex-1 py-6 mr-20">
               <h3 className="text-primary text-h3-desktop">{messages?.cabinsmyset.title}</h3>
-              <p className="block md:hidden text-text-gray pt-2 md:text-body-desktop text-body">{messages?.cabinsmyset.p}</p>
-              <p className="hidden md:block text-text-gray pt-2 md:text-body-desktop text-body">{messages?.cabinsmyset.dpOne}</p>
-              <p className="hidden md:block text-text-gray pt-3 md:text-body-desktop text-body">{messages?.cabinsmyset.dpTwo}</p>
+              <p className="block md:hidden text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsmyset.p}</p>
+              <p className="hidden md:block text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A] ">{messages?.cabinsmyset.dpOne}</p>
+              <p className="hidden md:block text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsmyset.dpTwo}</p>
               <div className="mt-7">
                 <CTABtn text={messages?.mysetbtn}/>
               </div> 
@@ -37,11 +37,11 @@ const CabinsSection = () => {
             </div>
             <div className="flex flex-col flex-1 md:py-6 py-8 mr-20">
               <h3 className="text-primary text-h3-desktop">{messages?.cabinsruffen.title}</h3>
-              <p className="block md:hidden text-text-gray pt-2 md:text-body-desktop text-body">{messages?.cabinsruffen.p}</p>
-              <p className="hidden md:block text-text-gray pt-2 md:text-body-desktop text-body">{messages?.cabinsruffen.dpOne}</p>
-              <p className="hidden md:block text-text-gray pt-3 md:text-body-desktop text-body">{messages?.cabinsruffen.dpTwo}</p>
+              <p className="block md:hidden text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.p}</p>
+              <p className="hidden md:block text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpOne}</p>
+              <p className="hidden md:block text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpTwo}</p>
               <div className="mt-7">
-                <CTABtn text={messages?.ruffenbtn}/>
+                <a href={messages?.path + '/what-we-do/cabins/ruffen'}><CTABtn text={messages?.ruffenbtn}/></a>
               </div> 
             </div>
             <div className="w-93 shrink-0 hidden md:block mt-6 mb-6 mr-6">
