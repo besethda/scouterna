@@ -7,12 +7,14 @@ import { use } from "react";
 import JoinPage from "@/components/JoinPage";
 
 import ContactForm from "@/components/ContactForm";
+import CardAbout from "@/components/AddCardAbout";
 
 
-const pageItem = "contact"
+const pageItem = "contact";
+const headDescription = "contact"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 const Contact = ({params}:{params: Promise<{locale: string}>}) => {
@@ -23,6 +25,9 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
   return (
     <div>
       <Breadcrumbs />
+      <div className="contact-logo">
+        <CardAbout page="contactcard" card="contactmobilecard" logo="/person.svg" image="/images/DSCF3034.jpg" MDlogo="/bg-communication.svg"  />
+      </div>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"}/>
       <JoinPage 

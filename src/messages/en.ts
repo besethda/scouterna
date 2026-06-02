@@ -188,7 +188,6 @@ export type MessagesEngType = {
   },
   tabTitle: {
     history: string,
-    join: string,
     "become-a-scout": string,
     faq: string,
     "groups": string,
@@ -209,7 +208,28 @@ export type MessagesEngType = {
     gdpr: string,
     [key: string]: string
   },
-  description: string,
+  description: {
+    history: string,
+    "become-a-scout": string,
+    faq: string,
+    "groups": string,
+    sjohumlorna: string,
+    kaparna: string,
+    konvojen: string,
+    utmanare: string,
+    familjescouter: string,
+    lifestyle: string,
+    boats: string,
+    cabins: string,
+    myset: string,
+    ruffen: string,
+    members: string,
+    information: string,
+    safety: string,
+    contact: string,
+    gdpr: string,
+    [key: string]: string
+  },
   groupsCard: {
     headline: string,
     title: string,
@@ -356,6 +376,11 @@ export type MessagesEngType = {
   konvojenButton: string,
   union: Record<string, string>
   download: string,
+  BarnOchVuxnaTillsammans: Record<string, string>,
+  ParumMagna: Record<string, string>,
+  Familjescoutsagor: Record<string, string>,
+  Märken: Record<string, string>,
+  familjescouterButton: string
 
   GroupIntro: {
     FAMheadline: string, 
@@ -378,7 +403,7 @@ export type MessagesEngType = {
     text: string,
     text02: string,
     text03: string,
-  }
+  },
   ruffenDivisions: Record<string, string>
   avdelningsledare:Record <string, string>
   scoutnet: Record<string, string>
@@ -395,7 +420,49 @@ export type MessagesEngType = {
     text1: string, 
     text2: string, 
     subtitle: string 
+  },
+  cabinst:string,
+  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string}
+  mysetbtn:string,
+  cabinsruffen: {title:string, p:string, dpOne:string, dpTwo:string}
+  ruffenbtn:string,
+  historycard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  historymobilecard: {
+    headline: string,
+    title: string,
+    text: string,
+  },
+  contactcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  contactmobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprmobilecard: {
+    headline: string,
+    title: string,
+    text: string
   }
+  activity:{
+    title:string,
+    sub_title_one:string,
+    p_one:string,
+    sub_title_two:string,
+    p_two:string,
+  },
 };
 
 export const En: MessagesEngType = {
@@ -589,7 +656,6 @@ export const En: MessagesEngType = {
   },
   tabTitle: {
     history: "HSS | History",
-    join: "HSS | Join",
     "become-a-scout": "HSS | Become a scout",
     faq: "HSS | FAQ",
     "groups": "HSS | Groups",
@@ -609,7 +675,27 @@ export const En: MessagesEngType = {
     contact: "HSS | Contact",
     gdpr: "HSS | GDPR"
   },
-  description: "HSS website",
+ description:{
+    history: "The history page",
+    "become-a-scout": "Become a scout page",
+    faq: "The FAQ page",
+    "groups": "The groups page",
+    sjohumlorna: "The sjöhumlorna page",
+    kaparna: "The kaparna page",
+    konvojen: "The konvojen page",
+    utmanare: "The utmanare page",
+    familjescouter: "The familjescouter page",
+    lifestyle: "The lifestyle page",
+    boats: "The boats page",
+    cabins: "The cabins page",
+    myset: "The myset page",
+    ruffen: "The ruffen page",
+    members: "The members page",
+    information: "The members information page",
+    safety: "The life jacket policy page",
+    contact: "The contact page",
+    gdpr: "The GDPR page"
+  }, 
   groupsCard: {
     headline: "Groups",
     title: "Age Groups",
@@ -644,6 +730,7 @@ export const En: MessagesEngType = {
     p0: "We have created guidelines for which types of life jackets should be used by Scouts who cannot swim, and Scouts who can swim.",
     p1: "It is best to assume that everyone, regardless of swimming ability, should wear a life jacket on docks and in boats. It is also important that the life jacket is properly buckled or tied.",
     p2: "Scouts who have not been able to demonstrate a 200m swimming proficiency to HSS should wear a life jacket (buoyancy aid/life vest with collar).",
+    p3: "Scouts who have demonstrated a 200m swimming ability to HSS may wear a sailing vest.",
     t1: "Non-swimming scouts",
     t2: "Swimming scouts",
     w0: "HSS requirements for life jackets (with collar):",
@@ -955,6 +1042,28 @@ export const En: MessagesEngType = {
     p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
   },
   download: "Download ",
+  BarnOchVuxnaTillsammans: {
+    s0: "Children and Adults Together",
+    p0: "Family Scouting is for children under the age of eight and an adult they feel safe with. Together, you discover scouting through play, adventure, and fun activities.",
+    p1: "Children and adults participate side by side, helping each other with the activities. The adult is responsible for the child, but is also an important part of the community and participates just as much as the children.",
+    p2: "The adult can be a parent, grandparent, relative, or another close person. The focus of Family Scouting is for children and adults to experience things together and strengthen their relationship."
+  },
+  ParumMagna: {
+    s0: "Parum & Magna",
+    p0: "In Family Scouting, children and adults get to follow the bears Parum and Magna on various adventures. Parum is curious and loves to discover and try new things, while Magna is wise and thinks about how everything connects. Together, they play, meet new friends, and help each other.",
+    p1: "Stories and imagination are important parts of Family Scouting. Through the stories, children and adults get something to talk about and reflect on together. The stories also help spark curiosity, excitement, and a cozy atmosphere during the meetings."
+  },
+  Familjescoutsagor: {
+    s0: "Family Scouting Stories",
+    p0: "In Family Scouting, we use stories as a tool in our meetings. Through these narratives, children and adults can discover new themes together, spark their imagination, and build curiosity and community.",
+    p1: "There are several different Family Scouting stories – both long and short, with and without rhymes. The stories are linked to various themes and activities. They help create a warm and playful feeling where children and adults can listen, reflect, and experience adventures together."
+  },
+  Märken: {
+    s0: "Badges",
+    p0: "Family Scouting has its own badges that you can earn through participation. Badges are a fun way to create pride in participating and a wonderful sense of togetherness!"
+  },
+  familjescouterButton: "Discover All Our Scout Badges",
+
 
   GroupIntro: {
     FAMheadline: "Groups", 
@@ -996,6 +1105,13 @@ avdelningsledare:{
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
 },
   scoutnetButton: "Log in to Scoutnet",
+  activity:{
+    title:"Activities",
+    sub_title_one:"Camps",
+    p_one:"We organize scout camps featuring nature, community, and fun activities where children and youth develop life skills and create lasting memories.",
+    sub_title_two:"Hikes",
+    p_two:"We organize hikes where participants experience nature, work together, and tackle challenges as a team.",
+},
   form: {
     title: "Send a message",
     text: "You can send a message directly to our email using the form.",
@@ -1029,6 +1145,50 @@ secondButton:"Read more about our life jacket policy",
     text1: "On Sunday, January 28 1968, Myset was inaugurated after three years of voluntary work by the HSS Parents' Association. Through bazaars and lotteries, nearly 50,000 SEK was raised. Around 400 proud scouts and parents attended the inauguration.", 
     text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.", 
     subtitle: "Images from the archives" 
-  }
-
+  },
+  cabinst:"We meet here",
+  cabinsruffen: {
+    title: "Myset",
+    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
+    dpOne: "Myset is beautifully situated and provides a perfect environment for our wonderful campfires and other adventures. The cottage itself is pleasant and spacious, making it an ideal place for our hikes.",
+    dpTwo: "Myset is available for rent, and booking inquiries can be emailed to myset.hss.scout@gmail.com."
+  },
+  ruffenbtn: "Read more about Ruffen",
+  cabinsmyset: {
+    title: "Myset",
+    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
+    dpOne: "Ruffen is located by Hässelby Beach and is used for section meetings for our sections Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
+    dpTwo: "The scout group also houses our Optimist dinghies here."
+  },
+  mysetbtn: "Read more about Myset",
+  historycard: {
+    headline: "THE ASSOCIATION",
+    title: "At sea since 1959",
+    text: "Hässelby Strands Sea Scout Corps was founded in 1959 by engaged parents who came together to create something meaningful for their children. Since then, the corps has been filled with adventures, community, and memories - and many more are yet to come."
+  },
+  historymobilecard: {
+    headline: "HISTROY",
+    title: "At sea since 1959",
+    text: "Hässelby Strands Sea Scout Corps was founded in 1959 by engaged parents who came together to create something meaningful for their children. Since then, the corps has been filled with adventures, community, and memories - and many more are yet to come."
+  },
+  contactcard: {
+    headline: "THE ASSOCIATION",
+    title: "Contact",
+    text: "Do you have questions about our scouting activities, want to become a member, or engage as a leader? Don't hesitate to contact us - we will respond as soon as we can."
+  },
+  contactmobilecard: {
+    headline: "Communicate",
+    title: "Contact",
+    text: "Do you have questions about our scouting activities, want to become a member, or engage as a leader? Don't hesitate to contact us - we will respond as soon as we can."
+  },
+  gdprcard: {
+    headline: "DATA PROTECTION",
+    title: "HSS work with GDPR",
+    text: "GDPR requires us to inform our members that we collect data, what data we collect, and why we do it."
+  },
+  gdprmobilecard: {
+    headline: "DATA PROTECTION",
+    title: "HSS work with GDPR",
+    text: "GDPR requires us to inform our members that we collect data, what data we collect, and why we do it."
+  },
 };

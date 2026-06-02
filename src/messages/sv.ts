@@ -189,7 +189,6 @@ type MessagesSvType = {
   },
   tabTitle: {
     history: string,
-    join: string,
     "become-a-scout": string,
     faq: string,
     "groups": string,
@@ -210,7 +209,28 @@ type MessagesSvType = {
     gdpr: string,
     [key: string]: string
   },
-  description: string,
+  description: {
+    history: string,
+    "become-a-scout": string,
+    faq: string,
+    "groups": string,
+    sjohumlorna: string,
+    kaparna: string,
+    konvojen: string,
+    utmanare: string,
+    familjescouter: string,
+    lifestyle: string,
+    boats: string,
+    cabins: string,
+    myset: string,
+    ruffen: string,
+    members: string,
+    information: string,
+    safety: string,
+    contact: string,
+    gdpr: string,
+    [key: string]: string
+  },
   groupsCard: {
     headline: string,
     title: string,
@@ -334,7 +354,7 @@ type MessagesSvType = {
   myset03: Record<string, string>,
   mysetBtn: {
     text: string
-  }
+  },
   sjohumlornaSpårarscouter: Record<string, string>
   sjohumlornaAge: Record<string, string>
   sjohumlorMeeting: Record<string, string>
@@ -357,6 +377,11 @@ type MessagesSvType = {
   konvojenButton: string,
   union: Record<string, string>,
   download: string,
+  BarnOchVuxnaTillsammans: Record<string, string>,
+  ParumMagna: Record<string, string>,
+  Familjescoutsagor: Record<string, string>,
+  Märken: Record<string, string>,
+  familjescouterButton: string
   
   GroupIntro: {
     FAMheadline: string, 
@@ -396,6 +421,48 @@ type MessagesSvType = {
     text2: string, 
     subtitle: string 
   }
+  cabinst:string,
+  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string},
+  mysetbtn:string,
+  cabinsruffen:{title:string,p:string, dpOne:string, dpTwo:string},
+  ruffenbtn:string,
+  historycard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  historymobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+   contactcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  contactmobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprcard: {
+    headline: string,
+    title: string,
+    text: string
+  },
+  gdprmobilecard: {
+    headline: string,
+    title: string,
+    text: string
+  }
+  activity:{
+    title:string,
+    sub_title_one:string,
+    p_one:string,
+    sub_title_two:string,
+    p_two:string,
+  },
 };
 
 export const Sv: MessagesSvType = {
@@ -589,7 +656,6 @@ export const Sv: MessagesSvType = {
   },
   tabTitle: {
     history: "HSS | Historia",
-    join: "HSS | Gå med i Scouterna",
     "become-a-scout": "HSS | Bli Sjöscout",
     faq: "HSS | FAQ",
     "groups": "HSS | Våra avdelningar",
@@ -609,7 +675,27 @@ export const Sv: MessagesSvType = {
     contact: "HSS | Kontakt",
     gdpr: "HSS | GDPR"
   },
-  description: "HSS webbplats",
+  description:{
+    history: "Historia",
+    "become-a-scout": "Bli Sjöscout",
+    faq: "FAQ",
+    "groups": "Våra avdelningar",
+    sjohumlorna: "Sjöhumlorna",
+    kaparna: "Kaparna",
+    konvojen: "Konvojen",
+    utmanare: "Utmanare",
+    familjescouter: "Familjescouter",
+    lifestyle: "Livet som Sjöscout",
+    boats: "Båtar",
+    cabins: "Scoutstugor",
+    myset: "Myset",
+    ruffen: "Ruffen",
+    members: "För medlemmar",
+    information: "Information för medlemmar",
+    safety: "Flytvästpolicy",
+    contact: "Kontakt",
+    gdpr: "GDPR"
+  }, 
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -643,8 +729,8 @@ export const Sv: MessagesSvType = {
     t0: "HSS riktlinjer",
     p0: "Vi har skapat riktlinjer för vilka typer av flytvästar som ska användas av Scouter som inte kan simma, och Scouter som kan simma. ",
     p1: "Det är bra att utgå från att alla, oavsett simkunnighet, ska ha på sig flytväst på bryggor och i båtar. Det är också viktigt att flytvästen är rätt knäppt eller knuten.",
-    p2: "Scouter som för HSS ej kunnat uppvisa simkunnighet om 200 m bör bära räddningsväst.",
-    p3: "Scouter som för HSS kunnat uppvisa simkunnighet om 200 m kan bära en seglarväst.",
+    p2: "Scouter som för HSS ej kunnat uppvisa simkunnighet om 200m bör bära räddningsväst.",
+    p3: "Scouter som för HSS kunnat uppvisa simkunnighet om 200m kan bära en seglarväst.",
     t1: "Ej simkunniga scouter",
     t2: "Simkunniga scouter",
     w0: "HSS krav på räddningsväst:",
@@ -953,6 +1039,27 @@ export const Sv: MessagesSvType = {
     p0: "Vi håller regelbundet kårstämmor för att fatta gemensamma beslut som rör föreningen. Kårstämmornas innehåll dokumenteras och går att ladda ner och läsa."
   },
   download: "Ladda ner ",
+  BarnOchVuxnaTillsammans: {
+    s0: "Barn och vuxna tillsammans",
+    p0: "Familjescouting är till för barn under åtta år och en vuxen som barnet känner sig trygg med. Tillsammans upptäcker ni scouting genom lek, äventyr och roliga aktiviteter.",
+    p1: "Barn och vuxna är med sida vid sida och hjälps åt i aktiviteterna. Den vuxna ansvarar för barnet, men är också en viktig del av gemenskapen och deltar lika mycket som barnen.",
+    p2: "Den vuxna kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära person. Fokus i Familjescouting är att barn och vuxna får uppleva saker tillsammans och stärka sin relation."
+  },
+  ParumMagna: {
+    s0: "Parum & Magna",
+    p0: "I familjescouting får barn och vuxna följa björnarna Parum och Magna på olika äventyr. Parum är nyfiken och tycker om att upptäcka och prova nya saker, medan Magna är klok och funderar över hur saker hänger ihop. Tillsammans leker de, träffar nya vänner och hjälper varandra.",
+    p1: "Sagan och fantasin är viktiga delar i familjescouting. Genom berättelserna får barn och vuxna något att prata och fundera kring tillsammans. Sagorna hjälper också till att skapa nyfikenhet, spänning och en mysig känsla under träffarna."
+  },
+  Familjescoutsagor: {
+    s0: "Familjescoutsagor",
+    p0: "I familjescouting använder vi sagor som ett verktyg i våra träffar. Genom berättelser får barn och vuxna upptäcka nya teman tillsammans, väcka fantasin och skapa nyfikenhet och gemenskap.",
+    p1: "Det finns flera olika familjescoutsagor – både längre och kortare berättelser, med och utan rim. Sagorna är kopplade till olika teman och aktiviteter. Sagorna hjälper till att skapa en varm och lekfull känsla där barn och vuxna tillsammans får lyssna, fundera och uppleva äventyr."
+  },
+  Märken: {
+    s0: "Märken",
+    p0: "Familjescouting har sina egna märken som man kan få genom delaktighet. Märken är ett roligt sätt att skapa stolhet kring deltagande och en härlig känsla av samhörighet!"
+  },
+  familjescouterButton: "Upptäck alla våra Scoutmärken",
 
   GroupIntro: {
     FAMheadline: "Avdelningar", 
@@ -994,6 +1101,13 @@ export const Sv: MessagesSvType = {
     p1:"Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
   },
   scoutnetButton: "Logga in på Scoutnet",
+  activity:{
+    title:"Aktiviteter",
+    sub_title_one:"Läger",
+    p_one:"Vi anordnar scoutläger med natur, gemenskap och roliga aktiviteter där barn och unga utvecklas och får minnen för livet.",
+    sub_title_two:"Hajker",
+    p_two:"Vi anordnar hajker där deltagare får uppleva naturen, samarbeta och klara utmaningar tillsammans.",
+  },
   form: {
     title:"Skicka ett meddelande",
     text:"Det går bra att skicka ett meddelande direkt till vår e-post via formuläret.",
@@ -1028,6 +1142,51 @@ export const Sv: MessagesSvType = {
     text1: "Söndagen den 28 januari 1968 invigdes Myset efter tre års ideellt arbete av HSS Föräldraförening. Genom basarer och lotterier samlades nära 50 000 kronor in. Vid invigningen deltog omkring 400 stolta scouter och föräldrar.", 
     text2: "Invigningen blev starten på en plats för gemenskap, äventyr och minnen för generationer av scouter.", 
     subtitle: "Bilder från arkiven" 
-  }
+  },
 
+  cabinst:"Här träffas vi",
+  cabinsmyset:{
+    title:"Myset",
+    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
+    dpOne:"Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
+    dpTwo:"Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
+  },
+  mysetbtn:"Läs mer om Myset",
+  cabinsruffen: {
+    title:"Ruffen",
+    p:"Tillsammans utforskar vi, seglar och utmanar oss själva, med skratt, gemenskap och saltstänk i luften. Det är äventyr på riktigt - och det börjar på vattnet",
+    dpOne:"Ruffen ligger vid Hässelby Strandbad och används för avdelningsmöten för våra avdelningar Sjöhumlorna, Kaparna, Konvojen och Utmanarna.",
+    dpTwo:"Här huserar kåren även våra optimistjollar.",
+  },
+  ruffenbtn:"Läs mer om Ruffen",
+  historycard: {
+    headline: "FÖRENINGEN",
+    title: "Till sjöss sedan 1959",
+    text: "Hässelby Strands Sjöscoutkår grundades 1959 av engagerade föräldrar som gick samman för att skapa något meningsfullt för sina barn. Sedan dess har kåren fyllts av äventyr, gemenskap och minnen - och många fler ska det bli."
+  },
+  historymobilecard: {
+    headline: "HISTORIA",
+    title: "Till sjöss sedan 1959",
+    text: "Hässelby Strands Sjöscoutkår grundades 1959 av engagerade föräldrar som gick samman för att skapa något meningsfullt för sina barn. Sedan dess har kåren fyllts av äventyr, gemenskap och minnen - och många fler ska det bli."
+  },
+  contactcard: {
+    headline: "FÖRENINGEN",
+    title: "Kontakt",
+    text: "Har du frågor om vår scoutverksamhet, vill bli medlem eller engagera dig som ledare? Tveka inte att kontakta oss - vi svarar så snart vi kan."
+  },
+  contactmobilecard: {
+    headline: "KOMMUNIKATION",
+    title: "Kontakt",
+    text: "Har du frågor om vår scoutverksamhet, vill bli medlem eller engagera dig som ledare? Tveka inte att kontakta oss - vi svarar så snart vi kan."
+  },
+   gdprcard: {
+    headline: "DATASKYDD",
+    title: "HSS arbete med GDPR",
+    text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
+  },
+  gdprmobilecard: {
+    headline: "DATASKYDD",
+    title: "HSS arbete med GDPR",
+    text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
+  },
 };

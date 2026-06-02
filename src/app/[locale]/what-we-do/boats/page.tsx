@@ -18,9 +18,10 @@ import Image09 from '../../../../../public/images/DSCF3095.jpg';
 
 
 const pageItem = "boats"
+const headDescription = "boats"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 const Boats = ({params}:{params: Promise<{locale: string}>}) => {

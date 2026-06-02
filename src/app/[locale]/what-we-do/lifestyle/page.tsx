@@ -7,15 +7,16 @@ import { use } from "react";
 import LifeStyleSection from "./lifestyleSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import HeroContainer from "@/components/HeroContainer/HeroContainer";
-
+import Activities from "@/components/Activities";
 
 
 
 
 const pageItem = "lifestyle"
+const headDescription = "lifestyle"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
-    return getPageHeadTitle(locale, pageItem)
+    return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 
@@ -32,6 +33,7 @@ const LifeStyle = ({params}:{params: Promise<{locale: string}>}) => {
                 <WhiteGridContainer backgroundBlue={false} messageTitle="learning"/>
                 <LifeStyleSection />
             </div>
+            <Activities />
         </div>
     );
 }
