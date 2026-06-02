@@ -679,6 +679,7 @@ export const En: MessagesEngType = {
     p0: "We have created guidelines for which types of life jackets should be used by Scouts who cannot swim, and Scouts who can swim.",
     p1: "It is best to assume that everyone, regardless of swimming ability, should wear a life jacket on docks and in boats. It is also important that the life jacket is properly buckled or tied.",
     p2: "Scouts who have not been able to demonstrate a 200m swimming proficiency to HSS should wear a life jacket (buoyancy aid/life vest with collar).",
+    p3: "Scouts who have demonstrated a 200-meter swimming ability to HSS may wear a sailing vest.",
     t1: "Non-swimming scouts",
     t2: "Swimming scouts",
     w0: "HSS requirements for life jackets (with collar):",
