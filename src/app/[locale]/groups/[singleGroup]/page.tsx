@@ -367,8 +367,8 @@ const Groups = ({
       <Breadcrumbs />
       <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
       <div className="bg-bg-blue lg:pl-5 pt-10 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
-        <div className="lg:max-w-430 lg:px-22 flex flex-col gap-6">
-          <div className="flex flex-col gap-4 items-center lg:items-start lg:pt-10">
+        <div className="lg:max-w-430 lg:px-8 flex flex-col gap-6">
+          <div className="flex flex-col lg:flex-row gap-4 items-center md:items-start lg:pt-10">
             <div className="flex-1">
               <ContentSection 
                 sectionLayout={["s", "p", "p", "p"]}
@@ -378,7 +378,7 @@ const Groups = ({
                 child={true}
               />
             </div>
-            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125">
+            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4">
               <Image
                 src={Sjohulorna}
                 alt="konvojen"
@@ -386,7 +386,7 @@ const Groups = ({
                 />
             </div>
           </div>
-          <div className="flex flex-col gap-4 items-center lg:items-start lg:pt-10">
+          <div className="flex flex-col gap-4 items-center lg:flex-row md:items-start lg:pt-10">
             <div className="flex-1">
               <ContentSection
                 sectionLayout={["s", "p", "p"]}
@@ -396,7 +396,7 @@ const Groups = ({
                 child={true}
               />
             </div>
-            <div className="flex lg:items-start w-89.5 h-auto lg:w-125">
+            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4">
               <Image
                 src={Sjohulorna}
                 alt="Familjescouter img"
