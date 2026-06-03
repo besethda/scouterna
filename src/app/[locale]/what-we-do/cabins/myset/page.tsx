@@ -9,6 +9,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MysetHistory from "@/components/MysetHistory";
+import MapWrapper from "@/components/Map/MapWrapper";
 
 
 const pageItem = "myset"
@@ -44,13 +45,21 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                         </div>
                         <ContentSection sectionLayout={["t", "p", "p"]} page="myset02" background="blue" padding="top" child={true} />
                         <div className="bg-bg-blue py-4">
-                            <a href="https://web.cdn.scouterna.net/uploads/sites/322/2020/02/mysetplanlosning.pdf">
+                            <a href="https://web.cdn.scouterna.net/uploads/sites/322/2020/02/mysetplanlosning.pdf"
+                            target="_blank"
+                            >
                                 <CTABtn text={messages?.mysetBtn?.text} />
                             </a>
                         </div>
                         <ContentSection sectionLayout={["t", "p"]} page="myset03" background="blue" padding="bottom" child={true} />
                     </div>
-                </div>                          
+                </div>
+                <div className="pb-10 md:pt-18 md:pb-25 lg:max-w-430 lg:px-22 w-full">
+                    <ContentSection sectionLayout={["t", "p", "p"]} page={"mysetMap"} padding="top" child={true} />
+                    <div className="p-4">
+                        <MapWrapper page="myset" />
+                    </div>
+                </div>
                 <MysetHistory />
             </div>
         </main>

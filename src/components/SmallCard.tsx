@@ -1,5 +1,9 @@
+'use client'
+
 import Image from "next/image"
 import CTABtn from "./CTA-button"
+import Link from "next/link"
+import { useParams } from "next/navigation"
 
 interface SmallCardProps {
   title: string,
@@ -12,6 +16,8 @@ interface SmallCardProps {
 }
 
 const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext, button }: SmallCardProps) => {
+  const params = useParams();
+  const currentLocal = params?.local || "sv";
   return (
     <div className="font-albert lg:max-w-430 lg:px-22 px-4 md:py-6 md:gap-0 lg:grid lg:grid-cols-[1fr_auto] lg:gap-x-10 lg:gap-y-6  w-full mx-auto">
       <div className="flex flex-col gap-4 md:gap-10 md:col-start-1">
@@ -40,7 +46,9 @@ const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext,
           </div>
         </div>
         <div>
-          <CTABtn text={button} />
+          <Link href={`/${currentLocal}/groups`}>
+            <CTABtn text={button} />
+          </Link>
         </div>
       </div>
     </div>
