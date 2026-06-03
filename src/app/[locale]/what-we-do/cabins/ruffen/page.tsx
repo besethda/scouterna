@@ -39,7 +39,7 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
                 </section>
                 <section className="pb-10 md:pt-18 md:pb-25 lg:max-w-430 lg:px-22 w-full">
                     <ContentSection sectionLayout={["t", "p", "p"]} page={"map"} padding="top" child={true} />
-                    <div className="">
+                    <div className="p-4">
                         <MapWrapper page="ruffen" />
                     </div>
                 </section>
