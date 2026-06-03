@@ -11,7 +11,7 @@ export type instaType = {
   imageIndex: number
 }
 
-const Gallery = ({type="instagram", photoObject}:{type?:string, photoObject: instaType[]}) => {
+const Gallery = ({fade=false, photoObject}:{fade?:boolean, photoObject: instaType[]}) => {
 
   const [imageIndex, setImageIndex] = useState(0)
   const [currentImages, setCurrentImages] = useState(photoObject.map(e=> e.imageIndex))
@@ -46,7 +46,7 @@ const Gallery = ({type="instagram", photoObject}:{type?:string, photoObject: ins
         <div className="flex w-full overflow-clip flex-col items-center">
           <div onScroll={scroll} ref={containerReference} className="w-full scroll-smooth snap-x snap-mandatory overflow-scroll lg:max-w-335 md:max-w-130 max-w-85 scrollbar-none">
             <div className="lg:w-[180vw] md:w-[130vw] w-[170vw] flex lg:max-w-675 md:max-w-258 max-w-180 mx-2">
-              {currentImages.map(image => <a target="_blank" href={photoObject[image].permalink} className="snap-center relative w-[15.66%] mx-[.5%] hover:brightness-110 duration-150" key={photoObject[image].imageIndex}>
+              {currentImages.map(image => <a target="_blank" href={photoObject[image].permalink} className={`snap-center relative w-[15.66%] mx-[.5%] hover:brightness-110 duration-150`} key={photoObject[image].imageIndex}>
                   <img src={`${photoObject[image].mediaUrl}`} alt={`image-${photoObject[image].timestamp}`} className='aspect-6/5 rounded-3xl object-cover' />
                 </a>)}
             </div>
