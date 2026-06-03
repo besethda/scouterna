@@ -25,7 +25,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
     }
 
     return (
-        <div>
+        <main>
             <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_9863.JPEG')]", desktop: "md:bg-[url('/images/IMG_6748.JPEG')]" }} messageSection={"joinHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full ">
@@ -66,7 +66,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                         btnWidth="full" 
                     />
             </div>
-        </div>
+        </main>
     )
 };
 

@@ -19,12 +19,12 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
     const messages = locale === "en" ? En : Sv
 
     return (
-        <div>
+        <main>
             <Breadcrumbs />
             <div className="flex w-full flex-col items-center ">
                 <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png" />
                 <div className="w-full">
-                    <div className="bg-bg-blue py-10 ">
+                    <section className="bg-bg-blue py-10 ">
                         <h2 className="pb-2 text-h2 font-albert text-center text-primary md:text-h1-desktop"> {messages?.faq.title} </h2>
                         <div className="flex flex-col gap-2.5">
                             {(messages as any)?.fragorSvar?.map((item: any, index: number) => (
@@ -35,8 +35,8 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                                 />
                             ))}
                         </div>
-                    </div>
-                    <div className="py-10">
+                    </section>
+                    <section className="py-10">
                         <h2 className="pb-2 text-h2 text-center font-albert text-primary md:text-h1-desktop"> {messages?.faq.title02} </h2>
                         <div className="flex flex-col gap-2.5">
                             {(messages as any)?.fragorSvar02?.map((item: any, index: number) => (
@@ -47,7 +47,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                                 />
                             ))}
                         </div>
-                    </div>
+                    </section>
                 </div>
                 <div className="flex flex-col items-center py-10 gap-2 font-albert md:bg-bg-blue md:py-25 md:gap-10 w-full ">
                     <div className="flex flex-col w-full px-4 lg:max-w-430 lg:px-22">
@@ -66,7 +66,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     );
 }
 

@@ -10,10 +10,9 @@ const AboutUs = ({params}:{params: Promise<{locale: string}>}) =>{
     const messages = locale === "en" ? En : Sv
   
   return(
-    <div>
+    <main>
       <Breadcrumbs />
-      
-    </div>
+    </main>
   )
 }
 

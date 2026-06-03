@@ -24,7 +24,7 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
 
 
     return (
-        <>
+        <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <div className="h-fit pb-13">
@@ -49,7 +49,7 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
                     </div>
                 </div>
             </div>
-        </>
+        </main>
     );
 }
 

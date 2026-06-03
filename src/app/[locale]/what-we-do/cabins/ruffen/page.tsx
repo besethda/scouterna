@@ -23,7 +23,7 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
     const messages = locale === "en" ? En : Sv
 
     return (
-        <div>
+        <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full">
                 <CardWithImage sectionTitle="ruffen" logo="/blueHouse.png" image="/images/IMG_3957.JPEG" />
@@ -45,7 +45,7 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
                 </div>
             </div>
 
-        </div>
+        </main>
     );
 }
 
