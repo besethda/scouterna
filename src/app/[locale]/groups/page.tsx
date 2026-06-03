@@ -27,11 +27,11 @@ const GroupStructure = ({ params }: { params: Promise<{ locale: string }> }) => 
       <section className="w-full flex flex-col items-center">
         <CardWithoutImage headline={messages?.groupCard?.headline} logo="/hand.png" title={messages?.groupCard?.title} text={messages?.groupCard?.text} MDlogo="/blueHandYellowBg.svg" />
         <div className="flex flex-col p-4 gap-1 items-center">
-          <DivisionsBox division={"sjohumlorna"} boxStyle={"image"} />
-          <DivisionsBox division={"kaparna"} boxStyle={"image"} />
-          <DivisionsBox division={"konvojen"} boxStyle={"image"} />
-          <DivisionsBox division={"utmanare"} boxStyle={"image"} />
-          <DivisionsBox division={"familjescouter"} boxStyle={"image"} />
+          <DivisionsBox division={"sjohumlorna"} boxStyle={"image"} imageUrl="/images/IMG_1910.JPEG"/>
+          <DivisionsBox division={"kaparna"} boxStyle={"image"} imageUrl="/images/IMG_0206.JPEG"/>
+          <DivisionsBox division={"konvojen"} boxStyle={"image"} imageUrl="/images/IMG_9862.JPEG"/>
+          <DivisionsBox division={"utmanare"} boxStyle={"image"} imageUrl="/images/IMG_0962.JPEG"/>
+          <DivisionsBox division={"familjescouter"} boxStyle={"image"} imageUrl="/images/IMG_1932.JPEG" />
         </div>
       </section>
     </main>
