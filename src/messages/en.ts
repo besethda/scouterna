@@ -1148,7 +1148,7 @@ export const En: MessagesEngType = {
   cabinst:"We meet here",
   cabinsruffen: {
     title: "Ruffen",
-    dpOne: "Ruffen is located by Hässelby Beach and is used for section meetings for our sections Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
+    dpOne: "Ruffen is located by Hässelby Beach and is used for group meetings for our sections Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
     dpTwo: "The scout group also houses our Optimist dinghies here."
   },
   ruffenbtn: "Read more about Ruffen",
