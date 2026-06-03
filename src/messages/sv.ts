@@ -963,75 +963,75 @@ export const Sv: MessagesSvType = {
     text: "Se planlösning"
   },
   sjohumlornaSpårarscouter: {
-    s0: "Spårarscouter",
+    t0: "Spårarscouter",
     p0: "Scouterna på avdelningen Sjöhumlorna är Spårarscouter. Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klara av.",
   },
   sjohumlornaAge: {
-    s0: "Ålder",
+    t0: "Ålder",
     p0: "Barnen på Sjöhumlorna är mellan 8 och 9 år."
   },
   sjohumlorMeeting: {
-    s0: "Avdelningsmöten",
+    t0: "Avdelningsmöten",
     p0: "Dag: Måndag",
     p1: "Ruffen vid Hässelby Strandbad.",
   },
   sjohumlorPlace: {
-    s0: "Märken",
+    t0: "Märken",
     p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Eller att få göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
   },
   sjohumlorButton: "Märkesplansch för Spårare",
   kaparnaUpptäckarscouter: {
-    s0: "Upptäckarscouter",
+    t0: "Upptäckarscouter",
     p0: "Många i den här åldern är nyfikna på världen runt omkring sig, och i Kaparna uppmuntrar vi det engagemanget. Vi jobbar ofta praktiskt och konkret - det kan vara allt från att lösa uppdrag tillsammans till att lära sig ta ansvar i små och stora situationer."
   },
   kaparnaAge: {
-    s0: "Ålder",
+    t0: "Ålder",
     p0: "Barnen på Kaparna är mellan 10 och 11 år.",
   },
   kaparnaMeeting: {
-    s0: "Avdelningsmöten",
+    t0: "Avdelningsmöten",
     p0: "Dag: Tisdag",
     p1: "Ruffen vid Hässelby Strandbad"
   },
   kaparnaPlace: {
-    s0: "Märken",
+    t0: "Märken",
     p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemärkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
   },
   kaparnaButton: "Märkesplansch för Upptäckare",
   utmanarscouter: {
-    s0: "Utmanarscouter",
+    t0: "Utmanarscouter",
     p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv."
   },
   utmanareAge: {
-    s0: "Ålder",
+    t0: "Ålder",
     p0: "Scouterna på Utmanaravdelningen är 15 år och uppåt."
   },
   utmanareMeeting: {
-    s0: "Avdelningsmöten",
+    t0: "Avdelningsmöten",
     p0: "Dag: Tisdag eller torsdag.",
     p1: "Ruffen vid Hässelby Strandbad."
   },
   utmanarePlace: {
-    s0: "Utmaningar",
+    t0: "Utmaningar",
     p0: "Det finns tio utmaningar. Två av dem görs på egen hand och resten görs tillsammans i utmanarlaget. De individuella utmaningarna har lite fastare regler. De andra bestäms tillsammans i utmanarlaget.",
   },
   utmanareButton: "Upptäck utmaningarna",
   äventyrarscouter: {
-    s0: "Äventyrarscouter",
+    t0: "Äventyrarscouter",
     p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv.",
   },
   konvojenAge: {
-    s0: "Ålder",
+    t0: "Ålder",
     p0: "Barnen på Konvojen är mellan 12 och 14 år.",
   },
   konvojenMeeting: {
-    s0: "Avdelningsmöten",
+    t0: "Avdelningsmöten",
     p0: "Dag: Torsdag",
     p1: "Tid: 18:00",
     p2: "Plats: Ruffen vid Hässelby Strandbad."
   },
   konvojenPlace: {
-    s0: "Märken",
+    t0: "Märken",
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
@@ -1041,23 +1041,23 @@ export const Sv: MessagesSvType = {
   },
   download: "Ladda ner ",
   BarnOchVuxnaTillsammans: {
-    s0: "Barn och vuxna tillsammans",
+    t0: "Barn och vuxna tillsammans",
     p0: "Familjescouting är till för barn under åtta år och en vuxen som barnet känner sig trygg med. Tillsammans upptäcker ni scouting genom lek, äventyr och roliga aktiviteter.",
     p1: "Barn och vuxna är med sida vid sida och hjälps åt i aktiviteterna. Den vuxna ansvarar för barnet, men är också en viktig del av gemenskapen och deltar lika mycket som barnen.",
     p2: "Den vuxna kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära person. Fokus i Familjescouting är att barn och vuxna får uppleva saker tillsammans och stärka sin relation."
   },
   ParumMagna: {
-    s0: "Parum & Magna",
+    t0: "Parum & Magna",
     p0: "I familjescouting får barn och vuxna följa björnarna Parum och Magna på olika äventyr. Parum är nyfiken och tycker om att upptäcka och prova nya saker, medan Magna är klok och funderar över hur saker hänger ihop. Tillsammans leker de, träffar nya vänner och hjälper varandra.",
     p1: "Sagan och fantasin är viktiga delar i familjescouting. Genom berättelserna får barn och vuxna något att prata och fundera kring tillsammans. Sagorna hjälper också till att skapa nyfikenhet, spänning och en mysig känsla under träffarna."
   },
   Familjescoutsagor: {
-    s0: "Familjescoutsagor",
+    t0: "Familjescoutsagor",
     p0: "I familjescouting använder vi sagor som ett verktyg i våra träffar. Genom berättelser får barn och vuxna upptäcka nya teman tillsammans, väcka fantasin och skapa nyfikenhet och gemenskap.",
     p1: "Det finns flera olika familjescoutsagor – både längre och kortare berättelser, med och utan rim. Sagorna är kopplade till olika teman och aktiviteter. Sagorna hjälper till att skapa en varm och lekfull känsla där barn och vuxna tillsammans får lyssna, fundera och uppleva äventyr."
   },
   Märken: {
-    s0: "Märken",
+    t0: "Märken",
     p0: "Familjescouting har sina egna märken som man kan få genom delaktighet. Märken är ett roligt sätt att skapa stolhet kring deltagande och en härlig känsla av samhörighet!"
   },
   familjescouterButton: "Upptäck alla våra Scoutmärken",
@@ -1093,7 +1093,7 @@ export const Sv: MessagesSvType = {
     p0: "HSS fyra avdelningar har avdelningsmöten en gång i veckan. "
   },
   avdelningsledare: {
-    h0: "Avdelningsledare",
+    t0: "Avdelningsledare",
     p0: "Varje avdelning har en avdelningsledare. Våra ledare är utbildade och har gått den obligatoriska kursen Trygga Möten."
   },
   scoutnet: {
