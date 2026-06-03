@@ -44,7 +44,9 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                         </div>
                         <ContentSection sectionLayout={["t", "p", "p"]} page="myset02" background="blue" padding="top" child={true} />
                         <div className="bg-bg-blue py-4">
-                            <a href="https://web.cdn.scouterna.net/uploads/sites/322/2020/02/mysetplanlosning.pdf">
+                            <a href="https://web.cdn.scouterna.net/uploads/sites/322/2020/02/mysetplanlosning.pdf"
+                            target="_blank"
+                            >
                                 <CTABtn text={messages?.mysetBtn?.text} />
                             </a>
                         </div>
