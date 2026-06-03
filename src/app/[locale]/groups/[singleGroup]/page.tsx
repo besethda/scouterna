@@ -51,12 +51,12 @@ const Groups = ({
 
   if (singleGroup === "sjohumlorna") {
     return (
-      <>
+      <main>
         <Breadcrumbs />
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle}  text={messages?.GroupIntro?.SJMtext}  logo="/sjohumlor-frame.svg" />
         </div>
-        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 lg:items-start flex flex-col items-center">
+        <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 lg:items-start flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -113,28 +113,33 @@ const Groups = ({
               [&_button]:hover:brightness-102
               pl-4"
             >
-              <CTABtn text={messages?.sjohumlorButton} />
+              <a
+              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
+              target="_blank"
+              >
+                <CTABtn text={messages?.sjohumlorButton} />
+              </a>
             </div>
           </div>
-        </div>
-        <div className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
+        </section>
+        <section className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
           />
-        </div>
-      </>
+        </section>
+      </main>
     );
   } else if (singleGroup === "kaparna") {
     return (
-      <>
+      <main>
         <Breadcrumbs />
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle}  text={messages?.GroupIntro?.KAPtext}  logo="/Kaparna-frame.svg"/>
         </div>
-        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+        <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -191,28 +196,33 @@ const Groups = ({
               [&_button]:hover:brightness-102
               pl-4"
             >
+              <a
+              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
+              target="_blank"
+              > 
               <CTABtn text={messages?.kaparnaButton} />
+              </a>
             </div>
           </div>
-        </div>
-        <div className="bg-white w-full lg:max-w-430 lg:px-13 xl:px-19 items-center mt-10 mb-10 max-w-7xl mx-auto">
+        </section>
+        <section className="bg-white w-full lg:max-w-430 lg:px-13 xl:px-19 items-center mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
           />
-        </div>
-      </>
+        </section>
+      </main>
     );
   } else if (singleGroup === "utmanare") {
     return (
-      <>
+      <main>
         <Breadcrumbs />
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle}  text={messages?.GroupIntro?.UTtext}  logo="/Utmanare-frame.svg" />
         </div>
-        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 pb-10 lg:pb-29 2xl:px-43 lg:pt-25 flex flex-col items-center">
+        <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 pb-10 lg:pb-29 2xl:px-43 lg:pt-25 flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -269,28 +279,33 @@ const Groups = ({
               [&_button]:hover:brightness-104
               pl-4"
             >
-              <CTABtn text={messages?.utmanareButton} />
+              <a
+              href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
+              target="_blank"
+              >
+                <CTABtn text={messages?.utmanareButton} />
+              </a>
             </div>
           </div>
-        </div>
-        <div className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
+        </section>
+        <section className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
           />
-        </div>
-      </>
+        </section>
+      </main>
     );
   } else if (singleGroup === "konvojen") {
     return (
-      <>
+      <main>
         <Breadcrumbs />
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext}  logo="/Konvojen-frame.svg" />
         </div>
-        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+        <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -347,26 +362,31 @@ const Groups = ({
               [&_button]:hover:brightness-102
               pl-4"
             >
-              <CTABtn text={messages?.konvojenButton} />
+              <a
+              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
+              target="_blank"
+              >
+                <CTABtn text={messages?.konvojenButton} />
+              </a>
             </div>
           </div>
-        </div>
-        <div className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
+        </section>
+        <section className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
           />
-        </div>
-      </>
+        </section>
+      </main>
     );
   } else if (singleGroup === "familjescouter") {
     return (
-    <>
+    <main>
       <Breadcrumbs />
       <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-      <div className="bg-bg-blue py-10  lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+      <section className="bg-bg-blue py-10  lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
         <div className="lg:max-w-430 flex flex-col gap-6 mx-auto">
           <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
             <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -432,11 +452,16 @@ const Groups = ({
             [&_button]:hover:hover:brightness-104
             pl-4
           ">
-            <CTABtn text={messages?.familjescouterButton} />
+            <a
+              href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
+              target="_blank"
+              >
+              <CTABtn text={messages?.familjescouterButton} />
+              </a>
           </div>
         </div>
-      </div>
-    </> 
+      </section>
+    </main> 
     )
   }
 };

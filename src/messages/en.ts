@@ -263,6 +263,7 @@ export type MessagesEngType = {
   map: Record<string, string>
   scoutLife: Record<string, string>
   learning: Record<string, string>
+  boatSection: Record<string, string>
   faq: {
     title: string,
     title02: string;
@@ -415,15 +416,15 @@ export type MessagesEngType = {
   moreButton: string,
   secondButton: string,
   mysetHistory: {
-    title: string, 
-    text1: string, 
-    text2: string, 
-    subtitle: string 
+    title: string,
+    text1: string,
+    text2: string,
+    subtitle: string
   },
   cabinst: string,
-  cabinsmyset: {title:string, dpOne:string, dpTwo:string}
-  mysetbtn:string,
-  cabinsruffen: {title:string, dpOne:string, dpTwo:string}
+  cabinsmyset: { title: string, dpOne: string, dpTwo: string }
+  mysetbtn: string,
+  cabinsruffen: { title: string, dpOne: string, dpTwo: string }
   ruffenbtn: string,
   historycard: {
     headline: string,
@@ -455,13 +456,14 @@ export type MessagesEngType = {
     title: string,
     text: string
   }
-  activity:{
-    title:string,
-    sub_title_one:string,
-    p_one:string,
-    sub_title_two:string,
-    p_two:string,
+  activity: {
+    title: string,
+    sub_title_one: string,
+    p_one: string,
+    sub_title_two: string,
+    p_two: string,
   },
+  mysetMap: Record<string, string>
 };
 
 export const En: MessagesEngType = {
@@ -674,7 +676,7 @@ export const En: MessagesEngType = {
     contact: "HSS | Contact",
     gdpr: "HSS | GDPR"
   },
- description:{
+  description: {
     history: "The history page",
     "become-a-scout": "Become a scout page",
     faq: "The FAQ page",
@@ -694,7 +696,7 @@ export const En: MessagesEngType = {
     safety: "The life jacket policy page",
     contact: "The contact page",
     gdpr: "The GDPR page"
-  }, 
+  },
   groupsCard: {
     headline: "Groups",
     title: "Age Groups",
@@ -843,6 +845,10 @@ export const En: MessagesEngType = {
     text0: "We learn how to handle boats, tie knots, and navigate safely at sea.",
     text1: "We learn about animals and plants, nature's cycles, and how we can take care of the environment.",
     text2: "We learn how to cook outdoors, set up tents, and spend time in nature in a safe and secure way."
+  },
+  boatSection: {
+    t0: "Boats Through the Years",
+    p0: "Browse through photos of the boats our association has had the pleasure of owning."
   },
   faq: {
     title: "Join the Scouts",
@@ -1104,13 +1110,13 @@ export const En: MessagesEngType = {
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
   },
   scoutnetButton: "Log in to Scoutnet",
-  activity:{
-    title:"Activities",
-    sub_title_one:"Camps",
-    p_one:"We organize scout camps featuring nature, community, and fun activities where children and youth develop life skills and create lasting memories.",
-    sub_title_two:"Hikes",
-    p_two:"We organize hikes where participants experience nature, work together, and tackle challenges as a team.",
-},
+  activity: {
+    title: "Activities",
+    sub_title_one: "Camps",
+    p_one: "We organize scout camps featuring nature, community, and fun activities where children and youth develop life skills and create lasting memories.",
+    sub_title_two: "Hikes",
+    p_two: "We organize hikes where participants experience nature, work together, and tackle challenges as a team.",
+  },
   form: {
     title: "Send a message",
     text: "You can send a message directly to our email using the form.",
@@ -1145,7 +1151,7 @@ export const En: MessagesEngType = {
     text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.",
     subtitle: "Images from the archives"
   },
-  cabinst:"We meet here",
+  cabinst: "We meet here",
   cabinsruffen: {
     title: "Ruffen",
     dpOne: "Ruffen is located at Hässelby Strand and is used for group meetings for Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
@@ -1187,5 +1193,10 @@ export const En: MessagesEngType = {
     headline: "DATA PROTECTION",
     title: "HSS work with GDPR",
     text: "GDPR requires us to inform our members that we collect data, what data we collect, and why we do it."
+  },
+  mysetMap: {
+    t0: "Directions",
+    p0: "Myset is located in the Lövstaskogarna forest near Kyrkhamn in Hässelby, on the border with Viksjö.",
+    p1: "Take bus 541 from Jakobsberg or Vällingby, or bus 119 from Backlura or Spånga. Get off at Lingonrisgränd bus stop and continue for approximately 3.5 km on foot through the forest to Myset. We recommend planning your trip in advance, especially if using public transport."
   },
 };

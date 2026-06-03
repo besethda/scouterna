@@ -26,7 +26,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
     }
 
     return (
-        <div>
+        <main>
             <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_9863.JPEG')]", desktop: "md:bg-[url('/images/IMG_6748.JPEG')]" }} messageSection={"joinHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full ">
@@ -34,31 +34,39 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife" />
                 <div className="w-full h-0 md:h-8"></div>
                 <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image="/images/DSCF3361.jpg" secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
-                <div className="flex flex-col gap-6 font-albert pt-6 px-4 pb-8 md:pb-14 lg:max-w-430 lg:px-22">
+                <section className="flex flex-col gap-6 font-albert pt-6 px-4 pb-8 md:pb-14 lg:max-w-430 lg:px-22">
                     <div className="flex flex-col gap-4">
-                        <p className="text-h2 font-albert font-medium text-primary md:text-h3-desktop">
+                        <h2 className="text-h2 font-albert font-medium text-primary md:text-h3-desktop">
                             {messages?.joinContent?.title}
-                        </p>
+                        </h2>
                         <p className="text-text-black text-body md:text-body-desktop tracking-[3%]">
                             {messages?.joinContent?.text}
                         </p>
                     </div>
-                    <a href="/pdfs/Bilaga-20251012-HSS-Trygga-maten-policy-Beslutad.pdf">
+                    <a 
+                        href="/pdfs/Bilaga-20251012-HSS-Trygga-maten-policy-Beslutad.pdf" 
+                        target="_blank"
+                    >
                         <CTABtn text={messages?.joinContent?.button} />
                     </a>
                     <p className="text-text-black text-body md:text-body-desktop tracking-[3%]">
                         {messages?.joinContent?.text02}
                     </p>
-                    <CTABtn text={messages?.joinContent?.button02} />
+                        <a
+                        href="https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/kurskatalog-ledarskapson/" 
+                        target="_blank"
+                        >
+                            <CTABtn text={messages?.joinContent?.button02} />
+                        </a>
                     <div className="flex flex-col gap-6">
-                        <p className="text-h3 font-medium text-[#00355F]  md:text-h3-desktop">
+                        <h3 className="text-h3 font-medium text-[#00355F]  md:text-h3-desktop">
                             {messages?.joinContent?.title02}
-                        </p>
+                        </h3>
                         <p className="text-text-black pb-4 text-body md:text-body-desktop tracking-[3%]">
                             {messages?.joinContent?.text03}
                         </p>
                     </div>
-                </div>
+                </section>
                 <JoinPage 
                         title={messages?.joinPage.title}
                         text={messages?.joinPage.text}
@@ -68,7 +76,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                     />
                     <InstagramContainer />
             </div>
-        </div>
+        </main>
     )
 };
 
