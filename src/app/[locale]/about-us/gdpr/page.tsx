@@ -19,12 +19,12 @@ const Gdpr = ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = use(params)
     const messages = locale === "en" ? En : Sv
     return (
-        <div>
+        <main>
             <Breadcrumbs />
             <CardAbout page="gdprcard" card="gdprmobilecard" logo="/faq.png" image="/images/IMG_1943.JPEG" MDlogo="/bg-information.svg"/>
             <ContentSection sectionLayout={["t", "p", "s", "l", "l", "l", "l", "l", "s", "l", "l", "l", "l", "l", "l", "l", "l", "l", "p", "s", "p"]} page={"gdpr"} background={"blue"}/>
             <ContentSection sectionLayout={["s", "p", "p", "p", "p", "p", "p"]} page={"ethics"} display={"mobile"}/>
-        </div>
+        </main>
     );
 }
 

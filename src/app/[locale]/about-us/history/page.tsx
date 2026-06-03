@@ -22,11 +22,11 @@ const History = ({ params }: { params: Promise<{ locale: string }> }) => {
 
 
     return (
-        <div>
+        <main>
             <Breadcrumbs />
             <CardAbout page="historycard" card="historymobilecard" logo="/heart.png" image="/images/boat2.jpg" MDlogo="/bg-heart.svg" />
             <ContentSection sectionLayout={["t", "p", "p", "p", "p", "p"]} page="history" background={"blue"} />
-        </div>
+        </main>
     );
 }
 
