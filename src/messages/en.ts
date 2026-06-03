@@ -885,7 +885,7 @@ export const En: MessagesEngType = {
     },
     {
       question: "I have lost my invoice. What should I do?",
-      answer: `Send an email to support@scouterna.se with your name and membership number, and you will receive a copy of the invoice via email.`
+      answer: `Send an email to <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium\"\>support@scouterna.se </a> with your name and membership number, and you will receive a copy of the invoice via email.`
     },
     {
       question: "What is included in my membership fee?",
@@ -893,16 +893,16 @@ export const En: MessagesEngType = {
     },
     {
       question: "How do I change my billing address?",
-      answer: `Go to <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ >www.scoutnet.se</a>, log in, and change your billing address.`
+      answer: `Go to <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\"\ >www.scoutnet.se</a>, log in, and change your billing address.`
     },
     {
       question: "My invoice has the wrong amount. What should I do?",
-      answer: `Send an email to <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-midium "\>support@scouterna.se </a>
+      answer: `Send an email to <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium\"\>support@scouterna.se </a>
       and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.`
     },
     {
       question: "How do I change my contact information?",
-      answer: `Log in to <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ >www.scoutnet.se</a>, where you can update your information.`
+      answer: `Log in to <a href=\"https://www.scoutnet.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\"\ >www.scoutnet.se</a>, where you can update your information.`
     }
   ],
   lifestyle: {
