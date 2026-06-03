@@ -871,9 +871,7 @@ export const En: MessagesEngType = {
   fragorSvar02: [
     {
       question: "Why do we have a scout uniform?",
-      answer:
-      `
-      The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with 
+      answer:`The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with 
       <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a>
       After Safe Meetings, it is appropriate to take \"Leading Scouting\" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further. Read more about Leading 
       <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Scouting here >> </a>
@@ -895,15 +893,16 @@ export const En: MessagesEngType = {
     },
     {
       question: "How do I change my billing address?",
-      answer: "Go to www.scoutnet.se, log in, and change your billing address."
+      answer: `Go to <a href=\"https://www.scoutnet.se/f/login" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ >www.scoutnet.se</a>, log in, and change your billing address.`
     },
     {
       question: "My invoice has the wrong amount. What should I do?",
-      answer: `Send an email to support@scouterna.se and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.`
+      answer: `Send an email to <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-midium "\>support@scouterna.se </a>
+      and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.`
     },
     {
       question: "How do I change my contact information?",
-      answer: `Log in to www.scoutnet.se, where you can update your information.`
+      answer: `Log in to <a href=\"https://www.scoutnet.se/f/login" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ >www.scoutnet.se</a>, where you can update your information.`
     }
   ],
   lifestyle: {
