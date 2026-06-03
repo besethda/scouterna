@@ -21,7 +21,7 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
     const { locale } = use(params)
     const messages = locale === "en" ? En : Sv
     return (
-        <div>
+        <main>
             <Breadcrumbs />
             <div className="w-full flex flex-col items-center">
                 <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
@@ -30,7 +30,7 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <Union />
                 <InstagramContainer showText={true}/>
             </div>
-        </div>
+        </main>
     );
 }
 

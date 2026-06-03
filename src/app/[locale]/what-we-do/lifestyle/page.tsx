@@ -25,7 +25,7 @@ const LifeStyle = ({ params }: { params: Promise<{ locale: string }> }) => {
     const messages = locale === "en" ? En : Sv
 
     return (
-        <div>
+        <main>
             <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_1939.JPEG')]", desktop: "md:bg-[url('/images/rock.JPG')]" }} messageSection={"lifestyleHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center">
@@ -36,7 +36,7 @@ const LifeStyle = ({ params }: { params: Promise<{ locale: string }> }) => {
             </div>
             <Activities />
 
-        </div>
+        </main>
     );
 }
 
