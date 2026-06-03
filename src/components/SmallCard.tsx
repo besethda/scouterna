@@ -46,7 +46,7 @@ const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext,
           </div>
         </div>
         <div>
-          <Link href={`/${currentLocal}/what-we-do/cabins/myset`}>
+          <Link href={`/${currentLocal}/groups`}>
             <CTABtn text={button} />
           </Link>
         </div>
