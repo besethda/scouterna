@@ -22,9 +22,9 @@ const GroupStructure = ({ params }: { params: Promise<{ locale: string }> }) => 
 
 
   return (
-    <div className="">
+    <main className="">
       <Breadcrumbs />
-      <div className="w-full flex flex-col items-center">
+      <section className="w-full flex flex-col items-center">
         <CardWithoutImage headline={messages?.groupCard?.headline} logo="/hand.png" title={messages?.groupCard?.title} text={messages?.groupCard?.text} MDlogo="/blueHandYellowBg.svg" />
         <div className="flex flex-col p-4 gap-1 items-center">
           <DivisionsBox division={"sjohumlorna"} boxStyle={"image"} />
@@ -33,8 +33,8 @@ const GroupStructure = ({ params }: { params: Promise<{ locale: string }> }) => 
           <DivisionsBox division={"utmanare"} boxStyle={"image"} />
           <DivisionsBox division={"familjescouter"} boxStyle={"image"} />
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 

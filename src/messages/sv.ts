@@ -423,11 +423,11 @@ type MessagesSvType = {
     text2: string,
     subtitle: string
   }
-  cabinst:string,
-  cabinsmyset: {title:string, dpOne:string, dpTwo:string},
-  mysetbtn:string,
-  cabinsruffen:{title:string, dpOne:string, dpTwo:string},
-  ruffenbtn:string,
+  cabinst: string,
+  cabinsmyset: { title: string, dpOne: string, dpTwo: string },
+  mysetbtn: string,
+  cabinsruffen: { title: string, dpOne: string, dpTwo: string },
+  ruffenbtn: string,
   historycard: {
     headline: string,
     title: string,
@@ -438,7 +438,7 @@ type MessagesSvType = {
     title: string,
     text: string
   },
-   contactcard: {
+  contactcard: {
     headline: string,
     title: string,
     text: string
@@ -458,14 +458,15 @@ type MessagesSvType = {
     title: string,
     text: string
   }
-  activity:{
-    title:string,
-    sub_title_one:string,
-    p_one:string,
-    sub_title_two:string,
-    p_two:string,
+  activity: {
+    title: string,
+    sub_title_one: string,
+    p_one: string,
+    sub_title_two: string,
+    p_two: string,
   },
- };
+  mysetMap: Record<string, string>
+};
 
 export const Sv: MessagesSvType = {
   home: {
@@ -677,7 +678,7 @@ export const Sv: MessagesSvType = {
     contact: "HSS | Kontakt",
     gdpr: "HSS | GDPR"
   },
-  description:{
+  description: {
     history: "Historia",
     "become-a-scout": "Bli Sjöscout",
     faq: "FAQ",
@@ -697,7 +698,7 @@ export const Sv: MessagesSvType = {
     safety: "Flytvästpolicy",
     contact: "Kontakt",
     gdpr: "GDPR"
-  }, 
+  },
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -1107,12 +1108,12 @@ export const Sv: MessagesSvType = {
     p1: "Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
   },
   scoutnetButton: "Logga in på Scoutnet",
-  activity:{
-    title:"Aktiviteter",
-    sub_title_one:"Läger",
-    p_one:"Vi anordnar scoutläger med natur, gemenskap och roliga aktiviteter där barn och unga utvecklas och får minnen för livet.",
-    sub_title_two:"Hajker",
-    p_two:"Vi anordnar hajker där deltagare får uppleva naturen, samarbeta och klara utmaningar tillsammans.",
+  activity: {
+    title: "Aktiviteter",
+    sub_title_one: "Läger",
+    p_one: "Vi anordnar scoutläger med natur, gemenskap och roliga aktiviteter där barn och unga utvecklas och får minnen för livet.",
+    sub_title_two: "Hajker",
+    p_two: "Vi anordnar hajker där deltagare får uppleva naturen, samarbeta och klara utmaningar tillsammans.",
   },
   form: {
     title: "Skicka ett meddelande",
@@ -1149,19 +1150,19 @@ export const Sv: MessagesSvType = {
     subtitle: "Bilder från arkiven"
   },
 
-  cabinst:"Här träffas vi",
-  cabinsmyset:{
-    title:"Myset",
-    dpOne:"Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
-    dpTwo:"Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
+  cabinst: "Här träffas vi",
+  cabinsmyset: {
+    title: "Myset",
+    dpOne: "Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
+    dpTwo: "Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
   },
-  mysetbtn:"Läs mer om Myset",
+  mysetbtn: "Läs mer om Myset",
   cabinsruffen: {
-    title:"Ruffen",
-    dpOne:"Ruffen ligger vid Hässelby Strandbad och används för avdelningsmöten för våra avdelningar Sjöhumlorna, Kaparna, Konvojen och Utmanarna.",
-    dpTwo:"Här huserar kåren även våra optimistjollar.",
+    title: "Ruffen",
+    dpOne: "Ruffen ligger vid Hässelby Strandbad och används för avdelningsmöten för våra avdelningar Sjöhumlorna, Kaparna, Konvojen och Utmanarna.",
+    dpTwo: "Här huserar kåren även våra optimistjollar.",
   },
-  ruffenbtn:"Läs mer om Ruffen",
+  ruffenbtn: "Läs mer om Ruffen",
   historycard: {
     headline: "FÖRENINGEN",
     title: "Till sjöss sedan 1959",
@@ -1182,7 +1183,7 @@ export const Sv: MessagesSvType = {
     title: "Kontakt",
     text: "Har du frågor om vår scoutverksamhet, vill bli medlem eller engagera dig som ledare? Tveka inte att kontakta oss - vi svarar så snart vi kan."
   },
-   gdprcard: {
+  gdprcard: {
     headline: "DATASKYDD",
     title: "HSS arbete med GDPR",
     text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
@@ -1191,5 +1192,10 @@ export const Sv: MessagesSvType = {
     headline: "DATASKYDD",
     title: "HSS arbete med GDPR",
     text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
+  },
+  mysetMap: {
+    t0: "Vägbeskrivning",
+    p0: "Myset ligger i Lövstaskogarna nära Kyrkhamn i Hässelby, på gränsen mot Viksjö. ",
+    p1: "Ta buss 541 från Jakobsberg eller Vällingby, alternativt buss 119 från Backlura eller Spånga. Stig av vid hållplats Lingonrisgränd och fortsätt därefter cirka 3,5 km till fots genom skogen till Myset. Vi rekommenderar att du planerar resan i god tid, särskilt om du åker kollektivt."
   },
 };
