@@ -849,12 +849,24 @@ export const En: MessagesEngType = {
     title02: "Membership Questions"
   },
   fragorSvar: [
-    { question: "Do we need to buy a scout uniform right away?", answer: "answer" },
-    { question: "What kind of clothes do scouts usually wear?", answer: "answer" },
-    { question: "Are meetings always held outdoors?", answer: "answer" },
-    { question: "How much does it cost to join the scouts?", answer: "answer" },
-    { question: "Does the child need to have prior experience with sailing or scouting?", answer: "answer" },
-    { question: "We have become members—what happens now?", answer: "answer" },
+    { question: "Do we need to buy a scout uniform right away?",
+      answer: "No, you don’t need to buy a scout shirt straight away. It’s best to join for a few weeks first to make sure you want to continue with the scouts." 
+    },
+    { question: "What kind of clothes do scouts usually wear?", 
+      answer: "A scout shirt, an HSS sweater, and durable trousers." 
+    },
+    { question: "Are meetings always held outdoors?",
+      answer: "Usually yes, though in winter we sometimes meet indoors at our scout cabin Ruffen." 
+    },
+    { question: "How much does it cost to join the scouts?", 
+      answer: "It depends on your age and role. Ask your scout leader or send an email to info@hss-scout.org. For 2026 the fees are between 300-850 kr for scouts and between 50-180 kr for leaders." 
+    },
+    { question: "Does the child need to have prior experience with sailing or scouting?", 
+      answer: "No previous experience in sailing or scouting is needed." 
+    },
+    { question: "We have become members—what happens now?", 
+      answer: "Your division leader will be in touch with information about the next steps. Welcome!" 
+    },
   ],
   fragorSvar02: [
     {
