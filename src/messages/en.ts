@@ -911,7 +911,7 @@ export const En: MessagesEngType = {
   },
   memberInfo: {
     headline: "Scout Life",
-    title: "Infofragorrmation",
+    title: "Information",
     text: "Here we have gathered useful information for our members to know."
   },
   safetyCard: {
