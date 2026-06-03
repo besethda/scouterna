@@ -31,7 +31,7 @@ const GroupStructure = ({ params }: { params: Promise<{ locale: string }> }) => 
           <DivisionsBox division={"kaparna"} boxStyle={"image"} />
           <DivisionsBox division={"konvojen"} boxStyle={"image"} />
           <DivisionsBox division={"utmanare"} boxStyle={"image"} />
-          <DivisionsBox division={"familjescouter"} boxStyle={"image"} />
+          <DivisionsBox division={"smattarne"} boxStyle={"image"} />
         </div>
       </div>
     </div>
