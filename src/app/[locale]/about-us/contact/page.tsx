@@ -22,7 +22,7 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
   const messages = locale === "en" ? En : Sv
 
   return (
-    <div>
+    <main>
       <Breadcrumbs />
       <div className="contact-logo">
         <CardAbout page="contactcard" card="contactmobilecard" logo="/person.svg" image="/images/DSCF3034.jpg" MDlogo="/bg-communication.svg"  />
@@ -49,7 +49,7 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       epost={messages?.form.epost}
       meddelande={messages?.form.meddelande}
       />
-    </div>
+    </main>
   )
 }
 

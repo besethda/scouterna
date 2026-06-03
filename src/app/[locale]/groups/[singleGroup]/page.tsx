@@ -51,12 +51,12 @@ const Groups = ({
 
   if (singleGroup === "sjohumlorna") {
     return (
-      <>
+      <main>
         <Breadcrumbs />
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle}  text={messages?.GroupIntro?.SJMtext}  logo="/sjohumlor-frame.svg" />
         </div>
-        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 lg:items-start flex flex-col items-center">
+        <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 lg:items-start flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -116,25 +116,25 @@ const Groups = ({
               <CTABtn text={messages?.sjohumlorButton} />
             </div>
           </div>
-        </div>
-        <div className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
+        </section>
+        <section className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
           />
-        </div>
-      </>
+        </section>
+      </main>
     );
   } else if (singleGroup === "kaparna") {
     return (
-      <>
+      <main>
         <Breadcrumbs />
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle}  text={messages?.GroupIntro?.KAPtext}  logo="/Kaparna-frame.svg"/>
         </div>
-        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+        <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -194,25 +194,25 @@ const Groups = ({
               <CTABtn text={messages?.kaparnaButton} />
             </div>
           </div>
-        </div>
-        <div className="bg-white w-full lg:max-w-430 lg:px-13 xl:px-19 items-center mt-10 mb-10 max-w-7xl mx-auto">
+        </section>
+        <section className="bg-white w-full lg:max-w-430 lg:px-13 xl:px-19 items-center mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
           />
-        </div>
-      </>
+        </section>
+      </main>
     );
   } else if (singleGroup === "utmanare") {
     return (
-      <>
+      <main>
         <Breadcrumbs />
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle}  text={messages?.GroupIntro?.UTtext}  logo="/Utmanare-frame.svg" />
         </div>
-        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 pb-10 lg:pb-29 2xl:px-43 lg:pt-25 flex flex-col items-center">
+        <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 pb-10 lg:pb-29 2xl:px-43 lg:pt-25 flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -272,25 +272,25 @@ const Groups = ({
               <CTABtn text={messages?.utmanareButton} />
             </div>
           </div>
-        </div>
-        <div className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
+        </section>
+        <section className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
           />
-        </div>
-      </>
+        </section>
+      </main>
     );
   } else if (singleGroup === "konvojen") {
     return (
-      <>
+      <main>
         <Breadcrumbs />
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext}  logo="/Konvojen-frame.svg" />
         </div>
-        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+        <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -350,23 +350,23 @@ const Groups = ({
               <CTABtn text={messages?.konvojenButton} />
             </div>
           </div>
-        </div>
-        <div className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
+        </section>
+        <section className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
           />
-        </div>
-      </>
+        </section>
+      </main>
     );
   } else if (singleGroup === "familjescouter") {
     return (
-    <>
+    <main>
       <Breadcrumbs />
       <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-      <div className="bg-bg-blue py-10  lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+      <section className="bg-bg-blue py-10  lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
         <div className="lg:max-w-430 flex flex-col gap-6 mx-auto">
           <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
             <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
@@ -435,8 +435,8 @@ const Groups = ({
             <CTABtn text={messages?.familjescouterButton} />
           </div>
         </div>
-      </div>
-    </> 
+      </section>
+    </main> 
     )
   }
 };
