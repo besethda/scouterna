@@ -857,37 +857,25 @@ export const Sv: MessagesSvType = {
     title02: "Medlemsfrågor"
   },
   fragorSvar: [
-    { question: "Behöver vi köpa en scoutuniform på en gång?", 
-      answer: "Nej, du behöver inte köpa en scoutskjorta direkt. Det är bäst att vara med i några veckor först för att se så att du vill fortsätta med scouterna." 
-    },
-    { question: "Vad för kläder brukar scouterna ha på sig?", 
-      answer: "En scoutskjorta, en HSS-tröja och tåliga byxor." 
-    },
-    { question: "Hålls möten alltid utomhus?",
-      answer: "Oftast ja, men på vintern ses vi ibland inomhus i vår scoutstuga Ruffen." 
-    },
-    { question: "Hur mycket kostar det att vara med i scouterna?", 
-      answer: "Det beror på din ålder och roll. Fråga din scoutledare eller skicka ett mejl till info@hss-scout.org. För 2026 ligger avgifterna på mellan 300–850 kr för scouter och mellan 50–180 kr for ledare." 
-    },
-    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", 
-      answer: "Nej, ingen tidigare erfarenhet av segling eller scouting behövs." 
-    },
-    { question: "Vi har blivit medlemmar- vad händer nu?", 
-      answer: "Din avdelningsledare kommer att ta kontakt med dig och ge information om nästa steg. Välkommen!" 
-    },
+    { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
+    { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
+    { question: "Hålls möten alltid utomhus?", answer: "svar" },
+    { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
+    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
+    { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
   ],
   fragorSvar02: [
     {
       question: "Varför har vi en scoutdräkt?",
       answer: 
       `
-      Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra. Så här kommer du igång med 
-      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium\" > Trygga möten >> </a>
-      Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas.
-      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium\" >Läs mer om Leda socuting här >> </a>
-      När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att wybrać mellan. Du hittar dem alla på Ledarskapsön. 
-      <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Läs mer om dem här >></a>
-      `
+      The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with 
+      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a>
+      After Safe Meetings, it is appropriate to take \"Leading Scouting\" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further. Read more about Leading 
+      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Scouting here >> </a>
+      When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. 
+      <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>
+      ` 
     },
     {
       question: "Jag är ny scoutledare! Vilken utbildning ska jag gå först?",
