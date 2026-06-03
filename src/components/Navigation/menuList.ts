@@ -53,9 +53,9 @@ export const menuList = [
             },
             {
                 nameKey: "nav_unit5",
-                href: "/groups/familjescouter",
-                icon: "/familjescouter.svg",
-                iconBg: "/familjescouter.svg"
+                href: "/groups/smattarne",
+                icon: "/smattarne.svg",
+                iconBg: "/smattarne.svg"
             },
         ]
     },
