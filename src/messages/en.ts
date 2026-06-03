@@ -900,7 +900,7 @@ export const En: MessagesEngType = {
     },
     {
       question: "How do I change my billing address?",
-      answer: `Go to <a href=\"https://www.scoutnet.se/f/login" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ >www.scoutnet.se</a>, log in, and change your billing address.`
+      answer: `Go to <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ >www.scoutnet.se</a>, log in, and change your billing address.`
     },
     {
       question: "My invoice has the wrong amount. What should I do?",
@@ -909,7 +909,7 @@ export const En: MessagesEngType = {
     },
     {
       question: "How do I change my contact information?",
-      answer: `Log in to <a href=\"https://www.scoutnet.se/f/login" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ >www.scoutnet.se</a>, where you can update your information.`
+      answer: `Log in to <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ >www.scoutnet.se</a>, where you can update your information.`
     }
   ],
   lifestyle: {

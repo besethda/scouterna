@@ -890,7 +890,7 @@ export const Sv: MessagesSvType = {
     },
     {
       question: "Hur ändrar jag min fakturaadress?",
-      answer: `Gå till <a href=\"https://www.scoutnet.se/f/login" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ > www.scoutnet.se</a>, logga in och ändra din fakturaadress.`
+      answer: `Gå till <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ > www.scoutnet.se</a>, logga in och ändra din fakturaadress.`
     },
     {
       question: "Min faktura har felaktigt belopp. Vad gör jag?",
@@ -898,7 +898,7 @@ export const Sv: MessagesSvType = {
     },
     {
       question: "Hur ändrar jag mina kontaktuppgifter?",
-      answer: `Logga in på <a href=\"https://www.scoutnet.se/f/login" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ > www.scoutnet.se</a>.se där kan du uppdatera dina uppgifter.`
+      answer: `Logga in på <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ > www.scoutnet.se</a>.se där kan du uppdatera dina uppgifter.`
     },
   ],
   lifestyle: {
