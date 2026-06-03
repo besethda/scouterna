@@ -20,7 +20,7 @@ const JoinPage = ({title, text, buttonText,buttonOnClick,btnWidth,width = "full"
                     <p className={"text-text-black text-body md:text-body-desktop font-albert"}>{text}</p>
                 </div>
                 {buttonText &&(
-                    <div className={`${width === "box" ?" mx-auto" : "w-full md:w-fit"} w-full`}>
+                    <div className={`${width === "box" ?" mx-auto" : "w-full md:w-fit"} w-fit max-sm:-ml-1`}>
                         <a
                         href="https://www.scoutnet.se/register/in/group/764"
                         target="_blank"
