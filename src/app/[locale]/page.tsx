@@ -18,7 +18,7 @@ const Home = () => {
         <GoodToKnow />
         <WhiteImageBox />
         <DivisionsContainer />
-        <InstagramContainer />
+        <InstagramContainer bgBlue={true}/>
       </div>
     </div>
   );

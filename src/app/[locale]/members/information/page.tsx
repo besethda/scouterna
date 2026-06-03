@@ -7,6 +7,7 @@ import CardWithImage from "@/components/CardWithImage";
 import Union from "./union";
 import Scoutnet from "@/components/Scoutnet/scoutnet";
 import ScoutInfo from "@/components/ScoutInfo/scoutInfo";
+import InstagramContainer from "@/components/Instagram/InstagramContainer";
 
 const pageItem = "information"
 const headDescription = "information"
@@ -27,6 +28,7 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <ScoutInfo />
                 <Scoutnet />
                 <Union />
+                <InstagramContainer showText={true}/>
             </div>
         </div>
     );
