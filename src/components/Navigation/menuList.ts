@@ -142,17 +142,17 @@ export const menuList = [
 export const mobileMenuList = [
     {
         nameKey: "nav_school",
-        href: "",
+        href: "https://www.scouternasfolkhogskola.se/",
         icon: "/menu-book-circle-icon.svg"
     },
     {
         nameKey: "nav_shop",
-        href: "",
+        href: "https://www.scoutshop.se/",
         icon: "/menu-bag-circle-icon.svg"
     },
     {
         nameKey: "nav_scoutnet",
-        href: "",
+        href: "https://www.scoutnet.se/f/login",
         icon: "/menu-key-circle-icon.svg"
     },
 ] as const;
