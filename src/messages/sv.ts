@@ -857,12 +857,24 @@ export const Sv: MessagesSvType = {
     title02: "Medlemsfrågor"
   },
   fragorSvar: [
-    { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
-    { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
-    { question: "Hålls möten alltid utomhus?", answer: "svar" },
-    { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
-    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
-    { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
+    { question: "Behöver vi köpa en scoutuniform på en gång?", 
+      answer: "Nej, du behöver inte köpa en scoutskjorta direkt. Det är bäst att vara med i några veckor först för att se så att du vill fortsätta med scouterna." 
+    },
+    { question: "Vad för kläder brukar scouterna ha på sig?", 
+      answer: "En scoutskjorta, en HSS-tröja och tåliga byxor." 
+    },
+    { question: "Hålls möten alltid utomhus?",
+      answer: "Oftast ja, men på vintern ses vi ibland inomhus i vår scoutstuga Ruffen." 
+    },
+    { question: "Hur mycket kostar det att vara med i scouterna?", 
+      answer: "Det beror på din ålder och roll. Fråga din scoutledare eller skicka ett mejl till info@hss-scout.org. För 2026 ligger avgifterna på mellan 300–850 kr för scouter och mellan 50–180 kr for ledare." 
+    },
+    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", 
+      answer: "Nej, ingen tidigare erfarenhet av segling eller scouting behövs." 
+    },
+    { question: "Vi har blivit medlemmar- vad händer nu?", 
+      answer: "Din avdelningsledare kommer att ta kontakt med dig och ge information om nästa steg. Välkommen!" 
+    },
   ],
   fragorSvar02: [
     {
