@@ -26,7 +26,7 @@ const InstagramContainer = async () => {
 
   const response = await fetch("https://feeds.behold.so/cpFFCBnZsZUNtLg9vY4Y")
   const data = response.ok ? await response.json() : null
-  if(data.posts && data.posts.length > 5){
+  if(response.ok && (data?.posts && data.posts.length > 5)){
     const filteredData: instaType[]= data.posts.map((post: any, index:number)=> {
       return {mediaUrl:post.mediaUrl, permalink: post.permalink, mediaType:post.mediaType, caption:post.caption, timestamp:post.timestamp, imageIndex:index}
     })
@@ -36,21 +36,16 @@ const InstagramContainer = async () => {
       </div>
     )
   } else {
-    const filteredData: instaType[]= fallbackData.map((post: any, index:number)=> {
+    const fallbackFilteredData: instaType[]= fallbackData.map((post: any, index:number)=> {
       return {mediaUrl:post.mediaUrl, permalink: `link${index}`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
     })
     return (
       <div className="md:bg-bg-blue md:pt-10 w-full">
-        <Instagram photoObject={filteredData}/>
+        <Instagram photoObject={fallbackFilteredData}/>
       </div>
     )
   }
   }
-  const response = await fetch("https://feeds.behold.so/cpFFCBnZsZUNtLg9vY4Y")
-  const data = await response.json()
-  const filteredData: instaType[]= data.posts.map((post: any, index:number)=> {
-    return {mediaUrl:post.mediaUrl, permalink: post.permalink, mediaType:post.mediaType, caption:post.caption, timestamp:post.timestamp, imageIndex:index}
-  })
 
 
 export default InstagramContainer
