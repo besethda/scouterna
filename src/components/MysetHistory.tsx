@@ -9,20 +9,20 @@ const MysetHistory = () => {
 
   const cards = [
     {
-      img: "/images/myset1.jpg",
+      img: "/images/myset01.jpg",
       alt: "myset"
     },
     {
-      img: "/images/myset2.jpg",
+      img: "/images/myset02.jpg",
       alt: "myset"
     },
     {
-      img: "/images/myset3.jpg",
-      alt: "myset"
+      img: "/images/myset03.jpg",
+      alt: "myset grundsättning"
     },
     {
-      img: "/images/myset4.jpg",
-      alt: "myset"
+      img: "/images/myset04.jpg",
+      alt: "myset and a car"
     }
   ]
 
