@@ -275,7 +275,7 @@ export type MessagesEngType = {
   }[];
   fragorSvar02: {
     question: string,
-    answer: string
+    answer: string,
   }[];
   lifestyle: {
     headline: string,
@@ -856,22 +856,39 @@ export const En: MessagesEngType = {
     title02: "Membership Questions"
   },
   fragorSvar: [
-    { question: "Do we need to buy a scout uniform right away?", answer: "answer" },
-    { question: "What kind of clothes do scouts usually wear?", answer: "answer" },
-    { question: "Are meetings always held outdoors?", answer: "answer" },
-    { question: "How much does it cost to join the scouts?", answer: "answer" },
-    { question: "Does the child need to have prior experience with sailing or scouting?", answer: "answer" },
-    { question: "We have become members—what happens now?", answer: "answer" },
+    { question: "Do we need to buy a scout uniform right away?",
+      answer: "No, you don’t need to buy a scout shirt straight away. It’s best to join for a few weeks first to make sure you want to continue with the scouts." 
+    },
+    { question: "What kind of clothes do scouts usually wear?", 
+      answer: "A scout shirt, an HSS sweater, and durable trousers." 
+    },
+    { question: "Are meetings always held outdoors?",
+      answer: "Usually yes, though in winter we sometimes meet indoors at our scout cabin Ruffen." 
+    },
+    { question: "How much does it cost to join the scouts?", 
+      answer: "It depends on your age and role. Ask your scout leader or send an email to info@hss-scout.org. For 2026 the fees are between 300-850 kr for scouts and between 50-180 kr for leaders." 
+    },
+    { question: "Does the child need to have prior experience with sailing or scouting?", 
+      answer: "No previous experience in sailing or scouting is needed." 
+    },
+    { question: "We have become members—what happens now?", 
+      answer: "Your division leader will be in touch with information about the next steps. Welcome!" 
+    },
   ],
   fragorSvar02: [
     {
       question: "Why do we have a scout uniform?",
-      answer: `The very first training you should take is "Safe Meetings" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour.
-    Here is how you get started with Safe Meetings >> 
-    After Safe Meetings, it is appropriate to take "Leading Scouting" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further.
-    Read more about Leading Scouting here >> When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. Read more about them here >>`
+      answer:
+      `
+      The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with 
+      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a>
+      After Safe Meetings, it is appropriate to take \"Leading Scouting\" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further. Read more about Leading 
+      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Scouting here >> </a>
+      When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. 
+      <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>
+      ` 
     },
-    {
+    { 
       question: "I am a new scout leader! Which training should I take first?",
       answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.`
     },
@@ -908,7 +925,7 @@ export const En: MessagesEngType = {
   },
   memberInfo: {
     headline: "Scout Life",
-    title: "Information",
+    title: "Infofragorrmation",
     text: "Here we have gathered useful information for our members to know."
   },
   safetyCard: {
