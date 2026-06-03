@@ -52,7 +52,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                         {messages?.joinContent?.text02}
                     </p>
                         <a
-                        href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/" 
+                        href="https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/kurskatalog-ledarskapson/" 
                         target="_blank"
                         >
                             <CTABtn text={messages?.joinContent?.button02} />
