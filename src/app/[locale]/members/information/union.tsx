@@ -39,7 +39,7 @@ const Union = () => {
                     {unionList.map((item, index) => (
                         <div key={index} className="flex py-2 gap-2 w-full items-center ">
                             <Image src={download} alt={item.name} />
-                            <a href={item.url} className="justify-center underline tracking-[0.03em]">
+                            <a href={item.url} target="_blank" className="justify-center underline tracking-[0.03em]">
                                 {messages?.download}HSS {messages?.union?.t0.toLowerCase()} {item.published}
                             </a>
                         </div>

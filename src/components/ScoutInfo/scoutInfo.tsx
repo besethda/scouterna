@@ -3,9 +3,16 @@
 import CTABtn from "../CTA-button";
 import useMessages from "@/hook/useMessages";
 import Image from "next/image";
+import Link from "next/link";
+import { useParams, usePathname } from "next/navigation";
 
 const ScoutInfo = () => {
   const messages = useMessages();
+  const params = useParams();
+  const pathname = usePathname();
+  const urlLocale =pathname?.split("/")[1]
+  const currentLocal = params?.local || urlLocale|| "sv"
+
   return (
     <div className="bg-bg-blue pt-20 pb-20 md:px-23">
       <div className="text-3xl text-primary px-5 md:px-1">{messages?.good}</div>
@@ -17,7 +24,10 @@ const ScoutInfo = () => {
             <div className="text-primary pt-2 pb-2 text-2xl whitespace-nowrap">{messages?.question.title}</div>
             <p className="text-text-black py-3 ">{messages?.question.paraph}</p>
             <div className="py-5">
-              <CTABtn text={messages?.toFAQButton} />
+              <Link
+                href={`/${currentLocal}/join/faq`}>
+                  <CTABtn text={messages?.toFAQButton} />
+                </Link>
             </div>
           </div>
           <div className="flex flex-col flex-1 shrink md:border md:border-lightGray rounded-2xl md:bg-bg-white px-5 md:py-5">
@@ -29,9 +39,12 @@ const ScoutInfo = () => {
             <p className="text-text-black block md:hidden py-1">{messages?.policy.paraph}</p>
             <p className="text-text-black block md:hidden py-1">{messages?.policy.mer}</p>
             <div className="hidden md:block py-5">
-              <CTABtn text={messages?.moreButton} />
+              <Link
+                href={`/${currentLocal}/members/safety`}>
+                <CTABtn text={messages?.moreButton} />
+              </Link>
             </div>
-             <div className="block md:hidden py-5 whitespace-nowrap">
+            <div className="block md:hidden py-5 whitespace-nowrap">
               <CTABtn text={messages?.secondButton} />
             </div>
           </div>
