@@ -55,7 +55,7 @@ const Breadcrumbs = () => {
                 <span key={index} className="flex items-center h-9 md:h-10 font-albert overflow-hidden text-primary whitespace-nowrap">
                   <span className="px-1.5 md:px-3 text-primary font-albert">  /  </span>
                   {routes[currentPath] ? (
-                    <Link href={href} className={index +1 === breadcrumbsArray.length? 
+                    <Link href={href} className={index + 1 === breadcrumbsArray.length? 
                     "text-primary hover:text-accent duration-100 font-albert text-body-bold md:text-body-bold-desktop whitespace-nowrap" 
                     :"text-primary hover:text-accent duration-100 font-albert whitespace-nowrap"}>
                       {messages?.breadcrumbs.page[item]} 
