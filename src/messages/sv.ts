@@ -264,6 +264,7 @@ type MessagesSvType = {
   map: Record<string, string>
   scoutLife: Record<string, string>
   learning: Record<string, string>
+  boatSection: Record<string, string>
   faq: {
     title: string,
     title02: string
@@ -846,6 +847,10 @@ export const Sv: MessagesSvType = {
     text0: "Vi lär oss att hantera båtar, knyta knopar och röra oss säkert på sjön.",
     text1: "Vi lär oss om djur och växter, naturens kretslopp och hur vi kan ta hand om miljön.",
     text2: "Vi lär oss att laga mat ute, sätta upp tält och vistas i naturen på ett tryggt och säkert sätt."
+  },
+  boatSection: {
+    t0: "Båtar genom åren",
+    p0: "Bläddra genom bilder som föreningen haft glädjen att ha i vår ägo. "
   },
   faq: {
     title: "Bli Scout",

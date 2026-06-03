@@ -263,6 +263,7 @@ export type MessagesEngType = {
   map: Record<string, string>
   scoutLife: Record<string, string>
   learning: Record<string, string>
+  boatSection: Record<string, string>
   faq: {
     title: string,
     title02: string;
@@ -844,6 +845,10 @@ export const En: MessagesEngType = {
     text0: "We learn how to handle boats, tie knots, and navigate safely at sea.",
     text1: "We learn about animals and plants, nature's cycles, and how we can take care of the environment.",
     text2: "We learn how to cook outdoors, set up tents, and spend time in nature in a safe and secure way."
+  },
+  boatSection: {
+    t0: "Boats Through the Years",
+    p0: "Browse through photos of the boats our association has had the pleasure of owning."
   },
   faq: {
     title: "Join the Scouts",
