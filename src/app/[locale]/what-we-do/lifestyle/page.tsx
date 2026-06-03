@@ -1,7 +1,7 @@
 import { getPageHeadTitle } from "@/lib/utils"
 import CardWithImage from "@/components/CardWithImage";
 import WhiteGridContainer from "@/components/WhiteGridBox/WhiteGridContainer";
-import { En} from "@/messages/en";
+import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import LifeStyleSection from "./lifestyleSection";
@@ -20,20 +20,22 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const LifeStyle = ({params}:{params: Promise<{locale: string}>}) => {
-    const {locale} = use(params)
+const LifeStyle = ({ params }: { params: Promise<{ locale: string }> }) => {
+    const { locale } = use(params)
     const messages = locale === "en" ? En : Sv
 
     return (
         <div>
-            <HeroContainer bgImages={{mobile: "bg-[url('/images/IMG_1939.JPEG')]", desktop:"md:bg-[url('/images/rock.JPG')]"}} messageSection={"lifestyleHero"} position={"center"} />
+            <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_1939.JPEG')]", desktop: "md:bg-[url('/images/rock.JPG')]" }} messageSection={"lifestyleHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithImage sectionTitle="lifestyle" logo="/heart.png" image="/images/DSCF3033.jpg"/>
-                <WhiteGridContainer backgroundBlue={false} messageTitle="learning"/>
+                <CardWithImage sectionTitle="lifestyle" logo="/heart.png" image="/images/DSCF3033.jpg" />
                 <LifeStyleSection />
+                <WhiteGridContainer backgroundBlue={false} messageTitle="learning" />
+
             </div>
             <Activities />
+
         </div>
     );
 }
