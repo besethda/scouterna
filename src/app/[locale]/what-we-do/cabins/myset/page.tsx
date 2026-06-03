@@ -27,7 +27,7 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
     const messages = locale === "en" ? En : Sv
 
     return (
-        <div>
+        <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <CardWithoutImage
@@ -60,7 +60,7 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                 </div>
                 <MysetHistory />
             </div>
-        </div>
+        </main>
     );
 }
 
