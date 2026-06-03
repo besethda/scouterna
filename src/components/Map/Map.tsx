@@ -18,17 +18,18 @@ interface mapProps {
 const Map = ({ page }: mapProps) => {
     const markerRef = useRef<Record<number, L.Marker | null>>({});
     const [selectedId, setSelectedId] = useState<number | null>(null)
-
-
+    const filterLocation: { id: number, name: string, latitude: number, longitude: number, url: string } | undefined =
+        LocationList.find(place => place.name.toLowerCase().includes(page))
     const position: [number, number] = [59.38344, 17.82824];
-    const ruffen: [number, number] = [59.36332, 17.82199];
+    const filterdLocationPosition: [number, number] | undefined =
+        filterLocation ? [filterLocation.latitude, filterLocation.longitude] : undefined;
     const zoom: number = 11;
-    const center = page === "footer" ? position : ruffen;
+    const center = page === "footer" ? position : filterdLocationPosition;
     return (
         <div className=''>
             <MapContainer
                 center={center}
-                zoom={zoom}
+                zoom={page === "footer" ? zoom : zoom + 2}
                 key={page}
                 className={`w-full z-10 ${page === "footer" ? "h-64 rounded-t-2xl" : "h-80 rounded-2xl "}`}
             >
@@ -40,7 +41,7 @@ const Map = ({ page }: mapProps) => {
                     <>
                         {LocationList.map((location, index) =>
                             <Marker
-                                position={[location.Latitude, location.Longitude]}
+                                position={[location.latitude, location.longitude]}
                                 key={index}
                                 ref={(ref) => {
                                     markerRef.current[location.id] = ref
@@ -54,7 +55,7 @@ const Map = ({ page }: mapProps) => {
                                 <Popup
                                 >
                                     <Link href={location.url} target="_blank">
-                                        {location.name} | Hässelby Strands Sjöscoutkår
+                                        {location.name}
                                     </Link>
                                 </Popup>
 
@@ -62,15 +63,15 @@ const Map = ({ page }: mapProps) => {
                     </>
                 ) : (
                     <>
-                        {
-                            <Marker position={[LocationList[1].Latitude, LocationList[1].Longitude]}>
+                        {filterLocation && (
+                            <Marker position={[filterLocation.latitude, filterLocation.longitude]}>
                                 <Popup>
-                                    <Link href={LocationList[1].url} target="_blank">
-                                        {LocationList[1].name} | Hässelby Strands Sjöscoutkår
+                                    <Link href={filterLocation.url} target="_blank">
+                                        {filterLocation.name}
                                     </Link>
                                 </Popup>
                             </Marker>
-                        }
+                        )}
                     </>
                 )
                 }
