@@ -8,7 +8,7 @@ const Scoutnet = () => {
   const messages = useMessages();
 
   const handleClick = () => {
-    window.open("https://www.scoutnet.se/register/in/group/764", "(_blank)")
+    window.open("https://www.scoutnet.se/f/login", "(_blank)")
   }
   return (
     <div className="md:pl-18 pt-20 pb-20">
