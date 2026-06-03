@@ -10,8 +10,8 @@ interface JoinPageProps {
     className?:string;
 }
 
-
 const JoinPage = ({title, text, buttonText,buttonOnClick,btnWidth,width = "full", className}:JoinPageProps) => {
+
     return (
         <div className={`${width === "box" ? "bg-bg-blue" : ""} w-full pb-6`}>
             <div className={`${width === "box" ? "w-89.5 h-64 md:h-83 rounded-2xl md:flex-row md:w-full md:rounded items-center bg-bg-blue p-8" : "w-full"} pb-10 flex w-full px-4 lg:max-w-430 lg:px-22 flex-col gap-4 md:gap-10  md:p-25 mt-3 mx-auto`}>
@@ -21,10 +21,16 @@ const JoinPage = ({title, text, buttonText,buttonOnClick,btnWidth,width = "full"
                 </div>
                 {buttonText &&(
                     <div className={`${width === "box" ?" mx-auto" : "w-full md:w-fit"} w-full`}>
-                        <CTABtn onClick={buttonOnClick} 
+                        <a
+                        href="https://www.scoutnet.se/register/in/group/764"
+                        target="_blank"
+                        >
+                            <CTABtn 
                             text={buttonText}
                             width={btnWidth}
+                            onClick={buttonOnClick}
                         />
+                        </a>
                     </div>
                 )}
             </div>

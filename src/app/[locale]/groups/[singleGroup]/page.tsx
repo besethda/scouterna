@@ -113,7 +113,12 @@ const Groups = ({
               [&_button]:hover:brightness-102
               pl-4"
             >
-              <CTABtn text={messages?.sjohumlorButton} />
+              <a
+              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
+              target="_blank"
+              >
+                <CTABtn text={messages?.sjohumlorButton} />
+              </a>
             </div>
           </div>
         </div>
@@ -191,7 +196,12 @@ const Groups = ({
               [&_button]:hover:brightness-102
               pl-4"
             >
+              <a
+              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
+              target="_blank"
+              > 
               <CTABtn text={messages?.kaparnaButton} />
+              </a>
             </div>
           </div>
         </div>
@@ -269,7 +279,12 @@ const Groups = ({
               [&_button]:hover:brightness-104
               pl-4"
             >
-              <CTABtn text={messages?.utmanareButton} />
+              <a
+              href=""
+              target="_blank"
+              >
+                <CTABtn text={messages?.utmanareButton} />
+              </a>
             </div>
           </div>
         </div>
@@ -347,7 +362,12 @@ const Groups = ({
               [&_button]:hover:brightness-102
               pl-4"
             >
-              <CTABtn text={messages?.konvojenButton} />
+              <a
+              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
+              target="_blank"
+              >
+                <CTABtn text={messages?.konvojenButton} />
+              </a>
             </div>
           </div>
         </div>
@@ -432,7 +452,12 @@ const Groups = ({
             [&_button]:hover:hover:brightness-104
             pl-4
           ">
-            <CTABtn text={messages?.familjescouterButton} />
+            <a
+              href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
+              target="_blank"
+              >
+              <CTABtn text={messages?.familjescouterButton} />
+              </a>
           </div>
         </div>
       </div>
