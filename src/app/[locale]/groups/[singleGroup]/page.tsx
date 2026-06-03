@@ -280,7 +280,7 @@ const Groups = ({
               pl-4"
             >
               <a
-              href=""
+              href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
               target="_blank"
               >
                 <CTABtn text={messages?.utmanareButton} />
