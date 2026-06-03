@@ -9,6 +9,7 @@ import { getPageHeadTitle } from "@/lib/utils"
 import SmallCard from "@/components/SmallCard";
 import JoinPage from "@/components/JoinPage";
 import CTABtn from "@/components/CTA-button";
+import InstagramContainer from "@/components/Instagram/InstagramContainer";
 
 const pageItem = "become-a-scout"
 const headDescription = "become-a-scout"
@@ -65,6 +66,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                         width="box"
                         btnWidth="full" 
                     />
+                    <InstagramContainer />
             </div>
         </div>
     )
