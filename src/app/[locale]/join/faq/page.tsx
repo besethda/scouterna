@@ -49,11 +49,11 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                         </div>
                     </section>
                 </div>
-                <div className="flex flex-col items-center py-10 gap-2 font-albert md:bg-bg-blue md:py-25 md:gap-10 w-full ">
+                <section className="flex flex-col items-center py-10 gap-2 font-albert md:bg-bg-blue md:py-25 md:gap-10 w-full ">
                     <div className="flex flex-col w-full px-4 lg:max-w-430 lg:px-22">
-                        <p className="font-normal pb-3 text-h2 text-primary md:text-h2-desktop">
+                        <h2 className="font-normal pb-3 text-h2 text-primary md:text-h2-desktop">
                             {messages?.faqContact?.title}
-                        </p>
+                        </h2>
                         <p className="text-body md:text-body-desktop font-normal text-text-black">
                             {messages?.faqContact?.text}
                         </p>
@@ -64,7 +64,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                             info@hss-scout.org
                         </a>
                     </div>
-                </div>
+                </section>
             </div>
         </main>
     );
