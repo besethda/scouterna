@@ -43,13 +43,21 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             {messages?.joinContent?.text}
                         </p>
                     </div>
-                    <a href="/pdfs/Bilaga-20251012-HSS-Trygga-maten-policy-Beslutad.pdf">
+                    <a 
+                        href="/pdfs/Bilaga-20251012-HSS-Trygga-maten-policy-Beslutad.pdf" 
+                        target="_blank"
+                    >
                         <CTABtn text={messages?.joinContent?.button} />
                     </a>
                     <p className="text-text-black text-body md:text-body-desktop tracking-[3%]">
                         {messages?.joinContent?.text02}
                     </p>
-                    <CTABtn text={messages?.joinContent?.button02} />
+                        <a
+                        href="https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/kurskatalog-ledarskapson/" 
+                        target="_blank"
+                        >
+                            <CTABtn text={messages?.joinContent?.button02} />
+                        </a>
                     <div className="flex flex-col gap-6">
                         <h3 className="text-h3 font-medium text-[#00355F]  md:text-h3-desktop">
                             {messages?.joinContent?.title02}
