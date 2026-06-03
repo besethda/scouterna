@@ -1,4 +1,4 @@
-import { En} from "@/messages/en";
+import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -9,6 +9,8 @@ import CTABtn from "@/components/CTA-button";
 import Sjohulorna from "../../../../../public/images/DSCF3033.jpg";
 import GroupIntro from "@/components/GroupIntro";
 import Link from 'next/link';
+import Family from '../../../../../public/images/ParumMagna.png'
+import FamilyEn from '../../../../../public/images/ParumMagnaEng.png'
 
 const pageItems = [
   "sjohumlorna",
@@ -36,7 +38,7 @@ export async function generateMetadata({
     ? getPageHeadTitle(locale, singleGroup, matchedTabTitle)
     : getPageHeadTitle(locale, "HSS | Hem", "Hem sidan");
   return tabTitle
-}  
+}
 
 const Groups = ({
   params,
@@ -45,16 +47,18 @@ const Groups = ({
 }) => {
 
 
-  
+
   const { singleGroup, locale } = use(params);
   const messages = locale === "en" ? En : Sv;
+
+  const familyImageSrc = locale === "en" ? FamilyEn : Family;
 
   if (singleGroup === "sjohumlorna") {
     return (
       <>
         <Breadcrumbs />
         <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle}  text={messages?.GroupIntro?.SJMtext}  logo="/sjohumlor-frame.svg" />
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle} text={messages?.GroupIntro?.SJMtext} logo="/sjohumlor-frame.svg" />
         </div>
         <div className="bg-bg-blue pt-20 pb-20 flex flex-col items-center">
           <div className="lg:max-w-430 lg:px-22">
@@ -132,7 +136,7 @@ const Groups = ({
       <>
         <Breadcrumbs />
         <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle}  text={messages?.GroupIntro?.KAPtext}  logo="/Kaparna-frame.svg"/>
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle} text={messages?.GroupIntro?.KAPtext} logo="/Kaparna-frame.svg" />
         </div>
         <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
           <div className="lg:max-w-430 lg:px-22">
@@ -210,7 +214,7 @@ const Groups = ({
       <>
         <Breadcrumbs />
         <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle}  text={messages?.GroupIntro?.UTtext}  logo="/Utmanare-frame.svg" />
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle} text={messages?.GroupIntro?.UTtext} logo="/Utmanare-frame.svg" />
         </div>
         <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
           <div className="lg:max-w-430 lg:px-22">
@@ -288,7 +292,7 @@ const Groups = ({
       <>
         <Breadcrumbs />
         <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext}  logo="/Konvojen-frame.svg" />
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle} text={messages?.GroupIntro?.KONtext} logo="/Konvojen-frame.svg" />
         </div>
         <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
           <div className="lg:max-w-430 lg:px-22">
@@ -363,64 +367,68 @@ const Groups = ({
     );
   } else if (singleGroup === "familjescouter") {
     return (
-    <>
-      <Breadcrumbs />
-      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-      <div className="bg-bg-blue lg:pl-5 pt-10 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
-        <div className="lg:max-w-430 lg:px-8 flex flex-col gap-6">
-          <div className="flex flex-col lg:flex-row gap-4 items-center md:items-start lg:pt-10">
-            <div className="flex-1">
-              <ContentSection 
-                sectionLayout={["s", "p", "p", "p"]}
-                page="BarnOchVuxnaTillsammans"
-                background={"blue"}
-                padding={"5"}
-                child={true}
-              />
-            </div>
-            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4 md:pt-3">
-              <Image
-                src={Sjohulorna}
-                alt="konvojen"
-                className="rounded-2xl object-cover w-full"
+      <>
+        <Breadcrumbs />
+        <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
+        <div className="bg-bg-blue lg:pl-5 pt-10 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+          <div className="lg:max-w-430 lg:px-8 flex flex-col gap-6">
+            <div className="flex flex-col lg:flex-row gap-4 items-center md:items-start lg:pt-10">
+              <div className="flex-1">
+                <ContentSection
+                  sectionLayout={["s", "p", "p", "p"]}
+                  page="BarnOchVuxnaTillsammans"
+                  background={"blue"}
+                  padding={"5"}
+                  child={true}
                 />
+              </div>
+              <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4 md:pt-3">
+                <Image
+                  src={Sjohulorna}
+                  alt="familjescouter"
+                  className="rounded-2xl object-cover w-full"
+                  width={358}
+                  height={257}
+                />
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col gap-4 items-center lg:flex-row md:items-start lg:pt-10">
-            <div className="flex-1">
+            <div className="flex flex-col gap-4 items-center lg:flex-row md:items-start lg:pt-10">
+              <div className="flex-1">
+                <ContentSection
+                  sectionLayout={["s", "p", "p"]}
+                  page="ParumMagna"
+                  background={"blue"}
+                  padding={"3"}
+                  child={true}
+                />
+              </div>
+              <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4 md:pt-3">
+                <Image
+                  src={familyImageSrc}
+                  alt="Parum & Magna"
+                  className="rounded-2xl object-cover w-full"
+                  width={358}
+                  height={257}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4 justify-center">
               <ContentSection
                 sectionLayout={["s", "p", "p"]}
-                page="ParumMagna"
+                page="Familjescoutsagor"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+              <ContentSection
+                sectionLayout={["s", "p"]}
+                page="Märken"
                 background={"blue"}
                 padding={"3"}
                 child={true}
               />
             </div>
-            <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4 md:pt-3">
-              <Image
-                src={Sjohulorna}
-                alt="Familjescouter img"
-                className="rounded-2xl object-cover w-full"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col gap-4 justify-center">
-            <ContentSection
-              sectionLayout={["s", "p", "p"]}
-              page="Familjescoutsagor"
-              background={"blue"}
-              padding={"3"}
-              child={true} 
-            />
-            <ContentSection
-              sectionLayout={["s", "p"]}
-              page="Märken"
-              background={"blue"}
-              padding={"3"}
-              child={true} 
-            />
-          </div>
-          <div className="
+            <div className="
             [&_button]:border 
             [&_button]:border-purple
           [&_button]:bg-purple-opaque
@@ -432,11 +440,11 @@ const Groups = ({
             [&_button]:hover:hover:brightness-104
             pl-4
           ">
-            <CTABtn text={messages?.familjescouterButton} />
+              <CTABtn text={messages?.familjescouterButton} />
+            </div>
           </div>
         </div>
-      </div>
-    </> 
+      </>
     )
   }
 };
