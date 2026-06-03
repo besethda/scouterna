@@ -12,7 +12,7 @@ const HeroContainer = ({ bgImages, messageSection, position }: { bgImages: { mob
   if (!messages) return null
 
   const handleClick = () => {
-    window.open("https://www.scoutnet.se/register/in/group/764")
+    window.open("https://www.scoutnet.se/register/in/group/764", "(_blank)")
   }
 
   return (

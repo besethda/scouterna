@@ -7,6 +7,7 @@ import CardWithImage from "@/components/CardWithImage";
 import Union from "./union";
 import Scoutnet from "@/components/Scoutnet/scoutnet";
 import ScoutInfo from "@/components/ScoutInfo/scoutInfo";
+import InstagramContainer from "@/components/Instagram/InstagramContainer";
 
 const pageItem = "information"
 const headDescription = "information"
@@ -20,15 +21,16 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
     const { locale } = use(params)
     const messages = locale === "en" ? En : Sv
     return (
-        <div>
+        <main>
             <Breadcrumbs />
             <div className="w-full flex flex-col items-center">
                 <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
                 <ScoutInfo />
                 <Scoutnet />
                 <Union />
+                <InstagramContainer showText={true}/>
             </div>
-        </div>
+        </main>
     );
 }
 

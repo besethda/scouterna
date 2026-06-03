@@ -20,7 +20,7 @@ const Footer = () => {
     const messages = useMessages()
     const searchPath = usePathname()
     console.log(searchPath)
-    const hidePath = ["/ruffen"]
+    const hidePath = ["/ruffen", "/myset"]
     const checkHide = hidePath.some(path => searchPath.includes(path))
 
     return (
@@ -38,15 +38,15 @@ const Footer = () => {
                     <p className="text-accent text-body-bold mb-2 uppercase text-xs xl:text-sm">{messages?.footer?.footer_service}</p>
                     <div className='flex gap-2.5 leading-none '>
                         <Image src={schoolIcon} alt='school icon' className='w-4 h-4 xl:w-5 xl:h-7' />
-                        <Link href="https://www.scouternasfolkhogskola.se/" className="text-body-desktop xl:text-lg hover:text-lightYellow">{messages?.footer?.footer_school}</Link>
+                        <Link href="https://www.scouternasfolkhogskola.se/" target='_blank' className="hover:text-lightYellow text-body-desktop xl:text-lg">{messages?.footer?.footer_school}</Link>
                     </div>
                     <div className='flex gap-2.5 leading-none'>
                         <Image src={bagIcon} alt='bag icon' className='w-4 h-4 xl:w-5 xl:h-6' />
-                        <Link href="https://www.scoutshop.se/" className="text-body-desktop xl:text-lg hover:text-lightYellow">{messages?.footer?.footer_shop}</Link>
+                        <Link href="https://www.scoutshop.se/" target='_blank' className="hover:text-lightYellow text-body-desktop xl:text-lg">{messages?.footer?.footer_shop}</Link>
                     </div>
-                    <div className='flex gap-2.5 leading-none'>
+                    <div className='flex gap-2.5 leading-none '>
                         <Image src={keyIcon} alt='key icon' className='w-4 h-4 xl:w-5.5 xl:h-5.5' />
-                        <Link href="https://www.scoutnet.se/f/login" className="text-body-desktop xl:text-lg hover:text-lightYellow">Scoutnet</Link>
+                        <Link href="https://www.scoutnet.se/f/login" target='_blank' className="hover:text-lightYellow text-body-desktop xl:text-lg ">Scoutnet</Link>
                     </div>
                 </div>
                 <div className='flex flex-col gap-2 xl:gap-7 pb-2 xl:flex-1'>

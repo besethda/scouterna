@@ -415,15 +415,15 @@ export type MessagesEngType = {
   moreButton: string,
   secondButton: string,
   mysetHistory: {
-    title: string, 
-    text1: string, 
-    text2: string, 
-    subtitle: string 
+    title: string,
+    text1: string,
+    text2: string,
+    subtitle: string
   },
   cabinst: string,
-  cabinsmyset: {title:string, dpOne:string, dpTwo:string}
-  mysetbtn:string,
-  cabinsruffen: {title:string, dpOne:string, dpTwo:string}
+  cabinsmyset: { title: string, dpOne: string, dpTwo: string }
+  mysetbtn: string,
+  cabinsruffen: { title: string, dpOne: string, dpTwo: string }
   ruffenbtn: string,
   historycard: {
     headline: string,
@@ -455,13 +455,14 @@ export type MessagesEngType = {
     title: string,
     text: string
   }
-  activity:{
-    title:string,
-    sub_title_one:string,
-    p_one:string,
-    sub_title_two:string,
-    p_two:string,
+  activity: {
+    title: string,
+    sub_title_one: string,
+    p_one: string,
+    sub_title_two: string,
+    p_two: string,
   },
+  mysetMap: Record<string, string>
 };
 
 export const En: MessagesEngType = {
@@ -674,7 +675,7 @@ export const En: MessagesEngType = {
     contact: "HSS | Contact",
     gdpr: "HSS | GDPR"
   },
- description:{
+  description: {
     history: "The history page",
     "become-a-scout": "Become a scout page",
     faq: "The FAQ page",
@@ -694,7 +695,7 @@ export const En: MessagesEngType = {
     safety: "The life jacket policy page",
     contact: "The contact page",
     gdpr: "The GDPR page"
-  }, 
+  },
   groupsCard: {
     headline: "Groups",
     title: "Age Groups",
@@ -964,75 +965,75 @@ export const En: MessagesEngType = {
     text: "View floor plan"
   },
   sjohumlornaSpårarscouter: {
-    s0: "Spårarscouts",
+    t0: "Spårarscouts",
     p0: "The scouts at the Sjöhumlorna section are Spårarscouts. Spårarna is the beginning of the scouting journey, where each child gets to grow, explore, and feel pride in what they can accomplish.",
   },
   sjohumlornaAge: {
-    s0: "Age",
+    t0: "Age",
     p0: "The children at Sjöhumlorna are between 8 and 9 years old.",
   },
   sjohumlorMeeting: {
-    s0: "Section meetings",
+    t0: "Section meetings",
     p0: "Day: Monday",
     p1: "Ruffen at Hässelby Strandbad.",
   },
   sjohumlorPlace: {
-    s0: "Badges",
+    t0: "Badges",
     p0: "For Spårare, there are plenty of exciting badges. Lighting a lantern for the first time can be a big challenge. Or making popcorn on a storm kitchen. There are also badges that focus on how to be a good friend or how to take care of the environment.",
   },
   sjohumlorButton: "Badge poster for Spårare",
   kaparnaUpptäckarscouter: {
-    s0: "Upptäckarscouts",
+    t0: "Upptäckarscouts",
     p0: "Many at this age are curious about the world around them, and at Kaparna we encourage that engagement. We often work practically and concretely - it can range from solving missions together to learning to take responsibility in small and big situations."
   },
   kaparnaAge: {
-    s0: "Age",
+    t0: "Age",
     p0: "The children at Kaparna are between 10 and 11 years old.",
   },
   kaparnaMeeting: {
-    s0: "Section meetings",
+    t0: "Section meetings",
     p0: "Day: Tuesday",
     p1: "Ruffen at Hässelby Strandbad",
   },
   kaparnaPlace: {
-    s0: "Badges",
+    t0: "Badges",
     p0: "There are plenty of badges that suit Upptäckare. For example, they can show that they can handle a knife and axe. Or one of the many interest badges can serve as a framework for the program. There are badges for everything from first aid, fire-making and cooking to water, darkness and superheroes.",
   },
   kaparnaButton: "Badge poster for Upptäckare",
   utmanarscouter: {
-    s0: "Utmanarscouts",
+    t0: "Utmanarscouts",
     p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
   },
   utmanareAge: {
-    s0: "Age",
+    t0: "Age",
     p0: "The scouts in the Utmanare section are 15 years and older.",
   },
   utmanareMeeting: {
-    s0: "Section meetings",
+    t0: "Section meetings",
     p0: "Day: Tuesday or Thursday.",
     p1: "Ruffen at Hässelby Strandbad.",
   },
   utmanarePlace: {
-    s0: "Challenges",
+    t0: "Challenges",
     p0: "There are ten challenges. Two of them are done individually and the rest are done together in the Utmanare team. The individual challenges have slightly stricter rules. The others are decided together in the Utmanare team.",
   },
   utmanareButton: "Discover the challenges",
   äventyrarscouter: {
-    s0: "Äventyrarscouts",
+    t0: "Äventyrarscouts",
     p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
   },
   konvojenAge: {
-    s0: "Age",
+    t0: "Age",
     p0: "The children at Kaparna are between 12 and 14 years old.",
   },
   konvojenMeeting: {
-    s0: "Section meetings",
+    t0: "Section meetings",
     p0: "Day: Thursday",
     p1: "Time: 18:00",
     p2: "Location: Ruffen at Hässelby Strandbad.",
   },
   konvojenPlace: {
-    s0: "Badges",
+    t0: "Badges",
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
@@ -1042,23 +1043,23 @@ export const En: MessagesEngType = {
   },
   download: "Download ",
   BarnOchVuxnaTillsammans: {
-    s0: "Children and Adults Together",
+    t0: "Children and Adults Together",
     p0: "Family Scouting is for children under the age of eight and an adult they feel safe with. Together, you discover scouting through play, adventure, and fun activities.",
     p1: "Children and adults participate side by side, helping each other with the activities. The adult is responsible for the child, but is also an important part of the community and participates just as much as the children.",
     p2: "The adult can be a parent, grandparent, relative, or another close person. The focus of Family Scouting is for children and adults to experience things together and strengthen their relationship."
   },
   ParumMagna: {
-    s0: "Parum & Magna",
+    t0: "Parum & Magna",
     p0: "In Family Scouting, children and adults get to follow the bears Parum and Magna on various adventures. Parum is curious and loves to discover and try new things, while Magna is wise and thinks about how everything connects. Together, they play, meet new friends, and help each other.",
     p1: "Stories and imagination are important parts of Family Scouting. Through the stories, children and adults get something to talk about and reflect on together. The stories also help spark curiosity, excitement, and a cozy atmosphere during the meetings."
   },
   Familjescoutsagor: {
-    s0: "Family Scouting Stories",
+    t0: "Family Scouting Stories",
     p0: "In Family Scouting, we use stories as a tool in our meetings. Through these narratives, children and adults can discover new themes together, spark their imagination, and build curiosity and community.",
     p1: "There are several different Family Scouting stories – both long and short, with and without rhymes. The stories are linked to various themes and activities. They help create a warm and playful feeling where children and adults can listen, reflect, and experience adventures together."
   },
   Märken: {
-    s0: "Badges",
+    t0: "Badges",
     p0: "Family Scouting has its own badges that you can earn through participation. Badges are a fun way to create pride in participating and a wonderful sense of togetherness!"
   },
   familjescouterButton: "Discover All Our Scout Badges",
@@ -1095,7 +1096,7 @@ export const En: MessagesEngType = {
     p0: "HSS's four groups hold meetings once a week."
   },
   avdelningsledare: {
-    h0: "Group Manager",
+    t0: "Group Manager",
     p0: "Each group has a group manager. Our managers are trained and have completed the mandatory course Safe Meetings."
   },
   scoutnet: {
@@ -1104,13 +1105,13 @@ export const En: MessagesEngType = {
     p1: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place.",
   },
   scoutnetButton: "Log in to Scoutnet",
-  activity:{
-    title:"Activities",
-    sub_title_one:"Camps",
-    p_one:"We organize scout camps featuring nature, community, and fun activities where children and youth develop life skills and create lasting memories.",
-    sub_title_two:"Hikes",
-    p_two:"We organize hikes where participants experience nature, work together, and tackle challenges as a team.",
-},
+  activity: {
+    title: "Activities",
+    sub_title_one: "Camps",
+    p_one: "We organize scout camps featuring nature, community, and fun activities where children and youth develop life skills and create lasting memories.",
+    sub_title_two: "Hikes",
+    p_two: "We organize hikes where participants experience nature, work together, and tackle challenges as a team.",
+  },
   form: {
     title: "Send a message",
     text: "You can send a message directly to our email using the form.",
@@ -1145,7 +1146,7 @@ export const En: MessagesEngType = {
     text2: "The inauguration marked the beginning of a place for fellowship, adventure, and memories for generations of scouts.",
     subtitle: "Images from the archives"
   },
-  cabinst:"We meet here",
+  cabinst: "We meet here",
   cabinsruffen: {
     title: "Ruffen",
     dpOne: "Ruffen is located at Hässelby Strand and is used for group meetings for Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
@@ -1187,5 +1188,10 @@ export const En: MessagesEngType = {
     headline: "DATA PROTECTION",
     title: "HSS work with GDPR",
     text: "GDPR requires us to inform our members that we collect data, what data we collect, and why we do it."
+  },
+  mysetMap: {
+    t0: "Directions",
+    p0: "Myset is located in the Lövstaskogarna forest near Kyrkhamn in Hässelby, on the border with Viksjö.",
+    p1: "Take bus 541 from Jakobsberg or Vällingby, or bus 119 from Backlura or Spånga. Get off at Lingonrisgränd bus stop and continue for approximately 3.5 km on foot through the forest to Myset. We recommend planning your trip in advance, especially if using public transport."
   },
 };
