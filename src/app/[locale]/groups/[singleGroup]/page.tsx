@@ -60,19 +60,19 @@ const Groups = ({
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle} text={messages?.GroupIntro?.SJMtext} logo="/sjohumlor-frame.svg" />
         </div>
-        <div className="bg-bg-blue pt-20 pb-20 flex flex-col items-center">
-          <div className="lg:max-w-430 lg:px-22">
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
-              <div className="flex-1">
+        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 lg:items-start flex flex-col items-center">
+          <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
+            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
+              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                 <ContentSection
-                  sectionLayout={["s", "p"]}
+                  sectionLayout={["t", "p"]}
                   page="sjohumlornaSpårarscouter"
                   background={"blue"}
                   padding={"5"}
                   child={true}
                 />
               </div>
-              <div className="flex-1 flex justify-center">
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4 md:pb-4 pb-6">
                 <Image
                   src={Sjohulorna}
                   alt="sjohulorna"
@@ -83,7 +83,7 @@ const Groups = ({
               </div>
             </div>
             <ContentSection
-              sectionLayout={["s", "p"]}
+              sectionLayout={["t", "p"]}
               page="sjohumlornaAge"
               background={"blue"}
               padding={"3"}
@@ -91,14 +91,14 @@ const Groups = ({
             />
             <div className="flex flex-col pb-4 w-full">
               <ContentSection
-                sectionLayout={["s", "p", "p"]}
+                sectionLayout={["t", "p", "p"]}
                 page="sjohumlorMeeting"
                 background={"blue"}
                 padding={"5"}
                 child={true}
               />
               <ContentSection
-                sectionLayout={["s", "p"]}
+                sectionLayout={["t", "p"]}
                 page="sjohumlorPlace"
                 background={"blue"}
                 padding={"5"}
@@ -121,9 +121,9 @@ const Groups = ({
             </div>
           </div>
         </div>
-        <div className="bg-white lg:max-w-430 lg:px-22 w-full mt-10 mb-10 max-w-7xl mx-auto">
+        <div className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
-            sectionLayout={["h", "p"]}
+            sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
@@ -138,19 +138,19 @@ const Groups = ({
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle} text={messages?.GroupIntro?.KAPtext} logo="/Kaparna-frame.svg" />
         </div>
-        <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
-          <div className="lg:max-w-430 lg:px-22">
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
-              <div className="flex-1">
+        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+          <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
+            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
+              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                 <ContentSection
-                  sectionLayout={["s", "p"]}
+                  sectionLayout={["t", "p"]}
                   page="kaparnaUpptäckarscouter"
                   background={"blue"}
                   padding={"5"}
                   child={true}
                 />
               </div>
-              <div className="flex-1 flex justify-center">
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <Image
                   src={Sjohulorna}
                   alt="kaparna"
@@ -161,7 +161,7 @@ const Groups = ({
               </div>
             </div>
             <ContentSection
-              sectionLayout={["s", "p"]}
+              sectionLayout={["t", "p"]}
               page="kaparnaAge"
               background={"blue"}
               padding={"3"}
@@ -169,14 +169,14 @@ const Groups = ({
             />
             <div className="flex flex-col gap-4 justify-center pb-4">
               <ContentSection
-                sectionLayout={["s", "p", "p"]}
+                sectionLayout={["t", "p", "p"]}
                 page="kaparnaMeeting"
                 background={"blue"}
                 padding={"5"}
                 child={true}
               />
               <ContentSection
-                sectionLayout={["s", "p"]}
+                sectionLayout={["t", "p"]}
                 page="kaparnaPlace"
                 background={"blue"}
                 padding={"5"}
@@ -199,9 +199,9 @@ const Groups = ({
             </div>
           </div>
         </div>
-        <div className="bg-white w-full lg:max-w-430 lg:px-22 items-center mt-10 mb-10 max-w-7xl mx-auto">
+        <div className="bg-white w-full lg:max-w-430 lg:px-13 xl:px-19 items-center mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
-            sectionLayout={["h", "p"]}
+            sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
@@ -216,19 +216,19 @@ const Groups = ({
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle} text={messages?.GroupIntro?.UTtext} logo="/Utmanare-frame.svg" />
         </div>
-        <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
-          <div className="lg:max-w-430 lg:px-22">
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
-              <div className="flex-1">
+        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 pb-10 lg:pb-29 2xl:px-43 lg:pt-25 flex flex-col items-center">
+          <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
+            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
+              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                 <ContentSection
-                  sectionLayout={["s", "p"]}
+                  sectionLayout={["t", "p"]}
                   page="utmanarscouter"
                   background={"blue"}
                   padding={"5"}
                   child={true}
                 />
               </div>
-              <div className="flex-1 flex justify-center">
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <Image
                   src={Sjohulorna}
                   alt="utmanare"
@@ -239,7 +239,7 @@ const Groups = ({
               </div>
             </div>
             <ContentSection
-              sectionLayout={["s", "p"]}
+              sectionLayout={["t", "p"]}
               page="utmanareAge"
               background={"blue"}
               padding={"3"}
@@ -247,14 +247,14 @@ const Groups = ({
             />
             <div className="flex flex-col gap-4 justify-center pb-4">
               <ContentSection
-                sectionLayout={["s", "p", "p"]}
+                sectionLayout={["t", "p", "p"]}
                 page="utmanareMeeting"
                 background={"blue"}
                 padding={"5"}
                 child={true}
               />
               <ContentSection
-                sectionLayout={["s", "p"]}
+                sectionLayout={["t", "p"]}
                 page="utmanarePlace"
                 background={"blue"}
                 padding={"5"}
@@ -277,9 +277,9 @@ const Groups = ({
             </div>
           </div>
         </div>
-        <div className="bg-white lg:max-w-430 lg:px-22 w-full mt-10 mb-10 max-w-7xl mx-auto">
+        <div className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
-            sectionLayout={["h", "p"]}
+            sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
@@ -294,19 +294,19 @@ const Groups = ({
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle} text={messages?.GroupIntro?.KONtext} logo="/Konvojen-frame.svg" />
         </div>
-        <div className="bg-bg-blue md:pl-5 pt-20 pb-20 flex flex-col items-center">
-          <div className="lg:max-w-430 lg:px-22">
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center md:pt-10">
-              <div className="flex-1">
+        <div className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+          <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
+            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
+              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                 <ContentSection
-                  sectionLayout={["s", "p"]}
+                  sectionLayout={["t", "p"]}
                   page="äventyrarscouter"
                   background={"blue"}
                   padding={"5"}
                   child={true}
                 />
               </div>
-              <div className="flex-1 flex justify-center">
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <Image
                   src={Sjohulorna}
                   alt="konvojen"
@@ -317,7 +317,7 @@ const Groups = ({
               </div>
             </div>
             <ContentSection
-              sectionLayout={["s", "p"]}
+              sectionLayout={["t", "p"]}
               page="konvojenAge"
               background={"blue"}
               padding={"3"}
@@ -325,14 +325,14 @@ const Groups = ({
             />
             <div className="flex flex-col gap-4 justify-center pb-4">
               <ContentSection
-                sectionLayout={["s", "p", "p", "p"]}
+                sectionLayout={["t", "p", "p", "p"]}
                 page="konvojenMeeting"
                 background={"blue"}
                 padding={"5"}
                 child={true}
               />
               <ContentSection
-                sectionLayout={["s", "p"]}
+                sectionLayout={["t", "p"]}
                 page="konvojenPlace"
                 background={"blue"}
                 padding={"5"}
@@ -355,9 +355,9 @@ const Groups = ({
             </div>
           </div>
         </div>
-        <div className="bg-white lg:max-w-430 lg:px-22 w-full mt-10 mb-10 max-w-7xl mx-auto">
+        <div className="bg-white lg:max-w-430 lg:px-13 xl:px-19 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <ContentSection
-            sectionLayout={["h", "p"]}
+            sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
             child={true}
@@ -367,42 +367,40 @@ const Groups = ({
     );
   } else if (singleGroup === "familjescouter") {
     return (
-      <>
-        <Breadcrumbs />
-        <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-        <div className="bg-bg-blue lg:pl-5 pt-10 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
-          <div className="lg:max-w-430 lg:px-8 flex flex-col gap-6">
-            <div className="flex flex-col lg:flex-row gap-4 items-center md:items-start lg:pt-10">
-              <div className="flex-1">
-                <ContentSection
-                  sectionLayout={["s", "p", "p", "p"]}
-                  page="BarnOchVuxnaTillsammans"
-                  background={"blue"}
-                  padding={"5"}
-                  child={true}
-                />
-              </div>
-              <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4 md:pt-3">
-                <Image
-                  src={Sjohulorna}
-                  alt="familjescouter"
-                  className="rounded-2xl object-cover w-full"
-                  width={358}
-                  height={257}
+    <>
+      <Breadcrumbs />
+      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
+      <div className="bg-bg-blue py-10  lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+        <div className="lg:max-w-430 flex flex-col gap-6 mx-auto">
+          <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
+            <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+              <ContentSection 
+                sectionLayout={["t", "p", "p", "p"]}
+                page="BarnOchVuxnaTillsammans"
+                background={"blue"}
+                padding={"5"}
+                child={true}
+              />
+            </div>
+            <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+              <Image
+                src={Sjohulorna}
+                alt="konvojen"
+                className="rounded-2xl object-cover w-full"
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-4 items-center lg:flex-row md:items-start lg:pt-10">
-              <div className="flex-1">
+            <div className="flex flex-col gap-4 xl:gap-55 items-center lg:flex-row md:items-start">
+              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                 <ContentSection
-                  sectionLayout={["s", "p", "p"]}
+                  sectionLayout={["t", "p", "p"]}
                   page="ParumMagna"
                   background={"blue"}
                   padding={"3"}
                   child={true}
                 />
               </div>
-              <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4 md:pt-3">
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <Image
                   src={familyImageSrc}
                   alt="Parum & Magna"
@@ -414,14 +412,14 @@ const Groups = ({
             </div>
             <div className="flex flex-col gap-4 justify-center">
               <ContentSection
-                sectionLayout={["s", "p", "p"]}
+                sectionLayout={["t", "p", "p"]}
                 page="Familjescoutsagor"
                 background={"blue"}
                 padding={"3"}
                 child={true}
               />
               <ContentSection
-                sectionLayout={["s", "p"]}
+                sectionLayout={["t", "p"]}
                 page="Märken"
                 background={"blue"}
                 padding={"3"}
