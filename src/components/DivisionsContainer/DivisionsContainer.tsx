@@ -17,7 +17,7 @@ const DivisionsContainer = () => {
           <DivisionsBox division={"kaparna"} boxStyle={"basic"} />
           <DivisionsBox division={"konvojen"} boxStyle={"basic"} />
           <DivisionsBox division={"utmanare"} boxStyle={"basic"} />
-          <DivisionsBox division={"familjescouter"} boxStyle={"basic"} />
+          <DivisionsBox division={"smattarne"} boxStyle={"basic"} />
         </div>
       </div>
     </div>
