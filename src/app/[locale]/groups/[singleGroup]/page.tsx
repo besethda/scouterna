@@ -15,14 +15,14 @@ const pageItems = [
   "kaparna",
   "utmanare",
   "konvojen",
-  "familjescouter",
+  "smattarne",
 ];
 const headDescriptions = [
   "sjohumlorna",
   "kaparna",
   "utmanare",
   "konvojen",
-  "familjescouter",
+  "smattarne",
 ]
 export async function generateMetadata({
   params,
@@ -361,7 +361,7 @@ const Groups = ({
         </div>
       </>
     );
-  } else if (singleGroup === "familjescouter") {
+  } else if (singleGroup === "smattarne") {
     return (
     <>
       <Breadcrumbs />
