@@ -10,17 +10,17 @@ import InstagramContainer from "@/components/Instagram/InstagramContainer";
 
 const Home = () => {
   return (
-    <div className="">
+    <main className="">
       <HeroContainer bgImages={{mobile: "bg-[url('/images/IMG_3420.JPEG')]", desktop:"md:bg-[url('/images/IMG_3752.JPEG')]"}} messageSection={"homeHero"} />
-      <div className="flex flex-col items-center w-full">
+      <section className="flex flex-col items-center w-full">
         <CardWithImage sectionTitle={"homePageCard"} logo="/heart.png" image="/images/IMG_6743.JPEG" />
         <HomeSection /> 
         <GoodToKnow />
         <WhiteImageBox />
         <DivisionsContainer />
-        <InstagramContainer />
-      </div>
-    </div>
+        <InstagramContainer bgBlue={true}/>
+      </section>
+    </main>
   );
 }
 export default Home

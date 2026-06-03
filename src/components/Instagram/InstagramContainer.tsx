@@ -1,7 +1,7 @@
 import Instagram from "./Instagram"
 import { instaType } from "../Gallery"
 
-const InstagramContainer = async () => {
+const InstagramContainer = async ({bgBlue=false, mobileOnly=false, showText=false}:{bgBlue?:boolean, mobileOnly?:boolean, showText?:boolean}) => {
 
   const fallbackData:Object[] = [
     {
@@ -31,8 +31,8 @@ const InstagramContainer = async () => {
       return {mediaUrl:post.mediaUrl, permalink: post.permalink, mediaType:post.mediaType, caption:post.caption, timestamp:post.timestamp, imageIndex:index}
     })
     return (
-      <div className="md:bg-bg-blue md:pt-10 w-full">
-        <Instagram photoObject={filteredData}/>
+      <div className={`${bgBlue ? "bg-bg-blue" : "bg-bg-white"} ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>
+        <Instagram photoObject={filteredData} infoText={showText}/>
       </div>
     )
   } else {
@@ -40,8 +40,8 @@ const InstagramContainer = async () => {
       return {mediaUrl:post.mediaUrl, permalink: `link${index}`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
     })
     return (
-      <div className="md:bg-bg-blue md:pt-10 w-full">
-        <Instagram photoObject={fallbackFilteredData}/>
+      <div className={`${bgBlue ? "bg-bg-blue" : "bg-bg-white"} ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>
+        <Instagram photoObject={fallbackFilteredData} infoText={showText}/>
       </div>
     )
   }
