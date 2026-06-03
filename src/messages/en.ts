@@ -421,9 +421,9 @@ export type MessagesEngType = {
     subtitle: string 
   },
   cabinst: string,
-  cabinsmyset: {title:string, p:string, dpOne:string, dpTwo:string}
+  cabinsmyset: {title:string, dpOne:string, dpTwo:string}
   mysetbtn:string,
-  cabinsruffen: {title:string, p:string, dpOne:string, dpTwo:string}
+  cabinsruffen: {title:string, dpOne:string, dpTwo:string}
   ruffenbtn: string,
   historycard: {
     headline: string,
@@ -1147,17 +1147,15 @@ export const En: MessagesEngType = {
   },
   cabinst:"We meet here",
   cabinsruffen: {
-    title: "Myset",
-    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
-    dpOne: "Myset is beautifully situated and provides a perfect environment for our wonderful campfires and other adventures. The cottage itself is pleasant and spacious, making it an ideal place for our hikes.",
-    dpTwo: "Myset is available for rent, and booking inquiries can be emailed to myset.hss.scout@gmail.com."
+    title: "Ruffen",
+    dpOne: "Ruffen is located at Hässelby Strand and is used for group meetings for Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
+    dpTwo: "The scout group also houses our Optimist dinghies here."
   },
   ruffenbtn: "Read more about Ruffen",
   cabinsmyset: {
     title: "Myset",
-    p: "Together we explore, sail and challenge ourselves, with laughter, community and sea spray in the air. This is real adventure - and it starts on the water",
-    dpOne: "Ruffen is located by Hässelby Beach and is used for section meetings for our sections Sjöhumlorna, Kaparna, Konvojen, and Utmanarna.",
-    dpTwo: "The scout group also houses our Optimist dinghies here."
+    dpOne: "Myset is beautifully situated and provides a perfect environment for our wonderful campfires and other adventures. The cottage itself is pleasant and spacious, making it an ideal place for our hikes.",
+    dpTwo: "Myset is available for rent, and booking inquiries can be emailed to myset.hss.scout@gmail.com."
   },
   mysetbtn: "Read more about Myset",
   historycard: {
