@@ -868,9 +868,9 @@ export const Sv: MessagesSvType = {
     {
       question: "Varför har vi en scoutdräkt?",
       answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra. Så här kommer du igång med 
-      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium\" > Trygga möten >> </a>
+      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\" > Trygga möten >> </a>
       Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas.
-      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium\" >Läs mer om Leda socuting här >> </a>
+      <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\" >Läs mer om Leda socuting här >> </a>
       När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att wybrać mellan. Du hittar dem alla på Ledarskapsön. 
       <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Läs mer om dem här >></a>
       `
@@ -881,7 +881,7 @@ export const Sv: MessagesSvType = {
     },
     {
       question: "Jag har tappat bort min faktura. Vad gör jag?",
-      answer: `Skicka ett mejl till <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-midium "\>support@scouterna.se </a>
+      answer: `Skicka ett mejl till <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium"\>support@scouterna.se </a>
       med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.`
     },
     {
@@ -890,15 +890,15 @@ export const Sv: MessagesSvType = {
     },
     {
       question: "Hur ändrar jag min fakturaadress?",
-      answer: `Gå till <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ > www.scoutnet.se</a>, logga in och ändra din fakturaadress.`
+      answer: `Gå till <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium"\ > www.scoutnet.se</a>, logga in och ändra din fakturaadress.`
     },
     {
       question: "Min faktura har felaktigt belopp. Vad gör jag?",
-      answer: `Skicka ett mejl till <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-midium "\>support@scouterna.se </a>.se och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.`
+      answer: `Skicka ett mejl till <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium"\>support@scouterna.se </a> och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.`
     },
     {
       question: "Hur ändrar jag mina kontaktuppgifter?",
-      answer: `Logga in på <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-midium "\ > www.scoutnet.se</a>.se där kan du uppdatera dina uppgifter.`
+      answer: `Logga in på <a href=\"https://www.scoutnet.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium"\ > www.scoutnet.se</a> där kan du uppdatera dina uppgifter.`
     },
   ],
   lifestyle: {
