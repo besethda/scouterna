@@ -71,7 +71,7 @@ const Groups = ({
               <div className="flex-1 flex justify-center">
                 <Image
                   src={Sjohulorna}
-                  alt="sjohulorna"
+                  alt="sjöhumlorna"
                   className="rounded-2xl object-cover"
                   width={358}
                   height={257}
