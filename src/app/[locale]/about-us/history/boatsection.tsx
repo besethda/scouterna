@@ -31,7 +31,7 @@ const BoatSection = ({photoArray}:{photoArray?:any[]}) => {
 
   return (
     <div className="w-full bg-bg-white pb-16 pt-6">
-      <Gallery photoObject={galleryPhotos} fade={true}/>
+      <Gallery photoObject={galleryPhotos} caption={true}/>
     </div>
   )
 }
