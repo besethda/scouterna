@@ -34,8 +34,8 @@ const HomeSection = () => {
         </div>
       </section>
 
-        <div className="w-full md:bg-bg-blue flex justify-center">
-          <section className="hidden md:flex flex-row px-22 py-10 gap-25 bg-(--bg-blue) md:pb-25 lg:mt-6 lg:max-w-430 ">
+      <div className="w-full md:bg-bg-blue flex justify-center">
+        <section className="hidden md:flex flex-row px-22 py-10 gap-25 bg-(--bg-blue) md:pb-25 lg:mt-6 lg:max-w-430 ">
           <div className="relative aspect-video max-w-100  md:h-40 lg:h-60">
             <Image
               src={hood}
@@ -46,7 +46,6 @@ const HomeSection = () => {
           <div className="flex flex-col flex-1 gap-4">
             <div className="text-h2 md:text-h2-desktop font-normal font-albert text-primary tracking-[-0.5%]">{messages?.homePage?.title}</div>
             <div className="font-albert text-body md:text-body-desktop tracking-[3%] text-text-black">{messages?.homePage?.subtitle2}</div>
-            <CTABtn text={messages?.homePage?.button} onClick={handleClick}/>
           </div>
         </section>
       </div>
