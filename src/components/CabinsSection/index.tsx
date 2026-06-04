@@ -15,12 +15,12 @@ const CabinsSection = () => {
   const currentLocal = params?.local ||urlLocal || "sv"
 
   return(
-    <div className="flex flex-col items-center md:gap-5 md:mb-20 ">
+    <div className="flex flex-col lg:max-w-430 lg:px-22 md:px-4 w-full font-albert items-center md:gap-5 md:mb-20 ">
       <div className="hidden md:block w-full max-w-6xl">
         <h2 className=" text-primary text-h2-desktop">{messages?.cabinst}</h2>
       </div>
-      <div className="flex flex-col md:border md:border-lightBlue md:rounded-2xl bg-bg-blue w-full max-w-6xl lg:h-90 ">
-        <div className="flex px-5 gap-3 w-full h-full">
+      <div className="flex flex-col md:border md:border-lightBlue md:rounded-2xl bg-bg-blue px-4 lg:px-0 w-full max-w-6xl lg:h-90 ">
+        <div className="flex md:px-5 gap-3 w-full h-full">
           <div className="hidden md:flex items-start shrink-0 pt-6 ">
             <Image src="/blueHouseYellowBg.svg" alt="logo" width={44} height={44} className="h-10 w-auto" />
           </div>

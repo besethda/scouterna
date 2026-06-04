@@ -21,7 +21,7 @@ const Cabins = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <main>
             <Breadcrumbs />
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col w-full items-center">
                 <CardWithoutImage headline={messages?.cabinsCard?.headline} logo="/blueHouse.png" title={messages?.cabinsCard?.title} text={messages?.cabinsCard?.text} MDlogo="/blueHouseYellowBg.svg" />  
             </div>
             <CabinsSection />

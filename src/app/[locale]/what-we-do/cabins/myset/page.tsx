@@ -38,7 +38,7 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                     MDlogo="/blueHouseYellowBg.svg"
                 />
                 <div className="px-4 md:py-3 w-full flex flex-col items-center bg-bg-blue ">
-                    <div className="lg:max-w-430 lg:px-22 w-full">
+                    <div className="lg:max-w-430 lg:px-22 w-full pb-8 md:pb-12">
                         <ContentSection sectionLayout={["t", "p"]} page="myset01" background="blue" padding="top" child={true} />
                         <div className="bg-bg-blue pt-2">
                             <ImageContainer />
@@ -51,12 +51,12 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                                 <CTABtn text={messages?.mysetBtn?.text} />
                             </a>
                         </div>
-                        <ContentSection sectionLayout={["t", "p"]} page="myset03" background="blue" padding="bottom" child={true} />
+                        <ContentSection sectionLayout={["t", "p"]} page="myset03" background="blue" padding="none" child={true} />
                     </div>
                 </div>
-                <div className="pb-10 md:pt-18 md:pb-25 lg:max-w-430 lg:px-22 w-full">
+                <div className="pb-10 md:pt-6 md:pb-16 lg:max-w-430 lg:px-22 px-4 w-full">
                     <ContentSection sectionLayout={["t", "p", "p"]} page={"mysetMap"} padding="top" child={true} />
-                    <div className="p-4">
+                    <div className="">
                         <MapWrapper page="myset" />
                     </div>
                 </div>
