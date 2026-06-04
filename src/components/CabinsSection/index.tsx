@@ -53,13 +53,11 @@ const CabinsSection = () => {
             <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpOne}</p>
             <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpTwo}</p>
             <div className="mt-7">
-              <a href={messages?.path + '/what-we-do/cabins/ruffen'}>
                 <Link
                     href={`/${currentLocal}/what-we-do/cabins/ruffen`}>
                     <CTABtn text={messages?.ruffenbtn}
                     />
                   </Link>
-                </a>
             </div>
           </div>
           <div className="w-93 shrink-0 hidden md:block mt-6 mb-6 mr-6">
