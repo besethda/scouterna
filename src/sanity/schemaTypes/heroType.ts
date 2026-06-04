@@ -15,7 +15,9 @@ export const heroType =
       defineField({name: 'hero_description_sv', title: 'Hero Beskrivning (SV)', type: 'text'}),
       defineField({name: 'hero_description_en', title: 'Hero Beskrivning (EN)', type: 'text'}),
       defineField({name: 'button_sv', title: 'Button (SV)', type: 'string', readOnly: true, hidden: true}),
-      defineField({name: 'button_en', title: 'Button (EN)', type: 'string', readOnly: true, hidden: true})
+      defineField({name: 'button_en', title: 'Button (EN)', type: 'string', readOnly: true, hidden: true}),
+      defineField({name: 'background_mobile', title: 'Mobil bakgrund', type: 'image'}),
+      defineField({name: 'background_desktop', title: 'Skrivbordsbakgrund', type: 'image'})
     ]
   })
 

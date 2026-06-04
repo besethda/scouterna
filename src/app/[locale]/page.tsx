@@ -5,10 +5,15 @@ import GoodToKnow from "@/components/GoodToKnow-home";
 import HeroContainer from "@/components/HeroContainer/HeroContainer";
 import DivisionsContainer from "@/components/DivisionsContainer/DivisionsContainer";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
+import { getId } from "@/lib/utils";
 
 
+const Home = async () => {
 
-const Home = () => {
+    const data = await getId('f8289432-da1c-4c3a-9990-ee87e97a82f7')
+    console.log(data)
+
+
   return (
     <main className="">
       <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_3420.JPEG')]", desktop: "md:bg-[url('/images/IMG_3752.JPEG')]" }} messageSection={"homeHero"} />

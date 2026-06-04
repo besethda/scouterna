@@ -12,6 +12,7 @@ import {structureTool} from 'sanity/structure'
 import {apiVersion, dataset, projectId} from './src/sanity/env'
 import {schema} from './src/sanity/schemaTypes'
 import {structure} from './src/sanity/structure'
+import Navbar from '@/sanity/lib/navbar'
 
 export default defineConfig({
   basePath: '/studio',
@@ -19,6 +20,12 @@ export default defineConfig({
   dataset,
   // Add and edit the content schema in the './sanity/schemaTypes' folder
   schema,
+  // sanity.config.js
+  studio: {
+    components: {
+      navbar: Navbar,
+    }
+  },
   plugins: [
     structureTool({structure}),
     // Vision is for querying with GROQ from inside the Studio
@@ -26,3 +33,5 @@ export default defineConfig({
     visionTool({defaultApiVersion: apiVersion}),
   ],
 })
+
+
