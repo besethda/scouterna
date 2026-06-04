@@ -48,6 +48,9 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       efternamn={messages?.form.efternamn}
       epost={messages?.form.epost}
       meddelande={messages?.form.meddelande}
+      successTxt={messages.form.successTxt} 
+      errorTxt={messages.form.errorTxt}
+      networkErrorTxt={messages.form.networkErrorTxt}
       />
     </main>
   )

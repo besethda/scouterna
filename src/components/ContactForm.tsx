@@ -15,10 +15,13 @@ interface EmailFormData {
     namn:string;
     efternamn:string;
     epost:string;
-    meddelande:string
+    meddelande:string;
+    errorTxt:string;
+    networkErrorTxt:string;
+    successTxt: string;
 };
 
-const ContactForm = ({ title, text, lastName, firstName, email, message, buttonText, namn,efternamn,epost,meddelande }: EmailFormData) => {
+const ContactForm = ({ title, text, lastName, firstName, email, message, buttonText, namn,efternamn,epost,meddelande, errorTxt,networkErrorTxt,successTxt }: EmailFormData) => {
     const {
         register,
         handleSubmit,
@@ -27,24 +30,23 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
     } = useForm<EmailFormData>()
 
     const onSubmit = async (data: EmailFormData) => {
-        console.log("form data", data);
         
         try {
             const result = await sendContactEmail({
                 firstName: data.firstName,
                 lastName: data.lastName,
                 email: data.email,
-                message: data.message
+                message: data.message,
             });
 
             if (result.success) {
-                toast.success("Email Sent Successfully!");
+                toast.success(successTxt);
                 reset();
             } else {
-                console.log("server error:", result.error);
+                toast.error(result.error || errorTxt);
             }
         } catch (error) {
-            console.log("Network error:", error);
+            toast.error(networkErrorTxt);
         }
     };
 
