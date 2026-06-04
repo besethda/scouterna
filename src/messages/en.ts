@@ -967,7 +967,8 @@ export const En: MessagesEngType = {
   },
   myset01: {
     t0: "Interested in renting Myset?",
-    p0: "Email myset.hss.scout@gmail.com to make a booking inquiry.",
+    p0: "Email ",
+    p1: "to make a booking inquiry."
   },
 
   myset02: {
