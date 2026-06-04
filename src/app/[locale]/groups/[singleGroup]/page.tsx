@@ -470,7 +470,7 @@ const Groups = ({
             />
           </div>
           <div className="
-[&_button]:border 
+              [&_button]:border 
             [&_button]:border-purple
           [&_button]:bg-purple-opaque
           [&_button]:text-primary
