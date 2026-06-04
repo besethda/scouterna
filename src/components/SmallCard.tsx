@@ -37,7 +37,7 @@ const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext,
       </div>
       <div className="flex flex-col gap-6 lg:col-start-1">
         <div className="flex flex-col gap-2">
-          <p className="font-medium text-h3 tracking-[-0.5%] text-text-black md:text-h3-desktop">
+          <p className="font-medium text-h2 tracking-[-0.5%] text-primary md:text-h3-desktop">
             {secondTitle}
           </p>
           <div className="flex flex-col gap-2 text-text-black font-normal text-body tracking-[3%] md:text-body-desktop">

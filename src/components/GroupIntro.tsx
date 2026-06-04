@@ -9,7 +9,7 @@ interface GroupIntroProps {
 
 const GroupIntro = ({ headline, title, text, logo }: GroupIntroProps) => {
   return (
-    <div className="flex lg:max-w-430 lg:px-22 w-full flex-col px-4 gap-2 pt-5 pb-10 font-albert md:pt-12.5 md:px-25 md:pb-25">
+    <div className="flex lg:max-w-430 lg:px-22 w-full flex-col px-4 gap-2 pt-5 pb-10 font-albert md:pt-12.5 md:pb-16">
       <div className="flex justify-between">
         <div className="">
           <p className="font-bold text-acc uppercase text-text-blue tracking-[1.5px] md:text-[16px]">

@@ -33,13 +33,13 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <CardWithImage sectionTitle={"joinCard"} logo="/heart.png" image="/images/DSCF3017.jpg" />
                 <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife" />
                 <div className="w-full h-0 md:h-8"></div>
-                <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image="/images/DSCF3361.jpg" secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
+                <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image="/images/IMG_2677.JPEG" secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
                 <section className="flex flex-col gap-6 font-albert pt-6 px-4 pb-8 md:pb-14 lg:max-w-430 lg:px-22">
                     <div className="flex flex-col gap-4">
                         <h2 className="text-h2 font-albert font-medium text-primary md:text-h3-desktop">
                             {messages?.joinContent?.title}
                         </h2>
-                        <p className="text-text-black text-body md:text-body-desktop tracking-[3%]">
+                        <p className="text-text-black text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
                             {messages?.joinContent?.text}
                         </p>
                     </div>
@@ -49,7 +49,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                     >
                         <CTABtn text={messages?.joinContent?.button} />
                     </a>
-                    <p className="text-text-black text-body md:text-body-desktop tracking-[3%]">
+                    <p className="text-text-black text-body md:text-body-desktop lg:max-w-[72%] tracking-[3%]">
                         {messages?.joinContent?.text02}
                     </p>
                         <a
@@ -59,10 +59,10 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             <CTABtn text={messages?.joinContent?.button02} />
                         </a>
                     <div className="flex flex-col gap-6">
-                        <h3 className="text-h3 font-medium text-[#00355F]  md:text-h3-desktop">
+                        <h3 className="text-h2 font-medium text-[#00355F]  md:text-h3-desktop">
                             {messages?.joinContent?.title02}
                         </h3>
-                        <p className="text-text-black pb-4 text-body md:text-body-desktop tracking-[3%]">
+                        <p className="text-text-black pb-4 text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
                             {messages?.joinContent?.text03}
                         </p>
                     </div>

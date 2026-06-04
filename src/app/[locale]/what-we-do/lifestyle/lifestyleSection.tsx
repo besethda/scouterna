@@ -12,8 +12,8 @@ const LifeStyleSection = ({ }) => {
 
   return (
     <div className="px-4 bg-bg-blue py-8 md:py-25 w-full flex justify-center font-albert flex-col items-center">
-      <div className="lg:max-w-430 lg:px-22">
-        <div className="text-h2 md:text-h2-desktop w-full md:max-w-300 text-primary">{messages.offers.title}</div>
+      <div className="lg:max-w-430 lg:px-22 w-full flex flex-col items-center">
+        <div className="text-h2 md:text-h2-desktop w-full md:pb-4 text-primary">{messages.offers.title}</div>
         <div className="flex flex-col md:flex-row md:justify-center md:flex-wrap w-full md:max-w-300">
           {[...Array(4)].map((e, index) => {
             return (

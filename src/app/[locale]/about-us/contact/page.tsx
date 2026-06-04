@@ -33,30 +33,27 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       title={messages?.interestBtn.title}
       text={messages?.interestBtn.text}
       buttonText={messages?.interestBtn.buttonText}
-      className="items-start text-left"
       />
-      <ContentSection sectionLayout={["t", "p"]} page={"form_title"} />
+      <div className="w-full flex justify-center bg-bg-blue">
       <ContactForm 
-      title={messages?.form.title}
-      text={messages?.form.text}
-      lastName={messages?.form.lastName}
-      firstName={messages?.form.firstName}
-      email={messages?.form.email}
-      message={messages?.form.message}
-      buttonText={messages?.form.buttonText}
-      namn={messages?.form.namn}
-      efternamn={messages?.form.efternamn}
-      epost={messages?.form.epost}
-      meddelande={messages?.form.meddelande}
+        title={messages?.form.title}
+        text={messages?.form.text}
+        lastName={messages?.form.lastName}
+        firstName={messages?.form.firstName}
+        email={messages?.form.email}
+        message={messages?.form.message}
+        buttonText={messages?.form.buttonText}
+        namn={messages?.form.namn}
+        efternamn={messages?.form.efternamn}
+        epost={messages?.form.epost}
+        meddelande={messages?.form.meddelande}
+        successTxt={messages.form.successTxt} 
+        errorTxt={messages.form.errorTxt}
+        networkErrorTxt={messages.form.networkErrorTxt}
       />
+      </div>
     </main>
   )
 }
-
-
-
-
-
-
 
 export default Contact
