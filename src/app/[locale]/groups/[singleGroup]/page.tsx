@@ -1,4 +1,4 @@
-import { En} from "@/messages/en";
+import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -9,6 +9,8 @@ import CTABtn from "@/components/CTA-button";
 import Sjohulorna from "../../../../../public/images/DSCF3033.jpg";
 import GroupIntro from "@/components/GroupIntro";
 import Link from 'next/link';
+import Family from '../../../../../public/images/ParumMagna.png'
+import FamilyEn from '../../../../../public/images/ParumMagnaEng.png'
 
 const pageItems = [
   "sjohumlorna",
@@ -36,7 +38,7 @@ export async function generateMetadata({
     ? getPageHeadTitle(locale, singleGroup, matchedTabTitle)
     : getPageHeadTitle(locale, "HSS | Hem", "Hem sidan");
   return tabTitle
-}  
+}
 
 const Groups = ({
   params,
@@ -45,16 +47,18 @@ const Groups = ({
 }) => {
 
 
-  
+
   const { singleGroup, locale } = use(params);
   const messages = locale === "en" ? En : Sv;
+
+  const familyImageSrc = locale === "en" ? FamilyEn : Family;
 
   if (singleGroup === "sjohumlorna") {
     return (
       <main>
         <Breadcrumbs />
         <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle}  text={messages?.GroupIntro?.SJMtext}  logo="/sjohumlor-frame.svg" />
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle} text={messages?.GroupIntro?.SJMtext} logo="/sjohumlor-frame.svg" />
         </div>
         <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 lg:items-start flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
@@ -137,7 +141,7 @@ const Groups = ({
       <main>
         <Breadcrumbs />
         <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle}  text={messages?.GroupIntro?.KAPtext}  logo="/Kaparna-frame.svg"/>
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle} text={messages?.GroupIntro?.KAPtext} logo="/Kaparna-frame.svg" />
         </div>
         <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
@@ -220,7 +224,7 @@ const Groups = ({
       <main>
         <Breadcrumbs />
         <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle}  text={messages?.GroupIntro?.UTtext}  logo="/Utmanare-frame.svg" />
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle} text={messages?.GroupIntro?.UTtext} logo="/Utmanare-frame.svg" />
         </div>
         <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 pb-10 lg:pb-29 2xl:px-43 lg:pt-25 flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
@@ -303,7 +307,7 @@ const Groups = ({
       <main>
         <Breadcrumbs />
         <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle}  text={messages?.GroupIntro?.KONtext}  logo="/Konvojen-frame.svg" />
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle} text={messages?.GroupIntro?.KONtext} logo="/Konvojen-frame.svg" />
         </div>
         <section className="bg-bg-blue py-10 lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
           <div className="lg:max-w-430 flex flex-col gap6 mx-auto">
@@ -404,43 +408,45 @@ const Groups = ({
                 alt="konvojen"
                 className="rounded-2xl object-cover w-full"
                 />
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col gap-4 xl:gap-55 items-center lg:flex-row md:items-start">
-            <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+            <div className="flex flex-col gap-4 xl:gap-55 items-center lg:flex-row md:items-start">
+              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                <ContentSection
+                  sectionLayout={["t", "p", "p"]}
+                  page="ParumMagna"
+                  background={"blue"}
+                  padding={"3"}
+                  child={true}
+                />
+              </div>
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+                <Image
+                  src={familyImageSrc}
+                  alt="Parum & Magna"
+                  className="rounded-2xl object-cover w-full"
+                  width={358}
+                  height={257}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4 justify-center">
               <ContentSection
                 sectionLayout={["t", "p", "p"]}
-                page="ParumMagna"
+                page="Familjescoutsagor"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+              <ContentSection
+                sectionLayout={["t", "p"]}
+                page="Märken"
                 background={"blue"}
                 padding={"3"}
                 child={true}
               />
             </div>
-            <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
-              <Image
-                src={Sjohulorna}
-                alt="Familjescouter img"
-                className="rounded-2xl object-cover w-full"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col gap-4 justify-center">
-            <ContentSection
-              sectionLayout={["t", "p", "p"]}
-              page="Familjescoutsagor"
-              background={"blue"}
-              padding={"3"}
-              child={true} 
-            />
-            <ContentSection
-              sectionLayout={["t", "p"]}
-              page="Märken"
-              background={"blue"}
-              padding={"3"}
-              child={true} 
-            />
-          </div>
-          <div className="
+            <div className="
             [&_button]:border 
             [&_button]:border-purple
           [&_button]:bg-purple-opaque

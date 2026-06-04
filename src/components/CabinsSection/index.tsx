@@ -2,7 +2,9 @@
 import useMessages from "@/hook/useMessages"
 import CTABtn from "../CTA-button"
 import Image from "next/image"
-import Picture from "../../../public/images/DSCF3036.jpg"
+import Picture from "../../../public/images/IMG_9122.jpeg"
+import ruffen from '../../../public/images/ruffen.jpg'
+
 import { useParams, usePathname } from "next/navigation"
 import Link from "next/link"
 
@@ -61,7 +63,7 @@ const CabinsSection = () => {
             </div>
           </div>
           <div className="w-93 shrink-0 hidden md:block mt-6 mb-6 mr-6">
-            <Image src={Picture} alt="picture" className="rounded-3xl object-cover w-full h-48 md:h-56 lg:h-72" />
+            <Image src={ruffen} alt="picture" className="rounded-3xl object-cover w-full h-48 md:h-56 lg:h-72" />
           </div>
         </div>
       </div>

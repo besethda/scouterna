@@ -10,7 +10,7 @@ const ImageContainer = () => {
     <>
       <div className="rounded-[50%] min-w-73.5 min-h-55.25">
         <Image
-          src="/images/IMG_5133.JPG"
+          src="/images/IMG_0980.JPG"
           alt="image"
           width={800}
           height={600}
