@@ -17,14 +17,14 @@ const pageItems = [
   "kaparna",
   "utmanare",
   "konvojen",
-  "familjescouter",
+  "smattarne",
 ];
 const headDescriptions = [
   "sjohumlorna",
   "kaparna",
   "utmanare",
   "konvojen",
-  "familjescouter",
+  "smattarne",
 ]
 export async function generateMetadata({
   params,
@@ -75,7 +75,7 @@ const Groups = ({
               <div className="flex w-89.5 h-auto md:pt-5 md:px-4 md:pb-4 pb-6">
                 <Image
                   src={Sjohulorna}
-                  alt="sjohulorna"
+                  alt="sjöhumlorna"
                   className="rounded-2xl object-cover"
                   width={358}
                   height={257}
@@ -385,7 +385,7 @@ const Groups = ({
         </section>
       </main>
     );
-  } else if (singleGroup === "familjescouter") {
+  } else if (singleGroup === "smattarne") {
     return (
     <main>
       <Breadcrumbs />
