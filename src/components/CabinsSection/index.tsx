@@ -26,7 +26,7 @@ const CabinsSection = () => {
           <div className="hidden md:flex items-start shrink-0 pt-6 ">
             <Image src="/blueHouseYellowBg.svg" alt="logo" width={44} height={44} className="h-10 w-auto" />
           </div>
-          <div className="flex flex-col flex-1 py-6 mr-20">
+          <div className="flex flex-col flex-1 py-6 md:mr-20">
             <h3 className="text-primary text-h3-desktop">{messages?.cabinsmyset.title}</h3>
             <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A] ">{messages?.cabinsmyset.dpOne}</p>
             <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsmyset.dpTwo}</p>
@@ -48,7 +48,7 @@ const CabinsSection = () => {
           <div className="hidden md:flex items-start shrink-0 pt-6">
             <Image src="/blueHouseYellowBg.svg" alt="logo" width={44} height={44} className="h-10 w-auto" />
           </div>
-          <div className="flex flex-col flex-1 md:py-6 py-8 mr-20">
+          <div className="flex flex-col flex-1 md:py-6 py-8 md:mr-20">
             <h3 className="text-primary text-h3-desktop">{messages?.cabinsruffen.title}</h3>
             <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpOne}</p>
             <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpTwo}</p>
