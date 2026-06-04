@@ -8,7 +8,7 @@ import useMessages from "@/hook/useMessages"
 const WhiteImageBox = () => {
 
     const iconList = [{ icon: "ship" }, { icon: "heart" }, { icon: "compass" }]
-    const imgList: Record<string, string> = { img1: "DSCF1948.jpg", img2: "IMG_1934.JPEG", img3: "IMG_8981.PNG" }
+    const imgList: Record<string, string> = { img1: "IMG_0406.JPEG", img2: "IMG_1934.JPEG", img3: "IMG_7824.JPEG" }
     const messages = useMessages()
 
     return (

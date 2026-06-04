@@ -37,7 +37,7 @@ const InstagramContainer = async ({bgBlue=false, mobileOnly=false, showText=fals
     )
   } else {
     const fallbackFilteredData: instaType[]= fallbackData.map((post: any, index:number)=> {
-      return {mediaUrl:post.mediaUrl, permalink: `link${index}`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
+      return {mediaUrl:post.mediaUrl, permalink: `https://www.instagram.com/hss_scout/`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
     })
     return (
       <div className={`${bgBlue ? "bg-bg-blue" : "bg-bg-white"} ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>

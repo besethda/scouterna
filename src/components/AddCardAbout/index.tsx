@@ -19,15 +19,15 @@ const CardAbout = ({ card, page, image, logo, MDlogo}: pathType) => {
   const messages = useMessages();
   return (
     <div>
-      <div className="hidden md:block">
+      <div className="hidden w-full justify-center md:flex">
         <CardWithImage
           sectionTitle={page}
           logo={logo}
           image={image}
         />
       </div>
-      <div className="block md:hidden">
-        <div className="-ml-2 sm:-ml-3 max-[345px]:ml-4 min-[412px]:-ml-10 min-[480px]:-ml-43 md:-ml-5"> 
+      <div className="flex md:hidden">
+        <div className="md:px-0 w-full"> 
           <CardWithoutImage
             headline={messages?.[card]?.headline || ""}
             logo={logo}

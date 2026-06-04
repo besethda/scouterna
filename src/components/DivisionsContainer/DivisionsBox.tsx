@@ -24,7 +24,7 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
         {boxStyle !== "image" ? <div className={`w-16 h-16 rounded-xl flex justify-center items-center ${colorReference[division][1]}`}>
           <Image src={`/${division.toLowerCase()}.svg`} width={48} height={48} alt={messages?.division[`${division}_title`] ?? ""} className="bg-white" />
         </div>
-          : <div className="text-h2 font-albert pt-4 text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
+          : <div className={`text-h2 font-albert ${boxStyle === "image" ? "" : "pt-4"} text-primary`}>{messages?.division[`${division}_title`] ?? ""}</div>}
         <div className="font-bold text-sm text-primary font-public tracking-widest uppercase text-right">{messages?.division[`${division}_ages`] ?? ""}</div>
       </div>
       <div className={`mt-3 order-2 ${boxStyle === "image" && "md:max-w-[50%] lg:max-w-[70%] lg:pr-5"}`}>
@@ -34,7 +34,7 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
           <div className="text-body font-varela">{messages?.division.time} {messages?.division[`${division}_time`] ?? ""}</div>
           <div className="text-body font-varela">{messages?.division.place} {messages?.division[`${division}_place`] ?? ""}</div>
         </div>}
-        {boxStyle === "image" && <div className="text-body-desktop font-albert text-text-black">{messages?.division[`${division}_paragraph`] ?? ""}</div>}
+        {boxStyle === "image" && <div className="md:text-body-desktop text-body font-albert text-text-black">{messages?.division[`${division}_paragraph`] ?? ""}</div>}
       </div>
       {boxStyle === "image" && <div className="order-3 md:order-4 md:mt-7 lg:mt-2 w-full md:max-w-[70%] mt-5">
         <div className={`aspect-6/5 mb-2 h-full w-auto relative lg:max-h-62 md:max-h-72`}>
