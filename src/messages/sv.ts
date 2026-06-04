@@ -79,12 +79,12 @@ type MessagesSvType = {
     utmanare_time: string,
     utmanare_place: string,
     utmanare_paragraph: string,
-    familjescouter_title: string,
-    familjescouter_ages: string,
-    familjescouter_day: string,
-    familjescouter_time: string,
-    familjescouter_place: string,
-    familjescouter_paragraph: string,
+    smattarne_title: string,
+    smattarne_ages: string,
+    smattarne_day: string,
+    smattarne_time: string,
+    smattarne_place: string,
+    smattarne_paragraph: string,
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -171,7 +171,7 @@ type MessagesSvType = {
       kaparna: string,
       utmanare: string,
       konvojen: string,
-      familjescouter: string,
+      smattarne: string,
       join: string,
       "become-a-scout": string,
       faq: string,
@@ -196,7 +196,7 @@ type MessagesSvType = {
     kaparna: string,
     konvojen: string,
     utmanare: string,
-    familjescouter: string,
+    smattarne: string,
     lifestyle: string,
     boats: string,
     cabins: string,
@@ -218,7 +218,7 @@ type MessagesSvType = {
     kaparna: string,
     konvojen: string,
     utmanare: string,
-    familjescouter: string,
+    smattarne: string,
     lifestyle: string,
     boats: string,
     cabins: string,
@@ -487,7 +487,7 @@ export const Sv: MessagesSvType = {
     nav_unit2: "Kaparna",
     nav_unit3: "Konvojen",
     nav_unit4: "Utmanare",
-    nav_unit5: "Familjescouter",
+    nav_unit5: "Småttarne",
     nav_whatWeDo: "Vad vi gör",
     nav_LifeScout: "Livet som Sjöscout",
     nav_boats: "Våra båtar",
@@ -559,12 +559,12 @@ export const Sv: MessagesSvType = {
     utmanare_time: "18:00",
     utmanare_place: "Ruffen",
     utmanare_paragraph: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.",
-    familjescouter_title: "Familjescouter",
-    familjescouter_ages: "Under 8 år",
-    familjescouter_day: "Fredag",
-    familjescouter_time: "18:00",
-    familjescouter_place: "Ruffen",
-    familjescouter_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
+    smattarne_title: "Småttarne",
+    smattarne_ages: "Under 8 år",
+    smattarne_day: "Fredag",
+    smattarne_time: "18:00",
+    smattarne_place: "Ruffen",
+    smattarne_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
     scouts_title: "Scouter",
     scouts_paragraph: "Vi har åldersindelade avdelningar från och med 8 års ålder. ",
     family_title: "Familjescouting",
@@ -623,7 +623,7 @@ export const Sv: MessagesSvType = {
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
-      familjescouter: "Familjescouter",
+      smattarne: "Småttarne",
       join: "Gå med i Scouterna",
       "become-a-scout": "Bli Sjöscout",
       faq: "Frågor & svar"
@@ -666,7 +666,7 @@ export const Sv: MessagesSvType = {
     kaparna: "HSS | Kaparna",
     konvojen: "HSS | Konvojen",
     utmanare: "HSS | Utmanare",
-    familjescouter: "HSS | Familjescouter",
+    smattarne: "HSS | Småttarne",
     lifestyle: "HSS | Livet som Sjöscout",
     boats: "HSS | Båtar",
     cabins: "HSS | Scoutstugor",
@@ -687,7 +687,7 @@ export const Sv: MessagesSvType = {
     kaparna: "Kaparna",
     konvojen: "Konvojen",
     utmanare: "Utmanare",
-    familjescouter: "Familjescouter",
+    smattarne: "Småttarne",
     lifestyle: "Livet som Sjöscout",
     boats: "Båtar",
     cabins: "Scoutstugor",
@@ -857,28 +857,40 @@ export const Sv: MessagesSvType = {
     title02: "Medlemsfrågor"
   },
   fragorSvar: [
-    { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
-    { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
-    { question: "Hålls möten alltid utomhus?", answer: "svar" },
-    { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
-    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
-    { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
+    { question: "Behöver vi köpa en scoutuniform på en gång?", 
+      answer: "Nej, du behöver inte köpa en scoutskjorta direkt. Det är bäst att vara med i några veckor först för att se så att du vill fortsätta med scouterna." 
+    },
+    { question: "Vad för kläder brukar scouterna ha på sig?", 
+      answer: "En scoutskjorta, en HSS-tröja och tåliga byxor." 
+    },
+    { question: "Hålls möten alltid utomhus?",
+      answer: "Oftast ja, men på vintern ses vi ibland inomhus i vår scoutstuga Ruffen." 
+    },
+    { question: "Hur mycket kostar det att vara med i scouterna?", 
+      answer: "Det beror på din ålder och roll. Fråga din scoutledare eller skicka ett mejl till info@hss-scout.org. För 2026 ligger avgifterna på mellan 300–850 kr för scouter och mellan 50–180 kr for ledare." 
+    },
+    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", 
+      answer: "Nej, ingen tidigare erfarenhet av segling eller scouting behövs." 
+    },
+    { question: "Vi har blivit medlemmar- vad händer nu?", 
+      answer: "Din avdelningsledare kommer att ta kontakt med dig och ge information om nästa steg. Välkommen!" 
+    },
   ],
   fragorSvar02: [
     {
       question: "Varför har vi en scoutdräkt?",
-      answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra.
-      Så här kommer du igång med Trygga möten >> 
-      Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas.
-      Läs mer om Leda socuting här >> När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att wybrać mellan. Du hittar dem alla på Ledarskapsön. Läs mer om dem här >>`
+      answer: "Scoutdräkten är ett sätt att visa att vi alla tillhör Scouterna. Scoutdräkten skapar gemenskap, stärker vår identitet och är en del av vårt symboliska ramverk. Scoutdräkt används i olika utföranden i hela världen och visar på att vi tillhör en global rörelse."
     },
     {
       question: "Jag är ny scoutledare! Vilken utbildning ska jag gå först?",
-      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.`
+      answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra. Så här kommer du igång med <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\" > Trygga möten >> </a> 
+      <br/> Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas. <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\" >Läs mer om Leda socuting här >> </a> <br/>
+      När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att välja mellan. Du hittar dem alla på Ledarskapsön. <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Läs mer om dem här >></a>`
     },
     {
       question: "Jag har tappat bort min faktura. Vad gör jag?",
-      answer: `Skicka ett mejl till support@scouterna.se med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.`
+      answer: `Skicka ett mejl till <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium"\>support@scouterna.se </a>
+      med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.`
     },
     {
       question: "Vad ingår i min medlemsavgift?",
@@ -886,15 +898,15 @@ export const Sv: MessagesSvType = {
     },
     {
       question: "Hur ändrar jag min fakturaadress?",
-      answer: "Gå till www.scoutnet.se, logga in och ändra din fakturaadress."
+      answer: `Gå till <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium"\ > www.scoutnet.se</a>, logga in och ändra din fakturaadress.`
     },
     {
       question: "Min faktura har felaktigt belopp. Vad gör jag?",
-      answer: `Skicka ett mejl till support@scouterna.se och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.`
+      answer: `Skicka ett mejl till <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium"\>support@scouterna.se </a> och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.`
     },
     {
       question: "Hur ändrar jag mina kontaktuppgifter?",
-      answer: `Logga in på www.scoutnet.se där kan du uppdatera dina uppgifter.`
+      answer: `Logga in på <a href=\"https://www.scoutnet.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium"\ > www.scoutnet.se</a> där kan du uppdatera dina uppgifter.`
     },
   ],
   lifestyle: {
@@ -1070,7 +1082,7 @@ export const Sv: MessagesSvType = {
 
   GroupIntro: {
     FAMheadline: "Avdelningar",
-    FAMtitle: "Familjescouter",
+    FAMtitle: "Småttarne",
     FAMtext: "Genom Familjescouting får barn under åtta år tillsammans med en eller flera vuxna på ett roligt och lekfullt sätt möta scouting.",
     SJMtitle: "Sjöhumlorna",
     SJMtext: "De yngsta scouterna upptäcker sjölivet genom lek, sång och små äventyr vid vattnet. Här lär man sig samarbeta, knyta sina första knopar och känna sig hemma i naturen.",

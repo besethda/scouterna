@@ -34,7 +34,7 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
                         <DivisionsBox division={"kaparna"} boxStyle={"info"} />
                         <DivisionsBox division={"utmanare"} boxStyle={"info"} />
                         <DivisionsBox division={"konvojen"} boxStyle={"info"} />
-                        <DivisionsBox division={"familjescouter"} boxStyle={"info"} />
+                        <DivisionsBox division={"smattarne"} boxStyle={"info"} />
                     </div>
                 </section>
                 <section className="pb-8 md:pt-8 md:pb-20 lg:max-w-430 lg:px-22 w-full">

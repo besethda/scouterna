@@ -96,12 +96,12 @@ export type MessagesEngType = {
     utmanare_time: string,
     utmanare_place: string,
     utmanare_paragraph: string,
-    familjescouter_title: string,
-    familjescouter_ages: string,
-    familjescouter_day: string,
-    familjescouter_time: string,
-    familjescouter_place: string,
-    familjescouter_paragraph: string,
+    smattarne_title: string,
+    smattarne_ages: string,
+    smattarne_day: string,
+    smattarne_time: string,
+    smattarne_place: string,
+    smattarne_paragraph: string,
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -171,6 +171,7 @@ export type MessagesEngType = {
       kaparna: string,
       utmanare: string,
       konvojen: string,
+      smattarne:string,
       join: string,
       "become-a-scout": string,
       faq: string,
@@ -195,7 +196,7 @@ export type MessagesEngType = {
     kaparna: string,
     konvojen: string,
     utmanare: string,
-    familjescouter: string,
+    smattarne: string,
     lifestyle: string,
     boats: string,
     cabins: string,
@@ -217,7 +218,7 @@ export type MessagesEngType = {
     kaparna: string,
     konvojen: string,
     utmanare: string,
-    familjescouter: string,
+    smattarne: string,
     lifestyle: string,
     boats: string,
     cabins: string,
@@ -274,7 +275,7 @@ export type MessagesEngType = {
   }[];
   fragorSvar02: {
     question: string,
-    answer: string
+    answer: string,
   }[];
   lifestyle: {
     headline: string,
@@ -485,7 +486,7 @@ export const En: MessagesEngType = {
     nav_unit2: "Kaparna",
     nav_unit3: "Konvojen",
     nav_unit4: "Utmanare",
-    nav_unit5: "Familjescouter",
+    nav_unit5: "Småttarne",
     nav_whatWeDo: "What We Do",
     nav_LifeScout: "Life as a Sea Scout",
     nav_boats: "Our Boats",
@@ -552,15 +553,15 @@ export const En: MessagesEngType = {
     utmanare_time: "18:00",
     utmanare_place: "Ruffen",
     utmanare_paragraph: "The oldest scouts run their own projects, participate in international camps and take on leadership roles for the younger ones. Scouting becomes a way to shape themselves and their surroundings.",
-    familjescouter_title: "Familjescouter",
-    familjescouter_ages: "Under 8 Years",
-    familjescouter_day: "Friday",
-    familjescouter_time: "18:00",
-    familjescouter_place: "Ruffen",
-    familjescouter_paragraph: "Familjescouter is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
+    smattarne_title: "Småttarne",
+    smattarne_ages: "Under 8 Years",
+    smattarne_day: "Friday",
+    smattarne_time: "18:00",
+    smattarne_place: "Ruffen",
+    smattarne_paragraph: "Småttarne is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
     scouts_title: "Scouts",
     scouts_paragraph: "We have age-separated groups from the age of 8.",
-    family_title: "Familjescouter",
+    family_title: "Småttarne",
     image_message: "Read more about ",
     basic_message: "Check out ",
     day: "Day: ",
@@ -621,7 +622,7 @@ export const En: MessagesEngType = {
       kaparna: "Kaparna",
       utmanare: "Utmanare",
       konvojen: "Konvojen",
-      familjescouter: "Familjescouter",
+      smattarne: "Småttarne",
       join: "Join The Scouts",
       "become-a-scout": "Become a Scout",
       faq: "FAQ"
@@ -664,7 +665,7 @@ export const En: MessagesEngType = {
     kaparna: "HSS | Kaparna",
     konvojen: "HSS | Konvojen",
     utmanare: "HSS | Utmanare",
-    familjescouter: "HSS | Familjescouter",
+    smattarne: "HSS | Småttarne",
     lifestyle: "HSS | Lifestyle",
     boats: "HSS | Boats",
     cabins: "HSS | Cabins",
@@ -685,7 +686,7 @@ export const En: MessagesEngType = {
     kaparna: "The kaparna page",
     konvojen: "The konvojen page",
     utmanare: "The utmanare page",
-    familjescouter: "The familjescouter page",
+    smattarne: "The småttarne page",
     lifestyle: "The lifestyle page",
     boats: "The boats page",
     cabins: "The cabins page",
@@ -798,19 +799,19 @@ export const En: MessagesEngType = {
     p4: "The member data does remain in Scoutnet, however, as long as the person does not have an active membership, only a few employees at the National Scout Office can access the information.",
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
-  email: {
-    t0: "E-post",
-    s0: "E-post till kåren",
-    p0: "info@hss-scout.org",
-    s1: "E-post för medlemsärenden",
-    p1: "register@hss-scout.org"
+ email: {
+    "t0": "Email",
+    "s0": "Email to kåren",
+    "p0": "info@hss-scout.org",
+    "s1": "Email about memberships",
+    "p1": "register@hss-scout.org"
   },
-  bank: {
-    t0: "Bankuppgifter",
-    s0: "Postgiro",
-    p0: "404418 - 6",
-    s1: "Organisationsnummer",
-    p1: "802006 - 2389"
+  "bank": {
+    "t0": "Bank details",
+    "s0": "Postgiro",
+    "p0": "404418 - 6",
+    "s1": "Organization number",
+    "p1": "802006 - 2389"
   },
   offers: {
     title: "What Scout Life Offers",
@@ -855,28 +856,40 @@ export const En: MessagesEngType = {
     title02: "Membership Questions"
   },
   fragorSvar: [
-    { question: "Do we need to buy a scout uniform right away?", answer: "answer" },
-    { question: "What kind of clothes do scouts usually wear?", answer: "answer" },
-    { question: "Are meetings always held outdoors?", answer: "answer" },
-    { question: "How much does it cost to join the scouts?", answer: "answer" },
-    { question: "Does the child need to have prior experience with sailing or scouting?", answer: "answer" },
-    { question: "We have become members—what happens now?", answer: "answer" },
+    { question: "Do we need to buy a scout uniform right away?",
+      answer: "No, you don’t need to buy a scout shirt straight away. It’s best to join for a few weeks first to make sure you want to continue with the scouts." 
+    },
+    { question: "What kind of clothes do scouts usually wear?", 
+      answer: "A scout shirt, an HSS sweater, and durable trousers." 
+    },
+    { question: "Are meetings always held outdoors?",
+      answer: "Usually yes, though in winter we sometimes meet indoors at our scout cabin Ruffen." 
+    },
+    { question: "How much does it cost to join the scouts?", 
+      answer: "It depends on your age and role. Ask your scout leader or send an email to info@hss-scout.org. For 2026 the fees are between 300-850 kr for scouts and between 50-180 kr for leaders." 
+    },
+    { question: "Does the child need to have prior experience with sailing or scouting?", 
+      answer: "No previous experience in sailing or scouting is needed." 
+    },
+    { question: "We have become members—what happens now?", 
+      answer: "Your division leader will be in touch with information about the next steps. Welcome!" 
+    },
   ],
   fragorSvar02: [
     {
       question: "Why do we have a scout uniform?",
-      answer: `The very first training you should take is "Safe Meetings" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour.
-    Here is how you get started with Safe Meetings >> 
-    After Safe Meetings, it is appropriate to take "Leading Scouting" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further.
-    Read more about Leading Scouting here >> When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. Read more about them here >>`
+      answer:"The scout uniform is a way to show that we all belong to the Scouts. It creates community, strengthens our identity, and is a part of our symbolic framework. The scout uniform is used in various designs throughout the world, showing that we belong to a global movement." 
     },
-    {
+    { 
       question: "I am a new scout leader! Which training should I take first?",
-      answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.`
+      answer: `The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a> <br />
+      After Safe Meetings, it is appropriate to take \"Leading Scouting\" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further. Read more about Leading <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Scouting here >> </a> <br />
+      When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. 
+      <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>` 
     },
     {
       question: "I have lost my invoice. What should I do?",
-      answer: `Send an email to support@scouterna.se with your name and membership number, and you will receive a copy of the invoice via email.`
+      answer: `Send an email to <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium\"\>support@scouterna.se </a> with your name and membership number, and you will receive a copy of the invoice via email.`
     },
     {
       question: "What is included in my membership fee?",
@@ -884,15 +897,16 @@ export const En: MessagesEngType = {
     },
     {
       question: "How do I change my billing address?",
-      answer: "Go to www.scoutnet.se, log in, and change your billing address."
+      answer: `Go to <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\"\ >www.scoutnet.se</a>, log in, and change your billing address.`
     },
     {
       question: "My invoice has the wrong amount. What should I do?",
-      answer: `Send an email to support@scouterna.se and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.`
+      answer: `Send an email to <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium\"\>support@scouterna.se </a>
+      and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.`
     },
     {
       question: "How do I change my contact information?",
-      answer: `Log in to www.scoutnet.se, where you can update your information.`
+      answer: `Log in to <a href=\"https://www.scoutnet.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\"\ >www.scoutnet.se</a>, where you can update your information.`
     }
   ],
   lifestyle: {
@@ -957,14 +971,14 @@ export const En: MessagesEngType = {
   },
 
   myset02: {
-    s0: "Amenities",
-    t1: "Myset is a pleasant and well-maintained scout cabin. With radiators and a modern ventilation system, it is easy to keep warm, and the cabin always feels welcoming and cozy &ndash; regardless of the season.",
+    t0: "Amenities",
+    p1: "Myset is a pleasant and well-maintained scout cabin. With radiators and a modern ventilation system, it is easy to keep warm, and the cabin always feels welcoming and cozy, regardless of the season.",
     p2: "The cabin features a large gathering room where a cozy fireplace naturally becomes the center of attention. There is also a spacious kitchen and two smaller leader rooms that provide space for both planning and rest.",
   },
 
   myset03: {
-    t1: "Equipment",
-    p3: "The kitchen is fully equipped with both electric and wood-burning stoves, a dishwasher, microwave, and a large refrigerator. It is a complete kitchen that can easily prepare and serve meals for up to 30 people &ndash; perfect for camps, hikes, and shared meals.",
+    t0: "Equipment",
+    p0: "The kitchen is fully equipped with both electric and wood-burning stoves, a dishwasher, microwave, and a large refrigerator. It is a complete kitchen that can easily prepare and serve meals for up to 30 people. Perfect for camps, hikes, and shared meals.",
   },
   mysetBtn: {
     text: "View floor plan"
@@ -1072,7 +1086,7 @@ export const En: MessagesEngType = {
 
   GroupIntro: {
     FAMheadline: "Groups",
-    FAMtitle: "FamilyScouts",
+    FAMtitle: "Småttarne",
     FAMtext: "Through Family Scouting, children under the age of eight, together with one or more adults, can experience scouting in a fun and playful way.",
     SJMtitle: "Sjöhumlorna",
     SJMtext: "The youngest scouts discover sea life through games, singing, and small adventures by the water. Here, they learn to cooperate, tie their first knots, and feel at home in nature.",

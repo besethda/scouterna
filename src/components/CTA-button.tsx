@@ -9,7 +9,7 @@ interface CTAprops {
 const CTABtn = ({text, onClick, width = "fit"}:CTAprops) => {
     return (
         <div className="">
-            <button className={`py-[17] px-[36] ${width === "fit" ? "w-fit" : width === "full" ? "w-full" : "w-full md:w-fit"}
+            <button className={`py-4.25 px-9 ${width === "fit" ? "w-fit" : width === "full" ? "w-full" : "w-full md:w-fit"}
                 font-albert text-h3 md:text-button-desktop bg-accent text-primary
                 overflow-hidden rounded-4xl px-6 py-4 text-center cursor-pointer transition-colors duration-300 shadow-md ease-in-out 
                 active:shadow-none active:scale-98  active:bg-accent active:border-btn active:brightness-100
