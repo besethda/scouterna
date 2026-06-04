@@ -860,7 +860,7 @@ export const Sv: MessagesSvType = {
     title02: "Medlemsfrågor"
   },
   fragorSvar: [
-    { question: "Behöver vi köpa en scoutuniform på en gång?", 
+    { question: "Behöver vi köpa en scoutuniform på en gång?" , 
       answer: "Nej, du behöver inte köpa en scoutskjorta direkt. Det är bäst att vara med i några veckor först för att se så att du vill fortsätta med scouterna." 
     },
     { question: "Vad för kläder brukar scouterna ha på sig?", 
