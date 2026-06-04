@@ -264,6 +264,7 @@ type MessagesSvType = {
   map: Record<string, string>
   scoutLife: Record<string, string>
   learning: Record<string, string>
+  boatSection: Record<string, string>
   faq: {
     title: string,
     title02: string
@@ -422,11 +423,11 @@ type MessagesSvType = {
     text2: string,
     subtitle: string
   }
-  cabinst:string,
-  cabinsmyset: {title:string, dpOne:string, dpTwo:string},
-  mysetbtn:string,
-  cabinsruffen:{title:string, dpOne:string, dpTwo:string},
-  ruffenbtn:string,
+  cabinst: string,
+  cabinsmyset: { title: string, dpOne: string, dpTwo: string },
+  mysetbtn: string,
+  cabinsruffen: { title: string, dpOne: string, dpTwo: string },
+  ruffenbtn: string,
   historycard: {
     headline: string,
     title: string,
@@ -437,7 +438,7 @@ type MessagesSvType = {
     title: string,
     text: string
   },
-   contactcard: {
+  contactcard: {
     headline: string,
     title: string,
     text: string
@@ -457,14 +458,15 @@ type MessagesSvType = {
     title: string,
     text: string
   }
-  activity:{
-    title:string,
-    sub_title_one:string,
-    p_one:string,
-    sub_title_two:string,
-    p_two:string,
+  activity: {
+    title: string,
+    sub_title_one: string,
+    p_one: string,
+    sub_title_two: string,
+    p_two: string,
   },
- };
+  mysetMap: Record<string, string>
+};
 
 export const Sv: MessagesSvType = {
   home: {
@@ -676,7 +678,7 @@ export const Sv: MessagesSvType = {
     contact: "HSS | Kontakt",
     gdpr: "HSS | GDPR"
   },
-  description:{
+  description: {
     history: "Historia",
     "become-a-scout": "Bli Sjöscout",
     faq: "FAQ",
@@ -696,7 +698,7 @@ export const Sv: MessagesSvType = {
     safety: "Flytvästpolicy",
     contact: "Kontakt",
     gdpr: "GDPR"
-  }, 
+  },
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
@@ -846,6 +848,10 @@ export const Sv: MessagesSvType = {
     text1: "Vi lär oss om djur och växter, naturens kretslopp och hur vi kan ta hand om miljön.",
     text2: "Vi lär oss att laga mat ute, sätta upp tält och vistas i naturen på ett tryggt och säkert sätt."
   },
+  boatSection: {
+    t0: "Båtar genom åren",
+    p0: "Bläddra genom bilder som föreningen haft glädjen att ha i vår ägo. "
+  },
   faq: {
     title: "Bli Scout",
     title02: "Medlemsfrågor"
@@ -963,75 +969,75 @@ export const Sv: MessagesSvType = {
     text: "Se planlösning"
   },
   sjohumlornaSpårarscouter: {
-    s0: "Spårarscouter",
+    t0: "Spårarscouter",
     p0: "Scouterna på avdelningen Sjöhumlorna är Spårarscouter. Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klara av.",
   },
   sjohumlornaAge: {
-    s0: "Ålder",
+    t0: "Ålder",
     p0: "Barnen på Sjöhumlorna är mellan 8 och 9 år."
   },
   sjohumlorMeeting: {
-    s0: "Avdelningsmöten",
+    t0: "Avdelningsmöten",
     p0: "Dag: Måndag",
     p1: "Ruffen vid Hässelby Strandbad.",
   },
   sjohumlorPlace: {
-    s0: "Märken",
+    t0: "Märken",
     p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Eller att få göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
   },
   sjohumlorButton: "Märkesplansch för Spårare",
   kaparnaUpptäckarscouter: {
-    s0: "Upptäckarscouter",
+    t0: "Upptäckarscouter",
     p0: "Många i den här åldern är nyfikna på världen runt omkring sig, och i Kaparna uppmuntrar vi det engagemanget. Vi jobbar ofta praktiskt och konkret - det kan vara allt från att lösa uppdrag tillsammans till att lära sig ta ansvar i små och stora situationer."
   },
   kaparnaAge: {
-    s0: "Ålder",
+    t0: "Ålder",
     p0: "Barnen på Kaparna är mellan 10 och 11 år.",
   },
   kaparnaMeeting: {
-    s0: "Avdelningsmöten",
+    t0: "Avdelningsmöten",
     p0: "Dag: Tisdag",
     p1: "Ruffen vid Hässelby Strandbad"
   },
   kaparnaPlace: {
-    s0: "Märken",
+    t0: "Märken",
     p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemärkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
   },
   kaparnaButton: "Märkesplansch för Upptäckare",
   utmanarscouter: {
-    s0: "Utmanarscouter",
+    t0: "Utmanarscouter",
     p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv."
   },
   utmanareAge: {
-    s0: "Ålder",
+    t0: "Ålder",
     p0: "Scouterna på Utmanaravdelningen är 15 år och uppåt."
   },
   utmanareMeeting: {
-    s0: "Avdelningsmöten",
+    t0: "Avdelningsmöten",
     p0: "Dag: Tisdag eller torsdag.",
     p1: "Ruffen vid Hässelby Strandbad."
   },
   utmanarePlace: {
-    s0: "Utmaningar",
+    t0: "Utmaningar",
     p0: "Det finns tio utmaningar. Två av dem görs på egen hand och resten görs tillsammans i utmanarlaget. De individuella utmaningarna har lite fastare regler. De andra bestäms tillsammans i utmanarlaget.",
   },
   utmanareButton: "Upptäck utmaningarna",
   äventyrarscouter: {
-    s0: "Äventyrarscouter",
+    t0: "Äventyrarscouter",
     p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv.",
   },
   konvojenAge: {
-    s0: "Ålder",
+    t0: "Ålder",
     p0: "Barnen på Konvojen är mellan 12 och 14 år.",
   },
   konvojenMeeting: {
-    s0: "Avdelningsmöten",
+    t0: "Avdelningsmöten",
     p0: "Dag: Torsdag",
     p1: "Tid: 18:00",
     p2: "Plats: Ruffen vid Hässelby Strandbad."
   },
   konvojenPlace: {
-    s0: "Märken",
+    t0: "Märken",
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
@@ -1041,23 +1047,23 @@ export const Sv: MessagesSvType = {
   },
   download: "Ladda ner ",
   BarnOchVuxnaTillsammans: {
-    s0: "Barn och vuxna tillsammans",
+    t0: "Barn och vuxna tillsammans",
     p0: "Familjescouting är till för barn under åtta år och en vuxen som barnet känner sig trygg med. Tillsammans upptäcker ni scouting genom lek, äventyr och roliga aktiviteter.",
     p1: "Barn och vuxna är med sida vid sida och hjälps åt i aktiviteterna. Den vuxna ansvarar för barnet, men är också en viktig del av gemenskapen och deltar lika mycket som barnen.",
     p2: "Den vuxna kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära person. Fokus i Familjescouting är att barn och vuxna får uppleva saker tillsammans och stärka sin relation."
   },
   ParumMagna: {
-    s0: "Parum & Magna",
+    t0: "Parum & Magna",
     p0: "I familjescouting får barn och vuxna följa björnarna Parum och Magna på olika äventyr. Parum är nyfiken och tycker om att upptäcka och prova nya saker, medan Magna är klok och funderar över hur saker hänger ihop. Tillsammans leker de, träffar nya vänner och hjälper varandra.",
     p1: "Sagan och fantasin är viktiga delar i familjescouting. Genom berättelserna får barn och vuxna något att prata och fundera kring tillsammans. Sagorna hjälper också till att skapa nyfikenhet, spänning och en mysig känsla under träffarna."
   },
   Familjescoutsagor: {
-    s0: "Familjescoutsagor",
+    t0: "Familjescoutsagor",
     p0: "I familjescouting använder vi sagor som ett verktyg i våra träffar. Genom berättelser får barn och vuxna upptäcka nya teman tillsammans, väcka fantasin och skapa nyfikenhet och gemenskap.",
     p1: "Det finns flera olika familjescoutsagor – både längre och kortare berättelser, med och utan rim. Sagorna är kopplade till olika teman och aktiviteter. Sagorna hjälper till att skapa en varm och lekfull känsla där barn och vuxna tillsammans får lyssna, fundera och uppleva äventyr."
   },
   Märken: {
-    s0: "Märken",
+    t0: "Märken",
     p0: "Familjescouting har sina egna märken som man kan få genom delaktighet. Märken är ett roligt sätt att skapa stolhet kring deltagande och en härlig känsla av samhörighet!"
   },
   familjescouterButton: "Upptäck alla våra Scoutmärken",
@@ -1093,7 +1099,7 @@ export const Sv: MessagesSvType = {
     p0: "HSS fyra avdelningar har avdelningsmöten en gång i veckan. "
   },
   avdelningsledare: {
-    h0: "Avdelningsledare",
+    t0: "Avdelningsledare",
     p0: "Varje avdelning har en avdelningsledare. Våra ledare är utbildade och har gått den obligatoriska kursen Trygga Möten."
   },
   scoutnet: {
@@ -1102,12 +1108,12 @@ export const Sv: MessagesSvType = {
     p1: "Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren - all på ett och samma ställe.",
   },
   scoutnetButton: "Logga in på Scoutnet",
-  activity:{
-    title:"Aktiviteter",
-    sub_title_one:"Läger",
-    p_one:"Vi anordnar scoutläger med natur, gemenskap och roliga aktiviteter där barn och unga utvecklas och får minnen för livet.",
-    sub_title_two:"Hajker",
-    p_two:"Vi anordnar hajker där deltagare får uppleva naturen, samarbeta och klara utmaningar tillsammans.",
+  activity: {
+    title: "Aktiviteter",
+    sub_title_one: "Läger",
+    p_one: "Vi anordnar scoutläger med natur, gemenskap och roliga aktiviteter där barn och unga utvecklas och får minnen för livet.",
+    sub_title_two: "Hajker",
+    p_two: "Vi anordnar hajker där deltagare får uppleva naturen, samarbeta och klara utmaningar tillsammans.",
   },
   form: {
     title: "Skicka ett meddelande",
@@ -1144,19 +1150,19 @@ export const Sv: MessagesSvType = {
     subtitle: "Bilder från arkiven"
   },
 
-  cabinst:"Här träffas vi",
-  cabinsmyset:{
-    title:"Myset",
-    dpOne:"Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
-    dpTwo:"Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
+  cabinst: "Här träffas vi",
+  cabinsmyset: {
+    title: "Myset",
+    dpOne: "Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
+    dpTwo: "Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
   },
-  mysetbtn:"Läs mer om Myset",
+  mysetbtn: "Läs mer om Myset",
   cabinsruffen: {
-    title:"Ruffen",
-    dpOne:"Ruffen ligger vid Hässelby Strandbad och används för avdelningsmöten för våra avdelningar Sjöhumlorna, Kaparna, Konvojen och Utmanarna.",
-    dpTwo:"Här huserar kåren även våra optimistjollar.",
+    title: "Ruffen",
+    dpOne: "Ruffen ligger vid Hässelby Strandbad och används för avdelningsmöten för våra avdelningar Sjöhumlorna, Kaparna, Konvojen och Utmanarna.",
+    dpTwo: "Här huserar kåren även våra optimistjollar.",
   },
-  ruffenbtn:"Läs mer om Ruffen",
+  ruffenbtn: "Läs mer om Ruffen",
   historycard: {
     headline: "FÖRENINGEN",
     title: "Till sjöss sedan 1959",
@@ -1177,7 +1183,7 @@ export const Sv: MessagesSvType = {
     title: "Kontakt",
     text: "Har du frågor om vår scoutverksamhet, vill bli medlem eller engagera dig som ledare? Tveka inte att kontakta oss - vi svarar så snart vi kan."
   },
-   gdprcard: {
+  gdprcard: {
     headline: "DATASKYDD",
     title: "HSS arbete med GDPR",
     text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
@@ -1186,5 +1192,10 @@ export const Sv: MessagesSvType = {
     headline: "DATASKYDD",
     title: "HSS arbete med GDPR",
     text: "GDPR kräver att vi talar om för våra medlemmar att vi samlar in uppgifter, vilka uppgifter vi samlar in och varför vi gör det."
+  },
+  mysetMap: {
+    t0: "Vägbeskrivning",
+    p0: "Myset ligger i Lövstaskogarna nära Kyrkhamn i Hässelby, på gränsen mot Viksjö. ",
+    p1: "Ta buss 541 från Jakobsberg eller Vällingby, alternativt buss 119 från Backlura eller Spånga. Stig av vid hållplats Lingonrisgränd och fortsätt därefter cirka 3,5 km till fots genom skogen till Myset. Vi rekommenderar att du planerar resan i god tid, särskilt om du åker kollektivt."
   },
 };

@@ -23,11 +23,11 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
     const messages = locale === "en" ? En : Sv
 
     return (
-        <div>
+        <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full">
                 <CardWithImage sectionTitle="ruffen" logo="/blueHouse.png" image="/images/IMG_3957.JPEG" />
-                <div className="md:bg-bg-blue py-7 flex w-full flex-col items-center">
+                <section className="md:bg-bg-blue py-7 flex w-full flex-col items-center">
                     <ContentSection sectionLayout={["t", "p"]} page={"ruffenDivisions"} padding="none" background="desktop" />
                     <div className="flex flex-col p-4 gap-1 md:px-25 md:grid md:grid-cols-2 w-full lg:max-w-430 lg:px-22 md:gap-2 [&>*]:w-full">
                         <DivisionsBox division={"sjohumlorna"} boxStyle={"info"} />
@@ -36,16 +36,16 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
                         <DivisionsBox division={"konvojen"} boxStyle={"info"} />
                         <DivisionsBox division={"familjescouter"} boxStyle={"info"} />
                     </div>
-                </div>
-                <div className="pb-10 md:pt-18 md:pb-25 lg:max-w-430 lg:px-22 w-full">
+                </section>
+                <section className="pb-10 md:pt-18 md:pb-25 lg:max-w-430 lg:px-22 w-full">
                     <ContentSection sectionLayout={["t", "p", "p"]} page={"map"} padding="top" child={true} />
-                    <div className="">
+                    <div className="p-4">
                         <MapWrapper page="ruffen" />
                     </div>
-                </div>
+                </section>
             </div>
 
-        </div>
+        </main>
     );
 }
 

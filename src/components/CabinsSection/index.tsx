@@ -3,10 +3,18 @@ import useMessages from "@/hook/useMessages"
 import CTABtn from "../CTA-button"
 import Image from "next/image"
 import Picture from "../../../public/images/DSCF3036.jpg"
+import { useParams, usePathname } from "next/navigation"
+import Link from "next/link"
 
 const CabinsSection = () => {
   const messages = useMessages()
-  return (
+
+  const params = useParams();
+  const pathname = usePathname();
+  const urlLocal = pathname?.split("/")[1]
+  const currentLocal = params?.local ||urlLocal || "sv"
+
+  return(
     <div className="flex flex-col items-center md:gap-5 md:mb-20 ">
       <div className="hidden md:block w-full max-w-6xl">
         <h2 className=" text-primary text-h2-desktop">{messages?.cabinst}</h2>
@@ -21,7 +29,11 @@ const CabinsSection = () => {
             <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A] ">{messages?.cabinsmyset.dpOne}</p>
             <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsmyset.dpTwo}</p>
             <div className="mt-7">
-              <CTABtn text={messages?.mysetbtn} />
+              <Link
+                  href={`/${currentLocal}/what-we-do/cabins/myset`}>
+                  <CTABtn text={messages?.mysetbtn}
+                  />
+                </Link>
             </div>
           </div>
           <div className="w-93 shrink-0 hidden md:block mt-6 mb-6 mr-6">
@@ -39,7 +51,13 @@ const CabinsSection = () => {
             <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpOne}</p>
             <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpTwo}</p>
             <div className="mt-7">
-              <a href={messages?.path + '/what-we-do/cabins/ruffen'}><CTABtn text={messages?.ruffenbtn} /></a>
+              <a href={messages?.path + '/what-we-do/cabins/ruffen'}>
+                <Link
+                    href={`/${currentLocal}/what-we-do/cabins/ruffen`}>
+                    <CTABtn text={messages?.ruffenbtn}
+                    />
+                  </Link>
+                </a>
             </div>
           </div>
           <div className="w-93 shrink-0 hidden md:block mt-6 mb-6 mr-6">

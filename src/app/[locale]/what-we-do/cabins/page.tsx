@@ -19,13 +19,13 @@ const Cabins = ({params}:{params: Promise<{locale: string}>}) => {
     const messages = locale === "en" ? En : Sv
 
     return (
-        <div>
+        <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <CardWithoutImage headline={messages?.cabinsCard?.headline} logo="/blueHouse.png" title={messages?.cabinsCard?.title} text={messages?.cabinsCard?.text} MDlogo="/blueHouseYellowBg.svg" />  
             </div>
             <CabinsSection />
-        </div>
+        </main>
     );
 }
 
