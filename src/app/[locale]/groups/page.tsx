@@ -26,7 +26,7 @@ const GroupStructure = ({ params }: { params: Promise<{ locale: string }> }) => 
       <Breadcrumbs />
       <section className="w-full flex flex-col items-center">
         <CardWithoutImage headline={messages?.groupCard?.headline} logo="/hand.png" title={messages?.groupCard?.title} text={messages?.groupCard?.text} MDlogo="/blueHandYellowBg.svg" />
-        <div className="flex flex-col p-4 gap-1 items-center">
+        <div className="flex flex-col px-4 pb-8 md:pb-16 gap-1 items-center">
           <DivisionsBox division={"sjohumlorna"} boxStyle={"image"} />
           <DivisionsBox division={"kaparna"} boxStyle={"image"} />
           <DivisionsBox division={"konvojen"} boxStyle={"image"} />

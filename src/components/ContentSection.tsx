@@ -34,7 +34,7 @@ const ContentSection = ({sectionLayout, page, background="white", padding="both"
     <div className={`w-full flex justify-center ${background==="white" ? "bg-bg-white" : background === "blue" ? "bg-bg-blue" : background === "mobile" ? "bg-bg-blue md:bg-bg-white" : background === "desktop" ? "bg-bg-white md:bg-bg-blue": background === "large" ? "bg-bg-white lg:bg-bg-blue": "bg-bg-white"}
       `}>
       <div className={`${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-16 pt-7" : padding === "bottom-mobile" ? "pb-16 md:pb-0" : padding === "top-mobile" ? "pt-7 md:pt-0" : padding === "bottom-desktop" ? "pb- md:pb-16" : padding === "top-desktop" ? "pt-0 md:pt-7" : ""} 
-      ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} w-full px-4 ${child ? "" : "lg:max-w-430 lg:px-22"}`}>
+      ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} w-full ${child ? "" : "px-4 lg:max-w-430 lg:px-22"}`}>
         {createLayout(sectionLayout)}
       </div>
     </div>

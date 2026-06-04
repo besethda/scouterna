@@ -59,7 +59,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             <CTABtn text={messages?.joinContent?.button02} />
                         </a>
                     <div className="flex flex-col gap-6">
-                        <h3 className="text-h3 font-medium text-[#00355F]  md:text-h3-desktop">
+                        <h3 className="text-h2 font-medium text-[#00355F]  md:text-h3-desktop">
                             {messages?.joinContent?.title02}
                         </h3>
                         <p className="text-text-black pb-4 text-body md:text-body-desktop tracking-[3%]">
