@@ -27,7 +27,7 @@ const HeroContainer = ({ bgImages, messageSection, position }: { bgImages: { mob
       <CTABtn
         text={`${(messages as any)?.[`${messageSection}`]?.button}`}
         onClick={handleClick}
-        width="mobile" />
+        width="fit" />
     </HeroSection>
   )
 }
