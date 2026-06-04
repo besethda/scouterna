@@ -40,7 +40,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                 toast.success("Email Sent Successfully!");
                 reset();
             } else {
-                toast.error(result.error || "Failed to send email. Please try again.");
+                toast.error(result.error || "couldn't send message. You can send your message to support@scouterna.se");
             }
         } catch (error) {
             toast.error("Network error. Please check your internet connection.");
