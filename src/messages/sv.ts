@@ -348,7 +348,10 @@ type MessagesSvType = {
     namn: string,
     efternamn: string,
     epost: string,
-    meddelande: string
+    meddelande: string,
+    errorTxt: string,
+    networkErrorTxt: string,
+    successTxt: string
   },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
@@ -1138,7 +1141,10 @@ export const Sv: MessagesSvType = {
     namn: "Namn",
     efternamn: "Efternamn",
     epost: "E-post",
-    meddelande: "Meddelande"
+    meddelande: "Meddelande",
+    errorTxt: "Kunde inte skicka meddelandet. Du kan skicka det till support@scouterna.se.",
+    networkErrorTxt :"Nätverksfel. Vänligen kontrollera din internetanslutning.",
+    successTxt:"E-postmeddelandet har skickats!"
   },
   good: "Bra att veta",
   question: {

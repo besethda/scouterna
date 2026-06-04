@@ -15,10 +15,13 @@ interface EmailFormData {
     namn:string;
     efternamn:string;
     epost:string;
-    meddelande:string
+    meddelande:string;
+    errorTxt:string;
+    networkErrorTxt:string;
+    successTxt: string;
 };
 
-const ContactForm = ({ title, text, lastName, firstName, email, message, buttonText, namn,efternamn,epost,meddelande }: EmailFormData) => {
+const ContactForm = ({ title, text, lastName, firstName, email, message, buttonText, namn,efternamn,epost,meddelande, errorTxt,networkErrorTxt,successTxt }: EmailFormData) => {
     const {
         register,
         handleSubmit,
@@ -33,17 +36,17 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                 firstName: data.firstName,
                 lastName: data.lastName,
                 email: data.email,
-                message: data.message
+                message: data.message,
             });
 
             if (result.success) {
-                toast.success("Email Sent Successfully!");
+                toast.success(successTxt);
                 reset();
             } else {
-                toast.error(result.error || "couldn't send message. You can send your message to support@scouterna.se");
+                toast.error(result.error || errorTxt);
             }
         } catch (error) {
-            toast.error("Network error. Please check your internet connection.");
+            toast.error(networkErrorTxt);
         }
     };
 
