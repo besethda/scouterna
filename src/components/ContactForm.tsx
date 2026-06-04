@@ -27,7 +27,6 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
     } = useForm<EmailFormData>()
 
     const onSubmit = async (data: EmailFormData) => {
-        console.log("form data", data);
         
         try {
             const result = await sendContactEmail({
@@ -41,10 +40,10 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                 toast.success("Email Sent Successfully!");
                 reset();
             } else {
-                console.log("server error:", result.error);
+                toast.error(result.error || "Failed to send email. Please try again.");
             }
         } catch (error) {
-            console.log("Network error:", error);
+            toast.error("Network error. Please check your internet connection.");
         }
     };
 
