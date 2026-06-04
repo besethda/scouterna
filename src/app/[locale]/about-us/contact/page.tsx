@@ -35,7 +35,7 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       buttonText={messages?.interestBtn.buttonText}
       />
       <div className="w-full flex justify-center bg-bg-blue">
-        <ContactForm 
+      <ContactForm 
         title={messages?.form.title}
         text={messages?.form.text}
         lastName={messages?.form.lastName}
@@ -47,7 +47,10 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
         efternamn={messages?.form.efternamn}
         epost={messages?.form.epost}
         meddelande={messages?.form.meddelande}
-        />
+        successTxt={messages.form.successTxt} 
+        errorTxt={messages.form.errorTxt}
+        networkErrorTxt={messages.form.networkErrorTxt}
+      />
       </div>
     </main>
   )

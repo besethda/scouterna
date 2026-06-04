@@ -39,7 +39,10 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                 />
                 <div className="px-4 md:py-3 w-full flex flex-col items-center bg-bg-blue ">
                     <div className="lg:max-w-430 lg:px-22 w-full pb-8 md:pb-12">
-                        <ContentSection sectionLayout={["t", "p"]} page="myset01" background="blue" padding="top" child={true} />
+                        <ContentSection sectionLayout={["t"]} page="myset01" background="blue" padding="top" child={true} />
+                        <p className="py-2 text-body md:text-body-desktop text-text-black font-albert">{messages?.myset01?.p0} 
+                            <a href="mailto:myset.hss.scout@gmail.com" className="hover:underline pr-1">myset.hss.scout@gmail.com</a>
+                             {messages?.myset01?.p1}</p>
                         <div className="bg-bg-blue pt-2">
                             <ImageContainer />
                         </div>
@@ -67,3 +70,4 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
 }
 
 export default Myset
+

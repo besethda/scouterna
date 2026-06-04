@@ -348,7 +348,10 @@ export type MessagesEngType = {
     namn: string,
     efternamn: string,
     epost: string,
-    meddelande: string
+    meddelande: string,
+    errorTxt: string,
+    networkErrorTxt: string,
+    successTxt: string
   },
   myset01: Record<string, string>
   myset02: Record<string, string>
@@ -967,7 +970,8 @@ export const En: MessagesEngType = {
   },
   myset01: {
     t0: "Interested in renting Myset?",
-    p0: "Email myset.hss.scout@gmail.com to make a booking inquiry.",
+    p0: "Email ",
+    p1: "to make a booking inquiry."
   },
 
   myset02: {
@@ -1142,7 +1146,10 @@ export const En: MessagesEngType = {
     namn: "First Name",
     efternamn: "Last Name",
     epost: "E-mail",
-    meddelande: "Message"
+    meddelande: "Message",
+    errorTxt: "couldn't send message. You can send your message to support@scouterna.se",
+    networkErrorTxt: "Network error. Please check your internet connection.",
+    successTxt: "Email Sent Successfully!"
   },
   good: "Good to know",
   question: {
