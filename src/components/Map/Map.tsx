@@ -96,7 +96,7 @@ const Map = ({ page }: mapProps) => {
                                         <Image src={blueLocationIcon} alt="location" width={16} height={20} className='w-4 h-5 object-contain' />
                                     </div>
                                     <div>
-                                        <p className=''>{location.name}</p>
+                                        <p className='text-accent'>{location.name}</p>
                                     </div>
                                 </>
                             ) : (
@@ -105,7 +105,7 @@ const Map = ({ page }: mapProps) => {
                                         <Image src={yellowLocationIcon} alt="location" width={16} height={20} className='w-4 h-5 object-contain' />
                                     </div>
                                     <div>
-                                        <p className='group-hover:text-gray-300'>{location.name}</p>
+                                        <p className='hover:text-lightYellow'>{location.name}</p>
                                     </div>
                                 </>
                             )}
