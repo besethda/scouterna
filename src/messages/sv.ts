@@ -348,7 +348,10 @@ type MessagesSvType = {
     namn: string,
     efternamn: string,
     epost: string,
-    meddelande: string
+    meddelande: string,
+    errorTxt: string,
+    networkErrorTxt: string,
+    successTxt: string
   },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
@@ -857,28 +860,40 @@ export const Sv: MessagesSvType = {
     title02: "Medlemsfrågor"
   },
   fragorSvar: [
-    { question: "Behöver vi köpa en scoutuniform på en gång?", answer: "svar" },
-    { question: "Vad för kläder brukar scouterna ha på sig?", answer: "svar" },
-    { question: "Hålls möten alltid utomhus?", answer: "svar" },
-    { question: "Hur mycket kostar det att vara med i scouterna?", answer: "svar" },
-    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", answer: "svar" },
-    { question: "Vi har blivit medlemmar- vad händer nu?", answer: "svar" },
+    { question: "Behöver vi köpa en scoutuniform på en gång?" , 
+      answer: "Nej, du behöver inte köpa en scoutskjorta direkt. Det är bäst att vara med i några veckor först för att se så att du vill fortsätta med scouterna." 
+    },
+    { question: "Vad för kläder brukar scouterna ha på sig?", 
+      answer: "En scoutskjorta, en HSS-tröja och tåliga byxor." 
+    },
+    { question: "Hålls möten alltid utomhus?",
+      answer: "Oftast ja, men på vintern ses vi ibland inomhus i vår scoutstuga Ruffen." 
+    },
+    { question: "Hur mycket kostar det att vara med i scouterna?", 
+      answer: "Det beror på din ålder och roll. Fråga din scoutledare eller skicka ett mejl till info@hss-scout.org. För 2026 ligger avgifterna på mellan 300–850 kr för scouter och mellan 50–180 kr for ledare." 
+    },
+    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", 
+      answer: "Nej, ingen tidigare erfarenhet av segling eller scouting behövs." 
+    },
+    { question: "Vi har blivit medlemmar- vad händer nu?", 
+      answer: "Din avdelningsledare kommer att ta kontakt med dig och ge information om nästa steg. Välkommen!" 
+    },
   ],
   fragorSvar02: [
     {
       question: "Varför har vi en scoutdräkt?",
-      answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra.
-      Så här kommer du igång med Trygga möten >> 
-      Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas.
-      Läs mer om Leda socuting här >> När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att wybrać mellan. Du hittar dem alla på Ledarskapsön. Läs mer om dem här >>`
+      answer: "Scoutdräkten är ett sätt att visa att vi alla tillhör Scouterna. Scoutdräkten skapar gemenskap, stärker vår identitet och är en del av vårt symboliska ramverk. Scoutdräkt används i olika utföranden i hela världen och visar på att vi tillhör en global rörelse."
     },
     {
       question: "Jag är ny scoutledare! Vilken utbildning ska jag gå först?",
-      answer: `Du betalar en avgift till Scouterna, eventuell samverkansorganisation och distrikt. Det ingår en försäkring i avgiften till Scouterna och det är därför viktigt att man betalar sin medlemsavgift. Medlemsavgiften innehåller även kårens lokala avgift.`
+      answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra. Så här kommer du igång med <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\" > Trygga möten >> </a> 
+      <br/> Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas. <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\" >Läs mer om Leda socuting här >> </a> <br/>
+      När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att välja mellan. Du hittar dem alla på Ledarskapsön. <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Läs mer om dem här >></a>`
     },
     {
       question: "Jag har tappat bort min faktura. Vad gör jag?",
-      answer: `Skicka ett mejl till support@scouterna.se med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.`
+      answer: `Skicka ett mejl till <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium"\>support@scouterna.se </a>
+      med ditt namn och medlemsnummer så får du en kopia av fakturan via e-post.`
     },
     {
       question: "Vad ingår i min medlemsavgift?",
@@ -886,15 +901,15 @@ export const Sv: MessagesSvType = {
     },
     {
       question: "Hur ändrar jag min fakturaadress?",
-      answer: "Gå till www.scoutnet.se, logga in och ändra din fakturaadress."
+      answer: `Gå till <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium"\ > www.scoutnet.se</a>, logga in och ändra din fakturaadress.`
     },
     {
       question: "Min faktura har felaktigt belopp. Vad gör jag?",
-      answer: `Skicka ett mejl till support@scouterna.se och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.`
+      answer: `Skicka ett mejl till <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium"\>support@scouterna.se </a> och ange varför du anser att det är fel belopp, ditt medlemsnummer, namnet på din kår samt vilken faktura det gäller.`
     },
     {
       question: "Hur ändrar jag mina kontaktuppgifter?",
-      answer: `Logga in på www.scoutnet.se där kan du uppdatera dina uppgifter.`
+      answer: `Logga in på <a href=\"https://www.scoutnet.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium"\ > www.scoutnet.se</a> där kan du uppdatera dina uppgifter.`
     },
   ],
   lifestyle: {
@@ -954,7 +969,8 @@ export const Sv: MessagesSvType = {
   },
   myset01: {
     t0: "Nyfiken på att hyra Myset?",
-    p0: "Mejla myset.hss.scout@gmail.com för att göra en bokningsförfrågan.",
+    p0: "Mejla ",
+    p1: "för att göra en bokningsförfrågan."
   },
   myset02: {
     t0: "Bekvämligheter",
@@ -1126,7 +1142,10 @@ export const Sv: MessagesSvType = {
     namn: "Namn",
     efternamn: "Efternamn",
     epost: "E-post",
-    meddelande: "Meddelande"
+    meddelande: "Meddelande",
+    errorTxt: "Kunde inte skicka meddelandet. Du kan skicka det till support@scouterna.se.",
+    networkErrorTxt :"Nätverksfel. Vänligen kontrollera din internetanslutning.",
+    successTxt:"E-postmeddelandet har skickats!"
   },
   good: "Bra att veta",
   question: {

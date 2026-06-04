@@ -275,7 +275,7 @@ export type MessagesEngType = {
   }[];
   fragorSvar02: {
     question: string,
-    answer: string
+    answer: string,
   }[];
   lifestyle: {
     headline: string,
@@ -348,7 +348,10 @@ export type MessagesEngType = {
     namn: string,
     efternamn: string,
     epost: string,
-    meddelande: string
+    meddelande: string,
+    errorTxt: string,
+    networkErrorTxt: string,
+    successTxt: string
   },
   myset01: Record<string, string>
   myset02: Record<string, string>
@@ -856,28 +859,40 @@ export const En: MessagesEngType = {
     title02: "Membership Questions"
   },
   fragorSvar: [
-    { question: "Do we need to buy a scout uniform right away?", answer: "answer" },
-    { question: "What kind of clothes do scouts usually wear?", answer: "answer" },
-    { question: "Are meetings always held outdoors?", answer: "answer" },
-    { question: "How much does it cost to join the scouts?", answer: "answer" },
-    { question: "Does the child need to have prior experience with sailing or scouting?", answer: "answer" },
-    { question: "We have become members—what happens now?", answer: "answer" },
+    { question: "Do we need to buy a scout uniform right away?",
+      answer: "No, you don’t need to buy a scout shirt straight away. It’s best to join for a few weeks first to make sure you want to continue with the scouts." 
+    },
+    { question: "What kind of clothes do scouts usually wear?", 
+      answer: "A scout shirt, an HSS sweater, and durable trousers." 
+    },
+    { question: "Are meetings always held outdoors?",
+      answer: "Usually yes, though in winter we sometimes meet indoors at our scout cabin Ruffen." 
+    },
+    { question: "How much does it cost to join the scouts?", 
+      answer: "It depends on your age and role. Ask your scout leader or send an email to info@hss-scout.org. For 2026 the fees are between 300-850 kr for scouts and between 50-180 kr for leaders." 
+    },
+    { question: "Does the child need to have prior experience with sailing or scouting?", 
+      answer: "No previous experience in sailing or scouting is needed." 
+    },
+    { question: "We have become members—what happens now?", 
+      answer: "Your division leader will be in touch with information about the next steps. Welcome!" 
+    },
   ],
   fragorSvar02: [
     {
       question: "Why do we have a scout uniform?",
-      answer: `The very first training you should take is "Safe Meetings" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour.
-    Here is how you get started with Safe Meetings >> 
-    After Safe Meetings, it is appropriate to take "Leading Scouting" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further.
-    Read more about Leading Scouting here >> When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. Read more about them here >>`
+      answer:"The scout uniform is a way to show that we all belong to the Scouts. It creates community, strengthens our identity, and is a part of our symbolic framework. The scout uniform is used in various designs throughout the world, showing that we belong to a global movement." 
     },
-    {
+    { 
       question: "I am a new scout leader! Which training should I take first?",
-      answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.`
+      answer: `The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a> <br />
+      After Safe Meetings, it is appropriate to take \"Leading Scouting\" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further. Read more about Leading <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Scouting here >> </a> <br />
+      When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. 
+      <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>` 
     },
     {
       question: "I have lost my invoice. What should I do?",
-      answer: `Send an email to support@scouterna.se with your name and membership number, and you will receive a copy of the invoice via email.`
+      answer: `Send an email to <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium\"\>support@scouterna.se </a> with your name and membership number, and you will receive a copy of the invoice via email.`
     },
     {
       question: "What is included in my membership fee?",
@@ -885,15 +900,16 @@ export const En: MessagesEngType = {
     },
     {
       question: "How do I change my billing address?",
-      answer: "Go to www.scoutnet.se, log in, and change your billing address."
+      answer: `Go to <a href=\"https://www.scouterna.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\"\ >www.scoutnet.se</a>, log in, and change your billing address.`
     },
     {
       question: "My invoice has the wrong amount. What should I do?",
-      answer: `Send an email to support@scouterna.se and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.`
+      answer: `Send an email to <a href=\"mailto:support@scouterna.se" class=\"text-primary underline hover:text-accent font-medium\"\>support@scouterna.se </a>
+      and state why you believe the amount is incorrect, along with your membership number, the name of your troop, and which invoice it concerns.`
     },
     {
       question: "How do I change my contact information?",
-      answer: `Log in to www.scoutnet.se, where you can update your information.`
+      answer: `Log in to <a href=\"https://www.scoutnet.se/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\"\ >www.scoutnet.se</a>, where you can update your information.`
     }
   ],
   lifestyle: {
@@ -954,18 +970,19 @@ export const En: MessagesEngType = {
   },
   myset01: {
     t0: "Interested in renting Myset?",
-    p0: "Email myset.hss.scout@gmail.com to make a booking inquiry.",
+    p0: "Email ",
+    p1: "to make a booking inquiry."
   },
 
   myset02: {
-    s0: "Amenities",
-    t1: "Myset is a pleasant and well-maintained scout cabin. With radiators and a modern ventilation system, it is easy to keep warm, and the cabin always feels welcoming and cozy &ndash; regardless of the season.",
+    t0: "Amenities",
+    p1: "Myset is a pleasant and well-maintained scout cabin. With radiators and a modern ventilation system, it is easy to keep warm, and the cabin always feels welcoming and cozy, regardless of the season.",
     p2: "The cabin features a large gathering room where a cozy fireplace naturally becomes the center of attention. There is also a spacious kitchen and two smaller leader rooms that provide space for both planning and rest.",
   },
 
   myset03: {
-    t1: "Equipment",
-    p3: "The kitchen is fully equipped with both electric and wood-burning stoves, a dishwasher, microwave, and a large refrigerator. It is a complete kitchen that can easily prepare and serve meals for up to 30 people &ndash; perfect for camps, hikes, and shared meals.",
+    t0: "Equipment",
+    p0: "The kitchen is fully equipped with both electric and wood-burning stoves, a dishwasher, microwave, and a large refrigerator. It is a complete kitchen that can easily prepare and serve meals for up to 30 people. Perfect for camps, hikes, and shared meals.",
   },
   mysetBtn: {
     text: "View floor plan"
@@ -1129,7 +1146,10 @@ export const En: MessagesEngType = {
     namn: "First Name",
     efternamn: "Last Name",
     epost: "E-mail",
-    meddelande: "Message"
+    meddelande: "Message",
+    errorTxt: "couldn't send message. You can send your message to support@scouterna.se",
+    networkErrorTxt: "Network error. Please check your internet connection.",
+    successTxt: "Email Sent Successfully!"
   },
   good: "Good to know",
   question: {

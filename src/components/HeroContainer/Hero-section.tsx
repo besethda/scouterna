@@ -35,7 +35,7 @@ const HeroSection = ({ bgImages, title01, title02, description, top, position, c
                         </h1>
                         <p className="text-body md:text-body-desktop font-albert font-normal">{description}</p>
                     </div>
-                    <div className='pt-30 md:pt-36 w-60 '>
+                    <div className='pt-30 md:pt-36 w-61.5 '>
                         {children}
                     </div>
                 </div>

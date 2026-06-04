@@ -23,17 +23,17 @@ const BoatSection = ({photoArray}:{photoArray?:any[]}) => {
       mediaUrl: "/images/IMG_0411.JPEG",
     },
   ]
+  
+  const useableArray = photoArray && photoArray.length < 5 ? photoArray : fallbackData
+  const galleryPhotos: instaType[]= useableArray?.map((post: any, index:number)=> {
+    return {mediaUrl:post.mediaUrl, permalink: `link${index}`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
+  })
 
-    const useableArray = photoArray && photoArray.length < 5 ? photoArray : fallbackData
-    const galleryPhotos: instaType[]= useableArray?.map((post: any, index:number)=> {
-      return {mediaUrl:post.mediaUrl, permalink: `link${index}`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
-    })
-
-  return (
-    <div className="w-full bg-bg-white pb-16 pt-6">
-      <Gallery photoObject={galleryPhotos} caption={true}/>
-    </div>
-  )
+return (
+  <div className="w-full bg-bg-white pb-16 pt-6">
+    <Gallery photoObject={galleryPhotos} caption={true}/>
+  </div>
+)
 }
 
 export default BoatSection
