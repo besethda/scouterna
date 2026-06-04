@@ -1,6 +1,6 @@
 import { getPageHeadTitle } from "@/lib/utils"
 import ContentSection from "@/components/ContentSection";
-import BoatSection from "./boatsection";
+import boat
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";

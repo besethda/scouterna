@@ -31,3 +31,7 @@ const BoatSection = ({photoArray}:{photoArray?:any[]}) => {
     <div className="bg-bg-white pt-6 md:pb-25 pb-15 px-6.5 w-full md:px-17 md:max-w-200 lg:max-w-430">
       <Gallery photoObject={galleryPhotos} caption={true}/>
     </div>
+  )
+})}
+
+export default BoatSection
