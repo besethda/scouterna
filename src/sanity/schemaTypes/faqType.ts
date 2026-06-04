@@ -5,6 +5,11 @@ export const faqType =
     name: 'faqType',
     title: 'FAQ',
     type: 'document',
+    preview: {
+      prepare() {
+        return {title: "FAQ"}
+      }
+    },
     fields: [
       defineField({name: 'questionCategories', title: 'Frågekategorier', type: 'array', of :[
         defineField({name: 'questionSection', title: 'Frågekategori', type: 'object', fields: [
