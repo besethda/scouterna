@@ -453,39 +453,6 @@ const Groups = ({
               />
             </div>
           </div>
-          <div className="flex flex-col gap-4 justify-center pb-4">
-            <ContentSection
-              sectionLayout={["t", "p", "p"]}
-              page="Familjescoutsagor"
-              background={"blue"}
-              padding={"3"}
-              child={true} 
-            />
-            <ContentSection
-              sectionLayout={["t", "p"]}
-              page="Märken"
-              background={"blue"}
-              padding={"5"}
-              child={true} 
-            />
-          </div>
-          <div className="
-              [&_button]:border 
-            [&_button]:border-purple
-          [&_button]:bg-purple-opaque
-          [&_button]:text-primary
-            [&_button]:rounded-2xl
-            [&_button]:px-6
-            [&_button]:py-3
-            [&_button]:hover:bg-purple-opaque
-            [&_button]:hover:hover:brightness-104">
-            <a
-              href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
-              target="_blank"
-              >
-              <CTABtn text={messages?.familjescouterButton} />
-              </a>
-          </div>
       </section>
     </main> 
     )
