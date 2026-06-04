@@ -966,7 +966,8 @@ export const Sv: MessagesSvType = {
   },
   myset01: {
     t0: "Nyfiken på att hyra Myset?",
-    p0: "Mejla myset.hss.scout@gmail.com för att göra en bokningsförfrågan.",
+    p0: "Mejla ",
+    p1: "för att göra en bokningsförfrågan."
   },
   myset02: {
     t0: "Bekvämligheter",
