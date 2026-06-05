@@ -1,3 +1,5 @@
+"use client"
+
 import { Stack, Card, Flex } from '@sanity/ui'
 
 function Navbar() {

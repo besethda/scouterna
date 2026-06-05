@@ -5,6 +5,11 @@ export const cardWithImageType =
     name: 'cardWithImage',
     title: 'Bild Kort',
     type: 'object',
+    preview: {
+      select: {
+        title: 'headline_sv'
+      }
+    },
     fields: [
       defineField({name: 'headline_sv', title: 'Rubrik (SV)', type: 'string'}),
       defineField({name: 'headline_en', title: 'Rubrik (EN)', type: 'string'}),

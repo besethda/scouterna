@@ -6,6 +6,11 @@ export const becomeAScoutType =
     title: 'Bli Sjöscout',
     type: 'document',
     description: 'Bli Sjöscout sida data',
+    preview: {
+      prepare() {
+        return {title: "Bli Sjöscout"}
+      }
+    },
     fields: [
       defineField({name: 'becomeAScoutHero', title: 'Bli Sjöscout Hero', type:'hero'})
     ]
