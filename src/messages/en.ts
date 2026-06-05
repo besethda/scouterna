@@ -1164,7 +1164,7 @@ export const En: MessagesEngType = {
     desktop: "Safety is the be-all and end-all for the Sea Scouts. Read up on our life jacket policy to learn more about when the vest should be used, and which vests we recommend."
   },
   moreButton: "Read more about policy",
-  secondButton: "Read more about our life jacket policy",
+  secondButton: "Life jacket policy PDF",
 
   mysetHistory: {
     title: "The History of Myset",
