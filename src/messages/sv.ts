@@ -1160,7 +1160,7 @@ export const Sv: MessagesSvType = {
     desktop: "Säkerhet är A och O hos Sjöscouterna. Läs på om vår flytvästpolicy för att lära dig mer om när väst ska användas, och vilka västar vi rekommenderar."
   },
   moreButton: "Läs mer om policyn",
-  secondButton: "Läs mer om vår flytvästpolicy",
+  secondButton: "Flytvästpolicy PDF",
 
   mysetHistory: {
     title: "Mysets historia",
