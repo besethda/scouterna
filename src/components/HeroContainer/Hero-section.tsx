@@ -29,9 +29,9 @@ const HeroSection = ({ bgImages, title01, title02, description, top, position, c
                             {top}
                         </p>
                     </div>
-                    <div className="w-80.75 md:w-180 mx-auto text-white flex flex-col gap-3">
-                        <h1 className="text-hero font-albert md:leading-19 leading-10 font-bold md:text-hero-desktop">{title01}<br />
-                            <span className="text-accent font-albert">{title02}</span>
+                    <div className="w-80 md:w-190 mx-auto text-white flex flex-col gap-3">
+                        <h1 className="text-hero font-fraunces md:leading-19 leading-10 font-bold md:text-hero-desktop">{title01}<br />
+                            <span className="text-accent font-fraunces">{title02}</span>
                         </h1>
                         <p className="text-body md:text-body-desktop font-albert font-normal">{description}</p>
                     </div>
