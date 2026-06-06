@@ -6,8 +6,8 @@ export const heroType =
     title: 'Hero',
     type: 'object',
     fields: [
-      defineField({name: 'hero_title_sv', title: 'Hero Titel (SV)', type: 'string', readOnly: true, hidden: true}),
-      defineField({name: 'hero_title_en', title: 'Hero Titel (EN)', type: 'string', readOnly: true, hidden: true}),
+      defineField({name: 'hero_title_sv', title: 'Hero Titel (SV)', type: 'string'}),
+      defineField({name: 'hero_title_en', title: 'Hero Titel (EN)', type: 'string'}),
       defineField({name: 'hero_subtitle01_sv', title: 'Hero SubTitel 1 (SV)', type: 'string'}),
       defineField({name: 'hero_subtitle01_en', title: 'Hero SubTitel 1 (EN)', type: 'string'}),
       defineField({name: 'hero_subtitle02_sv', title: 'Hero SubTitel 2 (SV)', type: 'string'}),
