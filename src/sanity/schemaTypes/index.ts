@@ -13,9 +13,11 @@ import { pageLinkType } from './componentTypes/pageLinkType'
 import { layoutSection } from './componentTypes/layoutSectionType'
 import { cardWithoutImageType } from './componentTypes/cardWithoutImageType'
 import { lifestyleType } from './pages/lifestyleType'
+import { boatsType } from './pages/boatsType'
+import { boatSection } from './componentTypes/boatSectionType'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [heroType, homeType, faqType, becomeAScoutType, cardWithImageType, whiteGridBoxType, 
     whiteGridBoxContainerType, groups, gridImageBox, gridInfoBox, pageLinkType, layoutSection, 
-    cardWithoutImageType, lifestyleType],
+    cardWithoutImageType, lifestyleType, boatSection, boatsType],
 }

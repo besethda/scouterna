@@ -1,14 +1,14 @@
 import { defineField, defineType } from 'sanity'
 
-export const boatsType =
+export const cabinsType =
   defineType({
-    name: 'boats',
-    title: 'Våra båtar',
+    name: 'cabins',
+    title: 'Scoutstugor',
     type: 'document',
-    description: 'Våra båtar data',
+    description: 'Scoutstugor data',
     preview: {
       prepare() {
-        return {title: "Våra båtar"}
+        return {title: "Scoutstugor"}
       }
     },
     fields: [
