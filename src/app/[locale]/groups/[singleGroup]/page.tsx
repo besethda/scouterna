@@ -379,7 +379,7 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-                <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1/>
+        <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
@@ -445,8 +445,7 @@ const Groups = ({
             [&_button]:px-6
             [&_button]:py-3
             [&_button]:hover:bg-purple-opaque
-            [&_button]:hover:brightness-104
-            pl-4
+            [&_button]:hover:hover:brightness-104
           ">
               <a
                 href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"

@@ -38,7 +38,7 @@ const GoodToKnow = () => {
 
   return (
     <div className="flex flex-col md:max-w-200 lg:max-w-430 min-w-97.5 min-h-120 gap-4 px-4 pb-10 bg-bg-blue md:px-22 md:pb-15 pt-5 md:pt-10 md:bg-white ">
-      <p className="text-primary font-albert font-normal text-h2 tracking-[-0.5%] md:text-h2-desktop">{messages?.goodToKnow?.headline}</p>
+      <h2 className="text-primary font-fraunces font-bold text-h2 tracking-[-0.5%] md:text-h2-desktop">{messages?.goodToKnow?.headline}</h2>
       <div className="flex flex-col gap-4 md:grid lg:max-w-393 md:grid-cols-2 md:grid-rows-2 md:gap-6 md:py-2.5 md:text-[#FFFFFF]">
         {cards.map((card, index) => (
           <div key={index} className="flex flex-row gap-4 font-normal md:bg-primary md:rounded-2xl md:p-5 ">
@@ -49,7 +49,7 @@ const GoodToKnow = () => {
               <p className="hidden md:block font-bold font-albert uppercase text-acc md:text-acc-desktop tracking-[1.5px] text-text-blue">
                 {card.title}
               </p>
-              <p className="text-primary font-albert text-h3 tracking-[-0.5%] gap-1 md:text-h3-desktop md:text-text-white mb-2">
+              <p className="text-primary font-fraunces font-bold text-h3 tracking-[-0.5%] gap-1 md:text-h3-desktop md:text-text-white mb-2">
                 {card.headline}
               </p>
               <p className="gap-2.5 text-body font-albert tracking-[3%] md:text-body-desktop pr-12 sm:text-text-black md:text-text-white">

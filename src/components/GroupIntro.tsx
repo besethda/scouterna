@@ -4,7 +4,7 @@ interface GroupIntroProps {
   headline: string,
   title: string,
   text: string,
-  logo: string, 
+  logo: string,
 }
 
 const GroupIntro = ({ headline, title, text, logo }: GroupIntroProps) => {
@@ -15,12 +15,12 @@ const GroupIntro = ({ headline, title, text, logo }: GroupIntroProps) => {
           <p className="font-bold text-acc uppercase text-text-blue tracking-[1.5px] md:text-[16px]">
             {headline}
           </p>
-          <p className="text-primary font-medium text-h1 tracking-[-0.5%] md:text-h1-desktop">
+          <h1 className="text-primary font-fraunces font-bold text-h1 tracking-[-0.5%] md:text-h1-desktop">
             {title}
-          </p>
+          </h1>
         </div>
-        <div className={`flex items-center justify-center w-16 h-16 rounded-2xl -mt-2.5 md:w-35.5 md:h-35.5 md:mx-19.5` }>
-        <Image src={logo} alt="logo" width={48} height={48} className="md:w-35.5 md:h-35.5"/>
+        <div className={`flex items-center justify-center w-16 h-16 rounded-2xl -mt-2.5 md:w-35.5 md:h-35.5 md:mx-19.5`}>
+          <Image src={logo} alt="logo" width={48} height={48} className="md:w-35.5 md:h-35.5" />
         </div>
       </div>
       <p className="text-text-black text-[16px] font-normal tracking-[3%] md:text-[20px] md:max-w-2xl">

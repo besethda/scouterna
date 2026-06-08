@@ -28,12 +28,7 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
       <CardWithLogo image="/mailYellowBg.svg" sectionTitle="contactcard" isH1/> 
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} background={"blue"}/>
       <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"}/>
-      <JoinPage 
-      title={messages?.interestBtn.title}
-      text={messages?.interestBtn.text}
-      buttonText={messages?.interestBtn.buttonText}
-      />
-      <div className="w-full flex justify-center bg-bg-blue">
+      <div className="w-full  bg-bg-blue">
       <ContactForm 
         title={messages?.form.title}
         text={messages?.form.text}
@@ -51,6 +46,11 @@ const Contact = ({params}:{params: Promise<{locale: string}>}) => {
         networkErrorTxt={messages.form.networkErrorTxt}
       />
       </div>
+      <JoinPage 
+      title={messages?.interestBtn.title}
+      text={messages?.interestBtn.text}
+      buttonText={messages?.interestBtn.buttonText}
+      />
     </main>
   )
 }
