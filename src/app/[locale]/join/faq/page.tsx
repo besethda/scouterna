@@ -25,7 +25,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png" />
                 <div className="w-full">
                     <section className="bg-bg-blue py-10 ">
-                        <h2 className="pb-2 text-h2 font-albert text-center text-primary md:text-h1-desktop"> {messages?.faq.title} </h2>
+                        <h2 className="pb-2 text-h2 font-fraunces font-bold text-center text-primary md:text-h1-desktop"> {messages?.faq.title} </h2>
                         <div className="flex flex-col gap-2.5">
                             {(messages as any)?.fragorSvar?.map((item: any, index: number) => (
                                 <FragorSvar
@@ -37,7 +37,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                         </div>
                     </section>
                     <section className="py-10">
-                        <h2 className="pb-2 text-h2 text-center font-albert text-primary md:text-h1-desktop"> {messages?.faq.title02} </h2>
+                        <h2 className="pb-2 text-h2 text-center font-fraunces font-bold text-primary md:text-h1-desktop"> {messages?.faq.title02} </h2>
                         <div className="flex flex-col gap-2.5">
                             {(messages as any)?.fragorSvar02?.map((item: any, index: number) => (
                                 <FragorSvar
@@ -51,7 +51,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                 </div>
                 <section className="flex flex-col items-center py-10 gap-2 font-albert md:bg-bg-blue md:py-25 md:gap-10 w-full ">
                     <div className="flex flex-col w-full px-4 lg:max-w-430 lg:px-22">
-                        <h2 className="font-normal pb-3 text-h2 text-primary md:text-h2-desktop">
+                        <h2 className="font-fraunces font-bold pb-3 text-h2 text-primary md:text-h2-desktop">
                             {messages?.faqContact?.title}
                         </h2>
                         <p className="text-body md:text-body-desktop font-normal text-text-black">

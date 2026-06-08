@@ -13,7 +13,7 @@ const LifeStyleSection = ({ }) => {
   return (
     <div className="px-4 bg-bg-blue py-8 md:py-25 w-full flex justify-center font-albert flex-col items-center">
       <div className="lg:max-w-430 lg:px-22 w-full flex flex-col items-center">
-        <div className="text-h2 md:text-h2-desktop w-full md:pb-4 text-primary">{messages.offers.title}</div>
+        <h2 className="text-h2 md:text-h2-desktop w-full md:pb-4 text-primary font-fraunces font-bold">{messages.offers.title}</h2>
         <div className="flex flex-col md:flex-row md:justify-center md:flex-wrap w-full md:max-w-300">
           {[...Array(4)].map((e, index) => {
             return (
@@ -24,7 +24,7 @@ const LifeStyleSection = ({ }) => {
                   </div>
                 </div>
                 <div className="flex flex-col pl-3">
-                  <div className="text-h3 md:text-h3-desktop text-primary">{messages.offers[`header${index}`]}</div>
+                  <h3 className="text-h3 md:text-h3-desktop text-primary font-fraunces font-bold">{messages.offers[`header${index}`]}</h3>
                   <div className="text-body md:text-body-desktop text-text-black">{messages.offers[`text${index}`]}</div>
                 </div>
               </div>
