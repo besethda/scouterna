@@ -6,6 +6,7 @@ import Link from "next/link";
 import { AiOutlineDownCircle, AiFillUpCircle, AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import useMessages from '@/hook/useMessages'
 import LanguageSelector from "../LanguageSelector";
+import HSSlogo from '../../../public/HSSHeader.png'
 
 interface NavigationProps {
     onClose: () => void;
@@ -22,7 +23,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScroll(window.scrollY > 200)
+        setIsScroll(window.scrollY > 200)
         }
 
         window.addEventListener("scroll", handleScroll)
@@ -34,9 +35,9 @@ const Navigation = ({ onClose }: NavigationProps) => {
 
             <div className="w-full lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-4xl lg:mx-auto xl:max-w-5xl 2xl:max-w-400">
 
-                <div className="lg:inline hidden xl:pr-20">
-                    <Link href="https://www.scouterna.se/">
-                        <Image src="/SWEScoutLogo.svg" alt="scoutlogo" width={30} height={30} className="opacity-70" />
+                <div className={`transition-all duration-500 ease-in-out ${isScroll ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'} xl:pr-20`}>
+                    <Link href={messages?.path || "/sv"}>
+                        <Image src={HSSlogo} alt="HSSlogo" width={80} height={80} className="opacity-80" />
                     </Link>
                 </div>
 

@@ -20,7 +20,6 @@ const GroupStructure = ({ params }: { params: Promise<{ locale: string }> }) => 
   const messages = locale === "en" ? En : Sv
 
 
-
   return (
     <main className="">
       <Breadcrumbs />
