@@ -21,10 +21,10 @@ const JoinPage = ({
 }: JoinPageProps) => {
   return (
     <div
-      className={`${width === "box" ? "bg-bg-blue" : ""}  w-full  md:max-w-full border-transparent rounded-2xl py-10`}
+      className={`${width === "box" ? "bg-bg-blue" : ""}  w-full  md:max-w-full border-transparent rounded-2xl`}
     >
       <div
-        className={`${width === "box" ? "w-89.5 h-64 md:h-83 rounded-2xl md:flex-row md:w-full md:rounded items-center bg-bg-blue p-8" : "w-full"}max-w-[90%] flex w-full px-4 lg:max-w-430 lg:px-22 flex-col gap-4 md:gap-10 lg:p-25 mx-auto`}
+        className={`${width === "box" ? "w-89.5 h-64 md:h-83 rounded-2xl md:flex-row md:w-full md:rounded items-center bg-bg-blue p-8" : "w-full"}max-w-[90%] flex w-full px-4 lg:max-w-430 lg:px-22 flex-col gap-4 md:gap-10 py-10 lg:p-25 mx-auto`}
       >
         <div
           className={`flex flex-col w-full gap-2 md:w-full lg:w-[55%] text-left`}
