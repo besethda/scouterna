@@ -14,10 +14,10 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
 
     useEffect(() => {
         const container = middleImageRef.current;
-        
+
         if (window.innerWidth < 1024 && container) {
             const maxScroll = container.scrollWidth - container.clientWidth;
-            container.scrollLeft = maxScroll / 2; 
+            container.scrollLeft = maxScroll / 2;
         }
     }, []);
 
@@ -25,7 +25,7 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
         <div className='w-full pb-6 pt-6 lg:max-w-430 lg:px-22 px-4 overflow-hidden'>
             <div className=''>
                 <div className='flex flex-col gap-2 py-4 lg:w-120'>
-                    <h2 className='text-h2 font-albert text-primary lg:text-h2-desktop'>{title}</h2>
+                    <h2 className='text-h2 font-fraunces font-bold text-primary lg:text-h2-desktop'>{title}</h2>
                     <p className='text-body text-text-black font-albert lg:text-body-desktop'>{text}</p>
                 </div>
                 <div
@@ -34,16 +34,16 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
                     mx-auto lg:px-0 lg:overflow-x-visible lg:snap-none lg:justify-center"
                 >
                     {images.map((imgbox: any, index: number) => (
-                        <div 
+                        <div
                             key={index}
                             className='w-52.5 h-25 snap-center shrink-0 relative overflow-hidden rounded-2xl 
-                            lg:w-[33vw] lg:flex-1 lg:h-52 lg:snap-none' 
+                            lg:w-[33vw] lg:flex-1 lg:h-52 lg:snap-none'
                         >
                             <Image
                                 src={imgbox}
                                 alt={"images"}
                                 fill
-                                className="object-cover" 
+                                className="object-cover"
                                 priority={index === 1}
                             />
                         </div>

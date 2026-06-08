@@ -29,7 +29,7 @@ const CardWithImage = ({ sectionTitle, logo, image }: CardWithImageProps) => {
             </div>
           </div>
           <div className="md:flex md:flex-row md:items-center md:gap-2.5">
-            <div className="font-albert tracking-[-0.5%] text-h1 font-normal text-primary md:text-h1-desktop">{messages?.[sectionTitle as string]?.title}</div>
+            <h1 className="font-fraunces tracking-[-0.5%] text-h1 font-bold text-primary md:text-h1-desktop">{messages?.[sectionTitle as string]?.title}</h1>
             <div className="hidden md:flex items-center justify-center md:bg-accent shrink-0 md:h-11 md:w-11 rounded-[50%] ">
               <Image src={logo} alt="logo" width={24} height={17} className="w-auto h-4.5" />
             </div>

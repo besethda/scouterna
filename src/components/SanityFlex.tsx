@@ -1,6 +1,6 @@
 import { PortableText } from "next-sanity"
 
-const SanityFlex = () => {
+const SanityFlex = ({data, locale}: {data:any, locale:string}) => {
   return (
     <div className="">
     <div className="w-fit py-2 text-h2 md:text-h2-desktop text-primary font-albert font-medium">{locale === "se" ? data?.history_section.title_se : data?.history_section.title_en}</div>
