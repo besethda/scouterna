@@ -3,19 +3,19 @@ import { defineField, defineType } from 'sanity'
 export const pageLinkType =
   defineType({name: 'pageLink', title: 'Länk typ', type: 'string', options: {
   list: [
-    {title: 'Hemsida', value: 'home'},
-    {title: 'Bli Sjöscout', value: 'become-a-scout'},
-    {title: 'FAQ', value: 'faq'},
-    {title: 'Avdelninsstruktur', value: 'groups'},
-    {title: 'Livet som sjöscout', value: 'lifestyle'},
-    {title: 'Våra båtar', value: 'boats'},
-    {title: 'Våra scoutstugor', value: 'cabins'},
-    {title: 'Myset', value: 'myset'},
-    {title: 'Ruffen', value: 'ruffen'},
-    {title: 'Information', value: 'information'},
-    {title: 'HSS flytvästpolicy', value: 'safety'},
-    {title: 'Historia', value: 'history'},
-    {title: 'Kontact', value: 'contact'},
-    {title: 'GDPR', value: 'gdpr'},
+    {title: 'Hemsida', value: '/'},
+    {title: 'Bli Sjöscout', value: '/join/become-a-scout'},
+    {title: 'FAQ', value: '/join/faq'},
+    {title: 'Avdelninsstruktur', value: '/groups'},
+    {title: 'Livet som sjöscout', value: '/what-we-do/lifestyle'},
+    {title: 'Våra båtar', value: '/what-we-do/boats'},
+    {title: 'Våra scoutstugor', value: '/what-we-do/cabins'},
+    {title: 'Myset', value: '/what-we-do/cabins/myset'},
+    {title: 'Ruffen', value: '/what-we-do/cabins/ruffen'},
+    {title: 'Information', value: '/members/information'},
+    {title: 'HSS flytvästpolicy', value: '/members/safety'},
+    {title: 'Historia', value: '/about-us/history'},
+    {title: 'Kontact', value: '/about-us/contact'},
+    {title: 'GDPR', value: '/about-us/gdpr'},
   ]
 }})

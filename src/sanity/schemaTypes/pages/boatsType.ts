@@ -12,7 +12,6 @@ export const boatsType =
       }
     },
     fields: [
-      defineField({name: 'card_without_image', title: 'Livet som sjöscout bild kort', type:'cardWithoutImage'}),
       defineField({name: 'boats', title: 'Båt Lista', type: 'array', of: [
         defineField({name: 'single_boat', title: 'Singel båt', type: 'boatSection'})
       ]})

@@ -43,8 +43,19 @@ export const groups =
           defineField({name: 'text_object', title: '', type: 'object', fields: [
             defineField({name:'title_sv', title: 'Titel (SV)', type: 'string'}),
             defineField({name:'title_en', title: 'Titel (EN)', type: 'string'}),
-            defineField({name:'text_sv', title: 'Text (SV)', type: 'string'}),
-            defineField({name:'text_en', title: 'Text (EN)', type: 'string'}),
+            defineField({name: 'text_sv_array', title: 'SV text', type: 'array', of: [
+              defineField({name: 'text_sv', title: 'Text (SV)', type: 'block',
+              styles: [{title: 'Normal', value: 'normal'}, {title: 'H2', value: 'h2'}], 
+              lists : [{title: 'Bulleted', value: 'bullet'}],  
+              marks: {decorators: [{title: 'Strong', value: 'strong'}]}
+            })
+            ]}),
+            defineField({name: 'text_en_array', title: 'EN text', type: 'array', of: [
+              defineField({name: 'text_en', title: 'Text (EN)', type: 'block',
+                styles: [{title: 'Normal', value: 'normal'}, {title: 'H2', value: 'h2'}], 
+                lists : [{title: 'Bulleted', value: 'bullet'}],  
+                marks: {decorators: [{title: 'Strong', value: 'strong'}]}
+              })
           ]})
         ]}),
         defineField({name: 'manager_section', title: 'Avdelningsledare', type: 'object', fields: [
@@ -55,3 +66,4 @@ export const groups =
       ]})
     ]})   
   ]})
+]})

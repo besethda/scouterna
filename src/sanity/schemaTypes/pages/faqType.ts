@@ -16,14 +16,26 @@ export const faqType =
           defineField({name: 'title_sv', title: 'Kategori Titel (SV)', type: 'string'}),
           defineField({name: 'title_en', title: 'Kategori Titel (EN)', type: 'string'}),
           defineField({name: 'questionList', title: 'Frågelista', type: 'array', of: [
-            defineField({name: 'questions', title: 'Frågor', type: 'object', fields: [
+            defineField({name: 'questions', title: 'Frågor', type: 'object', 
+              preview: {
+                prepare() {
+                  return {title: "Fråga"}
+                }
+              },
+              fields: [
               defineField({name: 'question_sv', title: 'Fråga (SV)', type: 'text'}),
               defineField({name: 'question_en', title: 'Fråga (EN)', type: 'text'}),
-              defineField({name: 'answer_sv', title: 'Svar (SV)', type: 'text'}),
-              defineField({name: 'answer_en', title: 'Svar (EN)', type: 'text'}),
+              defineField({name: 'text_sv_array', title: 'SV Svar', type: 'array', of: [
+                defineField({name: 'text_sv', title: 'Text (SV)', type: 'block', 
+                  styles: [{title: 'Normal', value: 'normal'}], lists : [],  marks: {decorators: []}}),
+              ]}),
+              defineField({name: 'text_en_array', title: 'EN Svar', type: 'array', of: [
+              defineField({name: 'text_en', title: 'Text (EN)', type: 'block', 
+                styles: [{title: 'Normal', value: 'normal'}], lists : [],  marks: {decorators: []}
+              })
             ]})
           ]})
         ]})
       ]})
-    ]
-  })
+    ]})
+]})
