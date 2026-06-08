@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params
     return {
       title: locale === 'en' ? "HSS | Home" : "HSS | Hem",
-      description: locale === 'en' ? "HSS website" : " HSS webplats ",
+      description: locale === 'en' ? "HSS website" : "HSS Scouterna - äventyr för alla barn från 8 år 🏕️ | Veckoaktivitet med läger, kartorientering och vänskap | Trygg miljö med utbildade ledare | 👪 Barn under 8 år är välkomna tillsammans med förälder/nära vuxen | Hitta din närmaste grupp i Stockholm",
     }
 }
 
@@ -36,11 +36,6 @@ const public_sans = Public_Sans({
   variable: "--font-public",
   subsets: ["latin"],
 });
-
-// export const metadata: Metadata = {
-//   title: "HSS | Hem",
-//   description: "HSS Website",
-// };
 
 type Params = {
   locale: string;
