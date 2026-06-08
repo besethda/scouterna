@@ -682,7 +682,7 @@ export const Sv: MessagesSvType = {
     gdpr: "HSS | GDPR"
   },
   description: {
-    history: "Historia",
+    history: "Upptäck HSS Scouternas historia i Stockholm 🏕️🚤 | Från de första äventyren till vår egen båt – läs om läger, traditioner och resan som format oss | En del av Scouterna",
     "become-a-scout": "Bli Sjöscout",
     faq: "FAQ",
     "groups": "Våra avdelningar",

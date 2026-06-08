@@ -681,7 +681,7 @@ export const En: MessagesEngType = {
     gdpr: "HSS | GDPR"
   },
   description: {
-    history: "The history page",
+    history: "The history of HSS Scouterna in Stockholm - from the early years to our very own boat 🚤 | Discover our camps, traditions, and adventures on the water | Learn more",
     "become-a-scout": "Become a scout page",
     faq: "The FAQ page",
     "groups": "The groups page",
