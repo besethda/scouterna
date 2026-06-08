@@ -9,6 +9,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MysetHistory from "@/components/MysetHistory";
+import CardWithLogo from "@/components/CardWithLogo";
 import MapWrapper from "@/components/Map/MapWrapper";
 
 
@@ -30,13 +31,7 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
         <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithoutImage
-                    headline={messages?.mysetCard?.headline}
-                    logo="/blueHouse.png"
-                    title={messages?.mysetCard?.title}
-                    text={messages?.mysetCard?.text}
-                    MDlogo="/blueHouseYellowBg.svg"
-                />
+                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1/> 
                 <div className="px-4 md:py-3 w-full flex flex-col items-center bg-bg-blue ">
                     <div className="lg:max-w-430 lg:px-22 w-full pb-8 md:pb-12">
                         <ContentSection sectionLayout={["t"]} page="myset01" background="blue" padding="top" child={true} />
