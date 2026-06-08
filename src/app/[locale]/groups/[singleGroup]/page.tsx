@@ -11,6 +11,7 @@ import GroupIntro from "@/components/GroupIntro";
 import Link from 'next/link';
 import Family from '../../../../../public/images/ParumMagna.png'
 import FamilyEn from '../../../../../public/images/ParumMagnaEng.png'
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItems = [
   "sjohumlorna",
@@ -57,9 +58,7 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle} text={messages?.GroupIntro?.SJMtext} logo="/sjohumlor-frame.svg" />
-        </div>
+        <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
@@ -117,9 +116,9 @@ const Groups = ({
               [&_button]:hover:brightness-102"
             >
               <a
-              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
-              target="_blank"
-              className="px-0"
+                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
+                target="_blank"
+                className="px-0"
               >
                 <CTABtn text={messages?.sjohumlorButton} />
               </a>
@@ -140,9 +139,7 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle} text={messages?.GroupIntro?.KAPtext} logo="/Kaparna-frame.svg" />
-        </div>
+        <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
@@ -222,9 +219,7 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle} text={messages?.GroupIntro?.UTtext} logo="/Utmanare-frame.svg" />
-        </div>
+          <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
@@ -304,11 +299,9 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle} text={messages?.GroupIntro?.KONtext} logo="/Konvojen-frame.svg" />
-        </div>
+                <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
-        <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
+          <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                 <ContentSection
@@ -384,28 +377,26 @@ const Groups = ({
     );
   } else if (singleGroup === "smattarne") {
     return (
-    <main>
-      <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-        </div>
+      <main>
+        <Breadcrumbs />
+                <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
-        <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
-          <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
-            <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
-              <ContentSection 
-                sectionLayout={["t", "p", "p", "p"]}
-                page="BarnOchVuxnaTillsammans"
-                background={"blue"}
-                padding={"5"}
-                child={true}
-              />
-            </div>
-            <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
-              <Image
-                src={Sjohulorna}
-                alt="konvojen"
-                className="rounded-2xl object-cover w-full"
+          <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
+            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
+              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                <ContentSection
+                  sectionLayout={["t", "p", "p", "p"]}
+                  page="BarnOchVuxnaTillsammans"
+                  background={"blue"}
+                  padding={"5"}
+                  child={true}
+                />
+              </div>
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+                <Image
+                  src={Sjohulorna}
+                  alt="konvojen"
+                  className="rounded-2xl object-cover w-full"
                 />
               </div>
             </div>
@@ -430,22 +421,22 @@ const Groups = ({
               </div>
             </div>
             <div className="flex flex-col gap-4 justify-center pb-4">
-            <ContentSection
-              sectionLayout={["t", "p", "p"]}
-              page="Familjescoutsagor"
-              background={"blue"}
-              padding={"3"}
-              child={true} 
-            />
-            <ContentSection
-              sectionLayout={["t", "p"]}
-              page="Märken"
-              background={"blue"}
-              padding={"3"}
-              child={true} 
-            />
-          </div>
-          <div className="
+              <ContentSection
+                sectionLayout={["t", "p", "p"]}
+                page="Familjescoutsagor"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+              <ContentSection
+                sectionLayout={["t", "p"]}
+                page="Märken"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+            </div>
+            <div className="
             [&_button]:border 
             [&_button]:border-purple
           [&_button]:bg-purple-opaque

@@ -6,6 +6,7 @@ import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Image from "next/image";
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItem = "faq"
 const headDescription = "faq"
@@ -22,7 +23,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
         <main>
             <Breadcrumbs />
             <div className="flex w-full flex-col items-center ">
-                <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png" />
+                <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
                 <div className="w-full">
                     <section className="bg-bg-blue py-10 ">
                         <h2 className="pb-2 text-h2 font-albert text-center text-primary md:text-h1-desktop"> {messages?.faq.title} </h2>

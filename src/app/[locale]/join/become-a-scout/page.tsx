@@ -10,6 +10,7 @@ import SmallCard from "@/components/SmallCard";
 import JoinPage from "@/components/JoinPage";
 import CTABtn from "@/components/CTA-button";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItem = "become-a-scout"
 const headDescription = "become-a-scout"
@@ -30,7 +31,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
             <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_9863.JPEG')]", desktop: "md:bg-[url('/images/IMG_6748.JPEG')]" }} messageSection={"joinHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full ">
-                <CardWithImage sectionTitle={"joinCard"} logo="/heart.png" image="/images/DSCF3017.jpg" />
+                <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard"/> 
                 <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife" />
                 <div className="w-full h-0 md:h-8"></div>
                 <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image="/images/IMG_2677.JPEG" secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
