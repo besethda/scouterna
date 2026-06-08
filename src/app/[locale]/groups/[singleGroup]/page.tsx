@@ -118,8 +118,8 @@ const Groups = ({
               pl-4"
             >
               <a
-              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
-              target="_blank"
+                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
+                target="_blank"
               >
                 <CTABtn text={messages?.sjohumlorButton} />
               </a>
@@ -201,10 +201,10 @@ const Groups = ({
               pl-4"
             >
               <a
-              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
-              target="_blank"
-              > 
-              <CTABtn text={messages?.kaparnaButton} />
+                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
+                target="_blank"
+              >
+                <CTABtn text={messages?.kaparnaButton} />
               </a>
             </div>
           </div>
@@ -284,8 +284,8 @@ const Groups = ({
               pl-4"
             >
               <a
-              href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
-              target="_blank"
+                href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
+                target="_blank"
               >
                 <CTABtn text={messages?.utmanareButton} />
               </a>
@@ -367,8 +367,8 @@ const Groups = ({
               pl-4"
             >
               <a
-              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
-              target="_blank"
+                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
+                target="_blank"
               >
                 <CTABtn text={messages?.konvojenButton} />
               </a>
@@ -387,26 +387,30 @@ const Groups = ({
     );
   } else if (singleGroup === "smattarne") {
     return (
-    <main>
-      <Breadcrumbs />
-      <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-      <section className="bg-bg-blue py-10  lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
-        <div className="lg:max-w-430 flex flex-col gap-6 mx-auto">
-          <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
-            <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
-              <ContentSection 
-                sectionLayout={["t", "p", "p", "p"]}
-                page="BarnOchVuxnaTillsammans"
-                background={"blue"}
-                padding={"5"}
-                child={true}
-              />
-            </div>
-            <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
-              <Image
-                src={Sjohulorna}
-                alt="konvojen"
-                className="rounded-2xl object-cover w-full"
+      <main>
+        <Breadcrumbs />
+        <div className="flex justify-center">
+          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
+        </div>
+        <section className="bg-bg-blue py-10  lg:px-13 xl:px-19 2xl:px-43 pb-10 lg:pb-29 lg:pt-25 flex flex-col items-center">
+          <div className="lg:max-w-430 flex flex-col gap-6 mx-auto">
+            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
+              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                <ContentSection
+                  sectionLayout={["t", "p", "p", "p"]}
+                  page="BarnOchVuxnaTillsammans"
+                  background={"blue"}
+                  padding={"5"}
+                  child={true}
+                />
+              </div>
+              <div className="flex lg:px-4 w-89.5 h-auto lg:w-125 md:px-4 md:pt-3">
+                <Image
+                  src={Sjohulorna}
+                  alt="familjescouter"
+                  className="rounded-2xl object-cover w-full"
+                  width={358}
+                  height={257}
                 />
               </div>
             </div>
@@ -423,7 +427,7 @@ const Groups = ({
               <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <Image
                   src={familyImageSrc}
-                  alt="Parum & Magna"
+                  alt="Familjescouter img"
                   className="rounded-2xl object-cover w-full"
                   width={358}
                   height={257}
@@ -455,19 +459,19 @@ const Groups = ({
             [&_button]:px-6
             [&_button]:py-3
             [&_button]:hover:bg-purple-opaque
-            [&_button]:hover:hover:brightness-104
+            [&_button]:hover:brightness-104
             pl-4
           ">
-            <a
-              href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
-              target="_blank"
+              <a
+                href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
+                target="_blank"
               >
-              <CTABtn text={messages?.familjescouterButton} />
+                <CTABtn text={messages?.familjescouterButton} />
               </a>
+            </div>
           </div>
-        </div>
-      </section>
-    </main> 
+        </section>
+      </main >
     )
   }
 };
