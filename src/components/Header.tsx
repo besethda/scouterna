@@ -9,8 +9,9 @@ import Key from '../../public/HeaderKey.png'
 import useMessages from '@/hook/useMessages'
 import LanguageSelector from './LanguageSelector';
 import Navigation from './Navigation';
+import Alert from "./Alert";
 
-const Header = () => {
+const Header = ({alerts}: {alerts:Record<string, string>}) => {
 
   const messages = useMessages()
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -64,6 +65,7 @@ const Header = () => {
             </div>
           </div>
         </Link>
+        <Alert alerts={alerts} />
         <div className='hidden lg:flex gap-6 text-primary font-semibold text-link-desktop tracking-[0.03em] '>
           <Link href={messages?.path + '/join/become-a-scout'} className="flex gap-2.5 items-center">
             <Image src={Hand} alt='HandLogo' className='h-7 w-auto' />
