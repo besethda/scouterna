@@ -461,7 +461,6 @@ const Groups = ({
                 target="_blank"
               >
                 <CTABtn text={messages?.familjescouterButton} />
-                <CTABtn text={messages?.familjescouterButton} />
               </a>
             </div>
           </div>
