@@ -11,6 +11,7 @@ import JoinPage from "@/components/JoinPage";
 import CTABtn from "@/components/CTA-button";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
 import { getSectionById } from "@/lib/utils";
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItem = "become-a-scout"
 const headDescription = "become-a-scout"
@@ -34,7 +35,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
             <HeroContainer bgImages={{ mobile: data.join_images.join_hero_mobile.asset._ref, desktop: data.join_images.join_hero_desktop.asset._ref }} messageSection={"joinHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full ">
-                <CardWithImage sectionTitle={"joinCard"} logo="/heart.png" image={{image: data.join_images.card_image.asset._ref, alt: data.join_images.card_image.alt}} />
+                <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard"/> 
                 <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife" />
                 <div className="w-full h-0 md:h-8"></div>
                 <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image={{image: data.join_images.card_image_2.asset._ref, alt: data.join_images.card_image.alt}} secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />

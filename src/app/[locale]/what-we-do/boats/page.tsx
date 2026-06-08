@@ -6,6 +6,7 @@ import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Optimister from "@/components/Optimister";
 import { getId } from "@/lib/utils";
+import CardWithLogo from "@/components/CardWithLogo";
 
 
 
@@ -26,7 +27,7 @@ const Boats = async ({params}:{params: Promise<{locale: string}>}) => {
         <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithoutImage headline={messages?.boatsCard?.headline} logo="/blueBoat.svg" title={messages?.boatsCard?.title} text={messages?.boatsCard?.text} MDlogo="/blueBoatYellowBg.svg" />
+                <CardWithLogo sectionTitle="boatsCard" image="/boatYellowBg.svg" isH1/>
                 <div className="bg-bg-blue w-full flex flex-col items-center pb-8 md:pb-12">
                     {data?.boats.map((boatType:any, index:number)=> (
                         <Optimister 

@@ -5,7 +5,7 @@ import BoatSection from "./boatsection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
-import CardAbout from "@/components/AddCardAbout";
+import CardWithLogo from "@/components/CardWithLogo";
 
 
 const pageItem = "history"
@@ -27,9 +27,7 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
     return (
         <main>
             <Breadcrumbs />
-            <div className="w-full flex flex-col items-center">
-                {/* <CardAbout page="historycard" card="historymobilecard" logo="/heart.png" image="/images/boat2.jpg" MDlogo="/bg-heart.svg" /> */}
-            </div>
+            <CardWithLogo  image="/heartYellowBg.svg" sectionTitle="historycard" isH1 /> 
             <div className="">
                 <h2 className="w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-medium">{locale === "se" ? data?.history_section.title_se : data?.history_section.title_en}</h2>
                 <SanityFlex data={data?.history_layout.scout_life} locale={locale}/>

@@ -6,6 +6,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContentSection from "@/components/ContentSection";
+import CardWithLogo from "@/components/CardWithLogo";
 
 
 
@@ -28,6 +29,7 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <section className="h-fit pb-13">
+                    <CardWithLogo image="/informationYellowBg.svg" sectionTitle="safetyCard" isH1/> 
                     <CardWithImage sectionTitle="safetyCard" logo="/blue-lifejacket.svg" image="/images/DSCF3070.jpg" />
                     <div className="hidden lg:block lg:px-22 px-4 pt-0 md:w-full md:flex md:justify-center ">
                         <a href="/pdfs/HSS-Flytvastpolicy-2025-Beslutad.pdf" download="HSS-Flytvastpolicy-2025.pdf"><CTABtn text={messages?.safetyBtn?.btnDesktop} /></a>

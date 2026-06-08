@@ -6,6 +6,7 @@ import HeroContainer from "@/components/HeroContainer/HeroContainer";
 import DivisionsContainer from "@/components/DivisionsContainer/DivisionsContainer";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
 import { getId, getSectionById } from "@/lib/utils";
+import CardWithLogo from "@/components/CardWithLogo";
 
 
 
@@ -17,8 +18,7 @@ const Home = async () => {
     <main className="">
       <HeroContainer bgImages={{ mobile: data.home_images.home_hero_mobile.asset._ref, desktop: data.home_images.home_hero_desktop.asset._ref }} messageSection={"homeHero"} />
       <section className="flex flex-col items-center w-full">
-        <CardWithImage sectionTitle={"homePageCard"} logo="/heart.png" image={{image: data.home_images.card_image.asset._ref, alt: data.home_images.card_image.alt}} />
-        <HomeSection image={{image: data.home_images.card_image_2.asset._ref, alt: data.home_images.card_image.alt}}/>
+        <CardWithLogo sectionTitle={"homePageCard"}  image="/anchorYellowBg.svg" />
         <GoodToKnow />
         <WhiteImageBox />
         <DivisionsContainer />

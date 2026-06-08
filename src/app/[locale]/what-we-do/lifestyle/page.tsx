@@ -8,7 +8,7 @@ import LifeStyleSection from "./lifestyleSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import HeroContainer from "@/components/HeroContainer/HeroContainer";
 import Activities from "@/components/Activities";
-
+import CardWithLogo from "@/components/CardWithLogo";
 
 
 
@@ -32,7 +32,7 @@ const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) =>
             <HeroContainer bgImages={{ mobile: data.lifestyle_images.lifestyle_hero_mobile.asset._ref, desktop: data.lifestyle_images.lifestyle_hero_desktop.asset._ref }} messageSection={"lifestyleHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithImage sectionTitle="lifestyle" logo="/heart.png" image={{image: data.lifestyle_images.card_image.asset._ref, alt: data.lifestyle_images.card_image.alt}} />
+                <CardWithLogo image="/wavesYellowBg.svg" sectionTitle="lifestyle" />
                 <LifeStyleSection />
                 <WhiteGridContainer backgroundBlue={false} messageTitle="learning" />
 

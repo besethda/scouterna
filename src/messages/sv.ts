@@ -104,6 +104,8 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
+    title02: string, 
+    text02: string
   },
   goodToKnow: {
     headline: string,
@@ -179,6 +181,7 @@ type MessagesSvType = {
     }
   },
   faqCard: {
+    headline: string,
     title: string,
     text: string
   },
@@ -295,7 +298,9 @@ type MessagesSvType = {
   safetyCard: {
     headline: string,
     title: string,
-    text: string
+    text: string, 
+    button: string,
+    buttonMobile: string
   },
   safetyBtn: {
     btnMobile: string,
@@ -387,19 +392,32 @@ type MessagesSvType = {
   Märken: Record<string, string>,
   familjescouterButton: string
 
-  GroupIntro: {
-    FAMheadline: string,
-    FAMtitle: string,
-    FAMtext: string,
-    SJMtitle: string,
-    SJMtext: string,
-    KAPtitle: string,
-    KAPtext: string,
-    KONtitle: string,
-    KONtext: string,
-    UTtitle: string,
-    UTtext: string,
+  GroupSjohumlorna: {
+    headline: string, 
+    title: string,
+    text: string,
   },
+  GroupKaparna: {
+    headline: string, 
+    title: string,
+    text: string,
+  },
+  GroupKonvojen: {
+    headline: string, 
+    title: string,
+    text: string, 
+  },
+  GroupUtmanare: {
+    headline: string, 
+    title: string,
+    text: string,
+  },
+  GroupFamily: {
+    headline: string, 
+    title: string,
+    text: string,
+  },
+
   optimisterSection: {
     title: string,
     title02: string,
@@ -535,7 +553,9 @@ export const Sv: MessagesSvType = {
   homePageCard: {
     headline: "Bli Scout",
     title: "Vågorna väntar",
-    text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra – ute i naturen och till sjöss – och du får både kunskap, vänner och minnen för livet.",
+    text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra - ute i naturen och till sjöss - och du får både kunskap, vänner och minnen för livet.",
+    title02: "HSS välkomnar alla", 
+    text02: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare."
   },
   division: {
     sjohumlorna_title: "Sjöhumlorna",
@@ -652,6 +672,7 @@ export const Sv: MessagesSvType = {
     span_4: "Alla som vill bli Scoutledare måste visa upp utdrag ur belastningsregistret."
   },
   faqCard: {
+    headline: "FAQ",
     title: "Frågor & svar",
     text: "Här har vi samlat vanliga frågor vi får från blivande och nuvarande medlemmar i föreningen."
   },
@@ -705,7 +726,7 @@ export const Sv: MessagesSvType = {
   groupsCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
-    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem. Barn kan gå med i scouterna från och med 8 års ålder. I Utmanarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder. ",
+    text: "Vi har fem åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem. Barn kan gå med i scouterna från och med 8 års ålder. I Utmanarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder. ",
   },
   boatsCard: {
     headline: "Scoutliv",
@@ -930,7 +951,9 @@ export const Sv: MessagesSvType = {
   safetyCard: {
     headline: "Säkerhet",
     title: "HSS Flytvästpolicy",
-    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
+    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en.", 
+    button: "Ladda ner flytvästpolicyn som PDF", 
+    buttonMobile: "Ladda ner PDF"
   },
   safetyBtn: {
     btnMobile: "Ladda ner PDF",
@@ -1084,18 +1107,30 @@ export const Sv: MessagesSvType = {
   },
   familjescouterButton: "Upptäck alla våra Scoutmärken",
 
-  GroupIntro: {
-    FAMheadline: "Avdelningar",
-    FAMtitle: "Småttarne",
-    FAMtext: "Genom Familjescouting får barn under åtta år tillsammans med en eller flera vuxna på ett roligt och lekfullt sätt möta scouting.",
-    SJMtitle: "Sjöhumlorna",
-    SJMtext: "De yngsta scouterna upptäcker sjölivet genom lek, sång och små äventyr vid vattnet. Här lär man sig samarbeta, knyta sina första knopar och känna sig hemma i naturen.",
-    KAPtitle: "Kaparna",
-    KAPtext: "Nu blir det mer segling och längre utflykter i skärgården. Kaparna tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.",
-    KONtitle: "Konvojen",
-    KONtext: "Här seglar man större jollar och planerar egna hajker tillsammans med ledarna. Konvojen lär sig leda, fatta beslut och hantera utmaningar både till sjöss och på land.",
-    UTtitle: "Utmanare",
-    UTtext: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.",
+  GroupSjohumlorna: {
+    headline: "Avdelningar", 
+    title: "Sjöhumlorna",
+    text: "De näst yngsta scouterna upptäcker sjölivet genom lek, sång och små äventyr vid vattnet. Här lär man sig samarbeta, knyta sina första knopar och känna sig hemma i naturen.",
+  },
+  GroupKaparna: {
+    headline: "Avdelningar", 
+    title: "Kaparna",
+    text: "Nu blir det mer segling och längre utflykter i skärgården. Kaparna tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.",
+  },
+  GroupKonvojen: {
+    headline: "Avdelningar", 
+    title: "Konvojen",
+    text: "Här seglar man större jollar och planerar egna hajker tillsammans med ledarna. Konvojen lär sig leda, fatta beslut och hantera utmaningar både till sjöss och på land.",
+  },
+  GroupUtmanare: {
+    headline: "Avdelningar", 
+    title: "Utmanare",
+    text: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.",
+  },
+  GroupFamily: {
+    headline: "Avdelningar", 
+    title: "Familjescouter",
+    text: "Genom Familjescouting får barn under åtta år tillsammans med en eller flera vuxna på ett roligt och lekfullt sätt möta scouting.",
   },
   optimisterSection: {
     title: "Optimister",

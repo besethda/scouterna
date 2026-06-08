@@ -7,6 +7,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Image from "next/image";
 import { getId } from "@/lib/utils";
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItem = "faq"
 const headDescription = "faq"
@@ -25,9 +26,8 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
         <main>
             <Breadcrumbs />
             <div className="flex w-full flex-col items-center ">
-                <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png" />
+                <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
                 <div className="w-full">
-<<<<<<< HEAD
                     {data?.questionCategories.map((category:any, index:number)=> (
                     <section key={index} className={`${index % 2 === 0 ? 'bg-bg-blue' : 'bg-bg-white'} py-10 `}>
                     <h2 className="pb-2 text-h2 font-albert text-center text-primary md:text-h1-desktop"> {locale=== 'en' ? category.title_en : category.title_sv}</h2>
@@ -42,32 +42,6 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
                     </div>
                 </section>
                     ))}
-=======
-                    <section className="bg-bg-blue py-10 ">
-                        <h2 className="pb-2 text-h2 font-fraunces font-bold text-center text-primary md:text-h1-desktop"> {messages?.faq.title} </h2>
-                        <div className="flex flex-col gap-2.5">
-                            {(messages as any)?.fragorSvar?.map((item: any, index: number) => (
-                                <FragorSvar
-                                    key={index}
-                                    question={item.question}
-                                    answer={item.answer}
-                                />
-                            ))}
-                        </div>
-                    </section>
-                    <section className="py-10">
-                        <h2 className="pb-2 text-h2 text-center font-fraunces font-bold text-primary md:text-h1-desktop"> {messages?.faq.title02} </h2>
-                        <div className="flex flex-col gap-2.5">
-                            {(messages as any)?.fragorSvar02?.map((item: any, index: number) => (
-                                <FragorSvar
-                                    key={index}
-                                    question={item.question}
-                                    answer={item.answer}
-                                />
-                            ))}
-                        </div>
-                    </section>
->>>>>>> 3a99304b5373de1d424daf8883b513ff4b36474f
                 </div>
                 <section className="flex flex-col items-center py-10 gap-2 font-albert md:bg-bg-blue md:py-25 md:gap-10 w-full ">
                     <div className="flex flex-col w-full px-4 lg:max-w-430 lg:px-22">
