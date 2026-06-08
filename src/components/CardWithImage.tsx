@@ -2,17 +2,21 @@
 
 import useMessages from "@/hook/useMessages"
 import Image from "next/image"
+import { urlFor } from "@/sanity/lib/image";
 
+interface stringObject {
+  image: string
+  alt:string
+}
 interface CardWithImageProps {
   sectionTitle: string,
   logo: string,
-  image: string
+  image: stringObject
 }
 
 const CardWithImage = ({ sectionTitle, logo, image }: CardWithImageProps) => {
 
   const messages = useMessages() as any
-
 
   return (
     <>
@@ -33,7 +37,7 @@ const CardWithImage = ({ sectionTitle, logo, image }: CardWithImageProps) => {
           <div className="text-body text-text-black tracking-[3%] h-fit font-albert font-normal md:text-body-desktop">{messages?.[sectionTitle as string]?.text}</div>
         </div>
         <div className="relative w-full aspect-video max-w-100 lg:max-h-60 min-h-40 md:mb-34 lg:mb-0">
-          <Image src={image} alt={`${image}`} fill className="rounded-2xl object-cover" />
+          <Image src={urlFor(image.image).url()} alt={`${image.alt}`} fill className="rounded-2xl object-cover" />
         </div>
       </div>
     </>

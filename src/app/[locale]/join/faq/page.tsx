@@ -6,6 +6,7 @@ import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Image from "next/image";
+import { getId } from "@/lib/utils";
 
 const pageItem = "faq"
 const headDescription = "faq"
@@ -14,9 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
-const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
-    const { locale } = use(params)
+const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
+    const { locale } = await params
     const messages = locale === "en" ? En : Sv
+    console.log(locale)
+
+   const data = await getId("44126518-6c9f-4c34-bc46-bea246cd70ca") 
+   console.log(data?.questionCategories[0].title_sv)
 
     return (
         <main>
@@ -24,30 +29,20 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
             <div className="flex w-full flex-col items-center ">
                 <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png" />
                 <div className="w-full">
-                    <section className="bg-bg-blue py-10 ">
-                        <h2 className="pb-2 text-h2 font-albert text-center text-primary md:text-h1-desktop"> {messages?.faq.title} </h2>
-                        <div className="flex flex-col gap-2.5">
-                            {(messages as any)?.fragorSvar?.map((item: any, index: number) => (
-                                <FragorSvar
-                                    key={index}
-                                    question={item.question}
-                                    answer={item.answer}
-                                />
-                            ))}
-                        </div>
-                    </section>
-                    <section className="py-10">
-                        <h2 className="pb-2 text-h2 text-center font-albert text-primary md:text-h1-desktop"> {messages?.faq.title02} </h2>
-                        <div className="flex flex-col gap-2.5">
-                            {(messages as any)?.fragorSvar02?.map((item: any, index: number) => (
-                                <FragorSvar
-                                    key={index}
-                                    question={item.question}
-                                    answer={item.answer}
-                                />
-                            ))}
-                        </div>
-                    </section>
+                    {data?.questionCategories.map((category:any, index:number)=> (
+                    <section key={index} className={`${index % 2 === 0 ? 'bg-bg-blue' : 'bg-bg-white'} py-10 `}>
+                    <h2 className="pb-2 text-h2 font-albert text-center text-primary md:text-h1-desktop"> {locale=== 'en' ? category.title_en : category.title_sv}</h2>
+                    <div className="flex flex-col gap-2.5">
+                        {category?.questionList.map((item: any, index: number) => (
+                            <FragorSvar
+                                key={index}
+                                question={locale === "en" ? item.question_en : item.question_sv}
+                                answer={locale === "en" ? item.text_en_array : item.text_sv_array}
+                            />
+                        ))}
+                    </div>
+                </section>
+                    ))}
                 </div>
                 <section className="flex flex-col items-center py-10 gap-2 font-albert md:bg-bg-blue md:py-25 md:gap-10 w-full ">
                     <div className="flex flex-col w-full px-4 lg:max-w-430 lg:px-22">

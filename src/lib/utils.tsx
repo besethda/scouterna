@@ -14,4 +14,8 @@ export const getId = (id:string) => {
   return client.getDocument(id)
 }
 
+export const getSectionById = async (id:string, section:string) => {
+  return client.fetch(`*[_id=="${id}"][0] {${section}}`)
+}
+
 // https://www.sanity.io/docs/apis-and-sdks/js-client-querying

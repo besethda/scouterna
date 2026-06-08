@@ -4,11 +4,16 @@ import Image from "next/image"
 import CTABtn from "./CTA-button"
 import Link from "next/link"
 import { useParams } from "next/navigation"
+import { urlFor } from "@/sanity/lib/image"
 
+interface stringObject {
+  image: string
+  alt:string
+}
 interface SmallCardProps {
   title: string,
   subtitle: string,
-  image: string,
+  image: stringObject,
   secondTitle: string,
   secondText: string,
   thirdtext: string,
@@ -32,7 +37,7 @@ const SmallCard = ({ title, subtitle, image, secondTitle, secondText, thirdtext,
       </div>
       <div className="my-4 lg:my-0 lg:px-0 lg:col-start-2 lg:row-start-1 lg:row-span-2">
         <div className="relative rounded-2xl h-64.25 w-89.25 md:w-100 md:h-67 ">
-          <Image src={image} alt={title} fill className="object-cover rounded-2xl" />
+          <Image src={urlFor(image.image).url()} alt={image.alt} fill className="object-cover rounded-2xl" />
         </div>
       </div>
       <div className="flex flex-col gap-6 lg:col-start-1">
