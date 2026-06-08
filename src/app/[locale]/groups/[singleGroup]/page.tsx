@@ -422,7 +422,7 @@ const Groups = ({
               <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <Image
                   src={familyImageSrc}
-                  alt="Parum & Magna"
+                  alt="Familjescouter img"
                   className="rounded-2xl object-cover w-full"
                   width={358}
                   height={257}
@@ -455,18 +455,18 @@ const Groups = ({
             [&_button]:py-3
             [&_button]:hover:bg-purple-opaque
             [&_button]:hover:hover:brightness-104
-            pl-4
           ">
               <a
                 href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
                 target="_blank"
               >
                 <CTABtn text={messages?.familjescouterButton} />
+                <CTABtn text={messages?.familjescouterButton} />
               </a>
             </div>
           </div>
         </section>
-      </main>
+      </main >
     )
   }
 };
