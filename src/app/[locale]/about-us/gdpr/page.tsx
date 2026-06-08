@@ -23,7 +23,7 @@ const Gdpr = async ({params}:{params: Promise<{locale: string}>}) => {
         <main>
             <Breadcrumbs />
             <CardWithLogo image="/informationYellowBg.svg" sectionTitle="gdprcard" isH1/> 
-            <h2 className="w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-medium">{locale === "se" ? data?.gdpr_section.title_se : data?.gdpr_section.title_en}</h2>
+            <h2 className="w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{locale === "se" ? data?.gdpr_section.title_se : data?.gdpr_section.title_en}</h2>
             <SanityFlex data={data?.history_layout.scout_life} locale={locale}/>
         </main>
     );

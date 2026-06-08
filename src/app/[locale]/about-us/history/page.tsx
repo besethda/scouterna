@@ -28,8 +28,8 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
         <main>
             <Breadcrumbs />
             <CardWithLogo  image="/heartYellowBg.svg" sectionTitle="historycard" isH1 /> 
-            <div className="">
-                <h2 className="w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-medium">{locale === "se" ? data?.history_section.title_se : data?.history_section.title_en}</h2>
+            <div className="w-full ">
+                <h2 className="w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{locale === "sv" ? data?.history_section.title_se : data?.history_section.title_en}</h2>
                 <SanityFlex data={data?.history_layout.scout_life} locale={locale}/>
             </div>
             <BoatSection />
