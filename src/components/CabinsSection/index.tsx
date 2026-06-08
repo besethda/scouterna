@@ -4,6 +4,7 @@ import CTABtn from "../CTA-button"
 import Image from "next/image"
 import Picture from "../../../public/images/IMG_9122.jpeg"
 import ruffen from '../../../public/images/ruffen.jpg'
+import ImageCard from "../ImageCard"
 
 import { useParams, usePathname } from "next/navigation"
 import Link from "next/link"
@@ -14,9 +15,9 @@ const CabinsSection = () => {
   const params = useParams();
   const pathname = usePathname();
   const urlLocal = pathname?.split("/")[1]
-  const currentLocal = params?.local ||urlLocal || "sv"
+  const currentLocal = params?.local || urlLocal || "sv"
 
-  return(
+  return (
     <div className="flex flex-col lg:max-w-430 lg:px-22 md:px-4 w-full font-albert items-center md:gap-5 md:mb-20 ">
       <div className="hidden md:block w-full max-w-6xl">
         <h2 className=" text-primary text-h2-desktop">{messages?.cabinst}</h2>
@@ -32,15 +33,15 @@ const CabinsSection = () => {
             <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsmyset.dpTwo}</p>
             <div className="mt-7 w-fit lg:w-fit md:w-70">
               <Link
-                  href={`/${currentLocal}/what-we-do/cabins/myset`}>
-                  <CTABtn text={messages?.mysetbtn}
-                   width="full"
-                  />
-                </Link>
+                href={`/${currentLocal}/what-we-do/cabins/myset`}>
+                <CTABtn text={messages?.mysetbtn}
+                  width="full"
+                />
+              </Link>
             </div>
           </div>
           <div className="shrink-0 hidden md:block mt-6 mb-6 mr-6 w-80">
-            <Image src={Picture} alt="picture" className="rounded-3xl object-cover w-80 lg:w-90 h-auto max-w-full" />
+            <ImageCard image={`/images/IMG_9122.jpeg`} imageTitle="title" text="" section="cabinsmyset" page="cabin" pin="pink" />
           </div>
         </div>
       </div>
@@ -54,15 +55,15 @@ const CabinsSection = () => {
             <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpOne}</p>
             <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpTwo}</p>
             <div className="mt-7 w-fit lg:w-fit md:w-70">
-                <Link
-                    href={`/${currentLocal}/what-we-do/cabins/ruffen`}>
-                    <CTABtn text={messages?.ruffenbtn}
-                    />
-                  </Link>
+              <Link
+                href={`/${currentLocal}/what-we-do/cabins/ruffen`}>
+                <CTABtn text={messages?.ruffenbtn}
+                />
+              </Link>
             </div>
           </div>
           <div className=" shrink-0 hidden md:block mt-6 mb-6 mr-6 w-80">
-            <Image src={ruffen} alt="picture" className="rounded-3xl object-cover w-80 lg:w-90 h-auto max-w-full" />
+            <ImageCard image={`/images/ruffen.jpg`} imageTitle="title" text="" section="cabinsruffen" page="cabin" pin="dark_red" />
           </div>
         </div>
       </div>
