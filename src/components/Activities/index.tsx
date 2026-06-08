@@ -3,8 +3,14 @@
 import useMessages from "@/hook/useMessages"
 import Image from "next/image"
 import Img from '../../../public/images/DSCF3361.jpg'
+import { urlFor } from "@/sanity/lib/image"
 
-const Activities = () => {
+interface stringObject {
+  image: string
+  alt:string
+}
+
+const Activities = ({image}: {image: stringObject}) => {
   const messages = useMessages()
   return (
     <div className="w-full flex flex-col items-center bg-bg-blue">
@@ -17,7 +23,7 @@ const Activities = () => {
           <p className="text-text-black text-body font-albert md:text-body-desktop">{messages?.activity.p_two}</p>
         </div>
         <div className="flex md:justify-center flex-1 max-[1018px]:mt-10">
-          <Image src={Img} alt="img" className="rounded-2xl md:ml-45 md:max-w-100 object-cover max-[1018px]:mr-122" />
+          <Image src={urlFor(image.image).url()} alt="img" width={400} height={300} className="rounded-2xl md:ml-45 md:max-w-100 object-cover max-[1018px]:mr-122" />
         </div>
       </div>
     </div>

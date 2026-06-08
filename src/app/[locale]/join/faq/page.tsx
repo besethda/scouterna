@@ -18,10 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
     const { locale } = await params
     const messages = locale === "en" ? En : Sv
-    console.log(locale)
 
    const data = await getId("44126518-6c9f-4c34-bc46-bea246cd70ca") 
-   console.log(data?.questionCategories[0].title_sv)
 
     return (
         <main>

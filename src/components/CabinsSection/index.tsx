@@ -3,18 +3,18 @@ import useMessages from "@/hook/useMessages"
 import CTABtn from "../CTA-button"
 import Image from "next/image"
 import Picture from "../../../public/images/IMG_9122.jpeg"
-import ruffen from '../../../public/images/ruffen.jpg'
+import { urlFor } from "@/sanity/lib/image"
 
 import { useParams, usePathname } from "next/navigation"
 import Link from "next/link"
 
-const CabinsSection = () => {
+const CabinsSection = ({images}:{images:Record<string, string>}) => {
   const messages = useMessages()
-
   const params = useParams();
   const pathname = usePathname();
   const urlLocal = pathname?.split("/")[1]
   const currentLocal = params?.local ||urlLocal || "sv"
+  
 
   return(
     <div className="flex flex-col lg:max-w-430 lg:px-22 md:px-4 w-full font-albert items-center md:gap-5 md:mb-20 ">
@@ -40,7 +40,7 @@ const CabinsSection = () => {
             </div>
           </div>
           <div className="shrink-0 hidden md:block mt-6 mb-6 mr-6 w-80">
-            <Image src={Picture} alt="picture" className="rounded-3xl object-cover w-80 lg:w-90 h-auto max-w-full" />
+            <Image src={urlFor(images.imageMyset).url()} width={500} height={350} alt={images.refMyset} className="rounded-3xl object-cover w-80 lg:w-90 h-auto max-w-full" />
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ const CabinsSection = () => {
             </div>
           </div>
           <div className=" shrink-0 hidden md:block mt-6 mb-6 mr-6 w-80">
-            <Image src={ruffen} alt="picture" className="rounded-3xl object-cover w-80 lg:w-90 h-auto max-w-full" />
+            <Image src={urlFor(images.imageRuffen).url()} width={500} height={350} alt={images.refRuffen} className="rounded-3xl object-cover w-80 lg:w-90 h-auto max-w-full" />
           </div>
         </div>
       </div>

@@ -17,7 +17,6 @@ interface HeroSectionProps {
 const HeroSection = ({ bgImages, title01, title02, description, top, position, children }: HeroSectionProps) => {
 
     const messages = useMessages()
-    console.log(bgImages)
 
     return (
         <>
