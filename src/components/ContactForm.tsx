@@ -12,25 +12,25 @@ interface EmailFormData {
     title: string;
     text: string;
     buttonText: string;
-    namn:string;
-    efternamn:string;
-    epost:string;
-    meddelande:string;
-    errorTxt:string;
-    networkErrorTxt:string;
+    namn: string;
+    efternamn: string;
+    epost: string;
+    meddelande: string;
+    errorTxt: string;
+    networkErrorTxt: string;
     successTxt: string;
 };
 
-const ContactForm = ({ title, text, lastName, firstName, email, message, buttonText, namn,efternamn,epost,meddelande, errorTxt,networkErrorTxt,successTxt }: EmailFormData) => {
+const ContactForm = ({ title, text, lastName, firstName, email, message, buttonText, namn, efternamn, epost, meddelande, errorTxt, networkErrorTxt, successTxt }: EmailFormData) => {
     const {
         register,
         handleSubmit,
-        reset, 
+        reset,
         formState: { errors, isSubmitting },
     } = useForm<EmailFormData>()
 
     const onSubmit = async (data: EmailFormData) => {
-        
+
         try {
             const result = await sendContactEmail({
                 firstName: data.firstName,
@@ -52,16 +52,16 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
 
     return (
         <div className="py-10 flex flex-col gap-2 font-albert lg:py-25 lg:max-w-430  px-4 lg:px-22 2xl:mx-auto">
-            <Toaster position="top-center"  reverseOrder={false} />
-            <h2 className="text-h2 w-full font-medium text-primary md:text-h2-desktop">{title}</h2>
+            <Toaster position="top-center" reverseOrder={false} />
+            <h2 className="text-h2 w-full font-fraunces font-bold text-primary md:text-h2-desktop">{title}</h2>
             <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8">{text}</p>
-            <form 
+            <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-3xl py-10 px-6 flex flex-col gap-6 text-body md:w-137"
             >
                 <div className="flex flex-col gap-2">
                     <p>{lastName}</p>
-                    <input 
+                    <input
                         type="text"
                         placeholder={namn}
                         {...register("lastName", { required: "Write your last name" })}
@@ -81,7 +81,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                 </div>
                 <div className="flex flex-col gap-2">
                     <p>{email}</p>
-                    <input 
+                    <input
                         type="text"
                         placeholder={epost}
                         {...register("email", { required: "Write email address" })}
@@ -91,7 +91,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                 </div>
                 <div className="flex flex-col gap-2 pb-4">
                     <p>{message}</p>
-                    <textarea 
+                    <textarea
                         placeholder={meddelande}
                         {...register("message", { required: "Write your message" })}
                         className="border border-lightGray border-solid rounded-lg w-full p-3 h-36"
