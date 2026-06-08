@@ -454,8 +454,7 @@ const Groups = ({
             [&_button]:px-6
             [&_button]:py-3
             [&_button]:hover:bg-purple-opaque
-            [&_button]:hover:brightness-104
-            pl-4
+            [&_button]:hover:hover:brightness-104
           ">
               <a
                 href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
