@@ -6,6 +6,7 @@ import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Image from "next/image";
+import Line from "@/components/line"
 
 const pageItem = "faq"
 const headDescription = "faq"
@@ -24,7 +25,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
             <div className="flex w-full flex-col items-center ">
                 <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png" />
                 <div className="w-full">
-                    <section className="bg-bg-blue py-10 ">
+                    <section className=" pt-10 pb-[58px]">
                         <h2 className="pb-2 text-h2 font-albert text-center text-primary md:text-h1-desktop"> {messages?.faq.title} </h2>
                         <div className="flex flex-col gap-2.5">
                             {(messages as any)?.fragorSvar?.map((item: any, index: number) => (
@@ -36,7 +37,8 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                             ))}
                         </div>
                     </section>
-                    <section className="py-10">
+                    <Line hasPadding />
+                    <section className="pb-10 pt-[50px]">
                         <h2 className="pb-2 text-h2 text-center font-albert text-primary md:text-h1-desktop"> {messages?.faq.title02} </h2>
                         <div className="flex flex-col gap-2.5">
                             {(messages as any)?.fragorSvar02?.map((item: any, index: number) => (

@@ -10,6 +10,7 @@ import SmallCard from "@/components/SmallCard";
 import JoinPage from "@/components/JoinPage";
 import CTABtn from "@/components/CTA-button";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
+import Line from "@/components/line"
 
 const pageItem = "become-a-scout"
 const headDescription = "become-a-scout"
@@ -34,8 +35,9 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife" />
                 <div className="w-full h-0 md:h-8"></div>
                 <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} image="/images/IMG_2677.JPEG" secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
-                <section className="flex flex-col gap-6 font-albert pt-6 px-4 pb-8 md:pb-14 lg:max-w-430 lg:px-22">
-                    <div className="flex flex-col gap-4">
+                <Line hasPadding/>
+                <section className="flex flex-col gap-6 font-albert px-4 pb-8 md:pb-14 lg:max-w-430 lg:px-22">
+                    <div className="flex flex-col gap-4 ">
                         <h2 className="text-h2 font-albert font-medium text-primary md:text-h3-desktop">
                             {messages?.joinContent?.title}
                         </h2>
@@ -52,12 +54,13 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                     <p className="text-text-black text-body md:text-body-desktop lg:max-w-[72%] tracking-[3%]">
                         {messages?.joinContent?.text02}
                     </p>
-                        <a
+                    <a
                         href="https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/kurskatalog-ledarskapson/" 
                         target="_blank"
-                        >
-                            <CTABtn text={messages?.joinContent?.button02} />
-                        </a>
+                    >
+                        <CTABtn text={messages?.joinContent?.button02} />
+                    </a>
+                    <Line />
                     <div className="flex flex-col gap-6">
                         <h3 className="text-h2 font-medium text-[#00355F]  md:text-h3-desktop">
                             {messages?.joinContent?.title02}
