@@ -14,7 +14,6 @@ interface SendEmailParams {
 export async function sendContactEmail({ firstName, lastName, email, message }: SendEmailParams) {
     try {
         if (!process.env.RESEND_API_KEY) {
-            console.log("서버 에러: RESEND_API_KEY가 환경변수에 없슴")
             return { success: false, error: "Wrong RESEND_API_KEY" };
         }
 
