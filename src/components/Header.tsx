@@ -74,7 +74,7 @@ const Header = () => {
             <p className="font-albert tracking-[3%] leading-[100%] text-primary  ">Scoutnet</p>
           </Link>
           <LanguageSelector />
-          <Link href="https://www.scouterna.se/" target="_self">
+          <Link href="https://www.scouterna.se/" target="_blanket">
               <Image src="/SWEScoutLogo.svg" alt="scoutlogo" width={30} height={30} className="opacity-70 bg-text-blue rounded-full" />
           </Link>
         </div>
