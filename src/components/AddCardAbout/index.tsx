@@ -20,11 +20,7 @@ const CardAbout = ({ card, page, image, logo, MDlogo}: pathType) => {
   return (
     <div>
       <div className="hidden w-full justify-center md:flex">
-        <CardWithImage
-          sectionTitle={page}
-          logo={logo}
-          image={image}
-        />
+
       </div>
       <div className="flex md:hidden">
         <div className="md:px-0 w-full"> 
