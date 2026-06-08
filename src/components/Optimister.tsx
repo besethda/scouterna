@@ -1,7 +1,8 @@
 'use client'
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import { transform } from 'next/dist/build/swc';
 
 interface OptimisterProps {
     title: string;
@@ -21,6 +22,12 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
         }
     }, []);
 
+    const [isZoomed, setIsZoomed] = useState<number | null>(null)
+
+    const handleClick = (index:number) => {
+        setIsZoomed(isZoomed === index ? null : index);
+    }
+
     return (
         <div className='w-full pb-6 pt-6 lg:max-w-430 lg:px-22 px-4 overflow-hidden'>
             <div className=''>
@@ -36,14 +43,24 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
                     {images.map((imgbox: any, index: number) => (
                         <div 
                             key={index}
-                            className='w-52.5 h-25 snap-center shrink-0 relative overflow-hidden rounded-2xl 
-                            lg:w-[33vw] lg:flex-1 lg:h-52 lg:snap-none' 
+                            onClick={() => handleClick(index)}
+                            className={`
+                                ${isZoomed === index 
+                                    ? 'fixed! inset-0 z-50 items-center justify-center bg-black/60 backdrop-blur-md cursor-zoom-out w-screen h-screen m-0 ' 
+                                    :' w-52.5 h-25  shrink-0 lg:w-[33vw] lg:flex-1 lg:h-52 lg:snap-none rounded-2xl'
+                                } 
+                                snap-center relative overflow-hidden
+                            `} 
                         >
                             <Image
                                 src={imgbox}
                                 alt={"images"}
                                 fill
-                                className="object-cover" 
+                                className={`${isZoomed === index 
+                                    ? 'object-contain w-[70vw]! h-auto! p-4 mx-auto top-1/2! left-1/2! -translate-x-1/2! -translate-y-1/2!' 
+                                    :'object-cover'
+                                    }
+                                `} 
                                 priority={index === 1}
                             />
                         </div>
