@@ -22,9 +22,9 @@ const CardWithoutImage = ({ headline, logo, title, text, MDlogo }: CardWithoutIm
             </div>
           </div>
           <div className="flex gap-4">
-            <div className="font-albert tracking-[-0.5%] text-h1 text-primary md:text-h1-desktop">
+            <h1 className="font-fraunces font-bold tracking-[-0.5%] text-h1 text-primary md:text-h1-desktop">
               {title}
-            </div>
+            </h1>
             <div className="hidden md:flex items-center ">
               <Image src={MDlogo} alt="logo" width={44} height={44} className="h-11 w-auto" />
             </div>

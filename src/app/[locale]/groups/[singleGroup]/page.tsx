@@ -117,9 +117,9 @@ const Groups = ({
               [&_button]:hover:brightness-102"
             >
               <a
-              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
-              target="_blank"
-              className="px-0"
+                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
+                target="_blank"
+                className="px-0"
               >
                 <CTABtn text={messages?.sjohumlorButton} />
               </a>
@@ -200,10 +200,10 @@ const Groups = ({
               [&_button]:hover:brightness-102"
             >
               <a
-              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
-              target="_blank"
-              > 
-              <CTABtn text={messages?.kaparnaButton} />
+                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
+                target="_blank"
+              >
+                <CTABtn text={messages?.kaparnaButton} />
               </a>
             </div>
           </div>
@@ -282,8 +282,8 @@ const Groups = ({
               [&_button]:hover:brightness-104"
             >
               <a
-              href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
-              target="_blank"
+                href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
+                target="_blank"
               >
                 <CTABtn text={messages?.utmanareButton} />
               </a>
@@ -308,7 +308,7 @@ const Groups = ({
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle} text={messages?.GroupIntro?.KONtext} logo="/Konvojen-frame.svg" />
         </div>
         <section className="w-full flex flex-col items-center bg-bg-blue">
-        <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
+          <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                 <ContentSection
@@ -364,8 +364,8 @@ const Groups = ({
               [&_button]:hover:brightness-102"
             >
               <a
-              href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
-              target="_blank"
+                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
+                target="_blank"
               >
                 <CTABtn text={messages?.konvojenButton} />
               </a>
@@ -384,28 +384,28 @@ const Groups = ({
     );
   } else if (singleGroup === "smattarne") {
     return (
-    <main>
-      <Breadcrumbs />
+      <main>
+        <Breadcrumbs />
         <div className="flex justify-center">
           <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
         </div>
         <section className="w-full flex flex-col items-center bg-bg-blue">
-        <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
-          <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
-            <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
-              <ContentSection 
-                sectionLayout={["t", "p", "p", "p"]}
-                page="BarnOchVuxnaTillsammans"
-                background={"blue"}
-                padding={"5"}
-                child={true}
-              />
-            </div>
-            <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
-              <Image
-                src={Sjohulorna}
-                alt="konvojen"
-                className="rounded-2xl object-cover w-full"
+          <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
+            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
+              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                <ContentSection
+                  sectionLayout={["t", "p", "p", "p"]}
+                  page="BarnOchVuxnaTillsammans"
+                  background={"blue"}
+                  padding={"5"}
+                  child={true}
+                />
+              </div>
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+                <Image
+                  src={Sjohulorna}
+                  alt="konvojen"
+                  className="rounded-2xl object-cover w-full"
                 />
               </div>
             </div>
@@ -430,22 +430,22 @@ const Groups = ({
               </div>
             </div>
             <div className="flex flex-col gap-4 justify-center pb-4">
-            <ContentSection
-              sectionLayout={["t", "p", "p"]}
-              page="Familjescoutsagor"
-              background={"blue"}
-              padding={"3"}
-              child={true} 
-            />
-            <ContentSection
-              sectionLayout={["t", "p"]}
-              page="Märken"
-              background={"blue"}
-              padding={"3"}
-              child={true} 
-            />
-          </div>
-          <div className="
+              <ContentSection
+                sectionLayout={["t", "p", "p"]}
+                page="Familjescoutsagor"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+              <ContentSection
+                sectionLayout={["t", "p"]}
+                page="Märken"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+            </div>
+            <div className="
             [&_button]:border 
             [&_button]:border-purple
           [&_button]:bg-purple-opaque
@@ -457,16 +457,16 @@ const Groups = ({
             [&_button]:hover:hover:brightness-104
             pl-4
           ">
-            <a
-              href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
-              target="_blank"
+              <a
+                href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
+                target="_blank"
               >
-              <CTABtn text={messages?.familjescouterButton} />
+                <CTABtn text={messages?.familjescouterButton} />
               </a>
+            </div>
           </div>
-        </div>
-      </section>
-    </main> 
+        </section>
+      </main>
     )
   }
 };
