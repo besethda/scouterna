@@ -25,7 +25,9 @@ const History = ({ params }: { params: Promise<{ locale: string }> }) => {
     return (
         <main>
             <Breadcrumbs />
-            <CardAbout page="historycard" card="historymobilecard" logo="/heart.png" image="/images/boat2.jpg" MDlogo="/bg-heart.svg" />
+            <div className="w-full flex flex-col items-center">
+                <CardAbout page="historycard" card="historymobilecard" logo="/heart.png" image="/images/boat2.jpg" MDlogo="/bg-heart.svg" />
+            </div>
             <ContentSection sectionLayout={["t", "p", "p", "p", "p", "p"]} page="history" background={"blue"} />
             <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"}/>
             <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"}/>

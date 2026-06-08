@@ -12,13 +12,13 @@ const WhiteGridBox = ({logoUrl, messageTitle, messageTextIndex, backgroundWhite}
 
   return (
     <div className="my-3 lg-w-[30%] w-full px-4 lg:px-[1.5%] max-w-220 ">
-      <div onClick={()=>{setIseOpen(!isOpen)}} className={`cursor-pointer pt-3 h-18 lg:h-18 flex items-center justify-between bg-primary ${backgroundWhite ? "lg:bg-bg-white lg:text-primary lg:border-x lg:border-t lg:border-gray-300" : "md:bg-primary"} 
+      <div onClick={()=>{setIseOpen(!isOpen)}} className={`cursor-pointer pt-3 h-18 lg:h-22 flex items-center justify-between bg-primary ${backgroundWhite ? "lg:bg-bg-white lg:text-primary lg:border-x lg:border-t lg:border-gray-300" : "md:bg-primary"} 
       lg:pb-0 pb-3 text-h2 font-albert text-text-white ${isOpen ? "rounded-t-xl" : "rounded-xl lg:rounded-t-xl lg:rounded-b-none"} px-4`}>
         <div className="flex items-center">
           <div className="h-10 w-10">
             <Image src={`${logoUrl}`} alt={`${messageTextIndex + messageTitle}`} width={40} height={40} className="object-contain"/>
           </div>
-          <div className="px-3 font-albert whitespace-nowrap">{(messages as any)?.[messageTitle][`header${messageTextIndex}`]}</div>
+          <div className="px-3 text-h3 md:text-h3-desktop font-albert whitespace-nowrap">{(messages as any)?.[messageTitle][`header${messageTextIndex}`]}</div>
         </div>
         <AiOutlineDownCircle className={`w-7 h-7 lg:hidden cursor-pointer transform transition-transform duration-200 ${isOpen ? "rotate-180" : "rotate-0"}`} />
       </div>

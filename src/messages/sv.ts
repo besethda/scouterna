@@ -348,7 +348,10 @@ type MessagesSvType = {
     namn: string,
     efternamn: string,
     epost: string,
-    meddelande: string
+    meddelande: string,
+    errorTxt: string,
+    networkErrorTxt: string,
+    successTxt: string
   },
   myset01: Record<string, string>,
   myset02: Record<string, string>,
@@ -857,7 +860,7 @@ export const Sv: MessagesSvType = {
     title02: "Medlemsfrågor"
   },
   fragorSvar: [
-    { question: "Behöver vi köpa en scoutuniform på en gång?", 
+    { question: "Behöver vi köpa en scoutuniform på en gång?" , 
       answer: "Nej, du behöver inte köpa en scoutskjorta direkt. Det är bäst att vara med i några veckor först för att se så att du vill fortsätta med scouterna." 
     },
     { question: "Vad för kläder brukar scouterna ha på sig?", 
@@ -1139,7 +1142,10 @@ export const Sv: MessagesSvType = {
     namn: "Namn",
     efternamn: "Efternamn",
     epost: "E-post",
-    meddelande: "Meddelande"
+    meddelande: "Meddelande",
+    errorTxt: "Kunde inte skicka meddelandet. Du kan skicka det till support@scouterna.se.",
+    networkErrorTxt :"Nätverksfel. Vänligen kontrollera din internetanslutning.",
+    successTxt:"E-postmeddelandet har skickats!"
   },
   good: "Bra att veta",
   question: {
@@ -1154,7 +1160,7 @@ export const Sv: MessagesSvType = {
     desktop: "Säkerhet är A och O hos Sjöscouterna. Läs på om vår flytvästpolicy för att lära dig mer om när väst ska användas, och vilka västar vi rekommenderar."
   },
   moreButton: "Läs mer om policyn",
-  secondButton: "Läs mer om vår flytvästpolicy",
+  secondButton: "Flytvästpolicy PDF",
 
   mysetHistory: {
     title: "Mysets historia",

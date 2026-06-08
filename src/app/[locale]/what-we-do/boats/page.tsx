@@ -35,7 +35,7 @@ const Boats = ({params}:{params: Promise<{locale: string}>}) => {
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <CardWithoutImage headline={messages?.boatsCard?.headline} logo="/blueBoat.svg" title={messages?.boatsCard?.title} text={messages?.boatsCard?.text} MDlogo="/blueBoatYellowBg.svg" />
-                <div className="bg-bg-blue w-full flex flex-col items-center">
+                <div className="bg-bg-blue w-full flex flex-col items-center pb-8 md:pb-12">
                     <Optimister 
                         title={messages?.optimisterSection?.title}
                         text={messages?.optimisterSection?.text}

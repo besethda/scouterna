@@ -39,7 +39,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                         <h2 className="text-h2 font-albert font-medium text-primary md:text-h3-desktop">
                             {messages?.joinContent?.title}
                         </h2>
-                        <p className="text-text-black text-body md:text-body-desktop tracking-[3%]">
+                        <p className="text-text-black text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
                             {messages?.joinContent?.text}
                         </p>
                     </div>
@@ -49,7 +49,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                     >
                         <CTABtn text={messages?.joinContent?.button} />
                     </a>
-                    <p className="text-text-black text-body md:text-body-desktop tracking-[3%]">
+                    <p className="text-text-black text-body md:text-body-desktop lg:max-w-[72%] tracking-[3%]">
                         {messages?.joinContent?.text02}
                     </p>
                         <a
@@ -59,10 +59,10 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             <CTABtn text={messages?.joinContent?.button02} />
                         </a>
                     <div className="flex flex-col gap-6">
-                        <h3 className="text-h3 font-medium text-[#00355F]  md:text-h3-desktop">
+                        <h3 className="text-h2 font-medium text-[#00355F]  md:text-h3-desktop">
                             {messages?.joinContent?.title02}
                         </h3>
-                        <p className="text-text-black pb-4 text-body md:text-body-desktop tracking-[3%]">
+                        <p className="text-text-black pb-4 text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
                             {messages?.joinContent?.text03}
                         </p>
                     </div>

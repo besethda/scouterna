@@ -15,10 +15,13 @@ interface EmailFormData {
     namn:string;
     efternamn:string;
     epost:string;
-    meddelande:string
+    meddelande:string;
+    errorTxt:string;
+    networkErrorTxt:string;
+    successTxt: string;
 };
 
-const ContactForm = ({ title, text, lastName, firstName, email, message, buttonText, namn,efternamn,epost,meddelande }: EmailFormData) => {
+const ContactForm = ({ title, text, lastName, firstName, email, message, buttonText, namn,efternamn,epost,meddelande, errorTxt,networkErrorTxt,successTxt }: EmailFormData) => {
     const {
         register,
         handleSubmit,
@@ -27,32 +30,31 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
     } = useForm<EmailFormData>()
 
     const onSubmit = async (data: EmailFormData) => {
-        console.log("form data", data);
         
         try {
             const result = await sendContactEmail({
                 firstName: data.firstName,
                 lastName: data.lastName,
                 email: data.email,
-                message: data.message
+                message: data.message,
             });
 
             if (result.success) {
-                toast.success("Email Sent Successfully!");
+                toast.success(successTxt);
                 reset();
             } else {
-                console.log("server error:", result.error);
+                toast.error(result.error || errorTxt);
             }
         } catch (error) {
-            console.log("Network error:", error);
+            toast.error(networkErrorTxt);
         }
     };
 
     return (
-        <div className="py-10 px-4 bg-bg-blue flex flex-col gap-2 lg:pl-25 lg:py-25 font-albert">
+        <div className="py-10 px-4 flex items-center flex-col gap-2 lg:py-25 font-albert">
             <Toaster position="top-center"  reverseOrder={false} />
-            <h2 className="text-h2 font-medium text-primary md:text-h2-desktop">{title}</h2>
-            <p className="text-body text-text-black md:text-body-desktop pb-2 md:pb-8">{text}</p>
+            <h2 className="text-h2 w-full font-medium text-primary md:text-h2-desktop">{title}</h2>
+            <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8">{text}</p>
             <form 
                 onSubmit={handleSubmit(onSubmit)}
                 className="bg-bg-white min-w-[320px] border border-lightGray border-solid rounded-3xl py-10 px-6 flex flex-col gap-6 text-body md:w-137"
