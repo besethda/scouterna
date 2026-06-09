@@ -18,7 +18,7 @@ const DivisionsBox = ({ division, data, boxStyle = "basic" }:
     konvojen: ["border-orange", "bg-orange-opaque"],
     smattarne: ["border-purple", "bg-purple-opaque"]
   }
-  if(!data || !data.groups.image || data.groups.day_se) return null
+  if(!data || data.groups.day_se) return null
   console.log(data.groups.day_en)
 
   return (

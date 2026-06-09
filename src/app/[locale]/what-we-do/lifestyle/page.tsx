@@ -8,6 +8,7 @@ import LifeStyleSection from "./lifestyleSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import HeroContainer from "@/components/HeroContainer/HeroContainer";
 import Activities from "@/components/Activities";
+import PhotoContainer from "./photoContainer";
 import CardWithLogo from "@/components/CardWithLogo";
 
 
@@ -34,7 +35,7 @@ const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) =>
             <div className="flex flex-col items-center">
                 <CardWithLogo image="/wavesYellowBg.svg" sectionTitle="lifestyle" />
                 <LifeStyleSection />
-                <WhiteGridContainer backgroundBlue={false} messageTitle="learning" />
+                <PhotoContainer backgroundBlue={false} messageTitle="learning" />
 
             </div>
             <Activities image={{image: data.lifestyle_images.card_image_2.asset._ref, alt: data.lifestyle_images.card_image_2.alt}}/>

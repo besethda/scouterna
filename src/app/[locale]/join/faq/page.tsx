@@ -8,6 +8,7 @@ import { use } from "react";
 import Image from "next/image";
 import { getId } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
+import Line from "@/components/line"
 
 const pageItem = "faq"
 const headDescription = "faq"
@@ -29,6 +30,7 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
                 <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
                 <div className="w-full">
                     {data?.questionCategories.map((category:any, index:number)=> (
+                        <>
                     <section key={index} className={`${index % 2 === 0 ? 'bg-bg-blue' : 'bg-bg-white'} py-10 `}>
                     <h2 className="pb-2 text-h2 font-albert text-center text-primary md:text-h1-desktop"> {locale=== 'en' ? category.title_en : category.title_sv}</h2>
                     <div className="flex flex-col gap-2.5">
@@ -41,6 +43,8 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
                         ))}
                     </div>
                 </section>
+                {index < data.questionCategories.length && <Line hasPadding />}
+                </>
                     ))}
                 </div>
                 <section className="flex flex-col items-center py-10 gap-2 font-albert md:bg-bg-blue md:py-25 md:gap-10 w-full ">
