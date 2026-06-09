@@ -105,7 +105,8 @@ type MessagesSvType = {
     title: string,
     text: string,
     title02: string, 
-    text02: string
+    text02: string, 
+    span: string,
   },
   goodToKnow: {
     headline: string,
@@ -227,7 +228,6 @@ type MessagesSvType = {
     cabins: string,
     myset: string,
     ruffen: string,
-    members: string,
     information: string,
     safety: string,
     contact: string,
@@ -554,8 +554,9 @@ export const Sv: MessagesSvType = {
     headline: "Bli Scout",
     title: "Vågorna väntar",
     text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra - ute i naturen och till sjöss - och du får både kunskap, vänner och minnen för livet.",
-    title02: "HSS välkomnar alla", 
-    text02: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare."
+    title02: "HSS välkomnar ", 
+    text02: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare.",
+    span: "alla"
   },
   division: {
     sjohumlorna_title: "Sjöhumlorna",
@@ -703,25 +704,24 @@ export const Sv: MessagesSvType = {
     gdpr: "HSS | GDPR"
   },
   description: {
-    history: "Historia",
-    "become-a-scout": "Bli Sjöscout",
-    faq: "FAQ",
-    "groups": "Våra avdelningar",
-    sjohumlorna: "Sjöhumlorna",
-    kaparna: "Kaparna",
-    konvojen: "Konvojen",
-    utmanare: "Utmanare",
-    smattarne: "Småttarne",
-    lifestyle: "Livet som Sjöscout",
-    boats: "Båtar",
-    cabins: "Scoutstugor",
-    myset: "Myset",
-    ruffen: "Ruffen",
-    members: "För medlemmar",
-    information: "Information för medlemmar",
-    safety: "Flytvästpolicy",
-    contact: "Kontakt",
-    gdpr: "GDPR"
+    history: "Upptäck HSS Scouternas historia i Stockholm 🏕️🚤 | Från de första äventyren till vår egen båt – läs om läger, traditioner och resan som format oss | En del av Scouterna",
+    "become-a-scout": "Bli scout i Hässelby Strands Sjöscouter 🚤 | Upptäck scoutlivet, åldrar (8+), ledare & förälder - ingen erfarenhet krävs | Anmäl ditt intresse här",
+    faq: "FAQ - vanliga frågor om att bli scout och medlem i Hässelby Strands Sjöscouter (HSS) 🏕️🚤 | Hitta dina svar här",
+    "groups": "Våra avdelningar hos Hässelby Strands Sjöscouter (HSS) 🚤🏕️ | 5 åldersgrupper: Under 8 (med förälder eller vuxen), 8-9, 10-11, 12-14 och 15+ | Åldersanpassade aktiviteter, trygg miljö och utbildade ledare | Hitta din grupp här",
+    sjohumlorna: "Sjöhumlorna - 8-9 år hos HSS 🐝 | Måndagar vid Ruffen | Trygga ledare | Märken: lykta, popcorn, kompisar & miljö | Börja scoutresan här",
+    kaparna: "Kaparna - 10-11 år hos HSS 🚤 | Segling, navigation, ansvar & vänskap | Märken: kniv, yxa, eld, sjukvård | Tisdagar vid Ruffen | Bli Upptäckarscout",
+    konvojen: "Konvojen - 12-14 år hos HSS 🚤 | Segla större jollar, planera hajker, leda & fatta beslut | Äventyrarscouter | Torsdagar vid Ruffen",
+    utmanare: "Utmanare - 15+ år hos HSS 🚤🌍 | Egna projekt, internationella läger & ledarroller | 10 utmaningar - 2 individuella, 8 tillsammans | Tis/tors vid Ruffen | Bli en Utmanare",
+    smattarne: "Småttarne - Familjescouting (barn under 8) hos HSS 🐻 | Barn & vuxna med björnarna Parum & Magna | Sagor, lek & egna märken | Stärk er relation",
+    lifestyle: "Scoutliv hos HSS - livet som sjöscout 🚤🌊 | Äventyr, gemenskap, frihet, natur och vänner för livet | Sjömanskunskap, läger & aktiviteter | Läs mer här",
+    boats: "HSS Båtar - Optimist, 2-kronor, Kölbåtar ⛵🚤 | Optimist: nybörjarbåt | 2-kronor: snabb & rolig | Kölbåtar: stabil & trygg | Upptäck här",
+    cabins: "HSS scoutstugor - Myset & Ruffen 🏕️ | Myset: hyras för lägerbål & hajker | Ruffen: mötesplats vid Hässelby Strandbad för alla avdelningar & Optimistjollar",
+    myset: "Myset - HSS:s scoutstuga 🏕️ | Adress, historia, miljö & vägbeskrivning | Perfekt för lägerbål & hajker - finns att hyra | Läs mer här",
+    ruffen: "Ruffen - HSS scoutstuga 🏕️ | Plats, vägbeskrivning och fyra mötesplatser | Hitta hit och upptäck våra samlingsplatser här",
+    information: "HSS Information 📄 | Säkerhet, FAQ, kårstämmor och Scoutnet | Uppdatera uppgifter och anmäl dig till aktiviteter",
+    safety: "HSS Flytvästpolicy 🦺🚤 | När ska flytväst bäras? Regler för barn, ungdomar och ledare | Säkerhet på vattnet | Läs policyn här",
+    contact: "Kontakta HSS 📧 | E-post och Bankgiro information | Frågor om scouting? Vi svarar | Kontaktuppgifter här",
+    gdpr: "GDPR - personuppgiftsbehandling hos HSS 🔒 | Din integritet och säkerhet | Läs vår policy här"
   },
   groupsCard: {
     headline: "Avdelningar",
@@ -1072,8 +1072,7 @@ export const Sv: MessagesSvType = {
   konvojenMeeting: {
     t0: "Avdelningsmöten",
     p0: "Dag: Torsdag",
-    p1: "Tid: 18:00",
-    p2: "Plats: Ruffen vid Hässelby Strandbad."
+    p1: "Plats: Ruffen vid Hässelby Strandbad."
   },
   konvojenPlace: {
     t0: "Märken",

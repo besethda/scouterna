@@ -246,6 +246,7 @@ const Groups = async ({
           <ContentSection
             sectionLayout={["t"]}
             page="avdelningsledare"
+            background={"blue"}
             padding={"none"}
             child={true}
           />
@@ -350,6 +351,7 @@ const Groups = async ({
             sectionLayout={["t"]}
             page="avdelningsledare"
             padding={"none"}
+            background={"blue"}
             child={true}
           />
             <PortableText components={{block: 
@@ -453,6 +455,7 @@ const Groups = async ({
             sectionLayout={["t"]}
             page="avdelningsledare"
             padding={"none"}
+            background={"blue"}
             child={true}
           />
             <PortableText components={{block: 
