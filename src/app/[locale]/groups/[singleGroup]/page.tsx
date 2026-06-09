@@ -7,11 +7,12 @@ import ContentSection from "@/components/ContentSection";
 import Image from "next/image";
 import CTABtn from "@/components/CTA-button";
 import Sjohulorna from "../../../../../public/images/DSCF3033.jpg";
-import GroupIntro from "@/components/GroupIntro";
-import Link from 'next/link';
+import { getId } from "@/lib/utils";
 import Family from '../../../../../public/images/ParumMagna.png'
 import FamilyEn from '../../../../../public/images/ParumMagnaEng.png'
 import CardWithLogo from "@/components/CardWithLogo";
+import { PortableText } from "next-sanity";
+import { urlFor } from "@/sanity/lib/image";
 
 const pageItems = [
   "sjohumlorna",
@@ -41,18 +42,25 @@ export async function generateMetadata({
   return tabTitle
 }
 
-const Groups = ({
+const Groups = async ({
   params,
 }: {
   params: Promise<{ locale: string; singleGroup: string }>;
 }) => {
 
-
-
-  const { singleGroup, locale } = use(params);
+  const { singleGroup, locale } = await params
   const messages = locale === "en" ? En : Sv;
-
   const familyImageSrc = locale === "en" ? FamilyEn : Family;
+  const data = await getId("2a5a4f80-b206-44b9-9e00-6b870a00f90e")
+  if(!data) return null
+  const sjohumlorna = data?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null
+  const kaparna = data?.groups.find((e:any) => e.name_slug === "kaparna") || null
+  const utmanare = data?.groups.find((e:any) => e.name_slug === "utmanare") || null
+  const konvojen = data?.groups.find((e:any) => e.name_slug === "konvojen") || null
+  const smattarne = data?.groups.find((e:any) => e.name_slug === "smattarne") || null
+
+  
+
 
   if (singleGroup === "sjohumlorna") {
     return (
@@ -71,10 +79,10 @@ const Groups = ({
                   child={true}
                 />
               </div>
-              <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6">
+              <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
-                  src={Sjohulorna}
-                  alt="sjöhumlorna"
+                  src={urlFor(sjohumlorna.groups.image.asset._ref).url()}
+                  alt={sjohumlorna.groups.image.alt}
                   className="rounded-2xl object-cover"
                   width={358}
                   height={257}
@@ -90,12 +98,16 @@ const Groups = ({
             />
             <div className="flex flex-col pb-4 w-full">
               <ContentSection
-                sectionLayout={["t", "p", "p"]}
+                sectionLayout={["t"]}
                 page="sjohumlorMeeting"
                 background={"blue"}
                 padding={"none"}
                 child={true}
               />
+              <div className="">
+                <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: ": "Day: "}${messages?.path === "/sv" ? sjohumlorna?.groups?.day_sv : sjohumlorna.groups.day_en}`}</div>
+                <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: ": "Place: "}${messages?.path === "/sv" ? sjohumlorna?.groups?.place_sv : sjohumlorna.groups.place_en}`}</div>
+              </div>
               <ContentSection
                 sectionLayout={["t", "p"]}
                 page="sjohumlorPlace"
@@ -126,13 +138,31 @@ const Groups = ({
           </div>
         </section>
         <section className="bg-white w-full lg:max-w-430 lg:px-22 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto">
-          <ContentSection
-            sectionLayout={["t", "p"]}
-            page="avdelningsledare"
-            background={"blue"}
-            padding={"5"}
-            child={true}
-          />
+          <div className="w-full py-2">
+            <ContentSection
+              sectionLayout={["t"]}
+              page="avdelningsledare"
+              padding={"none"}
+              child={true}
+            />
+              <PortableText components={{block: 
+              {
+                normal: ({children})=> <p className="w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%] mb-3">{children}</p>,
+                h3: ({children})=> <h3 className="w-fit py-2 text-h3 md:text-h3-desktop text-primary font-fraunces font-bold">{children}</h3>
+              },list: {
+                bullet: ({children})=> <p className="w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%] mb-3 list-disc pl-5">{children}</p>,
+              }}}
+            value={locale === "en" ? sjohumlorna?.leader.text_object.text_en_array : sjohumlorna?.leader.text_object.text_sv_array}/>
+          </div>
+          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+            <Image
+              src={urlFor(sjohumlorna.leader.text_object.image.asset._ref).url()}
+              alt={sjohumlorna.leader.text_object.image.alt}
+              className="rounded-2xl object-cover"
+              width={358}
+              height={257}
+            />
+          </div>
         </section>
       </main>
     );
@@ -153,15 +183,15 @@ const Groups = ({
                   child={true}
                 />
               </div>
-              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+              <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
-                  src={Sjohulorna}
-                  alt="kaparna"
+                  src={urlFor(kaparna.groups.image.asset._ref).url()}
+                  alt={kaparna.groups.image.alt}
                   className="rounded-2xl object-cover"
                   width={358}
                   height={257}
                 />
-              </div>
+            </div>
             </div>
             <ContentSection
               sectionLayout={["t", "p"]}
@@ -172,12 +202,16 @@ const Groups = ({
             />
             <div className="flex flex-col gap-4 justify-center pb-4">
               <ContentSection
-                sectionLayout={["t", "p", "p"]}
+                sectionLayout={["t"]}
                 page="kaparnaMeeting"
                 background={"blue"}
-                padding={"5"}
+                padding={"none"}
                 child={true}
               />
+              <div className="">
+                <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: ": "Day: "}${messages?.path === "/sv" ? kaparna?.groups?.day_sv : kaparna.groups.day_en}`}</div>
+                <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: ": "Place: "}${messages?.path === "/sv" ? kaparna?.groups?.place_sv : kaparna.groups.place_en}`}</div>
+              </div>
               <ContentSection
                 sectionLayout={["t", "p"]}
                 page="kaparnaPlace"
@@ -207,13 +241,32 @@ const Groups = ({
           </div>
         </section>
         <section className="bg-white w-full lg:max-w-430 lg:px-22 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto">
+          <div className="w-full py-2">
           <ContentSection
-            sectionLayout={["t", "p"]}
+            sectionLayout={["t"]}
             page="avdelningsledare"
             background={"blue"}
-            padding={"5"}
+            padding={"none"}
             child={true}
           />
+            <PortableText components={{block: 
+            {
+              normal: ({children})=> <p className="w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%] mb-3">{children}</p>,
+              h3: ({children})=> <h3 className="w-fit py-2 text-h3 md:text-h3-desktop text-primary font-fraunces font-bold">{children}</h3>
+            },list: {
+              bullet: ({children})=> <p className="w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%] mb-3 list-disc pl-5">{children}</p>,
+            }}}
+          value={locale === "en" ? kaparna?.leader.text_object.text_en_array : kaparna?.leader.text_object.text_sv_array}/>
+        </div>
+        <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+          <Image
+            src={urlFor(kaparna.leader.text_object.image.asset._ref).url()}
+            alt={kaparna.leader.text_object.image.alt}
+            className="rounded-2xl object-cover"
+            width={358}
+            height={257}
+          />
+        </div>
         </section>
       </main>
     );
@@ -234,15 +287,15 @@ const Groups = ({
                   child={true}
                 />
               </div>
-              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+              <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
-                  src={Sjohulorna}
-                  alt="utmanare"
+                  src={urlFor(utmanare.groups.image.asset._ref).url()}
+                  alt={utmanare.groups.image.alt}
                   className="rounded-2xl object-cover"
                   width={358}
                   height={257}
                 />
-              </div>
+            </div>
             </div>
             <ContentSection
               sectionLayout={["t", "p"]}
@@ -253,12 +306,16 @@ const Groups = ({
             />
             <div className="flex flex-col gap-4 justify-center pb-4">
               <ContentSection
-                sectionLayout={["t", "p", "p"]}
+                sectionLayout={["t"]}
                 page="utmanareMeeting"
                 background={"blue"}
                 padding={"5"}
                 child={true}
               />
+              <div className="">
+                <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: ": "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
+                <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: ": "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
+              </div>
               <ContentSection
                 sectionLayout={["t", "p"]}
                 page="utmanarePlace"
@@ -288,13 +345,32 @@ const Groups = ({
           </div>
         </section>
         <section className="bg-white lg:max-w-430 lg:px-22 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto">
+          <div className="w-full py-2">
           <ContentSection
-            sectionLayout={["t", "p"]}
+            sectionLayout={["t"]}
             page="avdelningsledare"
-            padding={"5"}
+            padding={"none"}
             background={"blue"}
             child={true}
           />
+            <PortableText components={{block: 
+            {
+              normal: ({children})=> <p className="w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%] mb-3">{children}</p>,
+              h3: ({children})=> <h3 className="w-fit py-2 text-h3 md:text-h3-desktop text-primary font-fraunces font-bold">{children}</h3>
+            },list: {
+              bullet: ({children})=> <p className="w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%] mb-3 list-disc pl-5">{children}</p>,
+            }}}
+          value={locale === "en" ? utmanare?.leader.text_object.text_en_array : utmanare?.leader.text_object.text_sv_array}/>
+          </div>
+          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+          <Image
+            src={urlFor(utmanare.leader.text_object.image.asset._ref).url()}
+            alt={utmanare.leader.text_object.image.alt}
+            className="rounded-2xl object-cover"
+            width={358}
+            height={257}
+          />
+          </div>
         </section>
       </main>
     );
@@ -315,15 +391,15 @@ const Groups = ({
                   child={true}
                 />
               </div>
-              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
-                <Image
-                  src={Sjohulorna}
-                  alt="konvojen"
+              <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+                {konvojen?.groups?.image && <Image
+                  src={urlFor(konvojen?.groups?.image.asset._ref).url()}
+                  alt={konvojen.groups.image.alt}
                   className="rounded-2xl object-cover"
                   width={358}
                   height={257}
-                />
-              </div>
+                />}
+            </div>
             </div>
             <ContentSection
               sectionLayout={["t", "p"]}
@@ -334,12 +410,16 @@ const Groups = ({
             />
             <div className="flex flex-col gap-4 justify-center pb-4">
               <ContentSection
-                sectionLayout={["t", "p", "p"]}
+                sectionLayout={["t"]}
                 page="konvojenMeeting"
                 background={"blue"}
                 padding={"5"}
                 child={true}
               />
+              <div className="">
+                <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: ": "Day: "}${messages?.path === "/sv" ? konvojen?.groups?.day_sv : konvojen.groups.day_en}`}</div>
+                <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: ": "Place: "}${messages?.path === "/sv" ? konvojen?.groups?.place_sv : konvojen.groups.place_en}`}</div>
+              </div>
               <ContentSection
                 sectionLayout={["t", "p"]}
                 page="konvojenPlace"
@@ -369,13 +449,32 @@ const Groups = ({
           </div>
         </section>
         <section className="bg-white lg:max-w-430 lg:px-22 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto">
+          <div className="w-full py-2">
           <ContentSection
-            sectionLayout={["t", "p"]}
+            sectionLayout={["t"]}
             page="avdelningsledare"
-            padding={"5"}
+            padding={"none"}
             background={"blue"}
             child={true}
           />
+            <PortableText components={{block: 
+            {
+              normal: ({children})=> <p className="w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%] mb-3">{children}</p>,
+              h3: ({children})=> <h3 className="w-fit py-2 text-h3 md:text-h3-desktop text-primary font-fraunces font-bold">{children}</h3>
+            },list: {
+              bullet: ({children})=> <p className="w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%] mb-3 list-disc pl-5">{children}</p>,
+            }}}
+          value={locale === "en" ? konvojen?.leader.text_object.text_en_array : konvojen?.leader.text_object.text_sv_array}/>
+          </div>
+          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+          <Image
+            src={urlFor(konvojen.leader.text_object.image.asset._ref).url()}
+            alt={konvojen.leader.text_object.image.alt}
+            className="rounded-2xl object-cover"
+            width={358}
+            height={257}
+          />
+          </div>
         </section>
       </main>
     );
@@ -396,11 +495,13 @@ const Groups = ({
                   child={true}
                 />
               </div>
-              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+              <div className="flex w-89.5 aspect-6/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
-                  src={Sjohulorna}
+                  src={urlFor(smattarne?.groups?.image.asset._ref).url()}
                   alt="konvojen"
                   className="rounded-2xl object-cover w-full"
+                  width={358}
+                  height={257}
                 />
               </div>
             </div>
@@ -414,7 +515,7 @@ const Groups = ({
                   child={true}
                 />
               </div>
-              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+              <div className="flex w-89.5 aspect-6/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
                   src={familyImageSrc}
                   alt="Familjescouter img"
