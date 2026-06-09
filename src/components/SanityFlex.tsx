@@ -4,8 +4,6 @@ import { PortableText } from "next-sanity"
 import CTABtn from "./CTA-button"
 
 const SanityFlex = ({data, locale}: {data:any, locale:string}) => {
-
-  console.log(data, locale)
   return (
     <div className="w-full">
       {data.map((section:any, index:number)=> {
