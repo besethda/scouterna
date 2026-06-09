@@ -21,7 +21,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
     const messages = locale === "en" ? En : Sv
 
     return (
-        <main>
+        <main className="bg-bg-blue">
             <Breadcrumbs />
             <div className="flex w-full flex-col items-center ">
                 <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
@@ -52,18 +52,27 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                         </div>
                     </section>
                 </div>
-                <section className="flex flex-col items-center py-10 gap-2 font-albert md:bg-bg-blue md:py-25 md:gap-10 w-full ">
-                    <div className="flex flex-col w-full px-4 lg:max-w-430 lg:px-22">
-                        <h2 className="font-fraunces font-bold pb-3 text-h2 text-primary md:text-h2-desktop">
-                            {messages?.faqContact?.title}
-                        </h2>
+                <section className="flex flex-col gap-6 font-albert md:gap-4
+                    bg-white mx-4 mb-8 px-4 py-8 rounded-3xl max-w-245 md:px-10 lg:my-20 lg:justify-between lg:w-full lg:relative
+                ">
+                    <div className="flex flex-col w-full lg:w-150 lg:shrink-0">
+                        <div className="flex justify-between lg:static">
+                            <h2 className="font-fraunces font-bold pb-2 text-h2 text-primary md:text-h2-desktop">
+                                {messages?.faqContact?.title}
+                            </h2>
+                            <Image src="/kontakt.svg" alt="icon" width={50} height={44} 
+                                className="lg:w-40.75 lg:absolute top-4.75 right-26.25" 
+                            />
+                        </div>
                         <p className="text-body md:text-body-desktop font-normal text-text-black">
                             {messages?.faqContact?.text}
                         </p>
                     </div>
-                    <div className="flex items-center gap-3 w-full px-4 lg:max-w-430 lg:px-22">
-                        <Image src="/blueMailYellowBg.svg" alt="logo" width={44} height={44} className="" />
-                        <a href="mailto:info@hss-scout.org" className="text-text-black font-normal text-body md:text-body-desktop hover:underline">
+                    <div className="flex items-center gap-3 w-full lg:max-w-430">
+                        <Image src="/msgIcon.svg" alt="logo" width={44} height={44} className="" />
+                        <a href="mailto:info@hss-scout.org" 
+                            className="text-text-black text-body md:text-body-desktop hover:underline font-bold
+                        ">
                             info@hss-scout.org
                         </a>
                     </div>
