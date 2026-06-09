@@ -14,7 +14,7 @@ const PhotoContainer = ({ backgroundBlue = true, messageTitle }: { backgroundBlu
             <div className="w-full">
                 <ContentSection sectionLayout={["t"]} page={"scoutLife"} padding="top" background={backgroundBlue ? "large" : ""} />
             </div>
-            <div className="w-full items-center lg:justify-center lg:max-w-400 flex px-4 py-4 lg:px-14 flex-col gap-8 md:flex-row md:justify-center">
+            <div className="w-full items-center lg:justify-center lg:max-w-400 flex px-4 py-4 lg:px-14 flex-col gap-8 md:flex-row md:justify-center md:flex-wrap">
                 {imageList.map((image, index) => (
                     <ImageCard key={index} image={`/images/${image.img}`} imageTitle={image.title} text={image.text} section="learning" page="scout-life" pin={image.pin} />
                 )
