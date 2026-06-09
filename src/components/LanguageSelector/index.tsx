@@ -7,7 +7,7 @@ import { AiOutlineDown, AiOutlineUp, AiOutlineCheck } from "react-icons/ai";
 export const languageList = [
 
   {
-    language: "Swedish",
+    language: "Svenska",
     languageCode: "sv",
   },
   {
