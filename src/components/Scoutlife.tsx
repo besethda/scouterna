@@ -27,7 +27,10 @@ const Scoutlife = () => {
     }
   ]
 
+/*
 
+
+*/ 
   return (
     <>
 
@@ -35,7 +38,7 @@ const Scoutlife = () => {
         <h2 className="font-fraunces font-bold md:text-h2-desktop text-[26px] tracking-[-0.5%] text-primary mb-4 md:mb-0">
           {messages?.scoutLife?.t0}
         </h2>
-        <div className="flex flex-col md:flex-row bg-primary rounded-2xl md:p-8 px-4 py-8 gap-10 shadow-2xl md:items-start ">
+        <div className="flex flex-col justify-between md:flex-row bg-primary rounded-2xl md:p-8 px-6 py-8 gap-10 shadow-xl md:items-start w-full">
           <div className="flex flex-col md:w-[55%] gap-5">
             {cards.map((card, index) => (
               <div key={index} className="flex flex-row gap-3">

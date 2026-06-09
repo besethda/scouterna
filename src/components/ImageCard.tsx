@@ -31,7 +31,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
         ${page === "home" && "w-89.5"}
         ${page === "cabin" && "w-66.5"}
         ${page === "group" && "w-81.5 md:w-87"}
-        ${page === "scout-life" && "w-89.5"}
+        ${page === "scout-life" && "w-89.5 max-w-full"}
         `}>
             <Image src={pinColor()} alt="hige" width={85} height={80} className={`absolute inset-s-0 z-20 
             ${page === "cabin" ? "left-20 -top-2" : "left-33 -top-4"}
