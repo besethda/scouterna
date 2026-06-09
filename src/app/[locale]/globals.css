@@ -27,6 +27,7 @@
     --color-lightYellow: #EBC86C;
 
     --color-btn: #FF9D2D;
+    --color-form: #B3B3B3;
 
 
     /* Font */
@@ -104,6 +105,10 @@
     --text-acc: 12px;
     --text-acc-bold--font-weight: 700;
 
+}
+
+body {
+    background-color: #D6EAF8;
 }
 
 
