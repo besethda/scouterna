@@ -28,8 +28,8 @@ const History = ({ params }: { params: Promise<{ locale: string }> }) => {
             <Breadcrumbs />
             <CardWithLogo  image="/heartYellowBg.svg" sectionTitle="historycard" isH1 /> 
             <ContentSection sectionLayout={["t", "p", "p", "p", "p", "p"]} page="history" background={"blue"} />
-            <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"}/>
-            <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"}/>
+            <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"} background={"blue"}/>
+            <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"} background={"blue"}/>
             <BoatSection />
         </main>
     );
