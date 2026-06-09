@@ -1,4 +1,4 @@
-import { getPageHeadTitle } from "@/lib/utils"
+import { getPageHeadTitle, getSectionById } from "@/lib/utils"
 import CardWithoutImage from "@/components/CardWithoutImage";
 import ContentSection from "@/components/ContentSection";
 import CTABtn from "@/components/CTA-button";
@@ -12,7 +12,6 @@ import MysetHistory from "@/components/MysetHistory";
 import CardWithLogo from "@/components/CardWithLogo";
 import MapWrapper from "@/components/Map/MapWrapper";
 
-
 const pageItem = "myset"
 const headDescription = "myset"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -22,10 +21,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 
 
-const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
+const Myset = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
-    const { locale } = use(params)
+    const { locale } = await params
     const messages = locale === "en" ? En : Sv;
+    const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "cabin_images")
 
     return (
         <main>
@@ -39,7 +39,7 @@ const Myset = ({ params }: { params: Promise<{ locale: string }> }) => {
                             <a href="mailto:myset.hss.scout@gmail.com" className="hover:underline pr-1">myset.hss.scout@gmail.com</a>
                              {messages?.myset01?.p1}</p>
                         <div className="bg-bg-blue pt-2">
-                            <ImageContainer />
+                            <ImageContainer image={{imageMyset:data.cabin_images.myset.asset._ref, refMyset:data.cabin_images.myset.alt}}/>
                         </div>
                         <ContentSection sectionLayout={["t", "p", "p"]} page="myset02" background="blue" padding="top" child={true} />
                         <div className="bg-bg-blue py-4">

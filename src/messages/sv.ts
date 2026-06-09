@@ -1072,8 +1072,7 @@ export const Sv: MessagesSvType = {
   konvojenMeeting: {
     t0: "Avdelningsmöten",
     p0: "Dag: Torsdag",
-    p1: "Tid: 18:00",
-    p2: "Plats: Ruffen vid Hässelby Strandbad."
+    p1: "Plats: Ruffen vid Hässelby Strandbad."
   },
   konvojenPlace: {
     t0: "Märken",
