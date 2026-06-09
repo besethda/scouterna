@@ -49,19 +49,15 @@ const ScoutInfo = () => {
             </div>
             <div className="flex flex-col gap-6 lg:max-w-117.5 xl:max-w-200">
               <div>
-                <h3 className="text-primary text-h3 md:text-h4-desktop whitespace-nowrap font-fraunces font-bold pb-2">{messages?.policy.title}</h3>
-                <p className="text-text-black text-body md:text-h5-desktop hidden md:block ">{messages?.policy.desktop}</p>
-                <p className="text-text-black text-body md:text-h5-desktop block md:hidden py-1 pb-4">{messages?.policy.paraph}</p>
-                <p className="text-text-black text-body md:text-h5-desktop block md:hidden py-1">{messages?.policy.mer}</p>
+                <h3 className="text-primary text-h3 md:text-h4-desktop whitespace-nowrap font-fraunces font-bold pb-2">{messages?.memberScoutnet.title}</h3>
+                <p className="text-text-black text-body md:text-h5-desktop block md:hidden py-1 pb-4">{messages?.memberScoutnet.text01}</p>
+                <p className="text-text-black text-body md:text-h5-desktop block md:hidden py-1">{messages?.memberScoutnet.text02}</p>
               </div>
-              <div className="hidden md:block">
+              <div className="">
                 <Link
                   href={`/${currentLocal}/members/safety`}>
-                  <CTABtn text={messages?.moreButton} />
+                  <CTABtn text={messages?.memberScoutnetButton} />
                 </Link>
-              </div>
-              <div className="block md:hidden whitespace-nowrap">
-                <CTABtn text={messages?.secondButton} />
               </div>
             </div>
         </div>
