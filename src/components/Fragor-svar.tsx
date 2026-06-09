@@ -25,7 +25,12 @@ const FragorSvar = ({question, answer}:FragorSvarProps) => {
                 <div 
                 className="bg-bg-white border border-primary rounded-b-lg rounded-t-none whitespace-pre-line border-t-0 text-text-black font-albert px-4 py-3.25 md:py-5.25
                 mt-0.5" 
-                ><PortableText components={{block: {normal: ({children})=> <p className="mb-3">{children}</p>}}} value={answer as any}/></div>
+                ><PortableText components={{block: 
+                    {normal: ({children})=> <p className="mb-3">{children}</p>},
+                    marks: {
+                    link: ({value, children})=> <a target="_blank" href={value.href} className="mb-3 underline hover:text-accent">{children}</a>
+                }}}
+                    value={answer as any}/></div>
             )}
         </div>
     )

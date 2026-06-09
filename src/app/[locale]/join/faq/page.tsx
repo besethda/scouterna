@@ -32,18 +32,18 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
                     {data?.questionCategories.map((category:any, index:number)=> (
                         <>
                     <section key={index} className={`${index % 2 === 0 ? 'bg-bg-blue' : 'bg-bg-white'} py-10 `}>
-                    <h2 className="pb-2 text-h2 font-albert text-center text-primary md:text-h1-desktop"> {locale=== 'en' ? category.title_en : category.title_sv}</h2>
+                    <h2 className="w-full text-center mb-3 py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold"> {locale=== 'en' ? category.title_en : category.title_sv}</h2>
                     <div className="flex flex-col gap-2.5">
                         {category?.questionList.map((item: any, index: number) => (
                             <FragorSvar
-                                key={index}
+                                key={item.question_en}
                                 question={locale === "en" ? item.question_en : item.question_sv}
                                 answer={locale === "en" ? item.text_en_array : item.text_sv_array}
                             />
                         ))}
                     </div>
                 </section>
-                {index < data.questionCategories.length && <Line hasPadding />}
+                {index < data.questionCategories.length -1 && <Line hasPadding />}
                 </>
                     ))}
                 </div>
