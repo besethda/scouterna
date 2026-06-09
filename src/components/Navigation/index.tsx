@@ -35,7 +35,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
 
             <div className="w-full lg:h-full lg:flex lg:justify-between lg:items-center">
 
-                <div className={`transition-all duration-350 ease-in-out ${isScroll ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'} xl:translate-x-11 lg:translate-x-2 hidden md:block`}>
+                <div className={`transition-all duration-350 ease-in-out ${isScroll ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'} xl:translate-x-11 lg:translate-x-2 hidden lg:block`}>
                     <Link href={messages?.path || "/sv"}>
                         <Image src={HSSlogo} alt="HSSlogo" width={65} height={65} className="opacity-75 hover:opacity-100 active:scale-98 active:brightness-95 duration-100" />
                     </Link>
