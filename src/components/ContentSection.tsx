@@ -22,7 +22,8 @@ const ContentSection = ({ sectionLayout, page, background = "white", padding = "
           ${element === "p" ? "w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%]" :
             element === "w" ? "w-fit py-2 text-body-bold md:text-body-bold-desktop text-text-black font-fraunces" :
               element === "h" ? "w-fit py-2 text-h1 md:text-h1-desktop text-primary font-fraunces font-bold" :
-                element === "t" ? "w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold" :
+               element === "t" ? "w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold" :
+                element === "ts"?  "w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold " :
                   element === "s" ? "w-fit py-2 text-h3 md:text-h3-desktop text-primary font-fraunces font-bold" : ""
           }`}>{(messages as any)[page]?.[`${element}${count.length}`]}</div>)
       }

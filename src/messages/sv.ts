@@ -744,7 +744,7 @@ export const Sv: MessagesSvType = {
     text: "I skogen mellan Lövsta och Gåseborg ligger Myset - vår stora och fina scoutstuga. Här samlas kåren för en mängd olika aktiviteter, inte minst hajker som bjuder på både äventyr och gemenskap.",
   },
   history: {
-    t0: "Historian om HSS",
+    ts0: "Historian om HSS",
     p0: "Kåren grundades år 1959 och växte snabbt.",
     p1: "Engagemanget var stort, inte minst från föräldrar som hjälpte till att ordna aktiviteter, samla in pengar och bygga upp verksamheten.",
     p2: "Den allra första båten, Blekingeekan “Inga-Lunda”, blev starten på kårens sjöliv, och med tiden kunde fler båtar köpas in tack vare basarer, lotterier och hårt arbete.",
