@@ -28,22 +28,23 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
                     <h2 className='text-h2 font-fraunces font-bold text-primary lg:text-h2-desktop'>{title}</h2>
                     <p className='text-body text-text-black font-albert lg:text-body-desktop'>{text}</p>
                 </div>
-                <div
-                    ref={middleImageRef}
+                <div ref={middleImageRef}
+                    style={{}}
                     className="overflow-x-auto scroll-smooth snap-x snap-mandatory snap-center scrollbar-none flex flex-row gap-4 px-[15vw] w-full
-                    mx-auto lg:px-0 lg:overflow-x-visible lg:snap-none lg:justify-center"
+                    mx-auto lg:px-0 lg:max-w-420 lg:snap-none lg:justify-center"
                 >
                     {images.map((imgbox: any, index: number) => (
                         <div
                             key={index}
-                            className='w-52.5 h-25 snap-center shrink-0 relative overflow-hidden rounded-2xl 
-                            lg:w-[33vw] lg:flex-1 lg:h-52 lg:snap-none'
+                            className='w-75 h-52 snap-center shrink-0 relative overflow-hidden rounded-2xl 
+                            lg:snap-none'
                         >
                             <Image
                                 src={imgbox}
                                 alt={"images"}
-                                fill
-                                className="object-cover"
+                                width={300}
+                                height={212}
+                                className="object-cover aspect-7/5"
                                 priority={index === 1}
                             />
                         </div>

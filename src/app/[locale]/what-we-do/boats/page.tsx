@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const Boats = ({params}:{params: Promise<{locale: string}>}) => {
-    const images = [Image01, Image02, Image03];
+    const images = [Image01, Image02, Image03, Image04, Image05, Image06];
     const images02 = [Image04, Image05, Image06];
     const images03 = [Image07, Image08, Image09];
     const {locale} = use(params)
