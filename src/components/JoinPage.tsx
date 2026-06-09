@@ -29,7 +29,7 @@ const JoinPage = ({
         <div
           className={`flex flex-col w-full gap-2 md:w-full lg:w-[55%] text-left`}
         >
-          <h2 className="text-h2-albert md:text-h2-desktop font-albert text-primary md:w-[40vw]">
+          <h2 className="text-h2-albert md:text-h2-desktop font-fraunces font-bold text-primary md:w-[40vw]">
             {title}
           </h2>
           <p

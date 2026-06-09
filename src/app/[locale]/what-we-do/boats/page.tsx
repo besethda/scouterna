@@ -14,6 +14,7 @@ import Image06 from '../../../../../public//images/DSCF3071.jpg';
 import Image07 from '../../../../../public/images/DSCF3076.jpg';
 import Image08 from '../../../../../public/images/DSCF3089.jpg';
 import Image09 from '../../../../../public/images/DSCF3095.jpg';
+import CardWithLogo from "@/components/CardWithLogo";
 
 
 
@@ -34,7 +35,7 @@ const Boats = ({params}:{params: Promise<{locale: string}>}) => {
         <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithoutImage headline={messages?.boatsCard?.headline} logo="/blueBoat.svg" title={messages?.boatsCard?.title} text={messages?.boatsCard?.text} MDlogo="/blueBoatYellowBg.svg" />
+                <CardWithLogo sectionTitle="boatsCard" image="/boatYellowBg.svg" isH1/>
                 <div className="bg-bg-blue w-full flex flex-col items-center pb-8 md:pb-12">
                     <Optimister 
                         title={messages?.optimisterSection?.title}
