@@ -260,6 +260,7 @@ type MessagesSvType = {
   vests: Record<string, string>
   lockable: Record<string, string>
   gdpr: Record<string, string>
+  syfte:Record<string, string>
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
@@ -796,10 +797,7 @@ export const Sv: MessagesSvType = {
     t0: "Uppgiftsinsamling via Scoutnet",
     p0: "Scoutnet är Scouternas gemensamma medlemsregister och där samlar vi följande information om varje medlem:",
     p1: "*Dessa uppgifter samlar vi även in för barn i anmälningsregistret (kölistan) som är en del av Scoutnet. Informationen om syskon och föräldrar är för att erbjuda syskonförtur och kunna prioritera barn vars föräldrar har en roll i kåren.",
-    p2: "Syftet med uppgiftsinsamlingen i Scoutnet är att veta vilka våra medlemmar är, för att kunna nå ut med information till dem, för närvaroregistrering, för att se avdelnings- och patrulltillhörighet, och för fakturering.",
-    s0: "Personuppgifter",
-    s1: "Kårinformation",
-    s2: "Uppgiftsinsamlingens syfte",
+    s0: "Kårinformation",
     l0: "Namn*",
     l1: "Personnummer*",
     l2: "Adress*",
@@ -814,6 +812,10 @@ export const Sv: MessagesSvType = {
     l11: "Genomförda utbildningar (aktuellt framförallt för ledare)",
     l12: "Roll i kåren (aktuellt endast för ledare)",
     l13: "Eventuella utmärkelser"
+  },
+  syfte:{
+     s0: "Uppgiftsinsamlingens syfte",
+     p0: "Syftet med uppgiftsinsamlingen i Scoutnet är att veta vilka våra medlemmar är, för att kunna nå ut med information till dem, för närvaroregistrering, för att se avdelnings- och patrulltillhörighet, och för fakturering.",
   },
   ethics: {
     s0: "Etiska riktlinjer för uppgiftsinsamling",

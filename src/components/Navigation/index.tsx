@@ -33,7 +33,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
     return (
         <nav className={`absolute lg:static w-full bg-white text-primary rounded-b-lg font-albert tracking-[0.03em] top-16 md:top-29 lg:bg-primary lg:h-25.5 lg:text-text-white lg:rounded-none ${isScroll ? "lg:bg-primary/80" : ""}`}>
 
-            <div className="-mt-19 w-full lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-4xl lg:mx-auto xl:max-w-5xl 2xl:max-w-400">
+            <div className="w-full lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-4xl lg:mx-auto xl:max-w-5xl 2xl:max-w-400">
 
                 <div className={`transition-all duration-500 ease-in-out ${isScroll ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'} xl:pr-20`}>
                     <Link href={messages?.path || "/sv"}>

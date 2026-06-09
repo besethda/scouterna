@@ -23,7 +23,16 @@ const Gdpr = ({params}:{params: Promise<{locale: string}>}) => {
         <main>
             <Breadcrumbs />
             <CardWithLogo image="/informationYellowBg.svg" sectionTitle="gdprcard" isH1/> 
-            <ContentSection sectionLayout={["t", "p", "s", "l", "l", "l", "l", "l", "s", "l", "l", "l", "l", "l", "l", "l", "l", "l", "p", "s", "p"]} page={"gdpr"} background={"blue"}/>
+            <div className="flex justify-center bg-bg-blue pb-10">
+              <div className="md:max-w-[89%] max-w-[90%] rounded-3xl w-full shadow-xl bg-bg-white overflow-hidden">
+                <ContentSection sectionLayout={["t", "p", "s", "l", "l", "l", "l", "l", "s", "l", "l", "l", "l", "l", "l", "l", "l", "l", "p"]} page={"gdpr"} background={"white"}/>
+              </div>
+            </div>
+            <div className="bg-bg-blue flex justify-center pb-10">
+              <div className="md:max-w-[89%] max-w-[90%] rounded-3xl w-full shadow-xl overflow-hidden bg-primary **:text-text-white">
+                <ContentSection sectionLayout={["s", "p"]} page={"syfte"} background={"none"} />
+              </div>
+            </div>
             <ContentSection sectionLayout={["s", "p", "p", "p", "p", "p", "p"]} page={"ethics"} display={"mobile"}/>
         </main>
     );
