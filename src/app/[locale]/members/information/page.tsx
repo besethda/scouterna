@@ -8,6 +8,7 @@ import Union from "./union";
 import Scoutnet from "@/components/Scoutnet/scoutnet";
 import ScoutInfo from "@/components/ScoutInfo/scoutInfo";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItem = "information"
 const headDescription = "information"
@@ -24,7 +25,7 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
         <main>
             <Breadcrumbs />
             <div className="w-full flex flex-col items-center">
-                <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
+                <CardWithLogo image="/informationYellowBg.svg" sectionTitle="memberInfo" isH1 />
                 <ScoutInfo />
                 <Scoutnet />
                 <Union />

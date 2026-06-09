@@ -11,6 +11,7 @@ import GroupIntro from "@/components/GroupIntro";
 import Link from 'next/link';
 import Family from '../../../../../public/images/ParumMagna.png'
 import FamilyEn from '../../../../../public/images/ParumMagnaEng.png'
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItems = [
   "sjohumlorna",
@@ -57,9 +58,7 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.SJMtitle} text={messages?.GroupIntro?.SJMtext} logo="/sjohumlor-frame.svg" />
-        </div>
+        <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
@@ -140,9 +139,7 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KAPtitle} text={messages?.GroupIntro?.KAPtext} logo="/Kaparna-frame.svg" />
-        </div>
+        <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
@@ -222,9 +219,7 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.UTtitle} text={messages?.GroupIntro?.UTtext} logo="/Utmanare-frame.svg" />
-        </div>
+          <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
@@ -304,9 +299,7 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.KONtitle} text={messages?.GroupIntro?.KONtext} logo="/Konvojen-frame.svg" />
-        </div>
+                <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
@@ -386,9 +379,7 @@ const Groups = ({
     return (
       <main>
         <Breadcrumbs />
-        <div className="flex justify-center">
-          <GroupIntro headline={messages?.GroupIntro?.FAMheadline} title={messages?.GroupIntro?.FAMtitle} text={messages?.GroupIntro?.FAMtext} logo="/Familje-frame.svg" />
-        </div>
+        <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1/>
         <section className="w-full flex flex-col items-center bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">

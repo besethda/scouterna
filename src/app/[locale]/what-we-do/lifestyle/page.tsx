@@ -8,7 +8,8 @@ import LifeStyleSection from "./lifestyleSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import HeroContainer from "@/components/HeroContainer/HeroContainer";
 import Activities from "@/components/Activities";
-
+import PhotoContainer from "./photoContainer";
+import CardWithLogo from "@/components/CardWithLogo";
 
 
 
@@ -29,9 +30,9 @@ const LifeStyle = ({ params }: { params: Promise<{ locale: string }> }) => {
             <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_1939.JPEG')]", desktop: "md:bg-[url('/images/rock.JPG')]" }} messageSection={"lifestyleHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithImage sectionTitle="lifestyle" logo="/heart.png" image="/images/DSCF3033.jpg" />
+                <CardWithLogo image="/wavesYellowBg.svg" sectionTitle="lifestyle" />
                 <LifeStyleSection />
-                <WhiteGridContainer backgroundBlue={false} messageTitle="learning" />
+                <PhotoContainer backgroundBlue={false} messageTitle="learning" />
 
             </div>
             <Activities />

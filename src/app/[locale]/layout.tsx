@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Varela_Round, Fraunces, Albert_Sans, Public_Sans } from "next/font/google";
+import { Varela_Round, Fraunces, Albert_Sans, Public_Sans, Gochi_Hand } from "next/font/google";
 import "./globals.css";
 import { TranslateContent } from "@/translateContent/translate";
 import { En } from "@/messages/en";
@@ -9,11 +9,11 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-    const { locale } = await params
-    return {
-      title: locale === 'en' ? "HSS | Home" : "HSS | Hem",
-      description: locale === 'en' ? "HSS website" : " HSS webplats ",
-    }
+  const { locale } = await params
+  return {
+    title: locale === 'en' ? "HSS | Home" : "HSS | Hem",
+    description: locale === 'en' ? "HSS website" : " HSS webplats ",
+  }
 }
 
 const varela = Varela_Round({
@@ -37,6 +37,12 @@ const public_sans = Public_Sans({
   subsets: ["latin"],
 });
 
+const gochi_hand = Gochi_Hand({
+  weight: "400",
+  variable: "--font-gochi",
+  subsets: ["latin"],
+});
+
 // export const metadata: Metadata = {
 //   title: "HSS | Hem",
 //   description: "HSS Website",
@@ -54,7 +60,7 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
   return (
     <html
       lang={locale}
-      className={`${fraunces.variable} ${varela.variable} ${public_sans.variable} ${albert.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${varela.variable} ${public_sans.variable} ${albert.variable} ${gochi_hand.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <TranslateContent value={messages}>

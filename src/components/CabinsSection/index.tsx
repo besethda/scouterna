@@ -4,6 +4,7 @@ import CTABtn from "../CTA-button"
 import Image from "next/image"
 import Picture from "../../../public/images/IMG_9122.jpeg"
 import ruffen from '../../../public/images/ruffen.jpg'
+import ImageCard from "../ImageCard"
 
 import { useParams, usePathname } from "next/navigation"
 import Link from "next/link"
@@ -21,8 +22,8 @@ const CabinsSection = () => {
       <div className="hidden md:block w-full max-w-6xl">
         <h2 className=" text-primary text-h2-desktop font-fraunces font-bold">{messages?.cabinst}</h2>
       </div>
-      <div className="flex flex-col md:border md:border-lightBlue md:rounded-2xl bg-bg-blue w-full max-w-6xl lg:h-auto">
-        <div className="flex md:px-5 gap-3 w-full h-full min-w-0">
+      <div className="flex flex-col md:flex-row border border-lightBlue rounded-2xl bg-bg-blue w-full max-w-6xl lg:h-auto">
+        <div className="flex flex-col md:px-5 gap-3 w-full h-full min-w-0">
           <div className="hidden md:flex items-start shrink-0 pt-6">
             <Image src="/blueHouseYellowBg.svg" alt="logo" width={44} height={44} className="h-10 w-auto" />
           </div>
@@ -39,13 +40,13 @@ const CabinsSection = () => {
               </Link>
             </div>
           </div>
-          <div className="shrink-0 hidden md:block mt-6 mb-6 mr-6 w-80">
-            <Image src={Picture} alt="picture" className="rounded-3xl object-cover w-80 lg:w-90 h-auto max-w-full" />
+          <div className="shrink-0 md:block mt-6 mb-6 mr-6 w-80">
+            <ImageCard image={`/images/IMG_9122.jpeg`} imageTitle="title" text="" section="cabinsmyset" page="cabin" pin="pink" />
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:border md:border-lightBlue md:rounded-2xl bg-bg-blue w-full max-w-6xl lg:h-auto">
-        <div className="flex md:px-5 gap-3 w-full h-full min-w-0">
+      <div className="flex flex-col border border-lightBlue rounded-2xl bg-bg-blue w-full max-w-6xl lg:h-auto">
+        <div className="flex  flex-col md:flex-row md:px-5 gap-3 w-full h-full min-w-0">
           <div className="hidden md:flex items-start shrink-0 pt-6">
             <Image src="/blueHouseYellowBg.svg" alt="logo" width={44} height={44} className="h-10 w-auto" />
           </div>
@@ -61,8 +62,8 @@ const CabinsSection = () => {
               </Link>
             </div>
           </div>
-          <div className=" shrink-0 hidden md:block mt-6 mb-6 mr-6 w-80">
-            <Image src={ruffen} alt="picture" className="rounded-3xl object-cover w-80 lg:w-90 h-auto max-w-full" />
+          <div className=" shrink-0  md:block mt-6 mb-6 mr-6 w-80">
+            <ImageCard image={`/images/ruffen.jpg`} imageTitle="title" text="" section="cabinsruffen" page="cabin" pin="dark_red" />
           </div>
         </div>
       </div>

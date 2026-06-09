@@ -6,6 +6,8 @@ import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Image from "next/image";
+import CardWithLogo from "@/components/CardWithLogo";
+import Line from "@/components/line"
 
 const pageItem = "faq"
 const headDescription = "faq"
@@ -22,10 +24,10 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
         <main>
             <Breadcrumbs />
             <div className="flex w-full flex-col items-center ">
-                <CardWithoutImage headline="FAQ" logo="/faq.png" title={messages?.faqCard?.title} text={messages?.faqCard?.text} MDlogo="/question.png" />
+                <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
                 <div className="w-full">
-                    <section className="bg-bg-blue py-10 ">
-                        <h2 className="pb-2 text-h2 font-fraunces font-bold text-center text-primary md:text-h1-desktop"> {messages?.faq.title} </h2>
+                    <section className=" pt-10 pb-[58px]">
+                        <h2 className="pb-2 text-h2 font-fraunces text-center text-primary md:text-h1-desktop"> {messages?.faq.title} </h2>
                         <div className="flex flex-col gap-2.5">
                             {(messages as any)?.fragorSvar?.map((item: any, index: number) => (
                                 <FragorSvar
@@ -36,8 +38,9 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
                             ))}
                         </div>
                     </section>
-                    <section className="py-10">
-                        <h2 className="pb-2 text-h2 text-center font-fraunces font-bold text-primary md:text-h1-desktop"> {messages?.faq.title02} </h2>
+                    <Line hasPadding />
+                    <section className="pb-10 pt-[50px]">
+                        <h2 className="pb-2 text-h2 text-center font-albert text-primary md:text-h1-desktop"> {messages?.faq.title02} </h2>
                         <div className="flex flex-col gap-2.5">
                             {(messages as any)?.fragorSvar02?.map((item: any, index: number) => (
                                 <FragorSvar

@@ -5,6 +5,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CabinsSection from "@/components/CabinsSection";
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItem = "cabins"
 const headDescription = "cabins"
@@ -22,7 +23,7 @@ const Cabins = ({params}:{params: Promise<{locale: string}>}) => {
         <main>
             <Breadcrumbs />
             <div className="flex flex-col w-full items-center">
-                <CardWithoutImage headline={messages?.cabinsCard?.headline} logo="/blueHouse.png" title={messages?.cabinsCard?.title} text={messages?.cabinsCard?.text} MDlogo="/blueHouseYellowBg.svg" />  
+                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="cabinsCard" isH1/>
             </div>
             <div className="flex justify-center">
                 <CabinsSection />

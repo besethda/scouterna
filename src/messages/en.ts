@@ -70,6 +70,8 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string,
+    title02: string, 
+    text02: string
   };
   division: {
     sjohumlorna_title: string,
@@ -179,6 +181,7 @@ export type MessagesEngType = {
     }
   },
   faqCard: {
+    headline: string, 
     title: string,
     text: string
   },
@@ -295,7 +298,9 @@ export type MessagesEngType = {
   safetyCard: {
     headline: string,
     title: string,
-    text: string
+    text: string, 
+    button: string, 
+    buttonMobile: string
   },
   safetyBtn: {
     btnMobile: string,
@@ -387,18 +392,30 @@ export type MessagesEngType = {
   Märken: Record<string, string>,
   familjescouterButton: string
 
-  GroupIntro: {
-    FAMheadline: string,
-    FAMtitle: string,
-    FAMtext: string,
-    SJMtitle: string,
-    SJMtext: string,
-    KAPtitle: string,
-    KAPtext: string,
-    KONtitle: string,
-    KONtext: string,
-    UTtitle: string,
-    UTtext: string,
+  GroupSjohumlorna: {
+    headline: string, 
+    title: string,
+    text: string,
+  },
+  GroupKaparna: {
+    headline: string, 
+    title: string,
+    text: string,
+  },
+  GroupKonvojen: {
+    headline: string, 
+    title: string,
+    text: string, 
+  },
+  GroupUtmanare: {
+    headline: string, 
+    title: string,
+    text: string,
+  },
+  GroupFamily: {
+    headline: string, 
+    title: string,
+    text: string,
   },
 
   optimisterSection: {
@@ -581,6 +598,8 @@ export const En: MessagesEngType = {
     headline: "Become a Scout",
     title: "The waves are waiting",
     text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
+    title02: "HSS welcomes everyone", 
+    text02: "No matter who you are or your level of experience, there is a place for you here. Join us as a Scout, or get involved as a parent or Scout leader."
   },
   homeHero: {
     hero_title: "Hässelby Strand Sea Scouts",
@@ -651,6 +670,7 @@ export const En: MessagesEngType = {
     span_4: "Anyone who wants to become a Scout leader must present a criminal record check."
   },
   faqCard: {
+    headline: "FAQ",
     title: "Frequently asked questions",
     text: "Here, we have gathered frequently asked questions from both future and current members of the association."
   },
@@ -930,7 +950,9 @@ export const En: MessagesEngType = {
   safetyCard: {
     headline: "Safety",
     title: "HSS Life Jacket Policy",
-    text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF."
+    text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF.", 
+    button: "Download the life jacket policy as PDF",
+    buttonMobile: "Download PDF"
   },
   safetyBtn: {
     btnMobile: "Download PDF",
@@ -1087,19 +1109,30 @@ export const En: MessagesEngType = {
   },
   familjescouterButton: "Discover All Our Scout Badges",
 
-
-  GroupIntro: {
-    FAMheadline: "Groups",
-    FAMtitle: "Småttarne",
-    FAMtext: "Through Family Scouting, children under the age of eight, together with one or more adults, can experience scouting in a fun and playful way.",
-    SJMtitle: "Sjöhumlorna",
-    SJMtext: "The youngest scouts discover sea life through games, singing, and small adventures by the water. Here, they learn to cooperate, tie their first knots, and feel at home in nature.",
-    KAPtitle: "Kaparna",
-    KAPtext: "At Kaparna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety",
-    KONtitle: "Konvojen",
-    KONtext: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
-    UTtitle: "Utmanare",
-    UTtext: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them."
+  GroupSjohumlorna: {
+    headline: "Groups", 
+    title: "Sjöhumlorna",
+    text: "The young scouts discover sea life through games, singing, and small adventures by the water. Here, they learn to cooperate, tie their first knots, and feel at home in nature.",
+  },
+  GroupKaparna: {
+    headline: "Groups", 
+    title: "Kaparna",
+    text: "At Kaparna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety",
+  },
+  GroupKonvojen: {
+    headline: "Groups", 
+    title: "Konvojen",
+    text: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
+  },
+  GroupUtmanare: {
+    headline: "Groups", 
+    title: "Utmanare",
+    text: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them.",
+  },
+  GroupFamily: {
+    headline: "Groups", 
+    title: "Family Scouts",
+    text: "Through Family Scouting, children under the age of eight, together with one or more adults, can experience scouting in a fun and playful way.",
   },
   optimisterSection: {
     title: "Optimists",
