@@ -11,7 +11,7 @@ const LifeStyleSection = ({ }) => {
   const imageArray = ["/shipIcon-desktop.svg", "/treeIcon.svg", "/heartIcon-desktop.svg", "/HandHeart.png"]
 
   return (
-    <div className="px-4 bg-bg-blue py-8 md:py-25 w-full flex justify-center font-albert flex-col items-center">
+    <div className="px-4 bg-bg-blue py-8 md:py-25 w-full flex justify-center font-albert flex-col items-center md:hidden">
       <div className="lg:max-w-430 lg:px-22 w-full flex flex-col items-center">
         <h2 className="text-h2 md:text-h2-desktop w-full md:pb-4 text-primary font-fraunces font-bold">{messages.offers.title}</h2>
         <div className="flex flex-col md:flex-row md:justify-center md:flex-wrap w-full md:max-w-300">
