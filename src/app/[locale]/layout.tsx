@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params
     return {
       title: locale === 'en' ? "HSS | Home" : "HSS | Hem",
-      description: locale === 'en' ? "HSS Scouterna - adventures for kids ages 8 and up 🏕️ | Activities: camping, sailing and collaborate | Safe environment with trained leaders | 👪 Kids under 8 are welcome to join with a parent or friend | Find your nearest group in Stockholm" : "HSS Scouterna - äventyr för alla barn från 8 år 🏕️ | Aktivitet med läger, segling och samarbete | Trygg miljö med utbildade ledare | 👪 Barn under 8 år är välkomna tillsammans med förälder/nära vuxen | Hitta din närmaste grupp i Stockholm",
+      description: locale === 'en' ? "Hässelby strands sjöscouter - adventures for kids ages 8 and up 🏕️ | Activities: camping, sailing and collaborate | Safe environment with trained leaders | 👪 Kids under 8 are welcome to join with a parent or friend | Find your nearest group in Stockholm" : "Hässelby strands sjöscouter - äventyr för alla barn från 8 år 🏕️ | Aktivitet med läger, segling och samarbete | Trygg miljö med utbildade ledare | 👪 Barn under 8 år är välkomna tillsammans med förälder/nära vuxen | Hitta din närmaste grupp i Stockholm",
     }
 }
 
