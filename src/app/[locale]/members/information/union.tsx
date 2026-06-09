@@ -34,15 +34,15 @@ const Union = () => {
     const messages = useMessages()
 
     return (
-        <div className="pt-3 pb-10 mx-auto bg-primary md:py-18 mx-4 rounded-3xl lg:w-[848px] xl:w-[1265px] 2xl:w-[1544px]">
+        <div className="pt-3 py-8 bg-primary mx-4 overflow-hidden rounded-3xl lg:mx-auto lg:w-[848px] xl:w-[1265px] 2xl:w-[1544px]">
             <ContentSection
                 sectionLayout={["t", "p"]}
                 page="union"
                 background={"blue"}
-                padding="top"
+                padding=""
             />
             <div className="pt-7 flex flex-col items-center gap-2 font-albert text-text-white md:gap-9">
-                <div className="w-full px-4 lg:max-w-430 lg:px-22">
+                <div className="w-full px-4 lg:max-w-430 lg:px-10">
                     {unionList.map((item, index) => (
                         <div key={index} className="flex py-2 gap-2 w-full items-center ">
                             <Image src={item.icon} alt={item.name} width={44} height={44} />
