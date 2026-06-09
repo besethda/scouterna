@@ -13,11 +13,11 @@ const DivisionsContainer = () => {
       <div className="px-5 text-body font-albert md:text-body-desktop lg:px-22 text-text-black w-full md:max-w-200 lg:max-w-300">{messages?.home.divisions_text}</div>
       <div className="flex justify-center w-full">
         <div className="flex flex-col md:flex-row md:flex-wrap md:w-fit w-full md:max-w-290 mt-3 px-4 md:px-10 lg:px-20">
-          <DivisionsBox division={"sjohumlorna"} boxStyle={"basic"} />
-          <DivisionsBox division={"kaparna"} boxStyle={"basic"} />
-          <DivisionsBox division={"konvojen"} boxStyle={"basic"} />
+          <DivisionsBox division={"spararscouter"} boxStyle={"basic"} />
+          <DivisionsBox division={"upptackascouter"} boxStyle={"basic"} />
+          <DivisionsBox division={"aventyrarscouter"} boxStyle={"basic"} />
           <DivisionsBox division={"utmanare"} boxStyle={"basic"} />
-          <DivisionsBox division={"smattarne"} boxStyle={"basic"} />
+          <DivisionsBox division={"familjescouter"} boxStyle={"basic"} />
         </div>
       </div>
     </div>

@@ -14,18 +14,18 @@ import FamilyEn from '../../../../../public/images/ParumMagnaEng.png'
 import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItems = [
-  "sjohumlorna",
-  "kaparna",
+  "spararscouter",
+  "upptackascouter",
   "utmanare",
-  "konvojen",
-  "smattarne",
+  "aventyrarscouter",
+  "familjescouter",
 ];
 const headDescriptions = [
-  "sjohumlorna",
-  "kaparna",
+  "spararscouter",
+  "upptackascouter",
   "utmanare",
-  "konvojen",
-  "smattarne",
+  "aventyrarscouter",
+  "familjescouter",
 ]
 export async function generateMetadata({
   params,
@@ -54,7 +54,7 @@ const Groups = ({
 
   const familyImageSrc = locale === "en" ? FamilyEn : Family;
 
-  if (singleGroup === "sjohumlorna") {
+  if (singleGroup === "spararscouter") {
     return (
       <main>
         <Breadcrumbs />
@@ -135,7 +135,7 @@ const Groups = ({
         </section>
       </main>
     );
-  } else if (singleGroup === "kaparna") {
+  } else if (singleGroup === "upptackascouter") {
     return (
       <main>
         <Breadcrumbs />
@@ -295,7 +295,7 @@ const Groups = ({
         </section>
       </main>
     );
-  } else if (singleGroup === "konvojen") {
+  } else if (singleGroup === "aventyrarscouter") {
     return (
       <main>
         <Breadcrumbs />
@@ -375,7 +375,7 @@ const Groups = ({
         </section>
       </main>
     );
-  } else if (singleGroup === "smattarne") {
+  } else if (singleGroup === "familjescouter") {
     return (
       <main>
         <Breadcrumbs />

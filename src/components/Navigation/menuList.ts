@@ -29,19 +29,19 @@ export const menuList = [
             },
             {
                 nameKey: "nav_unit1",
-                href: "/groups/sjohumlorna",
+                href: "/groups/spararscouter",
                 icon: "/menu-fox-illustration.png",
                 iconBg: "/menu-fox-illustration.png"
             },
             {
                 nameKey: "nav_unit2",
-                href: "/groups/kaparna",
+                href: "/groups/upptackascouter",
                 icon: "/menu-torch-illustration.png",
                 iconBg: "/menu-torch-illustration.png"
             },
             {
                 nameKey: "nav_unit3",
-                href: "/groups/konvojen",
+                href: "/groups/aventyrarscouter",
                 icon: "/menu-fire-illustration.png",
                 iconBg: "/menu-fire-illustration.png"
             },
@@ -53,9 +53,9 @@ export const menuList = [
             },
             {
                 nameKey: "nav_unit5",
-                href: "/groups/smattarne",
-                icon: "/smattarne.svg",
-                iconBg: "/smattarne.svg"
+                href: "/groups/familjescouter",
+                icon: "/familjescouter.svg",
+                iconBg: "/familjescouter.svg"
             },
         ]
     },

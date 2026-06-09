@@ -4,18 +4,18 @@ import Image from "next/image"
 import useMessages from "@/hook/useMessages"
 import Link from "next/link"
 
-type divisionName = "sjohumlorna" | "kaparna" | "utmanare" | "konvojen" | "smattarne"
+type divisionName = "spararscouter" | "upptackascouter" | "utmanare" | "aventyrarscouter" | "familjescouter"
 
 const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
   { division: divisionName, imageUrl?: string, boxStyle: string }) => {
 
   const messages = useMessages()
   const colorReference = {
-    sjohumlorna: ["border-green", "bg-green-opaque"],
-    kaparna: ["border-lightBlue", "bg-lightBlue-opaque"],
+    spararscouter: ["border-green", "bg-green-opaque"],
+    upptackascouter: ["border-lightBlue", "bg-lightBlue-opaque"],
     utmanare: ["border-pink", "bg-pink-opaque"],
-    konvojen: ["border-orange", "bg-orange-opaque"],
-    smattarne: ["border-purple", "bg-purple-opaque"]
+    aventyrarscouter: ["border-orange", "bg-orange-opaque"],
+    familjescouter: ["border-purple", "bg-purple-opaque"]
   }
 
   return (
