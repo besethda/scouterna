@@ -46,7 +46,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
             ${page === "group" && "h-75"}
             ${page === "join" && "h-75"}
             `}>
-                <Image src={image} alt={imageTitle} fill className="object-cover  object-center" />
+                <Image src={image} alt={imageTitle} fill className="object-cover object-center" />
             </div>
             <div>
                 <p className="text-center text-hero">{(messages as any)[section]?.[imageTitle]}</p>
