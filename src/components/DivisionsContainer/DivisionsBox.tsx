@@ -4,7 +4,7 @@ import Image from "next/image"
 import useMessages from "@/hook/useMessages"
 import Link from "next/link"
 import ImageCard from "../ImageCard"
-import { urlFor } from "@/sanity/lib/image"
+import { urlFor } from "@/sanity/lib/image";
 
 type divisionName = "sjohumlorna" | "kaparna" | "utmanare" | "konvojen" | "smattarne"
 
