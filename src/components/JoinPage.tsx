@@ -78,7 +78,7 @@ const JoinPage = ({
         </div>
 
         <div className={`md:flex-1 ${section === "join" ? "hidden md:block" : "hidden md:block"}`}>
-          <ImageCard imageTitle="title" image="/images/hood.jpg" section="join" page="join" text="" pin="dark_red" />
+          <ImageCard imageTitle="photoTitle" image="/images/hood.jpg" section={section === "join" ? "joinPage" : "interstsBtn"} page="join" text="" pin="dark_red" />
         </div>
       </div>
     </div>

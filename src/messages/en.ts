@@ -336,13 +336,15 @@ export type MessagesEngType = {
     head: string,
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   interestBtn: {
     head: string,
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   form: {
     title: string,
@@ -997,7 +999,8 @@ export const En: MessagesEngType = {
     head: "Take the step!",
     title: "Express Your Interest",
     text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
-    buttonText: "Join the Scouts"
+    buttonText: "Join the Scouts",
+    photoTitle: "Join the adventure!"
   },
   myset01: {
     t0: "Interested in renting Myset?",
@@ -1155,7 +1158,8 @@ export const En: MessagesEngType = {
     head: "Want to join the Scouts?",
     title: "Express Your Interest",
     text: "If you are interested in joining HSS as a Scout, leader, or an engaged parent, you are welcome to submit your interest using our form.",
-    buttonText: "Join the Scouts"
+    buttonText: "Join the Scouts",
+    photoTitle: "Join the adventure!"
   },
   ruffenDivisions: {
     t0: "Group Meetings",
