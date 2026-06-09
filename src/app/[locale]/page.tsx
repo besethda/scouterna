@@ -13,6 +13,7 @@ import CardWithLogo from "@/components/CardWithLogo";
 const Home = async () => {
 
     const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "home_images")
+    const groupsData = await getId("2a5a4f80-b206-44b9-9e00-6b870a00f90e")
 
   return (
     <main className="">
@@ -21,7 +22,7 @@ const Home = async () => {
         <CardWithLogo sectionTitle={"homePageCard"}  image="/anchorYellowBg.svg" />
         <GoodToKnow />
         <WhiteImageBox />
-        <DivisionsContainer />
+        <DivisionsContainer data={groupsData}/>
         <InstagramContainer bgBlue={true} />
       </section>
     </main>

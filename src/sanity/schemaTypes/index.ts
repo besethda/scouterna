@@ -1,6 +1,5 @@
 import { type SchemaTypeDefinition } from 'sanity'
 import { faqType } from './pages/faqType'
-import { groups } from './pages/groups'
 import { pageLinkType } from './componentTypes/pageLinkType'
 import { layoutSection } from './componentTypes/layoutSectionType'
 import { boatsType } from './pages/boatsType'
@@ -10,7 +9,8 @@ import { images } from './pages/imagesType'
 import { gdpr } from './pages/gdprType'
 import { union } from './pages/unionType'
 import { alert } from './pages/alertType'
+import { group } from './pages/group'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [alert, faqType, pageLinkType, layoutSection, boatSection, boatsType, history, images, gdpr, union],
+  types: [alert, faqType, pageLinkType, layoutSection, boatSection, boatsType, history, images, gdpr, union, group],
 }

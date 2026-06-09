@@ -21,7 +21,6 @@ const SanityFlex = ({data, locale}: {data:any, locale:string}) => {
               bullet: ({children})=> <p className="w-fit py-2 text-body md:text-body-desktop text-text-black font-albert lg:max-w-[63%] mb-3 list-disc pl-5">{children}</p>,
             }
           }}
-
             value={locale === "en" ? section.text_en_array : section.text_sv_array }/>
         </div>)
         } if (section._type === 'button') {
