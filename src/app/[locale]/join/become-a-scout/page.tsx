@@ -12,6 +12,7 @@ import CTABtn from "@/components/CTA-button";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
 import CardWithLogo from "@/components/CardWithLogo";
 import Line from "@/components/line"
+import Scoutlife from "@/components/Scoutlife";
 
 const pageItem = "become-a-scout"
 const headDescription = "become-a-scout"
@@ -27,16 +28,22 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
         return null
     }
 
+    /**
+
+    
+     */
+
     return (
         <main className="bg-bg-blue">
             <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_9863.JPEG')]", desktop: "md:bg-[url('/images/IMG_6748.JPEG')]" }} messageSection={"joinHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full ">
-                <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard"/> 
-                <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife" />
+                <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
+                {/* <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife" /> */}
+                <Scoutlife />
                 <div className=" bg-white mx-4 my-8 py-4 lg:mx-25 lg:my-20 lg:pt-2 rounded-3xl">
                     <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
-                    <Line hasPadding/>
+                    <Line hasPadding />
                     <section className="flex flex-col gap-6 font-albert px-4 pb-8 lg:max-w-430 lg:px-10">
                         <div className="flex flex-col gap-4 ">
                             <h2 className="text-h2 font-fraunces font-bold text-primary md:text-h3-desktop">
@@ -46,8 +53,8 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                                 {messages?.joinContent?.text}
                             </p>
                         </div>
-                        <a 
-                            href="/pdfs/Bilaga-20251012-HSS-Trygga-maten-policy-Beslutad.pdf" 
+                        <a
+                            href="/pdfs/Bilaga-20251012-HSS-Trygga-maten-policy-Beslutad.pdf"
                             target="_blank"
                         >
                             <CTABtn text={messages?.joinContent?.button} />
@@ -56,7 +63,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             {messages?.joinContent?.text02}
                         </p>
                         <a
-                            href="https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/kurskatalog-ledarskapson/" 
+                            href="https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/kurskatalog-ledarskapson/"
                             target="_blank"
                         >
                             <CTABtn text={messages?.joinContent?.button02} />
@@ -72,14 +79,14 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                         </div>
                     </section>
                 </div>
-                <JoinPage 
-                        title={messages?.joinPage.title}
-                        text={messages?.joinPage.text}
-                        buttonText={messages?.joinPage.buttonText}
-                        width="box"
-                        btnWidth="full" 
-                    />
-                    <InstagramContainer />
+                <JoinPage
+                    title={messages?.joinPage.title}
+                    text={messages?.joinPage.text}
+                    buttonText={messages?.joinPage.buttonText}
+                    width="box"
+                    btnWidth="full"
+                />
+                <InstagramContainer />
             </div>
         </main>
     )
