@@ -55,7 +55,12 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
             <Toaster position="top-center" reverseOrder={false} />
             <h2 className="text-h2 w-full font-fraunces font-bold text-primary md:text-h2-desktop">{title}</h2>
             <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-[280px] md:max-w-[400px] lg:max-w-[600px]">{text}</p>
-            <div className="absolute right-4 top-14 -scale-x-100 lg:scale-x-100 rotate-293 lg:rotate-0 xl:rotate-10  2xl:rotate-10 lg:top-70 md:right-22 lg:right-40 lg:right-auto lg:left-[40px] 2xl:left-[100px] ">
+            <div className="absolute right-4 top-14 -scale-x-100 rotate-293  
+                            md:right-22 
+                            lg:scale-x-100 lg:rotate-0 lg:top-70 lg:right-40 lg:right-auto lg:left-[60px]
+                            xl:-rotate-5 xl:left-[180px]
+                            2xl:-rotate-5 2xl:left-[260px] 
+            ">
                 <svg 
                 className="w-[67px] h-auto md:w-[182px] xl:w-[240px] 2xl:w-[300px]" 
                 viewBox="0 0 336 326" 
