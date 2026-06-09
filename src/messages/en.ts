@@ -822,7 +822,7 @@ export const En: MessagesEngType = {
     p4: "The member data does remain in Scoutnet, however, as long as the person does not have an active membership, only a few employees at the National Scout Office can access the information.",
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
- email: {
+  email: {
     "t0": "Email",
     "s0": "Email to kåren",
     "p0": "info@hss-scout.org",
