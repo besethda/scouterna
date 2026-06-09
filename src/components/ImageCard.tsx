@@ -33,10 +33,10 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
         ${page === "group" && "w-81.5 md:w-87"}
         ${page === "scout-life" && "w-89.5"}
         `}>
-            <Image src={pinColor()} alt="hige" width={85} height={80} className={`absolute inset-s-0 z-40 
+            <Image src={pinColor()} alt="hige" width={85} height={80} className={`absolute inset-s-0 z-20 
             ${page === "cabin" ? "left-20 -top-2" : "left-33 -top-4"}
             `} />
-            <div className={`mb-3.25  relative overflow-hidden
+            <div className={`mb-3.25 relative overflow-hidden
             ${page === "cabin" && "h-57.25"}
             ${page === "home" && "h-75"}
             ${page === "scout-life" && "h-75"}
