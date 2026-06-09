@@ -31,11 +31,11 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <section className="md:bg-bg-blue py-7 flex w-full flex-col items-center">
                     <ContentSection sectionLayout={["t", "p"]} page={"ruffenDivisions"} padding="none" background="desktop" />
                     <div className="flex flex-col p-4 gap-1 md:px-25 md:grid md:grid-cols-2 w-full lg:max-w-430 lg:px-22 md:gap-2 [&>*]:w-full">
-                        <DivisionsBox division={"sjohumlorna"} boxStyle={"info"} />
-                        <DivisionsBox division={"kaparna"} boxStyle={"info"} />
+                        <DivisionsBox division={"spararscouter"} boxStyle={"info"} />
+                        <DivisionsBox division={"upptackascouter"} boxStyle={"info"} />
                         <DivisionsBox division={"utmanare"} boxStyle={"info"} />
-                        <DivisionsBox division={"konvojen"} boxStyle={"info"} />
-                        <DivisionsBox division={"smattarne"} boxStyle={"info"} />
+                        <DivisionsBox division={"aventyrarscouter"} boxStyle={"info"} />
+                        <DivisionsBox division={"familjescouter"} boxStyle={"info"} />
                     </div>
                 </section>
                 <section className="pb-8 md:pt-8 md:pb-20 px-4 lg:max-w-430 lg:px-22 w-full">
