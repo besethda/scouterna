@@ -129,6 +129,7 @@ const Groups = ({
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
+            background={"blue"}
             padding={"5"}
             child={true}
           />
@@ -209,6 +210,7 @@ const Groups = ({
           <ContentSection
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
+            background={"blue"}
             padding={"5"}
             child={true}
           />
@@ -290,6 +292,7 @@ const Groups = ({
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
+            background={"blue"}
             child={true}
           />
         </section>
@@ -370,6 +373,7 @@ const Groups = ({
             sectionLayout={["t", "p"]}
             page="avdelningsledare"
             padding={"5"}
+            background={"blue"}
             child={true}
           />
         </section>
