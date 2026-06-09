@@ -105,7 +105,8 @@ type MessagesSvType = {
     title: string,
     text: string,
     title02: string, 
-    text02: string
+    text02: string, 
+    span: string,
   },
   goodToKnow: {
     headline: string,
@@ -554,8 +555,9 @@ export const Sv: MessagesSvType = {
     headline: "Bli Scout",
     title: "Vågorna väntar",
     text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra - ute i naturen och till sjöss - och du får både kunskap, vänner och minnen för livet.",
-    title02: "HSS välkomnar alla", 
-    text02: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare."
+    title02: "HSS välkomnar ", 
+    text02: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare.",
+    span: "alla"
   },
   division: {
     sjohumlorna_title: "Sjöhumlorna",

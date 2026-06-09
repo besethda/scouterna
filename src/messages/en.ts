@@ -71,7 +71,8 @@ export type MessagesEngType = {
     title: string,
     text: string,
     title02: string, 
-    text02: string
+    text02: string, 
+    span: string
   };
   division: {
     sjohumlorna_title: string,
@@ -598,8 +599,9 @@ export const En: MessagesEngType = {
     headline: "Become a Scout",
     title: "The waves are waiting",
     text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
-    title02: "HSS welcomes everyone", 
-    text02: "No matter who you are or your level of experience, there is a place for you here. Join us as a Scout, or get involved as a parent or Scout leader."
+    title02: "HSS welcomes", 
+    text02: "No matter who you are or your level of experience, there is a place for you here. Join us as a Scout, or get involved as a parent or Scout leader.", 
+    span: "everyone"
   },
   homeHero: {
     hero_title: "Hässelby Strand Sea Scouts",
