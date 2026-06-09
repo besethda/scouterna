@@ -12,10 +12,10 @@ export const images =
     },
     fields: [
       defineField({name: 'home_images', title: 'Hem Bilder', type: 'object', fields: [
-        defineField({name: 'home_hero_mobile', title: 'Hem Hero Mobile', type: 'image', fields: [
+        defineField({name: 'home_hero_mobile', title: 'Hem Huvudbild Mobile', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
-        defineField({name: 'home_hero_desktop', title: 'Hem Hero Desktop', type: 'image', fields: [
+        defineField({name: 'home_hero_desktop', title: 'Hem Huvudbild Desktop', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
         defineField({name: 'card_image', title: 'Vågorna väntar Bild', type: 'image', fields: [
@@ -26,10 +26,10 @@ export const images =
         ]}),
       ]}),
       defineField({name: 'join_images', title: 'Bli Sjöscout Bilder', type: 'object', fields: [
-        defineField({name: 'join_hero_mobile', title: 'Bli Sjöscout Hero Mobile', type: 'image', fields: [
+        defineField({name: 'join_hero_mobile', title: 'Bli Sjöscout Huvudbild Mobile', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
-        defineField({name: 'join_hero_desktop', title: 'Bli Sjöscout Hero Desktop', type: 'image', fields: [
+        defineField({name: 'join_hero_desktop', title: 'Bli Sjöscout Huvudbild Desktop', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
         defineField({name: 'card_image', title: 'Bli en del av HSS Bild', type: 'image', fields: [
@@ -40,10 +40,10 @@ export const images =
         ]}),
       ]}),
       defineField({name: 'lifestyle_images', title: 'Livet som Sjöscout Bilder', type: 'object', fields: [
-        defineField({name: 'lifestyle_hero_mobile', title: 'Livet som Sjöscout Hero Mobile', type: 'image', fields: [
+        defineField({name: 'lifestyle_hero_mobile', title: 'Livet som Sjöscout Huvudbild Mobile', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
-        defineField({name: 'lifestyle_hero_desktop', title: 'Livet som Sjöscout Hero Desktop', type: 'image', fields: [
+        defineField({name: 'lifestyle_hero_desktop', title: 'Livet som Sjöscout Huvudbild Desktop', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
         defineField({name: 'card_image', title: 'Vågorna Väntar Bild', type: 'image', fields: [

@@ -15,7 +15,7 @@ export const alert =
         defineField({name: 'type', title: 'Typ', type: 'string', options: {
           list: [
             { title: 'Notis', value: 'notis'},
-            { title: 'Obs', value: 'obs'},
+            { title: 'Obs!', value: 'obs'},
           ]
         }}),
         defineField({name: 'title_sv', title: 'Titel (SV)', type: 'string'}),

@@ -12,7 +12,7 @@ export const boatsType =
       }
     },
     fields: [
-      defineField({name: 'boats', title: 'Båt Lista', type: 'array', of: [
+      defineField({name: 'boats', title: 'Båtlista', type: 'array', of: [
         defineField({name: 'single_boat', title: 'Singel båt', type: 'boatSection'})
       ]})
     ]
