@@ -19,7 +19,6 @@ const Footer = () => {
 
     const messages = useMessages()
     const searchPath = usePathname()
-    console.log(searchPath)
     const hidePath = ["/ruffen", "/myset"]
     const checkHide = hidePath.some(path => searchPath.includes(path))
 

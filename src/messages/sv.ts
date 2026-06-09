@@ -337,13 +337,15 @@ type MessagesSvType = {
     head: string,
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   interestBtn: {
     head: string
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   form: {
     title: string,
@@ -999,7 +1001,8 @@ export const Sv: MessagesSvType = {
     head: "Ta steget!",
     title: "Anmäl ditt intresse",
     text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
-    buttonText: "Gå med i Scouterna"
+    buttonText: "Gå med i Scouterna",
+    photoTitle: "Häng med på äventyr!"
   },
   myset01: {
     t0: "Nyfiken på att hyra Myset?",
@@ -1083,8 +1086,7 @@ export const Sv: MessagesSvType = {
   konvojenMeeting: {
     t0: "Avdelningsmöten",
     p0: "Dag: Torsdag",
-    p1: "Tid: 18:00",
-    p2: "Plats: Ruffen vid Hässelby Strandbad."
+    p1: "Plats: Ruffen vid Hässelby Strandbad."
   },
   konvojenPlace: {
     t0: "Märken",
@@ -1155,7 +1157,8 @@ export const Sv: MessagesSvType = {
     head: "Vill du gå med i Scouterna?",
     title: "Anmäl ditt intresse",
     text: "Om du är intresserad av att gå med i HSS som Scout, ledare eller engagerad förälder går det bra att anmäla ditt intresse via vårt formulär.",
-    buttonText: "Gå med i Scouterna"
+    buttonText: "Gå med i Scouterna",
+    photoTitle: "Häng med på äventyr!"
   },
   ruffenDivisions: {
     t0: "Avdelningsmöten",

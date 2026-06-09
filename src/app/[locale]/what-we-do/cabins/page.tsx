@@ -5,6 +5,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CabinsSection from "@/components/CabinsSection";
+import { getSectionById } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItem = "cabins"
@@ -15,9 +16,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const Cabins = ({params}:{params: Promise<{locale: string}>}) => {
-    const {locale} = use(params)
+const Cabins = async ({params}:{params: Promise<{locale: string}>}) => {
+    const {locale} = await params
     const messages = locale === "en" ? En : Sv
+
+    const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "cabin_images")
 
     return (
         <main>
@@ -26,7 +29,10 @@ const Cabins = ({params}:{params: Promise<{locale: string}>}) => {
                 <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="cabinsCard" isH1/>
             </div>
             <div className="flex justify-center">
-                <CabinsSection />
+                <CabinsSection images={{
+                    imageMyset:data.cabin_images.myset.asset._ref, refMyset:data.cabin_images.myset.alt,
+                    imageRuffen:data.cabin_images.ruffen.asset._ref, refRuffen:data.cabin_images.ruffen.alt,
+                }}/>
             </div>
         </main>
     );

@@ -4,11 +4,12 @@ import Image from "next/image"
 import useMessages from "@/hook/useMessages"
 import Link from "next/link"
 import ImageCard from "../ImageCard"
+import { urlFor } from "@/sanity/lib/image"
 
 type divisionName = "sjohumlorna" | "kaparna" | "utmanare" | "konvojen" | "smattarne"
 
-const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
-  { division: divisionName, imageUrl?: string, boxStyle: string }) => {
+const DivisionsBox = ({ division, imageUrl, data, boxStyle = "basic" }:
+  { division: divisionName, imageUrl?: string, data: any, boxStyle: string }) => {
 
   const messages = useMessages()
   const colorReference = {
@@ -18,7 +19,7 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
     konvojen: ["border-orange", "bg-orange-opaque"],
     smattarne: ["border-purple", "bg-purple-opaque"]
   }
-
+  if (!data || data.groups.day_se) return null
   return (
     <div className={`${colorReference[division][0]} flex flex-col flex-wrap border border-b-4 m-1 rounded-2xl px-6 py-3 ${boxStyle !== "image" ? boxStyle === "info" ? "md:w-[49.5%] bg-bg-white mx-[.25%]" : "md:w-[24%] mx-[0.5%] md:min-w-77 md:m-3" : "md:min-h-85  md:max-h-96 lg:max-h-77 md:max-w-250 md:my-4"}`}>
       <div className={`flex order-1 justify-between items-center ${boxStyle === "image" && "md:flex-col md:justify-start md:items-baseline md:min-w-[53%] lg:min-w-[70%]"}`}>
@@ -31,9 +32,8 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
       <div className={`mt-3 order-2 ${boxStyle === "image" && "md:max-w-[50%] lg:max-w-[70%] lg:pr-5"}`}>
         {boxStyle !== "image" && <div className="text-h3 font-fraunces font-bold text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
         {boxStyle === "info" && <div className="text-text-black pt-1 pb-3">
-          <div className="text-body font-varela">{messages?.division.day} {messages?.division[`${division}_day`] ?? ""}</div>
-          <div className="text-body font-varela">{messages?.division.time} {messages?.division[`${division}_time`] ?? ""}</div>
-          <div className="text-body font-varela">{messages?.division.place} {messages?.division[`${division}_place`] ?? ""}</div>
+          <div className="w-fit text-body text-text-black font-varela">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? data?.groups?.day_sv : data.groups.day_en}`}</div>
+          <div className="w-fit text-body text-text-black font-varela">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? data?.groups?.place_sv : data.groups.place_en}`}</div>
         </div>}
         {boxStyle === "image" && <div className="md:text-body-desktop text-body font-albert text-text-black">{messages?.division[`${division}_paragraph`] ?? ""}</div>}
       </div>

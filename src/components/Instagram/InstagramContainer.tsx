@@ -31,7 +31,7 @@ const InstagramContainer = async ({bgBlue=false, mobileOnly=false, showText=fals
       return {mediaUrl:post.mediaUrl, permalink: post.permalink, mediaType:post.mediaType, caption:post.caption, timestamp:post.timestamp, imageIndex:index}
     })
     return (
-      <div className={`${bgBlue ? "bg-bg-blue" : "bg-bg-white"} ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>
+      <div className={`bg-bg-blue" ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>
         <Instagram photoObject={filteredData} infoText={showText}/>
       </div>
     )
@@ -40,7 +40,7 @@ const InstagramContainer = async ({bgBlue=false, mobileOnly=false, showText=fals
       return {mediaUrl:post.mediaUrl, permalink: `https://www.instagram.com/hss_scout/`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
     })
     return (
-      <div className={`${bgBlue ? "bg-bg-blue" : "bg-bg-white"} ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>
+      <div className={`bg-bg-blue ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>
         <Instagram photoObject={fallbackFilteredData} infoText={showText}/>
       </div>
     )
