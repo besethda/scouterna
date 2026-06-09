@@ -11,8 +11,12 @@ import { getId } from "@/lib/utils";
 import Family from '../../../../../public/images/ParumMagna.png'
 import FamilyEn from '../../../../../public/images/ParumMagnaEng.png'
 import CardWithLogo from "@/components/CardWithLogo";
+<<<<<<< HEAD
+import ImageCard from "@/components/ImageCard";
+=======
 import { PortableText } from "next-sanity";
 import { urlFor } from "@/sanity/lib/image";
+>>>>>>> main
 
 const pageItems = [
   "sjohumlorna",
@@ -50,6 +54,10 @@ const Groups = async ({
 
   const { singleGroup, locale } = await params
   const messages = locale === "en" ? En : Sv;
+<<<<<<< HEAD
+
+  const familyImageSrc = locale === "en" ? "/images/ParumMagnaEng.png" : "/images/ParumMagna.png";
+=======
   const familyImageSrc = locale === "en" ? FamilyEn : Family;
   const data = await getId("2a5a4f80-b206-44b9-9e00-6b870a00f90e")
   if(!data) return null
@@ -61,24 +69,63 @@ const Groups = async ({
 
   
 
+>>>>>>> main
 
   if (singleGroup === "sjohumlorna") {
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1/>
-        <section className="w-full flex flex-col items-center bg-bg-blue">
-          <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
-            <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
-              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+        <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1 />
+        <section className="w-full flex flex-col bg-bg-blue px-4 lg:px-22">
+          <div className="md:flex md:gap-5 lg:gap-10">
+            <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
+              <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
+                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                  <ContentSection
+                    sectionLayout={["t", "p"]}
+                    page="sjohumlornaSpårarscouter"
+                    background={"blue"}
+                    padding={"none"}
+                    child={true}
+                  />
+                </div>
+                <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                  <ImageCard
+                    imageTitle="sjohumlorna_title"
+                    image={`/images/DSCF3033.jpg`}
+                    section="division"
+                    page="group"
+                    text=""
+                    pin="red"
+                  />
+                </div>
+              </div>
+              <ContentSection
+                sectionLayout={["t", "p"]}
+                page="sjohumlornaAge"
+                background={"blue"}
+                padding={"none"}
+                child={true}
+              />
+              <div className="flex flex-col pb-4 w-full">
+                <ContentSection
+                  sectionLayout={["t", "p", "p"]}
+                  page="sjohumlorMeeting"
+                  background={"blue"}
+                  padding={"none"}
+                  child={true}
+                />
                 <ContentSection
                   sectionLayout={["t", "p"]}
-                  page="sjohumlornaSpårarscouter"
+                  page="sjohumlorPlace"
                   background={"blue"}
                   padding={"none"}
                   child={true}
                 />
               </div>
+<<<<<<< HEAD
+              <div className="
+=======
               <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
                   src={urlFor(sjohumlorna.groups.image.asset._ref).url()}
@@ -117,6 +164,7 @@ const Groups = async ({
               />
             </div>
             <div className="
+>>>>>>> main
               [&_button]:border 
             [&_button]:border-green
             [&_button]:bg-green-opaque 
@@ -126,14 +174,25 @@ const Groups = async ({
               [&_button]:py-3
             [&_button]:hover:bg-green-opaque
               [&_button]:hover:brightness-102"
-            >
-              <a
-                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
-                target="_blank"
-                className="px-0"
               >
-                <CTABtn text={messages?.sjohumlorButton} />
-              </a>
+                <a
+                  href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
+                  target="_blank"
+                  className="px-0"
+                >
+                  <CTABtn text={messages?.sjohumlorButton} />
+                </a>
+              </div>
+            </div>
+            <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
+              <ImageCard
+                imageTitle="sjohumlorna_title"
+                image={`/images/DSCF3033.jpg`}
+                section="division"
+                page="group"
+                text=""
+                pin="red"
+              />
             </div>
           </div>
         </section>
@@ -170,19 +229,57 @@ const Groups = async ({
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1/>
-        <section className="w-full flex flex-col items-center bg-bg-blue">
-          <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
-            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
-              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+        <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1 />
+        <section className="w-full flex flex-col bg-bg-blue px-4 lg:px-22">
+          <div className="md:flex md:gap-5 lg:gap-10">
+            <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
+              <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
+                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                  <ContentSection
+                    sectionLayout={["t", "p"]}
+                    page="kaparnaUpptäckarscouter"
+                    background={"blue"}
+                    padding={"5"}
+                    child={true}
+                  />
+                </div>
+                <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                  <ImageCard
+                    imageTitle="kaparna_title"
+                    image={`/images/DSCF3033.jpg`}
+                    section="division"
+                    page="group"
+                    text=""
+                    pin="pink"
+                  />
+                </div>
+              </div>
+              <ContentSection
+                sectionLayout={["t", "p"]}
+                page="kaparnaAge"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+              <div className="flex flex-col gap-4 justify-center pb-4">
+                <ContentSection
+                  sectionLayout={["t", "p", "p"]}
+                  page="kaparnaMeeting"
+                  background={"blue"}
+                  padding={"5"}
+                  child={true}
+                />
                 <ContentSection
                   sectionLayout={["t", "p"]}
-                  page="kaparnaUpptäckarscouter"
+                  page="kaparnaPlace"
                   background={"blue"}
                   padding={"5"}
                   child={true}
                 />
               </div>
+<<<<<<< HEAD
+              <div className="
+=======
               <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
                   src={urlFor(kaparna.groups.image.asset._ref).url()}
@@ -221,6 +318,7 @@ const Groups = async ({
               />
             </div>
             <div className="
+>>>>>>> main
               [&_button]:border 
             [&_button]:border-lightBlue
             [&_button]:bg-lightBlue-opaque
@@ -230,13 +328,24 @@ const Groups = async ({
               [&_button]:py-3
             [&_button]:hover:bg-lightBlue-opaque
               [&_button]:hover:brightness-102"
-            >
-              <a
-                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
-                target="_blank"
               >
-                <CTABtn text={messages?.kaparnaButton} />
-              </a>
+                <a
+                  href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
+                  target="_blank"
+                >
+                  <CTABtn text={messages?.kaparnaButton} />
+                </a>
+              </div>
+            </div>
+            <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
+              <ImageCard
+                imageTitle="kaparna_title"
+                image={`/images/DSCF3033.jpg`}
+                section="division"
+                page="group"
+                text=""
+                pin="pink"
+              />
             </div>
           </div>
         </section>
@@ -274,19 +383,57 @@ const Groups = async ({
     return (
       <main>
         <Breadcrumbs />
-          <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1/>
-        <section className="w-full flex flex-col items-center bg-bg-blue">
-          <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
-            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
-              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+        <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1 />
+        <section className="w-full flex flex-col bg-bg-blue px-4 lg:px-22">
+          <div className="md:flex md:gap-5 lg:gap-10">
+            <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
+              <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
+                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                  <ContentSection
+                    sectionLayout={["t", "p"]}
+                    page="sjohumlornaSpårarscouter"
+                    background={"blue"}
+                    padding={"none"}
+                    child={true}
+                  />
+                </div>
+                <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                  <ImageCard
+                    imageTitle="utmanare_title"
+                    image={`/images/DSCF3033.jpg`}
+                    section="division"
+                    page="group"
+                    text=""
+                    pin="red"
+                  />
+                </div>
+              </div>
+              <ContentSection
+                sectionLayout={["t", "p"]}
+                page="utmanareAge"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+              <div className="flex flex-col gap-4 justify-center pb-4">
+                <ContentSection
+                  sectionLayout={["t", "p", "p"]}
+                  page="utmanareMeeting"
+                  background={"blue"}
+                  padding={"5"}
+                  child={true}
+                />
                 <ContentSection
                   sectionLayout={["t", "p"]}
-                  page="utmanarscouter"
+                  page="utmanarePlace"
                   background={"blue"}
                   padding={"5"}
                   child={true}
                 />
               </div>
+<<<<<<< HEAD
+              <div className="
+=======
               <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
                   src={urlFor(utmanare.groups.image.asset._ref).url()}
@@ -325,6 +472,7 @@ const Groups = async ({
               />
             </div>
             <div className="
+>>>>>>> main
               [&_button]:border 
             [&_button]:border-pink
             [&_button]:bg-pink-opaque 
@@ -334,18 +482,33 @@ const Groups = async ({
               [&_button]:py-3
             [&_button]:hover:bg-pink-opaque
               [&_button]:hover:brightness-104"
-            >
-              <a
-                href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
-                target="_blank"
               >
-                <CTABtn text={messages?.utmanareButton} />
-              </a>
+                <a
+                  href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
+                  target="_blank"
+                >
+                  <CTABtn text={messages?.utmanareButton} />
+                </a>
+              </div>
+            </div>
+            <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
+              <ImageCard
+                imageTitle="utmanare_title"
+                image={`/images/DSCF3033.jpg`}
+                section="division"
+                page="group"
+                text=""
+                pin="red"
+              />
             </div>
           </div>
         </section>
+<<<<<<< HEAD
+        <section className="bg-white w-full lg:max-w-430 lg:px-22 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto">
+=======
         <section className="bg-white lg:max-w-430 lg:px-22 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto">
           <div className="w-full py-2">
+>>>>>>> main
           <ContentSection
             sectionLayout={["t"]}
             page="avdelningsledare"
@@ -378,19 +541,57 @@ const Groups = async ({
     return (
       <main>
         <Breadcrumbs />
-                <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1/>
-        <section className="w-full flex flex-col items-center bg-bg-blue">
-          <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
-            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start">
-              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+        <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1 />
+        <section className="w-full flex flex-col  bg-bg-blue px-4 lg:px-22">
+          <div className="md:flex md:gap-5 lg:gap-10">
+            <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
+              <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
+                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                  <ContentSection
+                    sectionLayout={["t", "p"]}
+                    page="äventyrarscouter"
+                    background={"blue"}
+                    padding={"5"}
+                    child={true}
+                  />
+                </div>
+                <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                  <ImageCard
+                    imageTitle="konvojen_title"
+                    image={`/images/DSCF3033.jpg`}
+                    section="division"
+                    page="group"
+                    text=""
+                    pin="dark_red"
+                  />
+                </div>
+              </div>
+              <ContentSection
+                sectionLayout={["t", "p"]}
+                page="konvojenAge"
+                background={"blue"}
+                padding={"3"}
+                child={true}
+              />
+              <div className="flex flex-col gap-4 justify-center pb-4">
+                <ContentSection
+                  sectionLayout={["t", "p", "p", "p"]}
+                  page="konvojenMeeting"
+                  background={"blue"}
+                  padding={"5"}
+                  child={true}
+                />
                 <ContentSection
                   sectionLayout={["t", "p"]}
-                  page="äventyrarscouter"
+                  page="konvojenPlace"
                   background={"blue"}
                   padding={"5"}
                   child={true}
                 />
               </div>
+<<<<<<< HEAD
+              <div className="
+=======
               <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
                 {konvojen?.groups?.image && <Image
                   src={urlFor(konvojen?.groups?.image.asset._ref).url()}
@@ -429,6 +630,7 @@ const Groups = async ({
               />
             </div>
             <div className="
+>>>>>>> main
               [&_button]:border 
             [&_button]:border-orange
             [&_button]:bg-orange-opaque
@@ -438,13 +640,24 @@ const Groups = async ({
               [&_button]:py-3
             [&_button]:hover:bg-orange-opaque
               [&_button]:hover:brightness-102"
-            >
-              <a
-                href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
-                target="_blank"
               >
-                <CTABtn text={messages?.konvojenButton} />
-              </a>
+                <a
+                  href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
+                  target="_blank"
+                >
+                  <CTABtn text={messages?.konvojenButton} />
+                </a>
+              </div>
+            </div>
+            <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
+              <ImageCard
+                imageTitle="konvojen_title"
+                image={`/images/DSCF3033.jpg`}
+                section="division"
+                page="group"
+                text=""
+                pin="dark_red"
+              />
             </div>
           </div>
         </section>
@@ -482,10 +695,10 @@ const Groups = async ({
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1/>
-        <section className="w-full flex flex-col items-center bg-bg-blue">
+        <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 />
+        <section className="w-full flex flex-col  bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
-            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 items-center md:items-start ">
+            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 md:items-start ">
               <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                 <ContentSection
                   sectionLayout={["t", "p", "p", "p"]}
@@ -495,6 +708,16 @@ const Groups = async ({
                   child={true}
                 />
               </div>
+<<<<<<< HEAD
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+                <ImageCard
+                  imageTitle="smattarne_title"
+                  image={`/images/DSCF3033.jpg`}
+                  section="division"
+                  page="group"
+                  text=""
+                  pin="red"
+=======
               <div className="flex w-89.5 aspect-6/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
                   src={urlFor(smattarne?.groups?.image.asset._ref).url()}
@@ -502,6 +725,7 @@ const Groups = async ({
                   className="rounded-2xl object-cover w-full"
                   width={358}
                   height={257}
+>>>>>>> main
                 />
               </div>
             </div>
@@ -515,6 +739,16 @@ const Groups = async ({
                   child={true}
                 />
               </div>
+<<<<<<< HEAD
+              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+                <ImageCard
+                  imageTitle="smattarne_photoTitle"
+                  image={familyImageSrc}
+                  section="division"
+                  page="group"
+                  text=""
+                  pin="red"
+=======
               <div className="flex w-89.5 aspect-6/5 h-auto md:pt-5 md:pb-4 pb-6">
                 <Image
                   src={familyImageSrc}
@@ -522,6 +756,7 @@ const Groups = async ({
                   className="rounded-2xl object-cover w-full"
                   width={358}
                   height={257}
+>>>>>>> main
                 />
               </div>
             </div>
