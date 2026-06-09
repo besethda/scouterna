@@ -436,9 +436,8 @@ export type MessagesEngType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
-  memberScoutnet: {title:string, text01:string, text02:string},
+  memberScoutnet:{title:string, text01:string, text02:string},
   memberScoutnetButton: string,
-  
   mysetHistory: {
     title: string,
     text1: string,

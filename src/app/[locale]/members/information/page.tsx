@@ -26,9 +26,11 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
             <Breadcrumbs />
             <div className="w-full flex flex-col items-center">
                 <CardWithLogo image="/informationYellowBg.svg" sectionTitle="memberInfo" isH1 />
-                <ScoutInfo />
-                <Union />
-                <InstagramContainer showText={true}/>
+                <div className="flex flex-col gap-10">
+                    <ScoutInfo />
+                    <Union />
+                    <InstagramContainer showText={true}/>
+                </div>
             </div>
         </main>
     );

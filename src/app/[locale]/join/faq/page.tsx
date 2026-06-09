@@ -21,7 +21,7 @@ const Faq = ({ params }: { params: Promise<{ locale: string }> }) => {
     const messages = locale === "en" ? En : Sv
 
     return (
-        <main>
+        <main className="bg-bg-blue">
             <Breadcrumbs />
             <div className="flex w-full flex-col items-center ">
                 <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
