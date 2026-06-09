@@ -224,7 +224,6 @@ type MessagesSvType = {
     cabins: string,
     myset: string,
     ruffen: string,
-    members: string,
     information: string,
     safety: string,
     contact: string,
@@ -683,24 +682,23 @@ export const Sv: MessagesSvType = {
   },
   description: {
     history: "Upptäck HSS Scouternas historia i Stockholm 🏕️🚤 | Från de första äventyren till vår egen båt – läs om läger, traditioner och resan som format oss | En del av Scouterna",
-    "become-a-scout": "Bli Sjöscout",
-    faq: "FAQ",
-    "groups": "Våra avdelningar",
-    sjohumlorna: "Sjöhumlorna",
-    kaparna: "Kaparna",
-    konvojen: "Konvojen",
-    utmanare: "Utmanare",
-    smattarne: "Småttarne",
-    lifestyle: "Livet som Sjöscout",
-    boats: "Båtar",
-    cabins: "Scoutstugor",
-    myset: "Myset",
-    ruffen: "Ruffen",
-    members: "För medlemmar",
-    information: "Information för medlemmar",
-    safety: "Flytvästpolicy",
-    contact: "Kontakt",
-    gdpr: "GDPR"
+    "become-a-scout": "Bli scout i Hässelby Strands Sjöscouter 🚤 | Livet, åldrar (8+), ledare & förälder - ingen erfarenhet krävs | Anmäl ditt intresse här",
+    faq: "FAQ - vanliga frågor om att bli scout och medlem i Hässelby Strands Sjöscouter (HSS) 🏕️🚤 | Hitta dina svar här",
+    "groups": "Våra avdelningar hos Hässelby Strands Sjöscouter (HSS) 🚤🏕️ | 5 åldersgrupper: Under 8 (med förälder eller vuxen), 8-9, 10-11, 12-14 och 15+ | Åldersanpassade aktiviteter, trygg miljö och utbildade ledare | Hitta din grupp här",
+    sjohumlorna: "Sjöhumlorna - 8-9 år hos HSS 🐝 | Måndagar vid Ruffen | Trygga ledare | Märken: lykta, popcorn, kompisar & miljö | Börja scoutresan här",
+    kaparna: "Kaparna - 10-11 år hos HSS 🚤 | Segling, navigation, ansvar & vänskap | Märken: kniv, yxa, eld, sjukvård | Tisdagar vid Ruffen | Bli Upptäckarscout",
+    konvojen: "Konvojen - 12-14 år hos HSS 🚤 | Segla större jollar, planera hajker, leda & fatta beslut | Äventyrarscouter | Torsdagar 18:00 vid Ruffen",
+    utmanare: "Utmanare - 15+ år hos HSS 🚤🌍 | Egna projekt, internationella läger & ledarroller | 10 utmaningar - 2 individuella, 8 tillsammans | Tis/tors vid Ruffen | Bli en Utmanare",
+    smattarne: "Småttarne - Familjescouting (barn under 8) hos HSS 🐻 | Barn & vuxna med björnarna Parum & Magna | Sagor, lek & egna märken | Stärk er relation",
+    lifestyle: "Scoutliv hos HSS - livet som sjöscout 🚤🌊 | Äventyr, gemenskap, frihet, natur och vänner för livet | Sjömanskunskap, läger & aktiviteter | Läs mer här",
+    boats: "HSS Båtar - Optimist, 2-kronor, Kölbåtar ⛵🚤 | Optimist: nybörjarbåt | 2-kronor: snabb & rolig | Kölbåtar: stabil & trygg | Upptäck här",
+    cabins: "HSS scoutstugor - Myset & Ruffen 🏕️ | Myset: hyras för lägerbål & hajker | Ruffen: mötesplats vid Hässelby Strandbad för alla avdelningar & Optimistjollar",
+    myset: "Myset - HSS:s scoutstuga 🏕️ | Adress, historia, miljö & vägbeskrivning | Perfekt för lägerbål & hajker - finns att hyra | Läs mer här",
+    ruffen: "Ruffen - HSS scoutstuga 🏕️ | Plats, vägbeskrivning och fyra mötesplatser | Hitta hit och upptäck våra samlingsplatser här",
+    information: "HSS Information 📄 | Säkerhet, FAQ, kårstämmor och Scoutnet | Uppdatera uppgifter och anmäl dig till aktiviteter",
+    safety: "HSS Flytvästpolicy 🦺🚤 | När ska flytväst bäras? Regler för barn, ungdomar och ledare | Säkerhet på vattnet | Läs policyn här",
+    contact: "Kontakta HSS 📧 | E-post och Bankgiro information | Frågor om scouting? Vi svarar | Kontaktuppgifter här",
+    gdpr: "GDPR - personuppgiftsbehandling hos HSS 🔒 | Din integritet och säkerhet | Läs vår policy här"
   },
   groupsCard: {
     headline: "Avdelningar",
@@ -930,7 +928,7 @@ export const Sv: MessagesSvType = {
   safetyCard: {
     headline: "Säkerhet",
     title: "HSS Flytvästpolicy",
-    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en."
+    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF."
   },
   safetyBtn: {
     btnMobile: "Ladda ner PDF",
