@@ -31,7 +31,6 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
         {boxStyle !== "image" && <div className="text-h3 font-fraunces font-bold text-primary">{messages?.division[`${division}_title`] ?? ""}</div>}
         {boxStyle === "info" && <div className="text-text-black pt-1 pb-3">
           <div className="text-body font-varela">{messages?.division.day} {messages?.division[`${division}_day`] ?? ""}</div>
-          <div className="text-body font-varela">{messages?.division.time} {messages?.division[`${division}_time`] ?? ""}</div>
           <div className="text-body font-varela">{messages?.division.place} {messages?.division[`${division}_place`] ?? ""}</div>
         </div>}
         {boxStyle === "image" && <div className="md:text-body-desktop text-body font-albert text-text-black">{messages?.division[`${division}_paragraph`] ?? ""}</div>}

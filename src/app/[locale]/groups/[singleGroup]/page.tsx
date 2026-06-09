@@ -331,7 +331,7 @@ const Groups = ({
             />
             <div className="flex flex-col gap-4 justify-center pb-4">
               <ContentSection
-                sectionLayout={["t", "p", "p", "p"]}
+                sectionLayout={["t", "p", "p"]}
                 page="konvojenMeeting"
                 background={"blue"}
                 padding={"5"}
