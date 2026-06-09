@@ -3,15 +3,14 @@ import useMessages from "@/hook/useMessages"
 import CTABtn from "../CTA-button"
 import Image from "next/image"
 import Picture from "../../../public/images/IMG_9122.jpeg"
+import { urlFor } from "@/sanity/lib/image"
 import ruffen from '../../../public/images/ruffen.jpg'
 import ImageCard from "../ImageCard"
-
 import { useParams, usePathname } from "next/navigation"
 import Link from "next/link"
 
-const CabinsSection = () => {
+const CabinsSection = ({images}:{images:Record<string, string>}) => {
   const messages = useMessages()
-
   const params = useParams();
   const pathname = usePathname();
   const urlLocal = pathname?.split("/")[1]
@@ -41,7 +40,7 @@ const CabinsSection = () => {
             </div>
           </div>
           <div className="shrink-0 md:block mt-6 mb-6 mr-6 w-80">
-            <ImageCard image={`/images/IMG_9122.jpeg`} imageTitle="title" text="" section="cabinsmyset" page="cabin" pin="pink" />
+            <ImageCard image={urlFor(images.imageMyset).url()} imageTitle="title" text="" section="cabinsmyset" page="cabin" pin="pink" />
           </div>
         </div>
       </div>
@@ -63,7 +62,7 @@ const CabinsSection = () => {
             </div>
           </div>
           <div className=" shrink-0  md:block mt-6 mb-6 mr-6 w-80">
-            <ImageCard image={`/images/ruffen.jpg`} imageTitle="title" text="" section="cabinsruffen" page="cabin" pin="dark_red" />
+            <ImageCard image={urlFor(images.imageRuffen).url()} imageTitle="title" text="" section="cabinsruffen" page="cabin" pin="dark_red" />
           </div>
         </div>
       </div>
