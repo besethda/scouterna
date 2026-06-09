@@ -52,7 +52,6 @@ const Groups = async ({
   const messages = locale === "en" ? En : Sv;
   const familyImageSrc = locale === "en" ? FamilyEn : Family;
   const data = await getId("2a5a4f80-b206-44b9-9e00-6b870a00f90e")
-  console.log(data)
   if(!data) return null
   const sjohumlorna = data?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null
   const kaparna = data?.groups.find((e:any) => e.name_slug === "kaparna") || null

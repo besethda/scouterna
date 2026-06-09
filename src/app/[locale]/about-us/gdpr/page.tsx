@@ -17,7 +17,6 @@ const Gdpr = async ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = await params
     const messages = locale === "en" ? En : Sv
     const data = await getId("ec7ef49d-c0a3-4326-98ab-681d90994d8e")
-    console.log(data)
 
     return (
         <main>

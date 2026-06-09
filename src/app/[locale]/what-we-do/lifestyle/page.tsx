@@ -26,7 +26,6 @@ const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) =>
     const messages = locale === "en" ? En : Sv
 
     const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "lifestyle_images")
-    console.log(data)
 
     return (
         <main>
