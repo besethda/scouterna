@@ -1086,8 +1086,7 @@ export const En: MessagesEngType = {
   konvojenMeeting: {
     t0: "Section meetings",
     p0: "Day: Thursday",
-    p1: "Time: 18:00",
-    p2: "Location: Ruffen at Hässelby Strandbad.",
+    p1: "Location: Ruffen at Hässelby Strandbad.",
   },
   konvojenPlace: {
     t0: "Badges",

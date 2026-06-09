@@ -10,6 +10,7 @@ import SmallCard from "@/components/SmallCard";
 import JoinPage from "@/components/JoinPage";
 import CTABtn from "@/components/CTA-button";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
+import { getSectionById } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
 import Line from "@/components/line"
 
@@ -20,6 +21,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
+const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "join_images")
+
+
 const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
     const { locale } = use(params)
     const messages = locale === "en" ? En : Sv
@@ -28,8 +32,8 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
     }
 
     return (
-        <main className="bg-bg-blue">
-            <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_9863.JPEG')]", desktop: "md:bg-[url('/images/IMG_6748.JPEG')]" }} messageSection={"joinHero"} position={"center"} />
+        <main>
+            <HeroContainer bgImages={{ mobile: data.join_images.join_hero_mobile.asset._ref, desktop: data.join_images.join_hero_desktop.asset._ref }} messageSection={"joinHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full ">
                 <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
