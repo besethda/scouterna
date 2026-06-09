@@ -1,4 +1,4 @@
-import { getPageHeadTitle } from "@/lib/utils"
+import { getPageHeadTitle, getSectionById } from "@/lib/utils"
 import CardWithImage from "@/components/CardWithImage";
 import WhiteGridContainer from "@/components/WhiteGridBox/WhiteGridContainer";
 import { En } from "@/messages/en";
@@ -21,13 +21,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const LifeStyle = ({ params }: { params: Promise<{ locale: string }> }) => {
-    const { locale } = use(params)
+const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) => {
+    const { locale } = await params
     const messages = locale === "en" ? En : Sv
+
+    const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "lifestyle_images")
+    console.log(data)
 
     return (
         <main>
-            <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_1939.JPEG')]", desktop: "md:bg-[url('/images/rock.JPG')]" }} messageSection={"lifestyleHero"} position={"center"} />
+            <HeroContainer bgImages={{ mobile: data.lifestyle_images.lifestyle_hero_mobile.asset._ref, desktop: data.lifestyle_images.lifestyle_hero_desktop.asset._ref }} messageSection={"lifestyleHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <CardWithLogo image="/wavesYellowBg.svg" sectionTitle="lifestyle" />
@@ -35,7 +38,7 @@ const LifeStyle = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <PhotoContainer backgroundBlue={false} messageTitle="learning" />
 
             </div>
-            <Activities />
+            <Activities image={{image: data.lifestyle_images.card_image_2.asset._ref, alt: data.lifestyle_images.card_image_2.alt}}/>
 
         </main>
     );
