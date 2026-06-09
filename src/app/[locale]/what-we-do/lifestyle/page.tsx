@@ -33,7 +33,6 @@ const LifeStyle = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <CardWithLogo image="/wavesYellowBg.svg" sectionTitle="lifestyle" />
                 <LifeStyleSection />
                 <PhotoContainer backgroundBlue={false} messageTitle="learning" />
-
             </div>
             <Activities />
 
