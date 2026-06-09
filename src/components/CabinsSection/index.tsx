@@ -16,21 +16,27 @@ const CabinsSection = ({images}:{images:Record<string, string>}) => {
   const urlLocal = pathname?.split("/")[1]
   const currentLocal = params?.local || urlLocal || "sv"
 
+  /*
+  lägg till shadow
+
+  */ 
+
+
   return (
-    <div className="flex flex-col lg:max-w-430 lg:px-22 md:px-4 w-full font-albert items-center md:gap-5 md:mb-20 ">
-      <div className="hidden md:block w-full max-w-6xl">
+    <div className="flex flex-col lg:max-w-430 lg:px-22 w-full font-albert items-center md:gap-5 md:mb-20 px-4 md:mt-10">
+      <div className="hidden md:block w-full ">
         <h2 className=" text-primary text-h2-desktop font-fraunces font-bold">{messages?.cabinst}</h2>
       </div>
-      <div className="flex flex-col md:flex-row border border-lightBlue rounded-2xl bg-bg-blue w-full max-w-6xl lg:h-auto">
+
+      <div className="flex flex-col md:flex-row rounded-2xl w-full  lg:h-auto bg-white mb-5 shadow-lg" >
         <div className="flex flex-col md:px-5 gap-3 w-full h-full min-w-0">
-          <div className="hidden md:flex items-start shrink-0 pt-6">
-            <Image src="/blueHouseYellowBg.svg" alt="logo" width={44} height={44} className="h-10 w-auto" />
-          </div>
+
           <div className="flex flex-col flex-1 md:py-6 py-8 px-3 md:mr-20 min-w-0">
             <h3 className="text-primary text-h3-desktop font-fraunces font-bold">{messages?.cabinsmyset.title}</h3>
             <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A] ">{messages?.cabinsmyset.dpOne}</p>
             <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsmyset.dpTwo}</p>
             <div className="mt-7 w-fit lg:w-fit md:w-70">
+  
               <Link
                 href={`/${currentLocal}/what-we-do/cabins/myset`}>
                 <CTABtn text={messages?.mysetbtn}
@@ -44,16 +50,16 @@ const CabinsSection = ({images}:{images:Record<string, string>}) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col border border-lightBlue rounded-2xl bg-bg-blue w-full max-w-6xl lg:h-auto">
-        <div className="flex  flex-col md:flex-row md:px-5 gap-3 w-full h-full min-w-0">
-          <div className="hidden md:flex items-start shrink-0 pt-6">
-            <Image src="/blueHouseYellowBg.svg" alt="logo" width={44} height={44} className="h-10 w-auto" />
-          </div>
+
+      <div className="flex flex-col  rounded-2xl bg-white   lg:h-auto mb-5 shadow-lg">
+        <div className="flex  flex-col md:flex-row md:px-5 gap-3  h-full min-w-0">
+
           <div className="flex flex-col flex-1 md:py-6 py-8 px-3 md:mr-20 min-w-0">
             <h3 className="text-primary text-h3-desktop font-fraunces font-bold">{messages?.cabinsruffen.title}</h3>
             <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpOne}</p>
             <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpTwo}</p>
             <div className="mt-7 w-fit lg:w-fit md:w-70">
+             
               <Link
                 href={`/${currentLocal}/what-we-do/cabins/ruffen`}>
                 <CTABtn text={messages?.ruffenbtn}
