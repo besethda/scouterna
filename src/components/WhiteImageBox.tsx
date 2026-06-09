@@ -17,7 +17,7 @@ const WhiteImageBox = () => {
 
     return (
         <div className="w-full bg-bg-blue flex flex-col  items-center pt-12 pb-2 md:pb-22">
-            <div className="text-h2 pl-4 md:pb-3 pb-0 md:text-h2-desktop w-full lg:max-w-430 lg:px-22 text-primary font-albert mx-[1.5%]">
+            <div className="text-h2 pl-4 md:pb-3 pb-0 md:text-h2-desktop w-full lg:max-w-430 lg:px-22 text-primary font-fraunces font-bold mx-[1.5%]">
                 {messages?.whiteImageBox.header}
             </div>
             <div className="w-full items-center lg:justify-center lg:max-w-400 flex px-4 py-4 lg:px-14 flex-col gap-8 md:flex-row md:justify-center md:flex-wrap">
