@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
 
@@ -16,12 +16,16 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
 
     useEffect(() => {
         const container = middleImageRef.current;
-
         if (window.innerWidth < 1024 && container) {
             const maxScroll = container.scrollWidth - container.clientWidth;
             container.scrollLeft = maxScroll / 2;
         }
     }, []);
+
+    const move = (forward:boolean) => {
+        const container = middleImageRef.current;
+        container?.scrollBy({left: (forward ? 340 : -340), behavior: 'smooth'})
+    }
 
     return (
         <div className='w-full pb-6 pt-6 lg:max-w-430 lg:px-22 px-4 overflow-hidden'>
@@ -30,26 +34,34 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
                     <h2 className='text-h2 font-fraunces font-bold text-primary lg:text-h2-desktop'>{locale === "sv" ? title.sv : title.en}</h2>
                     <p className='text-body text-text-black font-albert lg:text-body-desktop'>{locale === "sv" ? text.sv : text.en}</p>
                 </div>
-                <div
-                    ref={middleImageRef}
-                    className="overflow-x-auto scroll-smooth snap-x snap-mandatory snap-center scrollbar-none flex flex-row gap-4 px-[15vw] w-full
-                    mx-auto lg:px-0 lg:overflow-x-visible lg:snap-none lg:justify-center"
-                >
-                    {images.map((imgbox: any, index: number) => (
-                        <div
-                            key={index}
-                            className='w-52.5 h-25 snap-center shrink-0 relative overflow-hidden rounded-2xl 
-                            lg:w-[33vw] lg:flex-1 lg:h-52 lg:snap-none'
-                        >
-                            <Image
-                                src={urlFor(imgbox.asset._ref).url()}
-                                alt={imgbox.alt}
-                                fill
-                                className="object-cover"
-                                priority={index === 1}
-                            />
-                        </div>
-                    ))}
+                <div className='w-full relative flex'>
+                    <div className='w-full h-full absolute z-20 flex justify-between items-center px-3 pointer-events-none'>
+                    <svg onClick={()=> move(false)} className="pointer-events-auto hidden md:block hover:scale-105 -rotate-90 duration-100 fill-text-black active:fill-text-gray/90 active:scale-95 cursor-pointer" width="30" height="30" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m399.44 263.41 189.21 221.68c10.078 11.195 8.3984 29.668-2.8008 39.184-11.195 9.5156-29.668 8.3984-39.184-2.8008l-147.22-170.73-147.22 170.73c-10.078 11.195-27.988 12.875-39.184 2.8008-11.195-10.078-12.875-27.988-2.8008-39.184z"/></svg>
+                    <svg onClick={()=> move(true)} className="pointer-events-auto hidden md:block hover:scale-105 rotate-90 duration-100 fill-text-black active:fill-text-gray/90 active:scale-95 cursor-pointer" width="30" height="30" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m399.44 263.41 189.21 221.68c10.078 11.195 8.3984 29.668-2.8008 39.184-11.195 9.5156-29.668 8.3984-39.184-2.8008l-147.22-170.73-147.22 170.73c-10.078 11.195-27.988 12.875-39.184 2.8008-11.195-10.078-12.875-27.988-2.8008-39.184z"/></svg>
+
+                    </div>
+                    <div ref={middleImageRef}
+                        style={{}}
+                        className="overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none flex
+                        lg:px-0 lg:snap-none px-10"
+                    >
+                        {images.map((imgbox: any, index: number) => (
+                            <div
+                                key={index}
+                                className='w-75 h-52 mx-2 snap-center shrink-0 relative overflow-hidden rounded-2xl 
+                                lg:snap-none'
+                            >
+                                <Image
+                                    src={urlFor(imgbox.asset._ref).url()}
+                                    alt={imgbox.alt}
+                                    width={300}
+                                    height={212}
+                                    className="object-cover aspect-7/5"
+                                    priority={index === 1}
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
