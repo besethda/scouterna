@@ -1,14 +1,8 @@
 import Image from "next/image"
 import ContentSection from "@/components/ContentSection"
-import ideadIcon from "../../../../../public/ideaIcon.svg"
-import loveIcon from "../../../../../public/loveIcon.png"
-import groupIcon from "../../../../../public/groupIcon.png"
 import { client } from "@/sanity/lib/client"
-import { urlFor } from "@/sanity/lib/image"
-
-
-const iconList = [ideadIcon, loveIcon, groupIcon];    
-
+import { urlFor } from "@/sanity/lib/image" 
+import downloadIcon from "../../../../../public/downlodIcon.svg"
 
 const Union = async () => {
     const data = await client.fetch(`*[_type=="union"][0] { "files": history_section[] {name, "fileUrl": file.asset-> url} } `)
@@ -20,11 +14,11 @@ const Union = async () => {
                 background={"blue"}
                 padding=""
             />
-            <div className="pt-7 flex flex-col items-center gap-2 font-albert text-text-white md:gap-9">
+            <div className="pt-4 flex flex-col items-center gap-2 font-albert text-text-white md:gap-9">
                 <div className="w-full px-4 lg:max-w-430 lg:px-10">
                     {data.files.map((item:any, index:number) => (
                         <div key={index} className="flex py-2 gap-2 w-full items-center ">
-                            <Image src={iconList[index]} alt={item.name} width={44} height={44} />
+                            <Image src={downloadIcon} alt={item.name} width={44} height={44} />
                             <div className="">
                                 <p className="font-bold font-h3 font-fraunces">{item.published}</p>
                                 <a href={item.fileUrl} target="_blank" className="justify-center text-body font-albert font-normal " aria-label={`"Ladda ner"} ${item.name} (PDF)`}>
