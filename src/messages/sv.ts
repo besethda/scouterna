@@ -760,13 +760,13 @@ export const Sv: MessagesSvType = {
     p5: "Sedan starten 1959 har HSS varit en sjöscoutkår byggd på engagemang, samarbete och viljan att ge unga äventyr och gemenskap, och den lågan brinner fortfarande starkt idag."
   },
   guidelines: {
-    t0: "HSS riktlinjer",
+    h0: "HSS riktlinjer",
     p0: "Vi har skapat riktlinjer för vilka typer av flytvästar som ska användas av Scouter som inte kan simma, och Scouter som kan simma. ",
     p1: "Det är bra att utgå från att alla, oavsett simkunnighet, ska ha på sig flytväst på bryggor och i båtar. Det är också viktigt att flytvästen är rätt knäppt eller knuten.",
     p2: "Scouter som för HSS ej kunnat uppvisa simkunnighet om 200m bör bära räddningsväst.",
     p3: "Scouter som för HSS kunnat uppvisa simkunnighet om 200m kan bära en seglarväst.",
-    t1: "Ej simkunniga scouter",
-    t2: "Simkunniga scouter",
+    t0: "Ej simkunniga scouter",
+    t1: "Simkunniga scouter",
     w0: "HSS krav på räddningsväst:",
     w1: "HSS krav på seglarväst:",
     l0: "Flytkraft minst 90 N",
