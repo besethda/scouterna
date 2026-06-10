@@ -6,6 +6,7 @@
 
     --color-bg-white: #FFFFFF;
     --color-bg-blue: #D6EAF8;
+    --color-bg-accent: #FDB715;
 
     --color-text-black: #3B3A3A;
     --color-text-gray: #717D7E;
@@ -27,6 +28,7 @@
     --color-lightYellow: #EBC86C;
 
     --color-btn: #FF9D2D;
+    --color-primaryBtn: #003660;
     --color-form: #B3B3B3;
 
 
@@ -123,8 +125,14 @@ body {
     }
 }
 
+@media (min-width: 431px) and (max-width: 541px){
+  .line {
+    width:45%
+  }
+}
+
 @media (min-width: 768px) and (max-width: 912px) {
   .line {
-    left: 59px;  
+    left: 24px;  
   }
 }
