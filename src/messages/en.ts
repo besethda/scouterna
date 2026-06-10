@@ -70,8 +70,9 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string,
-    title02: string, 
-    text02: string
+    title02: string,
+    text02: string,
+    span: string
   };
   division: {
     spararscouter_title: string,
@@ -181,7 +182,7 @@ export type MessagesEngType = {
     }
   },
   faqCard: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string
   },
@@ -297,8 +298,8 @@ export type MessagesEngType = {
   safetyCard: {
     headline: string,
     title: string,
-    text: string, 
-    button: string, 
+    text: string,
+    button: string,
     buttonMobile: string
   },
   safetyBtn: {
@@ -332,14 +333,18 @@ export type MessagesEngType = {
     text03: string
   },
   joinPage: {
+    head: string,
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   interestBtn: {
+    head: string,
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   form: {
     title: string,
@@ -392,27 +397,27 @@ export type MessagesEngType = {
   familjescouterButton: string
 
   GroupSjohumlorna: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
   GroupKaparna: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
   GroupKonvojen: {
-    headline: string, 
+    headline: string,
     title: string,
-    text: string, 
+    text: string,
   },
   GroupUtmanare: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
   GroupFamily: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
@@ -597,8 +602,9 @@ export const En: MessagesEngType = {
     headline: "Become a Scout",
     title: "The waves are waiting",
     text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
-    title02: "HSS welcomes everyone", 
-    text02: "No matter who you are or your level of experience, there is a place for you here. Join us as a Scout, or get involved as a parent or Scout leader."
+    title02: "HSS welcomes",
+    text02: "No matter who you are or your level of experience, there is a place for you here. Join us as a Scout, or get involved as a parent or Scout leader.",
+    span: "everyone"
   },
   homeHero: {
     hero_title: "Hässelby Strand Sea Scouts",
@@ -820,7 +826,7 @@ export const En: MessagesEngType = {
     p4: "The member data does remain in Scoutnet, however, as long as the person does not have an active membership, only a few employees at the National Scout Office can access the information.",
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
- email: {
+  email: {
     "t0": "Email",
     "s0": "Email to kåren",
     "p0": "info@hss-scout.org",
@@ -877,36 +883,42 @@ export const En: MessagesEngType = {
     title02: "Membership Questions"
   },
   fragorSvar: [
-    { question: "Do we need to buy a scout uniform right away?",
-      answer: "No, you don’t need to buy a scout shirt straight away. It’s best to join for a few weeks first to make sure you want to continue with the scouts." 
+    {
+      question: "Do we need to buy a scout uniform right away?",
+      answer: "No, you don’t need to buy a scout shirt straight away. It’s best to join for a few weeks first to make sure you want to continue with the scouts."
     },
-    { question: "What kind of clothes do scouts usually wear?", 
-      answer: "A scout shirt, an HSS sweater, and durable trousers." 
+    {
+      question: "What kind of clothes do scouts usually wear?",
+      answer: "A scout shirt, an HSS sweater, and durable trousers."
     },
-    { question: "Are meetings always held outdoors?",
-      answer: "Usually yes, though in winter we sometimes meet indoors at our scout cabin Ruffen." 
+    {
+      question: "Are meetings always held outdoors?",
+      answer: "Usually yes, though in winter we sometimes meet indoors at our scout cabin Ruffen."
     },
-    { question: "How much does it cost to join the scouts?", 
-      answer: "It depends on your age and role. Ask your scout leader or send an email to info@hss-scout.org. For 2026 the fees are between 300-850 kr for scouts and between 50-180 kr for leaders." 
+    {
+      question: "How much does it cost to join the scouts?",
+      answer: "It depends on your age and role. Ask your scout leader or send an email to info@hss-scout.org. For 2026 the fees are between 300-850 kr for scouts and between 50-180 kr for leaders."
     },
-    { question: "Does the child need to have prior experience with sailing or scouting?", 
-      answer: "No previous experience in sailing or scouting is needed." 
+    {
+      question: "Does the child need to have prior experience with sailing or scouting?",
+      answer: "No previous experience in sailing or scouting is needed."
     },
-    { question: "We have become members—what happens now?", 
-      answer: "Your division leader will be in touch with information about the next steps. Welcome!" 
+    {
+      question: "We have become members—what happens now?",
+      answer: "Your division leader will be in touch with information about the next steps. Welcome!"
     },
   ],
   fragorSvar02: [
     {
       question: "Why do we have a scout uniform?",
-      answer:"The scout uniform is a way to show that we all belong to the Scouts. It creates community, strengthens our identity, and is a part of our symbolic framework. The scout uniform is used in various designs throughout the world, showing that we belong to a global movement." 
+      answer: "The scout uniform is a way to show that we all belong to the Scouts. It creates community, strengthens our identity, and is a part of our symbolic framework. The scout uniform is used in various designs throughout the world, showing that we belong to a global movement."
     },
-    { 
+    {
       question: "I am a new scout leader! Which training should I take first?",
       answer: `The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a> <br />
       After Safe Meetings, it is appropriate to take \"Leading Scouting\" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further. Read more about Leading <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Scouting here >> </a> <br />
       When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. 
-      <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>` 
+      <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>`
     },
     {
       question: "I have lost my invoice. What should I do?",
@@ -948,7 +960,7 @@ export const En: MessagesEngType = {
   safetyCard: {
     headline: "Safety",
     title: "HSS Life Jacket Policy",
-    text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF.", 
+    text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF.",
     button: "Download the life jacket policy as PDF",
     buttonMobile: "Download PDF"
   },
@@ -984,9 +996,11 @@ export const En: MessagesEngType = {
 
   },
   joinPage: {
+    head: "Take the step!",
     title: "Express Your Interest",
     text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
-    buttonText: "Join the Scouts"
+    buttonText: "Join the Scouts",
+    photoTitle: "Join the adventure!"
   },
   myset01: {
     t0: "Interested in renting Myset?",
@@ -1072,8 +1086,7 @@ export const En: MessagesEngType = {
   konvojenMeeting: {
     t0: "Section meetings",
     p0: "Day: Thursday",
-    p1: "Time: 18:00",
-    p2: "Location: Ruffen at Hässelby Strandbad.",
+    p1: "Location: Ruffen at Hässelby Strandbad.",
   },
   konvojenPlace: {
     t0: "Badges",
@@ -1141,9 +1154,11 @@ export const En: MessagesEngType = {
     text03: "Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
   },
   interestBtn: {
-    title: "Want to join the Scouts?",
+    head: "Want to join the Scouts?",
+    title: "Express Your Interest",
     text: "If you are interested in joining HSS as a Scout, leader, or an engaged parent, you are welcome to submit your interest using our form.",
-    buttonText: "Join the Scouts"
+    buttonText: "Join the Scouts",
+    photoTitle: "Join the adventure!"
   },
   ruffenDivisions: {
     t0: "Group Meetings",

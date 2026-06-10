@@ -3,7 +3,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { getPageHeadTitle } from "@/lib/utils"
-import CardWithoutImage from "@/components/CardWithoutImage"
+import { getId } from "@/lib/utils";
 import DivisionsBox from "@/components/DivisionsContainer/DivisionsBox";
 import CardWithLogo from "@/components/CardWithLogo";
 
@@ -15,10 +15,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const GroupStructure = ({ params }: { params: Promise<{ locale: string }> }) => {
+const GroupStructure = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
-  const { locale } = use(params)
+  const { locale } = await params
   const messages = locale === "en" ? En : Sv
+  const data = await getId('2a5a4f80-b206-44b9-9e00-6b870a00f90e')
+  if(!data) return
 
 
   return (
@@ -27,11 +29,11 @@ const GroupStructure = ({ params }: { params: Promise<{ locale: string }> }) => 
       <section className="w-full flex flex-col items-center">
         <CardWithLogo image="/heartYellowBg.svg" sectionTitle="groupsCard" isH1/>
         <div className="flex flex-col px-4 pb-8 md:pb-16 gap-1 items-center">
-          <DivisionsBox division={"spararscouter"} boxStyle={"image"} imageUrl="/images/IMG_1910.JPEG"/>
-          <DivisionsBox division={"upptackarscouter"} boxStyle={"image"} imageUrl="/images/IMG_0206.JPEG"/>
-          <DivisionsBox division={"aventyrarscouter"} boxStyle={"image"} imageUrl="/images/IMG_9862.JPEG"/>
-          <DivisionsBox division={"utmanarscouter"} boxStyle={"image"} imageUrl="/images/IMG_0962.JPEG"/>
-          <DivisionsBox division={"familjescouter"} boxStyle={"image"} imageUrl="/images/IMG_1932.JPEG" />
+          <DivisionsBox division={"spararscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
+          <DivisionsBox division={"upptackarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
+          <DivisionsBox division={"aventyrarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "konvojer") || null}/>
+          <DivisionsBox division={"utmanarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
+          <DivisionsBox division={"familjescouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "smattarne") || null} />
         </div>
       </section>
     </main>
