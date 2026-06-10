@@ -84,7 +84,7 @@ const Groups = async ({
                 </div>
                 <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
                   <ImageCard
-                    imageTitle="sjohumlorna_title"
+                    imageTitle="spararscouter_title"
                     image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
                     section="division"
                     page="group"
@@ -142,7 +142,7 @@ const Groups = async ({
             </div>
             <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
               <ImageCard
-                imageTitle="sjohumlorna_title"
+                imageTitle="spararscouter_title"
                 image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
                 section="division"
                 page="group"
@@ -203,7 +203,7 @@ const Groups = async ({
                 </div>
                 <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
                   <ImageCard
-                    imageTitle="kaparna_title"
+                    imageTitle="upptackarscouter_title"
                     image={urlFor(kaparna.groups.image.asset._ref).url()}
                     section="division"
                     page="group"
@@ -260,7 +260,7 @@ const Groups = async ({
             </div>
             <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
               <ImageCard
-                imageTitle="kaparna_title"
+                imageTitle="upptackarscouter_title"
                 image={urlFor(kaparna.groups.image.asset._ref).url()}
                 section="division"
                 page="group"
@@ -314,7 +314,7 @@ const Groups = async ({
                 <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                   <ContentSection
                     sectionLayout={["t", "p"]}
-                    page="sjohumlornaSpårarscouter"
+                    page="utmanarscouter"
                     background={"blue"}
                     padding={"none"}
                     child={true}
@@ -322,7 +322,7 @@ const Groups = async ({
                 </div>
                 <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
                   <ImageCard
-                    imageTitle="utmanare_title"
+                    imageTitle="utmanarscouter_title"
                     image={urlFor(utmanare.groups.image.asset._ref).url()}
                     section="division"
                     page="group"
@@ -379,7 +379,7 @@ const Groups = async ({
             </div>
             <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
               <ImageCard
-                imageTitle="utmanare_title"
+                imageTitle="utmanarscouter_title"
                 image={urlFor(utmanare.groups.image.asset._ref).url()}
                 section="division"
                 page="group"
@@ -441,7 +441,7 @@ const Groups = async ({
                 </div>
                 <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
                   <ImageCard
-                    imageTitle="konvojen_title"
+                    imageTitle="aventyrarscouter_title"
                     image={urlFor(konvojen?.groups?.image.asset._ref).url()}
                     section="division"
                     page="group"
@@ -498,7 +498,7 @@ const Groups = async ({
             </div>
             <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
               <ImageCard
-                imageTitle="konvojen_title"
+                imageTitle="aventyrarscouter_title"
                 image={urlFor(konvojen?.groups?.image.asset._ref).url()}
                 section="division"
                 page="group"
@@ -559,7 +559,7 @@ const Groups = async ({
               </div>
               <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <ImageCard
-                  imageTitle="smattarne_title"
+                  imageTitle="familjescouter_title"
                   image={urlFor(smattarne?.groups?.image.asset._ref).url()}
                   section="division"
                   page="group"
@@ -580,7 +580,7 @@ const Groups = async ({
               </div>
               <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <ImageCard
-                  imageTitle="smattarne_photoTitle"
+                  imageTitle="familjescouter_photoTitle"
                   image={familyImageSrc}
                   section="division"
                   page="group"

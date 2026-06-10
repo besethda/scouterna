@@ -19,6 +19,7 @@ const DivisionsBox = ({ division, imageUrl, data, boxStyle = "basic" }:
     aventyrarscouter: ["border-orange", "bg-orange-opaque"],
     familjescouter: ["border-purple", "bg-purple-opaque"]
   }
+  console.log(division, data?.groups?.day_se)
   if (!data || data.groups.day_se) return null
   return (
     <div className={`${colorReference[division][0]} flex flex-col flex-wrap border border-b-4 m-1 rounded-2xl px-6 py-3 ${boxStyle !== "image" ? boxStyle === "info" ? "md:w-[49.5%] bg-bg-white mx-[.25%]" : "md:w-[24%] mx-[0.5%] md:min-w-77 md:m-3" : "md:min-h-85  md:max-h-96 lg:max-h-77 md:max-w-250 md:my-4"}`}>

@@ -16,7 +16,7 @@ const DivisionsContainer = ({data}: {data:any}) => {
           <DivisionsBox division={"spararscouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
           <DivisionsBox division={"upptackarscouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
           <DivisionsBox division={"utmanarscouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
-          <DivisionsBox division={"aventyrarscouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "konvojer") || null}/>
+          <DivisionsBox division={"aventyrarscouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "konvojen") || null}/>
           <DivisionsBox division={"familjescouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "smattarne") || null}/>
         </div>
       </div>
