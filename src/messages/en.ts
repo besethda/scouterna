@@ -742,7 +742,7 @@ export const En: MessagesEngType = {
     text: "In the forest between Lövsta and Gåseborg lies Myset – our large and beautiful scout cabin. This is where the troop gathers for a variety of activities, especially hikes that offer both adventure and fellowship.",
   },
   history: {
-    ts0: "The History of HSS",
+    t0: "The History of HSS",
     p0: "The scout group was founded in 1959 and grew rapidly.",
     p1: "The commitment was immense, especially from parents who helped organize activities, raise funds, and build up the operations.",
     p2: "The very first boat, a 'Blekingeeka' (traditional wooden boat) named 'Inga-Lunda', marked the beginning of the group's seafaring life. Over time, more boats could be purchased thanks to bazaars, lotteries, and hard work.",

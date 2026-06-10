@@ -30,7 +30,7 @@ const History = ({ params }: { params: Promise<{ locale: string }> }) => {
             <div className="relative">
               <div className="flex justify-center bg-bg-blue pb-10">
                 <div className="md:max-w-[89%] max-w-[90%] rounded-3xl w-full shadow-xl bg-bg-white overflow-hidden">
-                  <ContentSection sectionLayout={["ts", "p", "p", "p", "p", "p"]} page="history" background={"white"} />
+                  <ContentSection sectionLayout={["t", "p", "p", "p", "p", "p"]} page="history" background={"white"} />
                 </div> 
               </div>
               <img src="/Path.png" alt="line" className="absolute md:top-23 md:left-35 xl:left-40 top-17 left-7 w-[60%] md:w-auto line"/>
