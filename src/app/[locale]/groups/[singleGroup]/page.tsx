@@ -153,7 +153,7 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white w-full lg:max-w-430 lg:px-22 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
+          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
             <div className="w-full py-2">
               <ContentSection
                 sectionLayout={["t"]}
@@ -274,7 +274,7 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white w-full lg:max-w-430 lg:px-22 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
+          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
             <div className="w-full py-2">
               <ContentSection
                 sectionLayout={["t"]}
@@ -395,7 +395,7 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white lg:max-w-430 lg:px-22 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto">
+          <section className="bg-white lg:max-w-430 lg:px-10 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
             <div className="w-full py-2">
               <ContentSection
                 sectionLayout={["t"]}
@@ -516,7 +516,7 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white lg:max-w-430 lg:px-22 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
+          <section className="bg-white lg:max-w-430 lg:px-10 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
             <div className="w-full py-2">
               <ContentSection
                 sectionLayout={["t"]}

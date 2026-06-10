@@ -45,7 +45,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                 <section className="flex flex-col items-center w-full ">
                     <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
                     <Scoutlife />
-                    <div className=" bg-white mx-4 my-8 py-4 lg:mx-25 lg:my-20 lg:pt-2 rounded-3xl">
+                    <div className=" bg-white mx-4 my-8 py-4 lg:mx-22 lg:my-20 lg:pt-2 rounded-3xl shadow-xl">
                         <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
                         <Line hasPadding />
                         <section className="flex flex-col gap-6 font-albert px-4 pb-8 lg:max-w-430 lg:px-10">
@@ -83,7 +83,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             </div>
                         </section>
                     </div>
-                    <div className=" mx-4 my-8 py-4 lg:mx-25 lg:my-20 lg:pt-2">
+                    <div className=" mx-4 my-8 py-4 lg:mx-22 lg:my-20 lg:pt-2">
                         <JoinPage
                             head={messages?.joinPage.head}
                             title={messages?.joinPage.title}
