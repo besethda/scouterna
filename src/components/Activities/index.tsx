@@ -1,8 +1,16 @@
 'use client'
 
 import useMessages from "@/hook/useMessages"
+import Image from "next/image"
+import Img from '../../../public/images/DSCF3361.jpg'
+import { urlFor } from "@/sanity/lib/image"
 
-const Activities = () => {
+interface stringObject {
+  image: string
+  alt:string
+}
+
+const Activities = ({image}: {image: stringObject}) => {
   const messages = useMessages()
   return (
     <div className="flex flex-col items-center bg-bg-white px-4 py-8 mx-4 mb-10 rounded-3xl max-w-[980px] lg:mx-auto lg:px-10">
@@ -17,6 +25,9 @@ const Activities = () => {
             <h3 className="text-primary md:text-h3-desktop font-fraunces font-bold text-h3">{messages?.activity.sub_title_two}</h3>
             <p className="text-text-black text-body font-albert md:text-body-desktop">{messages?.activity.p_two}</p>
           </div>
+          <div className="w-full flex justify-start  ">
+            <Image src={urlFor(image.image).url()} alt="img" width={300} height={300} className="rounded-2xl md:max-w-100 object-cover " />
+        </div>
         </div>
       </div>
     </div>
