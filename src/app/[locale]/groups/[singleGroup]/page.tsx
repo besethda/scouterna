@@ -102,7 +102,7 @@ const Groups = async ({
               />
               <div className="flex flex-col pb-4 w-full">
                 <ContentSection
-                  sectionLayout={["t", "p", "p"]}
+                  sectionLayout={["t"]}
                   page="sjohumlorMeeting"
                   background={"blue"}
                   padding={"none"}
@@ -171,6 +171,15 @@ const Groups = async ({
             }}
               value={locale === "en" ? sjohumlorna?.leader.text_object.text_en_array : sjohumlorna?.leader.text_object.text_sv_array} />
           </div>
+          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+            <Image
+              src={urlFor(sjohumlorna.leader.text_object.image.asset._ref).url()}
+              alt={sjohumlorna.leader.text_object.image.alt}
+              className="rounded-2xl object-cover"
+              width={358}
+              height={257}
+            />
+          </div>
         </section>
       </main>
     );
@@ -212,7 +221,7 @@ const Groups = async ({
               />
               <div className="flex flex-col gap-4 justify-center pb-4">
                 <ContentSection
-                  sectionLayout={["t", "p", "p"]}
+                  sectionLayout={["t"]}
                   page="kaparnaMeeting"
                   background={"blue"}
                   padding={"5"}
@@ -252,7 +261,7 @@ const Groups = async ({
             <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
               <ImageCard
                 imageTitle="kaparna_title"
-                image={`/images/DSCF3033.jpg`}
+                image={urlFor(kaparna.groups.image.asset._ref).url()}
                 section="division"
                 page="group"
                 text=""
@@ -266,7 +275,7 @@ const Groups = async ({
             <ContentSection
               sectionLayout={["t"]}
               page="avdelningsledare"
-              background={"blue"}
+              background={"white"}
               padding={"none"}
               child={true}
             />
@@ -331,7 +340,7 @@ const Groups = async ({
               />
               <div className="flex flex-col gap-4 justify-center pb-4">
                 <ContentSection
-                  sectionLayout={["t", "p", "p"]}
+                  sectionLayout={["t"]}
                   page="utmanareMeeting"
                   background={"blue"}
                   padding={"5"}
@@ -386,7 +395,7 @@ const Groups = async ({
               sectionLayout={["t"]}
               page="avdelningsledare"
               padding={"none"}
-              background={"blue"}
+              background={"white"}
               child={true}
             />
             <PortableText components={{
@@ -399,6 +408,15 @@ const Groups = async ({
               }
             }}
               value={locale === "en" ? utmanare?.leader.text_object.text_en_array : utmanare?.leader.text_object.text_sv_array} />
+          </div>
+          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+            <Image
+              src={urlFor(utmanare.leader.text_object.image.asset._ref).url()}
+              alt={utmanare.leader.text_object.image.alt}
+              className="rounded-2xl object-cover"
+              width={358}
+              height={257}
+            />
           </div>
         </section>
       </main>
@@ -441,7 +459,7 @@ const Groups = async ({
               />
               <div className="flex flex-col gap-4 justify-center pb-4">
                 <ContentSection
-                  sectionLayout={["t", "p", "p", "p"]}
+                  sectionLayout={["t"]}
                   page="konvojenMeeting"
                   background={"blue"}
                   padding={"5"}
@@ -496,7 +514,7 @@ const Groups = async ({
               sectionLayout={["t"]}
               page="avdelningsledare"
               padding={"none"}
-              background={"blue"}
+              background={"white"}
               child={true}
             />
             <PortableText components={{
@@ -509,6 +527,15 @@ const Groups = async ({
               }
             }}
               value={locale === "en" ? konvojen?.leader.text_object.text_en_array : konvojen?.leader.text_object.text_sv_array} />
+          </div>
+          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+            <Image
+              src={urlFor(konvojen.leader.text_object.image.asset._ref).url()}
+              alt={konvojen.leader.text_object.image.alt}
+              className="rounded-2xl object-cover"
+              width={358}
+              height={257}
+            />
           </div>
         </section>
       </main>
