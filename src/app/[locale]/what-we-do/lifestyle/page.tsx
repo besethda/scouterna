@@ -36,7 +36,7 @@ const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) =>
                 <LifeStyleSection />
                 <PhotoContainer backgroundBlue={false} messageTitle="learning" />
             </div>
-            <Activities image={{image: data.lifestyle_images.card_image_2.asset._ref, alt: data.lifestyle_images.card_image_2.alt}}/>
+            <Activities />
 
         </main>
     );
