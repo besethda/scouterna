@@ -78,7 +78,6 @@ const Groups = async ({
                     <ContentSection
                       sectionLayout={["t", "p"]}
                       page="sjohumlornaSpårarscouter"
-                      background={"blue"}
                       padding={"none"}
                       child={true}
                     />
@@ -97,7 +96,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t", "p"]}
                   page="sjohumlornaAge"
-                  background={"blue"}
                   padding={"none"}
                   child={true}
                 />
@@ -105,7 +103,6 @@ const Groups = async ({
                   <ContentSection
                     sectionLayout={["t"]}
                     page="sjohumlorMeeting"
-                    background={"blue"}
                     padding={"none"}
                     child={true}
                   />
