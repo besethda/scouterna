@@ -3,6 +3,7 @@
 import useMessages from "@/hook/useMessages"
 import Image from "next/image"
 import CTABtn from "./CTA-button"
+import underlineAlla from '../../public/underline-alla.svg'
 
 interface CardWithLogoProps {
   image: string,
@@ -44,13 +45,17 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false }: CardWithLogoProps) 
         </div>
         {hasSecondSection && (
           <div className="gap-2.5 md:max-w-[70%]">
-            <p className="font-fraunces font-bold text-[26px] md:text-h1-desktop tracking-[-0.5%] text-[#003061] ">
-              {messages?.[sectionTitle as string]?.title02}
-            </p>
+            <div className="font-fraunces font-bold text-[26px] md:text-h1-desktop tracking-[-0.5%] text-[#003061] ">
+              {messages?.[sectionTitle as string]?.title02} {" "}
+              <div className="relative inline-block">
+                <span>{messages?.[sectionTitle as string]?.span}</span>
+                <Image src={underlineAlla} alt="Underline" width={70} height={30} className="absolute bottom-0.5 w-full max-h-1.5 object-cover left-2.5" />
+              </div>
+            </div>
             <p className="font-albert font-normal text-[16px] md:text-[20px] tracking-[3%] text-text-black pt-1.5">
               {messages?.[sectionTitle as string]?.text02}
             </p>
-          </div>
+         </div>
         )}
         {hasButton && (
           <>

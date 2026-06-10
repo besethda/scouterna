@@ -85,6 +85,7 @@ type MessagesSvType = {
     smattarne_time: string,
     smattarne_place: string,
     smattarne_paragraph: string,
+    smattarne_photoTitle: string
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -104,8 +105,9 @@ type MessagesSvType = {
     headline: string,
     title: string,
     text: string,
-    title02: string, 
-    text02: string
+    title02: string,
+    text02: string,
+    span: string,
   },
   goodToKnow: {
     headline: string,
@@ -227,7 +229,6 @@ type MessagesSvType = {
     cabins: string,
     myset: string,
     ruffen: string,
-    members: string,
     information: string,
     safety: string,
     contact: string,
@@ -298,7 +299,7 @@ type MessagesSvType = {
   safetyCard: {
     headline: string,
     title: string,
-    text: string, 
+    text: string,
     button: string,
     buttonMobile: string
   },
@@ -333,14 +334,18 @@ type MessagesSvType = {
     text03: string
   },
   joinPage: {
+    head: string,
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   interestBtn: {
+    head: string
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   form: {
     title: string,
@@ -393,27 +398,27 @@ type MessagesSvType = {
   familjescouterButton: string
 
   GroupSjohumlorna: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
   GroupKaparna: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
   GroupKonvojen: {
-    headline: string, 
+    headline: string,
     title: string,
-    text: string, 
+    text: string,
   },
   GroupUtmanare: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
   GroupFamily: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
@@ -556,8 +561,9 @@ export const Sv: MessagesSvType = {
     headline: "Bli Scout",
     title: "Vågorna väntar",
     text: "HSS är en inkluderande förening där trygghet och glädje står i centrum. Vi lär genom att göra - ute i naturen och till sjöss - och du får både kunskap, vänner och minnen för livet.",
-    title02: "HSS välkomnar alla", 
-    text02: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare."
+    title02: "HSS välkomnar ",
+    text02: "HSS är en inkluderande förening. Oavsett vem du är eller vilka förkunskaper du har så finns här en plats för dig. Gå med i föreningen som Scout eller engagera dig som förälder eller Scoutledare.",
+    span: "alla"
   },
   division: {
     sjohumlorna_title: "Sjöhumlorna",
@@ -590,6 +596,7 @@ export const Sv: MessagesSvType = {
     smattarne_time: "18:00",
     smattarne_place: "Ruffen",
     smattarne_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
+    smattarne_photoTitle: "Björnarna Parum & Magna",
     scouts_title: "Scouter",
     scouts_paragraph: "Vi har åldersindelade avdelningar från och med 8 års ålder. ",
     family_title: "Familjescouting",
@@ -705,25 +712,24 @@ export const Sv: MessagesSvType = {
     gdpr: "HSS | GDPR"
   },
   description: {
-    history: "Historia",
-    "become-a-scout": "Bli Sjöscout",
-    faq: "FAQ",
-    "groups": "Våra avdelningar",
-    sjohumlorna: "Sjöhumlorna",
-    kaparna: "Kaparna",
-    konvojen: "Konvojen",
-    utmanare: "Utmanare",
-    smattarne: "Småttarne",
-    lifestyle: "Livet som Sjöscout",
-    boats: "Båtar",
-    cabins: "Scoutstugor",
-    myset: "Myset",
-    ruffen: "Ruffen",
-    members: "För medlemmar",
-    information: "Information för medlemmar",
-    safety: "Flytvästpolicy",
-    contact: "Kontakt",
-    gdpr: "GDPR"
+    history: "Upptäck HSS Scouternas historia i Stockholm 🏕️🚤 | Från de första äventyren till vår egen båt – läs om läger, traditioner och resan som format oss | En del av Scouterna",
+    "become-a-scout": "Bli scout i Hässelby Strands Sjöscouter 🚤 | Upptäck scoutlivet, åldrar (8+), ledare & förälder - ingen erfarenhet krävs | Anmäl ditt intresse här",
+    faq: "FAQ - vanliga frågor om att bli scout och medlem i Hässelby Strands Sjöscouter (HSS) 🏕️🚤 | Hitta dina svar här",
+    "groups": "Våra avdelningar hos Hässelby Strands Sjöscouter (HSS) 🚤🏕️ | 5 åldersgrupper: Under 8 (med förälder eller vuxen), 8-9, 10-11, 12-14 och 15+ | Åldersanpassade aktiviteter, trygg miljö och utbildade ledare | Hitta din grupp här",
+    sjohumlorna: "Sjöhumlorna - 8-9 år hos HSS 🐝 | Måndagar vid Ruffen | Trygga ledare | Märken: lykta, popcorn, kompisar & miljö | Börja scoutresan här",
+    kaparna: "Kaparna - 10-11 år hos HSS 🚤 | Segling, navigation, ansvar & vänskap | Märken: kniv, yxa, eld, sjukvård | Tisdagar vid Ruffen | Bli Upptäckarscout",
+    konvojen: "Konvojen - 12-14 år hos HSS 🚤 | Segla större jollar, planera hajker, leda & fatta beslut | Äventyrarscouter | Torsdagar vid Ruffen",
+    utmanare: "Utmanare - 15+ år hos HSS 🚤🌍 | Egna projekt, internationella läger & ledarroller | 10 utmaningar - 2 individuella, 8 tillsammans | Tis/tors vid Ruffen | Bli en Utmanare",
+    smattarne: "Småttarne - Familjescouting (barn under 8) hos HSS 🐻 | Barn & vuxna med björnarna Parum & Magna | Sagor, lek & egna märken | Stärk er relation",
+    lifestyle: "Scoutliv hos HSS - livet som sjöscout 🚤🌊 | Äventyr, gemenskap, frihet, natur och vänner för livet | Sjömanskunskap, läger & aktiviteter | Läs mer här",
+    boats: "HSS Båtar - Optimist, 2-kronor, Kölbåtar ⛵🚤 | Optimist: nybörjarbåt | 2-kronor: snabb & rolig | Kölbåtar: stabil & trygg | Upptäck här",
+    cabins: "HSS scoutstugor - Myset & Ruffen 🏕️ | Myset: hyras för lägerbål & hajker | Ruffen: mötesplats vid Hässelby Strandbad för alla avdelningar & Optimistjollar",
+    myset: "Myset - HSS:s scoutstuga 🏕️ | Adress, historia, miljö & vägbeskrivning | Perfekt för lägerbål & hajker - finns att hyra | Läs mer här",
+    ruffen: "Ruffen - HSS scoutstuga 🏕️ | Plats, vägbeskrivning och fyra mötesplatser | Hitta hit och upptäck våra samlingsplatser här",
+    information: "HSS Information 📄 | Säkerhet, FAQ, kårstämmor och Scoutnet | Uppdatera uppgifter och anmäl dig till aktiviteter",
+    safety: "HSS Flytvästpolicy 🦺🚤 | När ska flytväst bäras? Regler för barn, ungdomar och ledare | Säkerhet på vattnet | Läs policyn här",
+    contact: "Kontakta HSS 📧 | E-post och Bankgiro information | Frågor om scouting? Vi svarar | Kontaktuppgifter här",
+    gdpr: "GDPR - personuppgiftsbehandling hos HSS 🔒 | Din integritet och säkerhet | Läs vår policy här"
   },
   groupsCard: {
     headline: "Avdelningar",
@@ -863,7 +869,8 @@ export const Sv: MessagesSvType = {
     header2: "Starka tillsammans",
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
     text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att våga prova nya saker.",
-    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
+    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap.",
+    text: "Scoutliv"
   },
   learning: {
     t0: "Lärande för livet",
@@ -883,23 +890,29 @@ export const Sv: MessagesSvType = {
     title02: "Medlemsfrågor"
   },
   fragorSvar: [
-    { question: "Behöver vi köpa en scoutuniform på en gång?" , 
-      answer: "Nej, du behöver inte köpa en scoutskjorta direkt. Det är bäst att vara med i några veckor först för att se så att du vill fortsätta med scouterna." 
+    {
+      question: "Behöver vi köpa en scoutuniform på en gång?",
+      answer: "Nej, du behöver inte köpa en scoutskjorta direkt. Det är bäst att vara med i några veckor först för att se så att du vill fortsätta med scouterna."
     },
-    { question: "Vad för kläder brukar scouterna ha på sig?", 
-      answer: "En scoutskjorta, en HSS-tröja och tåliga byxor." 
+    {
+      question: "Vad för kläder brukar scouterna ha på sig?",
+      answer: "En scoutskjorta, en HSS-tröja och tåliga byxor."
     },
-    { question: "Hålls möten alltid utomhus?",
-      answer: "Oftast ja, men på vintern ses vi ibland inomhus i vår scoutstuga Ruffen." 
+    {
+      question: "Hålls möten alltid utomhus?",
+      answer: "Oftast ja, men på vintern ses vi ibland inomhus i vår scoutstuga Ruffen."
     },
-    { question: "Hur mycket kostar det att vara med i scouterna?", 
-      answer: "Det beror på din ålder och roll. Fråga din scoutledare eller skicka ett mejl till info@hss-scout.org. För 2026 ligger avgifterna på mellan 300–850 kr för scouter och mellan 50–180 kr for ledare." 
+    {
+      question: "Hur mycket kostar det att vara med i scouterna?",
+      answer: "Det beror på din ålder och roll. Fråga din scoutledare eller skicka ett mejl till info@hss-scout.org. För 2026 ligger avgifterna på mellan 300–850 kr för scouter och mellan 50–180 kr for ledare."
     },
-    { question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?", 
-      answer: "Nej, ingen tidigare erfarenhet av segling eller scouting behövs." 
+    {
+      question: "Måste barnet ha tidigare erfarenhet av segling eller scouting?",
+      answer: "Nej, ingen tidigare erfarenhet av segling eller scouting behövs."
     },
-    { question: "Vi har blivit medlemmar- vad händer nu?", 
-      answer: "Din avdelningsledare kommer att ta kontakt med dig och ge information om nästa steg. Välkommen!" 
+    {
+      question: "Vi har blivit medlemmar- vad händer nu?",
+      answer: "Din avdelningsledare kommer att ta kontakt med dig och ge information om nästa steg. Välkommen!"
     },
   ],
   fragorSvar02: [
@@ -953,8 +966,8 @@ export const Sv: MessagesSvType = {
   safetyCard: {
     headline: "Säkerhet",
     title: "HSS Flytvästpolicy",
-    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en.", 
-    button: "Ladda ner flytvästpolicyn som PDF", 
+    text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en.",
+    button: "Ladda ner flytvästpolicyn som PDF",
     buttonMobile: "Ladda ner PDF"
   },
   safetyBtn: {
@@ -988,9 +1001,11 @@ export const Sv: MessagesSvType = {
     text03: "Som förälder är du en viktig del av HSS Scouterna. Det är tack vare engagerade vuxna som som vi kan ge barnen alla de upplevelser och möjligheter som scouterna erbjuder. Du behöver inte ha någon tidigare erfarenhet av scouting – det viktigaste är viljan att hjälpa till. "
   },
   joinPage: {
+    head: "Ta steget!",
     title: "Anmäl ditt intresse",
     text: "Blivande Scout, Scoutledare eller engagerad förälder? Påbörja äventyret genom att anmäla ditt intresse!",
-    buttonText: "Gå med i Scouterna"
+    buttonText: "Gå med i Scouterna",
+    photoTitle: "Häng med på äventyr!"
   },
   myset01: {
     t0: "Nyfiken på att hyra Myset?",
@@ -1074,8 +1089,7 @@ export const Sv: MessagesSvType = {
   konvojenMeeting: {
     t0: "Avdelningsmöten",
     p0: "Dag: Torsdag",
-    p1: "Tid: 18:00",
-    p2: "Plats: Ruffen vid Hässelby Strandbad."
+    p1: "Plats: Ruffen vid Hässelby Strandbad."
   },
   konvojenPlace: {
     t0: "Märken",
@@ -1110,27 +1124,27 @@ export const Sv: MessagesSvType = {
   familjescouterButton: "Upptäck alla våra Scoutmärken",
 
   GroupSjohumlorna: {
-    headline: "Avdelningar", 
+    headline: "Avdelningar",
     title: "Sjöhumlorna",
     text: "De näst yngsta scouterna upptäcker sjölivet genom lek, sång och små äventyr vid vattnet. Här lär man sig samarbeta, knyta sina första knopar och känna sig hemma i naturen.",
   },
   GroupKaparna: {
-    headline: "Avdelningar", 
+    headline: "Avdelningar",
     title: "Kaparna",
     text: "Nu blir det mer segling och längre utflykter i skärgården. Kaparna tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.",
   },
   GroupKonvojen: {
-    headline: "Avdelningar", 
+    headline: "Avdelningar",
     title: "Konvojen",
     text: "Här seglar man större jollar och planerar egna hajker tillsammans med ledarna. Konvojen lär sig leda, fatta beslut och hantera utmaningar både till sjöss och på land.",
   },
   GroupUtmanare: {
-    headline: "Avdelningar", 
+    headline: "Avdelningar",
     title: "Utmanare",
     text: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.",
   },
   GroupFamily: {
-    headline: "Avdelningar", 
+    headline: "Avdelningar",
     title: "Familjescouter",
     text: "Genom Familjescouting får barn under åtta år tillsammans med en eller flera vuxna på ett roligt och lekfullt sätt möta scouting.",
   },
@@ -1143,9 +1157,11 @@ export const Sv: MessagesSvType = {
     text03: "Våra kölbåtar är stabila och trygga, perfekta för både utbildning och lugn segling tillsammans."
   },
   interestBtn: {
-    title: "Vill du gå med i Scouterna?",
+    head: "Vill du gå med i Scouterna?",
+    title: "Anmäl ditt intresse",
     text: "Om du är intresserad av att gå med i HSS som Scout, ledare eller engagerad förälder går det bra att anmäla ditt intresse via vårt formulär.",
-    buttonText: "Gå med i Scouterna"
+    buttonText: "Gå med i Scouterna",
+    photoTitle: "Häng med på äventyr!"
   },
   ruffenDivisions: {
     t0: "Avdelningsmöten",
@@ -1181,8 +1197,8 @@ export const Sv: MessagesSvType = {
     epost: "E-post",
     meddelande: "Meddelande",
     errorTxt: "Kunde inte skicka meddelandet. Du kan skicka det till support@scouterna.se.",
-    networkErrorTxt :"Nätverksfel. Vänligen kontrollera din internetanslutning.",
-    successTxt:"E-postmeddelandet har skickats!"
+    networkErrorTxt: "Nätverksfel. Vänligen kontrollera din internetanslutning.",
+    successTxt: "E-postmeddelandet har skickats!"
   },
   good: "Bra att veta",
   question: {
