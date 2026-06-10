@@ -1026,11 +1026,11 @@ export const Sv: MessagesSvType = {
   },
   sjohumlornaSpårarscouter: {
     t0: "Spårarscouter",
-    p0: "Scouterna på avdelningen Spårarscouter är Spårarscouter. Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klara av.",
+    p0: "Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klarar av.",
   },
   sjohumlornaAge: {
     t0: "Ålder",
-    p0: "Barnen på Spårarscouter är mellan 8 och 9 år."
+    p0: "Barnen på Spårarscouterna är mellan 8 och 9 år."
   },
   sjohumlorMeeting: {
     t0: "Avdelningsmöten",
@@ -1039,16 +1039,16 @@ export const Sv: MessagesSvType = {
   },
   sjohumlorPlace: {
     t0: "Märken",
-    p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Eller att få göra popcorn på ett stormkök. Det finns också märken som handlar mer om hur man är en bra kompis eller hur man tar hand om miljön.",
+    p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Eller att få göra popcorn på ett stormkök. Det finns också märken som handlar om hur man är en bra kompis eller hur man tar hand om miljön.",
   },
   sjohumlorButton: "Märkesplansch för Spårare",
   kaparnaUpptäckarscouter: {
     t0: "Upptäckarscouter",
-    p0: "Många i den här åldern är nyfikna på världen runt omkring sig, och i Kaparna uppmuntrar vi det engagemanget. Vi jobbar ofta praktiskt och konkret - det kan vara allt från att lösa uppdrag tillsammans till att lära sig ta ansvar i små och stora situationer."
+    p0: "Många i den här åldern är nyfikna på världen runt omkring sig, och här uppmuntras det engagemanget. Vi jobbar ofta praktiskt och konkret - det kan vara allt från att lösa uppdrag tillsammans till att lära sig ta ansvar i små och stora situationer."
   },
   kaparnaAge: {
     t0: "Ålder",
-    p0: "Barnen på Upptäckascouter är mellan 10 och 11 år.",
+    p0: "Barnen på Upptäckascouterna är mellan 10 och 11 år.",
   },
   kaparnaMeeting: {
     t0: "Avdelningsmöten",
@@ -1062,11 +1062,11 @@ export const Sv: MessagesSvType = {
   kaparnaButton: "Märkesplansch för Upptäckare",
   utmanarscouter: {
     t0: "Utmanarscouter",
-    p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv."
+    p0: "Här ställs Utmanarna inför större uppgifter i ett allt tydligare internationellt sammanhang. Scouterna provar på vuxenrollen och alla får utrymme att testa och hitta sina roller. Som Utmanarscout får man ta ett stort ansvar samtidigt som det är okej att vara barnslig eller bara vara."
   },
   utmanareAge: {
     t0: "Ålder",
-    p0: "Scouterna på Utmanaravdelningen är 15 år och uppåt."
+    p0: "Scouterna på Utmanarna är 15 år och uppåt."
   },
   utmanareMeeting: {
     t0: "Avdelningsmöten",
@@ -1080,11 +1080,11 @@ export const Sv: MessagesSvType = {
   utmanareButton: "Upptäck utmaningarna",
   äventyrarscouter: {
     t0: "Äventyrarscouter",
-    p0: "I äventyrarpatrullen samarbetar de, testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv.",
+    p0: "Äventyrare samarbetar, de testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv.",
   },
   konvojenAge: {
     t0: "Ålder",
-    p0: "Barnen på Äventyrarscouter är mellan 12 och 14 år.",
+    p0: "Barnen på Äventyrarscouterna är mellan 12 och 14 år.",
   },
   konvojenMeeting: {
     t0: "Avdelningsmöten",
@@ -1131,7 +1131,7 @@ export const Sv: MessagesSvType = {
   GroupKaparna: {
     headline: "Avdelningar", 
     title: "Upptäckarscouter",
-    text: "Nu blir det mer segling och längre utflykter i skärgården. Kaparna tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.",
+    text: "Nu blir det mer segling och längre utflykter i skärgården. Upptäckare tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.",
   },
   GroupKonvojen: {
     headline: "Avdelningar", 
