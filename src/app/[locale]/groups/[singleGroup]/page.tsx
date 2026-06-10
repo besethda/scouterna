@@ -77,7 +77,6 @@ const Groups = async ({
                   <ContentSection
                     sectionLayout={["t", "p"]}
                     page="sjohumlornaSpårarscouter"
-                    background={"blue"}
                     padding={"none"}
                     child={true}
                   />
@@ -96,7 +95,6 @@ const Groups = async ({
               <ContentSection
                 sectionLayout={["t", "p"]}
                 page="sjohumlornaAge"
-                background={"blue"}
                 padding={"none"}
                 child={true}
               />
@@ -104,7 +102,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t"]}
                   page="sjohumlorMeeting"
-                  background={"blue"}
                   padding={"none"}
                   child={true}
                 />
@@ -115,7 +112,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t", "p"]}
                   page="sjohumlorPlace"
-                  background={"blue"}
                   padding={"none"}
                   child={true}
                 />
@@ -196,7 +192,6 @@ const Groups = async ({
                   <ContentSection
                     sectionLayout={["t", "p"]}
                     page="kaparnaUpptäckarscouter"
-                    background={"blue"}
                     padding={"5"}
                     child={true}
                   />
@@ -215,7 +210,6 @@ const Groups = async ({
               <ContentSection
                 sectionLayout={["t", "p"]}
                 page="kaparnaAge"
-                background={"blue"}
                 padding={"3"}
                 child={true}
               />
@@ -223,7 +217,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t"]}
                   page="kaparnaMeeting"
-                  background={"blue"}
                   padding={"5"}
                   child={true}
                 />
@@ -234,7 +227,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t", "p"]}
                   page="kaparnaPlace"
-                  background={"blue"}
                   padding={"5"}
                   child={true}
                 />
@@ -275,7 +267,6 @@ const Groups = async ({
             <ContentSection
               sectionLayout={["t"]}
               page="avdelningsledare"
-              background={"white"}
               padding={"none"}
               child={true}
             />
@@ -315,7 +306,6 @@ const Groups = async ({
                   <ContentSection
                     sectionLayout={["t", "p"]}
                     page="sjohumlornaSpårarscouter"
-                    background={"blue"}
                     padding={"none"}
                     child={true}
                   />
@@ -334,7 +324,6 @@ const Groups = async ({
               <ContentSection
                 sectionLayout={["t", "p"]}
                 page="utmanareAge"
-                background={"blue"}
                 padding={"3"}
                 child={true}
               />
@@ -342,7 +331,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t"]}
                   page="utmanareMeeting"
-                  background={"blue"}
                   padding={"5"}
                   child={true}
                 />
@@ -353,7 +341,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t", "p"]}
                   page="utmanarePlace"
-                  background={"blue"}
                   padding={"5"}
                   child={true}
                 />
@@ -395,7 +382,6 @@ const Groups = async ({
               sectionLayout={["t"]}
               page="avdelningsledare"
               padding={"none"}
-              background={"white"}
               child={true}
             />
             <PortableText components={{
@@ -434,7 +420,6 @@ const Groups = async ({
                   <ContentSection
                     sectionLayout={["t", "p"]}
                     page="äventyrarscouter"
-                    background={"blue"}
                     padding={"5"}
                     child={true}
                   />
@@ -453,7 +438,6 @@ const Groups = async ({
               <ContentSection
                 sectionLayout={["t", "p"]}
                 page="konvojenAge"
-                background={"blue"}
                 padding={"3"}
                 child={true}
               />
@@ -461,7 +445,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t"]}
                   page="konvojenMeeting"
-                  background={"blue"}
                   padding={"5"}
                   child={true}
                 />
@@ -472,7 +455,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t", "p"]}
                   page="konvojenPlace"
-                  background={"blue"}
                   padding={"5"}
                   child={true}
                 />
@@ -514,7 +496,6 @@ const Groups = async ({
               sectionLayout={["t"]}
               page="avdelningsledare"
               padding={"none"}
-              background={"white"}
               child={true}
             />
             <PortableText components={{
@@ -552,7 +533,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t", "p", "p", "p"]}
                   page="BarnOchVuxnaTillsammans"
-                  background={"blue"}
                   padding={"5"}
                   child={true}
                 />
@@ -573,7 +553,6 @@ const Groups = async ({
                 <ContentSection
                   sectionLayout={["t", "p", "p"]}
                   page="ParumMagna"
-                  background={"blue"}
                   padding={"3"}
                   child={true}
                 />
@@ -593,14 +572,12 @@ const Groups = async ({
               <ContentSection
                 sectionLayout={["t", "p", "p"]}
                 page="Familjescoutsagor"
-                background={"blue"}
                 padding={"3"}
                 child={true}
               />
               <ContentSection
                 sectionLayout={["t", "p"]}
                 page="Märken"
-                background={"blue"}
                 padding={"3"}
                 child={true}
               />

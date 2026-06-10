@@ -33,13 +33,13 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
                 </section>
                 <div className="flex flex-col w-full">
                     <section className="order-1 md:order-2"> 
-                        <ContentSection sectionLayout={["h", "w", "p", "t", "s", "p", "s", "p", "s", "p"]} page="safeScout" background={"mobile"} padding="both"/>
+                        <ContentSection sectionLayout={["h", "w", "p", "t", "s", "p", "s", "p", "s", "p"]} page="safeScout" padding="both"/>
                     </section>
                     <section className="order-2 md:order-1">
-                        <ContentSection sectionLayout={["t", "p", "p", "t", "p", "w", "l", "l", "l", "t", "p", "w", "l", "l", "l", "t", "w"]} background={"desktop"} page={"guidelines"} padding="top"/>
+                        <ContentSection sectionLayout={["t", "p", "p", "t", "p", "w", "l", "l", "l", "t", "p", "w", "l", "l", "l", "t", "w"]} page={"guidelines"} padding="top"/>
                     </section>
                     <section className="order-3">
-                        <ContentSection sectionLayout={["h", "w", "p", "w"]} page="lockable" background="blue" display="desktop"/>
+                        <ContentSection sectionLayout={["h", "w", "p", "w"]} page="lockable" display="desktop"/>
                         <ContentSection sectionLayout={["h", "w", "p"]} page="vests" display="mobile" padding="bottom" />
                     </section>
                 </div>
