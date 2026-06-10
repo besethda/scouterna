@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 
 const handleClick = () => {
-    window.open("https://www.scoutnet.se/register/in/group/764", "(_blank)")
+    window.open("https://www.scoutnet.se/f/login", "(_blank)")
   }
 
 const ScoutInfo = () => {

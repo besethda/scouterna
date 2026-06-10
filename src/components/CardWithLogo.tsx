@@ -18,6 +18,11 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false }: CardWithLogoProps) 
   const TitleH1 = isH1 ? "h1" : "h2"
   const hasButton = messages?.[sectionTitle]?.button
 
+  const handleClick = () => {
+    const download = messages?.[sectionTitle as string]?.downloadUrl
+    if (download) 
+    window.open(download, "_blank")
+  }
 
   return (
     <div className="flex flex-col md:flex-row w-full pt-5 px-4 pb-10 lg:max-w-430 lg:px-22 md:flex md:pt-12.5 md:pb-16 md:items-start md:gap-25 items-center bg-bg-blue">
@@ -35,7 +40,7 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false }: CardWithLogoProps) 
                 <Image src={image} fill alt={image} />
               </div>
             </div>
-            <p className="font-albert font-normal text-[16px] md:text-[20px] tracking-[3%] text-text-black pt-1.5">
+            <p className="font-albert font-normal text-[16px] md:text-h5-desktop tracking-[3%] text-text-black pt-1.5">
               {messages?.[sectionTitle as string]?.text}
             </p>
           </div>
@@ -52,7 +57,7 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false }: CardWithLogoProps) 
                 <Image src={underlineAlla} alt="Underline" width={70} height={30} className="absolute bottom-0.5 w-full max-h-1.5 object-cover left-2.5" />
               </div>
             </div>
-            <p className="font-albert font-normal text-[16px] md:text-[20px] tracking-[3%] text-text-black pt-1.5">
+            <p className="font-albert font-normal text-[16px] md:text-h5-desktop tracking-[3%] text-text-black pt-1.5">
               {messages?.[sectionTitle as string]?.text02}
             </p>
          </div>
@@ -60,10 +65,10 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false }: CardWithLogoProps) 
         {hasButton && (
           <>
             <div className="hidden md:block md:mt-4">
-              <CTABtn text={messages?.[sectionTitle as string]?.button} />
+              <CTABtn text={messages?.[sectionTitle as string]?.button} onClick={handleClick}/>
             </div>
             <div className="md:hidden">
-              <CTABtn text={messages?.[sectionTitle as string]?.buttonMobile} width="full" />
+              <CTABtn text={messages?.[sectionTitle as string]?.buttonMobile} width="full" onClick={handleClick} />
             </div>
           </>
         )}
