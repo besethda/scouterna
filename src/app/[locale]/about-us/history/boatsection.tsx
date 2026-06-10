@@ -53,3 +53,4 @@ return (
 }
 
 export default BoatSection
+
