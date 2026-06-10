@@ -19,7 +19,7 @@ const ContentSection = ({ sectionLayout, page, background = "white", padding = "
         acc.push(<ul key={index} className="w-fit text-body my-3 md:text-body-desktop text-text-black font-albert lg:max-w-[63%] list-disc pl-5"><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
       } else {
         acc.push(<div key={index} className={`
-          ${element === "p" ? "w-fit py-2 text-body md:text-body-desktop text-text-white font-albert lg:max-w-[63%]" :
+          ${element === "p" ? "w-fit py-2 text-body md:text-body-desktop text-primary font-albert lg:max-w-[63%]" :
             element === "w" ? "w-fit py-2 text-body-bold md:text-body-bold-desktop text-text-black font-fraunces" :
               element === "h" ? "w-fit py-2 text-h1 md:text-h1-desktop text-primary font-fraunces font-bold" :
                 element === "t" ? "w-fit py-2 text-h3 md:text-h2-desktop text-primary font-fraunces font-bold" :
