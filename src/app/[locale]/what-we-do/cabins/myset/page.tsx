@@ -31,7 +31,7 @@ const Myset = async ({ params }: { params: Promise<{ locale: string }> }) => {
         <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1 /> 
+                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1 logoTopRight/> 
                 <div className="px-4 lg:px-10 py-8  md:py-3 lg:py-6 flex flex-col items-center bg-white mx-4 rounded-3xl mb-10 lg:w-[848px] 2xl:max-w-[980px]">
                     <div className="">
                         <ContentSection sectionLayout={["t"]} page="myset01" background="white" padding="" child={true} />
