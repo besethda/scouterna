@@ -16,18 +16,18 @@ import { PortableText } from "next-sanity";
 import { urlFor } from "@/sanity/lib/image";
 
 const pageItems = [
-  "sjohumlorna",
-  "kaparna",
-  "utmanare",
-  "konvojen",
-  "smattarne",
+  "spararscouter",
+  "upptackarscouter",
+  "utmanarscouter",
+  "aventyrarscouter",
+  "familjescouter",
 ];
 const headDescriptions = [
-  "sjohumlorna",
-  "kaparna",
-  "utmanare",
-  "konvojen",
-  "smattarne",
+  "spararscouter",
+  "upptackarscouter",
+  "utmanarscouter",
+  "aventyrarscouter",
+  "familjescouter",
 ]
 export async function generateMetadata({
   params,
@@ -64,7 +64,7 @@ const Groups = async ({
 
 
 
-  if (singleGroup === "sjohumlorna") {
+  if (singleGroup === "spararscouter") {
     return (
       <main className="max-w-360 mx-auto">
         <Breadcrumbs />
@@ -143,7 +143,7 @@ const Groups = async ({
               </div>
               <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
                 <ImageCard
-                  imageTitle="sjohumlorna_title"
+                  imageTitle="spararscouter_title"
                   image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
                   section="division"
                   page="group"
@@ -185,7 +185,7 @@ const Groups = async ({
         </div>
       </main>
     );
-  } else if (singleGroup === "kaparna") {
+  } else if (singleGroup === "upptackarscouter") {
     return (
 
       <main className="max-w-360 mx-auto">
@@ -264,7 +264,7 @@ const Groups = async ({
               </div>
               <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
                 <ImageCard
-                  imageTitle="kaparna_title"
+                  imageTitle="upptackarscouter_title"
                   image={urlFor(kaparna.groups.image.asset._ref).url()}
                   section="division"
                   page="group"
@@ -307,7 +307,7 @@ const Groups = async ({
         </div>
       </main>
     );
-  } else if (singleGroup === "utmanare") {
+  } else if (singleGroup === "utmanarscouter") {
     return (
       <main className="max-w-360 mx-auto">
         <Breadcrumbs />
@@ -328,7 +328,7 @@ const Groups = async ({
                   </div>
                   <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
                     <ImageCard
-                      imageTitle="utmanare_title"
+                      imageTitle="utmanarscouter_title"
                       image={urlFor(utmanare.groups.image.asset._ref).url()}
                       section="division"
                       page="group"
@@ -428,7 +428,7 @@ const Groups = async ({
         </div>
       </main>
     );
-  } else if (singleGroup === "konvojen") {
+  } else if (singleGroup === "aventyrarscouter") {
     return (
       <main className="max-w-360 mx-auto">
         <Breadcrumbs />
@@ -506,7 +506,7 @@ const Groups = async ({
               </div>
               <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
                 <ImageCard
-                  imageTitle="konvojen_title"
+                  imageTitle="aventyrarscouter_title"
                   image={urlFor(konvojen?.groups?.image.asset._ref).url()}
                   section="division"
                   page="group"
@@ -549,7 +549,7 @@ const Groups = async ({
         </div>
       </main>
     );
-  } else if (singleGroup === "smattarne") {
+  } else if (singleGroup === "familjescouter") {
     return (
       <main className="max-w-360 mx-auto">
         <Breadcrumbs />
@@ -590,7 +590,7 @@ const Groups = async ({
                 </div>
                 <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                   <ImageCard
-                    imageTitle="smattarne_photoTitle"
+                    imageTitle="familjescouter_photoTitle"
                     image={familyImageSrc}
                     section="division"
                     page="group"

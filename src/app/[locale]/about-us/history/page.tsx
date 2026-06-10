@@ -7,6 +7,9 @@ import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import ContentSection from "@/components/ContentSection";
 import CardWithLogo from "@/components/CardWithLogo";
+import Image from "next/image";
+import line from "../../../../../public/historia-line.svg"
+
 
 
 const pageItem = "history"
@@ -26,14 +29,17 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
     return (
         <main>
             <Breadcrumbs />
-            <CardWithLogo  image="/heartYellowBg.svg" sectionTitle="historycard" isH1 /> 
-            <div className="w-full ">
-                <h2 className="w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{locale === "sv" ? data?.history_section.title_se : data?.history_section.title_en}</h2>
-                <SanityFlex data={data?.history_layout.scout_life} locale={locale}/>
+            <CardWithLogo image="/heartYellowBg.svg" sectionTitle="historycard" isH1 />
+            <div className="w-full py-8 px-4 md:px-10 rounded-3xl bg-[#FFFFFF] gap-6 shadow-xl">
+                <h2 className="w-fit pt-2  text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{locale === "sv" ? data?.history_section.title_se : data?.history_section.title_en}</h2>
+                <div className="w-50 md:w-full">
+                    <Image src={line} alt="line" />
+                </div>
+                <SanityFlex data={data?.history_layout.scout_life} locale={locale} />
             </div>
-            <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"} background={"blue"}/>
-            <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"} background={"blue"}/>
-            <BoatSection images={data?.images}/>
+            <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"} background={"blue"} />
+            <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"} background={"blue"} />
+            <BoatSection images={data?.images} />
         </main>
     );
 }
