@@ -8,9 +8,9 @@ import useMessages from "@/hook/useMessages"
 interface ImageCardProps {
     imageTitle: string,
     image: string,
-    section: string,
+    section?: string,
     page: string
-    text: string,
+    text?: string,
     pin: string
 }
 
@@ -47,12 +47,12 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
             `}>
                 <Image src={image} alt={imageTitle} fill className="object-cover  object-center" />
             </div>
-            <div>
+            {section && imageTitle && <div>
                 <p className="text-center text-hero">{(messages as any)[section]?.[imageTitle]}</p>
-            </div>
-            <div>
+            </div>}
+            {section && text && <div>
                 <p className="text-[20px]">{(messages as any)[section]?.[text]}</p>
-            </div>
+            </div>}
 
         </div>
      

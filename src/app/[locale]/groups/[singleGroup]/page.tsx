@@ -1,15 +1,11 @@
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
-import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { getPageHeadTitle } from "@/lib/utils";
 import ContentSection from "@/components/ContentSection";
 import Image from "next/image";
 import CTABtn from "@/components/CTA-button";
-import Sjohulorna from "../../../../../public/images/DSCF3033.jpg";
 import { getId } from "@/lib/utils";
-import Family from '../../../../../public/images/ParumMagna.png'
-import FamilyEn from '../../../../../public/images/ParumMagnaEng.png'
 import CardWithLogo from "@/components/CardWithLogo";
 import ImageCard from "@/components/ImageCard";
 import { PortableText } from "next-sanity";
@@ -60,9 +56,6 @@ const Groups = async ({
   const utmanare = data?.groups.find((e: any) => e.name_slug === "utmanare") || null
   const konvojen = data?.groups.find((e: any) => e.name_slug === "konvojen") || null
   const smattarne = data?.groups.find((e: any) => e.name_slug === "smattarne") || null
-
-
-
 
   if (singleGroup === "spararscouter") {
     return (
@@ -152,8 +145,8 @@ const Groups = async ({
             </div>
           </div>
         </section>
-        <section className="bg-white w-full lg:max-w-430 lg:px-22 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
-          <div className="w-full py-2">
+        <section className="bg-white w-full lg:max-w-430 flex md:flex-row flex-col lg:px-22 px-4 mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
+          <div className="w-full py-2 lg:pt-12 md:pb-12">
             <ContentSection
               sectionLayout={["t"]}
               page="avdelningsledare"
@@ -171,13 +164,12 @@ const Groups = async ({
             }}
               value={locale === "en" ? sjohumlorna?.leader.text_object.text_en_array : sjohumlorna?.leader.text_object.text_sv_array} />
           </div>
-          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
-            <Image
-              src={urlFor(sjohumlorna.leader.text_object.image.asset._ref).url()}
-              alt={sjohumlorna.leader.text_object.image.alt}
-              className="rounded-2xl object-cover"
-              width={358}
-              height={257}
+          <div className="flex aspect-7/5 w-full justify-center max-h-85 md:max-h-none md:w-fit md:pt-12 md:pb-12 pb-6">
+            <ImageCard
+              image={urlFor(sjohumlorna.leader.text_object.image.asset._ref).url()}
+              imageTitle={sjohumlorna.leader.text_object.image.alt}
+              page="groups"
+              pin="dark_red"
             />
           </div>
         </section>
@@ -270,8 +262,8 @@ const Groups = async ({
             </div>
           </div>
         </section>
-        <section className="bg-white w-full lg:max-w-430 lg:px-22 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
-          <div className="w-full py-2">
+        <section className="bg-white w-full lg:max-w-430 flex md:flex-row flex-col lg:px-22 px-4 mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
+          <div className="w-full py-2 lg:pt-12 md:pb-12">
             <ContentSection
               sectionLayout={["t"]}
               page="avdelningsledare"
@@ -290,13 +282,12 @@ const Groups = async ({
             }}
               value={locale === "en" ? kaparna?.leader.text_object.text_en_array : kaparna?.leader.text_object.text_sv_array} />
           </div>
-          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
-            <Image
-              src={urlFor(kaparna.leader.text_object.image.asset._ref).url()}
-              alt={kaparna.leader.text_object.image.alt}
-              className="rounded-2xl object-cover"
-              width={358}
-              height={257}
+          <div className="flex aspect-7/5 w-full justify-center max-h-85 md:max-h-none md:w-fit md:pt-12 md:pb-12 pb-6">
+            <ImageCard
+              image={urlFor(kaparna.leader.text_object.image.asset._ref).url()}
+              imageTitle={kaparna.leader.text_object.image.alt}
+              page="groups"
+              pin="pink"
             />
           </div>
         </section>
@@ -389,8 +380,8 @@ const Groups = async ({
             </div>
           </div>
         </section>
-        <section className="bg-white lg:max-w-430 lg:px-22 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
-          <div className="w-full py-2">
+        <section className="bg-white w-full lg:max-w-430 flex md:flex-row flex-col lg:px-22 px-4 mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
+        <div className="w-full py-2 lg:pt-12 md:pb-12">
             <ContentSection
               sectionLayout={["t"]}
               page="avdelningsledare"
@@ -409,13 +400,12 @@ const Groups = async ({
             }}
               value={locale === "en" ? utmanare?.leader.text_object.text_en_array : utmanare?.leader.text_object.text_sv_array} />
           </div>
-          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
-            <Image
-              src={urlFor(utmanare.leader.text_object.image.asset._ref).url()}
-              alt={utmanare.leader.text_object.image.alt}
-              className="rounded-2xl object-cover"
-              width={358}
-              height={257}
+          <div className="flex aspect-7/5 w-full justify-center max-h-85 md:max-h-none md:w-fit md:pt-12 md:pb-12 pb-6">
+            <ImageCard
+              image={urlFor(utmanare.leader.text_object.image.asset._ref).url()}
+              imageTitle={utmanare.leader.text_object.image.alt}
+              page="groups"
+              pin="dark_red"
             />
           </div>
         </section>
@@ -508,8 +498,8 @@ const Groups = async ({
             </div>
           </div>
         </section>
-        <section className="bg-white lg:max-w-430 lg:px-22 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
-          <div className="w-full py-2">
+        <section className="bg-white w-full lg:max-w-430 flex md:flex-row flex-col lg:px-22 px-4 mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
+        <div className="w-full py-2 lg:pt-12 md:pb-12">
             <ContentSection
               sectionLayout={["t"]}
               page="avdelningsledare"
@@ -528,13 +518,12 @@ const Groups = async ({
             }}
               value={locale === "en" ? konvojen?.leader.text_object.text_en_array : konvojen?.leader.text_object.text_sv_array} />
           </div>
-          <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
-            <Image
-              src={urlFor(konvojen.leader.text_object.image.asset._ref).url()}
-              alt={konvojen.leader.text_object.image.alt}
-              className="rounded-2xl object-cover"
-              width={358}
-              height={257}
+          <div className="flex aspect-7/5 w-full justify-center max-h-85 md:max-h-none md:w-fit md:pt-12 md:pb-12 pb-6">
+            <ImageCard
+              image={urlFor(konvojen.leader.text_object.image.asset._ref).url()}
+              imageTitle={konvojen.leader.text_object.image.alt}
+              page="groups"
+              pin="dark_red"
             />
           </div>
         </section>
