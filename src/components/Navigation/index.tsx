@@ -90,7 +90,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
                             )}
                         </div>
                     ))
-                    }
+                    } 
                 </div>
                 <div className="w-18 h-18 hidden md:block"></div>
                 <div className="rounded-b-lg p-4 flex flex-col lg:h-18.5 lg:items-center lg:hidden">
