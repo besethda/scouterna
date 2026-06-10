@@ -389,7 +389,7 @@ export type MessagesEngType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
-  union: Record<string, string>
+  union: Record<string, string >
   download: string,
   BarnOchVuxnaTillsammans: Record<string, string>,
   ParumMagna: Record<string, string>,
@@ -1098,8 +1098,8 @@ export const En: MessagesEngType = {
   },
   konvojenButton: "Badge poster for Äventyrare",
   union: {
-    t0: "Union",
-    p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
+    t0: "View and download",
+    p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review.",
   },
   download: "Download ",
   BarnOchVuxnaTillsammans: {
