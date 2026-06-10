@@ -37,14 +37,14 @@ const Navigation = ({ onClose }: NavigationProps) => {
 
                 <div className={`transition-all duration-350 ease-in-out ${isScroll ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'} xl:translate-x-11 lg:translate-x-2 hidden lg:block`}>
                     <Link href={messages?.path || "/sv"}>
-                        <Image src={HSSlogo} alt="HSSlogo" width={65} height={65} className="opacity-75 hover:opacity-100 active:scale-98 active:brightness-95 duration-100" />
+                        <Image src={HSSlogo} alt="HSSlogo" width={65} height={65} className="opacity-75 hover:opacity-100 active:scale-98 active:brightness-95 duration-100 h-auto" />
                     </Link>
                 </div>
 
                 <div className="bg-bg-blue flex justify-between text-base h-69px px-3 py-4 font-bold border-b border-lightGray lg:hidden lg:px-0 items-center">
                     <div>
                         <Link href="https://www.scouterna.se/" target="_blank">
-                            <Image src="/blue-scoutLogo.svg" alt="scoutlogo" width={100} height={40} className="opacity-70 brightness-120" />
+                            <Image src="/blue-scoutLogo.svg" alt="scoutlogo" width={100} height={40} className="opacity-70 brightness-120 h-auto" />
                         </Link>
                     </div>
                     <LanguageSelector />
