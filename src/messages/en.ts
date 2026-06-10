@@ -174,7 +174,7 @@ export type MessagesEngType = {
       upptackarscouter: string,
       utmanarscouter: string,
       aventyrarscouter: string,
-      familjescouter:string,
+      familjescouter: string,
       join: string,
       "become-a-scout": string,
       faq: string,
@@ -300,7 +300,7 @@ export type MessagesEngType = {
     title: string,
     text: string,
     button: string,
-    buttonMobile: string, 
+    buttonMobile: string,
     downloadUrl: string
   },
   safetyBtn: {
@@ -441,7 +441,7 @@ export type MessagesEngType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
-  memberScoutnet:{title:string, text01:string, text02:string},
+  memberScoutnet: { title: string, text01: string, text02: string },
   memberScoutnetButton: string,
   mysetHistory: {
     title: string,
@@ -965,7 +965,7 @@ export const En: MessagesEngType = {
     title: "HSS Life Jacket Policy",
     text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF.",
     button: "Download the life jacket policy as PDF",
-    buttonMobile: "Download PDF", 
+    buttonMobile: "Download PDF",
     downloadUrl: "/pdfs/HSS-Flytvastpolicy-2025-Beslutad.pdf"
   },
   safetyBtn: {
@@ -1125,27 +1125,27 @@ export const En: MessagesEngType = {
   familjescouterButton: "Discover All Our Scout Badges",
 
   GroupSjohumlorna: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Spårarscouter",
     text: "The young scouts discover sea life through games, singing, and small adventures by the water. Here, they learn to cooperate, tie their first knots, and feel at home in nature.",
   },
   GroupKaparna: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Upptäckarscouter",
     text: "At Upptäckarna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety",
   },
   GroupKonvojen: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Äventyrarscouter",
     text: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
   },
   GroupUtmanare: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Utmanarscouter",
     text: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them.",
   },
   GroupFamily: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Familjescouter",
     text: "Through Family Scouting, children under the age of eight, together with one or more adults, can experience scouting in a fun and playful way.",
   },

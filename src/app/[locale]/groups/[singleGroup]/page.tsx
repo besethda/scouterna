@@ -66,7 +66,7 @@ const Groups = async ({
 
   if (singleGroup === "spararscouter") {
     return (
-      <main className="max-w-360 mx-auto">
+      <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1 logoTopRight />
         <div className="px-4 lg:px-22">
@@ -82,9 +82,9 @@ const Groups = async ({
                       child={true}
                     />
                   </div>
-                  <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                  <div className="flex justify-center w-89.5 h-auto py-5 md:pt-5 md:pb-4 pb-6 md:hidden">
                     <ImageCard
-                      imageTitle="sjohumlorna_title"
+                      imageTitle="spararscouter_title"
                       image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
                       section="division"
                       page="group"
@@ -149,8 +149,8 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
-            <div className="w-full py-2">
+          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
+            <div className="w-full py-2 pb-15 self-start">
               <ContentSection
                 sectionLayout={["t"]}
                 page="avdelningsledare"
@@ -169,12 +169,13 @@ const Groups = async ({
                 value={locale === "en" ? sjohumlorna?.leader.text_object.text_en_array : sjohumlorna?.leader.text_object.text_sv_array} />
             </div>
             <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
-              <Image
-                src={urlFor(sjohumlorna.leader.text_object.image.asset._ref).url()}
-                alt={sjohumlorna.leader.text_object.image.alt}
-                className="rounded-2xl object-cover"
-                width={358}
-                height={257}
+              <ImageCard
+                imageTitle="spararscouter_title"
+                image={urlFor(sjohumlorna.leader.text_object.image.asset._ref).url()}
+                section="division"
+                page="group"
+                text=""
+                pin="red"
               />
             </div>
           </section>
@@ -184,7 +185,7 @@ const Groups = async ({
   } else if (singleGroup === "upptackarscouter") {
     return (
 
-      <main className="max-w-360 mx-auto">
+      <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1 logoTopRight />
         <div className="px-4 lg:px-22">
@@ -200,9 +201,9 @@ const Groups = async ({
                       child={true}
                     />
                   </div>
-                  <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                  <div className="flex justify-center w-89.5 h-auto py-5 md:pt-5 md:pb-4 pb-6 md:hidden">
                     <ImageCard
-                      imageTitle="kaparna_title"
+                      imageTitle="upptackarscouter_title"
                       image={urlFor(kaparna.groups.image.asset._ref).url()}
                       section="division"
                       page="group"
@@ -266,8 +267,8 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
-            <div className="w-full py-2">
+          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl  md:flex">
+            <div className="w-full py-2 pb-15 self-start">
               <ContentSection
                 sectionLayout={["t"]}
                 page="avdelningsledare"
@@ -286,12 +287,13 @@ const Groups = async ({
                 value={locale === "en" ? kaparna?.leader.text_object.text_en_array : kaparna?.leader.text_object.text_sv_array} />
             </div>
             <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
-              <Image
-                src={urlFor(kaparna.leader.text_object.image.asset._ref).url()}
-                alt={kaparna.leader.text_object.image.alt}
-                className="rounded-2xl object-cover"
-                width={358}
-                height={257}
+              <ImageCard
+                imageTitle="spararscouter_title"
+                image={urlFor(kaparna.leader.text_object.image.asset._ref).url()}
+                section="division"
+                page="group"
+                text=""
+                pin="pink"
               />
             </div>
           </section>
@@ -300,7 +302,7 @@ const Groups = async ({
     );
   } else if (singleGroup === "utmanarscouter") {
     return (
-      <main className="max-w-360 mx-auto">
+      <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1 logoTopRight />
         <div className="px-4 lg:px-22">
@@ -316,7 +318,7 @@ const Groups = async ({
                       child={true}
                     />
                   </div>
-                  <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                  <div className="flex justify-center w-89.5 h-auto py-5 md:pt-5 md:pb-4 pb-6 md:hidden">
                     <ImageCard
                       imageTitle="utmanarscouter_title"
                       image={urlFor(utmanare.groups.image.asset._ref).url()}
@@ -372,7 +374,7 @@ const Groups = async ({
               </div>
               <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
                 <ImageCard
-                  imageTitle="utmanare_title"
+                  imageTitle="utmanarscouter_title"
                   image={urlFor(utmanare.groups.image.asset._ref).url()}
                   section="division"
                   page="group"
@@ -382,8 +384,8 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white lg:max-w-430 lg:px-10 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
-            <div className="w-full py-2">
+          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
+            <div className="w-full py-2 pb-15 self-start">
               <ContentSection
                 sectionLayout={["t"]}
                 page="avdelningsledare"
@@ -402,12 +404,13 @@ const Groups = async ({
                 value={locale === "en" ? utmanare?.leader.text_object.text_en_array : utmanare?.leader.text_object.text_sv_array} />
             </div>
             <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
-              <Image
-                src={urlFor(utmanare.leader.text_object.image.asset._ref).url()}
-                alt={utmanare.leader.text_object.image.alt}
-                className="rounded-2xl object-cover"
-                width={358}
-                height={257}
+              <ImageCard
+                imageTitle="utmanarscouter_title"
+                image={urlFor(utmanare.leader.text_object.image.asset._ref).url()}
+                section="division"
+                page="group"
+                text=""
+                pin="red"
               />
             </div>
           </section>
@@ -416,7 +419,7 @@ const Groups = async ({
     );
   } else if (singleGroup === "aventyrarscouter") {
     return (
-      <main className="max-w-360 mx-auto">
+      <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1 logoTopRight />
         <div className="px-4 lg:px-22">
@@ -432,9 +435,9 @@ const Groups = async ({
                       child={true}
                     />
                   </div>
-                  <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                  <div className="flex justify-center w-89.5 h-auto py-5 md:pt-5 md:pb-4 pb-6 md:hidden">
                     <ImageCard
-                      imageTitle="konvojen_title"
+                      imageTitle="aventyrarscouter_title"
                       image={urlFor(konvojen?.groups?.image.asset._ref).url()}
                       section="division"
                       page="group"
@@ -498,8 +501,8 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white lg:max-w-430 lg:px-10 px-4 w-full mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
-            <div className="w-full py-2">
+          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
+            <div className="w-full py-2 pb-15 self-start">
               <ContentSection
                 sectionLayout={["t"]}
                 page="avdelningsledare"
@@ -518,12 +521,13 @@ const Groups = async ({
                 value={locale === "en" ? konvojen?.leader.text_object.text_en_array : konvojen?.leader.text_object.text_sv_array} />
             </div>
             <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
-              <Image
-                src={urlFor(konvojen.leader.text_object.image.asset._ref).url()}
-                alt={konvojen.leader.text_object.image.alt}
-                className="rounded-2xl object-cover"
-                width={358}
-                height={257}
+              <ImageCard
+                imageTitle="aventyrarscouter_title"
+                image={urlFor(konvojen.leader.text_object.image.asset._ref).url()}
+                section="division"
+                page="group"
+                text=""
+                pin="dark_red"
               />
             </div>
           </section>
@@ -532,7 +536,7 @@ const Groups = async ({
     );
   } else if (singleGroup === "familjescouter") {
     return (
-      <main className="max-w-360 mx-auto">
+      <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 logoTopRight />
         <div className="px-4 lg:px-22 pb-30">
@@ -547,9 +551,9 @@ const Groups = async ({
                     child={true}
                   />
                 </div>
-                <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+                <div className="flex h-auto md:pt-5 md:px-4 py-5 ">
                   <ImageCard
-                    imageTitle="smattarne_title"
+                    imageTitle="familjescouter_title"
                     image={urlFor(smattarne?.groups?.image.asset._ref).url()}
                     section="division"
                     page="group"
@@ -567,7 +571,7 @@ const Groups = async ({
                     child={true}
                   />
                 </div>
-                <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+                <div className="flex h-auto md:pt-5 md:px-4 py-5 ">
                   <ImageCard
                     imageTitle="familjescouter_photoTitle"
                     image={familyImageSrc}
