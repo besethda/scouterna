@@ -40,60 +40,62 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
     return (
         <main>
             <HeroContainer bgImages={{ mobile: data.join_images.join_hero_mobile.asset._ref, desktop: data.join_images.join_hero_desktop.asset._ref }} messageSection={"joinHero"} position={"center"} />
-            <Breadcrumbs />
-            <div className="flex flex-col items-center w-full ">
-                <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
-                <Scoutlife />
-                <div className=" bg-white mx-4 my-8 py-4 lg:mx-25 lg:my-20 lg:pt-2 rounded-3xl">
-                    <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
-                    <Line hasPadding />
-                    <section className="flex flex-col gap-6 font-albert px-4 pb-8 lg:max-w-430 lg:px-10">
-                        <div className="flex flex-col gap-4 ">
-                            <h2 className="text-h2 font-fraunces font-bold text-primary md:text-h3-desktop">
-                                {messages?.joinContent?.title}
-                            </h2>
-                            <p className="text-text-black text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
-                                {messages?.joinContent?.text}
+            <div className="max-w-360 mx-auto">
+                <Breadcrumbs />
+                <section className="flex flex-col items-center w-full ">
+                    <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
+                    <Scoutlife />
+                    <div className=" bg-white mx-4 my-8 py-4 lg:mx-22 lg:my-20 lg:pt-2 rounded-3xl shadow-xl">
+                        <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
+                        <Line hasPadding />
+                        <section className="flex flex-col gap-6 font-albert px-4 pb-8 lg:max-w-430 lg:px-10">
+                            <div className="flex flex-col gap-4 ">
+                                <h2 className="text-h2 font-fraunces font-bold text-primary md:text-h3-desktop">
+                                    {messages?.joinContent?.title}
+                                </h2>
+                                <p className="text-text-black text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
+                                    {messages?.joinContent?.text}
+                                </p>
+                            </div>
+                            <a
+                                href="/pdfs/Bilaga-20251012-HSS-Trygga-maten-policy-Beslutad.pdf"
+                                target="_blank"
+                            >
+                                <CTABtn text={messages?.joinContent?.button} />
+                            </a>
+                            <p className="text-text-black text-body md:text-body-desktop lg:max-w-[72%] tracking-[3%]">
+                                {messages?.joinContent?.text02}
                             </p>
-                        </div>
-                        <a
-                            href="/pdfs/Bilaga-20251012-HSS-Trygga-maten-policy-Beslutad.pdf"
-                            target="_blank"
-                        >
-                            <CTABtn text={messages?.joinContent?.button} />
-                        </a>
-                        <p className="text-text-black text-body md:text-body-desktop lg:max-w-[72%] tracking-[3%]">
-                            {messages?.joinContent?.text02}
-                        </p>
-                        <a
-                            href="https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/kurskatalog-ledarskapson/"
-                            target="_blank"
-                        >
-                            <CTABtn text={messages?.joinContent?.button02} />
-                        </a>
-                        <Line />
-                        <div className="flex flex-col gap-6">
-                            <h3 className="font-fraunces text-h2 font-bold text-[#00355F]  md:text-h3-desktop">
-                                {messages?.joinContent?.title02}
-                            </h3>
-                            <p className="text-text-black pb-4 text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
-                                {messages?.joinContent?.text03}
-                            </p>
-                        </div>
-                    </section>
-                </div>
-                <div className=" mx-4 my-8 py-4 lg:mx-25 lg:my-20 lg:pt-2">
-                    <JoinPage
-                        head={messages?.joinPage.head}
-                        title={messages?.joinPage.title}
-                        text={messages?.joinPage.text}
-                        buttonText={messages?.joinPage.buttonText}
-                        section="join"
-                        width="box"
-                        btnWidth="full"
-                    />
-                </div>
-                <InstagramContainer />
+                            <a
+                                href="https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/kurskatalog-ledarskapson/"
+                                target="_blank"
+                            >
+                                <CTABtn text={messages?.joinContent?.button02} />
+                            </a>
+                            <Line />
+                            <div className="flex flex-col gap-6">
+                                <h3 className="font-fraunces text-h2 font-bold text-[#00355F]  md:text-h3-desktop">
+                                    {messages?.joinContent?.title02}
+                                </h3>
+                                <p className="text-text-black pb-4 text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
+                                    {messages?.joinContent?.text03}
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <div className=" mx-4 my-8 py-4 lg:mx-22 lg:my-20 lg:pt-2">
+                        <JoinPage
+                            head={messages?.joinPage.head}
+                            title={messages?.joinPage.title}
+                            text={messages?.joinPage.text}
+                            buttonText={messages?.joinPage.buttonText}
+                            section="join"
+                            width="box"
+                            btnWidth="full"
+                        />
+                    </div>
+                    <InstagramContainer />
+                </section>
             </div>
         </main>
     )
