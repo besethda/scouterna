@@ -16,18 +16,18 @@ import { PortableText } from "next-sanity";
 import { urlFor } from "@/sanity/lib/image";
 
 const pageItems = [
-  "sjohumlorna",
-  "kaparna",
-  "utmanare",
-  "konvojen",
-  "smattarne",
+  "spararscouter",
+  "upptackarscouter",
+  "utmanarscouter",
+  "aventyrarscouter",
+  "familjescouter",
 ];
 const headDescriptions = [
-  "sjohumlorna",
-  "kaparna",
-  "utmanare",
-  "konvojen",
-  "smattarne",
+  "spararscouter",
+  "upptackarscouter",
+  "utmanarscouter",
+  "aventyrarscouter",
+  "familjescouter",
 ]
 export async function generateMetadata({
   params,
@@ -64,7 +64,7 @@ const Groups = async ({
 
 
 
-  if (singleGroup === "sjohumlorna") {
+  if (singleGroup === "spararscouter") {
     return (
       <main>
         <Breadcrumbs />
@@ -183,7 +183,7 @@ const Groups = async ({
         </section>
       </main>
     );
-  } else if (singleGroup === "kaparna") {
+  } else if (singleGroup === "upptackarscouter") {
     return (
       <main>
         <Breadcrumbs />
@@ -302,7 +302,7 @@ const Groups = async ({
         </section>
       </main>
     );
-  } else if (singleGroup === "utmanare") {
+  } else if (singleGroup === "utmanarscouter") {
     return (
       <main>
         <Breadcrumbs />
@@ -421,7 +421,7 @@ const Groups = async ({
         </section>
       </main>
     );
-  } else if (singleGroup === "konvojen") {
+  } else if (singleGroup === "aventyrarscouter") {
     return (
       <main>
         <Breadcrumbs />
@@ -540,7 +540,7 @@ const Groups = async ({
         </section>
       </main>
     );
-  } else if (singleGroup === "smattarne") {
+  } else if (singleGroup === "familjescouter") {
     return (
       <main>
         <Breadcrumbs />

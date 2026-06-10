@@ -29,11 +29,11 @@ const GroupStructure = async ({ params }: { params: Promise<{ locale: string }> 
       <section className="w-full flex flex-col items-center">
         <CardWithLogo image="/heartYellowBg.svg" sectionTitle="groupsCard" isH1/>
         <div className="flex flex-col px-4 pb-8 md:pb-16 gap-1 items-center">
-          <DivisionsBox division={"sjohumlorna"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
-          <DivisionsBox division={"kaparna"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
-          <DivisionsBox division={"konvojen"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "konvojen") || null}/>
-          <DivisionsBox division={"utmanare"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
-          <DivisionsBox division={"smattarne"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "smattarne") || null} />
+          <DivisionsBox division={"spararscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
+          <DivisionsBox division={"upptackarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
+          <DivisionsBox division={"aventyrarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "konvojer") || null}/>
+          <DivisionsBox division={"utmanarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
+          <DivisionsBox division={"familjescouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "smattarne") || null} />
         </div>
       </section>
     </main>

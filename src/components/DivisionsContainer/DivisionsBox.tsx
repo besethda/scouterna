@@ -6,18 +6,18 @@ import Link from "next/link"
 import ImageCard from "../ImageCard"
 import { urlFor } from "@/sanity/lib/image";
 
-type divisionName = "sjohumlorna" | "kaparna" | "utmanare" | "konvojen" | "smattarne"
+type divisionName = "spararscouter" | "upptackarscouter" | "utmanarscouter" | "aventyrarscouter" | "familjescouter"
 
 const DivisionsBox = ({ division, imageUrl, data, boxStyle = "basic" }:
   { division: divisionName, imageUrl?: string, data: any, boxStyle: string }) => {
 
   const messages = useMessages()
   const colorReference = {
-    sjohumlorna: ["border-green", "bg-green-opaque"],
-    kaparna: ["border-lightBlue", "bg-lightBlue-opaque"],
-    utmanare: ["border-pink", "bg-pink-opaque"],
-    konvojen: ["border-orange", "bg-orange-opaque"],
-    smattarne: ["border-purple", "bg-purple-opaque"]
+    spararscouter: ["border-green", "bg-green-opaque"],
+    upptackarscouter: ["border-lightBlue", "bg-lightBlue-opaque"],
+    utmanarscouter: ["border-pink", "bg-pink-opaque"],
+    aventyrarscouter: ["border-orange", "bg-orange-opaque"],
+    familjescouter: ["border-purple", "bg-purple-opaque"]
   }
   if (!data || data.groups.day_se) return null
   return (
