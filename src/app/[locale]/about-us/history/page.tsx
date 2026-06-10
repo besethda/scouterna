@@ -37,15 +37,9 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
                 </div>
                 <SanityFlex data={data?.history_layout.scout_life} locale={locale} />
             </div>
-<<<<<<< HEAD
             <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"} background={"blue"} />
             <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"} background={"blue"} />
-            <BoatSection />
-=======
-            <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"} background={"blue"}/>
-            <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"} background={"blue"}/>
-            <BoatSection images={data?.images}/>
->>>>>>> main
+            <BoatSection images={data?.images} />
         </main>
     );
 }
