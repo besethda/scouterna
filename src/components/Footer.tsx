@@ -23,8 +23,8 @@ const Footer = () => {
     const checkHide = hidePath.some(path => searchPath.includes(path))
 
     return (
-        <footer className="bg-primary text-white py-6 px-5 flex flex-col gap-4 xl:py-20 xl:px-2.5 xl:gap-16.5">
-            <div className='flex flex-col gap-2.5 xl:flex xl:flex-row xl:justify-around xl:w-[90%] xl:mx-auto'>
+        <footer className="bg-primary text-white py-6 px-5 flex flex-col gap-4 xl:py-20 xl:px-2.5 xl:gap-16.5 ">
+            <div className='flex flex-col gap-2.5 xl:flex xl:flex-row xl:justify-around xl:w-[90%] xl:mx-auto max-w-360 mx-auto'>
                 <div className='xl:flex-1'>
                     <Link href="https://www.scouterna.se/">
                         <Image src={scautLogo} alt="Scaut-logo" className='w-32.5 h-7 xl:h-[28]' />
