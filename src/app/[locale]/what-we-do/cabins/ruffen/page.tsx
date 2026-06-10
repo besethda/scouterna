@@ -36,7 +36,7 @@ const Ruffen = async ({ params }: { params: Promise<{ locale: string }> }) => {
                         <DivisionsBox division={"spararscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
                         <DivisionsBox division={"upptackarscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
                         <DivisionsBox division={"utmanarscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
-                        <DivisionsBox division={"aventyrarscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "konvojer") || null}/>
+                        <DivisionsBox division={"aventyrarscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "konvojen") || null}/>
                         <DivisionsBox division={"familjescouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "smattarne") || null}/>
                     </div>
                 </section>

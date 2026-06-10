@@ -31,7 +31,7 @@ const GroupStructure = async ({ params }: { params: Promise<{ locale: string }> 
         <div className="flex flex-col px-4 pb-8 md:pb-16 gap-1 items-center">
           <DivisionsBox division={"spararscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
           <DivisionsBox division={"upptackarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
-          <DivisionsBox division={"aventyrarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "konvojer") || null}/>
+          <DivisionsBox division={"aventyrarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "konvojen") || null}/>
           <DivisionsBox division={"utmanarscouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
           <DivisionsBox division={"familjescouter"} boxStyle={"image"} data={data?.groups.find((e:any) => e.name_slug === "smattarne") || null} />
         </div>
