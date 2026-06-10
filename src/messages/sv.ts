@@ -442,6 +442,8 @@ type MessagesSvType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
+  memberScoutnet: {title:string, text01:string, text02:string},
+  memberScoutnetButton: string,
 
   mysetHistory: {
     title: string,
@@ -867,7 +869,8 @@ export const Sv: MessagesSvType = {
     header2: "Starka tillsammans",
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
     text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att våga prova nya saker.",
-    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
+    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap.",
+    text: "Scoutliv"
   },
   learning: {
     t0: "Lärande för livet",
@@ -1211,6 +1214,13 @@ export const Sv: MessagesSvType = {
   },
   moreButton: "Läs mer om policyn",
   secondButton: "Flytvästpolicy PDF",
+
+  memberScoutnet: {
+    title: "Scoutnet",
+    text01: "Scoutnet är Scouternas gemensamma system där all information om medlemmar och aktiviteter finns samlad.",
+    text02: "Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren – allt på ett och samma ställe."
+  },
+  memberScoutnetButton: "Logga in på Scoutnet",
 
   mysetHistory: {
     title: "Mysets historia",
