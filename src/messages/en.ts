@@ -758,13 +758,13 @@ export const En: MessagesEngType = {
     p5: "Since its inception in 1959, HSS has been a sea scout group built on dedication, cooperation, and the desire to give young people adventure and community—and that flame still burns brightly today."
   },
   guidelines: {
-    t0: "HSS guidelines",
+    h0: "HSS guidelines",
     p0: "We have created guidelines for which types of life jackets should be used by Scouts who cannot swim, and Scouts who can swim.",
     p1: "It is best to assume that everyone, regardless of swimming ability, should wear a life jacket on docks and in boats. It is also important that the life jacket is properly buckled or tied.",
     p2: "Scouts who have not been able to demonstrate a 200m swimming proficiency to HSS should wear a life jacket (buoyancy aid/life vest with collar).",
     p3: "Scouts who have demonstrated a 200m swimming ability to HSS may wear a sailing vest.",
-    t1: "Non-swimming scouts",
-    t2: "Swimming scouts",
+    t0: "Non-swimming scouts",
+    t1: "Swimming scouts",
     w0: "HSS requirements for life jackets (with collar):",
     w1: "HSS requirements for sailing vests:",
     l0: "Buoyancy of at least 90 N",
