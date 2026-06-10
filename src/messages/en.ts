@@ -300,7 +300,8 @@ export type MessagesEngType = {
     title: string,
     text: string,
     button: string,
-    buttonMobile: string
+    buttonMobile: string, 
+    downloadUrl: string
   },
   safetyBtn: {
     btnMobile: string,
@@ -917,7 +918,7 @@ export const En: MessagesEngType = {
     },
     {
       question: "I am a new scout leader! Which training should I take first?",
-      answer: `The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a> <br />
+      answer: `The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/trygga-moten/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a> <br />
       After Safe Meetings, it is appropriate to take \"Leading Scouting\" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further. Read more about Leading <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Scouting here >> </a> <br />
       When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. 
       <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>`
@@ -964,7 +965,8 @@ export const En: MessagesEngType = {
     title: "HSS Life Jacket Policy",
     text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF.",
     button: "Download the life jacket policy as PDF",
-    buttonMobile: "Download PDF"
+    buttonMobile: "Download PDF", 
+    downloadUrl: "/pdfs/HSS-Flytvastpolicy-2025-Beslutad.pdf"
   },
   safetyBtn: {
     btnMobile: "Download PDF",

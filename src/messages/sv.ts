@@ -300,7 +300,8 @@ type MessagesSvType = {
     title: string,
     text: string,
     button: string,
-    buttonMobile: string
+    buttonMobile: string, 
+    downloadUrl: string
   },
   safetyBtn: {
     btnMobile: string,
@@ -920,7 +921,7 @@ export const Sv: MessagesSvType = {
     },
     {
       question: "Jag är ny scoutledare! Vilken utbildning ska jag gå först?",
-      answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra. Så här kommer du igång med <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\" > Trygga möten >> </a> 
+      answer: `Den allra första utbildningen du ska gå är Trygga möten. Det är den enda obligatoriska utbildningen som du måste ha gått för att kunna vara scoutledare. Trygga möten är en webbkurs som du gör på egen hand och den tar ca 1 timme att göra. Så här kommer du igång med <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/trygga-moten/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\" > Trygga möten >> </a> 
       <br/> Efter Trygga möten är det lämpligt att gå Leda scouting. Här får du kunskap som gör dig tryggare i din ledarroll i Scouterna. Du lär dig bland annat om Scouternas program och får förståelse för vad ledarskap i Scouterna innebär. Efter denna utbildning kan du själv välja hur du vill utvecklas. <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\" >Läs mer om Leda socuting här >> </a> <br/>
       När du känner dig redo att fortsätta utveckla ditt ledarskap inom Scouterna så finns det många fler utbildningar att välja mellan. Du hittar dem alla på Ledarskapsön. <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Läs mer om dem här >></a>`
     },
@@ -966,7 +967,8 @@ export const Sv: MessagesSvType = {
     title: "HSS Flytvästpolicy",
     text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en.",
     button: "Ladda ner flytvästpolicyn som PDF",
-    buttonMobile: "Ladda ner PDF"
+    buttonMobile: "Ladda ner PDF", 
+    downloadUrl: "/pdfs/HSS-Flytvastpolicy-2025-Beslutad.pdf"
   },
   safetyBtn: {
     btnMobile: "Ladda ner PDF",
