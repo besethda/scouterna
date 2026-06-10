@@ -23,7 +23,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
 
     useEffect(() => {
         const handleScroll = () => {
-        setIsScroll(window.scrollY > 200)
+            setIsScroll(window.scrollY > 200)
         }
 
         window.addEventListener("scroll", handleScroll)
@@ -49,7 +49,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
                     </div>
                     <LanguageSelector />
                 </div>
-                    <div className="lg:flex lg:w-full lg:justify-evenly lg:max-w-300">
+                <div className="lg:flex lg:w-full lg:justify-evenly lg:max-w-300">
                     {menuList.map((menu, index) => (
                         <div key={index}>
                             <div onClick={() => { handleToggle(menu.id); }}
