@@ -39,8 +39,8 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
                 </div>
               </div>
             </div>
-            <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"} background={"blue"} />
-            <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"} background={"blue"} />
+            <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"}/>
+            <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"} />
             <BoatSection images={data?.images} />
         </main>
     );
