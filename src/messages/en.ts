@@ -441,6 +441,8 @@ export type MessagesEngType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
+  memberScoutnet:{title:string, text01:string, text02:string},
+  memberScoutnetButton: string,
   mysetHistory: {
     title: string,
     text1: string,
@@ -1213,6 +1215,13 @@ export const En: MessagesEngType = {
   },
   moreButton: "Read more about policy",
   secondButton: "Life jacket policy PDF",
+
+  memberScoutnet: {
+    title: "Scoutnet",
+    text01: "Scoutnet is the Scouts' common system where all information about members and activities is gathered.",
+    text02: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place."
+  },
+  memberScoutnetButton: "Login to Scoutnet",
 
   mysetHistory: {
     title: "The History of Myset",
