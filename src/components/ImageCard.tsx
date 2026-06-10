@@ -26,21 +26,24 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
     }
 
     return (
-        <div className={`p-6 flex flex-col  bg-bg-white shadow-md relative font-gochi text-primary 
+        <div className={`p-6 flex flex-col  bg-bg-white shadow-lg relative font-gochi text-primary 
         ${text ? "min-h-125" : ""}
         ${page === "home" && "w-89.5"}
         ${page === "cabin" && "w-66.5"}
-        ${page === "group" && "w-81.5 md:w-87"}
+        ${page === "group" && "w-89.5"}
+        ${page === "groups" && "w-77.5 md:w-66.5 md:h-75.5"}
         ${page === "scout-life" && "w-89.5"}
-        ${page === "join" && "w-82 h-99 md:w-89.5"}
+        ${page === "join" && "w-82 md:w-89.5"}
         `}>
-            <Image src={pinColor()} alt="hige" width={85} height={80} className={`absolute inset-s-0 z-20 
-            ${page === "cabin" ? "left-20 -top-2" : "left-33 -top-4"}
+            <Image src={pinColor()} alt={imageTitle} width={85} height={80} className={`absolute inset-s-0 z-20 
+            ${page === "cabin" || page === "groups" ? "left-20 -top-2" : "left-33 -top-4"}
             `} />
             <div className={`mb-3.25 relative overflow-hidden
             ${page === "cabin" && "h-57.25"}
             ${page === "home" && "h-75"}
             ${page === "scout-life" && "h-75"}
+            ${page === "groups" && "w-66 h-60 md:w-55 md:h-55"}
+            ${page === "group" && "h-75"}
             ${page === "join" && "h-75"}
             `}>
                 <Image src={image} alt={imageTitle} fill className="object-cover  object-center" />
