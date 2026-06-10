@@ -27,7 +27,7 @@ const MysetHistory = () => {
   ]
 
   return (
-  <div className="pb-12 pt-2 px-4 font-albert bg-bg-blue md:py-20 lg:px-22 lg:max-w-430 ">
+  <div className="pb-12 pt-2 px-4 font-albert bg-bg-blue md:py-20 lg:px-22 lg:max-w-430 md:hidden">
       <div className=" bg-primary py-8 px-4 rounded-2xl md:py-8 md:px-10">
         <div className="flex flex-col gap-2 lg:max-w-[63%] text-text-white">
           <p className="font-bold text-[22px] tracking-[-0.5%] md:text-h2-desktop font-fraunces">
