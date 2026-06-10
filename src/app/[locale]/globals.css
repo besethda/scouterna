@@ -126,7 +126,7 @@ body {
     min-width: 30px !important;
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1560px) {
     .right-auto-2000 {
         right: auto;
     }
