@@ -68,7 +68,7 @@ const Groups = async ({
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1 />
+        <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1 logoTopRight/>
         <section className="w-full flex flex-col bg-bg-blue px-4 lg:px-22">
           <div className="md:flex md:gap-5 lg:gap-10">
             <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
@@ -187,7 +187,7 @@ const Groups = async ({
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1 />
+        <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1 logoTopRight/>
         <section className="w-full flex flex-col bg-bg-blue px-4 lg:px-22">
           <div className="md:flex md:gap-5 lg:gap-10">
             <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
@@ -306,7 +306,7 @@ const Groups = async ({
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1 />
+        <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1 logoTopRight/>
         <section className="w-full flex flex-col bg-bg-blue px-4 lg:px-22">
           <div className="md:flex md:gap-5 lg:gap-10">
             <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
@@ -425,7 +425,7 @@ const Groups = async ({
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1 />
+        <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1 logoTopRight/>
         <section className="w-full flex flex-col  bg-bg-blue px-4 lg:px-22">
           <div className="md:flex md:gap-5 lg:gap-10">
             <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
@@ -544,7 +544,7 @@ const Groups = async ({
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 />
+        <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 logoTopRight/>
         <section className="w-full flex flex-col  bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 md:items-start ">
