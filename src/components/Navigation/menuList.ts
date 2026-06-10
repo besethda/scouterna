@@ -35,7 +35,7 @@ export const menuList = [
             },
             {
                 nameKey: "nav_unit2",
-                href: "/groups/upptackascouter",
+                href: "/groups/upptackarscouter",
                 icon: "/menu-torch-illustration.png",
                 iconBg: "/menu-torch-illustration.png"
             },
@@ -47,7 +47,7 @@ export const menuList = [
             },
             {
                 nameKey: "nav_unit4",
-                href: "/groups/utmanare",
+                href: "/groups/utmanarscouter",
                 icon: "/menu-megaphone-illustration.png",
                 iconBg: "/menu-megaphone-illustration.png"
             },

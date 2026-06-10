@@ -14,8 +14,8 @@ const routes: routesType = {
 
   "/groups": true,
   "/groups/spararscouter": true,
-  "/groups/upptackascouter": true,
-  "/groups/utmanare": true,
+  "/groups/upptackarscouter": true,
+  "/groups/utmanarscouter": true,
   "/groups/aventyrarscouter": true,
   "/groups/familjescouter": true,
 

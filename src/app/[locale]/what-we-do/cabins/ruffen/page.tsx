@@ -32,8 +32,8 @@ const Ruffen = ({ params }: { params: Promise<{ locale: string }> }) => {
                     <ContentSection sectionLayout={["t", "p"]} page={"ruffenDivisions"} padding="none" background="desktop" />
                     <div className="flex flex-col p-4 gap-1 md:px-25 md:grid md:grid-cols-2 w-full lg:max-w-430 lg:px-22 md:gap-2 [&>*]:w-full">
                         <DivisionsBox division={"spararscouter"} boxStyle={"info"} />
-                        <DivisionsBox division={"upptackascouter"} boxStyle={"info"} />
-                        <DivisionsBox division={"utmanare"} boxStyle={"info"} />
+                        <DivisionsBox division={"upptackarscouter"} boxStyle={"info"} />
+                        <DivisionsBox division={"utmanarscouter"} boxStyle={"info"} />
                         <DivisionsBox division={"aventyrarscouter"} boxStyle={"info"} />
                         <DivisionsBox division={"familjescouter"} boxStyle={"info"} />
                     </div>

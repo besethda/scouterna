@@ -15,15 +15,15 @@ import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItems = [
   "spararscouter",
-  "upptackascouter",
-  "utmanare",
+  "upptackarscouter",
+  "utmanarscouter",
   "aventyrarscouter",
   "familjescouter",
 ];
 const headDescriptions = [
   "spararscouter",
-  "upptackascouter",
-  "utmanare",
+  "upptackarscouter",
+  "utmanarscouter",
   "aventyrarscouter",
   "familjescouter",
 ]
@@ -135,7 +135,7 @@ const Groups = ({
         </section>
       </main>
     );
-  } else if (singleGroup === "upptackascouter") {
+  } else if (singleGroup === "upptackarscouter") {
     return (
       <main>
         <Breadcrumbs />
@@ -215,7 +215,7 @@ const Groups = ({
         </section>
       </main>
     );
-  } else if (singleGroup === "utmanare") {
+  } else if (singleGroup === "utmanarscouter") {
     return (
       <main>
         <Breadcrumbs />

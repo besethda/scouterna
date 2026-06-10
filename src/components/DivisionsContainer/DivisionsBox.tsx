@@ -4,7 +4,7 @@ import Image from "next/image"
 import useMessages from "@/hook/useMessages"
 import Link from "next/link"
 
-type divisionName = "spararscouter" | "upptackascouter" | "utmanare" | "aventyrarscouter" | "familjescouter"
+type divisionName = "spararscouter" | "upptackarscouter" | "utmanarscouter" | "aventyrarscouter" | "familjescouter"
 
 const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
   { division: divisionName, imageUrl?: string, boxStyle: string }) => {
@@ -12,8 +12,8 @@ const DivisionsBox = ({ division, imageUrl, boxStyle = "basic" }:
   const messages = useMessages()
   const colorReference = {
     spararscouter: ["border-green", "bg-green-opaque"],
-    upptackascouter: ["border-lightBlue", "bg-lightBlue-opaque"],
-    utmanare: ["border-pink", "bg-pink-opaque"],
+    upptackarscouter: ["border-lightBlue", "bg-lightBlue-opaque"],
+    utmanarscouter: ["border-pink", "bg-pink-opaque"],
     aventyrarscouter: ["border-orange", "bg-orange-opaque"],
     familjescouter: ["border-purple", "bg-purple-opaque"]
   }
