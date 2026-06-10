@@ -27,10 +27,7 @@ const Scoutlife = () => {
     }
   ]
 
-/*
 
-
-*/ 
   return (
     <>
 
@@ -59,7 +56,7 @@ const Scoutlife = () => {
             ))}
           </div>
           <div className="">
-            <ImageCard image="/images/DSCF3070.jpg" imageTitle="Image" pin="pink" text="" section="scoutLife" page="scout-life" />
+            <ImageCard image="/images/DSCF3070.jpg" imageTitle="text" pin="pink" text="" section="scoutLife" page="scout-life" />
           </div>
         </div>
       </div>
