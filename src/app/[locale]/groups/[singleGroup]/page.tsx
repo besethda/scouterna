@@ -59,61 +59,62 @@ const Groups = async ({
 
   if (singleGroup === "spararscouter") {
     return (
-      <main>
+      <main className="max-w-360 mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1 logoTopRight />
-        <section className="w-full flex flex-col bg-bg-white px-4 lg:px-22 rounded-3xl shadow-xl">
-          <div className="md:flex md:gap-5 lg:gap-10">
-            <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
-              <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
-                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+          <div className="px-4 lg:px-22">
+          <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
+            <div className="md:flex md:gap-5 lg:gap-10">
+              <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-15 ">
+                <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
+                  <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                    <ContentSection
+                      sectionLayout={["t", "p"]}
+                      page="sjohumlornaSpårarscouter"
+                      background={"blue"}
+                      padding={"none"}
+                      child={true}
+                    />
+                  </div>
+                  <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                    <ImageCard
+                      imageTitle="sjohumlorna_title"
+                      image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
+                      section="division"
+                      page="group"
+                      text=""
+                      pin="red"
+                    />
+                  </div>
+                </div>
+                <ContentSection
+                  sectionLayout={["t", "p"]}
+                  page="sjohumlornaAge"
+                  background={"blue"}
+                  padding={"none"}
+                  child={true}
+                />
+                <div className="flex flex-col pb-4 w-full">
+                  <ContentSection
+                    sectionLayout={["t"]}
+                    page="sjohumlorMeeting"
+                    background={"blue"}
+                    padding={"none"}
+                    child={true}
+                  />
+                  <div className="">
+                    <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
+                    <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
+                  </div>
                   <ContentSection
                     sectionLayout={["t", "p"]}
-                    page="sjohumlornaSpårarscouter"
+                    page="sjohumlorPlace"
                     background={"blue"}
                     padding={"none"}
                     child={true}
                   />
                 </div>
-                <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
-                  <ImageCard
-                    imageTitle="spararscouter_title"
-                    image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
-                    section="division"
-                    page="group"
-                    text=""
-                    pin="red"
-                  />
-                </div>
-              </div>
-              <ContentSection
-                sectionLayout={["t", "p"]}
-                page="sjohumlornaAge"
-                background={"blue"}
-                padding={"none"}
-                child={true}
-              />
-              <div className="flex flex-col pb-4 w-full">
-                <ContentSection
-                  sectionLayout={["t"]}
-                  page="sjohumlorMeeting"
-                  background={"blue"}
-                  padding={"none"}
-                  child={true}
-                />
-                <div className="">
-                  <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
-                  <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
-                </div>
-                <ContentSection
-                  sectionLayout={["t", "p"]}
-                  page="sjohumlorPlace"
-                  background={"blue"}
-                  padding={"none"}
-                  child={true}
-                />
-              </div>
-              <div className="
+                <div className="
               [&_button]:border 
             [&_button]:border-green
             [&_button]:bg-green-opaque 
@@ -123,28 +124,28 @@ const Groups = async ({
               [&_button]:py-3
             [&_button]:hover:bg-green-opaque
               [&_button]:hover:brightness-102"
-              >
-                <a
-                  href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
-                  target="_blank"
-                  className="px-0"
                 >
-                  <CTABtn text={messages?.sjohumlorButton} />
-                </a>
+                  <a
+                    href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Sparare-20211.pdf"
+                    target="_blank"
+                    className="px-0"
+                  >
+                    <CTABtn text={messages?.sjohumlorButton} />
+                  </a>
+                </div>
+              </div>
+              <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
+                <ImageCard
+                  imageTitle="spararscouter_title"
+                  image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
+                  section="division"
+                  page="group"
+                  text=""
+                  pin="red"
+                />
               </div>
             </div>
-            <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
-              <ImageCard
-                imageTitle="spararscouter_title"
-                image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
-                section="division"
-                page="group"
-                text=""
-                pin="red"
-              />
-            </div>
-          </div>
-        </section>
+          </section>
         <section className="bg-white w-full lg:max-w-430 flex md:flex-row flex-col lg:px-22 px-4 mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
           <div className="w-full py-2 lg:pt-12 md:pb-12">
             <ContentSection
@@ -173,65 +174,66 @@ const Groups = async ({
             />
           </div>
         </section>
-      </main>
-    );
-  } else if (singleGroup === "upptackarscouter") {
+        </div>
+      </main> );
+        } else if (singleGroup === "upptackarscouter") {
     return (
-      <main>
+      <main className="max-w-360 mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1 logoTopRight />
-        <section className="w-full flex flex-col bg-bg-white px-4 lg:px-22 rounded-3xl shadow-xl">
-          <div className="md:flex md:gap-5 lg:gap-10">
-            <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
-              <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
-                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+        <div className="px-4 lg:px-22">
+          <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
+            <div className="md:flex md:gap-5 lg:gap-10">
+              <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-15">
+                <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
+                  <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                    <ContentSection
+                      sectionLayout={["t", "p"]}
+                      page="kaparnaUpptäckarscouter"
+                      background={"blue"}
+                      padding={"5"}
+                      child={true}
+                    />
+                  </div>
+                  <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                    <ImageCard
+                      imageTitle="kaparna_title"
+                      image={urlFor(kaparna.groups.image.asset._ref).url()}
+                      section="division"
+                      page="group"
+                      text=""
+                      pin="pink"
+                    />
+                  </div>
+                </div>
+                <ContentSection
+                  sectionLayout={["t", "p"]}
+                  page="kaparnaAge"
+                  background={"blue"}
+                  padding={"3"}
+                  child={true}
+                />
+                <div className="flex flex-col gap-4 justify-center pb-4">
+                  <ContentSection
+                    sectionLayout={["t"]}
+                    page="kaparnaMeeting"
+                    background={"blue"}
+                    padding={"5"}
+                    child={true}
+                  />
+                  <div className="">
+                    <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
+                    <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
+                  </div>
                   <ContentSection
                     sectionLayout={["t", "p"]}
-                    page="kaparnaUpptäckarscouter"
+                    page="kaparnaPlace"
                     background={"blue"}
                     padding={"5"}
                     child={true}
                   />
                 </div>
-                <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
-                  <ImageCard
-                    imageTitle="upptackarscouter_title"
-                    image={urlFor(kaparna.groups.image.asset._ref).url()}
-                    section="division"
-                    page="group"
-                    text=""
-                    pin="pink"
-                  />
-                </div>
-              </div>
-              <ContentSection
-                sectionLayout={["t", "p"]}
-                page="kaparnaAge"
-                background={"blue"}
-                padding={"3"}
-                child={true}
-              />
-              <div className="flex flex-col gap-4 justify-center pb-4">
-                <ContentSection
-                  sectionLayout={["t"]}
-                  page="kaparnaMeeting"
-                  background={"blue"}
-                  padding={"5"}
-                  child={true}
-                />
-                <div className="">
-                  <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
-                  <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
-                </div>
-                <ContentSection
-                  sectionLayout={["t", "p"]}
-                  page="kaparnaPlace"
-                  background={"blue"}
-                  padding={"5"}
-                  child={true}
-                />
-              </div>
-              <div className="
+                <div className="
               [&_button]:border 
             [&_button]:border-lightBlue
             [&_button]:bg-lightBlue-opaque
@@ -241,27 +243,27 @@ const Groups = async ({
               [&_button]:py-3
             [&_button]:hover:bg-lightBlue-opaque
               [&_button]:hover:brightness-102"
-              >
-                <a
-                  href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
-                  target="_blank"
                 >
-                  <CTABtn text={messages?.kaparnaButton} />
-                </a>
+                  <a
+                    href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Upptackare-20211.pdf"
+                    target="_blank"
+                  >
+                    <CTABtn text={messages?.kaparnaButton} />
+                  </a>
+                </div>
+              </div>
+              <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
+                <ImageCard
+                  imageTitle="upptackarscouter_title"
+                  image={urlFor(kaparna.groups.image.asset._ref).url()}
+                  section="division"
+                  page="group"
+                  text=""
+                  pin="pink"
+                />
               </div>
             </div>
-            <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
-              <ImageCard
-                imageTitle="upptackarscouter_title"
-                image={urlFor(kaparna.groups.image.asset._ref).url()}
-                section="division"
-                page="group"
-                text=""
-                pin="pink"
-              />
-            </div>
-          </div>
-        </section>
+          </section>
         <section className="bg-white w-full lg:max-w-430 flex md:flex-row flex-col lg:px-22 px-4 mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
           <div className="w-full py-2 lg:pt-12 md:pb-12">
             <ContentSection
@@ -292,64 +294,65 @@ const Groups = async ({
           </div>
         </section>
       </main>
-    );
+    )
   } else if (singleGroup === "utmanarscouter") {
     return (
-      <main>
+      <main className="max-w-360 mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1 logoTopRight />
-        <section className="w-full flex flex-col bg-bg-white px-4 lg:px-22 rounded-3xl shadow-xl">
-          <div className="md:flex md:gap-5 lg:gap-10">
-            <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
-              <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
-                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
-                  <ContentSection
-                    sectionLayout={["t", "p"]}
-                    page="utmanarscouter"
-                    background={"blue"}
-                    padding={"none"}
-                    child={true}
-                  />
-                </div>
-                <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
-                  <ImageCard
-                    imageTitle="utmanarscouter_title"
-                    image={urlFor(utmanare.groups.image.asset._ref).url()}
-                    section="division"
-                    page="group"
-                    text=""
-                    pin="red"
-                  />
-                </div>
-              </div>
-              <ContentSection
-                sectionLayout={["t", "p"]}
-                page="utmanareAge"
-                background={"blue"}
-                padding={"3"}
-                child={true}
-              />
-              <div className="flex flex-col gap-4 justify-center pb-4">
-                <ContentSection
-                  sectionLayout={["t"]}
-                  page="utmanareMeeting"
-                  background={"blue"}
-                  padding={"5"}
-                  child={true}
-                />
-                <div className="">
-                  <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
-                  <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
+        <div className="px-4 lg:px-22">
+          <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
+            <div className="md:flex md:gap-5 lg:gap-10">
+              <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-15">
+                <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
+                  <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                    <ContentSection
+                      sectionLayout={["t", "p"]}
+                      page="sjohumlornaSpårarscouter"
+                      background={"blue"}
+                      padding={"none"}
+                      child={true}
+                    />
+                  </div>
+                  <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                    <ImageCard
+                      imageTitle="utmanarscouter_title"
+                      image={urlFor(utmanare.groups.image.asset._ref).url()}
+                      section="division"
+                      page="group"
+                      text=""
+                      pin="red"
+                    />
+                  </div>
                 </div>
                 <ContentSection
                   sectionLayout={["t", "p"]}
-                  page="utmanarePlace"
+                  page="utmanareAge"
                   background={"blue"}
-                  padding={"5"}
+                  padding={"3"}
                   child={true}
                 />
-              </div>
-              <div className="
+                <div className="flex flex-col gap-4 justify-center pb-4">
+                  <ContentSection
+                    sectionLayout={["t"]}
+                    page="utmanareMeeting"
+                    background={"blue"}
+                    padding={"5"}
+                    child={true}
+                  />
+                  <div className="">
+                    <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
+                    <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
+                  </div>
+                  <ContentSection
+                    sectionLayout={["t", "p"]}
+                    page="utmanarePlace"
+                    background={"blue"}
+                    padding={"5"}
+                    child={true}
+                  />
+                </div>
+                <div className="
               [&_button]:border 
             [&_button]:border-pink
             [&_button]:bg-pink-opaque 
@@ -359,27 +362,27 @@ const Groups = async ({
               [&_button]:py-3
             [&_button]:hover:bg-pink-opaque
               [&_button]:hover:brightness-104"
-              >
-                <a
-                  href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
-                  target="_blank"
                 >
-                  <CTABtn text={messages?.utmanareButton} />
-                </a>
+                  <a
+                    href="https://www.scouterna.se/scout-ledare-kar/leda-scouting/program/utmanare/"
+                    target="_blank"
+                  >
+                    <CTABtn text={messages?.utmanareButton} />
+                  </a>
+                </div>
+              </div>
+              <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
+                <ImageCard
+                  imageTitle="utmanare_title"
+                  image={urlFor(utmanare.groups.image.asset._ref).url()}
+                  section="division"
+                  page="group"
+                  text=""
+                  pin="red"
+                />
               </div>
             </div>
-            <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
-              <ImageCard
-                imageTitle="utmanarscouter_title"
-                image={urlFor(utmanare.groups.image.asset._ref).url()}
-                section="division"
-                page="group"
-                text=""
-                pin="red"
-              />
-            </div>
-          </div>
-        </section>
+          </section>
         <section className="bg-white w-full lg:max-w-430 flex md:flex-row flex-col lg:px-22 px-4 mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
         <div className="w-full py-2 lg:pt-12 md:pb-12">
             <ContentSection
@@ -413,61 +416,62 @@ const Groups = async ({
     );
   } else if (singleGroup === "aventyrarscouter") {
     return (
-      <main>
+      <main className="max-w-360 mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1 logoTopRight />
-        <section className="w-full flex flex-col  bg-bg-white px-4 lg:px-22 rounded-3xl shadow-xl">
-          <div className="md:flex md:gap-5 lg:gap-10">
-            <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
-              <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
-                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+        <div className="px-4 lg:px-22">
+          <section className="w-full flex flex-col  bg-bg-white px-4 rounded-3xl shadow-xl">
+            <div className="md:flex md:gap-5 lg:gap-10">
+              <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-15">
+                <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
+                  <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                    <ContentSection
+                      sectionLayout={["t", "p"]}
+                      page="äventyrarscouter"
+                      background={"blue"}
+                      padding={"5"}
+                      child={true}
+                    />
+                  </div>
+                  <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
+                    <ImageCard
+                      imageTitle="konvojen_title"
+                      image={urlFor(konvojen?.groups?.image.asset._ref).url()}
+                      section="division"
+                      page="group"
+                      text=""
+                      pin="dark_red"
+                    />
+                  </div>
+                </div>
+                <ContentSection
+                  sectionLayout={["t", "p"]}
+                  page="konvojenAge"
+                  background={"blue"}
+                  padding={"3"}
+                  child={true}
+                />
+                <div className="flex flex-col gap-4 justify-center pb-4">
+                  <ContentSection
+                    sectionLayout={["t"]}
+                    page="konvojenMeeting"
+                    background={"blue"}
+                    padding={"5"}
+                    child={true}
+                  />
+                  <div className="">
+                    <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? konvojen?.groups?.day_sv : konvojen.groups.day_en}`}</div>
+                    <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? konvojen?.groups?.place_sv : konvojen.groups.place_en}`}</div>
+                  </div>
                   <ContentSection
                     sectionLayout={["t", "p"]}
-                    page="äventyrarscouter"
+                    page="konvojenPlace"
                     background={"blue"}
                     padding={"5"}
                     child={true}
                   />
                 </div>
-                <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
-                  <ImageCard
-                    imageTitle="aventyrarscouter_title"
-                    image={urlFor(konvojen?.groups?.image.asset._ref).url()}
-                    section="division"
-                    page="group"
-                    text=""
-                    pin="dark_red"
-                  />
-                </div>
-              </div>
-              <ContentSection
-                sectionLayout={["t", "p"]}
-                page="konvojenAge"
-                background={"blue"}
-                padding={"3"}
-                child={true}
-              />
-              <div className="flex flex-col gap-4 justify-center pb-4">
-                <ContentSection
-                  sectionLayout={["t"]}
-                  page="konvojenMeeting"
-                  background={"blue"}
-                  padding={"5"}
-                  child={true}
-                />
-                <div className="">
-                  <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? konvojen?.groups?.day_sv : konvojen.groups.day_en}`}</div>
-                  <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? konvojen?.groups?.place_sv : konvojen.groups.place_en}`}</div>
-                </div>
-                <ContentSection
-                  sectionLayout={["t", "p"]}
-                  page="konvojenPlace"
-                  background={"blue"}
-                  padding={"5"}
-                  child={true}
-                />
-              </div>
-              <div className="
+                <div className="
               [&_button]:border 
             [&_button]:border-orange
             [&_button]:bg-orange-opaque
@@ -477,27 +481,27 @@ const Groups = async ({
               [&_button]:py-3
             [&_button]:hover:bg-orange-opaque
               [&_button]:hover:brightness-102"
-              >
-                <a
-                  href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
-                  target="_blank"
                 >
-                  <CTABtn text={messages?.konvojenButton} />
-                </a>
+                  <a
+                    href="https://media.scoutcontent.se/uploads/2021/02/Markesaffisch-A3-Aventyrare-20211.pdf"
+                    target="_blank"
+                  >
+                    <CTABtn text={messages?.konvojenButton} />
+                  </a>
+                </div>
+              </div>
+              <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
+                <ImageCard
+                  imageTitle="aventyrarscouter_title"
+                  image={urlFor(konvojen?.groups?.image.asset._ref).url()}
+                  section="division"
+                  page="group"
+                  text=""
+                  pin="dark_red"
+                />
               </div>
             </div>
-            <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
-              <ImageCard
-                imageTitle="aventyrarscouter_title"
-                image={urlFor(konvojen?.groups?.image.asset._ref).url()}
-                section="division"
-                page="group"
-                text=""
-                pin="dark_red"
-              />
-            </div>
-          </div>
-        </section>
+          </section>
         <section className="bg-white w-full lg:max-w-430 flex md:flex-row flex-col lg:px-22 px-4 mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl">
         <div className="w-full py-2 lg:pt-12 md:pb-12">
             <ContentSection
@@ -531,70 +535,71 @@ const Groups = async ({
     );
   } else if (singleGroup === "familjescouter") {
     return (
-      <main>
+      <main className="max-w-360 mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 logoTopRight />
-        <section className="w-full flex flex-col  bg-bg-white rounded-3xl shadow-xl">
-          <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
-            <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 md:items-start ">
-              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
-                <ContentSection
-                  sectionLayout={["t", "p", "p", "p"]}
-                  page="BarnOchVuxnaTillsammans"
-                  background={"blue"}
-                  padding={"5"}
-                  child={true}
-                />
+        <div className="px-4 lg:px-22 pb-30">
+          <div className="flex flex-col lg:max-w-430 w-full px-4 mx-auto bg-bg-white rounded-3xl shadow-xl">
+            <div className="flex flex-col lg:max-w-430 w-full px-4 mx-auto py-10 pb-10 lg:pb-15 ">
+              <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 md:items-start ">
+                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                  <ContentSection
+                    sectionLayout={["t", "p", "p", "p"]}
+                    page="BarnOchVuxnaTillsammans"
+                    background={"blue"}
+                    padding={"5"}
+                    child={true}
+                  />
+                </div>
+                <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+                  <ImageCard
+                    imageTitle="smattarne_title"
+                    image={urlFor(smattarne?.groups?.image.asset._ref).url()}
+                    section="division"
+                    page="group"
+                    text=""
+                    pin="red"
+                  />
+                </div>
               </div>
-              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
-                <ImageCard
-                  imageTitle="familjescouter_title"
-                  image={urlFor(smattarne?.groups?.image.asset._ref).url()}
-                  section="division"
-                  page="group"
-                  text=""
-                  pin="red"
-                />
+              <div className="flex flex-col gap-4 xl:gap-55 items-center lg:flex-row md:items-start">
+                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                  <ContentSection
+                    sectionLayout={["t", "p", "p"]}
+                    page="ParumMagna"
+                    background={"blue"}
+                    padding={"3"}
+                    child={true}
+                  />
+                </div>
+                <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
+                  <ImageCard
+                    imageTitle="familjescouter_photoTitle"
+                    image={familyImageSrc}
+                    section="division"
+                    page="group"
+                    text=""
+                    pin="red"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 xl:gap-55 items-center lg:flex-row md:items-start">
-              <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+              <div className="flex flex-col gap-4 justify-center pb-4">
                 <ContentSection
                   sectionLayout={["t", "p", "p"]}
-                  page="ParumMagna"
+                  page="Familjescoutsagor"
+                  background={"blue"}
+                  padding={"3"}
+                  child={true}
+                />
+                <ContentSection
+                  sectionLayout={["t", "p"]}
+                  page="Märken"
                   background={"blue"}
                   padding={"3"}
                   child={true}
                 />
               </div>
-              <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
-                <ImageCard
-                  imageTitle="familjescouter_photoTitle"
-                  image={familyImageSrc}
-                  section="division"
-                  page="group"
-                  text=""
-                  pin="red"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-4 justify-center pb-4">
-              <ContentSection
-                sectionLayout={["t", "p", "p"]}
-                page="Familjescoutsagor"
-                background={"blue"}
-                padding={"3"}
-                child={true}
-              />
-              <ContentSection
-                sectionLayout={["t", "p"]}
-                page="Märken"
-                background={"blue"}
-                padding={"3"}
-                child={true}
-              />
-            </div>
-            <div className="
+              <div className="
             [&_button]:border 
             [&_button]:border-purple
           [&_button]:bg-purple-opaque
@@ -605,18 +610,19 @@ const Groups = async ({
             [&_button]:hover:bg-purple-opaque
             [&_button]:hover:hover:brightness-104
           ">
-              <a
-                href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
-                target="_blank"
-              >
-                <CTABtn text={messages?.familjescouterButton} />
-              </a>
+                <a
+                  href="https://media.scoutcontent.se/uploads/2021/03/markbart-2020.pdf"
+                  target="_blank"
+                >
+                  <CTABtn text={messages?.familjescouterButton} />
+                </a>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
       </main >
     )
   }
-};
+}
 
 export default Groups;
