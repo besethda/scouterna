@@ -35,12 +35,12 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false, logoTopRight = false 
               <div className={`md:hidden flex 
               ${logoTopRight 
                 ? "absolute top-6 right-6 min-h-12.5 min-w-12.5" 
-                : "relative min-h-12.5 min-w-12.5 md:min-h-50 md:min-w-"} `}>
+                : "relative min-h-12.5 min-w-12.5 md:min-h-50 md:min-w-50"} `}>
                 <Image src={image} fill alt={image} />
               </div>
 
             </div>
-            <p className="font-albert font-normal text-[16px] md:text-[20px] tracking-[3%] text-text-black pt-1.5">
+            <p className="font-albert font-normal text-[16px] md:text-h5-desktop tracking-[3%] text-text-black pt-1.5">
               {messages?.[sectionTitle as string]?.text}
             </p>
           </div>
@@ -57,7 +57,7 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false, logoTopRight = false 
                 <Image src={underlineAlla} alt="Underline" width={70} height={30} className="absolute bottom-0.5 w-full max-h-1.5 object-cover left-2.5" />
               </div>
             </div>
-            <p className="font-albert font-normal text-[16px] md:text-[20px] tracking-[3%] text-text-black pt-1.5">
+            <p className="font-albert font-normal text-[16px] md:text-h5-desktop tracking-[3%] text-text-black pt-1.5">
               {messages?.[sectionTitle as string]?.text02}
             </p>
          </div>
