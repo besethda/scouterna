@@ -2,14 +2,16 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { urlFor } from '@/sanity/lib/image';
 
 interface OptimisterProps {
-    title: string;
-    text: string;
+    title: {en:string, sv:string};
+    text: {en:string, sv:string};
     images: any[];
+    locale:string
 }
 
-const Optimister = ({ title, text, images }: OptimisterProps) => {
+const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
     const middleImageRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -25,8 +27,8 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
         <div className='w-full pb-6 pt-6 lg:max-w-430 lg:px-22 px-4 overflow-hidden'>
             <div className=''>
                 <div className='flex flex-col gap-2 py-4 lg:w-120'>
-                    <h2 className='text-h2 font-fraunces font-bold text-primary lg:text-h2-desktop'>{title}</h2>
-                    <p className='text-body text-text-black font-albert lg:text-body-desktop'>{text}</p>
+                    <h2 className='text-h2 font-fraunces font-bold text-primary lg:text-h2-desktop'>{locale === "sv" ? title.sv : title.en}</h2>
+                    <p className='text-body text-text-black font-albert lg:text-body-desktop'>{locale === "sv" ? text.sv : text.en}</p>
                 </div>
                 <div
                     ref={middleImageRef}
@@ -40,8 +42,8 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
                             lg:w-[33vw] lg:flex-1 lg:h-52 lg:snap-none'
                         >
                             <Image
-                                src={imgbox}
-                                alt={"images"}
+                                src={urlFor(imgbox.asset._ref).url()}
+                                alt={imgbox.alt}
                                 fill
                                 className="object-cover"
                                 priority={index === 1}

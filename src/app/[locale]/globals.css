@@ -6,6 +6,7 @@
 
     --color-bg-white: #FFFFFF;
     --color-bg-blue: #D6EAF8;
+    --color-bg-accent: #FDB715;
 
     --color-text-black: #3B3A3A;
     --color-text-gray: #717D7E;
@@ -27,6 +28,8 @@
     --color-lightYellow: #EBC86C;
 
     --color-btn: #FF9D2D;
+    --color-primaryBtn: #003660;
+    --color-form: #B3B3B3;
 
 
     /* Font */
@@ -34,6 +37,7 @@
     --font-varela: "Albert Sans", sans-serif;
     --font-albert: "Albert Sans", sans-serif;
     --font-public: "Albert Sans", sans-serif;
+    --font-gochi: "Gochi Hand", sans-serif;
 
 
     /* Dektop */
@@ -105,12 +109,16 @@
 
 }
 
+body {
+    background-color: #D6EAF8;
+}
+
 
 
 .contact-logo img[alt="logo"] {
-  width: 30px !important;
-  height: auto !important;
-  min-width: 30px !important;
+    width: 30px !important;
+    height: auto !important;
+    min-width: 30px !important;
 }
 
 @media (min-width: 2000px) {

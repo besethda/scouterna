@@ -70,8 +70,9 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string,
-    title02: string, 
-    text02: string
+    title02: string,
+    text02: string,
+    span: string
   };
   division: {
     sjohumlorna_title: string,
@@ -104,6 +105,7 @@ export type MessagesEngType = {
     smattarne_time: string,
     smattarne_place: string,
     smattarne_paragraph: string,
+    smattarne_photoTitle: string,
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -173,7 +175,7 @@ export type MessagesEngType = {
       kaparna: string,
       utmanare: string,
       konvojen: string,
-      smattarne:string,
+      smattarne: string,
       join: string,
       "become-a-scout": string,
       faq: string,
@@ -181,7 +183,7 @@ export type MessagesEngType = {
     }
   },
   faqCard: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string
   },
@@ -227,7 +229,6 @@ export type MessagesEngType = {
     cabins: string,
     myset: string,
     ruffen: string,
-    members: string,
     information: string,
     safety: string,
     contact: string,
@@ -298,8 +299,8 @@ export type MessagesEngType = {
   safetyCard: {
     headline: string,
     title: string,
-    text: string, 
-    button: string, 
+    text: string,
+    button: string,
     buttonMobile: string
   },
   safetyBtn: {
@@ -333,14 +334,18 @@ export type MessagesEngType = {
     text03: string
   },
   joinPage: {
+    head: string,
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   interestBtn: {
+    head: string,
     title: string,
     text: string,
-    buttonText: string
+    buttonText: string,
+    photoTitle: string
   },
   form: {
     title: string,
@@ -393,27 +398,27 @@ export type MessagesEngType = {
   familjescouterButton: string
 
   GroupSjohumlorna: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
   GroupKaparna: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
   GroupKonvojen: {
-    headline: string, 
+    headline: string,
     title: string,
-    text: string, 
+    text: string,
   },
   GroupUtmanare: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
   GroupFamily: {
-    headline: string, 
+    headline: string,
     title: string,
     text: string,
   },
@@ -579,6 +584,7 @@ export const En: MessagesEngType = {
     smattarne_time: "18:00",
     smattarne_place: "Ruffen",
     smattarne_paragraph: "Småttarne is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
+    smattarne_photoTitle: "The Bears Parum & Magna",
     scouts_title: "Scouts",
     scouts_paragraph: "We have age-separated groups from the age of 8.",
     family_title: "Småttarne",
@@ -598,8 +604,9 @@ export const En: MessagesEngType = {
     headline: "Become a Scout",
     title: "The waves are waiting",
     text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
-    title02: "HSS welcomes everyone", 
-    text02: "No matter who you are or your level of experience, there is a place for you here. Join us as a Scout, or get involved as a parent or Scout leader."
+    title02: "HSS welcomes",
+    text02: "No matter who you are or your level of experience, there is a place for you here. Join us as a Scout, or get involved as a parent or Scout leader.",
+    span: "everyone"
   },
   homeHero: {
     hero_title: "Hässelby Strand Sea Scouts",
@@ -701,25 +708,24 @@ export const En: MessagesEngType = {
     gdpr: "HSS | GDPR"
   },
   description: {
-    history: "The history page",
-    "become-a-scout": "Become a scout page",
-    faq: "The FAQ page",
-    "groups": "The groups page",
-    sjohumlorna: "The sjöhumlorna page",
-    kaparna: "The kaparna page",
-    konvojen: "The konvojen page",
-    utmanare: "The utmanare page",
-    smattarne: "The småttarne page",
-    lifestyle: "The lifestyle page",
-    boats: "The boats page",
-    cabins: "The cabins page",
-    myset: "The myset page",
-    ruffen: "The ruffen page",
-    members: "The members page",
-    information: "The members information page",
-    safety: "The life jacket policy page",
-    contact: "The contact page",
-    gdpr: "The GDPR page"
+    history: "The history of HSS Scouterna in Stockholm - from the early years to our very own boat 🚤 | Discover our camps, traditions, and adventures on the water | Learn more",
+    "become-a-scout": "Become a scout at Hässelby Strands Sjöscouter (HSS) 🚤🏕️ | Discover scout life  | From age 8 to adult: scout, leader, or engaged parent | No experience needed | Register your interest",
+    faq: "FAQ - Frequently asked questions about becoming a scout and member of HSS 🏕️🚤 | Find your answers here",
+    "groups": "Our age groups at Hässelby Strands Sjöscouter (HSS) 🚤🏕️ | 5 groups: Under 8 (with parent or adult), 8-9, 10-11, 12-14, and 15+ | Age-appropriate activities, safe environment, trained leaders | Find your group here",
+    sjohumlorna: "Sjöhumlorna - ages 8-9 at Hässelby Strands Sjöscouter (HSS) 🐝🏕️ | Mondays at Ruffen, Hässelby Strandbad | Discover badges: lighting a lantern, popcorn on a storm stove, friendship, and nature | Trained leaders with Trygga Möten certification | Start your scouting journey here",
+    kaparna: "Kaparna - Discoverer Scouts ages 10-11 at Hässelby Strands Sjöscouter (HSS) 🚤🏕️ | More sailing, longer archipelago trips, and navigation basics | Take more responsibility - practical tasks from knife/axe to first aid and cooking | Friendship for life | Tuesdays at Ruffen | Become a Kapare here",
+    konvojen: "Konvojen - Adventurer Scouts ages 12-14 at Hässelby Strands Sjöscouter (HSS) 🚤🏕️ | Sail larger dinghies, plan your own hikes with the leaders | Learn to lead, make decisions and handle challenges - at sea and on land | Collaborate, try different roles and make your own choices | Thursdays at Ruffen | Become an Adventurer here",
+    utmanare: "Utmanare - ages 15+ at Hässelby Strands Sjöscouter (HSS) 🚤🌍 | The oldest scouts: run your own projects, participate in international camps, and take leadership roles for younger scouts | Scouting as a way to shape yourself and your world | 10 challenges - 2 individual, 8 together | Meet Tuesdays or Thursdays at Ruffen | Become an Utmanare here",
+    smattarne: "Småttarne - Family Scouting for children under 8 at Hässelby Strands Sjöscouter (HSS) 🐻🏕️ | Children and adults together - play, adventure and fun activities with the bears Parum & Magna | Stories, imagination and own badges | Parent, grandparent or other close adult | Strengthen your relationship through scouting | Welcome to Småttarne",
+    lifestyle: "Scout life at Hässelby Strands Sjöscouter (HSS) - life as a sea scout 🚤🏕️🌊 | The waves are waiting: adventure, community and freedom on the sea | Naturally exciting, self-confidence and friends for life | Seamanship, nature skills, outdoor knowledge, camps and activities | Discover scout life here",
+    boats: "HSS Boats - Optimists, 2-kronor and Keelboats at Hässelby Strands Sjöscouter 🚤⛵ | Optimist: perfect beginner boat - learn sailing basics safely and fun | 2-kronor: fast and fun - requires teamwork for training and cruising | Keelboats: stable and safe - for education and calm sailing",
+    cabins: "Our scout cabins - Myset and Ruffen at Hässelby Strands Sjöscouter (HSS) 🏕️🏠 | Myset: beautifully located, perfect for campfires and hikes - available for rent | Ruffen: at Hässelby Strandbad - meeting place for Sjöhumlorna, Kaparna, Konvojen & Utmanarna - also home to our Optimist dinghies",
+    myset: "Myset - HSS's scout cabin for campfires and hikes at Hässelby Strands Sjöscouter 🏕️🔥 | Here you'll find address, history, environment description and directions | A beautifully located cabin perfect for adventures - available for rent | Discover Myset and book your next hike here",
+    ruffen: "Ruffen - HSS's scout cabin at Hässelby Strands Sjöscouter 🏕️ | Here you'll find location (address), directions, and four meeting places | Discover our different gathering spots for activities, campfires and hikes | Find your way to Myset here",
+    information: "Information at Hässelby Strands Sjöscouter (HSS) 📋🏕️ | Safety rules on the water, FAQ, association meeting minutes, and **Scoutnet** - our common membership system",
+    safety: "HSS Life Jacket Policy - safety on the water 🚤🦺 | When and how should life jackets be used? Rules for children, youth and leaders | Safety first at Hässelby Strands Sjöscouter | Read our policy here",
+    contact: "Contact Hässelby Strands Sjöscouter (HSS) 📧🏕️ | Email address and Bankgiro information | Questions about scouting or membership? Reach out to us today",
+    gdpr: "GDPR - Hässelby Strands Sjöscouter's data protection policy 🔒 | How we collect, store and protect your personal information | Your privacy and security matter to us | Read about your rights here"
   },
   groupsCard: {
     headline: "Groups",
@@ -822,7 +828,7 @@ export const En: MessagesEngType = {
     p4: "The member data does remain in Scoutnet, however, as long as the person does not have an active membership, only a few employees at the National Scout Office can access the information.",
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
- email: {
+  email: {
     "t0": "Email",
     "s0": "Email to kåren",
     "p0": "info@hss-scout.org",
@@ -879,36 +885,42 @@ export const En: MessagesEngType = {
     title02: "Membership Questions"
   },
   fragorSvar: [
-    { question: "Do we need to buy a scout uniform right away?",
-      answer: "No, you don’t need to buy a scout shirt straight away. It’s best to join for a few weeks first to make sure you want to continue with the scouts." 
+    {
+      question: "Do we need to buy a scout uniform right away?",
+      answer: "No, you don’t need to buy a scout shirt straight away. It’s best to join for a few weeks first to make sure you want to continue with the scouts."
     },
-    { question: "What kind of clothes do scouts usually wear?", 
-      answer: "A scout shirt, an HSS sweater, and durable trousers." 
+    {
+      question: "What kind of clothes do scouts usually wear?",
+      answer: "A scout shirt, an HSS sweater, and durable trousers."
     },
-    { question: "Are meetings always held outdoors?",
-      answer: "Usually yes, though in winter we sometimes meet indoors at our scout cabin Ruffen." 
+    {
+      question: "Are meetings always held outdoors?",
+      answer: "Usually yes, though in winter we sometimes meet indoors at our scout cabin Ruffen."
     },
-    { question: "How much does it cost to join the scouts?", 
-      answer: "It depends on your age and role. Ask your scout leader or send an email to info@hss-scout.org. For 2026 the fees are between 300-850 kr for scouts and between 50-180 kr for leaders." 
+    {
+      question: "How much does it cost to join the scouts?",
+      answer: "It depends on your age and role. Ask your scout leader or send an email to info@hss-scout.org. For 2026 the fees are between 300-850 kr for scouts and between 50-180 kr for leaders."
     },
-    { question: "Does the child need to have prior experience with sailing or scouting?", 
-      answer: "No previous experience in sailing or scouting is needed." 
+    {
+      question: "Does the child need to have prior experience with sailing or scouting?",
+      answer: "No previous experience in sailing or scouting is needed."
     },
-    { question: "We have become members—what happens now?", 
-      answer: "Your division leader will be in touch with information about the next steps. Welcome!" 
+    {
+      question: "We have become members—what happens now?",
+      answer: "Your division leader will be in touch with information about the next steps. Welcome!"
     },
   ],
   fragorSvar02: [
     {
       question: "Why do we have a scout uniform?",
-      answer:"The scout uniform is a way to show that we all belong to the Scouts. It creates community, strengthens our identity, and is a part of our symbolic framework. The scout uniform is used in various designs throughout the world, showing that we belong to a global movement." 
+      answer: "The scout uniform is a way to show that we all belong to the Scouts. It creates community, strengthens our identity, and is a part of our symbolic framework. The scout uniform is used in various designs throughout the world, showing that we belong to a global movement."
     },
-    { 
+    {
       question: "I am a new scout leader! Which training should I take first?",
       answer: `The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a> <br />
       After Safe Meetings, it is appropriate to take \"Leading Scouting\" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further. Read more about Leading <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Scouting here >> </a> <br />
       When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. 
-      <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>` 
+      <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>`
     },
     {
       question: "I have lost my invoice. What should I do?",
@@ -950,7 +962,7 @@ export const En: MessagesEngType = {
   safetyCard: {
     headline: "Safety",
     title: "HSS Life Jacket Policy",
-    text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF.", 
+    text: "To ensure that all scouts and their guardians receive clear instructions regarding the rules for life jacket use, the HSS board has developed a life jacket policy. A summarized version is available here. To read the life jacket policy in its entirety, please download the PDF.",
     button: "Download the life jacket policy as PDF",
     buttonMobile: "Download PDF"
   },
@@ -986,9 +998,11 @@ export const En: MessagesEngType = {
 
   },
   joinPage: {
+    head: "Take the step!",
     title: "Express Your Interest",
     text: "Future Scout, leader, or supportive parent? Start the adventure by expressing your interest!",
-    buttonText: "Join the Scouts"
+    buttonText: "Join the Scouts",
+    photoTitle: "Join the adventure!"
   },
   myset01: {
     t0: "Interested in renting Myset?",
@@ -1074,8 +1088,7 @@ export const En: MessagesEngType = {
   konvojenMeeting: {
     t0: "Section meetings",
     p0: "Day: Thursday",
-    p1: "Time: 18:00",
-    p2: "Location: Ruffen at Hässelby Strandbad.",
+    p1: "Location: Ruffen at Hässelby Strandbad.",
   },
   konvojenPlace: {
     t0: "Badges",
@@ -1110,27 +1123,27 @@ export const En: MessagesEngType = {
   familjescouterButton: "Discover All Our Scout Badges",
 
   GroupSjohumlorna: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Sjöhumlorna",
     text: "The young scouts discover sea life through games, singing, and small adventures by the water. Here, they learn to cooperate, tie their first knots, and feel at home in nature.",
   },
   GroupKaparna: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Kaparna",
     text: "At Kaparna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety",
   },
   GroupKonvojen: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Konvojen",
     text: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
   },
   GroupUtmanare: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Utmanare",
     text: "The oldest scouts run their own projects, attend international camps, and take on leadership roles for the younger members. Here, scouting becomes a way to shape both themselves and the world around them.",
   },
   GroupFamily: {
-    headline: "Groups", 
+    headline: "Groups",
     title: "Family Scouts",
     text: "Through Family Scouting, children under the age of eight, together with one or more adults, can experience scouting in a fun and playful way.",
   },
@@ -1143,9 +1156,11 @@ export const En: MessagesEngType = {
     text03: "Our keelboats are stable and secure, making them perfect for both education and calm sailing together."
   },
   interestBtn: {
-    title: "Want to join the Scouts?",
+    head: "Want to join the Scouts?",
+    title: "Express Your Interest",
     text: "If you are interested in joining HSS as a Scout, leader, or an engaged parent, you are welcome to submit your interest using our form.",
-    buttonText: "Join the Scouts"
+    buttonText: "Join the Scouts",
+    photoTitle: "Join the adventure!"
   },
   ruffenDivisions: {
     t0: "Group Meetings",

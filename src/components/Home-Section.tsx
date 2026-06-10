@@ -4,8 +4,14 @@ import Image from "next/image";
 import hood from '../../public/images/hood.jpg'
 import useMessages from "@/hook/useMessages";
 import CTABtn from '../components/CTA-button'
+import { urlFor } from "@/sanity/lib/image";
 
-const HomeSection = () => {
+interface stringObject {
+  image: string
+  alt:string
+}
+
+const HomeSection = ({image}:{image:stringObject}) => {
 
   const messages = useMessages()
 
@@ -23,7 +29,7 @@ const HomeSection = () => {
           </div>
           <div className="relative min-w-73.5 min-h-64.25">
             <Image
-              src={hood}
+              src={urlFor(image.image).url()}
               alt="HSS hood"
               fill
               className=" bg-white rounded-2xl object-cover " />
@@ -38,7 +44,7 @@ const HomeSection = () => {
         <section className="hidden md:flex flex-row px-22 py-10 gap-25 bg-(--bg-blue) md:pb-25 lg:mt-6 lg:max-w-430 ">
           <div className="relative aspect-video max-w-100  md:h-40 lg:h-60">
             <Image
-              src={hood}
+              src={urlFor(image.image).url()}
               alt="HSS hood"
               fill
               className="rounded-2xl object-cover" />

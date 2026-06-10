@@ -35,7 +35,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
 
             <div className="w-full lg:h-full lg:flex lg:justify-around lg:items-center lg:max-w-4xl lg:mx-auto xl:max-w-5xl 2xl:max-w-400">
 
-                <div className={`transition-all duration-500 ease-in-out ${isScroll ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'} xl:pr-20`}>
+                <div className={`transition-all duration-500 ease-in-out ${isScroll ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'} lg:-ml-10 hidden lg:block`}>
                     <Link href={messages?.path || "/sv"}>
                         <Image src={HSSlogo} alt="HSSlogo" width={80} height={80} className="opacity-80" />
                     </Link>
@@ -43,7 +43,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
 
                 <div className="bg-bg-blue flex justify-between text-base h-69px px-4 py-4 font-bold border-b border-lightGray lg:hidden items-center">
                     <div>
-                        <Link href="https://www.scouterna.se/" >
+                        <Link href="https://www.scouterna.se/" target="_blank">
                             <Image src="/blue-scoutLogo.svg" alt="scoutlogo" width={100} height={40} className="opacity-70 brightness-120" />
                         </Link>
                     </div>
