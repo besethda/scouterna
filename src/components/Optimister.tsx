@@ -34,12 +34,11 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
                     <h2 className='text-h2 font-fraunces font-bold text-primary lg:text-h2-desktop'>{locale === "sv" ? title.sv : title.en}</h2>
                     <p className='text-body text-text-black font-albert lg:text-body-desktop'>{locale === "sv" ? text.sv : text.en}</p>
                 </div>
-                <div className='w-full relative flex'>
-                    <div className='w-full h-full absolute z-20 flex justify-between items-center px-3 pointer-events-none'>
-                    <svg onClick={()=> move(false)} className="pointer-events-auto hidden md:block hover:scale-105 -rotate-90 duration-100 fill-text-black active:fill-text-gray/90 active:scale-95 cursor-pointer" width="30" height="30" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m399.44 263.41 189.21 221.68c10.078 11.195 8.3984 29.668-2.8008 39.184-11.195 9.5156-29.668 8.3984-39.184-2.8008l-147.22-170.73-147.22 170.73c-10.078 11.195-27.988 12.875-39.184 2.8008-11.195-10.078-12.875-27.988-2.8008-39.184z"/></svg>
-                    <svg onClick={()=> move(true)} className="pointer-events-auto hidden md:block hover:scale-105 rotate-90 duration-100 fill-text-black active:fill-text-gray/90 active:scale-95 cursor-pointer" width="30" height="30" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m399.44 263.41 189.21 221.68c10.078 11.195 8.3984 29.668-2.8008 39.184-11.195 9.5156-29.668 8.3984-39.184-2.8008l-147.22-170.73-147.22 170.73c-10.078 11.195-27.988 12.875-39.184 2.8008-11.195-10.078-12.875-27.988-2.8008-39.184z"/></svg>
-
-                    </div>
+                     <div className='w-full relative flex'>
+                     {images.length > 4 &&<div className='w-full h-full absolute z-20 flex justify-between items-center px-3 pointer-events-none'>
+                    <svg onClick={()=> move(false)} className="pointer-events-auto active:drop-shadow-none drop-shadow-lg drop-shadow-white hidden md:block hover:scale-105 -rotate-90 duration-100 fill-text-black active:fill-text-gray/90 active:scale-95 cursor-pointer" width="30" height="30" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m399.44 263.41 189.21 221.68c10.078 11.195 8.3984 29.668-2.8008 39.184-11.195 9.5156-29.668 8.3984-39.184-2.8008l-147.22-170.73-147.22 170.73c-10.078 11.195-27.988 12.875-39.184 2.8008-11.195-10.078-12.875-27.988-2.8008-39.184z"/></svg>
+                    <svg onClick={()=> move(true)} className="pointer-events-auto active:drop-shadow-none drop-shadow-lg drop-shadow-white hidden md:block hover:scale-105 rotate-90 duration-100 fill-text-black active:fill-text-gray/90 active:scale-95 cursor-pointer" width="30" height="30" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m399.44 263.41 189.21 221.68c10.078 11.195 8.3984 29.668-2.8008 39.184-11.195 9.5156-29.668 8.3984-39.184-2.8008l-147.22-170.73-147.22 170.73c-10.078 11.195-27.988 12.875-39.184 2.8008-11.195-10.078-12.875-27.988-2.8008-39.184z"/></svg>
+                    </div>}
                     <div ref={middleImageRef}
                         style={{}}
                         className="overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none flex
