@@ -3,11 +3,6 @@
 import useMessages from "@/hook/useMessages"
 
 
-interface stringObject {
-  image: string
-  alt:string
-}
-
 const Activities = () => {
   const messages = useMessages()
   return (
