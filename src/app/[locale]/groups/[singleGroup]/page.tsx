@@ -320,7 +320,7 @@ const Groups = async ({
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
                       sectionLayout={["t", "p"]}
-                      page="sjohumlornaSpårarscouter"
+                      page="utmanarscouter"
                       background={"blue"}
                       padding={"none"}
                       child={true}
