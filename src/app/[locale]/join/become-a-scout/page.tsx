@@ -13,6 +13,7 @@ import InstagramContainer from "@/components/Instagram/InstagramContainer";
 import { getSectionById } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
 import Line from "@/components/line"
+import Scoutlife from "@/components/Scoutlife";
 
 const pageItem = "become-a-scout"
 const headDescription = "become-a-scout"
@@ -31,13 +32,18 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
         return null
     }
 
+    /**
+
+    
+     */
+
     return (
         <main>
             <HeroContainer bgImages={{ mobile: data.join_images.join_hero_mobile.asset._ref, desktop: data.join_images.join_hero_desktop.asset._ref }} messageSection={"joinHero"} position={"center"} />
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full ">
                 <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
-                <WhiteGridContainer backgroundBlue={true} messageTitle="scoutLife" />
+                <Scoutlife />
                 <div className=" bg-white mx-4 my-8 py-4 lg:mx-25 lg:my-20 lg:pt-2 rounded-3xl">
                     <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
                     <Line hasPadding />

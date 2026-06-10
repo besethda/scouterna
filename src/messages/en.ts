@@ -105,6 +105,7 @@ export type MessagesEngType = {
     smattarne_time: string,
     smattarne_place: string,
     smattarne_paragraph: string,
+    smattarne_photoTitle: string,
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -440,6 +441,8 @@ export type MessagesEngType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
+  memberScoutnet:{title:string, text01:string, text02:string},
+  memberScoutnetButton: string,
   mysetHistory: {
     title: string,
     text1: string,
@@ -583,6 +586,7 @@ export const En: MessagesEngType = {
     smattarne_time: "18:00",
     smattarne_place: "Ruffen",
     smattarne_paragraph: "Småttarne is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
+    smattarne_photoTitle: "The Bears Parum & Magna",
     scouts_title: "Scouts",
     scouts_paragraph: "We have age-separated groups from the age of 8.",
     family_title: "Småttarne",
@@ -1211,6 +1215,13 @@ export const En: MessagesEngType = {
   },
   moreButton: "Read more about policy",
   secondButton: "Life jacket policy PDF",
+
+  memberScoutnet: {
+    title: "Scoutnet",
+    text01: "Scoutnet is the Scouts' common system where all information about members and activities is gathered.",
+    text02: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place."
+  },
+  memberScoutnetButton: "Login to Scoutnet",
 
   mysetHistory: {
     title: "The History of Myset",

@@ -85,6 +85,7 @@ type MessagesSvType = {
     smattarne_time: string,
     smattarne_place: string,
     smattarne_paragraph: string,
+    smattarne_photoTitle: string
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -441,6 +442,8 @@ type MessagesSvType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
+  memberScoutnet: {title:string, text01:string, text02:string},
+  memberScoutnetButton: string,
 
   mysetHistory: {
     title: string,
@@ -593,6 +596,7 @@ export const Sv: MessagesSvType = {
     smattarne_time: "18:00",
     smattarne_place: "Ruffen",
     smattarne_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
+    smattarne_photoTitle: "Björnarna Parum & Magna",
     scouts_title: "Scouter",
     scouts_paragraph: "Vi har åldersindelade avdelningar från och med 8 års ålder. ",
     family_title: "Familjescouting",
@@ -865,7 +869,8 @@ export const Sv: MessagesSvType = {
     header2: "Starka tillsammans",
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
     text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att våga prova nya saker.",
-    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
+    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap.",
+    text: "Scoutliv"
   },
   learning: {
     t0: "Lärande för livet",
@@ -1209,6 +1214,13 @@ export const Sv: MessagesSvType = {
   },
   moreButton: "Läs mer om policyn",
   secondButton: "Flytvästpolicy PDF",
+
+  memberScoutnet: {
+    title: "Scoutnet",
+    text01: "Scoutnet är Scouternas gemensamma system där all information om medlemmar och aktiviteter finns samlad.",
+    text02: "Här kan du som Scout eller förälder enkelt uppdatera dina uppgifter, anmäla dig till aktiviteter och ta del av viktig information från kåren – allt på ett och samma ställe."
+  },
+  memberScoutnetButton: "Logga in på Scoutnet",
 
   mysetHistory: {
     title: "Mysets historia",
