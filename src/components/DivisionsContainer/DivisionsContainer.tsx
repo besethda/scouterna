@@ -13,11 +13,11 @@ const DivisionsContainer = ({data}: {data:any}) => {
       <div className="px-5 text-body font-albert md:text-body-desktop lg:px-22 text-text-black w-full md:max-w-200 lg:max-w-300">{messages?.home.divisions_text}</div>
       <div className="flex justify-center w-full">
         <div className="flex flex-col md:flex-row md:flex-wrap md:w-fit w-full md:max-w-290 mt-3 px-4 md:px-10 lg:px-20">
-          <DivisionsBox division={"sjohumlorna"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
-          <DivisionsBox division={"kaparna"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
-          <DivisionsBox division={"konvojen"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "konvojen") || null}/>
-          <DivisionsBox division={"utmanare"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
-          <DivisionsBox division={"smattarne"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "smattarne") || null}/>
+          <DivisionsBox division={"spararscouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
+          <DivisionsBox division={"upptackarscouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
+          <DivisionsBox division={"utmanarscouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
+          <DivisionsBox division={"aventyrarscouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "konvojen") || null}/>
+          <DivisionsBox division={"familjescouter"} boxStyle={"basic"} data={data?.groups.find((e:any) => e.name_slug === "smattarne") || null}/>
         </div>
       </div>
     </div>
