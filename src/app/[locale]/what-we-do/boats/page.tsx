@@ -21,6 +21,7 @@ const Boats = async ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = await params
     const messages = locale === "en" ? En : Sv
     const data = await getId("a5df4d9e-daa3-4a1a-9b30-0780f314d5ec")
+    console.log(data)
 
     return (
         <main>
