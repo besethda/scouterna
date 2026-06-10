@@ -27,7 +27,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
 
     useEffect(() => {
         const handleScroll = () => {
-        setIsScroll(window.scrollY > 200)
+            setIsScroll(window.scrollY > 200)
         }
 
         window.addEventListener("scroll", handleScroll)
