@@ -72,7 +72,7 @@ const Groups = async ({
         <div className="px-4 lg:px-22">
           <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
-              <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-15 ">
+              <div className="flex flex-col lg:max-w-280 px-4 py-4 pb-7 lg:pb-15 ">
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
@@ -191,7 +191,7 @@ const Groups = async ({
         <div className="px-4 lg:px-22">
           <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
-              <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-15">
+              <div className="flex flex-col lg:max-w-280 px-4 py-4 pb-7 lg:pb-15">
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
@@ -308,7 +308,7 @@ const Groups = async ({
         <div className="px-4 lg:px-22">
           <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
-              <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-15">
+              <div className="flex flex-col lg:max-w-280 px-4 py-4 pb-7 lg:pb-15">
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
@@ -425,7 +425,7 @@ const Groups = async ({
         <div className="px-4 lg:px-22">
           <section className="w-full flex flex-col  bg-bg-white px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
-              <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-15">
+              <div className="flex flex-col lg:max-w-280 px-4 py-4 pb-7 lg:pb-15">
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
@@ -541,7 +541,7 @@ const Groups = async ({
         <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 logoTopRight />
         <div className="px-4 lg:px-22 pb-30">
           <div className="flex flex-col lg:max-w-430 w-full px-4 mx-auto bg-bg-white rounded-3xl shadow-xl">
-            <div className="flex flex-col lg:max-w-430 w-full px-4 mx-auto py-10 pb-10 lg:pb-15 ">
+            <div className="flex flex-col lg:max-w-430 w-full px-4 mx-auto py-4 pb-7 lg:pb-15 ">
               <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 md:items-start ">
                 <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                   <ContentSection
