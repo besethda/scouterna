@@ -32,6 +32,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
         ${page === "cabin" && "w-66.5"}
         ${page === "group" && "w-81.5 md:w-87"}
         ${page === "scout-life" && "w-89.5"}
+        ${page === "join" && "w-82 h-99 md:w-89.5"}
         `}>
             <Image src={pinColor()} alt="hige" width={85} height={80} className={`absolute inset-s-0 z-20 
             ${page === "cabin" ? "left-20 -top-2" : "left-33 -top-4"}
@@ -40,6 +41,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
             ${page === "cabin" && "h-57.25"}
             ${page === "home" && "h-75"}
             ${page === "scout-life" && "h-75"}
+            ${page === "join" && "h-75"}
             `}>
                 <Image src={image} alt={imageTitle} fill className="object-cover  object-center" />
             </div>
