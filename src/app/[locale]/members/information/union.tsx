@@ -27,7 +27,7 @@ const Union = async () => {
                             <Image src={iconList[index]} alt={item.name} width={44} height={44} />
                             <div className="">
                                 <p className="font-bold font-h3 font-fraunces">{item.published}</p>
-                                <a href={item.fileUrl} target="_blank" className="justify-center text-body font-albert font-normal " aria-label={`"Ladda ner"} ${item.name} (PDF)`}>
+                                <a href={item.fileUrl} target="_blank" className="justify-center text-body font-albert font-normal " aria-label={`"Ladda ner" ${item.name} (PDF)`}>
                                 {item.name}
                             </a>
                             </div>

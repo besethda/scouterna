@@ -29,7 +29,7 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <section className="h-fit pb-13">
-                    <CardWithLogo image="/informationYellowBg.svg" sectionTitle="safetyCard" isH1/> 
+                    <CardWithLogo image="/informationYellowBg.svg" sectionTitle="safetyCard" isH1 /> 
                 </section>
                 <div className="flex flex-col w-full">
                     <section className="order-1 md:order-2"> 

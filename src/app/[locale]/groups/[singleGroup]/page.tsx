@@ -16,18 +16,18 @@ import { PortableText } from "next-sanity";
 import { urlFor } from "@/sanity/lib/image";
 
 const pageItems = [
-  "sjohumlorna",
-  "kaparna",
-  "utmanare",
-  "konvojen",
-  "smattarne",
+  "spararscouter",
+  "upptackarscouter",
+  "utmanarscouter",
+  "aventyrarscouter",
+  "familjescouter",
 ];
 const headDescriptions = [
-  "sjohumlorna",
-  "kaparna",
-  "utmanare",
-  "konvojen",
-  "smattarne",
+  "spararscouter",
+  "upptackarscouter",
+  "utmanarscouter",
+  "aventyrarscouter",
+  "familjescouter",
 ]
 export async function generateMetadata({
   params,
@@ -64,11 +64,11 @@ const Groups = async ({
 
 
 
-  if (singleGroup === "sjohumlorna") {
+  if (singleGroup === "spararscouter") {
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1 />
+        <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1 logoTopRight/>
         <section className="w-full flex flex-col bg-bg-blue px-4 lg:px-22">
           <div className="md:flex md:gap-5 lg:gap-10">
             <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
@@ -83,7 +83,7 @@ const Groups = async ({
                 </div>
                 <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
                   <ImageCard
-                    imageTitle="sjohumlorna_title"
+                    imageTitle="spararscouter_title"
                     image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
                     section="division"
                     page="group"
@@ -138,7 +138,7 @@ const Groups = async ({
             </div>
             <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
               <ImageCard
-                imageTitle="sjohumlorna_title"
+                imageTitle="spararscouter_title"
                 image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
                 section="division"
                 page="group"
@@ -179,11 +179,11 @@ const Groups = async ({
         </section>
       </main>
     );
-  } else if (singleGroup === "kaparna") {
+  } else if (singleGroup === "upptackarscouter") {
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1 />
+        <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1 logoTopRight/>
         <section className="w-full flex flex-col bg-bg-blue px-4 lg:px-22">
           <div className="md:flex md:gap-5 lg:gap-10">
             <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
@@ -198,7 +198,7 @@ const Groups = async ({
                 </div>
                 <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
                   <ImageCard
-                    imageTitle="kaparna_title"
+                    imageTitle="upptackarscouter_title"
                     image={urlFor(kaparna.groups.image.asset._ref).url()}
                     section="division"
                     page="group"
@@ -252,7 +252,7 @@ const Groups = async ({
             </div>
             <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
               <ImageCard
-                imageTitle="kaparna_title"
+                imageTitle="upptackarscouter_title"
                 image={urlFor(kaparna.groups.image.asset._ref).url()}
                 section="division"
                 page="group"
@@ -293,11 +293,11 @@ const Groups = async ({
         </section>
       </main>
     );
-  } else if (singleGroup === "utmanare") {
+  } else if (singleGroup === "utmanarscouter") {
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1 />
+        <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1 logoTopRight/>
         <section className="w-full flex flex-col bg-bg-blue px-4 lg:px-22">
           <div className="md:flex md:gap-5 lg:gap-10">
             <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
@@ -305,14 +305,14 @@ const Groups = async ({
                 <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                   <ContentSection
                     sectionLayout={["t", "p"]}
-                    page="sjohumlornaSpårarscouter"
+                    page="utmanarscouter"
                     padding={"none"}
                     child={true}
                   />
                 </div>
                 <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
                   <ImageCard
-                    imageTitle="utmanare_title"
+                    imageTitle="utmanarscouter_title"
                     image={urlFor(utmanare.groups.image.asset._ref).url()}
                     section="division"
                     page="group"
@@ -366,7 +366,7 @@ const Groups = async ({
             </div>
             <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
               <ImageCard
-                imageTitle="utmanare_title"
+                imageTitle="utmanarscouter_title"
                 image={urlFor(utmanare.groups.image.asset._ref).url()}
                 section="division"
                 page="group"
@@ -407,11 +407,11 @@ const Groups = async ({
         </section>
       </main>
     );
-  } else if (singleGroup === "konvojen") {
+  } else if (singleGroup === "aventyrarscouter") {
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1 />
+        <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1 logoTopRight/>
         <section className="w-full flex flex-col  bg-bg-blue px-4 lg:px-22">
           <div className="md:flex md:gap-5 lg:gap-10">
             <div className="flex flex-col lg:max-w-280 px-4 py-10 pb-10 lg:pb-29 lg:pt-20">
@@ -426,7 +426,7 @@ const Groups = async ({
                 </div>
                 <div className="flex w-89.5 h-auto md:pt-5 md:pb-4 pb-6 md:hidden">
                   <ImageCard
-                    imageTitle="konvojen_title"
+                    imageTitle="aventyrarscouter_title"
                     image={urlFor(konvojen?.groups?.image.asset._ref).url()}
                     section="division"
                     page="group"
@@ -480,7 +480,7 @@ const Groups = async ({
             </div>
             <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
               <ImageCard
-                imageTitle="konvojen_title"
+                imageTitle="aventyrarscouter_title"
                 image={urlFor(konvojen?.groups?.image.asset._ref).url()}
                 section="division"
                 page="group"
@@ -521,11 +521,11 @@ const Groups = async ({
         </section>
       </main>
     );
-  } else if (singleGroup === "smattarne") {
+  } else if (singleGroup === "familjescouter") {
     return (
       <main>
         <Breadcrumbs />
-        <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 />
+        <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 logoTopRight/>
         <section className="w-full flex flex-col  bg-bg-blue">
           <div className="flex flex-col lg:max-w-430 lg:px-22 w-full px-4 mx-auto py-10 pb-10 lg:pb-29 lg:pt-20">
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 md:items-start ">
@@ -539,7 +539,7 @@ const Groups = async ({
               </div>
               <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <ImageCard
-                  imageTitle="smattarne_title"
+                  imageTitle="familjescouter_title"
                   image={urlFor(smattarne?.groups?.image.asset._ref).url()}
                   section="division"
                   page="group"
@@ -559,7 +559,7 @@ const Groups = async ({
               </div>
               <div className="flex w-89.5 h-auto md:pt-5 md:px-4">
                 <ImageCard
-                  imageTitle="smattarne_photoTitle"
+                  imageTitle="familjescouter_photoTitle"
                   image={familyImageSrc}
                   section="division"
                   page="group"
