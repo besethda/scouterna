@@ -2,14 +2,16 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import { urlFor } from '@/sanity/lib/image';
 
 interface OptimisterProps {
-    title: string;
-    text: string;
+    title: {en:string, sv:string};
+    text: {en:string, sv:string};
     images: any[];
+    locale:string
 }
 
-const Optimister = ({ title, text, images }: OptimisterProps) => {
+const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
     const middleImageRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -29,8 +31,8 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
         <div className='w-full pb-6 pt-6 lg:max-w-430 lg:px-22 px-4 overflow-hidden'>
             <div className=''>
                 <div className='flex flex-col gap-2 py-4 lg:w-120'>
-                    <h2 className='text-h2 font-fraunces font-bold text-primary lg:text-h2-desktop'>{title}</h2>
-                    <p className='text-body text-text-black font-albert lg:text-body-desktop'>{text}</p>
+                    <h2 className='text-h2 font-fraunces font-bold text-primary lg:text-h2-desktop'>{locale === "sv" ? title.sv : title.en}</h2>
+                    <p className='text-body text-text-black font-albert lg:text-body-desktop'>{locale === "sv" ? text.sv : text.en}</p>
                 </div>
                 <div className='w-full relative flex'>
                     <div className='w-full h-full absolute z-20 flex justify-between items-center px-3 pointer-events-none'>
@@ -50,8 +52,8 @@ const Optimister = ({ title, text, images }: OptimisterProps) => {
                                 lg:snap-none'
                             >
                                 <Image
-                                    src={imgbox}
-                                    alt={"images"}
+                                    src={urlFor(imgbox.asset._ref).url()}
+                                    alt={imgbox.alt}
                                     width={300}
                                     height={212}
                                     className="object-cover aspect-7/5"
