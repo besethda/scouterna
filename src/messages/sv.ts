@@ -85,6 +85,7 @@ type MessagesSvType = {
     smattarne_time: string,
     smattarne_place: string,
     smattarne_paragraph: string,
+    smattarne_photoTitle: string
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -593,6 +594,7 @@ export const Sv: MessagesSvType = {
     smattarne_time: "18:00",
     smattarne_place: "Ruffen",
     smattarne_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
+    smattarne_photoTitle: "Björnarna Parum & Magna",
     scouts_title: "Scouter",
     scouts_paragraph: "Vi har åldersindelade avdelningar från och med 8 års ålder. ",
     family_title: "Familjescouting",
