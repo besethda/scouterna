@@ -30,7 +30,7 @@ const JoinPage = ({
 }: JoinPageProps) => {
   return (
     <div
-      className="bg-bg-accent w-full md:max-w-430 border-transparent rounded-2xl flex"
+      className="bg-bg-accent w-full md:max-w-430 border-transparent rounded-2xl flex shadow-xl"
     >
       <div
         className="flex flex-col w-full lg:max-w-400 p-4 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-10 mx-auto md:flex-row md:flex-2"
