@@ -5,32 +5,9 @@ import loveIcon from "../../../../../public/loveIcon.png"
 import groupIcon from "../../../../../public/groupIcon.png"
 import { client } from "@/sanity/lib/client"
 import { urlFor } from "@/sanity/lib/image"
-import download from "../../../../../public/download-icon.svg"
 
 
-const unionList = [
-    {
-        name: "HSS kårstämma 2025-10",
-        published: "2025-10",
-        url: "/pdfs/HSS_kårstämma_2025-10.pdf",
-        icon: ideadIcon
-        
-    },
-    {
-        name: "HSS kårstämma 2025-06",
-        published: "2025-06",
-        url: "/pdfs/HSS_kårstämma_2025-06.pdf",
-        icon: loveIcon
-    },
-    {
-        name: "HSS kårstämma 2024-10",
-        published: "2024-10",
-        url: "/pdfs/HSS_kårstämma_2024-10.pdf",
-        icon: groupIcon
-    }
-]
-
-    
+const iconList = [ideadIcon, loveIcon, groupIcon];    
 
 
 const Union = async () => {
@@ -47,7 +24,7 @@ const Union = async () => {
                 <div className="w-full px-4 lg:max-w-430 lg:px-10">
                     {data.files.map((item:any, index:number) => (
                         <div key={index} className="flex py-2 gap-2 w-full items-center ">
-                            <Image src={download} alt={item.name} width={44} height={44} />
+                            <Image src={iconList[index]} alt={item.name} width={44} height={44} />
                             <div className="">
                                 <p className="font-bold font-h3 font-fraunces">{item.published}</p>
                                 <a href={item.fileUrl} target="_blank" className="justify-center text-body font-albert font-normal " aria-label={`"Ladda ner"} ${item.name} (PDF)`}>
