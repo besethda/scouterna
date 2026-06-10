@@ -22,8 +22,6 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
     const { locale } = await params
     const messages = locale === "en" ? En : Sv
     const data = await getId("c57001b2-94f1-4bf1-ae81-1fcc684e0eee")
-    console.log(data)
-
 
     return (
         <main>
