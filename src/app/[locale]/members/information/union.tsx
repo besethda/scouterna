@@ -17,7 +17,7 @@ const Union = async () => {
             <ContentSection
                 sectionLayout={["t", "p"]}
                 page="union"
-                background={"blue"}
+                color={"white"}
                 padding=""
             />
             <div className="pt-7 flex flex-col items-center gap-2 font-albert text-text-white md:gap-9">

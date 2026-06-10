@@ -19,7 +19,7 @@ const Alert = ({alerts, mobile=false, locale}: {alerts:any, mobile?:boolean, loc
           ${alertShown ? "right-0" : "-right-200 md:-right-300 lg:-right-200"} top-10 md:top-24 lg:top-46 hover:bg-bg-white/60 duration-150 mt-10 border-[#FE3F21] border border-b-4 rounded-3xl`}>
           <div className="relative w-full">
             <div className="absolute w-full h-10 flex flex-row-reverse">
-              <svg className={`hover:brightness-150 active:brightness-95 active:scale-90 duration-150`} width={mobile ? "22" : "26"} height={mobile ? "22" : "26"} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="#fff" fillOpacity=".01"/><path d="M8 8 40 40" stroke="#003660" strokeWidth="4" stroke-linecap="round" strokeLinejoin="round"/><path d="M8 40 40 8" stroke="#003660" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <svg className={`hover:brightness-150 active:brightness-95 active:scale-90 duration-150`} width={mobile ? "22" : "26"} height={mobile ? "22" : "26"} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="#fff" fillOpacity=".01"/><path d="M8 8 40 40" stroke="#003660" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/><path d="M8 40 40 8" stroke="#003660" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </div>
           </div>
           <div className="w-fit py-1 pr-10 text-body md:text-body-desktop text-text-black font-albert font-bold">{locale=== "/sv" ? alerts.notifications.title_sv : alerts.notifications.title_en}</div>
