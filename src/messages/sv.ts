@@ -867,7 +867,8 @@ export const Sv: MessagesSvType = {
     header2: "Starka tillsammans",
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
     text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att våga prova nya saker.",
-    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap."
+    text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap.",
+    text: "Scoutliv"
   },
   learning: {
     t0: "Lärande för livet",
