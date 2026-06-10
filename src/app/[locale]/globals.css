@@ -6,6 +6,7 @@
 
     --color-bg-white: #FFFFFF;
     --color-bg-blue: #D6EAF8;
+    --color-bg-accent: #FDB715;
 
     --color-text-black: #3B3A3A;
     --color-text-gray: #717D7E;
@@ -27,6 +28,7 @@
     --color-lightYellow: #EBC86C;
 
     --color-btn: #FF9D2D;
+    --color-primaryBtn: #003660;
     --color-form: #B3B3B3;
 
 
@@ -52,6 +54,12 @@
 
     --text-h3-desktop--font-family: var(--font-albert);
     --text-h3-desktop: 26px;
+
+    --text-h4-desktop--font-family: var(--font-albert);
+    --text-h4-desktop: 24px;
+
+    --text-h5-desktop--font-family: var(--font-albert);
+    --text-h5-desktop: 20px;
 
     --text-body-desktop--font-family: var(--font-albert);
     --text-body-desktop: 21px;

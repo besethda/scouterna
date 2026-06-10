@@ -1,11 +1,11 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import ContentSection from "@/components/ContentSection";
+import { getId } from "@/lib/utils";
+import SanityFlex from "@/components/SanityFlex";
 import BoatSection from "./boatsection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
-import { use } from "react";
-import CardAbout from "@/components/AddCardAbout";
+import ContentSection from "@/components/ContentSection";
 import CardWithLogo from "@/components/CardWithLogo";
 
 
@@ -17,20 +17,23 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const History = ({ params }: { params: Promise<{ locale: string }> }) => {
+const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
-    const { locale } = use(params)
+    const { locale } = await params
     const messages = locale === "en" ? En : Sv
-
+    const data = await getId("c57001b2-94f1-4bf1-ae81-1fcc684e0eee")
 
     return (
         <main>
             <Breadcrumbs />
             <CardWithLogo  image="/heartYellowBg.svg" sectionTitle="historycard" isH1 /> 
-            <ContentSection sectionLayout={["t", "p", "p", "p", "p", "p"]} page="history" background={"blue"} />
+            <div className="w-full ">
+                <h2 className="w-fit py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{locale === "sv" ? data?.history_section.title_se : data?.history_section.title_en}</h2>
+                <SanityFlex data={data?.history_layout.scout_life} locale={locale}/>
+            </div>
             <ContentSection sectionLayout={["t"]} page={"boatSection"} padding={"top"} background={"blue"}/>
             <ContentSection sectionLayout={["p"]} page={"boatSection"} display={"desktop"} padding={"none"} background={"blue"}/>
-            <BoatSection />
+            <BoatSection images={data?.images}/>
         </main>
     );
 }

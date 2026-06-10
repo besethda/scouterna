@@ -3,7 +3,12 @@
 import CTABtn from "./CTA-button"
 import Link from "next/link"
 import { useParams } from "next/navigation"
+import { urlFor } from "@/sanity/lib/image"
 
+interface stringObject {
+  image: string
+  alt:string
+}
 interface SmallCardProps {
   title: string,
   subtitle: string,

@@ -5,15 +5,7 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Optimister from "@/components/Optimister";
-import Image01 from '../../../../../public/images/DSCF3036.jpg';
-import Image02 from '../../../../../public/images/DSCF3036.jpg';
-import Image03 from '../../../../../public/images/DSCF3017.jpg';
-import Image04 from '../../../../../public/images/DSCF3017.jpg';
-import Image05 from '../../../../../public/images/DSCF3111.jpg';
-import Image06 from '../../../../../public//images/DSCF3071.jpg';
-import Image07 from '../../../../../public/images/DSCF3076.jpg';
-import Image08 from '../../../../../public/images/DSCF3089.jpg';
-import Image09 from '../../../../../public/images/DSCF3095.jpg';
+import { getId } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
 
 
@@ -25,33 +17,28 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
-const Boats = ({params}:{params: Promise<{locale: string}>}) => {
-    const images = [Image01, Image02, Image03];
-    const images02 = [Image04, Image05, Image06];
-    const images03 = [Image07, Image08, Image09];
-    const {locale} = use(params)
+const Boats = async ({params}:{params: Promise<{locale: string}>}) => {
+    const {locale} = await params
     const messages = locale === "en" ? En : Sv
+    const data = await getId("a5df4d9e-daa3-4a1a-9b30-0780f314d5ec")
+    console.log(data)
+
     return (
         <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <CardWithLogo sectionTitle="boatsCard" image="/boatYellowBg.svg" isH1/>
                 <div className="bg-bg-blue w-full flex flex-col items-center pb-8 md:pb-12">
-                    <Optimister 
-                        title={messages?.optimisterSection?.title}
-                        text={messages?.optimisterSection?.text}
-                        images={images}
+                    {data?.boats.map((boatType:any, index:number)=> (
+                        <Optimister 
+                        title={{en: boatType.title_en, sv: boatType.title_sv}}
+                        text={{en: boatType.description_en, sv: boatType.description_sv}}
+                        images={boatType.boatSectionImages}
+                        locale={locale}
+                        key={index}
                     />
-                    <Optimister 
-                        title={messages?.optimisterSection?.title02}
-                        text={messages?.optimisterSection?.text02}
-                        images={images02}
-                    />
-                    <Optimister 
-                        title={messages?.optimisterSection?.title03}
-                        text={messages?.optimisterSection?.text03}
-                        images={images03}
-                    />
+                    ))}
+
                 </div>
             </div>
         </main>
