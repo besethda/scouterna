@@ -119,16 +119,26 @@ body {
     background-color: #D6EAF8;
 }
 
-
-
 .contact-logo img[alt="logo"] {
     width: 30px !important;
     height: auto !important;
     min-width: 30px !important;
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1560px) {
     .right-auto-2000 {
         right: auto;
     }
+}
+
+@media (min-width: 431px) and (max-width: 541px){
+  .line {
+    width:45%
+  }
+}
+
+@media (min-width: 768px) and (max-width: 912px) {
+  .line {
+    left: 24px;  
+  }
 }

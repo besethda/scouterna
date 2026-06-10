@@ -758,13 +758,13 @@ export const En: MessagesEngType = {
     p5: "Since its inception in 1959, HSS has been a sea scout group built on dedication, cooperation, and the desire to give young people adventure and community—and that flame still burns brightly today."
   },
   guidelines: {
-    t0: "HSS guidelines",
+    h0: "HSS guidelines",
     p0: "We have created guidelines for which types of life jackets should be used by Scouts who cannot swim, and Scouts who can swim.",
     p1: "It is best to assume that everyone, regardless of swimming ability, should wear a life jacket on docks and in boats. It is also important that the life jacket is properly buckled or tied.",
     p2: "Scouts who have not been able to demonstrate a 200m swimming proficiency to HSS should wear a life jacket (buoyancy aid/life vest with collar).",
     p3: "Scouts who have demonstrated a 200m swimming ability to HSS may wear a sailing vest.",
-    t1: "Non-swimming scouts",
-    t2: "Swimming scouts",
+    t0: "Non-swimming scouts",
+    t1: "Swimming scouts",
     w0: "HSS requirements for life jackets (with collar):",
     w1: "HSS requirements for sailing vests:",
     l0: "Buoyancy of at least 90 N",
@@ -1027,11 +1027,11 @@ export const En: MessagesEngType = {
   },
   sjohumlornaSpårarscouter: {
     t0: "Spårarscouts",
-    p0: "The scouts at the Sjöhumlorna section are Spårarscouts. Spårarna is the beginning of the scouting journey, where each child gets to grow, explore, and feel pride in what they can accomplish.",
+    p0: "These scouts are Spårarscouts. Spårarna is the beginning of the scouting journey, where each child gets to grow, explore, and feel pride in what they can accomplish.",
   },
   sjohumlornaAge: {
     t0: "Age",
-    p0: "The children at Sjöhumlorna are between 8 and 9 years old.",
+    p0: "The children at Spårarna are between 8 and 9 years old.",
   },
   sjohumlorMeeting: {
     t0: "Section meetings",
@@ -1063,7 +1063,7 @@ export const En: MessagesEngType = {
   kaparnaButton: "Badge poster for Upptäckare",
   utmanarscouter: {
     t0: "Utmanarscouts",
-    p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
+    p0: "The Utmanare are given bigger challenges in an increasingly international context. Scouts get the opportunity to explore adult responsibilities, and everyone has room to try different things and discover their own roles. You are trusted with significant responsibility while still being free to be playful, act your age, or simply be yourself.",
   },
   utmanareAge: {
     t0: "Age",
@@ -1081,7 +1081,7 @@ export const En: MessagesEngType = {
   utmanareButton: "Discover the challenges",
   äventyrarscouter: {
     t0: "Äventyrarscouts",
-    p0: "In the adventure patrol, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
+    p0: "In the adventure scouts, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
   },
   konvojenAge: {
     t0: "Age",
@@ -1132,7 +1132,7 @@ export const En: MessagesEngType = {
   GroupKaparna: {
     headline: "Groups",
     title: "Upptäckarscouter",
-    text: "At Upptäckarscouter, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety",
+    text: "At Upptäckarna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety",
   },
   GroupKonvojen: {
     headline: "Groups",
