@@ -18,7 +18,6 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
 
     const messages = useMessages()
     if (!messages) return null
-
     const pinColor = () => {
         if (pin === "red") return redPin;
         if (pin === "pink") return pinkPin;
@@ -56,6 +55,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
             </div>
 
         </div>
+     
     )
 }
 export default ImageCard
