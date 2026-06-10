@@ -18,7 +18,6 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
 
     const messages = useMessages()
     if (!messages) return null
-
     const pinColor = () => {
         if (pin === "red") return redPin;
         if (pin === "pink") return pinkPin;
@@ -26,7 +25,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
     }
 
     return (
-        <div className={`p-6 flex flex-col  bg-bg-white shadow-lg relative font-gochi text-primary 
+        <div className={`p-6 flex flex-col  bg-bg-white shadow-[0_3px_8px_rgba(0,0,0,0.5)] relative font-gochi text-primary 
         ${text ? "min-h-125" : ""}
         ${page === "home" && "w-89.5"}
         ${page === "cabin" && "w-66.5"}
@@ -56,6 +55,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
             </div>
 
         </div>
+     
     )
 }
 export default ImageCard
