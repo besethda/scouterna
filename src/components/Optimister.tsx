@@ -28,7 +28,7 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
     }
 
     return (
-        <div className='w-full py-4 px-4 overflow-hidden lg:max-w-[850px] xl:max-w-[980px] 2xl:max-w-[1200px]'>
+        <div className='w-full py-4 px-4 overflow-hidden lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]'>
             <div className=''>
                 <div className='flex flex-col gap-2 lg:w-120 pb-4'>
                     <h2 className='text-h2 font-fraunces font-bold text-primary lg:text-h2-desktop'>{locale === "sv" ? title.sv : title.en}</h2>
