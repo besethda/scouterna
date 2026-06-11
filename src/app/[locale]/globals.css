@@ -114,6 +114,10 @@
   --text-acc: 12px;
   --text-acc-bold--font-weight: 700;
 
+  /*screen size*/
+  --max-w-laptop: 980px;
+  --max-w-desktop: 1400px;
+
 }
 
 body {
@@ -143,3 +147,5 @@ body {
     left: 24px;
   }
 }
+
+
