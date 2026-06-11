@@ -11,7 +11,7 @@ import LanguageSelector from './LanguageSelector';
 import Navigation from './Navigation';
 import Alert from "./Alert";
 
-const Header = ({alerts}: {alerts:Record<string, string>}) => {
+const Header = ({alerts}: {alerts:any}) => {
 
   const messages = useMessages()
   const [isOpen, setIsOpen] = useState<boolean>(false)
