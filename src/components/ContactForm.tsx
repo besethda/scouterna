@@ -1,7 +1,7 @@
 'use client'
 
-import { useForm } from "react-hook-form"
-import { sendContactEmail } from "../app/email"
+import { useForm } from "react-hook-form";
+import { sendContactEmail } from "../app/email";
 import toast, { Toaster } from 'react-hot-toast';
 
 interface EmailFormData {
