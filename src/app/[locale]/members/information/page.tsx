@@ -5,9 +5,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { use } from "react";
 import CardWithImage from "@/components/CardWithImage";
 import Union from "./union";
-import Scoutnet from "@/components/Scoutnet/scoutnet";
+/*import Scoutnet from "@/components/Scoutnet/scoutnet";*/
 import ScoutInfo from "@/components/ScoutInfo/scoutInfo";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItem = "information"
 const headDescription = "information"
@@ -21,14 +22,15 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
     const { locale } = use(params)
     const messages = locale === "en" ? En : Sv
     return (
-        <main>
+        <main className="bg-bg-blue">
             <Breadcrumbs />
             <div className="w-full flex flex-col items-center">
-                <CardWithImage sectionTitle="memberInfo" logo="/dark-blue-hand.svg" image="/images/Boatsinarow.JPG" />
-                <ScoutInfo />
-                <Scoutnet />
-                <Union />
-                <InstagramContainer showText={true}/>
+                <CardWithLogo image="/informationYellowBg.svg" sectionTitle="memberInfo" isH1 />
+                <div className="flex flex-col gap-10">
+                    <ScoutInfo />
+                    <Union />
+                    <InstagramContainer showText={true}/>
+                </div>
             </div>
         </main>
     );

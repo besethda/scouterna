@@ -6,6 +6,9 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContentSection from "@/components/ContentSection";
+import CardWithLogo from "@/components/CardWithLogo";
+import Image from "next/image";
+import vest from '../../../../../public/blueLifevest.svg'
 
 
 
@@ -28,24 +31,19 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <section className="h-fit pb-13">
-                    <CardWithImage sectionTitle="safetyCard" logo="/blue-lifejacket.svg" image="/images/DSCF3070.jpg" />
-                    <div className="hidden lg:block lg:px-22 px-4 pt-0 md:w-full md:flex md:justify-center ">
-                        <a href="/pdfs/HSS-Flytvastpolicy-2025-Beslutad.pdf" download="HSS-Flytvastpolicy-2025.pdf"><CTABtn text={messages?.safetyBtn?.btnDesktop} /></a>
-                    </div>
-                    <div className="pl-4 pb-13 md:hidden">
-                        <a href="/pdfs/HSS-Flytvastpolicy-2025-Beslutad.pdf" download="HSS-Flytvastpolicy-2025.pdf"><CTABtn text={messages?.safetyBtn?.btnMobile} /></a>
-                    </div>
+                    <CardWithLogo image="/informationYellowBg.svg" sectionTitle="safetyCard" isH1 /> 
                 </section>
-                <div className="flex flex-col w-full">
-                    <section className="order-1 md:order-2"> 
-                        <ContentSection sectionLayout={["h", "w", "p", "t", "s", "p", "s", "p", "s", "p"]} page="safeScout" background={"mobile"} padding="both"/>
+                <div className="flex flex-col w-full px-4 gap-6 lg:max-w-430 lg:px-22 md:pt-10 md:gap-20 md:pb-16 pb-6" >
+                    <section className="order-2 bg-white rounded-2xl relative"> 
+                        <ContentSection sectionLayout={["h", "w", "p", "t", "s", "p", "s", "p", "s", "p"]} page="safeScout" padding="both" />
+                        <Image src={vest} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-40 opacity-70 lg:-rotate-12 " />
                     </section>
-                    <section className="order-2 md:order-1">
-                        <ContentSection sectionLayout={["t", "p", "p", "t", "p", "w", "l", "l", "l", "t", "p", "w", "l", "l", "l", "t", "w"]} background={"desktop"} page={"guidelines"} padding="top"/>
+                    <section className="order-1 bg-primary rounded-2xl">
+                        <ContentSection sectionLayout={["h", "p", "p", "t", "p", "w", "l", "l", "l", "t", "p", "w", "l", "l", "l", "t", ]} page={"guidelines"} padding="top" color="white"/>
                     </section>
-                    <section className="order-3">
-                        <ContentSection sectionLayout={["h", "w", "p", "w"]} page="lockable" background="blue" display="desktop"/>
-                        <ContentSection sectionLayout={["h", "w", "p"]} page="vests" display="mobile" padding="bottom" />
+                    <section className="order-3 bg-primary rounded-2xl">
+                        <ContentSection sectionLayout={["h", "w", "p", "w"]} page="lockable" display="desktop" color="white"  />
+                        <ContentSection sectionLayout={["h", "w", "p", ]} page="vests" display="mobile" padding="bottom" color="white" />
                     </section>
                 </div>
             </div>

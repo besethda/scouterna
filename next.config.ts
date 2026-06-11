@@ -9,7 +9,13 @@ const nextConfig: NextConfig = {
         destination: '/sv',
         permanent: false, 
       },
+      
     ]
+  },
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'cdn.sanity.io' },
+    ],
   },
 };
 

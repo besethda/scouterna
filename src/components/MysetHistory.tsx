@@ -27,26 +27,26 @@ const MysetHistory = () => {
   ]
 
   return (
-  <div className="pb-12 pt-2 px-4 font-albert md:hidden ">
+  <div className="font-albert text-text-white bg-primary rounded-3xl px-4 lg:px-10 mx-4 py-8 mb-10 lg:w-212 max-w-245 md:hidden">
       <div className="">
         <div className="flex flex-col gap-2 lg:max-w-[63%]">
-          <p className="font-medium text-[22px] tracking-[-0.5%] text-primary md:text-h2-desktop">
+          <p className="font-fraunces font-bold text-h2 md:text-h2-desktop">
             {messages?.mysetHistory?.title}
           </p>
-          <p className="font-normal text-[16px] tracking-[3%] text-text-black md:text-[20px]">
+          <p className="font-normal text-[16px] md:text-h5-desktop">
             {messages?.mysetHistory?.text1}
           </p>
-          <p className="font-normal text-[16px] tracking-[3%] text-text-black md:text-[20px]">
+          <p className="font-normal text-[16px] md:text-h5-desktop">
             {messages?.mysetHistory?.text2}
           </p>
-          <p className="font-medium text-[18px] racking-[-0.5%] text-primary md:text-[24px] py-2 md:py-4">
+          <p className="font-fraunces font-bold text-h3 md:text-h4-desktop md:py-4 pt-6">
             {messages?.mysetHistory?.subtitle}
           </p>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-2 md:gap-9 w-full">
+        <div className="grid grid-cols-2 grid-rows-2 gap-2 md:gap-9 w-full pt-2">
           {cards.map((card, index) =>
-            <div key={index} className="rounded-[10px] ">
-              <Image height={150} width={200} src={card.img} alt={card.alt} className="aspect-4/3 object-cover w-full rounded-[10px]" />
+            <div key={index} className="overflow-hidden rounded-[10px]">
+              <Image height={150} width={200} src={card.img} alt={card.alt} className="w-full h-full object-cover scale-105 " />
             </div>
           )}
         </div>

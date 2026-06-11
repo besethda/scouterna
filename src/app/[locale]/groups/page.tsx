@@ -3,8 +3,9 @@ import { Sv } from "@/messages/sv";
 import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { getPageHeadTitle } from "@/lib/utils"
-import CardWithoutImage from "@/components/CardWithoutImage"
+import { getId } from "@/lib/utils";
 import DivisionsBox from "@/components/DivisionsContainer/DivisionsBox";
+import CardWithLogo from "@/components/CardWithLogo";
 
 const pageItem = "groups"
 const headDescription = "groups"
@@ -14,25 +15,25 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const GroupStructure = ({ params }: { params: Promise<{ locale: string }> }) => {
+const GroupStructure = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
-  const { locale } = use(params)
+  const { locale } = await params
   const messages = locale === "en" ? En : Sv
-
+  const data = await getId('2a5a4f80-b206-44b9-9e00-6b870a00f90e')
+  if (!data) return
 
 
   return (
-    <main className="">
+    <main className="w-full md:max-w-360 mx-auto">
       <Breadcrumbs />
       <section className="w-full flex flex-col items-center">
-        <CardWithoutImage headline={messages?.groupCard?.headline} logo="/hand.png" title={messages?.groupCard?.title} text={messages?.groupCard?.text} MDlogo="/blueHandYellowBg.svg" />
-
-        <div className="flex flex-col px-4 pb-8 md:pb-16 gap-1 items-center">
-          <DivisionsBox division={"sjohumlorna"} boxStyle={"image"} imageUrl="/images/IMG_1910.JPEG"/>
-          <DivisionsBox division={"kaparna"} boxStyle={"image"} imageUrl="/images/IMG_0206.JPEG"/>
-          <DivisionsBox division={"konvojen"} boxStyle={"image"} imageUrl="/images/IMG_9862.JPEG"/>
-          <DivisionsBox division={"utmanare"} boxStyle={"image"} imageUrl="/images/IMG_0962.JPEG"/>
-          <DivisionsBox division={"smattarne"} boxStyle={"image"} imageUrl="/images/IMG_1932.JPEG" />
+        <CardWithLogo image="/heartYellowBg.svg" sectionTitle="groupsCard" isH1 logoTopRight />
+        <div className="flex flex-col px-4 pb-8 md:pb-16 gap-1 items-center lg:px-22">
+          <DivisionsBox division={"spararscouter"} boxStyle={"image"} data={data?.groups.find((e: any) => e.name_slug === "sjohumlorna") || null} />
+          <DivisionsBox division={"upptackarscouter"} boxStyle={"image"} data={data?.groups.find((e: any) => e.name_slug === "kaparna") || null} />
+          <DivisionsBox division={"aventyrarscouter"} boxStyle={"image"} data={data?.groups.find((e: any) => e.name_slug === "konvojen") || null} />
+          <DivisionsBox division={"utmanarscouter"} boxStyle={"image"} data={data?.groups.find((e: any) => e.name_slug === "utmanare") || null} />
+          <DivisionsBox division={"familjescouter"} boxStyle={"image"} data={data?.groups.find((e: any) => e.name_slug === "smattarne") || null} />
         </div>
       </section>
     </main>

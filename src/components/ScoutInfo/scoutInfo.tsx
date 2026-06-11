@@ -5,52 +5,66 @@ import useMessages from "@/hook/useMessages";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
+import birds from '../../../public/blueBirds1.png'
+
+const handleClick = () => {
+    window.open("https://www.scoutnet.se/f/login", "(_blank)")
+  }
 
 const ScoutInfo = () => {
   const messages = useMessages();
   const params = useParams();
   const pathname = usePathname();
-  const urlLocale =pathname?.split("/")[1]
-  const currentLocal = params?.local || urlLocale|| "sv"
+  const urlLocale = pathname?.split("/")[1]
+  const currentLocal = params?.local || urlLocale || "sv"
 
   return (
-    <div className="bg-bg-blue w-full flex flex-col items-center pt-8 md:pt-16 md:pb-12 pb-6">
-      <div className="lg:max-w-430 lg:px-22 px-4 font-albert w-full ">
-        <div className="text-h2 md:text-h2-desktop text-primary">{messages?.good}</div>
-        <div className="flex gap-5 flex-col md:flex-row md:mt-5 md:items-stretch">
-            <div className="md:bg-bg-white flex flex-col shrink flex-1 md:border md:border-lightGray rounded-2xl md:px-5 md:py-5">
-              <div className="hidden md:flex items-center justify-center md:bg-accent shrink-0 md:h-11 md:w-11 rounded-[50%] ">
-                <Image src='/question.png' alt="logo" width={24} height={17} className="w-auto h-8" />
+    <div className="relative bg-white flex flex-col 2xl:items-start 2xl:text-left py-8 px-4 mx-4 lg:mx-auto rounded-3xl shrink-0 lg:w-[848px] lg:px-10 lg:py-8 xl:w-[1265px] 2xl:w-[1544px] ">
+      <div className="font-albert w-full flex flex-col gap-4">
+        <h2 className="text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{messages?.good}</h2>
+        <div className="flex gap-6 xl:gap-8 flex-col md:mt-5 md:items-stretch">
+            <div className="flex flex-col gap-6 lg:max-w-117.5 xl:max-w-200">
+              <div className="flex flex-col gap-2">
+                <h3 className="text-primary  text-h3 md:text-h4-desktop whitespace-nowrap font-fraunces font-bold">{messages?.question.title}</h3>
+                <p className="text-text-black text-body md:text-h5-desktop ">{messages?.question.paraph}</p>
               </div>
-              <div className="text-primary pt-2 text-h3 md:text-h3-desktop whitespace-nowrap">{messages?.question.title}</div>
-              <p className="text-text-black text-body md:text-body-desktop py-3 ">{messages?.question.paraph}</p>
-              <div className="py-5">
+              <div className="">
                 <Link
                   href={`/${currentLocal}/join/faq`}>
-                    <CTABtn text={messages?.toFAQButton} />
-                  </Link>
+                  <CTABtn text={messages?.toFAQButton} />
+                </Link>
               </div>
             </div>
-            <div className="flex flex-col flex-1 shrink md:border md:border-lightGray rounded-2xl md:bg-bg-white md:px-5 px-0 md:py-5">
-              <div className="hidden md:flex items-center justify-center md:bg-accent shrink-0 md:h-11 md:w-11 rounded-[50%] ">
-                <Image src='/blue-lifejacket.svg' alt="logo" width={24} height={17} className="w-auto h-4.5" />
+            <div className="flex flex-col gap-6 lg:max-w-117.5 xl:max-w-200">
+              <div>
+                <h3 className="text-primary text-h3 md:text-h4-desktop whitespace-nowrap font-fraunces font-bold pb-2">{messages?.policy.title}</h3>
+                <p className="text-text-black text-body md:text-h5-desktop hidden md:block ">{messages?.policy.desktop}</p>
+                <p className="text-text-black text-body md:text-h5-desktop block md:hidden py-1 pb-4">{messages?.policy.paraph}</p>
+                <p className="text-text-black text-body md:text-h5-desktop block md:hidden py-1">{messages?.policy.mer}</p>
               </div>
-              <div className="text-primary text-h3 md:text-h3-desktop pt-2 whitespace-nowrap">{messages?.policy.title}</div>
-              <p className="text-text-black text-body md:text-body-desktop hidden md:block py-3 ">{messages?.policy.desktop}</p>
-              <p className="text-text-black text-body md:text-body-desktop block md:hidden py-1">{messages?.policy.paraph}</p>
-              <p className="text-text-black text-body md:text-body-desktop block md:hidden py-1">{messages?.policy.mer}</p>
-              <div className="hidden md:block py-5">
+              <div className="hidden md:block">
                 <Link
                   href={`/${currentLocal}/members/safety`}>
                   <CTABtn text={messages?.moreButton} />
                 </Link>
               </div>
-              <div className="block md:hidden py-5 whitespace-nowrap">
+              <div className="block md:hidden whitespace-nowrap">
                 <CTABtn text={messages?.secondButton} />
               </div>
             </div>
-        </div>    
+            <div className="flex flex-col gap-6 lg:max-w-117.5 xl:max-w-200">
+              <div>
+                <h3 className="text-primary text-h3 md:text-h4-desktop whitespace-nowrap font-fraunces font-bold pb-2">{messages?.memberScoutnet.title}</h3>
+                <p className="text-text-black text-body md:text-h5-desktop block py-1 pb-4">{messages?.memberScoutnet.text01}</p>
+                <p className="text-text-black text-body md:text-h5-desktop block  py-1">{messages?.memberScoutnet.text02}</p>
+              </div>
+              <div className="">
+                <CTABtn text={messages?.memberScoutnetButton} onClick={handleClick} />
+              </div>
+            </div>
+        </div>
       </div>
+      <Image src={birds} alt="birds" height={150} width={150} className="hidden md:block md:absolute top-0 md:top-15 md:right-20 opacity-90 md:-rotate-12 " />
     </div>
   );
 };

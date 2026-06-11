@@ -1,9 +1,16 @@
 import CTABtn from "./CTA-button";
+import Image from "next/image";
+import ImageCard from "./ImageCard";
+import Arrow from "../../public/arrow-02.svg"
+import shortLine from "../../public/line-short.svg"
+import longLine from "../../public/line-long.svg"
 
 interface JoinPageProps {
+  head?: string
   title: string;
   text: string;
   buttonText?: string;
+  section?: string
   buttonOnClick?: () => void;
   width?: string;
   btnWidth?: "fit" | "full" | "mobile-full";
@@ -11,9 +18,11 @@ interface JoinPageProps {
 }
 
 const JoinPage = ({
+  head,
   title,
   text,
   buttonText,
+  section,
   buttonOnClick,
   btnWidth,
   width = "full",
@@ -21,17 +30,21 @@ const JoinPage = ({
 }: JoinPageProps) => {
   return (
     <div
-      className={`${width === "box" ? "bg-bg-blue" : ""}  w-full max-w-[90%] md:max-w-full pb-6 border-transparent rounded-2xl mb-8`}
+      className="bg-bg-accent w-full md:max-w-430 border-transparent rounded-2xl flex shadow-xl"
     >
       <div
-        className={`${width === "box" ? "w-89.5 h-64 md:h-83 rounded-2xl md:flex-row md:w-full md:rounded items-center bg-bg-blue p-8" : "w-full"} pb-10 flex w-full px-4 lg:max-w-430 lg:px-22 flex-col gap-4 md:gap-10  md:p-25 mt-3 mx-auto`}
+        className="flex flex-col w-full lg:max-w-400 p-4 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-10 mx-auto md:flex-row md:flex-2"
       >
         <div
-          className={`flex flex-col w-full gap-2 md:w-full lg:w-[55%] text-left`}
+          className={`flex flex-col gap-2 text-left relative ${section === "join" ? "md:max-w-100 lg:max-w-140" : ""}`}
         >
-          <h2 className="text-h2-albert md:text-h2-desktop font-albert text-primary md:w-[40vw]">
+          <div className="gap-0">
+            <h2 className={`font-fraunces font-bold text-primary md:text-h1-desktop  ${section === "join" ? "text-h1" : "text-[22px] "}`}>{head}</h2>
+            {section === "join" ? <Image src={shortLine} alt="line" /> : <Image src={longLine} alt="line" />}
+          </div>
+          <h3 className={`text-h2-albert font-fraunces font-bold text-primary md:text-h4-desktop md:pt-3 ${section === "contact" && "hidden md:block"}`}>
             {title}
-          </h2>
+          </h3>
           <p
             className={
               "text-text-black text-body md:text-body-desktop font-albert"
@@ -39,12 +52,16 @@ const JoinPage = ({
           >
             {text}
           </p>
-        </div>
-        {buttonText && (
-          <div
-            className={`${width === "mobile" ? " mx-auto" : "w-full md:w-fit"} w-fit mt-2 md:pl-30`}
-          >
-            <div className="max-[913px]:min-[768px]:w-70 max-[912px]:min-[768px]:-ml-25">
+          <div className="hidden md:block absolute bottom-16 left-110 rotate-30">
+            <Image src={Arrow} alt="arrow" />
+          </div>
+          <div className={`md:flex-1 ${section === "join" ? "hidden" : "md:hidden"}`}>
+            <ImageCard imageTitle="title" image="/images/hood.jpg" section="join" page="join" text="" pin="red" />
+          </div>
+          {buttonText && (
+            <div
+              className={`${width === "mobile" ? " mx-auto md:mx-0" : "w-full md:w-fit md: pt-15"} w-fit mt-2 `}
+            >
               <a
                 href="https://www.scoutnet.se/register/in/group/764"
                 target="_blank"
@@ -53,11 +70,16 @@ const JoinPage = ({
                   text={buttonText}
                   width={btnWidth}
                   onClick={buttonOnClick}
+                  section="join"
                 />
               </a>
             </div>
-          </div>
-        )}
+          )}
+        </div>
+
+        <div className={`md:flex-1 ${section === "join" ? "hidden md:block" : "hidden md:block"}`}>
+          <ImageCard imageTitle="photoTitle" image="/images/hood.jpg" section={section === "join" ? "joinPage" : "interstsBtn"} page="join" text="" pin="dark_red" />
+        </div>
       </div>
     </div>
   );

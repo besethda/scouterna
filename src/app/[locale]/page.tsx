@@ -5,19 +5,24 @@ import GoodToKnow from "@/components/GoodToKnow-home";
 import HeroContainer from "@/components/HeroContainer/HeroContainer";
 import DivisionsContainer from "@/components/DivisionsContainer/DivisionsContainer";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
+import { getId, getSectionById } from "@/lib/utils";
+import CardWithLogo from "@/components/CardWithLogo";
 
 
 
-const Home = () => {
+const Home = async () => {
+
+  const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "home_images")
+  const groupsData = await getId("2a5a4f80-b206-44b9-9e00-6b870a00f90e")
+
   return (
     <main className="">
-      <HeroContainer bgImages={{ mobile: "bg-[url('/images/IMG_3420.JPEG')]", desktop: "md:bg-[url('/images/IMG_3752.JPEG')]" }} messageSection={"homeHero"} />
-      <section className="flex flex-col items-center w-full">
-        <CardWithImage sectionTitle={"homePageCard"} logo="/heart.png" image="/images/IMG_6743.JPEG" />
-        <HomeSection />
+      <HeroContainer bgImages={{ mobile: data.home_images.home_hero_mobile.asset._ref, desktop: data.home_images.home_hero_desktop.asset._ref }} messageSection={"homeHero"} />
+      <section className="flex flex-col items-center w-full md:max-w-360  mx-auto md:my-20">
+        <CardWithLogo sectionTitle={"homePageCard"} image="/anchorYellowBg.svg" />
         <GoodToKnow />
         <WhiteImageBox />
-        <DivisionsContainer />
+        <DivisionsContainer data={groupsData} />
         <InstagramContainer bgBlue={true} />
       </section>
     </main>
