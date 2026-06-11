@@ -11,7 +11,7 @@ interface unionProps {
 const Union = async ({locale = "sv"}:unionProps) => {
     const data = await client.fetch(`*[_type=="union"][0] { "files": history_section[] {name, "fileUrl": file.asset-> url} } `)
     return (
-        <div className="pt-3 py-8 bg-primary mx-4 overflow-hidden rounded-3xl lg:mx-auto lg:w-212 xl:w-316.25 2xl:w-386">
+        <div className="pt-3 py-8 bg-primary mx-4 overflow-hidden rounded-3xl lg:mx-auto lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]">
             <ContentSection
                 sectionLayout={["t", "p"]}
                 page="union"
