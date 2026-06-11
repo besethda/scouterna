@@ -36,12 +36,14 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
     return (
         <main>
             <HeroContainer bgImages={{ mobile: data.join_images.join_hero_mobile.asset._ref, desktop: data.join_images.join_hero_desktop.asset._ref }} messageSection={"joinHero"} position={"center"} />
-            <div className="max-w-360 mx-auto">
+            <div className="lg:max-w-245 2xl:max-w-360 mx-auto">
                 <Breadcrumbs />
-                <section className="flex flex-col items-center w-full ">
-                    <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
+                <section className="flex flex-col items-center w-full">
+                    <div className="w-full">
+                        <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
+                    </div>
                     <Scoutlife />
-                    <div className=" bg-white mx-4 my-8 py-4 lg:mx-22 lg:my-20 lg:pt-2 rounded-3xl shadow-xl">
+                    <div className=" bg-white mx-4 my-8 py-4 lg:my-20 lg:pt-2 rounded-3xl shadow-xl">
                         <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
                         <Line hasPadding />
                         <section className="flex flex-col gap-6 font-albert px-4 pb-8 lg:max-w-430 lg:px-10">
@@ -81,7 +83,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             </div>
                         </section>
                     </div>
-                    <div className=" mx-4 my-8 py-4 lg:mx-22 lg:my-20 lg:pt-2">
+                    <div className=" px-4 my-8 py-4 lg:mx-22 lg:my-20 lg:pt-2 w-full">
                         <JoinPage
                             head={messages?.joinPage.head}
                             title={messages?.joinPage.title}
