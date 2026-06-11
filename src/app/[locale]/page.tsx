@@ -16,7 +16,7 @@ const Home = async () => {
   return (
     <main className="">
       <HeroContainer bgImages={{ mobile: data.home_images.home_hero_mobile.asset._ref, desktop: data.home_images.home_hero_desktop.asset._ref }} messageSection={"homeHero"} />
-      <section className="flex flex-col items-center w-full lg:max-w-245 2xl:max-w-360  mx-auto  md:mt-5">
+      <section className="flex flex-col items-center w-full lg:max-w-245 2xl:max-w-360  mx-auto md:mb-20 md:mt-12">
         <CardWithLogo sectionTitle={"homePageCard"} image="/anchorYellowBg.svg" />
         <GoodToKnow />
         <WhiteImageBox />

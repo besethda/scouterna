@@ -3,6 +3,7 @@
 import useMessages from "@/hook/useMessages"
 import Image from "next/image"
 import underline from '../../../../../public/underline.svg'
+import birds from '../../../../../public/blueBirds1.png'
 
 const LifeStyleSection = ({ }) => {
 
