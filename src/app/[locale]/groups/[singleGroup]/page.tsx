@@ -149,7 +149,7 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
+          <section className="bg-white w-full h-160 md:h-130 lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
             <div className="w-full py-2 pb-15 self-start">
               <ContentSection
                 sectionLayout={["g"]}
@@ -168,7 +168,7 @@ const Groups = async ({
               }}
                 value={locale === "en" ? sjohumlorna?.leader.text_object.text_en_array : sjohumlorna?.leader.text_object.text_sv_array} />
             </div>
-            <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+            <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6 self-start">
               <ImageCard
                 imageTitle="spararscouter_title"
                 image={urlFor(sjohumlorna.leader.text_object.image.asset._ref).url()}
@@ -267,7 +267,7 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl  md:flex">
+          <section className="bg-white w-full h-160 md:h-130  lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl  md:flex">
             <div className="w-full py-2 pb-15 self-start">
               <ContentSection
                 sectionLayout={["g"]}
@@ -286,7 +286,7 @@ const Groups = async ({
               }}
                 value={locale === "en" ? kaparna?.leader.text_object.text_en_array : kaparna?.leader.text_object.text_sv_array} />
             </div>
-            <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+            <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6 self-start">
               <ImageCard
                 imageTitle="spararscouter_title"
                 image={urlFor(kaparna.leader.text_object.image.asset._ref).url()}
@@ -384,7 +384,7 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
+          <section className="bg-white w-full h-160 md:h-130  lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
             <div className="w-full py-2 pb-15 self-start">
               <ContentSection
                 sectionLayout={["g"]}
@@ -403,7 +403,7 @@ const Groups = async ({
               }}
                 value={locale === "en" ? utmanare?.leader.text_object.text_en_array : utmanare?.leader.text_object.text_sv_array} />
             </div>
-            <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+            <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6 self-start">
               <ImageCard
                 imageTitle="utmanarscouter_title"
                 image={urlFor(utmanare.leader.text_object.image.asset._ref).url()}
@@ -501,7 +501,7 @@ const Groups = async ({
               </div>
             </div>
           </section>
-          <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
+          <section className="bg-white w-full h-160 md:h-130  lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
             <div className="w-full py-2 pb-15 self-start">
               <ContentSection
                 sectionLayout={["g"]}
@@ -520,7 +520,7 @@ const Groups = async ({
               }}
                 value={locale === "en" ? konvojen?.leader.text_object.text_en_array : konvojen?.leader.text_object.text_sv_array} />
             </div>
-            <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6">
+            <div className="flex w-89.5 aspect-7/5 h-auto md:pt-5 md:pb-4 pb-6 self-start">
               <ImageCard
                 imageTitle="aventyrarscouter_title"
                 image={urlFor(konvojen.leader.text_object.image.asset._ref).url()}

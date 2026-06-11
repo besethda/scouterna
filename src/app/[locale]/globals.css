@@ -31,7 +31,6 @@
   --color-primaryBtn: #003660;
   --color-form: #B3B3B3;
 
-
   /* Font */
   --font-fraunces: "Fraunces", sans-serif;
   --font-varela: "Albert Sans", sans-serif;
@@ -39,18 +38,20 @@
   --font-public: "Albert Sans", sans-serif;
   --font-gochi: "Gochi Hand", sans-serif;
 
-
   /* Dektop */
   --text-hero-desktop--font-family: var(--font-albert);
   --text-hero-desktop: 64px;
   --text-hero-desktop-bold--font-weight: 700;
 
+  /* 48 */
   --text-h1-desktop--font-family: var(--font-albert);
   --text-h1-desktop: 48px;
-  /* 48 */
 
   --text-h2-desktop--font-family: var(--font-albert);
   --text-h2-desktop: 40px;
+
+  --text-h6-desktop--font-family: var(--font-albert);
+  --text-h6-desktop: 18px;
 
   --text-h3-desktop--font-family: var(--font-albert);
   --text-h3-desktop: 26px;
@@ -73,6 +74,10 @@
 
   --text-link-desktop--font-family: var(--font-albert);
   --text-link-desktop: 18px;
+
+  --text-h7-desktop--font-family: var(--font-albert);
+  --text-h7-desktop: 18px;
+  --text-h7-desktop-bold--font-weight: 700;
 
   --text-acc-desktop--font-family: var(--font-albert);
   --text-acc-desktop: 16px;
@@ -147,4 +152,32 @@ body {
   }
 }
 
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
 
+  20% {
+    transform: rotate(8deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  60% {
+    transform: rotate(3deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.pin-swing:hover {
+  animation: swing 1.8s ease-in-out;
+}

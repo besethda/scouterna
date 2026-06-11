@@ -262,8 +262,8 @@ export type MessagesEngType = {
   gdpr: Record<string, string>
   notifications: Record<string, string>
   ethics: Record<string, string>
-  email: Record<string, string>
-  bank: Record<string, string>
+  email: Record<string, any>
+  bank: Record<string, any>
   offers: Record<string, string>
   map: Record<string, string>
   scoutLife: Record<string, string>
@@ -390,7 +390,7 @@ export type MessagesEngType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
-  union: Record<string, string>
+  union: Record<string, string >
   download: string,
   BarnOchVuxnaTillsammans: Record<string, string>,
   ParumMagna: Record<string, string>,
@@ -845,18 +845,18 @@ export const En: MessagesEngType = {
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
   email: {
-    "t0": "Email",
-    "s0": "Email to kåren",
-    "p0": "info@hss-scout.org",
-    "s1": "Email about memberships",
-    "p1": "register@hss-scout.org"
+    "title": "Email",
+    "text01": "Email to kåren",
+    "info01": "info@hss-scout.org",
+    "text02": "Email about memberships",
+    "info02": "register@hss-scout.org"
   },
   "bank": {
-    "t0": "Bank details",
-    "s0": "Postgiro",
-    "p0": "404418 - 6",
-    "s1": "Organization number",
-    "p1": "802006 - 2389"
+    "title": "Bank details",
+    "text03": "Postgiro",
+    "info03": "404418 - 6",
+    "text04": "Organization number",
+    "info04": "802006 - 2389"
   },
   offers: {
     "bigHeader0": "Time",
@@ -1117,8 +1117,8 @@ export const En: MessagesEngType = {
   },
   konvojenButton: "Badge poster for Äventyrare",
   union: {
-    g0: "Union",
-    p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
+    t0: "View and download",
+    p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review.",
   },
   download: "Download ",
   BarnOchVuxnaTillsammans: {

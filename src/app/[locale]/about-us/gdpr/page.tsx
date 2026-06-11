@@ -15,26 +15,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
-const Gdpr = async ({ params }: { params: Promise<{ locale: string }> }) => {
-  const { locale } = await params
-  const data = await getId("ec7ef49d-c0a3-4326-98ab-681d90994d8e")
-
-  if (data?.history_layout.scout_life) return (
-    <main>
-      <Breadcrumbs />
-      <CardWithLogo image="/informationYellowBg.svg" sectionTitle="gdprcard" isH1 />
-      <div className="flex flex-col items-center bg-bg-blue pb-10">
-        {data?.history_layout.scout_life.map((e: any, index: number) => {
-          return (
-            <div key={index} className={`relative max-w-[92%] md:max-w-[95%] xl:max-w-[89%] lg:max-w-430 rounded-3xl w-full shadow-xl ${index % 2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 md:px-10 py-3`}>
-              <SanityFlex data={e.section_array} locale={locale} color={index % 2 === 0 ? "black" : "white"} />
-              <div>
-                <Image src={heart} alt="anchor" height={150} width={150} className="hidden lg:block lg:absolute opacity-70 lg:-rotate-12 lg:right-30 lg:top-40" />
-              </div>
+const Gdpr = async ({params}:{params: Promise<{locale: string}>}) => {
+    const {locale} = await params
+    const data = await getId("ec7ef49d-c0a3-4326-98ab-681d90994d8e")
+        
+    if(data?.history_layout.scout_life) return (
+        <main>
+            <Breadcrumbs />
+              <CardWithLogo image="/informationYellowBg.svg" sectionTitle="gdprcard" isH1 />
+            <div className="mx-4 flex flex-col items-center bg-bg-blue pb-10">
+              {data?.history_layout.scout_life.map((e:any, index:number)=> {return(
+                <div key={index} className={`rounded-3xl lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 md:px-10 py-3`}>
+                  <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"}/>
+                </div>
+                )})}              
             </div>
-          )
-        })}
-      </div>
     </main>
   );
 }
