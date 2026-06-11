@@ -54,15 +54,15 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
         <div className="py-10 flex flex-col gap-2 font-albert lg:py-25 lg:max-w-430  px-4 lg:px-22 2xl:mx-auto relative">
             <Toaster position="top-center" reverseOrder={false} />
             <h2 className="text-h2 w-full font-fraunces font-bold text-primary md:text-h2-desktop">{title}</h2>
-            <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-[280px] md:max-w-[400px] lg:max-w-[600px]">{text}</p>
+            <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-70 md:max-w-100 lg:max-w-150">{text}</p>
             <div className="absolute right-4 top-14 -scale-x-100 rotate-293  
                             md:right-22 
-                            lg:scale-x-100 lg:rotate-0 lg:top-70 lg:right-40 lg:right-auto lg:left-[60px]
-                            xl:-rotate-5 xl:left-[180px]
-                            2xl:-rotate-5 2xl:left-[160px] 
+                            lg:scale-x-100 lg:rotate-0 lg:top-70 lg:right-40 lg:left-15
+                            xl:-rotate-5 xl:left-45
+                            2xl:-rotate-5 2xl:left-40
             ">
                 <svg
-                    className="w-[67px] h-auto md:w-[182px] xl:w-[240px] 2xl:w-[300px]"
+                    className="w-16.75 h-auto md:w-45.5 xl:w-60 2xl:w-75"
                     viewBox="0 0 336 326"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                         type="text"
                         placeholder={efternamn}
                         {...register("firstName", { required: "Write your first name" })}
-                        className="bg-white border text-form border border-lightGray border-solid rounded-lg w-full h-10 p-3"
+                        className="bg-white border text-form  border-lightGray border-solid rounded-lg w-full h-10 p-3"
                     />
                     {errors.firstName && <p className="text-red-400 text-xs mt-1">{errors.firstName.message}</p>}
                 </div>
@@ -110,7 +110,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                         type="text"
                         placeholder={epost}
                         {...register("email", { required: "Write email address" })}
-                        className="bg-white border text-form border border-lightGray border-solid rounded-lg w-full h-10 p-3"
+                        className="bg-white border text-form  border-lightGray border-solid rounded-lg w-full h-10 p-3"
                     />
                     {errors.email && <p className="text-red-400 text-xs mt-1">{errors.email.message}</p>}
                 </div>
@@ -119,7 +119,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                     <textarea
                         placeholder={meddelande}
                         {...register("message", { required: "Write your message" })}
-                        className="bg-white border text-form border border-lightGray border-solid rounded-lg w-full p-3 h-36"
+                        className="bg-white border text-form  border-lightGray border-solid rounded-lg w-full p-3 h-36"
                     />
                     {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>}
                 </div>
