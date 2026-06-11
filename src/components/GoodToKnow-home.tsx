@@ -46,9 +46,9 @@ const GoodToKnow = () => {
         <Image src={underline} alt="underline" width={96} height={32} className="md:hidden w-35 h-auto"/>
         <Image src={ring} alt="highlighte text" width={400} height={250} className="md:absolute hidden md:block -left-16.5 -top-41.25" />
       </div>
-      <div className="flex flex-col gap-4 md:grid lg:max-w-393 md:grid-cols-2 md:grid-rows-2 md:gap-6 md:py-2.5 md:text-[#FFFFFF] ">
+      <div className="flex flex-col gap-4 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-6 md:py-2.5 md:text-[#FFFFFF]">
         {cards.map((card, index) => (
-          <div key={index} className="flex flex-row gap-4 font-normal bg-primary rounded-2xl p-5 shadow-md shadow-black/40">
+          <div key={index} className="flex flex-row gap-4 font-normal bg-primary rounded-2xl p-5 shadow-md shadow-black/40 md:min-w-75">
             <div className="md:flex  min-w-12 h-11.25 rounded-full items-center justify-center">
               <img src={card.icon} alt={card.alt} height={45} width={48} />
             </div>
