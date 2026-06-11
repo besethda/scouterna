@@ -29,15 +29,15 @@ const Ruffen = async ({ params }: { params: Promise<{ locale: string }> }) => {
         <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full">
-                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="ruffen" isH1/>
+                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="ruffen" isH1 logoTopRight/>
                 <section className="md:bg-bg-blue py-7 flex w-full flex-col items-center">
-                    <ContentSection sectionLayout={["t", "p"]} page={"ruffenDivisions"} padding="none" background="desktop" />
+                    <ContentSection sectionLayout={["t", "p"]} page={"ruffenDivisions"} padding="none" />
                     <div className="flex flex-col p-4 gap-1 md:px-25 md:grid md:grid-cols-2 w-full lg:max-w-430 lg:px-22 md:gap-2 [&>*]:w-full">
-                        <DivisionsBox division={"sjohumlorna"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
-                        <DivisionsBox division={"kaparna"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
-                        <DivisionsBox division={"utmanare"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
-                        <DivisionsBox division={"konvojen"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "konvojen") || null}/>
-                        <DivisionsBox division={"smattarne"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "smattarne") || null}/>
+                        <DivisionsBox division={"spararscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
+                        <DivisionsBox division={"upptackarscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
+                        <DivisionsBox division={"utmanarscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "utmanare") || null}/>
+                        <DivisionsBox division={"aventyrarscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "konvojen") || null}/>
+                        <DivisionsBox division={"familjescouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "smattarne") || null}/>
                     </div>
                 </section>
                 <section className="pb-8 md:pt-8 md:pb-20 px-4 lg:max-w-430 lg:px-22 w-full">

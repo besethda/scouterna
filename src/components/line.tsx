@@ -4,7 +4,7 @@ interface LinProps {
 
 const Line = ({hasPadding}:LinProps) => {
     return (
-        <div className={`${hasPadding ? "py-6 px-4 lg:px-22" : "px-0" } flex flex-col w-full 2xl:max-w-425 lg:py-8`}>
+        <div className={`${hasPadding ? "py-6 px-4 lg:px-22" : "px-0" } flex flex-col w-full 2xl:max-w-425 lg:py-8 mx-auto`}>
             <svg 
                 viewBox="0 0 900 24" 
                 className="w-full h-6 lg:h-auto text-primary" 

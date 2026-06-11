@@ -13,11 +13,11 @@ const routes: routesType = {
   "/join/faq": true,
 
   "/groups": true,
-  "/groups/sjohumlorna": true,
-  "/groups/kaparna": true,
-  "/groups/utmanare": true,
-  "/groups/konvojen": true,
-  "/groups/smattarne": true,
+  "/groups/spararscouter": true,
+  "/groups/upptackarscouter": true,
+  "/groups/utmanarscouter": true,
+  "/groups/aventyrarscouter": true,
+  "/groups/familjescouter": true,
 
   "/what-we-do": false,
   "/what-we-do/lifestyle": true,

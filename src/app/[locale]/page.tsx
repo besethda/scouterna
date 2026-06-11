@@ -12,17 +12,17 @@ import CardWithLogo from "@/components/CardWithLogo";
 
 const Home = async () => {
 
-    const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "home_images")
-    const groupsData = await getId("2a5a4f80-b206-44b9-9e00-6b870a00f90e")
+  const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "home_images")
+  const groupsData = await getId("2a5a4f80-b206-44b9-9e00-6b870a00f90e")
 
   return (
     <main className="">
       <HeroContainer bgImages={{ mobile: data.home_images.home_hero_mobile.asset._ref, desktop: data.home_images.home_hero_desktop.asset._ref }} messageSection={"homeHero"} />
-      <section className="flex flex-col items-center w-full">
-        <CardWithLogo sectionTitle={"homePageCard"}  image="/anchorYellowBg.svg" />
+      <section className="flex flex-col items-center w-full md:max-w-360  mx-auto md:my-20">
+        <CardWithLogo sectionTitle={"homePageCard"} image="/anchorYellowBg.svg" />
         <GoodToKnow />
         <WhiteImageBox />
-        <DivisionsContainer data={groupsData}/>
+        <DivisionsContainer data={groupsData} />
         <InstagramContainer bgBlue={true} />
       </section>
     </main>

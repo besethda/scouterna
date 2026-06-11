@@ -24,6 +24,7 @@ const InstagramContainer = async ({bgBlue=false, mobileOnly=false, showText=fals
     },
   ]
 
+  // Real scouts URL: https://feeds.behold.so/au47cEddhn57lA49VlAe
   const response = await fetch("https://feeds.behold.so/cpFFCBnZsZUNtLg9vY4Y")
   const data = response.ok ? await response.json() : null
   if(response.ok && (data?.posts && data.posts.length > 5)){
