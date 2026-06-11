@@ -1117,7 +1117,7 @@ export const En: MessagesEngType = {
   },
   konvojenButton: "Badge poster for Äventyrare",
   union: {
-    t0: "View and download",
+    t0: "Union meeting",
     p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review.",
   },
   download: "Download ",
