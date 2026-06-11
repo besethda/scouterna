@@ -9,6 +9,8 @@ import Image from "next/image";
 import { getId } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
 import Line from "@/components/line"
+import birds from '../../../../../public/blueBirds1.png'
+import anchor from '../../../../../public/blueAnchor.svg'
 
 const pageItem = "faq"
 const headDescription = "faq"
@@ -28,7 +30,7 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
             <Breadcrumbs />
             <div className="flex w-full flex-col items-center ">
                 <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
-                <div className="w-full">
+                <div className="w-full relative">
                     {data?.questionCategories.map((category: any, index: number) => (
                         <div key={index}>
                             <section className={`${index % 2 === 0 ? 'bg-bg-blue' : 'bg-bg-blue'} py-10 `}>
@@ -46,6 +48,8 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
                             {index < data.questionCategories.length - 1 && <Line hasPadding />}
                         </div>
                     ))}
+                    <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-10 opacity-90 lg:rotate-12" />
+                    <Image src={anchor} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-280 lg:left-10 opacity-90 lg:rotate-12" />
                 </div>
                 <div className="flex flex-col md:flex-row w-full pt-5 px-4 pb-10 lg:max-w-430 lg:px-22 md:flex md:pt-12.5 md:pb-16 md:items-start md:gap-25 items-center">
                     <section className="flex flex-col gap-6 font-albert md:gap-4 w-full

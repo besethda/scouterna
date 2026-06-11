@@ -859,6 +859,10 @@ export const En: MessagesEngType = {
     "p1": "802006 - 2389"
   },
   offers: {
+    "bigHeader0": "Time",
+    "bigHeader1": "Inclusion",
+    "bigHeader2": "Values",
+    "bigHeader3": "Safety",
     title: "What Scout Life Offers",
     header0: "Life on the waves",
     header1: "Naturally exciting",
