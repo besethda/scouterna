@@ -36,6 +36,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
         `}>
             <Image src={pinColor()} alt={imageTitle} width={85} height={80} className={`absolute inset-s-0 z-20 
             ${page === "cabin" || page === "groups" ? "left-20 -top-2" : "left-33 -top-4"}
+            ${page === "scout-life" || "cabin" ? "hidden md:block" : ""}
             `} />
             <div className={`mb-3.25 relative overflow-hidden
             ${page === "cabin" && "h-57.25"}
@@ -53,9 +54,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
             <div>
                 <p className="text-[20px]">{(messages as any)[section]?.[text]}</p>
             </div>
-
         </div>
-     
     )
 }
 export default ImageCard

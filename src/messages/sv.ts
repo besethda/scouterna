@@ -846,6 +846,10 @@ export const Sv: MessagesSvType = {
     p1: "802006 - 2389"
   },
   offers: {
+    bigHeader0: "TID",
+    bigHeader1: "Inkluderande",
+    bigHeader2: "Värderingar",
+    bigHeader3: "Trygghet",
     title: "Vad Scoutlivet erbjuder",
     header0: "Livet på vågorna",
     header1: "Naturligt spännande",

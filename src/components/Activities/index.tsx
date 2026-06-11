@@ -5,7 +5,7 @@ import useMessages from "@/hook/useMessages"
 const Activities = () => {
   const messages = useMessages()
   return (
-    <div className="flex flex-col items-center bg-bg-white px-4 py-8 mx-4 mb-10 rounded-3xl max-w-[980px] lg:mx-auto lg:px-10">
+    <div className="flex flex-col items-center bg-bg-white px-4 py-8 mx-4 mb-10 rounded-3xl md:mb-20 md:max-w-[980px] lg:mx-auto lg:px-10 2xl:max-w-[1440px]">
       <div className=" w-full flex flex-col ">
         <div className="flex flex-col gap-6 max-w-[603px]">
           <h2 className="text-primary md:text-h2-desktop font-fraunces font-bold text-h2-albert">{messages?.activity.title}</h2>
