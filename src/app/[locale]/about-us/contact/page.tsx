@@ -22,11 +22,15 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
   const messages = locale === "en" ? En : Sv
 
   return (
-    <main>
+    <main className="md:max-w-360 mx-auto w-full">
       <Breadcrumbs />
       <CardWithLogo image="/mailYellowBg.svg" sectionTitle="contactcard" isH1 />
-      <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} />
-      <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"} />
+      <div className="p-4 md:px-22">
+        <div className="bg-primary w-full rounded-2xl py-6 md:py-3">
+          <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} color={"yellow"} padding="top-desktop" />
+          <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"} color={"yellow"} padding="bottom-desktop" />
+        </div>
+      </div>
       <div className="w-full  bg-bg-blue">
         <ContactForm
           title={messages?.form.title}
