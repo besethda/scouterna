@@ -55,7 +55,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
             <Toaster position="top-center" reverseOrder={false} />
             <h2 className="text-h2 w-full font-fraunces font-bold text-primary md:text-h2-desktop">{title}</h2>
             <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-70 md:max-w-100 lg:max-w-150">{text}</p>
-            <div className="absolute right-4 top-14 -scale-x-100 rotate-293  
+            <div className="absolute right-4 top-14 -scale-x-100 rotate-293 pointer-events-none  
                             md:right-22 
                             lg:scale-x-100 lg:rotate-0 lg:top-70 lg:right-40 lg:left-15
                             xl:-rotate-5 xl:left-45
