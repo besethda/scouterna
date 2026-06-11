@@ -3,7 +3,6 @@ import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { use } from "react";
-import CardWithImage from "@/components/CardWithImage";
 import Union from "./union";
 /*import Scoutnet from "@/components/Scoutnet/scoutnet";*/
 import ScoutInfo from "@/components/ScoutInfo/scoutInfo";
@@ -22,15 +21,17 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
     const { locale } = use(params)
     const messages = locale === "en" ? En : Sv
     return (
-        <main className="bg-bg-blue">
+        <main className="bg-bg-blue ">
+            <div className="max-w-360 mx-auto w-full">
             <Breadcrumbs />
-            <div className="w-full flex flex-col items-center">
+            <div className="w-full flex flex-col items-center ">
                 <CardWithLogo image="/informationYellowBg.svg" sectionTitle="memberInfo" isH1 />
                 <div className="flex flex-col gap-10">
                     <ScoutInfo />
-                    <Union  locale="={locale}"/>
+                    <Union  locale={locale}/>
                     <InstagramContainer showText={true}/>
                 </div>
+            </div>
             </div>
         </main>
     );

@@ -1,5 +1,4 @@
 import { getPageHeadTitle, getSectionById } from "@/lib/utils"
-import CardWithoutImage from "@/components/CardWithoutImage";
 import ContentSection from "@/components/ContentSection";
 import CTABtn from "@/components/CTA-button";
 import ImageContainer from "./ImageContainer";
