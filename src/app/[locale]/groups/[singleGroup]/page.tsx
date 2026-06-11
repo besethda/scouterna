@@ -70,7 +70,7 @@ const Groups = async ({
         <Breadcrumbs />
         <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1 logoTopRight />
         <div className="px-4 lg:px-22">
-          <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
+          <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
               <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15 ">
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
@@ -189,7 +189,7 @@ const Groups = async ({
         <Breadcrumbs />
         <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1 logoTopRight />
         <div className="px-4 lg:px-22">
-          <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
+          <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
               <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15">
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
@@ -306,7 +306,7 @@ const Groups = async ({
         <Breadcrumbs />
         <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1 logoTopRight />
         <div className="px-4 lg:px-22">
-          <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
+          <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
               <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15 ">
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
@@ -423,7 +423,7 @@ const Groups = async ({
         <Breadcrumbs />
         <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1 logoTopRight />
         <div className="px-4 lg:px-22">
-          <section className="w-full flex flex-col  bg-bg-white px-4 rounded-3xl shadow-xl">
+          <section className="w-full flex flex-col  bg-bg-white md:px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
               <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15">
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
