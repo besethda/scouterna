@@ -33,7 +33,7 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
                 <section className="h-fit pb-13">
                     <CardWithLogo image="/informationYellowBg.svg" sectionTitle="safetyCard" isH1 /> 
                 </section>
-                <div className="flex flex-col w-full px-4 gap-6 lg:max-w-430 lg:px-22 md:pt-10 md:gap-20 md:pb-16 pb-6" >
+                <div className="flex flex-col w-full px-4 gap-10 lg:max-w-430 lg:px-22 md:pt-10 md:gap-20 md:pb-16 pb-10" >
                     <section className="order-2 bg-white rounded-2xl relative"> 
                         <ContentSection sectionLayout={["h", "w", "p", "t", "s", "p", "s", "p", "s", "p"]} page="safeScout" padding="both" />
                         <Image src={vest} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-40 opacity-70 lg:-rotate-12 " />
