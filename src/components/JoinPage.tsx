@@ -30,16 +30,16 @@ const JoinPage = ({
 }: JoinPageProps) => {
   return (
     <div
-      className="bg-bg-accent w-full md:max-w-430 border-transparent rounded-2xl flex shadow-xl"
+      className="bg-bg-accent w-full md:max-w-430 border-transparent rounded-2xl flex shadow-xl  lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]"
     >
       <div
-        className="flex flex-col w-full lg:max-w-400 p-4 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-10 mx-auto md:flex-row md:flex-2"
+        className="flex flex-col w-full lg:max-w-400 px-2 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-8 mx-auto md:flex-row md:flex-2"
       >
         <div
-          className={`flex flex-col gap-2 text-left relative ${section === "join" ? "md:max-w-100 lg:max-w-140" : ""}`}
+          className={`flex flex-col gap-6 text-left relative ${section === "join" ? "md:max-w-100 lg:max-w-140" : ""}`}
         >
           <div className="gap-0">
-            <h2 className={`font-fraunces font-bold text-primary md:text-h1-desktop  ${section === "join" ? "text-h1" : "text-[22px] "}`}>{head}</h2>
+            <h2 className={`font-fraunces font-bold text-primary md:text-h2-desktop  ${section === "join" ? "text-h1" : "text-[22px] "}`}>{head}</h2>
             {section === "join" ? <Image src={shortLine} alt="line" /> : <Image src={longLine} alt="line" />}
           </div>
           <h3 className={`text-h2-albert font-fraunces font-bold text-primary md:text-h4-desktop md:pt-3 ${section === "contact" && "hidden md:block"}`}>
@@ -52,7 +52,7 @@ const JoinPage = ({
           >
             {text}
           </p>
-          <div className="hidden md:block absolute bottom-16 left-110 rotate-30">
+          <div className="hidden md:block absolute bottom-5 left-150 rotate-30">
             <Image src={Arrow} alt="arrow" />
           </div>
           <div className={`md:flex-1 ${section === "join" ? "hidden" : "md:hidden"}`}>
@@ -60,7 +60,7 @@ const JoinPage = ({
           </div>
           {buttonText && (
             <div
-              className={`${width === "mobile" ? " mx-auto md:mx-0" : "w-full md:w-fit md: pt-15"} w-fit mt-2 `}
+              className="mx-auto md:mx-0"
             >
               <a
                 href="https://www.scoutnet.se/register/in/group/764"
