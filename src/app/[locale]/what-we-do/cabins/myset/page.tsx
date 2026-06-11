@@ -31,8 +31,8 @@ const Myset = async ({ params }: { params: Promise<{ locale: string }> }) => {
         <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1 logoTopRight/> 
-                <div className="px-4 lg:px-10 py-8  md:py-3 lg:py-6 flex flex-col items-center bg-white mx-4 rounded-3xl mb-10 lg:w-[848px] 2xl:max-w-[980px]">
+                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1 /> 
+                <div className="px-4 lg:px-10 py-8  md:py-3 lg:py-6 flex flex-col items-center bg-white mx-4 rounded-3xl mb-10 lg:max-w-[848px] 2xl:max-w-[1440px]">
                     <div className="">
                         <ContentSection sectionLayout={["t"]} page="myset01" padding="" child={true} />
                         <p className="py-2 text-body md:text-body-desktop text-text-black font-albert">{messages?.myset01?.p0} 

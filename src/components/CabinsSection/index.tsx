@@ -23,10 +23,12 @@ const CabinsSection = ({ images }: { images: Record<string, string> }) => {
       </div>
       <div className="flex flex-col rounded-2xl lg:h-auto bg-white shadow-lg  py-8 ">
         <div className="flex flex-col md:flex-row w-full h-full">
-          <div className="flex flex-col flex-1 px-3 lg:px-10 md:mr-20">
-            <h3 className="text-primary text-h2 font-fraunces font-bold">{messages?.cabinsmyset.title}</h3>
-            <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A] ">{messages?.cabinsmyset.dpOne}</p>
-            <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsmyset.dpTwo}</p>
+          <div className="flex flex-col flex-1 px-3 lg:px-10 md:mr-9 2xl:justify-between">
+            <div>
+              <h3 className="text-primary text-h2 font-fraunces font-bold">{messages?.cabinsmyset.title}</h3>
+              <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A] ">{messages?.cabinsmyset.dpOne}</p>
+              <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsmyset.dpTwo}</p>
+            </div>
             <div className="my-6 md:mb-0 w-full flex justify-center md:justify-start lg:w-fit md:w-70 ">
               <Link
                 href={`/${currentLocal}/what-we-do/cabins/myset`} >
@@ -35,17 +37,19 @@ const CabinsSection = ({ images }: { images: Record<string, string> }) => {
               </Link>
             </div>
           </div>
-          <div className="shrink-0 flex w-full justify-center md:block mr-6 md:w-80">
+          <div className="shrink-0 flex w-full justify-center md:block md:w-80">
             <ImageCard image={urlFor(images.imageMyset).url()} imageTitle="title" text="" section="cabinsmyset" page="cabin" pin="pink" />
           </div>
         </div>
       </div>
       <div className="flex flex-col rounded-2xl lg:h-auto bg-white shadow-lg py-8">
         <div className="flex  flex-col md:flex-row w-full h-full ">
-          <div className="flex flex-col flex-1 md:py-6 px-3 lg:px-10 md:mr-20 ">
-            <h3 className="text-primary text-h3-desktop font-fraunces font-bold">{messages?.cabinsruffen.title}</h3>
-            <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpOne}</p>
-            <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpTwo}</p>
+          <div className="flex flex-col flex-1 md:py-6 px-3 lg:px-10 md:mr-9 2xl:justify-between">
+            <div>
+              <h3 className="text-primary text-h3-desktop font-fraunces font-bold">{messages?.cabinsruffen.title}</h3>
+              <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpOne}</p>
+              <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsruffen.dpTwo}</p>
+            </div>
             <div className="my-6 md:mb-0 w-full flex justify-center md:justify-start lg:w-fit md:w-70 ">
               <Link
                 href={`/${currentLocal}/what-we-do/cabins/ruffen`}>

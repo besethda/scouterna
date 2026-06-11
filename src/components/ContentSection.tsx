@@ -34,7 +34,7 @@ const ContentSection = ({ sectionLayout, page, padding = "both", color="black", 
   return (
     <div className={`w-full flex justify-center ${color === "black" ? "text-text-black" : "text-text-black"}`}>
       <div className={`${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-16 pt-7" : padding === "bottom-mobile" ? "pb-16 md:pb-0" : padding === "top-mobile" ? "pt-7 md:pt-0" : padding === "bottom-desktop" ? "pb- md:pb-16" : padding === "top-desktop" ? "pt-0 md:pt-7" : ""} 
-      ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} w-full ${child ? "" : "px-4 lg:max-w-430 lg:px-10"}`}>
+      ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} w-full ${child ? "" : "px-4 lg:max-w-430 lg:px-0"}`}>
         {createLayout(sectionLayout)}
       </div>
     </div>
