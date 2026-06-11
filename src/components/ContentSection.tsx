@@ -23,7 +23,7 @@ const ContentSection = ({ sectionLayout, page, padding = "both", color = "black"
             element === "w" ? `w-fit py-2 text-body-bold md:text-body-bold-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-fraunces` :
               element === "h" ? `w-fit py-2 text-h1 md:text-h1-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
                 element === "t" ? `w-fit py-2 text-h3 md:text-h2-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
-                  element === "s" ? `w-fit py-2 text-h3 md:text-h3-desktop  ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
+                  element === "s" ? `w-fit py-2 text-h3 md:text-h3-desktop  ${color === "black" ? "text-primary" : color === "yellow" ? "text-accent" : "text-text-white"} font-fraunces font-bold` :
                     element === "g" ? `w-fit py-2 text-[22px] md:text-h4-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` : ""
           }`}>{(messages as any)[page]?.[`${element}${count.length}`]}</div>)
       }

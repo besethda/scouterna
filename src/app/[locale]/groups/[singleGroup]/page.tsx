@@ -179,8 +179,8 @@ const Groups = async ({
               />
             </div>
           </section>
-        </div>
-      </main>
+        </div >
+      </main >
     );
   } else if (singleGroup === "upptackarscouter") {
     return (

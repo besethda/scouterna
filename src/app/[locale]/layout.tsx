@@ -7,7 +7,8 @@ import { Sv } from "@/messages/sv"
 import { use } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { getSectionById } from "@/lib/utils";
+import { getId } from "@/lib/utils";
+import PWAdetector from "@/components/PWAdetector";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     }
 }
 
-const alert = await getSectionById("bff5f8b7-3ae9-4497-add7-8a018735fb0f", "notifications")
+const alert = await getId("bff5f8b7-3ae9-4497-add7-8a018735fb0f")
 
 const varela = Varela_Round({
   variable: "--font-varela",
@@ -62,6 +63,7 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
     >
       <body className="min-h-full flex flex-col">
         <TranslateContent value={messages}>
+        <PWAdetector/>
           <Header alerts={alert}/>
           {children}
           <Footer />
