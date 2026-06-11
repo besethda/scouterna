@@ -37,7 +37,7 @@ const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) =>
             </div>
             <div className="relative">
                 <Activities />
-                <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-10 opacity-90 lg:rotate-12" />
+                <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-40 opacity-90 lg:rotate-10" />
             </div>
         </main>
     );
