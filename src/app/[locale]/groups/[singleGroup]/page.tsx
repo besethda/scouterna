@@ -72,7 +72,7 @@ const Groups = async ({
         <div className="px-4 lg:px-22">
           <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
-              <div className="flex flex-col lg:max-w-150 px-4 py-4 pb-7 lg:pb-15 ">
+              <div className="flex flex-col lg:max-w-280 px-4 py-4 pb-7 lg:pb-15 ">
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
@@ -137,17 +137,15 @@ const Groups = async ({
                   </a>
                 </div>
               </div>
-              <div className="hidden md:block md:flex-1 justify-center">
-                <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6">
-                  <ImageCard
-                    imageTitle="spararscouter_title"
-                    image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
-                    section="division"
-                    page="group"
-                    text=""
-                    pin="red"
-                  />
-                </div>
+              <div className="w-89.5 h-auto md:pt-20 md:pb-4 pb-6 hidden md:block">
+                <ImageCard
+                  imageTitle="spararscouter_title"
+                  image={urlFor(sjohumlorna.groups.image.asset._ref).url()}
+                  section="division"
+                  page="group"
+                  text=""
+                  pin="red"
+                />
               </div>
             </div>
           </section>
