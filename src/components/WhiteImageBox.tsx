@@ -1,9 +1,7 @@
 "use client"
 
-import Image from "next/image"
 import useMessages from "@/hook/useMessages"
 import ImageCard from "@/components/ImageCard";
-
 
 
 const WhiteImageBox = () => {

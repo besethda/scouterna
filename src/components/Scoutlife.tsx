@@ -43,10 +43,10 @@ const Scoutlife = () => {
                   <Image src={card.logo} alt="logo" height={45} width={48} className="" />
                 </div>
                 <div>
-                  <p className="font-fraunces font-bold md:text-[24px] text-[18px] tracking-[-0.5%] text-white">
+                  <p className="font-fraunces font-bold md:text-h4-desktop text-[18px] tracking-[-0.5%] text-white">
                     {card.title}
                   </p>
-                  <p className="font-albert font-normal md:text-[20px] text-[16px] tracking-[3%] text-white ">
+                  <p className="font-albert font-normal md:text-h5-desktop text-[16px] tracking-[3%] text-white ">
                     {card.subtitle}
                   </p>
                 </div>

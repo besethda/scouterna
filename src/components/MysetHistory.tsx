@@ -27,19 +27,19 @@ const MysetHistory = () => {
   ]
 
   return (
-  <div className="font-albert text-text-white bg-primary rounded-3xl px-4 lg:px-10 mx-4 py-8 mb-10 lg:w-[848px] max-w-[980px]">
+  <div className="font-albert text-text-white bg-primary rounded-3xl px-4 lg:px-10 mx-4 py-8 mb-10 lg:w-212 max-w-245 md:hidden">
       <div className="">
         <div className="flex flex-col gap-2 lg:max-w-[63%]">
           <p className="font-fraunces font-bold text-h2 md:text-h2-desktop">
             {messages?.mysetHistory?.title}
           </p>
-          <p className="font-normal text-[16px] md:text-[20px]">
+          <p className="font-normal text-[16px] md:text-h5-desktop">
             {messages?.mysetHistory?.text1}
           </p>
-          <p className="font-normal text-[16px] md:text-[20px]">
+          <p className="font-normal text-[16px] md:text-h5-desktop">
             {messages?.mysetHistory?.text2}
           </p>
-          <p className="font-fraunces font-bold text-h3 md:text-[24px] md:py-4 pt-6">
+          <p className="font-fraunces font-bold text-h3 md:text-h4-desktop md:py-4 pt-6">
             {messages?.mysetHistory?.subtitle}
           </p>
         </div>

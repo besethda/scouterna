@@ -42,7 +42,7 @@ const JoinPage = ({
             <h2 className={`font-fraunces font-bold text-primary md:text-h1-desktop  ${section === "join" ? "text-h1" : "text-[22px] "}`}>{head}</h2>
             {section === "join" ? <Image src={shortLine} alt="line" /> : <Image src={longLine} alt="line" />}
           </div>
-          <h3 className={`text-h2-albert font-fraunces font-bold text-primary md:text-[24px] md:pt-3 ${section === "contact" && "hidden md:block"}`}>
+          <h3 className={`text-h2-albert font-fraunces font-bold text-primary md:text-h4-desktop md:pt-3 ${section === "contact" && "hidden md:block"}`}>
             {title}
           </h3>
           <p
