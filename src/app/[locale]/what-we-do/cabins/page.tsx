@@ -1,5 +1,4 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import CardWithoutImage from "@/components/CardWithoutImage";
 import { En} from "@/messages/en";
 import { Sv } from "@/messages/sv";
 import { use } from "react";
