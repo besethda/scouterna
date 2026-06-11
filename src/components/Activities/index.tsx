@@ -1,12 +1,15 @@
 'use client'
 
 import useMessages from "@/hook/useMessages"
+import Image from "next/image"
+import birds from '../../../public/blueBirds1.png'
 
 
 const Activities = () => {
   const messages = useMessages()
   return (
-    <div className="flex flex-col items-center bg-bg-white px-4 py-8 mx-4 mb-10 rounded-3xl max-w-[980px] lg:mx-auto lg:px-10">
+
+    <div className="relative flex flex-col items-center bg-bg-white px-4 py-8 mx-4 mb-10 rounded-3xl max-w-[980px] lg:mx-auto lg:px-10">
       <div className=" w-full flex flex-col ">
         <div className="flex flex-col gap-6 max-w-[603px]">
           <h2 className="text-primary md:text-h2-desktop font-fraunces font-bold text-h2-albert">{messages?.activity.title}</h2>
@@ -20,7 +23,11 @@ const Activities = () => {
           </div>
         </div>
       </div>
-    </div>
+      <div>
+        <Image src={birds} alt="birds" height={150} width={150} className="absolute top-0 md:top-15 md:right-20 opacity-90 md:-rotate-12 " />
+      </div>
+    </div >
+
 
   )
 }

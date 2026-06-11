@@ -5,6 +5,7 @@ import useMessages from "@/hook/useMessages";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
+import birds from '../../../public/blueBirds1.png'
 
 const handleClick = () => {
     window.open("https://www.scoutnet.se/f/login", "(_blank)")
@@ -18,7 +19,7 @@ const ScoutInfo = () => {
   const currentLocal = params?.local || urlLocale || "sv"
 
   return (
-    <div className="bg-white flex flex-col 2xl:items-start 2xl:text-left py-8 px-4 mx-4 lg:mx-auto rounded-3xl shrink-0 lg:w-212 lg:px-10 lg:py-8 xl:w-316.25 2xl:w-386 ">
+    <div className="relative bg-white flex flex-col 2xl:items-start 2xl:text-left py-8 px-4 mx-4 lg:mx-auto rounded-3xl shrink-0 lg:w-[848px] lg:px-10 lg:py-8 xl:w-[1265px] 2xl:w-[1544px] ">
       <div className="font-albert w-full flex flex-col gap-4">
         <h2 className="text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{messages?.good}</h2>
         <div className="flex gap-6 xl:gap-8 flex-col md:mt-5 md:items-stretch">
@@ -63,6 +64,7 @@ const ScoutInfo = () => {
             </div>
         </div>
       </div>
+      <Image src={birds} alt="birds" height={150} width={150} className="hidden md:block md:absolute top-0 md:top-15 md:right-20 opacity-90 md:-rotate-12 " />
     </div>
   );
 };
