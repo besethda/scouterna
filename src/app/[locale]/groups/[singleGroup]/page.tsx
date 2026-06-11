@@ -76,7 +76,7 @@ const Groups = async ({
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
-                      sectionLayout={["t", "p"]}
+                      sectionLayout={["g", "p"]}
                       page="sjohumlornaSpårarscouter"
                       padding={"none"}
                       child={true}
@@ -94,14 +94,14 @@ const Groups = async ({
                   </div>
                 </div>
                 <ContentSection
-                  sectionLayout={["t", "p"]}
+                  sectionLayout={["g", "p"]}
                   page="sjohumlornaAge"
                   padding={"none"}
                   child={true}
                 />
                 <div className="flex flex-col pb-4 w-full">
                   <ContentSection
-                    sectionLayout={["t"]}
+                    sectionLayout={["g"]}
                     page="sjohumlorMeeting"
                     padding={"none"}
                     child={true}
@@ -111,7 +111,7 @@ const Groups = async ({
                     <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
                   </div>
                   <ContentSection
-                    sectionLayout={["t", "p"]}
+                    sectionLayout={["g", "p"]}
                     page="sjohumlorPlace"
                     padding={"none"}
                     child={true}
@@ -152,7 +152,7 @@ const Groups = async ({
           <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
             <div className="w-full py-2 pb-15 self-start">
               <ContentSection
-                sectionLayout={["t"]}
+                sectionLayout={["g"]}
                 page="avdelningsledare"
                 padding={"none"}
                 child={true}
@@ -195,7 +195,7 @@ const Groups = async ({
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
-                      sectionLayout={["t", "p"]}
+                      sectionLayout={["g", "p"]}
                       page="kaparnaUpptäckarscouter"
                       padding={"5"}
                       child={true}
@@ -213,14 +213,14 @@ const Groups = async ({
                   </div>
                 </div>
                 <ContentSection
-                  sectionLayout={["t", "p"]}
+                  sectionLayout={["g", "p"]}
                   page="kaparnaAge"
                   padding={"3"}
                   child={true}
                 />
                 <div className="flex flex-col gap-4 justify-center pb-4">
                   <ContentSection
-                    sectionLayout={["t"]}
+                    sectionLayout={["g"]}
                     page="kaparnaMeeting"
                     padding={"5"}
                     child={true}
@@ -230,7 +230,7 @@ const Groups = async ({
                     <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
                   </div>
                   <ContentSection
-                    sectionLayout={["t", "p"]}
+                    sectionLayout={["g", "p"]}
                     page="kaparnaPlace"
                     padding={"5"}
                     child={true}
@@ -270,7 +270,7 @@ const Groups = async ({
           <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl  md:flex">
             <div className="w-full py-2 pb-15 self-start">
               <ContentSection
-                sectionLayout={["t"]}
+                sectionLayout={["g"]}
                 page="avdelningsledare"
                 padding={"none"}
                 child={true}
@@ -312,7 +312,7 @@ const Groups = async ({
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
-                      sectionLayout={["t", "p"]}
+                      sectionLayout={["g", "p"]}
                       page="utmanarscouter"
                       padding={"none"}
                       child={true}
@@ -330,14 +330,14 @@ const Groups = async ({
                   </div>
                 </div>
                 <ContentSection
-                  sectionLayout={["t", "p"]}
+                  sectionLayout={["g", "p"]}
                   page="utmanareAge"
                   padding={"3"}
                   child={true}
                 />
                 <div className="flex flex-col gap-4 justify-center pb-4">
                   <ContentSection
-                    sectionLayout={["t"]}
+                    sectionLayout={["g"]}
                     page="utmanareMeeting"
                     padding={"5"}
                     child={true}
@@ -347,7 +347,7 @@ const Groups = async ({
                     <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
                   </div>
                   <ContentSection
-                    sectionLayout={["t", "p"]}
+                    sectionLayout={["g", "p"]}
                     page="utmanarePlace"
                     padding={"5"}
                     child={true}
@@ -387,7 +387,7 @@ const Groups = async ({
           <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
             <div className="w-full py-2 pb-15 self-start">
               <ContentSection
-                sectionLayout={["t"]}
+                sectionLayout={["g"]}
                 page="avdelningsledare"
                 padding={"none"}
                 child={true}
@@ -429,7 +429,7 @@ const Groups = async ({
                 <div className="flex flex-col lg:flex-row xl:gap-55 items-center md:items-start">
                   <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                     <ContentSection
-                      sectionLayout={["t", "p"]}
+                      sectionLayout={["g", "p"]}
                       page="äventyrarscouter"
                       padding={"5"}
                       child={true}
@@ -447,14 +447,14 @@ const Groups = async ({
                   </div>
                 </div>
                 <ContentSection
-                  sectionLayout={["t", "p"]}
+                  sectionLayout={["g", "p"]}
                   page="konvojenAge"
                   padding={"3"}
                   child={true}
                 />
                 <div className="flex flex-col gap-4 justify-center pb-4">
                   <ContentSection
-                    sectionLayout={["t"]}
+                    sectionLayout={["g"]}
                     page="konvojenMeeting"
                     padding={"5"}
                     child={true}
@@ -464,7 +464,7 @@ const Groups = async ({
                     <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? konvojen?.groups?.place_sv : konvojen.groups.place_en}`}</div>
                   </div>
                   <ContentSection
-                    sectionLayout={["t", "p"]}
+                    sectionLayout={["g", "p"]}
                     page="konvojenPlace"
                     padding={"5"}
                     child={true}
@@ -504,7 +504,7 @@ const Groups = async ({
           <section className="bg-white w-full lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
             <div className="w-full py-2 pb-15 self-start">
               <ContentSection
-                sectionLayout={["t"]}
+                sectionLayout={["g"]}
                 page="avdelningsledare"
                 padding={"none"}
                 child={true}
@@ -545,7 +545,7 @@ const Groups = async ({
               <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 md:items-start ">
                 <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                   <ContentSection
-                    sectionLayout={["t", "p", "p", "p"]}
+                    sectionLayout={["g", "p", "p", "p"]}
                     page="BarnOchVuxnaTillsammans"
                     padding={"5"}
                     child={true}
@@ -565,7 +565,7 @@ const Groups = async ({
               <div className="flex flex-col gap-4 xl:gap-55 items-center lg:flex-row md:items-start">
                 <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                   <ContentSection
-                    sectionLayout={["t", "p", "p"]}
+                    sectionLayout={["g", "p", "p"]}
                     page="ParumMagna"
                     padding={"3"}
                     child={true}
@@ -584,13 +584,13 @@ const Groups = async ({
               </div>
               <div className="flex flex-col gap-4 justify-center pb-4">
                 <ContentSection
-                  sectionLayout={["t", "p", "p"]}
+                  sectionLayout={["g", "p", "p"]}
                   page="Familjescoutsagor"
                   padding={"3"}
                   child={true}
                 />
                 <ContentSection
-                  sectionLayout={["t", "p"]}
+                  sectionLayout={["g", "p"]}
                   page="Märken"
                   padding={"3"}
                   child={true}
