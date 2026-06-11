@@ -24,57 +24,57 @@ const Footer = () => {
 
     return (
         <footer className="bg-primary text-white py-6 px-5 flex flex-col gap-4 xl:py-20 xl:px-2.5 xl:gap-16.5 ">
-            <div className='flex flex-col gap-2.5 xl:flex xl:flex-row xl:justify-around xl:w-[90%] xl:mx-auto max-w-360 mx-auto'>
-                <div className='xl:flex-1'>
+            <div className='flex flex-col gap-2.5 lg:flex-row lg:justify-around lg:w-full xl:w-[90%] lg:mx-auto lg:max-w-360 w-90'>
+                <div className='lg:flex-1'>
                     <Link href="https://www.scouterna.se/">
-                        <Image src={scautLogo} alt="Scaut-logo" className='w-32.5 h-7 xl:h-[28]' />
+                        <Image src={scautLogo} alt="Scaut-logo" className='w-32.5 h-7 xl:h-[28] -ml-1.5' />
                     </Link>
                     <div className='pt-3'>
-                        <p className="text-body xl:hidden">Hässelby Strands Sjöscouter</p>
+                        <p className="text-body lg:hidden">Hässelby Strands Sjöscouter</p>
                     </div>
                 </div>
-                <div className='xl:flex xl:flex-col gap-5 hidden xl:flex-1'>
-                    <p className="text-accent text-body-bold mb-2 uppercase text-xs xl:text-sm">{messages?.footer?.footer_service}</p>
+                <div className='lg:flex lg:flex-col gap-5 hidden lg:flex-1'>
+                    <p className="text-accent text-body-bold mb-2 uppercase text-xs lg:text-sm">{messages?.footer?.footer_service}</p>
                     <div className='flex gap-2.5 leading-none '>
                         <Image src={schoolIcon} alt='school icon' className='w-4 h-4 xl:w-5 xl:h-7' />
-                        <Link href="https://www.scouternasfolkhogskola.se/" target='_blank' className="hover:text-lightYellow text-body-desktop xl:text-lg">{messages?.footer?.footer_school}</Link>
+                        <Link href="https://www.scouternasfolkhogskola.se/" target='_blank' className="hover:text-lightYellow text-body-desktop lg:text-lg">{messages?.footer?.footer_school}</Link>
                     </div>
                     <div className='flex gap-2.5 leading-none'>
                         <Image src={bagIcon} alt='bag icon' className='w-4 h-4 xl:w-5 xl:h-6' />
-                        <Link href="https://www.scoutshop.se/" target='_blank' className="hover:text-lightYellow text-body-desktop xl:text-lg">{messages?.footer?.footer_shop}</Link>
+                        <Link href="https://www.scoutshop.se/" target='_blank' className="hover:text-lightYellow text-body-desktop lg:text-lg">{messages?.footer?.footer_shop}</Link>
                     </div>
                     <div className='flex gap-2.5 leading-none '>
                         <Image src={keyIcon} alt='key icon' className='w-4 h-4 xl:w-5.5 xl:h-5.5' />
-                        <Link href="https://www.scoutnet.se/f/login" target='_blank' className="hover:text-lightYellow text-body-desktop xl:text-lg ">Scoutnet</Link>
+                        <Link href="https://www.scoutnet.se/f/login" target='_blank' className="hover:text-lightYellow text-body-desktop lg:text-lg ">Scoutnet</Link>
                     </div>
                 </div>
-                <div className='flex flex-col gap-2 xl:gap-7 pb-2 xl:flex-1'>
-                    <p className="text-accent text-body-bold uppercase text-xs xl:text-sm">{messages?.footer?.footer_contact}</p>
+                <div className='flex flex-col gap-2 lg:gap-7 pb-2 lg:flex-1'>
+                    <p className="text-accent text-body-bold uppercase text-xs lg:text-sm">{messages?.footer?.footer_contact}</p>
                     <div className='flex gap-2.5 leading-none'>
                         <a href="mailto:info@hss-scout.org" className='flex gap-2.5 leading-none hover:text-lightYellow'>
                             <Image src={emailIcon} alt='email icon' className='w-4 h-auto xl:w-5' />
-                            <p className="xl:text-lg text-body">info@hss-scout.org</p>
+                            <p className="lg:text-lg text-body">info@hss-scout.org</p>
                         </a>
                     </div>
-                    <div className='hidden xl:flex gap-2.5 leading-[1.2]' >
+                    <div className='hidden lg:flex gap-2.5 leading-[1.2]' >
                         <a href="https://www.google.com/maps/place/Ruffen+%7C+H%C3%A4sselby+Strands+Sj%C3%B6scoutk%C3%A5r/@59.3620719,17.7818116,13z/data=!4m6!3m5!1s0x465f9f000adaa135:0xf7c26dadb80cbb2f!8m2!3d59.3632201!4d17.8220044!16s%2Fg%2F11y8fdsts1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNi4wIKXMDSoASAFQAw%3D%3D" target='_blank' className='flex gap-2.5 leading-[1.2] hover:text-lightYellow'>
                             <Image src={locationIcon} alt='email icon' className='w-6 h-6' />
-                            <p className="text-body xl:text-lg">Hässelby strandväg<br />165 73 Hässelby</p>
+                            <p className="text-body lg:text-lg">Hässelby strandväg<br />165 73 Hässelby</p>
                         </a>
                     </div>
                 </div>
-                <div className='flex flex-col gap-2 xl:gap-7 xl:flex-1'>
-                    <p className="text-accent text-body-bold uppercase  text-xs xl:text-sm">{messages?.footer?.footer_followUs}</p>
+                <div className='flex flex-col gap-2 lg:gap-7 lg:flex-1'>
+                    <p className="text-accent text-body-bold uppercase  text-xs lg:text-sm">{messages?.footer?.footer_followUs}</p>
                     <div className='flex gap-2.5 leading-none'>
                         <a href="https://www.instagram.com/hss_scout/" target='_blank' className='flex gap-2.5 leading-[1.2] hover:text-lightYellow'>
                             <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-5' />
-                            <p className="text-body xl:text-lg">@hss_scout</p>
+                            <p className="text-body lg:text-lg">@hss_scout</p>
                         </a>
                     </div>
                     <div className='flex gap-2.5 leading-none'>
                         <a href="https://www.facebook.com/HSSScout/" target='_blank' className='flex gap-2.5 leading-[1.2] hover:text-lightYellow'>
                             <Facebook color="#FDB715" className="w-4 h-auto xl:w-5" />
-                            <p className="text-body xl:text-lg">@HSSScout</p>
+                            <p className="text-body lg:text-lg">@HSSScout</p>
                         </a>
                     </div>
                 </div>
