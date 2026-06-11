@@ -153,7 +153,7 @@ body {
   }
 
   40% {
-    transform: rotate(-6deg);
+    transform: rotate(-7deg);
   }
 
   60% {
@@ -170,5 +170,5 @@ body {
 }
 
 .pin-swing:hover {
-  animation: swing 1.8s ease-in-out;
+  animation: swing 1.5s ease-in-out;
 }

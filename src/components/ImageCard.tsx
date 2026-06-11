@@ -25,7 +25,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
     }
 
     return (
-        <div className={`flex flex-col  bg-bg-white shadow-[0_3px_8px_rgba(0,0,0,0.5)] relative font-gochi text-primary transition-transform duration-500 ease-out animate-pin-swing
+        <div className={`flex flex-col  bg-bg-white shadow-[0_3px_8px_rgba(0,0,0,0.5)] relative font-gochi text-primary transition-transform duration-500 ease-out pin-swing
         ${text ? "min-h-125" : ""}
         ${page === "home" && "p-6 w-89.5"}
         ${page === "cabin" && "p-6 w-66.5"}
