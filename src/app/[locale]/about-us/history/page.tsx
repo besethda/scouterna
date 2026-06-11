@@ -35,7 +35,7 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
                 <div className="relative max-w-[92%] md:max-w-[95%] xl:max-w-[89%] lg:max-w-430 rounded-3xl w-full shadow-xl bg-bg-white overflow-hidden md:px-10 px-3">
                   <h2 className="w-fit py-8 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{locale === "sv" ? data?.history_section.title_se : data?.history_section.title_en}</h2>
                   <img src="/Path.png" alt="line" className="absolute md:top-22 md:left-8 xl:left-5 top-16 left-3 w-[65%] md:w-auto line"/> 
-                  <SanityFlex data={data?.history_layout.scout_life} locale={locale}/>
+                  <SanityFlex data={data?.history_layout.scout_life} locale={locale} color={"black"}/>
                 </div>
               </div>
             </div>
