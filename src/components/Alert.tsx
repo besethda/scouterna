@@ -24,7 +24,6 @@ const Alert = ({alerts, mobile=false, locale}: {alerts:any, mobile?:boolean, loc
   }
 
   useOutsideClick(box, alertShown, close)
-  console.log(currentAlerts)
 
   return (
     <div ref={box} className={`${mobile ? "mr-4 lg:hidden " : ""}`}>

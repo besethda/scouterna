@@ -1,6 +1,4 @@
 import WhiteImageBox from "@/components/WhiteImageBox";
-import HomeSection from "@/components/Home-Section";
-import CardWithImage from "@/components/CardWithImage";
 import GoodToKnow from "@/components/GoodToKnow-home";
 import HeroContainer from "@/components/HeroContainer/HeroContainer";
 import DivisionsContainer from "@/components/DivisionsContainer/DivisionsContainer";
@@ -18,7 +16,7 @@ const Home = async () => {
   return (
     <main className="">
       <HeroContainer bgImages={{ mobile: data.home_images.home_hero_mobile.asset._ref, desktop: data.home_images.home_hero_desktop.asset._ref }} messageSection={"homeHero"} />
-      <section className="flex flex-col items-center w-full lg:max-w-245 2xl:max-w-360  mx-auto">
+      <section className="flex flex-col items-center w-full lg:max-w-245 2xl:max-w-360  mx-auto  md:mt-5">
         <CardWithLogo sectionTitle={"homePageCard"} image="/anchorYellowBg.svg" />
         <GoodToKnow />
         <WhiteImageBox />

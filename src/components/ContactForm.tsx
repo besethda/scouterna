@@ -3,6 +3,7 @@
 import { useForm } from "react-hook-form";
 import { sendContactEmail } from "../app/email";
 import toast, { Toaster } from 'react-hot-toast';
+import { useState } from "react";
 
 interface EmailFormData {
     firstName: string;
@@ -29,8 +30,10 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
         formState: { errors, isSubmitting },
     } = useForm<EmailFormData>()
 
-    const onSubmit = async (data: EmailFormData) => {
+    const [fakeFilled, setFakeFilled] = useState(false)
 
+    const onSubmit = async (data: EmailFormData) => {
+        if(fakeFilled) return
         try {
             const result = await sendContactEmail({
                 firstName: data.firstName,
@@ -55,7 +58,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
             <Toaster position="top-center" reverseOrder={false} />
             <h2 className="text-h2 w-full font-fraunces font-bold text-primary md:text-h2-desktop">{title}</h2>
             <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-70 md:max-w-100 lg:max-w-150 xl:max-w-full">{text}</p>
-            <div className="absolute right-4 top-14 -scale-x-100 rotate-293  
+            <div className="absolute right-4 top-14 -scale-x-100 rotate-293 pointer-events-none
                             md:right-22 
                             lg:scale-x-100 lg:rotate-0 lg:top-60 lg:right-40 lg:left-15
                             xl:rotate-10 xl:left-0
@@ -120,6 +123,17 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                         placeholder={meddelande}
                         {...register("message", { required: "Write your message" })}
                         className="bg-white border text-form  border-lightGray border-solid rounded-lg w-full p-3 h-36"
+                    />
+                    {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>}
+                </div>
+                <div className="h-0 overflow-hidden w-1 hidden">
+                    <p>{message}</p>
+                    <textarea
+                        name='phone'
+                        placeholder={"phone"}
+                        onChange={(e)=>{setFakeFilled(true)}}
+                        autoComplete="off"
+                        className="bg-white border absolute left-40000 text-form  border-lightGray border-solid rounded-lg w-full p-3 h-36"
                     />
                     {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>}
                 </div>

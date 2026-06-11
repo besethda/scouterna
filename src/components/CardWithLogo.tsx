@@ -26,10 +26,10 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false, logoTopRight = false 
   }
 
   return (
-    <div className="flex flex-col mx-4 pb-10 md:pt-12.5 md:pb-20 md:items-start md:gap-25 items-center lg:max-w-[var(--max-w-laptop)] xl:mx-auto  2xl:max-w-[var(--max-w-desktop)] bg-bg-blue">
-      <div className={`flex flex-col py-8 px-4 lg:px-10 rounded-3xl bg-[#FFFFFF] w-full gap-6 shadow-xl xl:pb-[77px] ${logoTopRight ? "relative" : ""}`}>
+    <div className="w-full flex px-4 md:mb-20 md:p-4 lg:p-0 flex-col pb-10 md:pt-12.5 md:items-start md:gap-25 items-center lg:max-w-[var(--max-w-laptop)] md:mx-auto 2xl:max-w-[var(--max-w-desktop)] bg-bg-blue">
+      <div className={`flex flex-col py-8 px-4 lg:px-10 rounded-3xl bg-[#FFFFFF] w-full gap-6 shadow-xl  ${logoTopRight ? "relative" : ""}`}>
         <div className="flex justify-between items-start">
-          <div className=" flex flex-col lg:max-w-[52%]">
+          <div className=" flex flex-col lg:max-w-[65%]">
             <p className="font-albert font-bold text-acc md:text-[16px] uppercase tracking-[1.5px] text-text-blue -mb-2 md:mb-0">
               {messages?.[sectionTitle as string]?.headline}
             </p>
