@@ -64,8 +64,8 @@ const ScoutInfo = () => {
             </div>
         </div>
       </div>
-      <Image src={birds} alt="birds" height={150} width={150} className="hidden md:block md:absolute top-0 md:top-15 md:right-20 opacity-90 md:-rotate-12 " />
-      <Image src={birds} alt="birds" height={150} width={150} className="hidden md:block lg:absolute  lg:bottom-60 lg:right-20 opacity-90 lg:rotate-40 " />
+      <Image src={birds} alt="birds" height={150} width={150} className="hidden md:block md:absolute md:top-10 md:right-20 opacity-90 md:-rotate-12 " />
+      <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute  lg:bottom-80 lg:right-20 opacity-90 lg:rotate-40 " />
     </div>
   );
 };
