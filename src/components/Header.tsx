@@ -84,7 +84,7 @@ const Header = ({alerts}: {alerts:any}) => {
           <RxCross1 onClick={() => handleToggle()} className="size-5.75 lg:hidden" />
           :
           <div className="flex lg:hidden h-full items-center">
-          <Alert alerts={alerts} mobile={true} locale={messages?.path} />
+          {/*<Alert alerts={alerts} mobile={true} locale={messages?.path} />*/}
           <RxHamburgerMenu onClick={() => handleToggle()} className="size-5.75 lg:hidden" />
             </div>}
       </header>

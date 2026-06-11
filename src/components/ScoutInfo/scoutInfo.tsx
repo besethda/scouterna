@@ -19,11 +19,11 @@ const ScoutInfo = () => {
   const currentLocal = params?.local || urlLocale || "sv"
 
   return (
-    <div className="relative bg-white flex flex-col 2xl:items-start 2xl:text-left py-8 px-4 mx-4 lg:mx-auto rounded-3xl shrink-0 lg:w-[848px] lg:px-10 lg:py-8 xl:w-[1265px] 2xl:w-[1544px] ">
+    <div className="relative bg-white flex flex-col 2xl:items-start 2xl:text-left py-8 px-4 mx-4 lg:mx-auto rounded-3xl shrink-0 lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)] md:px-10">
       <div className="font-albert w-full flex flex-col gap-4">
         <h2 className="text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{messages?.good}</h2>
         <div className="flex gap-6 xl:gap-8 flex-col md:mt-5 md:items-stretch">
-            <div className="flex flex-col gap-6 lg:max-w-117.5 xl:max-w-200">
+            <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-2">
                 <h3 className="text-primary  text-h3 md:text-h4-desktop whitespace-nowrap font-fraunces font-bold">{messages?.question.title}</h3>
                 <p className="text-text-black text-body md:text-h5-desktop ">{messages?.question.paraph}</p>
@@ -35,7 +35,7 @@ const ScoutInfo = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col gap-6 lg:max-w-117.5 xl:max-w-200">
+            <div className="flex flex-col gap-6">
               <div>
                 <h3 className="text-primary text-h3 md:text-h4-desktop whitespace-nowrap font-fraunces font-bold pb-2">{messages?.policy.title}</h3>
                 <p className="text-text-black text-body md:text-h5-desktop hidden md:block ">{messages?.policy.desktop}</p>

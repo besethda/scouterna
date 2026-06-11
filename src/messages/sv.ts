@@ -263,8 +263,8 @@ type MessagesSvType = {
   syfte: Record<string, string>
   notifications: Record<string, string>
   ethics: Record<string, string>
-  email: Record<string, string>
-  bank: Record<string, string>
+  email: Record<string, any>
+  bank: Record<string, any>
   offers: Record<string, string>
   map: Record<string, string>
   scoutLife: Record<string, string>
@@ -849,18 +849,18 @@ export const Sv: MessagesSvType = {
     p5: "I och med medlemskapet är man försäkrad via Scouternas gruppförsäkring och försäkringsbolaget kräver att uppgifterna sparas i upp till tio år, vilket är den tidsbegränsning som man kan kräva ersättning för ett försäkringsärende."
   },
   email: {
-    t0: "E-post",
-    s0: "E-post till kåren",
-    p0: "info@hss-scout.org",
-    s1: "E-post för medlemsärenden",
-    p1: "register@hss-scout.org"
+    title: "E-post",
+    text01: "E-post till kåren",
+    info01: "info@hss-scout.org",
+    text02: "E-post för medlemsärenden",
+    info02: "register@hss-scout.org"
   },
   bank: {
-    t0: "Bankuppgifter",
-    s0: "Postgiro",
-    p0: "404418 - 6",
-    s1: "Organisationsnummer",
-    p1: "802006 - 2389"
+    title: "Bankuppgifter",
+    text03: "Postgiro",
+    info03: "404418 - 6",
+    text04: "Organisationsnummer",
+    info04: "802006 - 2389"
   },
   offers: {
     bigHeader0: "TID",

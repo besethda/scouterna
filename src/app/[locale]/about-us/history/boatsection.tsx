@@ -23,7 +23,7 @@ const middleImageRef = useRef<HTMLDivElement>(null);
 }
 
 return (
-  <div className="w-full pb-16 pt-6">
+  <div className="w-full pb-16 pt-6 lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]">
     {images && <div className={`w-full ${images.length < 4 && "justify-center"} relative flex`}>
       {images.length > 4 && <div className={`w-full h-full absolute z-20 flex justify-between items-center px-3 pointer-events-none`}>
         <svg onClick={()=> move(false)} className="pointer-events-auto hidden md:block hover:scale-105 -rotate-90 duration-100 fill-text-black active:fill-text-gray/90 active:scale-95 cursor-pointer" width="30" height="30" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m399.44 263.41 189.21 221.68c10.078 11.195 8.3984 29.668-2.8008 39.184-11.195 9.5156-29.668 8.3984-39.184-2.8008l-147.22-170.73-147.22 170.73c-10.078 11.195-27.988 12.875-39.184 2.8008-11.195-10.078-12.875-27.988-2.8008-39.184z"/></svg>
