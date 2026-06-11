@@ -13,7 +13,7 @@ const iconList = [ideadIcon, loveIcon, groupIcon];
 const Union = async () => {
     const data = await client.fetch(`*[_type=="union"][0] { "files": history_section[] {name, "fileUrl": file.asset-> url} } `)
     return (
-        <div className="pt-3 py-8 bg-primary mx-4 overflow-hidden rounded-3xl lg:mx-auto lg:w-[848px] xl:w-[1265px] 2xl:w-[1544px]">
+        <div className="pt-3 py-8 bg-primary mx-4 overflow-hidden rounded-3xl lg:mx-auto lg:w-212 xl:w-316.25 2xl:w-386">
             <ContentSection
                 sectionLayout={["t", "p"]}
                 page="union"

@@ -32,11 +32,6 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
         return null
     }
 
-    /**
-
-    
-     */
-
     return (
         <main>
             <HeroContainer bgImages={{ mobile: data.join_images.join_hero_mobile.asset._ref, desktop: data.join_images.join_hero_desktop.asset._ref }} messageSection={"joinHero"} position={"center"} />

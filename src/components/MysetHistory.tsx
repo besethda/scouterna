@@ -33,13 +33,13 @@ const MysetHistory = () => {
           <p className="font-fraunces font-bold text-h2 md:text-h2-desktop">
             {messages?.mysetHistory?.title}
           </p>
-          <p className="font-normal text-[16px] md:text-[20px]">
+          <p className="font-normal text-[16px] md:text-h5-desktop">
             {messages?.mysetHistory?.text1}
           </p>
-          <p className="font-normal text-[16px] md:text-[20px]">
+          <p className="font-normal text-[16px] md:text-h5-desktop">
             {messages?.mysetHistory?.text2}
           </p>
-          <p className="font-fraunces font-bold text-h3 md:text-[24px] md:py-4 pt-6">
+          <p className="font-fraunces font-bold text-h3 md:text-h4-desktop md:py-4 pt-6">
             {messages?.mysetHistory?.subtitle}
           </p>
         </div>

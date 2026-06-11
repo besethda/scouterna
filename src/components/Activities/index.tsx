@@ -1,6 +1,8 @@
 'use client'
 
 import useMessages from "@/hook/useMessages"
+import Image from "next/image"
+import birds from '../../../public/blueBirds1.png'
 
 const Activities = () => {
   const messages = useMessages()
@@ -19,7 +21,11 @@ const Activities = () => {
           </div>
         </div>
       </div>
-    </div>
+      <div>
+        <Image src={birds} alt="birds" height={150} width={150} className="absolute top-0 md:top-15 md:right-20 opacity-90 md:-rotate-12 " />
+      </div>
+    </div >
+
 
   )
 }

@@ -7,6 +7,7 @@ import { AiOutlineDownCircle, AiFillUpCircle, AiOutlineDown, AiOutlineUp } from 
 import useMessages from '@/hook/useMessages'
 import LanguageSelector from "../LanguageSelector";
 import HSSlogo from '../../../public/HSSYellow.svg'
+import { useOutsideClick } from "@/hook/useOutsideClick";
 
 interface NavigationProps {
     onClose: () => void;
@@ -16,14 +17,17 @@ const Navigation = ({ onClose }: NavigationProps) => {
     const messages = useMessages()
     const [openId, setOpenId] = useState<number | null>(null)
     const [isScroll, setIsScroll] = useState<boolean>(false)
+    const nav = useRef<HTMLDivElement|null>(null)
 
-    const handleToggle = (id: number | null) => {
+    const handleToggle = (id: number | null=null) => {
         setOpenId(openId === id ? null : id)
     }
 
+    useOutsideClick(nav, openId, handleToggle)
+
     useEffect(() => {
         const handleScroll = () => {
-        setIsScroll(window.scrollY > 200)
+            setIsScroll(window.scrollY > 200)
         }
 
         window.addEventListener("scroll", handleScroll)
@@ -49,10 +53,10 @@ const Navigation = ({ onClose }: NavigationProps) => {
                     </div>
                     <LanguageSelector />
                 </div>
-                    <div className="lg:flex lg:w-full lg:justify-evenly lg:max-w-300">
+                    <div ref={nav} className="lg:flex lg:w-full lg:justify-evenly lg:max-w-300">
                     {menuList.map((menu, index) => (
                         <div key={index}>
-                            <div onClick={() => { handleToggle(menu.id); }}
+                            <div onClick={() => { handleToggle(menu.id) }}
                                 className="flex justify-between text-base lg:max-w-xl lg:mx-auto xl:max-w-5xl 2xl:max-w-400 px-3 py-4 font-semibold border-b border-lightGray cursor-pointer lg:text-[18px] lg:font-normal lg:border-none lg:static lg:hover:text-gray-300">
                                 <p> {messages?.navigation?.[menu.nameKey]} </p>
                                 <div className="relative w-7 h-7 lg:hidden">
@@ -79,7 +83,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
                                     {menu.submenu && menu.submenu.map((sub, index) => (
                                         <Link href={messages?.path + sub.href} key={index} className="hover:text-text-gray">
                                             <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
-                                                <Image src={sub.iconBg} alt="image" width={44} height={44} className="w-11 h-auto" />
+                                                <Image src={sub.iconBg} alt="image" width={44} height={44} className="" />
                                                 <div className="px-4 flex items-center ">
                                                     {messages?.navigation?.[sub.nameKey]}
                                                 </div>
@@ -92,12 +96,12 @@ const Navigation = ({ onClose }: NavigationProps) => {
                     ))
                     }
                 </div>
-                <div className="w-18 h-18 hidden md:block"></div>
+                <div className="w-18 h-18 hidden lg:block"></div>
                 <div className="rounded-b-lg p-4 flex flex-col lg:h-18.5 lg:items-center lg:hidden">
                     <p className="text-text-black font-bold uppercase text-xs pb-3">{messages?.navigation?.nav__service}</p>
                     {mobileMenuList && mobileMenuList.map((menu, index) => (
                         <Link onClick={() => { handleToggle(null); onClose() }} key={index} href={menu.href} className="py-2 flex lg:h-18.5  w-full lg:items-center ">
-                            <Image src={menu.icon} alt="image" width={44} height={44} className="w-11 h-auto" />
+                            <Image src={menu.icon} alt="image" width={44} height={44} className="" />
                             <div className="px-4 flex items-center">
                                 {messages?.navigation?.[menu.nameKey]}
                             </div>

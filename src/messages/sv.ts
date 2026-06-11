@@ -260,6 +260,7 @@ type MessagesSvType = {
   vests: Record<string, string>
   lockable: Record<string, string>
   gdpr: Record<string, string>
+  syfte:Record<string, string>
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
@@ -760,13 +761,13 @@ export const Sv: MessagesSvType = {
     p5: "Sedan starten 1959 har HSS varit en sjöscoutkår byggd på engagemang, samarbete och viljan att ge unga äventyr och gemenskap, och den lågan brinner fortfarande starkt idag."
   },
   guidelines: {
-    t0: "HSS riktlinjer",
+    h0: "HSS riktlinjer",
     p0: "Vi har skapat riktlinjer för vilka typer av flytvästar som ska användas av Scouter som inte kan simma, och Scouter som kan simma. ",
     p1: "Det är bra att utgå från att alla, oavsett simkunnighet, ska ha på sig flytväst på bryggor och i båtar. Det är också viktigt att flytvästen är rätt knäppt eller knuten.",
     p2: "Scouter som för HSS ej kunnat uppvisa simkunnighet om 200m bör bära räddningsväst.",
     p3: "Scouter som för HSS kunnat uppvisa simkunnighet om 200m kan bära en seglarväst.",
-    t1: "Ej simkunniga scouter",
-    t2: "Simkunniga scouter",
+    t0: "Ej simkunniga scouter",
+    t1: "Simkunniga scouter",
     w0: "HSS krav på räddningsväst:",
     w1: "HSS krav på seglarväst:",
     l0: "Flytkraft minst 90 N",
@@ -803,10 +804,7 @@ export const Sv: MessagesSvType = {
     t0: "Uppgiftsinsamling via Scoutnet",
     p0: "Scoutnet är Scouternas gemensamma medlemsregister och där samlar vi följande information om varje medlem:",
     p1: "*Dessa uppgifter samlar vi även in för barn i anmälningsregistret (kölistan) som är en del av Scoutnet. Informationen om syskon och föräldrar är för att erbjuda syskonförtur och kunna prioritera barn vars föräldrar har en roll i kåren.",
-    p2: "Syftet med uppgiftsinsamlingen i Scoutnet är att veta vilka våra medlemmar är, för att kunna nå ut med information till dem, för närvaroregistrering, för att se avdelnings- och patrulltillhörighet, och för fakturering.",
-    s0: "Personuppgifter",
-    s1: "Kårinformation",
-    s2: "Uppgiftsinsamlingens syfte",
+    s0: "Kårinformation",
     l0: "Namn*",
     l1: "Personnummer*",
     l2: "Adress*",
@@ -821,6 +819,10 @@ export const Sv: MessagesSvType = {
     l11: "Genomförda utbildningar (aktuellt framförallt för ledare)",
     l12: "Roll i kåren (aktuellt endast för ledare)",
     l13: "Eventuella utmärkelser"
+  },
+  syfte:{
+     s0: "Uppgiftsinsamlingens syfte",
+     p0: "Syftet med uppgiftsinsamlingen i Scoutnet är att veta vilka våra medlemmar är, för att kunna nå ut med information till dem, för närvaroregistrering, för att se avdelnings- och patrulltillhörighet, och för fakturering.",
   },
   ethics: {
     s0: "Etiska riktlinjer för uppgiftsinsamling",

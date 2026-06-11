@@ -1,17 +1,25 @@
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useRef } from "react"
+import { useOutsideClick } from "@/hook/useOutsideClick"
 
 const Alert = ({alerts, mobile=false, locale}: {alerts:any, mobile?:boolean, locale: string | undefined}) => {
   const currentDate = new Date()
   const expiry = new Date(alerts.notifications.expiry)
   const passed = currentDate.getTime() > expiry.getTime() ? true : false
   const [alertShown, setAlertShown] = useState(false)
+  const box = useRef<HTMLDivElement|null>(null)
   if(passed){
     return
   }
 
+  const close = () => {
+    setAlertShown(false)
+  }
+
+  useOutsideClick(box, alertShown, close)
+
   return (
-    <div className={`${mobile ? "mr-4 lg:hidden " : ""}`}>
+    <div ref={box} className={`${mobile ? "mr-4 lg:hidden " : ""}`}>
       <div className="">
         {alerts.notifications.type === "obs" && <Image className="hover:brightness-90 active:brightness-75 cursor-pointer duration-100" onClick={()=> setAlertShown(!alertShown)} src={"/obs.svg"} alt={"obs"} width={mobile ? 26 : 32} height={mobile ? 26 : 32}/>}
         {alerts.notifications.type === "notis" && <Image className="hover:brightness-90 mr-3 active:brightness-75 cursor-pointer duration-100" onClick={()=> setAlertShown(!alertShown)} src={"/notis.svg"} alt={"obs"} width={mobile ? 26 : 32} height={mobile ? 26 : 32}/>}
