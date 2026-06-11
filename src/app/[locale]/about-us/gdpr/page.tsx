@@ -4,12 +4,14 @@ import { getId } from "@/lib/utils";
 import SanityFlex from "@/components/SanityFlex";
 import CardWithLogo from "@/components/CardWithLogo";
 import ContentSection from "@/components/ContentSection";
+import heart from '../../../../../public/blueHeart1.svg'
+import Image from "next/image";
 
 const pageItem = "gdpr"
 const headDescription = "gdpr"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-    const { locale } = await params
-    return getPageHeadTitle(locale, pageItem, headDescription)
+  const { locale } = await params
+  return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
 const Gdpr = async ({params}:{params: Promise<{locale: string}>}) => {

@@ -260,6 +260,7 @@ export type MessagesEngType = {
   vests: Record<string, string>
   lockable: Record<string, string>
   gdpr: Record<string, string>
+  notifications: Record<string, string>
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
@@ -819,6 +820,20 @@ export const En: MessagesEngType = {
     l11: "Completed training/courses (primarily relevant for leaders)",
     l12: "Role in the scout group (only relevant for leaders)",
     l13: "Any awards or decorations"
+  },
+  notifications: {
+    prompt: "Welcome to HSS! What is your role in the troop? HSS will send you relevant alerts based on your role. Choose an option:",
+    role1: "Förälder",
+    role2: "Scout",
+    role3: "Ledare",
+    prompt2: "Which group do you belong to?",
+    prompt3: "Which group does your child belong to?",
+    group1: "spårarscouter",
+    group2: "upptäckarscouter",
+    group3: "äventyrarscouter",
+    group4: "utmanarscouter",
+    group5: "familjescouter",
+    submit: "Submit"
   },
   ethics: {
     s0: "Ethical guidelines for data collection",
