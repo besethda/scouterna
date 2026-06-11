@@ -123,6 +123,12 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                     />
                     {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>}
                 </div>
+                <div className="h-0 overflow-hidden">
+                    <textarea 
+                        placeholder={meddelande}
+                        className="bg-white border text-form  border-lightGray border-solid rounded-lg w-full p-3 h-36"
+                    />
+                </div>
                 <button
                     type="submit"
                     disabled={isSubmitting}
