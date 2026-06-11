@@ -37,7 +37,6 @@ const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) =>
                 <PhotoContainer backgroundBlue={false} messageTitle="learning" />
             </div>
             <Activities />
-
         </main>
     );
 }
