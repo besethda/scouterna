@@ -26,7 +26,7 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
     const data = await getId("44126518-6c9f-4c34-bc46-bea246cd70ca")
 
     return (
-        <main className="bg-bg-blue lg:max-w-245 2xl:max-w-360 mx-auto">
+        <main className="bg-bg-blue max-w-360 overflow-hidden mx-auto">
             <Breadcrumbs />
             <div className="flex w-full flex-col items-stretch">
                 <div className="w-full">
@@ -53,10 +53,15 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
                     <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-5 opacity-90 lg:rotate-12" />
                     <Image src={anchor} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-280 lg:left-5 opacity-90 lg:rotate-12" />
                 </div>
+<<<<<<< HEAD
                 <div className="flex flex-col md:flex-row w-full pt-5 px-4 pb-10 lg:px-22 md:flex md:pt-12.5 md:pb-16 md:items-start md:gap-25 items-center">
                     <section className="flex flex-col gap-6 font-albert md:gap-4 w-full
                     bg-white mx-4 mb-8 px-4 py-8 rounded-3xl md:px-10 lg:my-20 lg:justify-between lg:w-full lg:relative shadow-xl
                 ">
+=======
+                <div className="flex flex-col md:flex-row w-full pt-5 px-4 pb-10 lg:max-w-430 lg:px-22 md:flex md:pt-12.5 md:pb-16 md:items-start md:gap-25 items-center">
+                    <section className="flex flex-col font-albert md:gap-4 w-full bg-white mb-8 px-4 py-8 rounded-3xl md:px-10 lg:my-20  lg:justify-between lg:w-full lg:relative shadow-xl">
+>>>>>>> HSS-187-History-Fix
                         <div className="flex flex-col w-full lg:w-150 lg:shrink-0 ">
                             <div className="flex justify-between lg:static">
                                 <h2 className="font-fraunces font-bold pb-2 text-h2 text-primary md:text-h2-desktop">
