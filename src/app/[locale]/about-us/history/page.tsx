@@ -31,7 +31,7 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
     <main>
       <Breadcrumbs />
       <CardWithLogo image="/heartYellowBg.svg" sectionTitle="historycard" isH1 />
-      <div className="w-full relative lg:pt-20 xl:pt-0">
+      <div className="w-full relative">
         <div className="flex justify-center">
           <div className=" lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)] mx-4 relative rounded-3xl w-full shadow-xl bg-bg-white overflow-hidden md:px-10 px-3 pt-8 pb-1">
             <h2 className="w-fit pb-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{locale === "sv" ? data?.history_section.title_se : data?.history_section.title_en}</h2>
