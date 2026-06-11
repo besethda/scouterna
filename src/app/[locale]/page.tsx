@@ -22,7 +22,9 @@ const Home = async () => {
         <CardWithLogo sectionTitle={"homePageCard"} image="/anchorYellowBg.svg" />
         <GoodToKnow />
         <WhiteImageBox />
-        <DivisionsContainer data={groupsData} />
+        <div className="bg-white rounded-2xl shadow-lg mb-4 mx-4">
+          <DivisionsContainer data={groupsData} />
+        </div>
         <InstagramContainer bgBlue={true} />
       </section>
     </main>
