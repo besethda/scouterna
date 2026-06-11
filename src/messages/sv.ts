@@ -1036,7 +1036,7 @@ export const Sv: MessagesSvType = {
   },
   myset03: {
     t0: "Utrustning",
-    p0: "Köket är fullt utrustat med både el- och vedspis, diskmaskin, mikrovågsugn och ett rymligt kylskåp. Det är ett komplett kök som utan problem kan laga och servera mat till upp emot 30 personer &ndash; perfekt för läger, hajker och gemensamma måltider.",
+    p0: "Köket är fullt utrustat med både el- och vedspis, diskmaskin, mikrovågsugn och ett rymligt kylskåp. Det är ett komplett kök som utan problem kan laga och servera mat till upp emot 30 personer, perfekt för läger, hajker och gemensamma måltider.",
   },
   mysetBtn: {
     text: "Se planlösning"
