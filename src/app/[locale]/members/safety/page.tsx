@@ -29,7 +29,7 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
         <main>
             <Breadcrumbs />
             <div className="flex flex-col items-center ">
-                <section className="h-fit pb-13">
+                <section className="h-fit">
                     <CardWithLogo image="/informationYellowBg.svg" sectionTitle="safetyCard" isH1 /> 
                 </section>
                 <div className="flex flex-col w-full px-4 lg:px-0 gap-10 lg:max-w-430  md:gap-20 md:pb-16 pb-10 lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]" >

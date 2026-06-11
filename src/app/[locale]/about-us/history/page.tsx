@@ -31,7 +31,7 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
     <main>
       <Breadcrumbs />
       <CardWithLogo image="/heartYellowBg.svg" sectionTitle="historycard" isH1 />
-      <div className="w-full relative ">
+      <div className="w-full relative lg:pt-20 xl:pt-0">
         <div className="flex justify-center">
           <div className=" lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)] mx-4 relative rounded-3xl w-full shadow-xl bg-bg-white overflow-hidden md:px-10 px-3 pt-8 pb-1">
             <h2 className="w-fit pb-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{locale === "sv" ? data?.history_section.title_se : data?.history_section.title_en}</h2>
@@ -40,7 +40,7 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
           </div>
         </div>
         <div className="">
-          <Image src={anchor} alt="anchor" height={150} width={150} className="hidden md:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20  xl:right-70 lg:top-15 2xl:right-90 2xl:-rotate-20" />
+          <Image src={anchor} alt="anchor" height={150} width={150} className="hidden md:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30  xl:right-70  xl:top-30 lg:top-15 2xl:right-90 2xl:-rotate-20" />
         </div>
       </div>
       <div className="mx-4 ">
