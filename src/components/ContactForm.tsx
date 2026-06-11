@@ -51,12 +51,13 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
     };
 
     return (
-        <div className="py-10 flex flex-col gap-2 font-albert lg:py-25 lg:max-w-430  px-4 lg:px-22 2xl:mx-auto relative">
+        <div className="py-10 flex flex-col gap-2 font-albert lg:max-w-430 px-4 2xl:mx-auto relative 2xl:pt-25 lg:max-w-[var(--max-w-laptop)]  xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]">
             <Toaster position="top-center" reverseOrder={false} />
             <h2 className="text-h2 w-full font-fraunces font-bold text-primary md:text-h2-desktop">{title}</h2>
-            <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-70 md:max-w-100 lg:max-w-150">{text}</p>
+            <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-70 md:max-w-100 lg:max-w-150 xl:max-w-full">{text}</p>
             <div className="absolute right-4 top-14 -scale-x-100 rotate-293  
                             md:right-22 
+<<<<<<< HEAD
                             lg:scale-x-100 lg:rotate-0 lg:top-70 lg:right-40 lg:left-15
                             xl:-rotate-5 xl:left-45
 <<<<<<< HEAD
@@ -64,6 +65,11 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
 =======
                             2xl:-rotate-5 2xl:left-40
 >>>>>>> HSS-158-contact-fix
+=======
+                            lg:scale-x-100 lg:rotate-0 lg:top-60 lg:right-40 lg:left-15
+                            xl:rotate-10 xl:left-0
+                            2xl:-rotate-0 2xl:top-55 2xl:left-35 
+>>>>>>> HSS-176-Page-Check-Three
             ">
                 <svg
                     className="w-16.75 h-auto md:w-45.5 xl:w-60 2xl:w-75"

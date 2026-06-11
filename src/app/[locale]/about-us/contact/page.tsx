@@ -7,6 +7,7 @@ import { use } from "react";
 import JoinPage from "@/components/JoinPage";
 import ContactForm from "@/components/ContactForm";
 import CardWithLogo from "@/components/CardWithLogo";
+import ContactAddress from "@/components/ContactAddress"
 
 
 const pageItem = "contact";
@@ -15,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   return getPageHeadTitle(locale, pageItem, headDescription)
 }
+
 
 const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
 
@@ -25,12 +27,17 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
     <main className="md:max-w-360 mx-auto w-full">
       <Breadcrumbs />
       <CardWithLogo image="/mailYellowBg.svg" sectionTitle="contactcard" isH1 />
-      <div className="p-4 md:px-22">
-        <div className="bg-primary w-full rounded-2xl py-6 md:py-3">
-          <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} color={"yellow"} padding="top-desktop" />
-          <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"} color={"yellow"} padding="bottom-desktop" />
-        </div>
-      </div>
+      <ContactAddress 
+      title={messages?.email.title}
+      text01={messages?.email.text01}
+      text02={messages?.email.text02}
+      text03={messages?.bank.text03}
+      text04={messages?.bank.text04}
+      info01={messages?.email.info01}
+      info02={messages?.email.info02}
+      info03={messages?.bank.info03}
+      info04={messages?.bank.info04}
+      />
       <div className="w-full  bg-bg-blue">
         <ContactForm
           title={messages?.form.title}
@@ -49,7 +56,7 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
           networkErrorTxt={messages.form.networkErrorTxt}
         />
       </div>
-      <div className=" mx-4 my-8 py-4 lg:mx-25 lg:my-20 lg:pt-2 flex flex-col items-center">
+      <div className=" mx-4 my-8 py-4 lg:pt-2 flex flex-col items-center">
         <JoinPage
           head={messages?.interestBtn.head}
           title={messages?.interestBtn.title}

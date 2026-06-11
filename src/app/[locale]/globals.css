@@ -53,8 +53,11 @@
   --text-h2-desktop--font-family: var(--font-albert);
   --text-h2-desktop: 40px;
 
-  --text-h3-desktop--font-family: var(--font-albert);
-  --text-h3-desktop: 26px;
+    --text-h6-desktop--font-family: var(--font-albert);
+    --text-h6-desktop: 18px;
+
+    --text-h3-desktop--font-family: var(--font-albert);
+    --text-h3-desktop: 26px;
 
   --text-h4-desktop--font-family: var(--font-albert);
   --text-h4-desktop: 24px;
@@ -75,9 +78,13 @@
   --text-link-desktop--font-family: var(--font-albert);
   --text-link-desktop: 18px;
 
-  --text-acc-desktop--font-family: var(--font-albert);
-  --text-acc-desktop: 16px;
-  --text-acc-bold-desktop--font-weight: 700;
+    --text-h7-desktop--font-family: var(--font-albert);
+    --text-h7-desktop: 18px;
+    --text-h7-desktop-bold--font-weight: 700;
+
+    --text-acc-desktop--font-family: var(--font-albert);
+    --text-acc-desktop: 16px;
+    --text-acc-bold-desktop--font-weight: 700;
 
 
   /* Mobile */
