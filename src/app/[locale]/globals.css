@@ -142,11 +142,3 @@ body {
     left: 24px;
   }
 }
-
-.hover-sway {
-  transform-origin: bottom;
-}
-
-.hover-sway:hover {
-  animation: sway 0.8s ease-out;
-}
