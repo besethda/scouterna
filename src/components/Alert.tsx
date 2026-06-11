@@ -3,14 +3,20 @@ import { useState, useRef } from "react"
 import { useOutsideClick } from "@/hook/useOutsideClick"
 
 const Alert = ({alerts, mobile=false, locale}: {alerts:any, mobile?:boolean, locale: string | undefined}) => {
-  const currentDate = new Date()
-  const expiry = new Date(alerts.notifications.expiry)
-  const passed = currentDate.getTime() > expiry.getTime() ? true : false
+
+  console.log(alerts)
   const [alertShown, setAlertShown] = useState(false)
   const box = useRef<HTMLDivElement|null>(null)
-  if(passed){
-    return
-  }
+  const [currentAlerts, setCurrentAlerts]= useState()
+  const userRole = localStorage.getItem("userRole")
+  const userGroup = localStorage.getItem("userGroup")
+
+   setCurrentAlerts(alerts.filter((e: any)=> {
+    const currentDate = new Date()
+    const expiry = new Date(alerts.notifications.expiry)
+    const passed = currentDate.getTime() > expiry.getTime() ? true : false
+    if(!passed) return e
+  }))
 
   const close = () => {
     setAlertShown(false)

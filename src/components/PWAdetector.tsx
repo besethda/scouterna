@@ -35,9 +35,9 @@ const PWAdetector = () => {
       {!prompt && <div className="w-[90%] min-h-24 bg-primary rounded-2xl p-5 text-text-white h-30vh top-0 border-accent border-2">
         <div className="text-h2 font-fraunces font-bold">{messages?.notifications.prompt}</div>
         <div className="flex flex-col font-albert text-h3 text-text-black mt-4">
-          <button className="px-8 py-4 rounded-2xl bg-bg-white my-2 active:bg-gray-300" onClick={()=>setPrompt({role: 'parent'})}>{messages?.notifications.role1}</button>
+          <button className="px-8 py-4 rounded-2xl bg-bg-white my-2 active:bg-gray-300" onClick={()=>setPrompt({role: 'förälder'})}>{messages?.notifications.role1}</button>
           <button className="px-8 py-4 rounded-2xl bg-bg-white my-2 active:bg-gray-300" onClick={()=>setPrompt({role: 'scout'})}>{messages?.notifications.role2}</button>
-          <button className="px-8 py-4 rounded-2xl bg-bg-white my-2 active:bg-gray-300" onClick={()=>setPrompt({role: 'leader'})}>{messages?.notifications.role3}</button>
+          <button className="px-8 py-4 rounded-2xl bg-bg-white my-2 active:bg-gray-300" onClick={()=>setPrompt({role: 'ledare'})}>{messages?.notifications.role3}</button>
         </div>
       </div>}
       {prompt?.role && !prompt.group && <div className="w-[90%] min-h-24 bg-primary rounded-2xl text-text-white p-5 h-30vh top-0 border-accent border-2">
