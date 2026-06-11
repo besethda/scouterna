@@ -6,10 +6,7 @@ import { getPageHeadTitle } from "@/lib/utils";
 import ContentSection from "@/components/ContentSection";
 import Image from "next/image";
 import CTABtn from "@/components/CTA-button";
-import Sjohulorna from "../../../../../public/images/DSCF3033.jpg";
 import { getId } from "@/lib/utils";
-import Family from '../../../../../public/images/ParumMagna.png'
-import FamilyEn from '../../../../../public/images/ParumMagnaEng.png'
 import CardWithLogo from "@/components/CardWithLogo";
 import ImageCard from "@/components/ImageCard";
 import { PortableText } from "next-sanity";
