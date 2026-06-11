@@ -59,7 +59,6 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
             <div>
                 <p className="text-h5-desktop">{(messages as any)[section]?.[text]}</p>
             </div>
-
         </div>
 
     )

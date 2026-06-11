@@ -7,6 +7,7 @@ import ContentSection from "@/components/ContentSection";
 import heart from '../../../../../public/blueHeart1.svg'
 import Image from "next/image";
 
+
 const pageItem = "gdpr"
 const headDescription = "gdpr"
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -29,8 +30,8 @@ const Gdpr = async ({params}:{params: Promise<{locale: string}>}) => {
                 </div>
                 )})}              
             </div>
-        </main>
-    );
+    </main>
+  );
 }
 
 export default Gdpr
