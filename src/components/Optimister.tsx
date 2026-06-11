@@ -30,7 +30,7 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
     }
 
     const changePhoto = () => {
-         
+
     }
 
     return (
