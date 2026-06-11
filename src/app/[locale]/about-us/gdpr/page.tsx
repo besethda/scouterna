@@ -15,23 +15,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const Gdpr = async ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = await params
     const data = await getId("ec7ef49d-c0a3-4326-98ab-681d90994d8e")
-    
-    return (
+        
+    if(data?.history_layout.scout_life) return (
         <main>
             <Breadcrumbs />
             <CardWithLogo image="/informationYellowBg.svg" sectionTitle="gdprcard" isH1/> 
-            <h2 className="text-nowrap w-fit py-2 md:px-22 px-3.5 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{locale === "sv" ? data?.gdpr_section.title_se : data?.gdpr_section.title_en}</h2>
-            <div className="flex justify-center bg-bg-blue pb-10">
-              <div className="max-w-[92%] md:max-w-[95%] xl:max-w-[89%] lg:max-w-430 rounded-3xl w-full shadow-xl bg-bg-white overflow-hidden py-3 px-10">
-                <SanityFlex data={data?.history_layout.scout_life} locale={locale}/>
-              </div>
+            <div className="flex flex-col items-center bg-bg-blue pb-10">
+              {data?.history_layout.scout_life.map((e:any, index:number)=> {return(
+                <div key={index} className={`max-w-[92%] md:max-w-[95%] xl:max-w-[89%] lg:max-w-430 rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 md:px-10 py-3`}>
+                  <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"}/>
+                </div>
+                )})}              
             </div>
-            <div className="bg-bg-blue flex justify-center pb-10">
-              <div className="max-w-[92%] md:max-w-[95%] xl:max-w-[89%] lg:max-w-430 rounded-3xl w-full shadow-xl overflow-hidden bg-primary **:text-text-white">
-                <ContentSection sectionLayout={["s", "p"]} page={"syfte"}  />
-              </div>
-            </div>
-            <ContentSection sectionLayout={["s", "p", "p", "p", "p", "p", "p"]} page={"ethics"} display={"mobile"}/> 
         </main>
     );
 }
