@@ -19,11 +19,12 @@ const ContentSection = ({ sectionLayout, page, padding = "both", color = "black"
         acc.push(<ul key={index} className={`w-fit text-body my-3 md:text-body-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-albert lg:max-w-[63%] list-disc pl-5`}><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
       } else {
         acc.push(<div key={index} className={`
-          ${element === "p" ? `w-fit py-2 text-body md:text-body-desktop ${color=== "black" ? "text-text-black": "text-text-white"} font-albert` :
-            element === "w" ? `w-fit py-2 text-body-bold md:text-body-bold-desktop ${color=== "black" ? "text-text-black": "text-text-white"} font-fraunces` :
-              element === "h" ? `w-fit py-2 text-h1 md:text-h1-desktop text-primary ${color=== "black" ? "text-primary": "text-text-white"} font-fraunces font-bold` :
-                element === "t" ? `w-fit py-2 text-h2 md:text-h2-desktop text-primary ${color=== "black" ? "text-primary": "text-text-white"} font-fraunces font-bold` :
-                  element === "s" ? `w-fit py-2 text-h3 md:text-h3-desktop  ${color=== "black" ? "text-primary": "text-text-white"} font-fraunces font-bold` :  ""
+          ${element === "p" ? `py-2 w-fit text-body md:text-h5-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-albert lg:max-w-[63%]` :
+            element === "w" ? `py-2 w-fit text-body-bold md:text-h7-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-fraunces` :
+              element === "h" ? `py-2 w-fit text-h1 md:text-h2-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
+                element === "t" ? `py-2 w-fit text-h3 md:text-h2-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
+                  element === "s" ? `py-2 w-fit text-h3 md:text-h3-desktop  ${color === "black" ? "text-primary" : color === "yellow" ? "text-accent" : "text-text-white"} font-fraunces font-bold` :
+                    element === "g" ? `w-fit py-2 text-[22px] md:text-h4-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` : ""
           }`}>{(messages as any)[page]?.[`${element}${count.length}`]}</div>)
       }
       return acc
@@ -33,8 +34,8 @@ const ContentSection = ({ sectionLayout, page, padding = "both", color = "black"
 
   return (
     <div className={`w-full flex justify-center ${color === "black" ? "text-text-black" : "text-text-black"}`}>
-      <div className={`${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-16 pt-7" : padding === "bottom-mobile" ? "pb-16 md:pb-0" : padding === "top-mobile" ? "pt-7 md:pt-0" : padding === "bottom-desktop" ? "pb- md:pb-16" : padding === "top-desktop" ? "pt-0 md:pt-7" : ""} 
-      ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} w-full ${child ? "" : "px-4 lg:max-w-430 lg:px-0"}`}>
+      <div className={`${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-8 pt-8" : padding === "bottom-mobile" ? "pb-16 md:pb-0" : padding === "top-mobile" ? "pt-7 md:pt-0" : padding === "bottom-desktop" ? "pb- md:pb-16" : padding === "top-desktop" ? "pt-0 md:pt-7" : ""} 
+      ${display === "mobile" ? "md:hidden" : display === "desktop" ? "hidden md:block" : ""} w-full ${child ? "" : "px-4 lg:max-w-430 lg:px-10"}`}>
         {createLayout(sectionLayout)}
       </div>
     </div>
