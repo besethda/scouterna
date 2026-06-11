@@ -41,5 +41,3 @@ const Union = async ({locale = "sv"}:unionProps) => {
 }
 
 export default Union
-
-
