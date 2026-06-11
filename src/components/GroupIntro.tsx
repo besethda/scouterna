@@ -23,7 +23,7 @@ const GroupIntro = ({ headline, title, text, logo }: GroupIntroProps) => {
           <Image src={logo} alt="logo" width={48} height={48} className="md:w-35.5 md:h-35.5" />
         </div>
       </div>
-      <p className="text-text-black text-[16px] font-normal tracking-[3%] md:text-[20px] md:max-w-2xl">
+      <p className="text-text-black text-[16px] font-normal tracking-[3%] md:text-h5-desktop md:max-w-2xl">
         {text}
       </p>
 
