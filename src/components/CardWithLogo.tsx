@@ -26,7 +26,7 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false, logoTopRight = false 
   }
 
   return (
-    <div className="w-full flex px-4 md:p-0 flex-col pb-10 md:pt-12.5 md:pb-20 md:items-start md:gap-25 items-center lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)] bg-bg-blue">
+    <div className="w-full flex px-4 md:p-4 lg:p-0 flex-col pb-10 md:pt-12.5 md:pb-20 md:items-start md:gap-25 items-center lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:pb-20 2xl:max-w-[var(--max-w-desktop)] bg-bg-blue">
       <div className={`flex flex-col py-8 px-4 lg:px-10 rounded-3xl bg-[#FFFFFF] w-full gap-6 shadow-xl  ${logoTopRight ? "relative" : ""}`}>
         <div className="flex justify-between items-start">
           <div className=" flex flex-col lg:max-w-[65%]">
