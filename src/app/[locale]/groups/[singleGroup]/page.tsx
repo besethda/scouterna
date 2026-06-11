@@ -69,7 +69,7 @@ const Groups = async ({
       <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/sjohumlor-frame.svg" sectionTitle="GroupSjohumlorna" isH1 logoTopRight />
-        <div className="px-4 lg:px-22">
+        <div className="px-4 md:px-4 lg:px-4 xl:px-0 lg:max-w-245 xl:mx-auto  2xl:max-w-360 w-full">
           <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
               <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15 ">
@@ -188,7 +188,7 @@ const Groups = async ({
       <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Kaparna-frame.svg" sectionTitle="GroupKaparna" isH1 logoTopRight />
-        <div className="px-4 lg:px-22">
+        <div className="px-4 md:px-0 lg:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360">
           <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
               <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15">
@@ -305,7 +305,7 @@ const Groups = async ({
       <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Utmanare-frame.svg" sectionTitle="GroupUtmanare" isH1 logoTopRight />
-        <div className="px-4 lg:px-22">
+        <div className="px-4 md:px-0 lg:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360">
           <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
               <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15 ">
@@ -422,7 +422,7 @@ const Groups = async ({
       <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Konvojen-frame.svg" sectionTitle="GroupKonvojen" isH1 logoTopRight />
-        <div className="px-4 lg:px-22">
+        <div className="px-4 md:px-0 lg:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360">
           <section className="w-full flex flex-col  bg-bg-white md:px-4 rounded-3xl shadow-xl">
             <div className="md:flex md:gap-5 lg:gap-10">
               <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15">
@@ -539,7 +539,7 @@ const Groups = async ({
       <main className="md:max-w-360 md:mx-auto">
         <Breadcrumbs />
         <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 logoTopRight />
-        <div className="px-4 lg:px-22 pb-30">
+        <div className="px-3.75 md:px-0 lg:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360 pb-30">
           <div className="flex flex-col lg:max-w-430 w-full md:px-3 mx-auto bg-bg-white rounded-3xl shadow-xl">
             <div className="flex flex-col lg:max-w-430 w-full px-4 mx-auto py-4 pb-7 lg:pb-15 ">
               <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 md:items-start ">

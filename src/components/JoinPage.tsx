@@ -30,10 +30,10 @@ const JoinPage = ({
 }: JoinPageProps) => {
   return (
     <div
-      className="bg-bg-accent w-full md:max-w-430 border-transparent rounded-2xl flex shadow-xl  lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]"
+      className="bg-bg-accent w-full border-transparent rounded-2xl flex shadow-xl  lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)] "
     >
       <div
-        className="flex flex-col w-full lg:max-w-400 px-2 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-8 mx-auto md:flex-row md:flex-2"
+        className="flex flex-col w-full lg:max-w-400 px-4 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-8 mx-auto md:flex-row md:flex-2"
       >
         <div
           className={`flex flex-col gap-6 text-left relative ${section === "join" ? "md:max-w-100 lg:max-w-140" : ""}`}
@@ -77,7 +77,7 @@ const JoinPage = ({
           )}
         </div>
 
-        <div className={`md:flex-1 ${section === "join" ? "hidden md:block" : "hidden md:block"}`}>
+        <div className={`flex justify-center md:flex-1 w-full ${section === "join" ? "hidden md:block" : "hidden md:block"}`}>
           <ImageCard imageTitle="photoTitle" image="/images/hood.jpg" section={section === "join" ? "joinPage" : "interstsBtn"} page="join" text="" pin="dark_red" />
         </div>
       </div>
