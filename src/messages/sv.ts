@@ -261,6 +261,7 @@ type MessagesSvType = {
   lockable: Record<string, string>
   gdpr: Record<string, string>
   syfte:Record<string, string>
+  notifications: Record<string, string>
   ethics: Record<string, string>
   email: Record<string, string>
   bank: Record<string, string>
@@ -823,6 +824,20 @@ export const Sv: MessagesSvType = {
   syfte:{
      s0: "Uppgiftsinsamlingens syfte",
      p0: "Syftet med uppgiftsinsamlingen i Scoutnet är att veta vilka våra medlemmar är, för att kunna nå ut med information till dem, för närvaroregistrering, för att se avdelnings- och patrulltillhörighet, och för fakturering.",
+  },
+  notifications: {
+    prompt: "Välkommen till HSS! Vad är din roll i kåren? HSS kommer att skicka dig relevanta aviseringar baserat på din roll. \n Välj ett alternativ:",
+    role1: "Förälder",
+    role2: "Scout",
+    role3: "Ledare",
+    prompt2: "Vilken avdelning tillhör du?",
+    prompt3: "Vilken avdelning tillhör ditt barn?",
+    group1: "spårarscouter",
+    group2: "upptäckarscouter",
+    group3: "äventyrarscouter",
+    group4: "utmanarscouter",
+    group5: "familjescouter",
+    submit: "Bekräfta"
   },
   ethics: {
     s0: "Etiska riktlinjer för uppgiftsinsamling",
