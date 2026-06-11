@@ -859,6 +859,10 @@ export const En: MessagesEngType = {
     "p1": "802006 - 2389"
   },
   offers: {
+    "bigHeader0": "Time",
+    "bigHeader1": "Inclusion",
+    "bigHeader2": "Values",
+    "bigHeader3": "Safety",
     title: "What Scout Life Offers",
     header0: "Life on the waves",
     header1: "Naturally exciting",
@@ -1041,100 +1045,100 @@ export const En: MessagesEngType = {
     text: "View floor plan"
   },
   sjohumlornaSpårarscouter: {
-    t0: "Spårarscouts",
+    g0: "Spårarscouts",
     p0: "These scouts are Spårarscouts. Spårarna is the beginning of the scouting journey, where each child gets to grow, explore, and feel pride in what they can accomplish.",
   },
   sjohumlornaAge: {
-    t0: "Age",
+    g0: "Age",
     p0: "The children at Spårarna are between 8 and 9 years old.",
   },
   sjohumlorMeeting: {
-    t0: "Section meetings",
+    g0: "Section meetings",
     p0: "Day: Monday",
     p1: "Ruffen at Hässelby Strandbad.",
   },
   sjohumlorPlace: {
-    t0: "Badges",
+    g0: "Badges",
     p0: "For Spårare, there are plenty of exciting badges. Lighting a lantern for the first time can be a big challenge. Or making popcorn on a storm kitchen. There are also badges that focus on how to be a good friend or how to take care of the environment.",
   },
   sjohumlorButton: "Badge poster for Spårare",
   kaparnaUpptäckarscouter: {
-    t0: "Upptäckarscouts",
+    g0: "Upptäckarscouts",
     p0: "Many at this age are curious about the world around them, and at Kaparna we encourage that engagement. We often work practically and concretely - it can range from solving missions together to learning to take responsibility in small and big situations."
   },
   kaparnaAge: {
-    t0: "Age",
+    g0: "Age",
     p0: "The children at Upptäckascouter are between 10 and 11 years old.",
   },
   kaparnaMeeting: {
-    t0: "Section meetings",
+    g0: "Section meetings",
     p0: "Day: Tuesday",
     p1: "Ruffen at Hässelby Strandbad",
   },
   kaparnaPlace: {
-    t0: "Badges",
+    g0: "Badges",
     p0: "There are plenty of badges that suit Upptäckare. For example, they can show that they can handle a knife and axe. Or one of the many interest badges can serve as a framework for the program. There are badges for everything from first aid, fire-making and cooking to water, darkness and superheroes.",
   },
   kaparnaButton: "Badge poster for Upptäckare",
   utmanarscouter: {
-    t0: "Utmanarscouts",
+    g0: "Utmanarscouts",
     p0: "The Utmanare are given bigger challenges in an increasingly international context. Scouts get the opportunity to explore adult responsibilities, and everyone has room to try different things and discover their own roles. You are trusted with significant responsibility while still being free to be playful, act your age, or simply be yourself.",
   },
   utmanareAge: {
-    t0: "Age",
+    g0: "Age",
     p0: "The scouts in the utmanarscouter section are 15 years and older.",
   },
   utmanareMeeting: {
-    t0: "Section meetings",
+    g0: "Section meetings",
     p0: "Day: Tuesday or Thursday.",
     p1: "Ruffen at Hässelby Strandbad.",
   },
   utmanarePlace: {
-    t0: "Challenges",
+    g0: "Challenges",
     p0: "There are ten challenges. Two of them are done individually and the rest are done together in the Utmanarscouter team. The individual challenges have slightly stricter rules. The others are decided together in the Utmanarscouter team.",
   },
   utmanareButton: "Discover the challenges",
   äventyrarscouter: {
-    t0: "Äventyrarscouts",
+    g0: "Äventyrarscouts",
     p0: "In the adventure scouts, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
   },
   konvojenAge: {
-    t0: "Age",
+    g0: "Age",
     p0: "The children at Upptäckascouter are between 12 and 14 years old.",
   },
   konvojenMeeting: {
-    t0: "Section meetings",
+    tg0: "Section meetings",
     p0: "Day: Thursday",
     p1: "Location: Ruffen at Hässelby Strandbad.",
   },
   konvojenPlace: {
-    t0: "Badges",
+    tg0: "Badges",
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
   union: {
-    t0: "Union",
+    g0: "Union",
     p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
   },
   download: "Download ",
   BarnOchVuxnaTillsammans: {
-    t0: "Children and Adults Together",
+    g0: "Children and Adults Together",
     p0: "Family Scouting is for children under the age of eight and an adult they feel safe with. Together, you discover scouting through play, adventure, and fun activities.",
     p1: "Children and adults participate side by side, helping each other with the activities. The adult is responsible for the child, but is also an important part of the community and participates just as much as the children.",
     p2: "The adult can be a parent, grandparent, relative, or another close person. The focus of Family Scouting is for children and adults to experience things together and strengthen their relationship."
   },
   ParumMagna: {
-    t0: "Parum & Magna",
+    g0: "Parum & Magna",
     p0: "In Family Scouting, children and adults get to follow the bears Parum and Magna on various adventures. Parum is curious and loves to discover and try new things, while Magna is wise and thinks about how everything connects. Together, they play, meet new friends, and help each other.",
     p1: "Stories and imagination are important parts of Family Scouting. Through the stories, children and adults get something to talk about and reflect on together. The stories also help spark curiosity, excitement, and a cozy atmosphere during the meetings."
   },
   Familjescoutsagor: {
-    t0: "Family Scouting Stories",
+    g0: "Family Scouting Stories",
     p0: "In Family Scouting, we use stories as a tool in our meetings. Through these narratives, children and adults can discover new themes together, spark their imagination, and build curiosity and community.",
     p1: "There are several different Family Scouting stories – both long and short, with and without rhymes. The stories are linked to various themes and activities. They help create a warm and playful feeling where children and adults can listen, reflect, and experience adventures together."
   },
   Märken: {
-    t0: "Badges",
+    g0: "Badges",
     p0: "Family Scouting has its own badges that you can earn through participation. Badges are a fun way to create pride in participating and a wonderful sense of togetherness!"
   },
   familjescouterButton: "Discover All Our Scout Badges",
@@ -1184,7 +1188,7 @@ export const En: MessagesEngType = {
     p0: "HSS's four groups hold meetings once a week."
   },
   avdelningsledare: {
-    t0: "Group Manager",
+    g0: "Group Manager",
     p0: "Each group has a group manager. Our managers are trained and have completed the mandatory course Safe Meetings."
   },
   scoutnet: {
