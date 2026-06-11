@@ -1,7 +1,7 @@
 'use client'
 
-import { useForm } from "react-hook-form"
-import { sendContactEmail } from "../app/email"
+import { useForm } from "react-hook-form";
+import { sendContactEmail } from "../app/email";
 import toast, { Toaster } from 'react-hot-toast';
 
 interface EmailFormData {
@@ -59,7 +59,11 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                             md:right-22 
                             lg:scale-x-100 lg:rotate-0 lg:top-70 lg:right-40 lg:left-15
                             xl:-rotate-5 xl:left-45
+<<<<<<< HEAD
                             2xl:-rotate-5 2xl:left-40 
+=======
+                            2xl:-rotate-5 2xl:left-40
+>>>>>>> HSS-158-contact-fix
             ">
                 <svg
                     className="w-16.75 h-auto md:w-45.5 xl:w-60 2xl:w-75"
