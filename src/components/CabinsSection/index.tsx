@@ -17,13 +17,13 @@ const CabinsSection = ({ images }: { images: Record<string, string> }) => {
   const currentLocal = params?.local || urlLocal || "sv"
 
   return (
-    <div className="flex flex-col gap-10 font-albert items-center md:gap-5 mb-20 lg:max-w-[980px] 2xl:max-w-[1440px] mx-4 xl:mx-auto">
+    <div className="flex flex-col gap-10 font-albert items-center md:gap-5 mb-20 lg:max-w-[850px] xl:max-w-[980px] 2xl:max-w-[1200px] px-4 md:mx-auto">
       <div className="hidden md:block w-full">
         <h2 className=" text-primary text-h2-desktop font-fraunces font-bold">{messages?.cabinst}</h2>
       </div>
       <div className="flex flex-col rounded-2xl lg:h-auto bg-white shadow-lg  py-8 ">
         <div className="flex flex-col md:flex-row w-full h-full">
-          <div className="flex flex-col flex-1 px-3 lg:px-10 md:mr-9 2xl:justify-between">
+          <div className="flex flex-col flex-1 px-3 lg:px-10 md:mr-9 2xl:mr-50 2xl:justify-between">
             <div>
               <h3 className="text-primary text-h2 font-fraunces font-bold">{messages?.cabinsmyset.title}</h3>
               <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A] ">{messages?.cabinsmyset.dpOne}</p>
