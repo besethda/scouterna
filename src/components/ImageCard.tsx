@@ -27,15 +27,17 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
     return (
         <div className="relative group">
             <Image src={pinColor()} alt={imageTitle} width={85} height={80} className={`absolute inset-s-0 z-20 
-            ${page === "cabin" || page === "groups"
+            ${page === "groups" || page === "scoutLife"
                     ?
-                    "left-20 -top-2"
-                    : page === "group"
-                        ? "left-28 -top-2 md:left-33"
-                        :
-                        "left-33 -top-4"}
+                    "left-25 -top-5 md:left-20 md:-top-2"
+                    : page === "cabin" ?
+                        "left-20 -top-5 md:left-20 md:-top-2"
+                        : page === "group" || page === "scout-life"
+                            ? "left-28 -top-2 md:left-33"
+                            :
+                            "left-33 -top-4"}
             `} />
-            <div className={`flex flex-col  bg-bg-white shadow-[0_3px_8px_rgba(0,0,0,0.5)] relative font-gochi text-primary transition-transform duration-500 ease-out pin-swing "origin-[calc(132px+42.5px)_0px
+            <div className={`flex flex-col  bg-bg-white shadow-[0_3px_8px_rgba(0,0,0,0.5)] relative font-gochi text-primary transition-transform duration-500 ease-out pin-swing
         ${text ? "min-h-125" : ""}
         ${page === "home" && "p-6 w-89.5"}
         ${page === "cabin" && "p-6 w-66.5"}
