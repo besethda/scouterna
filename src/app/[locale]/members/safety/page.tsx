@@ -29,21 +29,21 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
     return (
         <main>
             <Breadcrumbs />
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center ">
                 <section className="h-fit pb-13">
                     <CardWithLogo image="/informationYellowBg.svg" sectionTitle="safetyCard" isH1 /> 
                 </section>
-                <div className="flex flex-col w-full px-4 gap-10 lg:max-w-430 lg:px-22 md:pt-10 md:gap-20 md:pb-16 pb-10" >
+                <div className="flex flex-col w-full px-4 lg:px-0 gap-10 lg:max-w-430  md:gap-20 md:pb-16 pb-10 lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]" >
                     <section className="order-2 bg-white rounded-2xl relative"> 
-                        <ContentSection sectionLayout={["h", "w", "p", "t", "s", "p", "s", "p", "s", "p"]} page="safeScout" padding="both" />
+                        <ContentSection sectionLayout={["h", "w", "p", "s", "p", "s", "p", "s", "p"]} page="safeScout" padding="both" />
                         <Image src={vest} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-40 opacity-70 lg:-rotate-12 " />
                     </section>
                     <section className="order-1 bg-primary rounded-2xl">
-                        <ContentSection sectionLayout={["h", "p", "p", "t", "p", "w", "l", "l", "l", "t", "p", "w", "l", "l", "l", "t", ]} page={"guidelines"} padding="top" color="white"/>
+                        <ContentSection sectionLayout={["h", "p", "p", "t", "p", "w", "l", "l", "l", "t", "p", "w", "l", "l", "l", "t", ]} page={"guidelines"} padding="both" color="white"/>
                     </section>
                     <section className="order-3 bg-primary rounded-2xl">
                         <ContentSection sectionLayout={["h", "w", "p", "w"]} page="lockable" display="desktop" color="white"  />
-                        <ContentSection sectionLayout={["h", "w", "p", ]} page="vests" display="mobile" padding="bottom" color="white" />
+                        <ContentSection sectionLayout={["h", "w", "p", ]} page="vests" display="mobile" padding="both" color="white" />
                     </section>
                 </div>
             </div>
