@@ -69,8 +69,8 @@ const Groups = async ({
   if (singleGroup === "spararscouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/sjohumlor-frame.svg"
             sectionTitle="GroupSjohumlorna"
@@ -160,7 +160,7 @@ const Groups = async ({
                 </div>
               </div>
             </section>
-            <section className="bg-white w-full h-160 md:h-130 lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
+            <section className="bg-white w-full h-160 md:h-130 lg:max-w-430 lg:px-10 px-4 items-center mt-12.5 mb-12.5 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
               <div className="w-full py-2 pb-15 self-start">
                 <ContentSection
                   sectionLayout={["g"]}
@@ -217,8 +217,8 @@ const Groups = async ({
   } else if (singleGroup === "upptackarscouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/Kaparna-frame.svg"
             sectionTitle="GroupKaparna"
@@ -305,7 +305,7 @@ const Groups = async ({
                 </div>
               </div>
             </section>
-            <section className="bg-white w-full h-160 md:h-130  lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl  md:flex">
+            <section className="bg-white w-full h-160 md:h-130  lg:max-w-430 lg:px-10 px-4 items-center mt-12.5 mb-12.5  max-w-7xl mx-auto rounded-3xl shadow-xl  md:flex">
               <div className="w-full py-2 pb-15 self-start">
                 <ContentSection
                   sectionLayout={["g"]}
@@ -362,8 +362,8 @@ const Groups = async ({
   } else if (singleGroup === "utmanarscouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/Utmanare-frame.svg"
             sectionTitle="GroupUtmanare"
@@ -450,7 +450,7 @@ const Groups = async ({
                 </div>
               </div>
             </section>
-            <section className="bg-white w-full h-160 md:h-130  lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
+            <section className="bg-white w-full h-160 md:h-130  lg:max-w-430 lg:px-10 px-4 items-center mt-12.5 mb-12.5  max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
               <div className="w-full py-2 pb-15 self-start">
                 <ContentSection
                   sectionLayout={["g"]}
@@ -507,8 +507,8 @@ const Groups = async ({
   } else if (singleGroup === "aventyrarscouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/Konvojen-frame.svg"
             sectionTitle="GroupKonvojen"
@@ -595,7 +595,7 @@ const Groups = async ({
                 </div>
               </div>
             </section>
-            <section className="bg-white w-full h-160 md:h-130  lg:max-w-430 lg:px-10 px-4 items-center mt-10 mb-10 max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
+            <section className="bg-white w-full h-160 md:h-130  lg:max-w-430 lg:px-10 px-4 items-center mt-12.5 mb-12.5  max-w-7xl mx-auto rounded-3xl shadow-xl md:flex">
               <div className="w-full py-2 pb-15 self-start">
                 <ContentSection
                   sectionLayout={["g"]}
@@ -652,8 +652,8 @@ const Groups = async ({
   } else if (singleGroup === "familjescouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/Familje-frame.svg"
             sectionTitle="GroupFamily"

@@ -27,15 +27,15 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
     return (
         <main className="bg-bg-blue ">
-            <Breadcrumbs />
             <div className="flex w-full lg:max-w-245 2xl:max-w-360 mx-auto flex-col items-stretch">
+                <Breadcrumbs />
                 <div className="w-full">
                     <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
                 </div>
                 <div className="w-full relative">
                     {data?.questionCategories.map((category: any, index: number) => (
                         <div key={index}>
-                            <section className={`${index % 2 === 0 ? 'bg-bg-blue' : 'bg-bg-blue'} py-10 `}>
+                            <section className={`${index % 2 === 0 ? 'bg-bg-blue' : 'bg-bg-blue'} py-5 `}>
                                 <h2 className="w-full text-center mb-3 py-2 text-h2 md:text-h2-desktop text-primary font-fraunces font-bold"> {locale === 'en' ? category.title_en : category.title_sv}</h2>
                                 <div className="flex flex-col gap-2.5">
                                     {category?.questionList.map((item: any, index: number) => (

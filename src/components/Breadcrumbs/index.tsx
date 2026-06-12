@@ -45,7 +45,7 @@ const Breadcrumbs = () => {
     <div className="shrink-0 max-w-full my-4 ">
       {pathname !== "/en" && pathname !== "/sv" && (
         <div className="flex justify-center w-full">
-          <div className="flex h-9 md:h-12  items-center gap-1 text-body md:text-body-desktop px-3.5 w-full lg:max-w-430 lg:px-22">
+          <div className="flex h-9 md:h-12  items-center gap-1 text-body md:text-body-desktop px-3.5 lg:px-0 w-full lg:max-w-430">
             <a href={messages?.breadcrumbs.path} className="font-albert hover:text-accent duration-100 text-primary">{messages?.breadcrumbs.title}</a>
             {breadcrumbsArray.map((item: string, index: number) => {
               const currentPath =

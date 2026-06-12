@@ -24,7 +24,7 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
   const messages = locale === "en" ? En : Sv
 
   return (
-    <main className="md:max-w-360 mx-auto w-full">
+    <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
       <Breadcrumbs />
       <CardWithLogo image="/mailYellowBg.svg" sectionTitle="contactcard" isH1 />
       <ContactAddress 
@@ -56,7 +56,7 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
           networkErrorTxt={messages.form.networkErrorTxt}
         />
       </div>
-      <div className=" mx-4 my-8 py-4 lg:pt-2 flex flex-col items-center">
+      <div className=" mx-4 mt-8 mb-20 py-4 lg:pt-2 flex flex-col items-center">
         <JoinPage
           head={messages?.interestBtn.head}
           title={messages?.interestBtn.title}
