@@ -24,7 +24,7 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
   const messages = locale === "en" ? En : Sv
 
   return (
-    <main className="md:max-w-360 mx-auto w-full">
+    <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
       <Breadcrumbs />
       <CardWithLogo image="/mailYellowBg.svg" sectionTitle="contactcard" isH1 />
       <ContactAddress 

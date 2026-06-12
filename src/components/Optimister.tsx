@@ -40,7 +40,7 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
     }
 
     return (
-        <div className='w-full relative pb-6 pt-6 py-4 px-4 lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)] overflow-hidden'>
+        <div className='w-full relative pb-6 pt-6 py-4 px-4 overflow-hidden'>
             {galleryOpen && <div onClick={()=> setGalleryOpen(false)} className='fixed hidden w-screen h-screen bg-gray-800/50 backdrop-blur-sm top-0 left-0 z-70 md:flex items-center justify-center overscroll-contain overflow-hidden'>
                 {currentImage !== null && <div className='h-[80%] md:w-[80%] w-75% overflow-hidden relative '>
                     <Image src={urlFor(images[currentImage].asset._ref).url()} alt={images[currentImage].alt} fill className='object-contain'/>
