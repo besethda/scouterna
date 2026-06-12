@@ -990,9 +990,9 @@ export const En: MessagesEngType = {
     t0: "Sea scouting since 1959",
     p0: "Right where the waves of Lake Mälaren meet the shore lies Ruffen, the historic scout cabin that has been an important part of Hässelby Strand's Sea Scout Troop since 1959.",
     t1: "With the lake as its closest neighbor",
-    p1: "With its fantastic location, Ruffen is the perfect base for life on the water. From here, it is never more than a few steps to boats, docks, and sparkling water. The cabin serves as the troop's natural gathering place where generations of children and youth have met to learn sailing, knots, and seamanship, as well as prepare for exciting adventures.",
+    p1: "With its fantastic location, Ruffen is the perfect base for life on the water. From here, it is never more than a few steps to boats, docks, and water. The cabin serves as the troop's natural gathering place where generations of children and youth have met to learn sailing, knots, and seamanship, as well as prepare for exciting adventures.",
     s0: "Ruffen in brief:", 
-    p2: "Home of Hässelby Strand's Sea Scout Troop", 
+    p2: "Home of Hässelby Strand's Sea Scouts", 
     p3: "Active since 1959", 
     p4: "Close to boats and docks by the water in Hässelby Strand"
   },
