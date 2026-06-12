@@ -16,11 +16,11 @@ const Home = async () => {
   return (
     <main className="">
       <HeroContainer bgImages={{ mobile: data.home_images.home_hero_mobile.asset._ref, desktop: data.home_images.home_hero_desktop.asset._ref }} messageSection={"homeHero"} />
-      <section className="flex flex-col items-center w-full md:max-w-360  mx-auto md:mb-20 md:mt-12">
+      <section className="flex flex-col items-center w-full lg:max-w-245 2xl:max-w-360  mx-auto md:mb-20 md:mt-12 pt-10">
         <CardWithLogo sectionTitle={"homePageCard"} image="/anchorYellowBg.svg" />
         <GoodToKnow />
         <WhiteImageBox />
-        <div className="bg-white rounded-2xl shadow-lg mb-4 mx-4">
+        <div className="md:w-full bg-white rounded-2xl shadow-lg mb-4 mx-4 px-4">
           <DivisionsContainer data={groupsData} />
         </div>
         <InstagramContainer bgBlue={true} />

@@ -24,11 +24,11 @@ const GroupStructure = async ({ params }: { params: Promise<{ locale: string }> 
 
 
   return (
-    <main className="w-full md:max-w-360 mx-auto">
+    <main className="w-full lg:max-w-245 2xl:max-w-360 mx-auto">
       <Breadcrumbs />
       <section className="w-full flex flex-col items-center">
         <CardWithLogo image="/heartYellowBg.svg" sectionTitle="groupsCard" isH1 logoTopRight />
-        <div className="flex flex-col px-4 pb-8 md:pb-16 gap-1 items-center lg:px-22">
+        <div className="flex flex-col px-4 pb-8 md:pb-16 gap-1 items-center">
           <DivisionsBox division={"spararscouter"} boxStyle={"image"} data={data?.groups.find((e: any) => e.name_slug === "sjohumlorna") || null} />
           <DivisionsBox division={"upptackarscouter"} boxStyle={"image"} data={data?.groups.find((e: any) => e.name_slug === "kaparna") || null} />
           <DivisionsBox division={"aventyrarscouter"} boxStyle={"image"} data={data?.groups.find((e: any) => e.name_slug === "konvojen") || null} />
