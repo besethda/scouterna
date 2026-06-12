@@ -54,14 +54,14 @@ const clipWords = (text:string) => {
           <div onScroll={scroll} ref={containerReference} className="w-full scroll-smooth snap-x snap-mandatory overflow-scroll lg:max-w-335 md:max-w-130 max-w-85 scrollbar-none">
             <div className="lg:w-[180vw] md:w-[130vw] w-[170vw] flex lg:max-w-675 md:max-w-258 max-w-180 mx-2">
               {currentImages.map(image => <a target={caption? undefined : "_blank"} href={caption ? undefined : photoObject[image].permalink} className={`snap-center relative w-[15.66%] bg-bg-white rounded-3xl h-fit mx-[.5%] hover:brightness-110 duration-150`} key={photoObject[image].imageIndex}>
-                <div className=" border-gray-400/70 hidden md:block border rounded-t-3xl">
+                {photoObject[image].caption && <div className=" border-gray-400/70 hidden md:block border rounded-t-3xl">
                   <div className="px-4 flex pb-1 pt-3">
                     <Image src={"/HSSicon.png"} alt={'HSS Icon'} width={45} height={45}/>
                     <p className="font-albert pt-2 pl-2 grow font-bold text-text-black text-body">@hss_scout</p>
                   </div>
                   <p className="text-text-black font-albert min-h-14 text-body px-4 pb-2">{clipWords(photoObject[image].caption)}</p>
-                </div>
-                  <img src={`${photoObject[image].mediaUrl}`} alt={`image-${photoObject[image].timestamp}`} className='aspect-7/5 rounded-3xl rounded-t-3xl md:rounded-t-none object-cover' />
+                </div>}
+                  <img src={`${photoObject[image].mediaUrl}`} alt={`image-${photoObject[image].timestamp}`} className={`aspect-7/5 rounded-3xl rounded-t-3xl ${photoObject[image].caption && "md:rounded-t-none"} object-cover`} />
                   {caption && photoObject[image].caption && <div className="w-full text-center text-text-black font-albert text-body lg:text-body-desktop">{photoObject[image].caption}</div>}
                 </a>)}
             </div>
