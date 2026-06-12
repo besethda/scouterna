@@ -16,7 +16,7 @@ const ContentSection = ({ sectionLayout, page, padding, width = "both", color = 
     let result = characterLayout.reduce((acc, element: string, index) => {
       const count = characterLayout.slice(0, index).filter(e => e === element)
       if (element === "l") {
-        acc.push(<ul key={index} className={`w-fit text-body my-3 md:text-body-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-albert ${width === "full" ? "lg:max-w-[90%]" : "lg:max-w-[63%]"} list-disc pl-5`}><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
+        acc.push(<ul key={index} className={`w-fit text-body my-3 md:text-body-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-albert ${width === "full" ? "md:max-w-[90%]" : "md:max-w-[63%]"} list-disc pl-5`}><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
       } else {
         acc.push(<div key={index} className={`
           ${element === "p" ? `py-2 w-fit text-body md:text-h5-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-albert lg:max-w-[63%]` :
