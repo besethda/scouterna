@@ -732,7 +732,7 @@ export const En: MessagesEngType = {
   groupsCard: {
     headline: "Groups",
     title: "Age Groups",
-    text: "We have four age-appropriate sections. The program's content is tailored to the scouts' ages to ensure they get experiences and adventures that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout section, you can join from the age of 15.",
+    text: "We have five age-appropriate sections. The program's content is tailored to the scouts' ages to ensure they get experiences and adventures that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout section, you can join from the age of 15.",
   },
   boatsCard: {
     headline: "Scout Life",
@@ -1002,7 +1002,7 @@ export const En: MessagesEngType = {
   groupCard: {
     headline: "groups",
     title: "Age groups",
-    text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout group, members can join from the age of 15."
+    text: "We have five age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout group, members can join from the age of 15."
   },
   faqContact: {
     title: "Contact us",
@@ -1185,7 +1185,7 @@ export const En: MessagesEngType = {
   },
   ruffenDivisions: {
     t0: "Group Meetings",
-    p0: "HSS's four groups hold meetings once a week."
+    p0: "HSS's five groups hold meetings once a week."
   },
   avdelningsledare: {
     g0: "Group Manager",

@@ -17,15 +17,15 @@ const CabinsSection = ({ images }: { images: Record<string, string> }) => {
   const currentLocal = params?.local || urlLocal || "sv"
 
   return (
-    <div className="flex flex-col gap-10 font-albert items-center md:gap-5 mb-10 px-4">
+    <div className="flex flex-col gap-10 font-albert items-center md:gap-5 mb-10  lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)] px-4 lg:px-0 md:mx-auto">
       <div className="hidden md:block w-full">
         <h2 className=" text-primary text-h2-desktop font-fraunces font-bold">{messages?.cabinst}</h2>
       </div>
-      <div className="flex flex-col rounded-2xl lg:h-auto bg-white shadow-lg  py-8 ">
+      <div className="flex flex-col rounded-2xl lg:h-auto bg-white shadow-lg py-8 px-2">
         <div className="flex flex-col md:flex-row w-full h-full">
           <div className="flex flex-col flex-1 px-3 lg:px-10 md:mr-9 2xl:mr-50 2xl:justify-between">
             <div>
-              <h3 className="text-primary text-h2 font-fraunces font-bold">{messages?.cabinsmyset.title}</h3>
+              <h3 className="text-primary text-h3-desktop font-fraunces font-bold">{messages?.cabinsmyset.title}</h3>
               <p className="text-text-black pt-2 md:text-body-desktop text-body md:text-[#52667A] ">{messages?.cabinsmyset.dpOne}</p>
               <p className="text-text-black pt-3 md:text-body-desktop text-body md:text-[#52667A]">{messages?.cabinsmyset.dpTwo}</p>
             </div>
@@ -42,7 +42,7 @@ const CabinsSection = ({ images }: { images: Record<string, string> }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col rounded-2xl lg:h-auto bg-white shadow-lg py-8">
+      <div className="flex flex-col rounded-2xl lg:h-auto bg-white shadow-lg py-8 px-2">
         <div className="flex  flex-col md:flex-row w-full h-full ">
           <div className="flex flex-col flex-1 md:py-6 px-3 lg:px-10 md:mr-9 2xl:justify-between">
             <div>
