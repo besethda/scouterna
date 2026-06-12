@@ -1006,7 +1006,7 @@ export const Sv: MessagesSvType = {
   groupCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
-    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
+    text: "Vi har fem åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
   },
   faqContact: {
     title: "Kontakta oss",
@@ -1186,7 +1186,7 @@ export const Sv: MessagesSvType = {
   },
   ruffenDivisions: {
     t0: "Avdelningsmöten",
-    p0: "HSS fyra avdelningar har avdelningsmöten en gång i veckan. "
+    p0: "HSS fem avdelningar har avdelningsmöten en gång i veckan. "
   },
   avdelningsledare: {
     g0: "Avdelningsledare",
