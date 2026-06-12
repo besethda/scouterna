@@ -24,7 +24,7 @@ const MysetHistory = () => {
       img: "/images/myset04.jpg",
       alt: "myset and a car"
     }
-  ]
+  ] 
 
   return (
   <div className="font-albert text-text-white bg-primary rounded-3xl px-4 lg:px-10 mx-4 py-8 lg:hidden">
