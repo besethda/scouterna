@@ -42,7 +42,7 @@ const Safety = ({params}:{params: Promise<{locale: string}>}) => {
                         <Image src={whiteAnchor} alt="anchor" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-20 opacity-70 lg:-rotate-12 " />
                     </section>
                     <section className="order-3 bg-primary rounded-2xl">
-                        <ContentSection sectionLayout={["h", "w", "p", "w"]} page="lockable" display="desktop" color="white"  />
+                        <ContentSection sectionLayout={["h", "w", "p", "w"]} page="lockable" display="desktop" color="white" padding="both" />
                         <ContentSection sectionLayout={["h", "w", "p", ]} page="vests" display="mobile" padding="both" color="white" />
                     </section>
                 </div>
