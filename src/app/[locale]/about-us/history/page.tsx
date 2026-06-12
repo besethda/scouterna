@@ -24,7 +24,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
   const { locale } = await params
-  const messages = locale === "en" ? En : Sv
   const data = await getId("c57001b2-94f1-4bf1-ae81-1fcc684e0eee")
 
   return (
@@ -36,7 +35,7 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
             <img src="/Path.png" alt="line" className="absolute md:top-28 md:left-[16vw]  top-22 left-4 w-[65%] md:w-auto line" />
               {data?.history_layout.scout_life.map((e:any, index:number)=> {return(
                 <div key={index} className={`rounded-3xl rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 md:px-10 py-3`}>
-                  <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"} child={true}/>
+                  <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"}/>
                 </div>
                 )})}   
         </div>

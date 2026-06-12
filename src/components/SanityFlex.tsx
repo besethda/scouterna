@@ -3,7 +3,12 @@
 import { PortableText } from "next-sanity"
 import CTABtn from "./CTA-button"
 
-const SanityFlex = ({data, locale, color, child=false}: {data:any, locale:string, color:string, child?:boolean}) => {
+type textObjectType = {
+  text_en_array:Record<string, string>
+}
+
+const SanityFlex = ({data, locale, color}: {data:any, locale:string, color:string, child?:boolean}) => {
+  console.log(data)
   if(data) return (
     <div className="w-full">
       {data.map((section:any, index:number)=> {

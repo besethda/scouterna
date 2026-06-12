@@ -26,7 +26,7 @@ const Gdpr = async ({params}:{params: Promise<{locale: string}>}) => {
             <div className="mx-4 flex flex-col items-center bg-bg-blue pb-10">
               {data?.history_layout.scout_life.map((e:any, index:number)=> {return(
                 <div key={index} className={`rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 md:px-10 py-3`}>
-                  <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"} child/>
+                  <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"} />
                 </div>
                 )})}              
             </div>
