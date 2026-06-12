@@ -33,7 +33,7 @@ const Ruffen = async ({ params }: { params: Promise<{ locale: string }> }) => {
             <div className="flex flex-col items-center w-full">
                 <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="ruffen" isH1 logoTopRight/>
                 <section className="md:bg-bg-blue flex w-full flex-col items-center">
-                    <ContentSection sectionLayout={["t", "p"]} page={"ruffenDivisions"} child={false} padding="none" />
+                    <ContentSection sectionLayout={["t", "p"]} page={"ruffenDivisions"} child={true} padding="none" />
                     <div className="flex flex-col px-4 lg:px-0 gap-1 md:grid md:grid-cols-2 w-full lg:max-w-430 md:gap-2 [&>*]:w-full">
                         <DivisionsBox division={"spararscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "sjohumlorna") || null}/>
                         <DivisionsBox division={"upptackarscouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "kaparna") || null}/>
