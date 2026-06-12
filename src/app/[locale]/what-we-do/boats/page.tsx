@@ -6,8 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Optimister from "@/components/Optimister";
 import { getId } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
-
-
+import 
 
 const pageItem = "boats"
 const headDescription = "boats"

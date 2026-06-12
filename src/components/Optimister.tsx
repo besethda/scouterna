@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
 
-interface OptimisterProps {
+export interface OptimisterProps {
     title: {en:string, sv:string};
     text: {en:string, sv:string};
     images: any[];
