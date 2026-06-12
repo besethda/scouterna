@@ -22,7 +22,7 @@ const Cabins = async ({params}:{params: Promise<{locale: string}>}) => {
     const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "cabin_images")
 
     return (
-        <main>
+        <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
             <Breadcrumbs />
             <div className="flex flex-col w-full items-center">
                 <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="cabinsCard" isH1/>

@@ -25,8 +25,8 @@ const GroupStructure = async ({ params }: { params: Promise<{ locale: string }> 
 
   return (
     <>
-      <Breadcrumbs />
       <main className="w-full lg:max-w-245 2xl:max-w-360 mx-auto">
+        <Breadcrumbs />
         <section className="w-full flex flex-col items-center">
           <CardWithLogo image="/heartYellowBg.svg" sectionTitle="groupsCard" isH1 logoTopRight />
           <div className="flex flex-col px-4 pb-8 md:pb-16 gap-1 items-center md:pt-5">
