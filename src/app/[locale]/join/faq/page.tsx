@@ -53,11 +53,7 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
                     <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-5 opacity-90 lg:rotate-12" />
                     <Image src={anchor} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-280 lg:left-5 opacity-90 lg:rotate-12" />
                 </div>
-<<<<<<< HEAD
-                <div className="flex flex-col md:flex-row w-full pt-5 px-4 pb-10 lg:max-w-430 lg:px-22 md:flex md:pt-12.5 md:pb-16 md:items-start md:gap-25 items-center">
-=======
                 <div className="flex flex-col md:flex-row w-full pt-5 px-4 pb-10 lg:px-22 md:flex md:pt-12.5 md:pb-16 md:items-start md:gap-25 items-center">
->>>>>>> HSS-201-Instagram-Redesign
                     <section className="flex flex-col gap-6 font-albert md:gap-4 w-full
                     bg-white mx-4 mb-8 px-4 py-8 rounded-3xl md:px-10 lg:my-20 lg:max-w-430 lg:justify-between lg:w-full lg:relative shadow-xl
                 ">
