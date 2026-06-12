@@ -63,7 +63,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                             lg:scale-x-100 lg:rotate-0 lg:top-60 lg:right-40 lg:left-15
                             xl:rotate-10 xl:left-0
                             2xl:-rotate-0 2xl:top-55 2xl:left-35 
-            ">
+            "> 
                 <svg
                     className="w-16.75 h-auto md:w-45.5 xl:w-60 2xl:w-75"
                     viewBox="0 0 336 326"
