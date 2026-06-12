@@ -16,10 +16,10 @@ const ContentSection = ({ sectionLayout, page, padding, width = "both", color = 
     let result = characterLayout.reduce((acc, element: string, index) => {
       const count = characterLayout.slice(0, index).filter(e => e === element)
       if (element === "l") {
-        acc.push(<ul key={index} className={`w-fit text-body my-3 md:text-body-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-albert ${width === "full" ? "md:max-w-[90%]" : "md:max-w-[63%]"} list-disc pl-5`}><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
+        acc.push(<ul key={index} className={`w-fit text-body my-3 md:text-body-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-albert list-disc pl-5`}><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
       } else {
         acc.push(<div key={index} className={`
-          ${element === "p" ? `py-2 w-fit text-body md:text-h5-desktop ${color === "black" ? "text-text-black" : "text-text-white"} ${width === "full" ? "md:max-w-[90%]" : "md:max-w-[63%]"} font-albert max-w-[63%]` :
+          ${element === "p" ? `py-2 w-fit text-body md:text-h5-desktop ${color === "black" ? "text-text-black" : "text-text-white"} ${width === "full" ? "md:max-w-[90%]" : "md:max-w-[63%]"} font-albert md:max-w-[63%]` :
             element === "w" ? `py-2 w-fit text-body-bold md:text-h7-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-fraunces` :
               element === "h" ? `py-2 w-fit text-h1 md:text-h2-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
                 element === "t" ? `py-2 w-fit text-h3 md:text-h2-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
@@ -31,7 +31,7 @@ const ContentSection = ({ sectionLayout, page, padding, width = "both", color = 
     }, [] as React.ReactNode[])
     return result
   }
- 
+
   return (
     <div className={`w-full flex justify-center ${color === "black" ? "text-text-black" : "text-text-black"}`}>
       <div className={`${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-8 pt-8" : padding === "bottom-mobile" ? "pb-16 md:pb-0" : padding === "top-mobile" ? "pt-7 md:pt-0" : padding === "bottom-desktop" ? "pb- md:pb-16" : padding === "top-desktop" ? "pt-0 md:pt-7" : ""} 
