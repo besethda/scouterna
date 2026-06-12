@@ -55,7 +55,7 @@ const Scoutlife = () => {
 
             ))}
           </div>
-          <div className="">
+          <div className="flex justify-center">
             <ImageCard image="/images/DSCF3070.jpg" imageTitle="text" pin="pink" text="" section="scoutLife" page="scout-life" />
           </div>
         </div>
