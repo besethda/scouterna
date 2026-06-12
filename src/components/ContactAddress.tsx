@@ -12,7 +12,7 @@ interface ContactProps {
 
 const ContactAddress = ({title, text01,text02,text03,text04,info01,info02,info03,info04}:ContactProps) => {
     return (
-        <div className="mx-4 px-4 md:px-10  py-8 md:py-8 rounded-3xl bg-primary text-text-white text-base md:text-h5-desktop flex flex-col gap-2 items-start">
+        <div className="mx-4 md:mx-0 px-4 md:px-10  py-8 md:py-8 rounded-3xl bg-primary text-text-white text-base md:text-h5-desktop flex flex-col gap-2 items-start">
             <h2 className="font-bold font-fraunces text-h2 md:text-h2-desktop">{title}</h2>
             <p className="text-accent font-bold font-fraunces text-lg md:text-h4-desktop">{text01}</p>
             <p>{info01}</p>

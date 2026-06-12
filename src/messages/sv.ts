@@ -85,6 +85,7 @@ type MessagesSvType = {
     familjescouter_time: string,
     familjescouter_place: string,
     familjescouter_paragraph: string,
+    familjescouter_photoTitle: string,
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -292,6 +293,16 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
+  aboutRuffen: {
+    t0: string,
+    p0: string,
+    t1: string,
+    p1: string,
+    s0: string, 
+    p2: string, 
+    p3: string, 
+    p4: string,
+  }
   memberInfo: {
     headline: string,
     title: string,
@@ -598,6 +609,7 @@ export const Sv: MessagesSvType = {
     familjescouter_time: "18:00",
     familjescouter_place: "Ruffen",
     familjescouter_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
+    familjescouter_photoTitle: "Parum & Magna",
     scouts_title: "Scouter",
     scouts_paragraph: "Vi har åldersindelade avdelningar från och med 8 års ålder. ",
     family_title: "Familjescouting",
@@ -977,6 +989,16 @@ export const Sv: MessagesSvType = {
     headline: "Scoutstugor",
     title: "Ruffen",
     text: "Ruffen är vår lokal vid Hässelby Strandbad. Här har vi våra avdelningsmöten och den huserar även våra optimistjollar."
+  },
+  aboutRuffen: {
+    t0: "Scöscouting sedan 1959",
+    p0: "Precis där Mälarens vågor möter land ligger Ruffen, den anrika scoutstugan som sedan 1959 har varit en viktig del av Hässelby Strands Sjöscouter.",
+    t1: "Med sjön som närmaste granne",
+    p1: "Med sitt fantastiska läge är Ruffen den perfekta basen för sjöliv. Härifrån är steget aldrig långt till båtar, bryggor och glittrande vatten. Stugan fungerar som kårens naturliga samlingslokal där generationer av barn och ungdomar har mötts för att lära sig segling, knopar och sjövett, samt förbereda sig inför spännande äventyr.",
+    s0: "Kort om Ruffen:", 
+    p2: "Hemvist för Hässelby Strands Sjöscouter.", 
+    p3: "Aktivt sedan 1959.", 
+    p4: "Nära båtar och bryggor vid vattnet i Hässelby Strand."
   },
   memberInfo: {
     headline: "Scoutliv",
