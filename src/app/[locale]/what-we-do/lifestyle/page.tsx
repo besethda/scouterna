@@ -31,7 +31,7 @@ const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) =>
             <HeroContainer bgImages={{ mobile: data.lifestyle_images.lifestyle_hero_mobile.asset._ref, desktop: data.lifestyle_images.lifestyle_hero_desktop.asset._ref }} messageSection={"lifestyleHero"} position={"center"} />
             <div className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
                 <Breadcrumbs />
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col ">
                     <CardWithLogo image="/wavesYellowBg.svg" sectionTitle="lifestyle" />
                     <LifeStyleSection />
                     <PhotoContainer backgroundBlue={false} messageTitle="learning" />
