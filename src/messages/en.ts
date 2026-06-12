@@ -105,6 +105,7 @@ export type MessagesEngType = {
     familjescouter_time: string,
     familjescouter_place: string,
     familjescouter_paragraph: string,
+    familjescouter_photoTitle: string,
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -291,6 +292,16 @@ export type MessagesEngType = {
     title: string,
     text: string,
   },
+  aboutRuffen: {
+    t0: string,
+    p0: string,
+    t1: string,
+    p1: string,
+    s0: string,
+    p2: string,
+    p3: string,
+    p4: string,
+  },
   memberInfo: {
     headline: string,
     title: string,
@@ -390,7 +401,7 @@ export type MessagesEngType = {
   konvojenMeeting: Record<string, string>
   konvojenPlace: Record<string, string>
   konvojenButton: string,
-  union: Record<string, string >
+  union: Record<string, string>
   download: string,
   BarnOchVuxnaTillsammans: Record<string, string>,
   ParumMagna: Record<string, string>,
@@ -587,6 +598,7 @@ export const En: MessagesEngType = {
     familjescouter_time: "18:00",
     familjescouter_place: "Ruffen",
     familjescouter_paragraph: "Familjescouter is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
+    familjescouter_photoTitle: "Parum & Magna",
     scouts_title: "Scouts",
     scouts_paragraph: "We have age-separated groups from the age of 8.",
     family_title: "Familjescouter",
@@ -974,6 +986,16 @@ export const En: MessagesEngType = {
     title: "Ruffen",
     text: "Ruffen is our premises located by Hässelby Strandbad. This is where we hold our troop meetings, and it also houses our Optimist dinghies.",
   },
+  aboutRuffen: {
+    t0: "Sea scouting since 1959",
+    p0: "Right where the waves of Lake Mälaren meet the shore lies Ruffen, the historic scout cabin that has been an important part of Hässelby Strand's Sea Scout Troop since 1959.",
+    t1: "With the lake as its closest neighbor",
+    p1: "With its fantastic location, Ruffen is the perfect base for life on the water. From here, it is never more than a few steps to boats, docks, and water. The cabin serves as the troop's natural gathering place where generations of children and youth have met to learn sailing, knots, and seamanship, as well as prepare for exciting adventures.",
+    s0: "Ruffen in brief:",
+    p2: "Home of Hässelby Strand's Sea Scouts",
+    p3: "Active since 1959",
+    p4: "Close to boats and docks by the water in Hässelby Strand"
+  },
   memberInfo: {
     headline: "Scout Life",
     title: "Information",
@@ -1026,7 +1048,7 @@ export const En: MessagesEngType = {
     photoTitle: "Join the adventure!"
   },
   myset01: {
-    t0: "Interested in renting Myset?",
+    g0: "Interested in renting Myset?",
     p0: "Email ",
     p1: "to make a booking inquiry."
   },
