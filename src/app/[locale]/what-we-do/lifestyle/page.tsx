@@ -8,7 +8,8 @@ import HeroContainer from "@/components/HeroContainer/HeroContainer";
 import Activities from "@/components/Activities";
 import PhotoContainer from "./photoContainer";
 import CardWithLogo from "@/components/CardWithLogo";
-
+import birds from '../../../../../public/blueBirds1.png'
+import Image from "next/image";
 
 
 const pageItem = "lifestyle"
@@ -34,7 +35,10 @@ const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) =>
                 <LifeStyleSection />
                 <PhotoContainer backgroundBlue={false} messageTitle="learning" />
             </div>
-            <Activities />
+            <div className="relative">
+                <Activities />
+                <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-40 opacity-90 lg:rotate-10" />
+            </div>
         </main>
     );
 }

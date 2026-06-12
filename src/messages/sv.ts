@@ -1118,7 +1118,7 @@ export const Sv: MessagesSvType = {
   },
   konvojenButton: "Märkesplansch för Äventyrare",
   union: {
-    t0: "Visa och ladda ner",
+    t0: "Kårstämmor",
     p0: "Vi håller regelbundet kårstämmor för att fatta gemensamma beslut som rör föreningen. Kårstämmornas innehåll dokumenteras och går att ladda ner och läsa.",
   },
   download: "Ladda ner ",
