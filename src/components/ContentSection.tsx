@@ -31,7 +31,7 @@ const ContentSection = ({ sectionLayout, page, padding, width = "both", color = 
     }, [] as React.ReactNode[])
     return result
   }
-
+ 
   return (
     <div className={`w-full flex justify-center ${color === "black" ? "text-text-black" : "text-text-black"}`}>
       <div className={`${padding === "top" ? "pt-7" : padding === "bottom" ? "pb-16" : padding === "both" ? "pb-8 pt-8" : padding === "bottom-mobile" ? "pb-16 md:pb-0" : padding === "top-mobile" ? "pt-7 md:pt-0" : padding === "bottom-desktop" ? "pb- md:pb-16" : padding === "top-desktop" ? "pt-0 md:pt-7" : ""} 
