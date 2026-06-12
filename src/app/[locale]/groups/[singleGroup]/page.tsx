@@ -77,10 +77,10 @@ const Groups = async ({
             isH1
             logoTopRight
           />
-          <div className="px-4 md:px-4 lg:px-0 xl:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360 w-full">
+          <div className="px-4 md:px-4 lg:px-0 xl:px-4 lg:max-w-245 xl:mx-auto 2xl:max-w-360 w-full">
             <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
               <div className="md:flex md:gap-5 lg:gap-20">
-                <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15 ">
+                <div className="flex flex-col lg:min-w-215 px-4 py-4 pb-7 lg:pb-15 ">
                   <div className="flex flex-col lg:flex-row xl:gap-20 items-center md:items-start">
                     <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                       <ContentSection
@@ -120,12 +120,14 @@ const Groups = async ({
                       <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
                       <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
                     </div>
-                    <ContentSection
-                      sectionLayout={["g", "p"]}
-                      page="sjohumlorPlace"
-                      padding={"none"}
-                      child={true}
-                    />
+                    <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                      <ContentSection
+                        sectionLayout={["g", "p"]}
+                        page="sjohumlorPlace"
+                        padding={"none"}
+                        child={true}
+                      />
+                    </div>
                   </div>
                   <div
                     className="
@@ -228,7 +230,7 @@ const Groups = async ({
           <div className="px-4 md:px-0 lg:px-0 xl:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360">
             <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
               <div className="md:flex md:gap-5 lg:gap-10">
-                <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15">
+                <div className="flex flex-col lg:min-w-215 px-4 py-4 pb-7 lg:pb-15">
                   <div className="flex flex-col lg:flex-row xl:gap-20 items-center md:items-start">
                     <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                       <ContentSection
@@ -266,12 +268,14 @@ const Groups = async ({
                       <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
                       <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
                     </div>
-                    <ContentSection
-                      sectionLayout={["g", "p"]}
-                      page="kaparnaPlace"
-                      padding={"5"}
-                      child={true}
-                    />
+                    <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                      <ContentSection
+                        sectionLayout={["g", "p"]}
+                        page="kaparnaPlace"
+                        padding={"5"}
+                        child={true}
+                      />
+                    </div>
                   </div>
                   <div
                     className="
@@ -373,7 +377,7 @@ const Groups = async ({
           <div className="px-4 md:px-0 lg:px-0 xl:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360">
             <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
               <div className="md:flex md:gap-5 lg:gap-10">
-                <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15 ">
+                <div className="flex flex-col lg:min-w-215 px-4 py-4 pb-7 lg:pb-15 ">
                   <div className="flex flex-col lg:flex-row xl:gap-20 items-center md:items-start">
                     <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                       <ContentSection
@@ -411,12 +415,14 @@ const Groups = async ({
                       <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? utmanare?.groups?.day_sv : utmanare.groups.day_en}`}</div>
                       <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? utmanare?.groups?.place_sv : utmanare.groups.place_en}`}</div>
                     </div>
-                    <ContentSection
-                      sectionLayout={["g", "p"]}
-                      page="utmanarePlace"
-                      padding={"5"}
-                      child={true}
-                    />
+                    <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                      <ContentSection
+                        sectionLayout={["g", "p"]}
+                        page="utmanarePlace"
+                        padding={"5"}
+                        child={true}
+                      />
+                    </div>
                   </div>
                   <div
                     className="
@@ -518,7 +524,7 @@ const Groups = async ({
           <div className="px-4 md:px-0 lg:px-0 xl:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360">
             <section className="w-full flex flex-col  bg-bg-white md:px-4 rounded-3xl shadow-xl">
               <div className="md:flex md:gap-5 lg:gap-10">
-                <div className="flex flex-col lg:max-w-158 px-4 py-4 pb-7 lg:pb-15">
+                <div className="flex flex-col lg:min-w-215 px-4 py-4 pb-7 lg:pb-15">
                   <div className="flex flex-col lg:flex-row xl:gap-20 items-center md:items-start">
                     <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                       <ContentSection
@@ -556,12 +562,14 @@ const Groups = async ({
                       <div className="w-fit pt-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Dag: " : "Day: "}${messages?.path === "/sv" ? konvojen?.groups?.day_sv : konvojen.groups.day_en}`}</div>
                       <div className="w-fit pb-2 text-body md:text-body-desktop text-text-black font-albert">{`${messages?.path === "/sv" ? "Plats: " : "Place: "}${messages?.path === "/sv" ? konvojen?.groups?.place_sv : konvojen.groups.place_en}`}</div>
                     </div>
-                    <ContentSection
-                      sectionLayout={["g", "p"]}
-                      page="konvojenPlace"
-                      padding={"5"}
-                      child={true}
-                    />
+                    <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                      <ContentSection
+                        sectionLayout={["g", "p"]}
+                        page="konvojenPlace"
+                        padding={"5"}
+                        child={true}
+                      />
+                    </div>
                   </div>
                   <div
                     className="
