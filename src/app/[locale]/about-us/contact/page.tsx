@@ -8,7 +8,8 @@ import JoinPage from "@/components/JoinPage";
 import ContactForm from "@/components/ContactForm";
 import CardWithLogo from "@/components/CardWithLogo";
 import ContactAddress from "@/components/ContactAddress"
-
+import Image from "next/image";
+import anchor from '../../../../../public/whiteAnchor.png'
 
 const pageItem = "contact";
 const headDescription = "contact"
@@ -27,6 +28,7 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
     <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
       <Breadcrumbs />
       <CardWithLogo image="/mailYellowBg.svg" sectionTitle="contactcard" isH1 />
+      <div className="relative">
       <ContactAddress 
       title={messages?.email.title}
       text01={messages?.email.text01}
@@ -38,6 +40,8 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
       info03={messages?.bank.info03}
       info04={messages?.bank.info04}
       />
+      <Image src={anchor} alt="anchor" height={150} width={150} className="hidden md:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20" />
+      </div>
       <div className="w-full  bg-bg-blue">
         <ContactForm
           title={messages?.form.title}
