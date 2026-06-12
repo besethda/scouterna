@@ -21,7 +21,7 @@ const DivisionsBox = ({ division, imageUrl, data, boxStyle = "basic" }:
   }
   if (!data || data.groups.day_se) return null
   return (
-    <div className={`${colorReference[division][0]} flex flex-col flex-wrap border border-b-4 m-1 bg-bg-white rounded-2xl px-6 py-3 ${boxStyle !== "image" ? boxStyle === "info" ? "md:w-[49.5%] bg-bg-white mx-[.25%]" : "md:w-[24%] mx-[0.5%] md:min-w-77 md:m-3" : "md:min-h-85  md:max-h-96 lg:max-h-77 lg:w-full md:my-4 "}`}>
+    <div className={`${colorReference[division][0]} flex flex-col flex-wrap border border-b-4 m-1 bg-bg-white rounded-2xl px-6 py-3 ${boxStyle !== "image" ? boxStyle === "info" ? "md:w-[49.5%] bg-bg-white mx-[.25%]" : "md:w-[24%] mx-[0.5%] md:min-w-77 md:m-3" : "lg:px-10 md:py-8  md:min-h-100  md:max-h-96 lg:max-h-77 :w-full md:my-4 "}`}>
       <div className={`flex order-1 justify-between items-center ${boxStyle === "image" && "md:flex-col md:justify-start md:items-baseline md:min-w-[53%] lg:min-w-[70%]"}`}>
         {boxStyle !== "image" ? <div className={`w-16 h-16 rounded-xl flex justify-center items-center ${colorReference[division][1]}`}>
           <Image src={`/${division.toLowerCase()}.svg`} width={48} height={48} alt={messages?.division[`${division}_title`] ?? ""} className="bg-white" />
@@ -37,8 +37,8 @@ const DivisionsBox = ({ division, imageUrl, data, boxStyle = "basic" }:
         </div>}
         {boxStyle === "image" && <div className="md:text-body-desktop text-body font-albert text-text-black">{messages?.division[`${division}_paragraph`] ?? ""}</div>}
       </div>
-      {boxStyle === "image" && <div className="order-3 md:order-4 md:mt-7 lg:mt-2 w-full md:max-w-[70%] mt-5">
-        <div className={`mb-2 h-full w-auto relative lg:max-h-62 md:max-h-72 flex justify-center md:justify-between`}>
+      {boxStyle === "image" && <div className="order-3 md:order-4 md:mt-7 lg:mt-2 w-full mt-5 xl:pl-0 2xl:pl-30">
+        <div className="mb-2 h-full w-auto relative lg:max-h-62 md:max-h-72 flex justify-center md:justify-between">
           <ImageCard imageTitle={`${division}_title`} image={urlFor(data.groups.image.asset._ref).url() ? urlFor(data.groups.image.asset._ref).url() : "/images/IMG_5129.JPG"} section="division" page="groups" text="" pin="red" />
         </div>
       </div>}
