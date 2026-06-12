@@ -21,8 +21,7 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
     const { locale } = use(params)
     const messages = locale === "en" ? En : Sv
     return (
-        <main className="bg-bg-blue ">
-            <div className="max-w-360 mx-auto w-full">
+        <main className="bg-bg-blue w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
             <Breadcrumbs />
             <div className="w-full flex flex-col items-center ">
                 <CardWithLogo image="/informationYellowBg.svg" sectionTitle="memberInfo" isH1 />
@@ -31,7 +30,6 @@ const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
                     <Union  locale={locale}/>
                     <InstagramContainer showText={true}/>
                 </div>
-            </div>
             </div>
         </main>
     );

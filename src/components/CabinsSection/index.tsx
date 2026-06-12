@@ -17,7 +17,7 @@ const CabinsSection = ({ images }: { images: Record<string, string> }) => {
   const currentLocal = params?.local || urlLocal || "sv"
 
   return (
-    <div className="flex flex-col gap-10 font-albert items-center md:gap-5 mb-10  lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)] px-4 md:mx-auto">
+    <div className="flex flex-col gap-10 font-albert items-center md:gap-5 mb-10 px-4">
       <div className="hidden md:block w-full">
         <h2 className=" text-primary text-h2-desktop font-fraunces font-bold">{messages?.cabinst}</h2>
       </div>
