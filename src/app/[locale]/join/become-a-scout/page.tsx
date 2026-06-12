@@ -39,7 +39,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
             <div className="lg:max-w-245 2xl:max-w-360 mx-auto">
                 <Breadcrumbs />
                 <section className="flex flex-col items-center w-full">
-                    <div className="w-full">
+                    <div className="w-full pt-10">
                         <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
                     </div>
                     <Scoutlife />

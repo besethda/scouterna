@@ -546,6 +546,7 @@ const Groups = async ({
                     page="BarnOchVuxnaTillsammans"
                     padding={"5"}
                     child={true}
+                    width='Full'
                   />
                 </div>
                 <div className="flex h-auto md:pt-5 md:px-4 py-5 ">
@@ -566,6 +567,7 @@ const Groups = async ({
                     page="ParumMagna"
                     padding={"3"}
                     child={true}
+                    width='Full'
                   />
                 </div>
                 <div className="flex h-auto md:pt-5 md:px-4 py-5 ">
@@ -585,12 +587,14 @@ const Groups = async ({
                   page="Familjescoutsagor"
                   padding={"3"}
                   child={true}
+                  width='Full'
                 />
                 <ContentSection
                   sectionLayout={["g", "p"]}
                   page="Märken"
                   padding={"3"}
                   child={true}
+                  width='Full'
                 />
               </div>
               <div className="
