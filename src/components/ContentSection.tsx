@@ -16,15 +16,15 @@ const ContentSection = ({ sectionLayout, page, padding, width = "both", color = 
     let result = characterLayout.reduce((acc, element: string, index) => {
       const count = characterLayout.slice(0, index).filter(e => e === element)
       if (element === "l") {
-        acc.push(<ul key={index} className={`w-fit text-body my-3 md:text-body-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-albert ${width === "full" ? "md:max-w-[90%]" : "md:max-w-[63%]"} list-disc pl-5`}><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
+        acc.push(<ul key={index} className={`w-fit text-body my-3 md:text-body-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-albert list-disc pl-5`}><li>{(messages as any)[page]?.[`${element}${count.length}`]}</li></ul>)
       } else {
         acc.push(<div key={index} className={`
-          ${element === "p" ? `py-2 w-fit text-body md:text-h5-desktop ${color === "black" ? "text-text-black" : "text-text-white"} ${width === "full" ? "md:max-w-[90%]" : "md:max-w-[63%]"} font-albert max-w-[63%]` :
+          ${element === "p" ? `py-2 w-fit text-body md:text-h5-desktop ${color === "black" ? "text-text-black" : "text-text-white"} ${width === "full" ? "md:max-w-[90%]" : "md:max-w-[63%]"} font-albert md:max-w-[63%]` :
             element === "w" ? `py-2 w-fit text-body-bold md:text-h7-desktop ${color === "black" ? "text-text-black" : "text-text-white"} font-fraunces` :
               element === "h" ? `py-2 w-fit text-h1 md:text-h2-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
                 element === "t" ? `py-2 w-fit text-h3 md:text-h2-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
                   element === "s" ? `py-2 w-fit text-h3 md:text-h3-desktop  ${color === "black" ? "text-primary" : color === "yellow" ? "text-accent" : "text-text-white"} ${width === "full" ? "md:max-w-[90%]" : "md:max-w-[63%]"} font-fraunces font-bold` :
-                    element === "g" ? `w-fit py-2 text-[22px] md:text-h4-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` : ""
+                    element === "g" ? `w-fit py-2 text-[22px] ${page === "myset01" ? "md:text-h2-desktop" : "md:text-h4-desktop"} text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` : ""
           }`}>{(messages as any)[page]?.[`${element}${count.length}`]}</div>)
       }
       return acc
