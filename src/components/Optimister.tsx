@@ -3,20 +3,26 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
-
-export interface OptimisterProps {
+interface OptimisterProps {
     title: {en:string, sv:string};
     text: {en:string, sv:string};
-    images: any[];
+    images: imageObjectType[];
     locale:string
+}
+
+export type imageObjectType = {
+    description_en:string,
+    description_sv:string,
+    title_en:string,
+    title_sv:string
+    alt:string
+    asset: {_ref:string}
 }
 
 const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
     const middleImageRef = useRef<HTMLDivElement>(null);
     const [galleryOpen, setGalleryOpen] = useState(false)
     const [currentImage, setCurrentImage] = useState<number|null>(null)
-    console.log(images)
-    console.log(locale)
 
     useEffect(() => {
         const container = middleImageRef.current;
@@ -42,7 +48,7 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
     }
 
     const shortenText = (text:string) => {
-        return(`${text.slice(0, 20)} ${text.length > 20 ? "..." : ""}`)
+        return(`${text.slice(0, 25)}${text.length > 25 ? "..." : ""}`)
     }
 
     return (
@@ -52,7 +58,11 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
                     <div className='h-[80%] w-full relative rounded-3xl overflow-hidden'>
                         <Image src={urlFor(images[currentImage].asset._ref).url()} alt={images[currentImage].alt} fill className='object-contain rounded-3xl'/>
                     </div>
-                    <div className='bg-bg-white w-fit text-text-black font-fraunces min-w-50 text-center text-body md:text-body-desktop py-3 px-5 rounded-3xl mt-[3%] max-h-[17%]'>{locale === "sv" ? images[currentImage].description_sv : images[currentImage].description_en}</div>
+                    <div className='w-fit min-w-50 mt-[1%] max-h-[19%] rounded-3xl bg-bg-white'>
+                        <div className='text-primary font-fraunces text-center text-h3 md:text-h3-desktop font-bold py-3 px-5 '>{locale === "sv" ? images[currentImage].title_sv : images[currentImage].title_en}</div>
+                        <div className='text-text-black font-fraunces text-center text-body md:text-body-desktop pb-3 px-5 '>{locale === "sv" ? images[currentImage].description_sv : images[currentImage].description_en}</div>
+
+                    </div>
                 </div>}
                 <div className='absolute w-full h-full flex items-center justify-between md:pb-[20vh] lg:px-8'>
                     <div  className='md:w-20 w-12 h-full flex items-center justify-center'>
@@ -94,7 +104,7 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
                                     className="object-cover aspect-7/5 rounded-3xl"
                                     priority={index === 1}
                                 />
-                                <div className='text-body mt-2 font-bold group-hover:opacity-70 font-fraunces px-4 rounded-3xl text-center grow text-primary '>{locale === "sv" ? imgbox.description_sv : imgbox.description_en}</div>
+                                <div className='text-body mt-2 font-bold group-hover:opacity-70 font-fraunces px-4 rounded-3xl text-center grow text-primary '>{locale === "sv" ? shortenText(imgbox?.title_sv) : shortenText(imgbox?.title_en)}</div>
                             </div>
                         ))}
                     </div>
