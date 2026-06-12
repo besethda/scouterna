@@ -23,7 +23,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const Boats = async ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = await params
     const data = await getId("a5df4d9e-daa3-4a1a-9b30-0780f314d5ec")
-    console.log(data)
 
     return (
         <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
