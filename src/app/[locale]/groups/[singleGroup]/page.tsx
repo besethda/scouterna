@@ -538,15 +538,15 @@ const Groups = async ({
         <CardWithLogo image="/Familje-frame.svg" sectionTitle="GroupFamily" isH1 logoTopRight />
         <div className="px-3.75 md:px-0 xl:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360 pb-30">
           <div className="flex flex-col md:px-4 mx-auto bg-bg-white rounded-3xl shadow-xl">
-            <div className="flex flex-col w-full px-4 mx-auto py-4 pb-7 lg:pb-15 ">
+            <div className="flex flex-col w-full px-4 mx-auto py-4 pb-7 lg:pb-15">
               <div className="flex flex-col lg:flex-row gap-4 xl:gap-55 md:items-start ">
-                <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
+                <div className="flex-1 w-100 [&_div]:w-full [&_div]:max-w-none">
                   <ContentSection
                     sectionLayout={["g", "p", "p", "p"]}
                     page="BarnOchVuxnaTillsammans"
                     padding={"5"}
                     child={true}
-                    width='Full'
+                    width='full'
                   />
                 </div>
                 <div className="flex h-auto md:pt-5 md:px-4 py-5 ">
@@ -567,7 +567,7 @@ const Groups = async ({
                     page="ParumMagna"
                     padding={"3"}
                     child={true}
-                    width='Full'
+                    width='full'
                   />
                 </div>
                 <div className="flex h-auto md:pt-5 md:px-4 py-5 ">
@@ -587,14 +587,14 @@ const Groups = async ({
                   page="Familjescoutsagor"
                   padding={"3"}
                   child={true}
-                  width='Full'
+                  width='full'
                 />
                 <ContentSection
                   sectionLayout={["g", "p"]}
                   page="Märken"
                   padding={"3"}
                   child={true}
-                  width='Full'
+                  width='full'
                 />
               </div>
               <div className="
