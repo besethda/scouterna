@@ -3,9 +3,6 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { getId } from "@/lib/utils";
 import SanityFlex from "@/components/SanityFlex";
 import CardWithLogo from "@/components/CardWithLogo";
-import ContentSection from "@/components/ContentSection";
-import heart from '../../../../../public/blueHeart1.svg'
-import Image from "next/image";
 
 const pageItem = "gdpr"
 const headDescription = "gdpr"

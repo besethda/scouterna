@@ -1,6 +1,3 @@
-import { En } from "@/messages/en";
-import { Sv } from "@/messages/sv";
-import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { getPageHeadTitle } from "@/lib/utils"
 import { getId } from "@/lib/utils";
@@ -16,12 +13,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 
 const GroupStructure = async ({ params }: { params: Promise<{ locale: string }> }) => {
-
-  const { locale } = await params
-  const messages = locale === "en" ? En : Sv
   const data = await getId('2a5a4f80-b206-44b9-9e00-6b870a00f90e')
   if (!data) return
-
 
   return (
     <main className="w-full md:max-w-360 mx-auto">
