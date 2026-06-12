@@ -45,7 +45,7 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
         </div>
       </div>
       <div className="mx-4 ">
-        <div className="lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]">
+        <div className="lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)] ">
           <ContentSection sectionLayout={["t"]} page={"boatSection"} child={true} padding={"top"} />
           <ContentSection sectionLayout={["p"]} page={"boatSection"} child={true} display={"desktop"} padding={"none"} />
         </div>

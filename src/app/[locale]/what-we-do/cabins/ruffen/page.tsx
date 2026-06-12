@@ -42,7 +42,7 @@ const Ruffen = async ({ params }: { params: Promise<{ locale: string }> }) => {
                         <DivisionsBox division={"familjescouter"} boxStyle={"info"} data={groupData?.groups.find((e:any) => e.name_slug === "smattarne") || null}/>
                     </div>
                 </section>
-                <section className="pb-10 md:pt-6 md:pb-16 px-4 lg:px-[22px] w-full lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)] 2xl:px-0 ">
+                <section className="pb-10 md:pt-10 md:pb-16 px-4 lg:px-[22px] w-full lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)] 2xl:px-0 ">
                     <ContentSection sectionLayout={["t", "p", "p"]} page={"map"} padding="top" child={true} />
                     <div className="2xl:pt-[50px]">
                         <MapWrapper page="ruffen" />
