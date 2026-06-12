@@ -48,18 +48,18 @@ const GoodToKnow = () => {
       </div>
       <div className="flex flex-col gap-4 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-6 md:py-2.5 md:text-[#FFFFFF]">
         {cards.map((card, index) => (
-          <div key={index} className="flex flex-row gap-4 font-normal bg-primary rounded-2xl p-5 shadow-md shadow-black/40 md:min-w-75">
+          <div key={index} className="flex flex-row gap-4 font-normal bg-primary rounded-2xl p-5 shadow-md shadow-black/40">
             <div className="md:flex  min-w-12 h-11.25 rounded-full items-center justify-center">
               <img src={card.icon} alt={card.alt} height={45} width={48} />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col flex-1 min-w-0">
               <p className=" md:block font-bold font-albert uppercase text-body md:text-acc-desktop tracking-[1.5px] text-accent">
                 {card.title}
               </p>
               <p className="font-fraunces font-bold text-h3 tracking-[-0.5%] gap-1 md:text-h3-desktop text-text-white mb-2">
                 {card.headline}
               </p>
-              <p className="gap-2.5 text-body font-albert tracking-[3%] md:text-body-desktop md:pr-12  text-text-white">
+              <p className="gap-2.5 text-body font-albert tracking-[3%] md:text-body-desktop  text-text-white wrap-break-word">
                 {card.text}
               </p>
             </div>
