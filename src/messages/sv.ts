@@ -992,13 +992,13 @@ export const Sv: MessagesSvType = {
   },
   aboutRuffen: {
     t0: "Scöscouting sedan 1959",
-    p0: "Precis där Mälarens vågor möter land ligger Ruffen, den anrika scoutstugan som sedan 1959 har varit en viktig del Hässelby Strands Sjöscouter.",
+    p0: "Precis där Mälarens vågor möter land ligger Ruffen, den anrika scoutstugan som sedan 1959 har varit en viktig del av Hässelby Strands Sjöscouter.",
     t1: "Med sjön som närmaste granne",
     p1: "Med sitt fantastiska läge är Ruffen den perfekta basen för sjöliv. Härifrån är steget aldrig långt till båtar, bryggor och glittrande vatten. Stugan fungerar som kårens naturliga samlingslokal där generationer av barn och ungdomar har mötts för att lära sig segling, knopar och sjövett, samt förbereda sig inför spännande äventyr.",
     s0: "Kort om Ruffen:", 
-    p2: "Hemvist för Hässelby Strands Sjöscouter", 
-    p3: "Aktivt sedan 1959", 
-    p4: "Nära båtar och bryggor vid vattnet i Hässelby Strand, "
+    p2: "Hemvist för Hässelby Strands Sjöscouter.", 
+    p3: "Aktivt sedan 1959.", 
+    p4: "Nära båtar och bryggor vid vattnet i Hässelby Strand."
   },
   memberInfo: {
     headline: "Scoutliv",
