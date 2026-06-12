@@ -39,15 +39,15 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
             <div className="lg:max-w-245 2xl:max-w-360 mx-auto">
                 <Breadcrumbs />
                 <section className="flex flex-col items-center w-full">
-                    <div className="w-full pt-10">
+                    <div className="w-full md:pt-10">
                         <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
                     </div>
                     <Scoutlife />
-                    <div className=" bg-white mx-4 my-8 py-4 lg:my-20 lg:pt-2 rounded-3xl shadow-xl">
+                    <div className=" bg-white mx-4 my-4 md:mt-12.5 py-4 md:mb-12.5 rounded-3xl shadow-xl">
                         <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
                         <Line hasPadding />
-                        <section className="flex flex-col gap-6 font-albert px-4 pb-8 lg:max-w-430 lg:px-10">
-                            <div className="relative **:flex flex-col gap-4 ">
+                        <section className="flex flex-col gap-6 font-albert px-4 pb-8  lg:max-w-430 lg:px-10">
+                            <div className="relative flex flex-col gap-4 ">
                                 <h2 className="text-h2 font-fraunces font-bold text-primary md:text-h3-desktop">
                                     {messages?.joinContent?.title}
                                 </h2>
@@ -83,7 +83,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             </div>
                         </section>
                     </div>
-                    <div className=" px-4 my-8 py-4 lg:mx-22 lg:my-20 lg:pt-2 w-full">
+                    <div className=" px-4 my-4 py-4 lg:mx-22 md:my-12.5 lg:pt-2 w-full">
                         <JoinPage
                             head={messages?.joinPage.head}
                             title={messages?.joinPage.title}
