@@ -14,6 +14,8 @@ export const boatSection =
       defineField({name:'description_en', title: 'Beskrivningen (EN', type:'text'}),
       defineField({name:'boatSectionImages', title: 'Båtsektion bilder', type:'array', of: [
           defineField({name:'boatImage', title: 'Båtbild', type: 'image', fields: [
+            defineField({name: 'title_sv', title: 'Båt titel (SV)', type:'string'}),
+            defineField({name: 'title_en', title: 'Båt titel (EN)', type:'string'}),
             defineField({name: 'description_sv', title: 'Text (SV)', type:'string'}),
             defineField({name: 'description_en', title: 'Text (EN)', type:'string'}),
             defineField({name: 'alt', title: 'Alt-text', type:'string'})

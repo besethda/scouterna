@@ -3,14 +3,11 @@ import { getId } from "@/lib/utils";
 import SanityFlex from "@/components/SanityFlex";
 import BoatSection from "./boatsection";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { En } from "@/messages/en";
-import { Sv } from "@/messages/sv";
 import ContentSection from "@/components/ContentSection";
 import CardWithLogo from "@/components/CardWithLogo";
 import Image from "next/image";
-import line from "../../../../../public/historia-line.svg"
 import anchor from '../../../../../public/blueAnchor.svg'
-
+import { HistoryType } from "../../../../../sanity.types";
 
 
 const pageItem = "history"
@@ -24,8 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
   const { locale } = await params
-  const messages = locale === "en" ? En : Sv
-  const data = await getId("c57001b2-94f1-4bf1-ae81-1fcc684e0eee")
+  const data = await getId("c57001b2-94f1-4bf1-ae81-1fcc684e0eee") as HistoryType
 
   return (
     <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)] ">
@@ -35,8 +31,8 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
         <div className="relative flex justify-center">
             <Image src="/Path.png" alt="line" width={300} height={20} className="absolute md:top-28 md:left-10 w-50 top-22 left-8  md:w-auto " />
               {data?.history_layout.scout_life.map((e:any, index:number)=> {return(
-                <div key={index} className={`rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 mx-4 md:mx-0 md:px-10 py-3`}>
-                  <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"} child={true}/>
+                <div key={index} className={`rounded-3xl rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 md:px-10 py-3`}>
+                  <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"}/>
                 </div>
                 )})}   
         </div>
