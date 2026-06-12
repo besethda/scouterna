@@ -3,10 +3,6 @@
 import { PortableText } from "next-sanity"
 import CTABtn from "./CTA-button"
 
-type textObjectType = {
-  text_en_array:Record<string, string>
-}
-
 const SanityFlex = ({data, locale, color}: {data:any, locale:string, color:string, child?:boolean}) => {
   console.log(data)
   if(data) return (

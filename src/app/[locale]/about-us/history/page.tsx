@@ -3,14 +3,11 @@ import { getId } from "@/lib/utils";
 import SanityFlex from "@/components/SanityFlex";
 import BoatSection from "./boatsection";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { En } from "@/messages/en";
-import { Sv } from "@/messages/sv";
 import ContentSection from "@/components/ContentSection";
 import CardWithLogo from "@/components/CardWithLogo";
 import Image from "next/image";
-import line from "../../../../../public/historia-line.svg"
 import anchor from '../../../../../public/blueAnchor.svg'
-
+import { HistoryType } from "../../../../../sanity.types";
 
 
 const pageItem = "history"
@@ -24,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
   const { locale } = await params
-  const data = await getId("c57001b2-94f1-4bf1-ae81-1fcc684e0eee")
+  const data = await getId("c57001b2-94f1-4bf1-ae81-1fcc684e0eee") as HistoryType
 
   return (
     <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">

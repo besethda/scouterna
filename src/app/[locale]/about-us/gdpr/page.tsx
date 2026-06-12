@@ -3,10 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { getId } from "@/lib/utils";
 import SanityFlex from "@/components/SanityFlex";
 import CardWithLogo from "@/components/CardWithLogo";
-import ContentSection from "@/components/ContentSection";
-import heart from '../../../../../public/blueHeart1.svg'
-import Image from "next/image";
-
+import { GdprType } from "../../../../../sanity.types";
 
 const pageItem = "gdpr"
 const headDescription = "gdpr"
@@ -17,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 const Gdpr = async ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = await params
-    const data = await getId("ec7ef49d-c0a3-4326-98ab-681d90994d8e")
+    const data = await getId("ec7ef49d-c0a3-4326-98ab-681d90994d8e") as GdprType
         
     if(data?.history_layout.scout_life) return (
         <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
