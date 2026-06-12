@@ -33,7 +33,7 @@ const Myset = async ({ params }: { params: Promise<{ locale: string }> }) => {
         <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1 logoTopRight /> 
+                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1 logoTopRight />
                 <div className="px-4 lg:px-10 py-8  md:py-3 lg:py-6 flex flex-col items-center bg-white mx-4 rounded-3xl mb-10">
                     <div className="relative">
                         <ContentSection sectionLayout={["t"]} page="myset01" padding="" child={true} />
