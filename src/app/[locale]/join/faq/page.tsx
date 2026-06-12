@@ -27,8 +27,8 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
     return (
         <main className="bg-bg-blue ">
-            <Breadcrumbs />
             <div className="flex w-full lg:max-w-245 2xl:max-w-360 mx-auto flex-col items-stretch">
+                <Breadcrumbs />
                 <div className="w-full">
                     <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
                 </div>

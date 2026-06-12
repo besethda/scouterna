@@ -69,8 +69,8 @@ const Groups = async ({
   if (singleGroup === "spararscouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/sjohumlor-frame.svg"
             sectionTitle="GroupSjohumlorna"
@@ -217,8 +217,8 @@ const Groups = async ({
   } else if (singleGroup === "upptackarscouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/Kaparna-frame.svg"
             sectionTitle="GroupKaparna"
@@ -362,8 +362,8 @@ const Groups = async ({
   } else if (singleGroup === "utmanarscouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/Utmanare-frame.svg"
             sectionTitle="GroupUtmanare"
@@ -507,8 +507,8 @@ const Groups = async ({
   } else if (singleGroup === "aventyrarscouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/Konvojen-frame.svg"
             sectionTitle="GroupKonvojen"
@@ -652,8 +652,8 @@ const Groups = async ({
   } else if (singleGroup === "familjescouter") {
     return (
       <>
-        <Breadcrumbs />
         <main className="md:max-w-360 md:mx-auto">
+          <Breadcrumbs />
           <CardWithLogo
             image="/Familje-frame.svg"
             sectionTitle="GroupFamily"

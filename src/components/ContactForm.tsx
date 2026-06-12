@@ -54,7 +54,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
     };
 
     return (
-        <div className="py-10 flex flex-col gap-2 font-albert px-4 2xl:mx-auto relative 2xl:pt-25 lg:max-w-[var(--max-w-laptop)]  xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]">
+        <div className="py-10 flex flex-col gap-2 font-albert px-4 2xl:mx-auto relative 2xl:pt-25">
             <Toaster position="top-center" reverseOrder={false} />
             <h2 className="text-h2 w-full font-fraunces font-bold text-primary md:text-h2-desktop">{title}</h2>
             <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-70 md:max-w-100 lg:max-w-150 xl:max-w-full">{text}</p>
