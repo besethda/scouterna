@@ -11,7 +11,7 @@ const ContentSection = ({ sectionLayout, page, padding, width = "both", color = 
 
   const messages = useMessages()
   if (!messages) return null
-
+  
   const createLayout = (characterLayout: string[]) => {
     let result = characterLayout.reduce((acc, element: string, index) => {
       const count = characterLayout.slice(0, index).filter(e => e === element)
