@@ -11,7 +11,7 @@ const ContentSection = ({ sectionLayout, page, padding, width = "both", color = 
 
   const messages = useMessages()
   if (!messages) return null
-  
+
   const createLayout = (characterLayout: string[]) => {
     let result = characterLayout.reduce((acc, element: string, index) => {
       const count = characterLayout.slice(0, index).filter(e => e === element)
@@ -24,7 +24,7 @@ const ContentSection = ({ sectionLayout, page, padding, width = "both", color = 
               element === "h" ? `py-2 w-fit text-h1 md:text-h2-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
                 element === "t" ? `py-2 w-fit text-h3 md:text-h2-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` :
                   element === "s" ? `py-2 w-fit text-h3 md:text-h3-desktop  ${color === "black" ? "text-primary" : color === "yellow" ? "text-accent" : "text-text-white"} ${width === "full" ? "md:max-w-[90%]" : "md:max-w-[63%]"} font-fraunces font-bold` :
-                    element === "g" ? `w-fit py-2 text-[22px] md:text-h4-desktop text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` : ""
+                    element === "g" ? `w-fit py-2 text-[22px] ${page === "myset01" ? "md:text-h2-desktop" : "md:text-h4-desktop"} text-primary ${color === "black" ? "text-primary" : "text-text-white"} font-fraunces font-bold` : ""
           }`}>{(messages as any)[page]?.[`${element}${count.length}`]}</div>)
       }
       return acc
