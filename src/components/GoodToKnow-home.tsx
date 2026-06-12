@@ -40,7 +40,7 @@ const GoodToKnow = () => {
   ]
 
   return (
-    <div className="flex flex-col md:max-w-200 lg:max-w-430 min-w-97.5 min-h-120 gap-4 px-4 pb-10 bg-bg-blue md:pb-15 pt-5 md:pt-10">
+    <div className="flex flex-col md:max-w-200 lg:max-w-430 min-w-97.5 min-h-120 gap-4 px-4 pb-12.5 bg-bg-blue pt-5 md:pt-10">
       <div className=" relative flex flex-col items-start">
         <h2 className="text-primary font-fraunces font-bold text-h2 tracking-[-0.5%] md:text-h2-desktop">{messages?.goodToKnow?.headline}</h2>
         <Image src={underline} alt="underline" width={96} height={32} className="md:hidden w-35 h-auto" />

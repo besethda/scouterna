@@ -27,7 +27,7 @@ const Cabins = async ({params}:{params: Promise<{locale: string}>}) => {
             <div className="flex flex-col w-full items-center">
                 <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="cabinsCard" isH1/>
             </div>
-            <div className="">
+            <div className="pb-20">
                 <CabinsSection images={{
                     imageMyset:data.cabin_images.myset.asset._ref, refMyset:data.cabin_images.myset.alt,
                     imageRuffen:data.cabin_images.ruffen.asset._ref, refRuffen:data.cabin_images.ruffen.alt,

@@ -56,7 +56,7 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
           networkErrorTxt={messages.form.networkErrorTxt}
         />
       </div>
-      <div className=" mx-4 my-8 py-4 lg:pt-2 flex flex-col items-center">
+      <div className=" mx-4 mt-8 mb-20 py-4 lg:pt-2 flex flex-col items-center">
         <JoinPage
           head={messages?.interestBtn.head}
           title={messages?.interestBtn.title}

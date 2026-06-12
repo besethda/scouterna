@@ -35,7 +35,7 @@ const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) =>
                 <LifeStyleSection />
                 <PhotoContainer backgroundBlue={false} messageTitle="learning" />
             </div>
-            <div className="relative">
+            <div className="relative pt-10">
                 <Activities />
                 <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-40 opacity-90 lg:rotate-10" />
             </div>
