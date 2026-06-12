@@ -26,9 +26,9 @@ const Faq = async ({ params }: { params: Promise<{ locale: string }> }) => {
     const data = await getId("44126518-6c9f-4c34-bc46-bea246cd70ca")
 
     return (
-        <main className="bg-bg-blue lg:max-w-245 2xl:max-w-360 mx-auto">
+        <main className="bg-bg-blue ">
             <Breadcrumbs />
-            <div className="flex w-full flex-col items-stretch">
+            <div className="flex w-full lg:max-w-245 2xl:max-w-360 mx-auto flex-col items-stretch">
                 <div className="w-full">
                     <CardWithLogo image="/informationYellowBg.svg" sectionTitle="faqCard" isH1 />
                 </div>
