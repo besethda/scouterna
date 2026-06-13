@@ -3,13 +3,24 @@ import ContentSection from "@/components/ContentSection"
 import { client } from "@/sanity/lib/client"
 import { urlFor } from "@/sanity/lib/image" 
 import downloadIcon from "../../../../../public/downlodIcon.svg"
+import { SanityFileAssetReference } from "../../../../../sanity.types"
 
 interface unionProps {
     locale: string
 }
 
+type UnionType = {
+  history_section: Array<{
+    file: {
+      asset?: SanityFileAssetReference;
+    };
+    name: string;
+  }>;
+};
+
 const Union = async ({locale = "sv"}:unionProps) => {
     const data = await client.fetch(`*[_type=="union"][0] { "files": history_section[] {name, "fileUrl": file.asset-> url} } `)
+    console.log(data)
     return (
         <div className="pt-3 py-8 bg-primary mx-4 overflow-hidden rounded-3xl lg:mx-auto lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]">
             <ContentSection

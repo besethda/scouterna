@@ -127,19 +127,19 @@ export type SanityImageHotspot = {
   width?: number;
 };
 
-export type Union = {
+export type UnionType = {
   _id: string;
   _type: "union";
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
-  history_section?: Array<{
-    file?: {
+  history_section: Array<{
+    file: {
       asset?: SanityFileAssetReference;
       media?: unknown;
       _type: "file";
     };
-    name?: string;
+    name: string;
     _type: "file_data";
     _key: string;
   }>;
@@ -645,7 +645,7 @@ export type AllSanitySchemaTypes =
   | Group
   | SanityImageCrop
   | SanityImageHotspot
-  | Union
+  | UnionType
   | GdprType
   | Layout
   | Images
