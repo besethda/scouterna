@@ -78,9 +78,9 @@ const Groups = async ({
             logoTopRight
           />
           <div className="px-4 md:px-4 lg:px-0 xl:px-4 lg:max-w-245 xl:mx-auto 2xl:max-w-360 w-full">
-            <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
+            <section className="w-auto flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
               <div className="md:flex md:gap-5 lg:gap-20">
-                <div className="flex flex-col lg:min-w-215 px-4 py-4 pb-7 lg:pb-15 ">
+                <div className="flex flex-col lg:min-w-[50%] px-4 py-4 pb-7 lg:pb-15 ">
                   <div className="flex flex-col lg:flex-row xl:gap-20 items-center md:items-start">
                     <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                       <ContentSection
@@ -228,9 +228,9 @@ const Groups = async ({
             logoTopRight
           />
           <div className="px-4 md:px-0 lg:px-0 xl:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360">
-            <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
+            <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
               <div className="md:flex md:gap-5 lg:gap-10">
-                <div className="flex flex-col lg:min-w-215 px-4 py-4 pb-7 lg:pb-15">
+                <div className="flex flex-col lg:min-w-[50%] px-4 py-4 pb-7 lg:pb-15">
                   <div className="flex flex-col lg:flex-row xl:gap-20 items-center md:items-start">
                     <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                       <ContentSection
@@ -375,9 +375,9 @@ const Groups = async ({
             logoTopRight
           />
           <div className="px-4 md:px-0 lg:px-0 xl:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360">
-            <section className="w-full flex flex-col bg-bg-white md:px-4 rounded-3xl shadow-xl">
+            <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
               <div className="md:flex md:gap-5 lg:gap-10">
-                <div className="flex flex-col lg:min-w-215 px-4 py-4 pb-7 lg:pb-15 ">
+                <div className="flex flex-col lg:min-w-[50%] px-4 py-4 pb-7 lg:pb-15 ">
                   <div className="flex flex-col lg:flex-row xl:gap-20 items-center md:items-start">
                     <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                       <ContentSection
@@ -522,9 +522,9 @@ const Groups = async ({
             logoTopRight
           />
           <div className="px-4 md:px-0 lg:px-0 xl:px-4 lg:max-w-245 xl:mx-auto  2xl:max-w-360">
-            <section className="w-full flex flex-col  bg-bg-white md:px-4 rounded-3xl shadow-xl">
+            <section className="w-full flex flex-col bg-bg-white px-4 rounded-3xl shadow-xl">
               <div className="md:flex md:gap-5 lg:gap-10">
-                <div className="flex flex-col lg:min-w-215 px-4 py-4 pb-7 lg:pb-15">
+                <div className="flex flex-col lg:min-w-[50%] px-4 py-4 pb-7 lg:pb-15">
                   <div className="flex flex-col lg:flex-row xl:gap-20 items-center md:items-start">
                     <div className="flex-1 [&_div]:w-full [&_div]:max-w-none">
                       <ContentSection
