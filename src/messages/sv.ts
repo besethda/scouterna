@@ -1057,7 +1057,7 @@ export const Sv: MessagesSvType = {
   },
   myset02: {
     t0: "Bekvämligheter",
-    p0: "Myset är en trevlig och fräsch scoutstuga. Med element och ett modernt ventilationssystem är det lätt att hålla värmen, och stugan känns alltid välkomnande och hemtrevlig &ndash; oavsett årstid.",
+    p0: "Myset är en trevlig och fräsch scoutstuga. Med element och ett modernt ventilationssystem är det lätt att hålla värmen, och stugan känns alltid välkomnande och hemtrevlig - oavsett årstid.",
     p1: "Stugan rymmer ett stort samlingsrum där en mysig brasa blir en naturlig samlingspunkt. Här finns också ett väl tilltaget kök och två mindre ledarrum som ger plats för både planering och vila.",
   },
   myset03: {
