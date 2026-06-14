@@ -33,7 +33,7 @@ const JoinPage = ({
       className="bg-bg-accent w-full border-transparent rounded-2xl flex shadow-xl"
     >
       <div
-        className="flex flex-col w-full lg:max-w-400 px-4 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-8 md:flex-row md:flex-2"
+        className="flex flex-col w-full lg:max-w-400 px-2 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-8 md:flex-row md:flex-2"
       >
         <div
           className={`flex flex-col gap-6 text-left relative ${section === "join" ? " md:max-w-100 lg:max-w-140" : ""}`}
