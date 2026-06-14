@@ -46,7 +46,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
         ${page === "group" && "p-3 w-77.5 h-90.75 md:w-89.5 md:h-auto"}
         ${page === "groups" && "p-6 w-77.5 md:w-66.5 md:h-75.5"}
         ${page === "scout-life" && "p-6 w-70  md:w-89.5"}
-        ${page === "join" && "p-6 w-82 md:w-89.5"}
+        ${page === "join" && "p-6 w-82 md:w-89.5 mx-auto"}
         ${page === "scoutLife" && "p-6 w-80 md:w-89.5 "}
         ${page === "cabin" || page === "groups"
                     ? "origin-[calc(80px+42.5px)_0px]"
