@@ -38,7 +38,8 @@ const JoinPage = ({
         <div
           className={`flex flex-col gap-6 text-left relative ${section === "join" ? " md:max-w-100 lg:max-w-140" : ""}`}
         >
-          <div className="gap-0">
+          <div className="px-2">
+            <div className="gap-0">
             <h2 className={`font-fraunces font-bold text-primary pb-1 md:text-h2-desktop ${section === "join" ? "text-h1" : "text-[22px] "}`}>{head}</h2>
             {section === "join" ? <Image src={shortLine} alt="line" /> : <Image src={longLine} alt="line"  className="sm:max-w-[260px] max-w-[280px] md:max-w-[235px] lg:max-w-[320px] xl:max-w-[350px] 2xl:max-w-[512px]"/>}
           </div>
@@ -52,6 +53,7 @@ const JoinPage = ({
           >
             {text}
           </p>
+          </div>
           <div className="hidden md:block absolute bottom-5 left-150 rotate-30">
             <Image src={Arrow} alt="arrow" />
           </div>
