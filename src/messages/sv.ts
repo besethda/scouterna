@@ -788,7 +788,7 @@ export const Sv: MessagesSvType = {
     l2: "Grenrem",
     l3: "Flytkraft minst 45 N",
     l4: "Storlek och passform anpassad till scoutens vikt",
-    l5: "Grenrem (Sjöhumlor och Kapare)"
+    l5: "Grenrem (Spårare och Upptäckare)"
   },
   safeScout: {
     h0: "Säker scout",
@@ -1037,7 +1037,7 @@ export const Sv: MessagesSvType = {
   joinContent: {
     title: "Scoutledare",
     text: "Som vuxen kan du göra en viktig insats som scoutledare. Du coachar scouterna och skapar en trygg miljö för att ge scouterna utrymme att våga och utvecklas. Alla våra Scoutledare ska gå utbildningen Trygga Möten.",
-    button: "Kom igång med trygga möten",
+    button: "Kom igång med Trygga Möten",
     text02: "Efter kursen Trygga Möten kan du, om du vill, fortsätta utbilda dig. Vi rekommenderar att gå kursen Leda Scouting. Du kan läsa mer om våra utbildningar på Ledarskapsön.",
     button02: "Besök Ledarskapsön",
     title02: "Förälder",
@@ -1275,7 +1275,7 @@ export const Sv: MessagesSvType = {
   cabinst: "Här träffas vi",
   cabinsmyset: {
     title: "Myset",
-    dpOne: "Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
+    dpOne: "Myset ligger vackert beläget och är en perfekt miljö för vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
     dpTwo: "Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
   },
   mysetbtn: "Läs mer om Myset",
