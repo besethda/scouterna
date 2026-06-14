@@ -25,7 +25,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
     }
 
     return (
-        <div className="relative group w-fit mx-auto">
+        <div className="relative group max-auto w-fit">
             <Image src={pinColor()} alt={imageTitle} width={85} height={80} className={`absolute inset-s-0 z-20 
             ${page === "groups" || page === "scoutLife"
                     ?
