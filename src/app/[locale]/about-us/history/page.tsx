@@ -37,7 +37,7 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
                 )})}   
         </div>
         <div className="">
-          <Image src={anchor} alt="anchor" height={150} width={150} className="md:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20" />
+          <Image src={anchor} alt="anchor" height={150} width={150} className="hidden md:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20" />
         </div>
       </div>
       <div className="mx-4 ">
