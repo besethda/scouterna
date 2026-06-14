@@ -54,7 +54,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
     };
 
     return (
-        <div className="py-10 flex flex-col gap-2 font-albert px-4 2xl:mx-auto relative 2xl:pt-25">
+        <div className="py-10 flex flex-col gap-2 font-albert px-4 2xl:mx-auto relative 2xl:pt-25 ">
             <Toaster position="top-center" reverseOrder={false} />
             <h2 className="text-h2 w-full font-fraunces font-bold text-primary md:text-h2-desktop">{title}</h2>
             <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-70 md:max-w-100 lg:max-w-150 xl:max-w-full">{text}</p>
@@ -85,7 +85,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
             </div>
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="bg-primary min-w-[320px] border border-lightGray border-solid rounded-3xl py-10 px-6 flex flex-col gap-6 text-body md:w-137 lg:mx-auto text-white"
+                className="bg-primary min-w-[320px] border border-lightGray border-solid rounded-3xl py-10 px-6 flex flex-col gap-6 text-body md:w-137 lg:mx-auto text-white shadow-xl"
             >
                 <div className="flex flex-col gap-2">
                     <p>{lastName}</p>
