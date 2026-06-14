@@ -33,14 +33,14 @@ const JoinPage = ({
       className="bg-bg-accent w-full border-transparent rounded-2xl flex shadow-xl"
     >
       <div
-        className="flex flex-col w-full lg:max-w-400 px-4 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-8 mx-auto md:flex-row md:flex-2"
+        className="flex flex-col w-full lg:max-w-400 px-2 md:p-8 gap-4 md:gap-20 lg:gap-40 2xl:gap-70 py-8 md:flex-row md:flex-2"
       >
         <div
-          className={`flex flex-col gap-6 text-left relative ${section === "join" ? "md:max-w-100 lg:max-w-140" : ""}`}
+          className={`flex flex-col gap-6 text-left relative ${section === "join" ? " md:max-w-100 lg:max-w-140" : ""}`}
         >
           <div className="gap-0">
-            <h2 className={`font-fraunces font-bold text-primary md:text-h2-desktop  ${section === "join" ? "text-h1" : "text-[22px] "}`}>{head}</h2>
-            {section === "join" ? <Image src={shortLine} alt="line" /> : <Image src={longLine} alt="line" />}
+            <h2 className={`font-fraunces font-bold text-primary md:text-h2-desktop ${section === "join" ? "text-h1" : "text-[22px] "}`}>{head}</h2>
+            {section === "join" ? <Image src={shortLine} alt="line" /> : <Image src={longLine} alt="line"  className="sm:max-w-[260px] max-w-[280px] md:max-w-[235px] lg:max-w-[320px] xl:max-w-[350px] 2xl:max-w-[512px]"/>}
           </div>
           <h3 className={`text-h2-albert font-fraunces font-bold text-primary md:text-h4-desktop md:pt-3 ${section === "contact" && "hidden md:block"}`}>
             {title}
