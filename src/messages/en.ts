@@ -785,7 +785,7 @@ export const En: MessagesEngType = {
     l2: "Crotch strap",
     l3: "Buoyancy of at least 45 N",
     l4: "Size and fit adapted to the scout's weight",
-    l5: "Crotch strap (Sjöhumlor and Kapare branches)"
+    l5: "Crotch strap (Spårarscouts and Upptäckarscouts)"
   },
   safeScout: {
     h0: "Safe Scout",
