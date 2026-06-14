@@ -17,7 +17,7 @@ const Union = async ({locale = "sv"}:unionProps) => {
                 page="union"
                 color={"white"}
                 padding=""
-            />
+            /> 
             <div className="pt-4 flex flex-col items-center gap-2 font-albert text-text-white md:gap-9">
                 <div className="w-full px-4 lg:max-w-430 lg:px-10">
                     {data.files.map((item:any, index:number) => (
