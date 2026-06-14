@@ -20,16 +20,17 @@ const Map = ({ page }: mapProps) => {
     const [selectedId, setSelectedId] = useState<number | null>(null)
     const filterLocation: { id: number, name: string, latitude: number, longitude: number, url: string } | undefined =
         LocationList.find(place => place.name.toLowerCase().includes(page))
-    const position: [number, number] = [59.38344, 17.82824];
+    const position: [number, number] = [59.37844, 17.82824];
     const filterdLocationPosition: [number, number] | undefined =
         filterLocation ? [filterLocation.latitude, filterLocation.longitude] : undefined;
-    const zoom: number = 11;
+    const zoom: number = 11.5;
     const center = page === "footer" ? position : filterdLocationPosition;
     return (
         <div className=''>
             <MapContainer
                 center={center}
                 zoom={page === "footer" ? zoom : zoom + 2}
+                zoomSnap={0.25}
                 key={page}
                 className={`w-full z-10 ${page === "footer" ? "h-64 rounded-t-2xl" : "h-80 rounded-2xl "}`}
             >

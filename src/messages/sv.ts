@@ -902,7 +902,7 @@ export const Sv: MessagesSvType = {
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
     text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att våga prova nya saker.",
     text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap.",
-    text: "Scoutliv"
+    photoText: "Scoutliv"
   },
   learning: {
     t0: "Lärande för livet",
@@ -1057,7 +1057,7 @@ export const Sv: MessagesSvType = {
   },
   myset02: {
     t0: "Bekvämligheter",
-    p0: "Myset är en trevlig och fräsch scoutstuga. Med element och ett modernt ventilationssystem är det lätt att hålla värmen, och stugan känns alltid välkomnande och hemtrevlig &ndash; oavsett årstid.",
+    p0: "Myset är en trevlig och fräsch scoutstuga. Med element och ett modernt ventilationssystem är det lätt att hålla värmen, och stugan känns alltid välkomnande och hemtrevlig - oavsett årstid.",
     p1: "Stugan rymmer ett stort samlingsrum där en mysig brasa blir en naturlig samlingspunkt. Här finns också ett väl tilltaget kök och två mindre ledarrum som ger plats för både planering och vila.",
   },
   myset03: {
