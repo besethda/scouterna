@@ -13,7 +13,7 @@ const LifeStyleSection = ({ }) => {
   const imageArray = ["/scheduleIcon.svg", "/groupIcon.svg", "/heartIconYellowBg.svg", "/starIcon.svg"]
 
   return (
-    <div className="mx-4 pb-10 xl:p-0 bg-bg-blue flex justify-center font-albert flex-col items-center">
+    <div className="mx-4 pb-10 md:p-0 bg-bg-blue flex justify-center font-albert flex-col items-center">
       <div className=" relative flex flex-col items-start">
         <div className="lg:max-w-430  w-full flex flex-col">
           <h2 className="text-h2 md:text-h2-desktop w-full text-primary font-fraunces font-bold mb-9 ">{messages.offers.title}</h2>
