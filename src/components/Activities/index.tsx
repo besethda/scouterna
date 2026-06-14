@@ -23,7 +23,7 @@ const Activities = () => {
         </div>
       </div>
       <div>
-        <Image src={birds} alt="birds" height={150} width={150} className="absolute top-0 md:top-15 md:right-80 opacity-90 md:-rotate-12 " />
+        <Image src={birds} alt="birds" height={150} width={150} className="absolute top-0 right-10 md:top-5 md:right-20 lg:top-10 lg:right-70 opacity-90 md:-rotate-12 xl:right-20 2xl:right-80" />
       </div>
     </div >
 
