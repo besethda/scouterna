@@ -898,7 +898,7 @@ export const En: MessagesEngType = {
     text0: "In the scouts, you learn by doing—testing things yourself and growing through practical experiences together with others.",
     text1: "In the scouts, we dare to do more together and support each other in trying new things.",
     text2: "In the scouts, we become stronger together, lifting each other up and sharing a warm, safe community.",
-    text: "Scout life"
+    photoText: "Scout life"
   },
   learning: {
     t0: "Learning for life",
