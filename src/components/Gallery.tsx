@@ -56,7 +56,7 @@ const clipWords = (text:string) => {
                 {photoObject[image].caption && <div className=" border-gray-400/70 hidden md:block border rounded-t-3xl">
                   <div className="px-4 flex pb-1 pt-3">
                     <Image src={"/HSSicon.png"} alt={'HSS Icon'} width={45} height={45}/>
-                    <p className="font-albert pt-2 pl-2 grow font-bold text-text-black text-body">@hss_scout</p>
+                    <p className="font-albert md:-ml-2 lg:ml-0 pt-2 pl-2 grow font-bold text-text-black text-body">@hss_scout</p>
                   </div>
                   <p className="text-text-black font-albert min-h-14 text-body px-4 pb-2">{clipWords(photoObject[image].caption)}</p>
                 </div>}
