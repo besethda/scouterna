@@ -44,23 +44,25 @@ const Gallery = ({caption=false, photoObject}:{caption?:boolean, photoObject: in
 }
 
 const clipWords = (text:string) => {
-  const shortened = `${text.slice(0, 88)}${text.length > 88 ? "..." : ""}`
+  const shortened = `${text.slice(0, 60)}${text.length > 88 ? "..." : ""}`
   return shortened
 }
 
   return (
-        <div className="flex w-full overflow-clip flex-col mt-3 items-center">
-          <div onScroll={scroll} ref={containerReference} className="w-full scroll-smooth snap-x snap-mandatory overflow-scroll lg:max-w-335 md:max-w-130 max-w-85 scrollbar-none">
-            <div className="lg:w-[180vw] md:w-[130vw] w-[170vw] flex lg:max-w-675 md:max-w-258 max-w-180 mx-2">
+        <div className="flex w-full overflow-clip flex-col  mt-3 items-center">
+          <div onScroll={scroll} ref={containerReference} className="w-full scroll-smooth snap-x snap-mandatory overflow-scroll xl:max-w-234 lg:max-w-300 md:max-w-180 max-w-91 scrollbar-none">
+            <div className="w-1000 flex xl:max-w- lg:max-w-468 md:max-w-354 max-w-180 mx-2">
               {currentImages.map(image => <a target={caption? undefined : "_blank"} href={caption ? undefined : photoObject[image].permalink} className={`snap-center relative w-[15.66%] bg-bg-white rounded-3xl h-fit mx-[.5%] hover:brightness-110 duration-150`} key={photoObject[image].imageIndex}>
-                {photoObject[image].caption && <div className=" border-gray-400/70 hidden md:block border rounded-t-3xl">
-                  <div className="px-4 flex pb-1 pt-3">
-                    <Image src={"/HSSicon.png"} alt={'HSS Icon'} width={40} height={40}/>
-                    <p className="font-albert md:-ml-1 lg:ml-0 pt-2 pl-2 grow font-bold text-text-black text-body">@hss_scout</p>
+                {photoObject[image].caption && <div className=" border-gray-400/70 md:block border rounded-t-3xl">
+                  <div className="flex">
+                    <div className="mt-2 w-7 h-7 md:w-10 md:h-10 relative mx-1.5">
+                      <Image className="object-contain" src={"/HSSicon.png"} alt={'HSS Icon'} fill/>
+                    </div>
+                    <p className="font-albert md:ml-1 text-xs lg:ml-0 pt-3 pb-1 pr-3 md:pl-0 grow font-bold text-text-black md:text-body">@hss_scout</p>
                   </div>
-                  <p className="text-text-black font-albert min-h-14 text-body px-4 pb-2">{clipWords(photoObject[image].caption)}</p>
+                  <p className="text-text-black hidden md:block font-albert min-h-14 text-body px-4 pb-2">{clipWords(photoObject[image].caption)}</p>
                 </div>}
-                <div className={`relative w-full lg:h-67 md:h-30 h-24 overflow-hidden rounded-3xl rounded-t-3xl ${photoObject[image].caption && "md:rounded-t-none"}`}>
+                <div className={`relative w-full lg:h-67 md:h-50 h-24 overflow-hidden rounded-3xl rounded-t-none`}>
                   <Image fill src={`${photoObject[image].mediaUrl}`} alt={`image-${photoObject[image].timestamp}`} className={` object-cover object-center`} />
                 </div>
                   {caption && photoObject[image].caption && <div className="w-full text-center text-text-black font-albert text-body lg:text-body-desktop">{photoObject[image].caption}</div>}
