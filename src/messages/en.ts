@@ -573,7 +573,7 @@ export const En: MessagesEngType = {
     spararscouter_day: "Monday",
     spararscouter_time: "18:00",
     spararscouter_place: "Ruffen",
-    spararscouter_paragraph: "The youngest scouts discover marine life through play, singing and small adventures by the water. Here they learn to cooperate, tie their first knots and feel at home in nature.",
+    spararscouter_paragraph: "The second youngest scouts discover marine life through play, singing and small adventures by the water. Here they learn to cooperate, tie their first knots and feel at home in nature.",
     upptackarscouter_title: "Upptäckarscouter",
     upptackarscouter_ages: "10-11 Years",
     upptackarscouter_day: "Tuesday",
@@ -617,9 +617,9 @@ export const En: MessagesEngType = {
   homePageCard: {
     headline: "Become a Scout",
     title: "The waves are waiting",
-    text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends, and memories for life.",
+    text: "HSS is an inclusive association where safety and joy are at the center. We learn by doing – out in nature and at sea – and you will gain knowledge, friends and memories for life.",
     title02: "HSS welcomes",
-    text02: "No matter who you are or your level of experience, there is a place for you here. Join us as a Scout, or get involved as a parent or Scout leader.",
+    text02: "No matter who you are or your level of experience, there is a place for you here. Join us as a scout, or get involved as a parent or scout leader.",
     span: "everyone"
   },
   homeHero: {
@@ -633,14 +633,14 @@ export const En: MessagesEngType = {
     hero_title: "Hässelby Strand Sea Scouts",
     hero_subtitle01: "The waves are waiting -",
     hero_subtitle02: "Join HSS",
-    hero_description: "At HSS Scouts, we offer a safe and active free time for children and young people.",
+    hero_description: "At HSS we offer a safe and active free time for children and young people.",
     button: "Join the Scouts"
   },
   lifestyleHero: {
     hero_title: "Hässelby Strand Sea Scouts",
     hero_subtitle01: "Toward new",
     hero_subtitle02: "horizons",
-    hero_description: "Sail, discover, and grow together. Life as a sea scout is all about adventures at sea and a community that lasts.",
+    hero_description: "Sail, discover and grow together. Life as a sea scout is all about adventures at sea and a community that lasts.",
     button: "Join the Scouts"
   },
   breadcrumbs: {
@@ -677,18 +677,18 @@ export const En: MessagesEngType = {
     headline: "Good to know",
     card_title_1: "Time",
     card_headline_1: "One evening a week",
-    card_text_1: "The Scout units meet once a week to do activities, collaborate, and grow together.",
+    card_text_1: "The scout units meet once a week to do activities, collaborate and grow together.",
     card_title_2: "Inclusive",
     card_headline_2: "Exciting for all ages",
     card_text_2: "HSS has age-specific groups starting from age 8.",
     card_title_3: "Values",
     card_headline_3: "Respect & responsibility",
     card_text_3: "We are an inclusive association where we take care of one another.",
-    span_3: "Everyone is welcome here, regardless of background and abilities..",
+    span_3: "Everyone is welcome here, regardless of background and abilities.",
     card_title_4: "Safety & Security",
     card_headline_4: "Trained leaders",
-    card_text_4: "Our leaders have extensive experience and training in Scouting and maritime safety.",
-    span_4: "Anyone who wants to become a Scout leader must present a criminal record check."
+    card_text_4: "Our leaders have extensive experience and training in scouting and maritime safety.",
+    span_4: "Anyone who wants to become a scout leader must present a criminal record check."
   },
   faqCard: {
     headline: "FAQ",
@@ -880,7 +880,7 @@ export const En: MessagesEngType = {
     header1: "Naturally exciting",
     header2: "Confidence in yourself",
     header3: "Friends for life",
-    text0: "Together we explore, sail, and challenge ourselves with laughter, community, and the spray of salt water in the air. It’s real adventure—and it begins on the water.",
+    text0: "Together we explore, sail and challenge ourselves with laughter, community and the spray of salt water in the air. It’s real adventure—and it begins on the water.",
     text1: "With soil on our hands and fresh air in our lungs, every meeting becomes an adventure—where nature is our playground and movement is a natural part of everything we do.",
     text2: "We learn by doing things ourselves. With every step you take and every challenge you dare to face, your courage grows—and you discover just how much you can actually achieve.",
     text3: "Through everything we experience together, strong bonds are formed. Here you can find good friends—the kind that stick around long after the adventure is over."
@@ -924,7 +924,7 @@ export const En: MessagesEngType = {
     },
     {
       question: "What kind of clothes do scouts usually wear?",
-      answer: "A scout shirt, an HSS sweater, and durable trousers."
+      answer: "A scout shirt, an HSS sweater and durable trousers."
     },
     {
       question: "Are meetings always held outdoors?",
@@ -946,13 +946,13 @@ export const En: MessagesEngType = {
   fragorSvar02: [
     {
       question: "Why do we have a scout uniform?",
-      answer: "The scout uniform is a way to show that we all belong to the Scouts. It creates community, strengthens our identity, and is a part of our symbolic framework. The scout uniform is used in various designs throughout the world, showing that we belong to a global movement."
+      answer: "The scout uniform is a way to show that we all belong to the scouts. It creates community, strengthens our identity and is a part of our symbolic framework. The scout uniform is used in various designs throughout the world, showing that we belong to a global movement."
     },
     {
       question: "I am a new scout leader! Which training should I take first?",
       answer: `The very first training you should take is \"Safe Meetings\" (Trygga möten). It is the only mandatory training you must complete to be a scout leader. Safe Meetings is a web-based course that you complete on your own, and it takes about 1 hour. Here is how you get started with <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/webbutbildningar/trygga-moten/" target=\"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Safe Meetings >> </a> <br />
       After Safe Meetings, it is appropriate to take \"Leading Scouting\" (Leda scouting). Here, you will gain knowledge that makes you feel more confident in your leadership role within the Scouts. You will learn about the Scouts' program and gain an understanding of what leadership in the Scouts entails. After this training, you can choose how you want to develop further. Read more about Leading <a href=\"http://www.scouternasfolkhogskola.se/kurser-utbildningar/41/leda-scouting-distans" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Scouting here >> </a> <br />
-      When you feel ready to continue developing your leadership within the Scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. 
+      When you feel ready to continue developing your leadership within the scouts, there are many more training courses to choose from. You can find them all on the Leadership Island. 
       <a href=\"https://www.scouternasfolkhogskola.se/kurser-utbildningar/scoututbildningar/" target= \"_blank"\ class=\"text-primary underline hover:text-accent font-medium\">Read more about them here >></a>`
     },
     {
@@ -961,7 +961,7 @@ export const En: MessagesEngType = {
     },
     {
       question: "What is included in my membership fee?",
-      answer: `You pay a fee to the Scouts, any cooperating organization, and the district. Insurance is included in the fee to the Scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.`
+      answer: `You pay a fee to the scouts, any cooperating organization, and the district. Insurance is included in the fee to the scouts, which is why it is important to pay your membership fee. The membership fee also includes the local troop's fee.`
     },
     {
       question: "How do I change my billing address?",
@@ -985,13 +985,13 @@ export const En: MessagesEngType = {
   ruffen: {
     headline: "Scout Cabins",
     title: "Ruffen",
-    text: "Ruffen is our premises located by Hässelby Strandbad. This is where we hold our troop meetings, and it also houses our Optimist dinghies.",
+    text: "Ruffen is our premises located by Hässelby Strandbad. This is where we hold our troop meetings and it also houses our Optimist dinghies.",
   },
   aboutRuffen: {
     t0: "Sea scouting since 1959",
     p0: "Right where the waves of Lake Mälaren meet the shore lies Ruffen, the historic scout cabin that has been an important part of Hässelby Strand's Sea Scout Troop since 1959.",
     t1: "With the lake as its closest neighbor",
-    p1: "With its fantastic location, Ruffen is the perfect base for life on the water. From here, it is never more than a few steps to boats, docks, and water. The cabin serves as the troop's natural gathering place where generations of children and youth have met to learn sailing, knots, and seamanship, as well as prepare for exciting adventures.",
+    p1: "With its fantastic location, Ruffen is the perfect base for life on the water. From here, it is never more than a few steps to boats, docks and water. The cabin serves as the troop's natural gathering place where generations of children and youth have met to learn sailing, knots and seamanship, as well as prepare for exciting adventures.",
     s0: "Ruffen in brief:",
     p2: "Home of Hässelby Strand's Sea Scouts",
     p3: "Active since 1959",
@@ -1018,8 +1018,8 @@ export const En: MessagesEngType = {
     title: "Scout Life for youth and adults",
     subtitle: "We have age-appropriate groups for our scouts. As an adult, you can get involved as a leader, or help out as a parent.",
     secondTitle: "Scout",
-    secondText: "You can become a Scout from the age of 8. The members in the group for our oldest Scouts are 15 years and older.",
-    thirdtext: "The content of each group is adapted to the Scouts' age to make Scout life safe, fun, and exciting for all our Scouts.",
+    secondText: "You can become a scout from the age of 8. The members in the group for our oldest scouts are 15 years and older.",
+    thirdtext: "The content of each group is adapted to the scouts' age to make scout life safe, fun and exciting for all our scouts.",
     button: "Read more about our groups"
   },
   groupCard: {
@@ -1033,12 +1033,12 @@ export const En: MessagesEngType = {
   },
   joinContent: {
     title: "Scout Leader",
-    text: "As an adult, you can make a real difference as a scout leader. You will coach the scouts and create a safe environment that encourages them to challenge themselves and grow. All our Scout Leaders are required to complete the Safe Meetings (Trygga Möten) training.",
+    text: "As an adult, you can make a real difference as a scout leader. You will coach the scouts and create a safe environment that encourages them to challenge themselves and grow. All our scout leaders are required to complete the Safe Meetings (Trygga Möten) training.",
     button: "Get started with Safe Meetings",
     text02: "After completing the Safe Meetings course, you can continue your training if you wish. We highly recommend taking the Leading Scouting (Leda Scouting) course. You can read more about our training programs at Leadership Island (Ledarskapsön).",
     button02: "Visit Leadership Island",
     title02: "Parent",
-    text03: "As a parent, you play an important part in HSS Scouterna. It is thanks to committed adults that we are able to provide children with all the experiences and opportunities that scouting offers. You don't need any prior experience with scouting – the most important thing is your willingness to help out."
+    text03: "As a parent, you play an important part in HSS. It is thanks to committed adults that we are able to provide children with all the experiences and opportunities that scouting offers. You don't need any prior experience with scouting – the most important thing is your willingness to help out."
 
   },
   joinPage: {
@@ -1056,13 +1056,13 @@ export const En: MessagesEngType = {
 
   myset02: {
     t0: "Amenities",
-    p1: "Myset is a pleasant and well-maintained scout cabin. With radiators and a modern ventilation system, it is easy to keep warm, and the cabin always feels welcoming and cozy, regardless of the season.",
+    p1: "Myset is a pleasant and well-maintained scout cabin. With radiators and a modern ventilation system, it is easy to keep warm and the cabin always feels welcoming and cozy, regardless of the season.",
     p2: "The cabin features a large gathering room where a cozy fireplace naturally becomes the center of attention. There is also a spacious kitchen and two smaller leader rooms that provide space for both planning and rest.",
   },
 
   myset03: {
     t0: "Equipment",
-    p0: "The kitchen is fully equipped with both electric and wood-burning stoves, a dishwasher, microwave, and a large refrigerator. It is a complete kitchen that can easily prepare and serve meals for up to 30 people. Perfect for camps, hikes, and shared meals.",
+    p0: "The kitchen is fully equipped with both electric and wood-burning stoves, a dishwasher, microwave and a large refrigerator. It is a complete kitchen that can easily prepare and serve meals for up to 30 people. Perfect for camps, hikes and shared meals.",
   },
   mysetBtn: {
     text: "View floor plan"
@@ -1130,12 +1130,12 @@ export const En: MessagesEngType = {
     p0: "The children at Upptäckascouter are between 12 and 14 years old.",
   },
   konvojenMeeting: {
-    tg0: "Section meetings",
+    g0: "Section meetings",
     p0: "Day: Thursday",
     p1: "Location: Ruffen at Hässelby Strandbad.",
   },
   konvojenPlace: {
-    tg0: "Badges",
+    g0: "Badges",
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
@@ -1174,12 +1174,12 @@ export const En: MessagesEngType = {
   GroupKaparna: {
     headline: "Groups",
     title: "Upptäckarscouter",
-    text: "At Upptäckarna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety",
+    text: "At Upptäckarna, the difficulty level of the tasks is stepped up. The scouts learn to sail the Optimist dinghy and also get to try sailing a 2-Krona and a keelboat. A fully trained Explorer Scout is capable of handling a knife, building and extinguishing small fires, sailing an Optimist on their own, and possesses basic skills in first aid and maritime safety.",
   },
   GroupKonvojen: {
     headline: "Groups",
     title: "Äventyrarscouter",
-    text: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land",
+    text: "At this stage, scouts sail larger dinghies and plan their own expeditions alongside the leaders. The Convoy learns how to lead, make decisions, and manage challenges both at sea and on land.",
   },
   GroupUtmanare: {
     headline: "Groups",
@@ -1251,17 +1251,17 @@ export const En: MessagesEngType = {
   toFAQButton: "Go to our FAQ",
   policy: {
     title: "Life jacket policy",
-    paraph: "We follow a life jacket policy for the safety of all Scouts.",
-    mer: "Life jackets must be worn by everyone on docks and in boats. Scouts who can swim must use sailing vests, and Scouts who cannot swim must use rescue vests.",
-    desktop: "Safety is the be-all and end-all for the Sea Scouts. Read up on our life jacket policy to learn more about when the vest should be used, and which vests we recommend."
+    paraph: "We follow a life jacket policy for the safety of all scouts.",
+    mer: "Life jackets must be worn by everyone on docks and in boats. Scouts who can swim must use sailing vests, and scouts who cannot swim must use rescue vests.",
+    desktop: "Safety is the be-all and end-all for the sea scouts. Read up on our life jacket policy to learn more about when the vest should be used, and which vests we recommend."
   },
-  moreButton: "Read more about policy",
+  moreButton: "Read more about the policy",
   secondButton: "Life jacket policy PDF",
 
   memberScoutnet: {
     title: "Scoutnet",
-    text01: "Scoutnet is the Scouts' common system where all information about members and activities is gathered.",
-    text02: "Here, as a Scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place."
+    text01: "Scoutnet is the scouts' common system where all information about members and activities is gathered.",
+    text02: "Here, as a scout or parent, you can easily update your details, register for activities, and access important information from the association - all in one place."
   },
   memberScoutnetButton: "Login to Scoutnet",
 
@@ -1274,14 +1274,14 @@ export const En: MessagesEngType = {
   cabinst: "We meet here",
   cabinsruffen: {
     title: "Ruffen",
-    dpOne: "Ruffen is located at Hässelby Strand and is used for group meetings for Spårarscouter, Upptäckascouter, Äventyrarscouter, and Utmanarna.",
+    dpOne: "Ruffen is located at Hässelby Strand and is used for group meetings for Spårarscouter, Upptäckascouter, Äventyrarscouter and Utmanarna.",
     dpTwo: "The scout group also houses our Optimist dinghies here."
   },
   ruffenbtn: "Read more about Ruffen",
   cabinsmyset: {
     title: "Myset",
     dpOne: "Myset is beautifully situated and provides a perfect environment for our wonderful campfires and other adventures. The cottage itself is pleasant and spacious, making it an ideal place for our hikes.",
-    dpTwo: "Myset is available for rent, and booking inquiries can be emailed to myset.hss.scout@gmail.com."
+    dpTwo: "Myset is available for rent and booking inquiries can be emailed to myset.hss.scout@gmail.com."
   },
   mysetbtn: "Read more about Myset",
   historycard: {
