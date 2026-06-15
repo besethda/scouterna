@@ -1,6 +1,5 @@
 "use client"
 
-import useMessages from '@/hook/useMessages'
 import { urlFor } from "@/sanity/lib/image";
 
 interface HeroSectionProps {
@@ -15,8 +14,6 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ bgImages, title01, title02, description, top, position, children }: HeroSectionProps) => {
-
-    const messages = useMessages()
 
     return (
         <>

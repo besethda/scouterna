@@ -1,5 +1,4 @@
 import ContentSection from "@/components/ContentSection";
-
 import ImageCard from "@/components/ImageCard";
 
 const PhotoContainer = ({ backgroundBlue = true, messageTitle }: { backgroundBlue: boolean, messageTitle: string }) => {

@@ -44,7 +44,7 @@ const Gallery = ({caption=false, photoObject}:{caption?:boolean, photoObject: in
 }
 
 const clipWords = (text:string) => {
-  const shortened = `${text.slice(0, 88)}${text.length > 88 ? "..." : ""}`
+  const shortened = `${text.slice(0, 60)}${text.length > 88 ? "..." : ""}`
   return shortened
 }
 
@@ -62,7 +62,9 @@ const clipWords = (text:string) => {
                   </div>
                   <p className="text-text-black hidden md:block font-albert min-h-14 text-body px-4 pb-2">{clipWords(photoObject[image].caption)}</p>
                 </div>}
-                  <img src={`${photoObject[image].mediaUrl}`} alt={`image-${photoObject[image].timestamp}`} className={`aspect-7/5 rounded-3xl rounded-t-none object-cover`} />
+                <div className={`relative w-full lg:h-67 md:h-50 h-24 overflow-hidden rounded-3xl rounded-t-none`}>
+                  <Image fill src={`${photoObject[image].mediaUrl}`} alt={`image-${photoObject[image].timestamp}`} className={` object-cover object-center`} />
+                </div>
                   {caption && photoObject[image].caption && <div className="w-full text-center text-text-black font-albert text-body lg:text-body-desktop">{photoObject[image].caption}</div>}
                 </a>)}
             </div>

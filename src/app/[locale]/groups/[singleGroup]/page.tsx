@@ -1,10 +1,8 @@
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
-import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { getPageHeadTitle } from "@/lib/utils";
 import ContentSection from "@/components/ContentSection";
-import Image from "next/image";
 import CTABtn from "@/components/CTA-button";
 import { getId } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";

@@ -81,7 +81,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
                                 <div onClick={() => { handleToggle(menu.id); onClose() }} className={`px-4 py-4 border-b border-lightGray z-60 lg:absolute lg:py-0 lg:bg-white lg:text-primary lg:text-[18px] lg:w-70 xl:w-85 lg:pt-0 lg:top-25.5 lg:border-none lg:shadow-md lg:rounded-b-2xl 
                                 ${menu.id === 5 ? 'lg:right-2 right-auto-2000' : ''}`}>
                                     {menu.submenu && menu.submenu.map((sub, index) => (
-                                        <Link href={messages?.path + sub.href} key={index} className="hover:text-text-gray">
+                                        <Link href={messages?.path + sub.href} key={index} className="hover:text-text-gray" >
                                             <div key={index} className={`py-4 flex lg:h-18.5 cursor-pointer lg:items-center ${index !== menu.submenu.length - 1 ? 'lg:border-b lg:border-lightGray' : ''}`}>
                                                 <Image src={sub.iconBg} alt="image" width={44} height={44} className="" />
                                                 <div className="px-4 flex items-center ">
@@ -100,7 +100,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
                 <div className="rounded-b-lg p-4 flex flex-col lg:h-18.5 lg:items-center lg:hidden">
                     <p className="text-text-black font-bold uppercase text-xs pb-3">{messages?.navigation?.nav__service}</p>
                     {mobileMenuList && mobileMenuList.map((menu, index) => (
-                        <Link onClick={() => { handleToggle(null); onClose() }} key={index} href={menu.href} className="py-2 flex lg:h-18.5  w-full lg:items-center ">
+                        <Link onClick={() => { handleToggle(null); onClose() }} key={index} href={menu.href} className="py-2 flex lg:h-18.5  w-full lg:items-center " target="_blank">
                             <Image src={menu.icon} alt="image" width={44} height={44} className="" />
                             <div className="px-4 flex items-center">
                                 {messages?.navigation?.[menu.nameKey]}

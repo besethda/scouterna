@@ -65,7 +65,6 @@ const Header = () => {
           </div>
         </Link>
         <div className='hidden lg:flex gap-6 text-primary font-semibold text-link-desktop tracking-[0.03em] '>
-          {/*<Alert alerts={alerts} locale={messages?.path} />*/}
           <Link href={messages?.path + '/join/become-a-scout'} className="flex gap-2.5 items-center">
             <Image src={Hand} alt='HandLogo' className='h-7 w-auto' />
             <p className="font-albert tracking-[3%] leading-[100%] text-primary ">{messages?.header?.header_join}</p>
@@ -76,14 +75,13 @@ const Header = () => {
           </Link>
           <LanguageSelector />
           <Link href="https://www.scouterna.se/" target="_blank">
-              <Image src="/scouternaSweLogo.svg" alt="scoutlogo" width={30} height={30} className="opacity-80 saturate-150" />
+              <Image src="/scouternaSweLogo.svg" alt="scoutlogo" width={30} height={30} className="opacity-80 saturate-150 w-7.5 h-7.5" />
           </Link>
         </div>
         {isOpen ?
           <RxCross1 onClick={() => handleToggle()} className="size-5.75 lg:hidden" />
           :
           <div className="flex lg:hidden h-full items-center">
-          {/*<Alert alerts={alerts} mobile={true} locale={messages?.path} />*/}
           <RxHamburgerMenu onClick={() => handleToggle()} className="size-5.75 lg:hidden" />
             </div>}
       </header>
