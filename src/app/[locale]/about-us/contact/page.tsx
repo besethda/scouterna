@@ -17,7 +17,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
-
 const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
 
   const { locale } = use(params)
@@ -28,18 +27,18 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
       <Breadcrumbs />
       <CardWithLogo image="/mailYellowBg.svg" sectionTitle="contactcard" isH1 />
       <div className="relative ">
-      <ContactAddress 
-      title={messages?.email.title}
-      text01={messages?.email.text01}
-      text02={messages?.email.text02}
-      text03={messages?.bank.text03}
-      text04={messages?.bank.text04}
-      info01={messages?.email.info01}
-      info02={messages?.email.info02}
-      info03={messages?.bank.info03}
-      info04={messages?.bank.info04}
-      />
-      <Image src={anchor} alt="anchor" height={150} width={150} className="hidden md:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20" />
+        <ContactAddress
+          title={messages?.email.title}
+          text01={messages?.email.text01}
+          text02={messages?.email.text02}
+          text03={messages?.bank.text03}
+          text04={messages?.bank.text04}
+          info01={messages?.email.info01}
+          info02={messages?.email.info02}
+          info03={messages?.bank.info03}
+          info04={messages?.bank.info04}
+        />
+        <Image src={anchor} alt="anchor" height={150} width={150} className="hidden md:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20" />
       </div>
       <div className="w-full  bg-bg-blue">
         <ContactForm
