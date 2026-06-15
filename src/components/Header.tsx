@@ -75,7 +75,7 @@ const Header = () => {
           </Link>
           <LanguageSelector />
           <Link href="https://www.scouterna.se/" target="_blank">
-              <Image src="/scouternaSweLogo.svg" alt="scoutlogo" width={30} height={30} className="opacity-80 saturate-150" />
+              <Image src="/scouternaSweLogo.svg" alt="scoutlogo" width={30} height={30} className="opacity-80 saturate-150 w-7.5 h-7.5" />
           </Link>
         </div>
         {isOpen ?

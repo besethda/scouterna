@@ -1,7 +1,4 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import { En} from "@/messages/en";
-import { Sv } from "@/messages/sv";
-import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CabinsSection from "@/components/CabinsSection";
 import { getSectionById } from "@/lib/utils";
@@ -15,9 +12,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const Cabins = async ({params}:{params: Promise<{locale: string}>}) => {
-    const {locale} = await params
-    const messages = locale === "en" ? En : Sv
+const Cabins = async () => {
+
 
     const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "cabin_images")
 

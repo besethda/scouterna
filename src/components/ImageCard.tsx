@@ -34,12 +34,16 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
                         "left-20 -top-5 md:left-20 md:-top-2"
                         : page === "scout-life" ?
                             "left-22 -top-2 md:left-33"
-                            :page === "home"
+                            : page === "home"
                                 ? "left-22 -top-2 md:left-33 md:-top-4"
-                            : page === "group"
-                                ? "left-25 -top-2 md:left-33"
-                                :
-                                "left-27 -top-2 md:left-33 md:-top-4"}
+                                : page === "group"
+                                    ? "left-25 -top-2 md:left-33"
+                                    : section === "joinPage"
+                                        ? "left-25 -top-2 md:left-34 lg:left-30 xl:left-35 2xl:left-52"
+                                        : section === "interstsBtn"
+                                            ? "left-30 -top-2 md:left-33"
+                                            :
+                                            "left-27 -top-2 md:left-33 md:-top-4"}
             `} />
             <div className={`flex flex-col  bg-bg-white shadow-[0_3px_8px_rgba(0,0,0,0.5)] relative font-gochi text-primary transition-transform duration-500 ease-out pin-swing
         ${text ? " md:min-h-125" : ""}
