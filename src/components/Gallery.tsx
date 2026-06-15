@@ -60,7 +60,9 @@ const clipWords = (text:string) => {
                   </div>
                   <p className="text-text-black font-albert min-h-14 text-body px-4 pb-2">{clipWords(photoObject[image].caption)}</p>
                 </div>}
-                  <img src={`${photoObject[image].mediaUrl}`} alt={`image-${photoObject[image].timestamp}`} className={`aspect-7/5 rounded-3xl rounded-t-3xl ${photoObject[image].caption && "md:rounded-t-none"} object-cover`} />
+                <div className={`relative w-full lg:h-67 md:h-30 h-24 overflow-hidden rounded-3xl rounded-t-3xl ${photoObject[image].caption && "md:rounded-t-none"}`}>
+                  <Image fill src={`${photoObject[image].mediaUrl}`} alt={`image-${photoObject[image].timestamp}`} className={` object-cover object-center`} />
+                </div>
                   {caption && photoObject[image].caption && <div className="w-full text-center text-text-black font-albert text-body lg:text-body-desktop">{photoObject[image].caption}</div>}
                 </a>)}
             </div>
