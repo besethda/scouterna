@@ -66,7 +66,7 @@ const Footer = () => {
                 <div className='flex flex-col gap-2 lg:gap-7 lg:flex-1'>
                     <p className="text-accent text-body-bold uppercase  text-xs lg:text-sm">{messages?.footer?.footer_followUs}</p>
                     <div className='flex gap-2.5 leading-none'>
-                        <a href="https://www.instagram.com/hss_scout/" target='_blank' className='flex gap-2.5 leading-[1.2] hover:text-lightYellow' aria-label="Följ oss påinstagram">
+                        <a href="https://www.instagram.com/hss_scout/" target='_blank' className='flex gap-2.5 leading-[1.2] hover:text-lightYellow' aria-label="Följ oss på Instagram">
                             <Image src={instagramIcon} alt='instagram icon' className='w-4 h-auto xl:w-5' aria-hidden="true"/>
                             <p className="text-body lg:text-lg">@hss_scout</p>
                         </a>
