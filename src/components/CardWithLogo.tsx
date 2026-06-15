@@ -65,7 +65,7 @@ const CardWithLogo = ({ image, sectionTitle, isH1 = false, logoTopRight = false 
             <p className="font-albert font-normal text-[16px] md:text-h5-desktop tracking-[3%] text-text-black pt-1.5">
               {messages?.[sectionTitle as string]?.text02}
             </p>
-         </div>
+          </div>
         )}
         {hasButton && (
           <>
