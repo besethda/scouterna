@@ -33,7 +33,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
     const [fakeFilled, setFakeFilled] = useState(false)
 
     const onSubmit = async (data: EmailFormData) => {
-        if(fakeFilled) return
+        if (fakeFilled) return
         try {
             const result = await sendContactEmail({
                 firstName: data.firstName,
@@ -58,12 +58,12 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
             <Toaster position="top-center" reverseOrder={false} />
             <h2 className="text-h2 w-full font-fraunces font-bold text-primary md:text-h2-desktop">{title}</h2>
             <p className="text-body w-full text-text-black md:text-body-desktop pb-2 md:pb-8 max-w-70 md:max-w-100 lg:max-w-150 xl:max-w-full">{text}</p>
-            <div className="absolute right-4 top-14 -scale-x-100 rotate-293 pointer-events-none
-                            md:right-22 
+            <div className="absolute right-4 min-[425px]:left-85 min-[500px]:right-auto  top-14 -scale-x-100 rotate-293 pointer-events-none
+                            md:left-auto md:right-22 
                             lg:scale-x-100 lg:rotate-0 lg:top-60 lg:right-40 lg:left-15
                             xl:rotate-10 xl:left-0
                             2xl:-rotate-0 2xl:top-55 2xl:left-35 
-            "> 
+            ">
                 <svg
                     className="w-16.75 h-auto md:w-45.5 xl:w-60 2xl:w-75"
                     viewBox="0 0 336 326"
@@ -131,7 +131,7 @@ const ContactForm = ({ title, text, lastName, firstName, email, message, buttonT
                     <textarea
                         name='phone'
                         placeholder={"phone"}
-                        onChange={(e)=>{setFakeFilled(true)}}
+                        onChange={(e) => { setFakeFilled(true) }}
                         autoComplete="off"
                         className="bg-white border absolute left-40000 text-form  border-lightGray border-solid rounded-lg w-full p-3 h-36"
                     />
