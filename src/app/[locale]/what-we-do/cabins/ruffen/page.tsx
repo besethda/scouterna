@@ -1,11 +1,9 @@
 import DivisionsBox from "@/components/DivisionsContainer/DivisionsBox";
 import MapWrapper from "@/components/Map/MapWrapper";
-import { En } from "@/messages/en";
-import { Sv } from "@/messages/sv";
 import ContentSection from "@/components/ContentSection";
 import { getPageHeadTitle } from "@/lib/utils"
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { getSectionById, getId } from "@/lib/utils";
+import { getId } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
 import birds from '../../../../../../public/blueBirds1.png'
 import Image from "next/image";
@@ -19,11 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
-const Ruffen = async ({ params }: { params: Promise<{ locale: string }> }) => {
+const Ruffen = async () => {
 
-    const { locale } = await params
-    const messages = locale === "en" ? En : Sv
-    const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "cabin_images")
+
+  
     const groupData = await getId('2a5a4f80-b206-44b9-9e00-6b870a00f90e')
 
 
@@ -35,7 +32,7 @@ const Ruffen = async ({ params }: { params: Promise<{ locale: string }> }) => {
                 <div className="relative bg-white rounded-2xl shadow-xl mb-12.5 mx-4 md:mx-0 md:w-[96%] lg:w-full ">
                     <ContentSection sectionLayout={["t", "p", "t", "p", "s", "p", "p", "p"]} page="aboutRuffen" padding="both" />
                     <Image src={birds} alt="birds" height={150} width={150} className="-top-10 right-0 md:block absolute md:top-15 md:right-10 opacity-90 " />
-                    <Image src={boat} alt="boat" height={150} width={150} className="hidden md:block md:absolute md:bottom-15 md:right-40 opacity-90 " />          
+                    <Image src={boat} alt="boat" height={150} width={150} className="hidden md:block md:absolute md:bottom-15 md:right-40 opacity-90 w-37.5 h-37.5" />          
                 </div>
                 <section className="md:bg-bg-blue flex w-full flex-col items-center">
                     <div className="md:w-[92%] w-[90%] lg:w-full">

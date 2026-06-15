@@ -27,7 +27,7 @@ const Footer = () => {
             <div className='flex flex-col gap-2.5 lg:flex-row lg:justify-around lg:w-full xl:w-[90%] lg:mx-auto lg:max-w-360 w-90'>
                 <div className='lg:flex-1'>
                     <Link href="https://www.scouterna.se/" aria-label="Gå till scouternas officiella hemsida">
-                        <Image src={scautLogo} alt="" className='w-32.5 h-7 xl:h-[28] -ml-1.5' />
+                        <Image src={scautLogo} alt=""  className='w-32.5 h-7 xl:h-[28] -ml-1.5' />
                     </Link>
                     <div className='pt-3'>
                         <p className="text-body lg:hidden">Hässelby Strands Sjöscouter</p>
