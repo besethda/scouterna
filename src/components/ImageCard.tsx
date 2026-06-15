@@ -25,7 +25,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
     }
 
     return (
-        <div className="relative group max-auto w-fit">
+        <div className="relative group">
             <Image src={pinColor()} alt={imageTitle} width={85} height={80} className={`absolute inset-s-0 z-20 
             ${page === "groups" || page === "scoutLife"
                     ?
@@ -34,6 +34,8 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
                         "left-20 -top-5 md:left-20 md:-top-2"
                         : page === "scout-life" ?
                             "left-22 -top-2 md:left-33"
+                            :page === "home"
+                                ? "left-22 -top-2 md:left-33 md:-top-4"
                             : page === "group"
                                 ? "left-25 -top-2 md:left-33"
                                 :
