@@ -58,7 +58,7 @@ const Footer = () => {
                     </div>
                     <div className='hidden lg:flex gap-2.5 leading-[1.2]' >
                         <a href="https://www.google.com/maps/place/Ruffen+%7C+H%C3%A4sselby+Strands+Sj%C3%B6scoutk%C3%A5r/@59.3620719,17.7818116,13z/data=!4m6!3m5!1s0x465f9f000adaa135:0xf7c26dadb80cbb2f!8m2!3d59.3632201!4d17.8220044!16s%2Fg%2F11y8fdsts1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNi4wIKXMDSoASAFQAw%3D%3D" aria-label="Visa scoutstugan Ruffen i google maps" target='_blank' className='flex gap-2.5 leading-[1.2] hover:text-lightYellow'>
-                            <Image src={locationIcon} alt="" className='md:lg:w-4 lg:w-5.5 lg:h-5.5' />
+                            <Image src={locationIcon} alt="" className='md:lg:w-4 lg:w-5.5 lg:h-5.5 xl:w-5.25' />
                             <p className="text-body lg:text-lg">Hässelby strandväg<br />165 73 Hässelby</p>
                         </a>
                     </div>
