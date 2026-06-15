@@ -1,8 +1,4 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import CardWithoutImage from "@/components/CardWithoutImage";
-import { En} from "@/messages/en";
-import { Sv } from "@/messages/sv";
-import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Optimister from "@/components/Optimister";
 import { getId } from "@/lib/utils";
@@ -19,7 +15,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 const Boats = async ({params}:{params: Promise<{locale: string}>}) => {
     const {locale} = await params
-    const messages = locale === "en" ? En : Sv
     const data = await getId("a5df4d9e-daa3-4a1a-9b30-0780f314d5ec")
 
     return (

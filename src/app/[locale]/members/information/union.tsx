@@ -4,7 +4,6 @@ import ideadIcon from "../../../../../public/ideaIcon.svg"
 import loveIcon from "../../../../../public/loveIcon.png"
 import groupIcon from "../../../../../public/groupIcon.png"
 import { client } from "@/sanity/lib/client"
-import { urlFor } from "@/sanity/lib/image"
 
 
 const iconList = [ideadIcon, loveIcon, groupIcon];    

@@ -1,11 +1,9 @@
 import DivisionsBox from "@/components/DivisionsContainer/DivisionsBox";
 import MapWrapper from "@/components/Map/MapWrapper";
-import { En } from "@/messages/en";
-import { Sv } from "@/messages/sv";
 import ContentSection from "@/components/ContentSection";
 import { getPageHeadTitle } from "@/lib/utils"
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { getSectionById, getId } from "@/lib/utils";
+import { getId } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
 
 
@@ -17,11 +15,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
-const Ruffen = async ({ params }: { params: Promise<{ locale: string }> }) => {
+const Ruffen = async () => {
 
-    const { locale } = await params
-    const messages = locale === "en" ? En : Sv
-    const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "cabin_images")
+
+  
     const groupData = await getId('2a5a4f80-b206-44b9-9e00-6b870a00f90e')
     
 

@@ -1,12 +1,8 @@
 import { getPageHeadTitle, getSectionById } from "@/lib/utils"
-import CardWithoutImage from "@/components/CardWithoutImage";
 import ContentSection from "@/components/ContentSection";
 import CTABtn from "@/components/CTA-button";
-import ImageContainer from "./ImageContainer";
-import Link from "next/link";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
-import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MysetHistory from "@/components/MysetHistory";
 import CardWithLogo from "@/components/CardWithLogo";
@@ -25,7 +21,6 @@ const Myset = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
     const { locale } = await params
     const messages = locale === "en" ? En : Sv;
-    const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "cabin_images")
 
     return (
         <main>

@@ -1,9 +1,4 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import CardWithImage from "@/components/CardWithImage";
-import CTABtn from "@/components/CTA-button"
-import { En} from "@/messages/en";
-import { Sv } from "@/messages/sv";
-import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContentSection from "@/components/ContentSection";
 import CardWithLogo from "@/components/CardWithLogo";
@@ -20,10 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const Safety = ({params}:{params: Promise<{locale: string}>}) => {
-
-    const {locale} = use(params)
-    const messages = locale === "en" ? En : Sv
+const Safety = () => {
 
 
     return (

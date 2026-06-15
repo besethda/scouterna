@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const GroupStructure = async ({ params }: { params: Promise<{ locale: string }> }) => {
+const GroupStructure = async () => {
   const data = await getId('2a5a4f80-b206-44b9-9e00-6b870a00f90e')
   if (!data) return
 

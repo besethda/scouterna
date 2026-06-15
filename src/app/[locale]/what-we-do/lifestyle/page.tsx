@@ -1,9 +1,4 @@
 import { getPageHeadTitle, getSectionById } from "@/lib/utils"
-import CardWithImage from "@/components/CardWithImage";
-import WhiteGridContainer from "@/components/WhiteGridBox/WhiteGridContainer";
-import { En } from "@/messages/en";
-import { Sv } from "@/messages/sv";
-import { use } from "react";
 import LifeStyleSection from "./lifestyleSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import HeroContainer from "@/components/HeroContainer/HeroContainer";
@@ -21,10 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 
-const LifeStyle = async ({ params }: { params: Promise<{ locale: string }> }) => {
-    const { locale } = await params
-    const messages = locale === "en" ? En : Sv
-
+const LifeStyle = async () => {
     const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "lifestyle_images")
 
     return (
