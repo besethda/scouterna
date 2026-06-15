@@ -19,7 +19,7 @@ const Home = async () => {
         <CardWithLogo sectionTitle={"homePageCard"} image="/anchorYellowBg.svg" />
         <GoodToKnow />
         <WhiteImageBox />
-        <div className="md:w-full bg-white rounded-2xl shadow-lg mb-4 mx-4 px-4 md:my-5 ">
+        <div className="md:w-full bg-white rounded-2xl shadow-lg mb-4 mx-4 md:my-5 ">
           <DivisionsContainer data={groupsData} />
         </div>
         <br /> <br />
