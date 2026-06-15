@@ -44,42 +44,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
-      url: `${siteURL}/sv/groups/sjohumlorna`,
+      url: `${siteURL}/sv/groups/spararscouter`,
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: `${siteURL}/en/groups/sjohumlorna`,
-          sv: `${siteURL}/sv/groups/sjohumlorna`,
+          en: `${siteURL}/en/groups/spararscouter`,
+          sv: `${siteURL}/sv/groups/spararscouter`,
         },
       },
     },
     {
-      url: `${siteURL}/sv/groups/kaparna`,
+      url: `${siteURL}/sv/groups/upptackarscouter`,
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: `${siteURL}/en/groups/kaparna`,
-          sv: `${siteURL}/sv/groups/kaparna`,
+          en: `${siteURL}/en/groups/upptackarscouter`,
+          sv: `${siteURL}/sv/groups/upptackarscouter`,
         },
       },
     },
     {
-      url: `${siteURL}/sv/groups/konvojen`,
+      url: `${siteURL}/sv/groups/aventyrarscouter`,
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: `${siteURL}/en/groups/konvojen`,
-          sv: `${siteURL}/sv/groups/konvojen`,
+          en: `${siteURL}/en/groups/aventyrarscouter`,
+          sv: `${siteURL}/sv/groups/aventyrarscouter`,
         },
       },
     },
     {
-      url: `${siteURL}/sv/groups/utmanare`,
+      url: `${siteURL}/sv/groups/utmanarscouter`,
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: `${siteURL}/en/groups/utmanare`,
-          sv: `${siteURL}/sv/groups/utmanare`,
+          en: `${siteURL}/en/groups/utmanarscouter`,
+          sv: `${siteURL}/sv/groups/utmanarscouter`,
         },
       },
     },

@@ -785,7 +785,7 @@ export const En: MessagesEngType = {
     l2: "Crotch strap",
     l3: "Buoyancy of at least 45 N",
     l4: "Size and fit adapted to the scout's weight",
-    l5: "Crotch strap (Sjöhumlor and Kapare branches)"
+    l5: "Crotch strap (Spårarscouts and Upptäckarscouts)"
   },
   safeScout: {
     h0: "Safe Scout",
@@ -897,7 +897,8 @@ export const En: MessagesEngType = {
     header2: "Stronger together",
     text0: "In the scouts, you learn by doing—testing things yourself and growing through practical experiences together with others.",
     text1: "In the scouts, we dare to do more together and support each other in trying new things.",
-    text2: "In the scouts, we become stronger together, lifting each other up and sharing a warm, safe community."
+    text2: "In the scouts, we become stronger together, lifting each other up and sharing a warm, safe community.",
+    photoText: "Scout life"
   },
   learning: {
     t0: "Learning for life",

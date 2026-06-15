@@ -158,74 +158,76 @@ export type GdprType = {
   history_layout: Layout;
 };
 
-export type Layout = {
-  _type: "layout";
-  scout_life: Array<{
-    section_array: Array<
+export type LayoutSection = 
+  Array<
+| {
+    button_text_se?: string;
+    button_text_en?: string;
+    link_list?: Array<
       | {
-          button_text_se?: string;
-          button_text_en?: string;
-          link_list?: Array<
-            | {
-                link?: PageLink;
-                _type: "link_object";
-                _key: string;
-              }
-            | {
-                external_url: string;
-                _type: "url_object";
-                _key: string;
-              }
-            | {
-                file?: File_objectFile;
-                _type: "file_object";
-                _key: string;
-              }
-          >;
-          _type: "button";
+          link: PageLink;
+          _type: "link_object";
           _key: string;
         }
       | {
-          text_sv_array?: Array<{
-            children?: Array<{
-              marks?: Array<string>;
-              text?: string;
-              _type: "span";
-              _key: string;
-            }>;
-            style?: "normal" | "h3" | "h2";
-            listItem?: "bullet";
-            markDefs?: Array<{
-              href?: string;
-              _type: "link";
-              _key: string;
-            }>;
-            level?: number;
-            _type: "text_sv";
-            _key: string;
-          }>;
-          text_en_array?: Array<{
-            children?: Array<{
-              marks?: Array<string>;
-              text?: string;
-              _type: "span";
-              _key: string;
-            }>;
-            style?: "normal" | "h3" | "h2";
-            listItem?: "bullet";
-            markDefs?: Array<{
-              href?: string;
-              _type: "link";
-              _key: string;
-            }>;
-            level?: number;
-            _type: "text_en";
-            _key: string;
-          }>;
-          _type: "text_object";
+          external_url: string;
+          _type: "url_object";
+          _key: string;
+        }
+      | {
+          file: File_objectFile;
+          _type: "file_object";
           _key: string;
         }
     >;
+    _type: "button";
+    _key: string;
+  }
+| {
+    text_sv_array?: Array<{
+      children: Array<{
+        marks: Array<string>;
+        text: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "normal" | "h3" | "h2";
+      listItem: "bullet";
+      markDefs: Array<{
+        href: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "text_sv";
+      _key: string;
+    }>;
+    text_en_array?: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "normal" | "h3" | "h2";
+      listItem?: "bullet";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "text_en";
+      _key: string;
+    }>;
+    _type: "text_object";
+    _key: string;
+  }>
+
+export type Layout = {
+  _type: "layout";
+  scout_life: Array<{
+    section_array: LayoutSection
     _type: "section_object";
     _key: string;
   }>;
@@ -417,11 +419,11 @@ export type HistoryType = {
   _rev: string;
   history_layout: Layout;
   images: Array<{
-    asset?: SanityImageAssetReference;
+    asset: SanityImageAssetReference;
     media?: unknown;
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
-    alt?: string;
+    alt: string;
     description_sv?: string;
     description_en?: string;
     _type: "image";

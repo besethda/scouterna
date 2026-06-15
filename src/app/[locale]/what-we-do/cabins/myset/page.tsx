@@ -57,7 +57,7 @@ const Myset = async ({ params }: { params: Promise<{ locale: string }> }) => {
                 <MysetHistory />
                 <div className="pb-10 md:pt-6 md:pb-16 px-4 w-full">
                     <ContentSection sectionLayout={["t", "p", "p"]} page={"mysetMap"} padding="top" child={true} />
-                    <div className="">
+                    <div className="2xl:pt-12.5">
                         <MapWrapper page="myset" />
                     </div>
                 </div>

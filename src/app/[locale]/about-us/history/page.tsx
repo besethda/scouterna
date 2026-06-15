@@ -29,15 +29,15 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
       <CardWithLogo image="/heartYellowBg.svg" sectionTitle="historycard" isH1 />
       <div className="w-full relative">
         <div className="relative flex justify-center">
-            <Image src="/Path.png" alt="line" width={300} height={20} className="absolute md:top-28 md:left-10 w-50 top-22 left-8  md:w-auto " />
-              {data?.history_layout.scout_life.map((e:any, index:number)=> {return(
-                <div key={index} className={`rounded-3xl rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 md:px-10 py-3`}>
+            <Image src="/Path.png" alt="line" width={300} height={20} className="absolute w-[204px] top-22 left-8 md:top-28 md:left-10 md:w-[386px] " />
+              {data?.history_layout.scout_life.map((e, index:number)=> {return(
+                <div key={index} className={`rounded-3xl rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 mx-4 lg:mx-0 md:px-10 py-3`}>
                   <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"}/>
                 </div>
                 )})}   
         </div>
         <div className="">
-          <Image src={anchor} alt="anchor" height={150} width={150} className="hidden md:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20" />
+          <Image src={anchor} alt="anchor" height={150} width={150} className="hidden lg:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20" />
         </div>
       </div>
       <div className="mx-4 ">

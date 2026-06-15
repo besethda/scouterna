@@ -4,7 +4,14 @@ import { useRef, useEffect } from "react"
 import Image from "next/image"
 import { urlFor } from "@/sanity/lib/image"
 
-const BoatSection = ({images}:{images:any[]}) => {
+type imageType = {
+  alt: string,
+  asset: {
+    _ref: string
+  }
+}
+
+const BoatSection = ({images}:{images: imageType[]}) => {
   
 const middleImageRef = useRef<HTMLDivElement>(null);
 
@@ -32,7 +39,7 @@ return (
       <div ref={middleImageRef}
         className={`overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none flex
         lg:px-0 lg:snap-none px-10`}>
-        {images && images?.map((imgbox: any, index: number) => (
+        {images && images?.map((imgbox, index: number) => (
           <div
               key={index}
               className='w-75 h-52 mx-2 snap-center shrink-0 relative overflow-hidden rounded-2xl lg:snap-none'>

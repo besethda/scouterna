@@ -32,10 +32,12 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
                     "left-25 -top-5 md:left-20 md:-top-2"
                     : page === "cabin" ?
                         "left-20 -top-5 md:left-20 md:-top-2"
-                        : page === "group" || page === "scout-life"
-                            ? "left-22 -top-2 md:left-33"
-                            :
-                            "left-22 -top-2 md:left-33 md:-top-4"}
+                        : page === "scout-life" ?
+                            "left-22 -top-2 md:left-33"
+                            : page === "group"
+                                ? "left-25 -top-2 md:left-33"
+                                :
+                                "left-27 -top-2 md:left-33 md:-top-4"}
             `} />
             <div className={`flex flex-col  bg-bg-white shadow-[0_3px_8px_rgba(0,0,0,0.5)] relative font-gochi text-primary transition-transform duration-500 ease-out pin-swing
         ${text ? " md:min-h-125" : ""}
@@ -44,7 +46,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
         ${page === "group" && "p-3 w-77.5 h-90.75 md:w-89.5 md:h-auto"}
         ${page === "groups" && "p-6 w-77.5 md:w-66.5 md:h-75.5"}
         ${page === "scout-life" && "p-6 w-70  md:w-89.5"}
-        ${page === "join" && "p-6 w-82 md:w-89.5"}
+        ${page === "join" && "p-6 w-82 md:w-89.5 mx-auto"}
         ${page === "scoutLife" && "p-6 w-80 md:w-89.5 "}
         ${page === "cabin" || page === "groups"
                     ? "origin-[calc(80px+42.5px)_0px]"
@@ -57,7 +59,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
                 <div className={`mb-3.25 relative overflow-hidden
             ${page === "cabin" && "h-57.25"}
             ${page === "home" && "h-56.5 md:h-75"}
-            ${page === "scout-life" && "h-56.5  md:h-75"}
+            ${page === "scout-life" && "h-56.5 md:h-75"}
             ${page === "groups" && "w-66 h-60 md:w-55 md:h-55"}
             ${page === "group" && "h-75"}
             ${page === "join" && "h-75"}
