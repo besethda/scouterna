@@ -17,13 +17,7 @@ export const images =
         ]}),
         defineField({name: 'home_hero_desktop', title: 'Hem Huvudbild Desktop', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
-        defineField({name: 'card_image', title: 'Vågorna väntar Bild', type: 'image', fields: [
-          defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
-        defineField({name: 'card_image_2', title: 'HSS välkomnar alla Bild', type: 'image', fields: [
-          defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
+        ]})
       ]}),
       defineField({name: 'join_images', title: 'Bli Sjöscout Bilder', type: 'object', fields: [
         defineField({name: 'join_hero_mobile', title: 'Bli Sjöscout Huvudbild Mobile', type: 'image', fields: [
@@ -32,10 +26,10 @@ export const images =
         defineField({name: 'join_hero_desktop', title: 'Bli Sjöscout Huvudbild Desktop', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
-        defineField({name: 'card_image', title: 'Bli en del av HSS Bild', type: 'image', fields: [
+        defineField({name: 'card_image_1', title: 'Scoutlivet inom HSS', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
-        defineField({name: 'card_image_2', title: 'Scouting för ung som vuxen Bild', type: 'image', fields: [
+        defineField({name: 'card_image_2', title: 'Ta Steget', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
       ]}),
@@ -45,13 +39,7 @@ export const images =
         ]}),
         defineField({name: 'lifestyle_hero_desktop', title: 'Livet som Sjöscout Huvudbild Desktop', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
-        defineField({name: 'card_image', title: 'Vågorna Väntar Bild', type: 'image', fields: [
-          defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
-        defineField({name: 'card_image_2', title: 'Activiteter Bild', type: 'image', fields: [
-          defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
+        ]})
       ]}),
       defineField({name: 'cabin_images', title: 'Scoutstugor Bilder', type: 'object', fields: [
         defineField({name: 'ruffen', title: 'Ruffen', type: 'image', fields: [
@@ -60,30 +48,5 @@ export const images =
         defineField({name: 'myset', title: 'Myset', type: 'image', fields: [
           defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
         ]}),
-      ]}),
-      defineField({name: 'member_images', title: 'Medlem Bild', type: 'object', fields: [
-        defineField({name: 'member', title: 'Medlem Bild', type: 'image', fields: [
-          defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
-      ]}),
-      defineField({name: 'safety_images', title: 'Flytvästpolicy Bild', type: 'object', fields: [
-        defineField({name: 'safety', title: 'Flytvästpolicy Bild', type: 'image', fields: [
-          defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
-      ]}),
-      defineField({name: 'history_images', title: 'Historia Bild', type: 'object', fields: [
-        defineField({name: 'history', title: 'Historia Bild', type: 'image', fields: [
-          defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
-      ]}),
-      defineField({name: 'contact_images', title: 'Kontakt Bild', type: 'object', fields: [
-        defineField({name: 'contact', title: 'Kontakt Bild', type: 'image', fields: [
-          defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
-      ]}),
-      defineField({name: 'gdpr_images', title: 'GDPR Bild', type: 'object', fields: [
-        defineField({name: 'gdpr', title: 'GDPR Bild', type: 'image', fields: [
-          defineField({name: 'alt', title: 'Alt-bild', type: 'string'})
-        ]}),
-      ]}),
+      ]})
     ]})
