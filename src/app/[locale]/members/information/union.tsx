@@ -15,7 +15,7 @@ const Union = async ({locale = "sv"}:{locale:string}) => {
     const data = await client.fetch(`*[_type=="union"][0] { "files": history_section[] {name, "fileUrl": file.asset-> url} } `) as UnionType
     console.log(data)
     return (
-        <div className="pt-3 py-8 bg-primary mx-4 overflow-hidden rounded-3xl lg:mx-auto lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]">
+        <div className="pt-3 py-8 bg-primary mx-4 overflow-hidden rounded-3xl lg:mx-auto lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)] shadow-xl">
             <ContentSection
                 sectionLayout={["t", "p"]}
                 page="union"

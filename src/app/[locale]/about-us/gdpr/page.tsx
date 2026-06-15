@@ -24,7 +24,7 @@ const Gdpr = async ({ params }: { params: Promise<{ locale: string }> }) => {
     <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
       <Breadcrumbs />
       <CardWithLogo image="/informationYellowBg.svg" sectionTitle="gdprcard" isH1 />
-      <div className="relative mx-4 flex flex-col items-center bg-bg-blue pb-10">
+      <div className="relative mx-4 lg:mx-0 flex flex-col items-center bg-bg-blue pb-10">
         {data?.history_layout.scout_life.map((e, index: number) => {
           return (
             <div key={index} className={`rounded-3xl w-full shadow-xl ${index % 2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 md:px-10 py-3`}>
