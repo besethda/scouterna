@@ -55,10 +55,10 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
         <div className='w-full relative pb-6 pt-6 py-4 px-4 overflow-hidden'>
             {galleryOpen && <div onClick={()=> setGalleryOpen(false)} className='fixed w-screen h-screen bg-gray-800/50 backdrop-blur-sm top-0 left-0 z-70 md:flex items-center justify-center overscroll-contain overflow-hidden'>
                 {currentImage !== null && <div className={'h-[80%] w-[80%] ml-[10%] md:ml-0 flex flex-col items-center overflow-hidden'}>
-                    <div className='h-[40%] w-full relative rounded-3xl overflow-hidden mt-[80%]'>
+                    <div className='h-[40%] w-full relative rounded-3xl overflow-hidden pointer-events-auto mt-[80%]'>
                         <Image src={urlFor(images[currentImage].asset._ref).url()} alt={images[currentImage].alt} fill className='object-contain rounded-3xl'/>
                     </div>
-                    <div className='w-fit min-w-50 mt-[1%] overflow-scroll md:max-h-[19%] rounded-3xl bg-bg-white'>
+                    <div className='w-fit pointer-events-auto min-w-50 mt-[1%] overflow-scroll md:max-h-[19%] rounded-3xl bg-bg-white'>
                         <div className='text-primary font-fraunces text-center text-h3 md:text-h3-desktop font-bold py-3 px-5 '>{locale === "sv" ? images[currentImage].title_sv : images[currentImage].title_en}</div>
                         <div className='text-text-black font-fraunces text-center text-body md:text-body-desktop pb-3 px-5 '>{locale === "sv" ? images[currentImage].description_sv : images[currentImage].description_en}</div>
 
