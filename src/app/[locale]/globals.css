@@ -1,145 +1,182 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #003660;
-    --color-accent: #FDB715;
+  --color-primary: #003660;
+  --color-accent: #FDB715;
 
-    --color-bg-white: #FFFFFF;
-    --color-bg-blue: #D6EAF8;
-    --color-bg-accent: #FDB715;
+  --color-bg-white: #FFFFFF;
+  --color-bg-blue: #D6EAF8;
+  --color-bg-accent: #FDB715;
 
-    --color-text-black: #3B3A3A;
-    --color-text-gray: #717D7E;
-    --color-text-white: #FFFFFF;
-    --color-text-blue: #1F74AD;
+  --color-text-black: #3B3A3A;
+  --color-text-gray: #717D7E;
+  --color-text-white: #FFFFFF;
+  --color-text-blue: #1F74AD;
 
-    --color-green: #41A62A;
-    --color-lightBlue: #00A8E1;
-    --color-orange: #E95F13;
-    --color-pink: #DA005E;
-    --color-purple: #642484;
-    --color-green-opaque: #e8f4e5;
-    --color-lightBlue-opaque: #e0f4fb;
-    --color-orange-opaque: #fcece2;
-    --color-pink-opaque: #fbe0eb;
-    --color-purple-opaque: #ece4f0;
+  --color-green: #41A62A;
+  --color-lightBlue: #00A8E1;
+  --color-orange: #E95F13;
+  --color-pink: #DA005E;
+  --color-purple: #642484;
+  --color-green-opaque: #e8f4e5;
+  --color-lightBlue-opaque: #e0f4fb;
+  --color-orange-opaque: #fcece2;
+  --color-pink-opaque: #fbe0eb;
+  --color-purple-opaque: #ece4f0;
 
-    --color-lightGray: #CCCCCC;
-    --color-lightYellow: #EBC86C;
+  --color-lightGray: #CCCCCC;
+  --color-lightYellow: #EBC86C;
 
-    --color-btn: #FF9D2D;
-    --color-primaryBtn: #003660;
-    --color-form: #B3B3B3;
+  --color-btn: #FF9D2D;
+  --color-primaryBtn: #003660;
+  --color-form: #3B3A3A;
+
+  /* Font */
+  --font-fraunces: "Fraunces", sans-serif;
+  --font-varela: "Albert Sans", sans-serif;
+  --font-albert: "Albert Sans", sans-serif;
+  --font-public: "Albert Sans", sans-serif;
+  --font-gochi: "Gochi Hand", sans-serif;
+
+  /* Dektop */
+  --text-hero-desktop--font-family: var(--font-albert);
+  --text-hero-desktop: 64px;
+  --text-hero-desktop-bold--font-weight: 700;
+
+  /* 48 */
+  --text-h1-desktop--font-family: var(--font-albert);
+  --text-h1-desktop: 48px;
+
+  --text-h2-desktop--font-family: var(--font-albert);
+  --text-h2-desktop: 40px;
+
+  --text-h6-desktop--font-family: var(--font-albert);
+  --text-h6-desktop: 18px;
+
+  --text-h3-desktop--font-family: var(--font-albert);
+  --text-h3-desktop: 26px;
+
+  --text-h4-desktop--font-family: var(--font-albert);
+  --text-h4-desktop: 24px;
+
+  --text-h5-desktop--font-family: var(--font-albert);
+  --text-h5-desktop: 20px;
+
+  --text-body-desktop--font-family: var(--font-albert);
+  --text-body-desktop: 21px;
+
+  --text-body-bold-desktop--font-family: var(--font-albert);
+  --text-body-bold-desktop: 21px;
+  --text-body-bold-desktop--font-weight: 700;
+
+  --text-button-desktop--font-family: var(--font-albert);
+  --text-button-desktop: 18px;
+
+  --text-link-desktop--font-family: var(--font-albert);
+  --text-link-desktop: 18px;
+
+  --text-h7-desktop--font-family: var(--font-albert);
+  --text-h7-desktop: 18px;
+  --text-h7-desktop-bold--font-weight: 700;
+
+  --text-acc-desktop--font-family: var(--font-albert);
+  --text-acc-desktop: 16px;
+  --text-acc-bold-desktop--font-weight: 700;
 
 
-    /* Font */
-    --font-fraunces: "Fraunces", sans-serif;
-    --font-varela: "Albert Sans", sans-serif;
-    --font-albert: "Albert Sans", sans-serif;
-    --font-public: "Albert Sans", sans-serif;
-    --font-gochi: "Gochi Hand", sans-serif;
+  /* Mobile */
+  --text-hero--font-family: var(--font-albert);
+  --text-hero: 32px;
+  --text-hero-bold--font-weight: 700;
 
+  --text-h1--font-family: var(--font-albert);
+  --text-h1: 26px;
 
-    /* Dektop */
-    --text-hero-desktop--font-family: var(--font-albert);
-    --text-hero-desktop: 64px;
-    --text-hero-desktop-bold--font-weight: 700;
+  --text-h2--font-family: var(--font-albert);
+  --text-h2: 22px;
 
-    --text-h1-desktop--font-family: var(--font-albert);
-    --text-h1-desktop: 48px;
-    /* 48 */
+  --text-h2-albert--font-family: var(--font-albert);
+  --text-h2-albert: 22px;
 
-    --text-h2-desktop--font-family: var(--font-albert);
-    --text-h2-desktop: 40px;
+  --text-h3--font-family: var(--font-albert);
+  --text-h3: 18px;
 
-    --text-h3-desktop--font-family: var(--font-albert);
-    --text-h3-desktop: 26px;
+  --text-body--font-family: var(--font-albert);
+  --text-body: 16px;
 
-    --text-h4-desktop--font-family: var(--font-albert);
-    --text-h4-desktop: 24px;
+  --text-body-bold--font-family: var(--font-albert);
+  --text-body-bold: 16px;
+  --text-body-bold--font-weight: 700;
 
-    --text-h5-desktop--font-family: var(--font-albert);
-    --text-h5-desktop: 20px;
+  --text-button--font-family: var(--font-albert);
+  --text-button: 16px;
 
-    --text-body-desktop--font-family: var(--font-albert);
-    --text-body-desktop: 21px;
+  --text-link--font-family: var(--font-albert);
+  --text-link: 16px;
 
-    --text-body-bold-desktop--font-family: var(--font-albert);
-    --text-body-bold-desktop: 21px;
-    --text-body-bold-desktop--font-weight: 700;
+  --text-acc--font-family: var(--font-albert);
+  --text-acc: 12px;
+  --text-acc-bold--font-weight: 700;
 
-    --text-button-desktop--font-family: var(--font-albert);
-    --text-button-desktop: 18px;
-
-    --text-link-desktop--font-family: var(--font-albert);
-    --text-link-desktop: 18px;
-
-    --text-acc-desktop--font-family: var(--font-albert);
-    --text-acc-desktop: 16px;
-    --text-acc-bold-desktop--font-weight: 700;
-
-
-    /* Mobile */
-    --text-hero--font-family: var(--font-albert);
-    --text-hero: 32px;
-    --text-hero-bold--font-weight: 700;
-
-    --text-h1--font-family: var(--font-albert);
-    --text-h1: 26px;
-
-    --text-h2--font-family: var(--font-albert);
-    --text-h2: 22px;
-
-    --text-h2-albert--font-family: var(--font-albert);
-    --text-h2-albert: 22px;
-
-    --text-h3--font-family: var(--font-albert);
-    --text-h3: 18px;
-
-    --text-body--font-family: var(--font-albert);
-    --text-body: 16px;
-
-    --text-body-bold--font-family: var(--font-albert);
-    --text-body-bold: 16px;
-    --text-body-bold--font-weight: 700;
-
-    --text-button--font-family: var(--font-albert);
-    --text-button: 16px;
-
-    --text-link--font-family: var(--font-albert);
-    --text-link: 16px;
-
-    --text-acc--font-family: var(--font-albert);
-    --text-acc: 12px;
-    --text-acc-bold--font-weight: 700;
-
+  /*screen size*/
+  --max-w-laptop: 980px;
+  --max-w-desktop: 1400px;
 }
 
 body {
-    background-color: #D6EAF8;
+  background-color: #D6EAF8;
 }
 
 .contact-logo img[alt="logo"] {
-    width: 30px !important;
-    height: auto !important;
-    min-width: 30px !important;
+  width: 30px !important;
+  height: auto !important;
+  min-width: 30px !important;
 }
 
 @media (min-width: 1560px) {
-    .right-auto-2000 {
-        right: auto;
-    }
+  .right-auto-2000 {
+    right: auto;
+  }
 }
 
-@media (min-width: 431px) and (max-width: 541px){
+@media (min-width: 431px) and (max-width: 541px) {
   .line {
-    width:45%
+    width: 45%
   }
 }
 
 @media (min-width: 768px) and (max-width: 912px) {
   .line {
-    left: 24px;  
+    left: 24px;
   }
 }
 
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(8deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  60% {
+    transform: rotate(3deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.pin-swing:hover {
+  animation: swing 1.8s ease-in-out;
+}

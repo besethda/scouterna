@@ -5,7 +5,8 @@ import HeroContainer from "@/components/HeroContainer/HeroContainer";
 import Activities from "@/components/Activities";
 import PhotoContainer from "./photoContainer";
 import CardWithLogo from "@/components/CardWithLogo";
-
+import birds from '../../../../../public/blueBirds1.png'
+import Image from "next/image";
 
 
 const pageItem = "lifestyle"
@@ -22,14 +23,18 @@ const LifeStyle = async () => {
     return (
         <main>
             <HeroContainer bgImages={{ mobile: data.lifestyle_images.lifestyle_hero_mobile.asset._ref, desktop: data.lifestyle_images.lifestyle_hero_desktop.asset._ref }} messageSection={"lifestyleHero"} position={"center"} />
-            <Breadcrumbs />
-            <div className="flex flex-col items-center">
-                <CardWithLogo image="/wavesYellowBg.svg" sectionTitle="lifestyle" />
-                <LifeStyleSection />
-                <PhotoContainer backgroundBlue={false} messageTitle="learning" />
+            <div className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
+                <Breadcrumbs />
+                <div className="flex flex-col ">
+                    <CardWithLogo image="/wavesYellowBg.svg" sectionTitle="lifestyle" />
+                    <LifeStyleSection />
+                    <PhotoContainer backgroundBlue={false} messageTitle="learning" />
+                </div>
+                <div className="relative">
+                    <Activities />
+                    <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-40 opacity-90 lg:rotate-10" />
+                </div>
             </div>
-            <Activities />
-
         </main>
     );
 }

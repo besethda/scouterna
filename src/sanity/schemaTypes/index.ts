@@ -8,9 +8,8 @@ import { history } from './pages/historyType'
 import { images } from './pages/imagesType'
 import { gdpr } from './pages/gdprType'
 import { union } from './pages/unionType'
-import { alert } from './pages/alertType'
 import { group } from './pages/group'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [alert, faqType, pageLinkType, layoutSection, boatSection, boatsType, history, images, gdpr, union, group],
+  types: [faqType, pageLinkType, layoutSection, boatSection, boatsType, history, images, gdpr, union, group],
 }

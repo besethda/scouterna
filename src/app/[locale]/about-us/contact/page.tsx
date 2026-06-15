@@ -1,5 +1,4 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import ContentSection from "@/components/ContentSection"
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
@@ -7,7 +6,9 @@ import { use } from "react";
 import JoinPage from "@/components/JoinPage";
 import ContactForm from "@/components/ContactForm";
 import CardWithLogo from "@/components/CardWithLogo";
-
+import ContactAddress from "@/components/ContactAddress"
+import Image from "next/image";
+import anchor from '../../../../../public/whiteAnchor.png'
 
 const pageItem = "contact";
 const headDescription = "contact"
@@ -16,17 +17,30 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
+
 const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
 
   const { locale } = use(params)
   const messages = locale === "en" ? En : Sv
 
   return (
-    <main>
+    <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
       <Breadcrumbs />
       <CardWithLogo image="/mailYellowBg.svg" sectionTitle="contactcard" isH1 />
-      <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"email"} />
-      <ContentSection sectionLayout={["t", "s", "p", "s", "p"]} page={"bank"} />
+      <div className="relative">
+      <ContactAddress 
+      title={messages?.email.title}
+      text01={messages?.email.text01}
+      text02={messages?.email.text02}
+      text03={messages?.bank.text03}
+      text04={messages?.bank.text04}
+      info01={messages?.email.info01}
+      info02={messages?.email.info02}
+      info03={messages?.bank.info03}
+      info04={messages?.bank.info04}
+      />
+      <Image src={anchor} alt="anchor" height={150} width={150} className="hidden md:block md:absolute md:top-5 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20" />
+      </div>
       <div className="w-full  bg-bg-blue">
         <ContactForm
           title={messages?.form.title}
@@ -45,7 +59,7 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
           networkErrorTxt={messages.form.networkErrorTxt}
         />
       </div>
-      <div className=" mx-4 my-8 py-4 lg:mx-25 lg:my-20 lg:pt-2 flex flex-col items-center">
+      <div className=" mx-4 mt-8 mb-20 py-4 lg:pt-2 flex flex-col items-center">
         <JoinPage
           head={messages?.interestBtn.head}
           title={messages?.interestBtn.title}

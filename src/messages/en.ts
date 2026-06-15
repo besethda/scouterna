@@ -105,6 +105,7 @@ export type MessagesEngType = {
     familjescouter_time: string,
     familjescouter_place: string,
     familjescouter_paragraph: string,
+    familjescouter_photoTitle: string,
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -260,9 +261,10 @@ export type MessagesEngType = {
   vests: Record<string, string>
   lockable: Record<string, string>
   gdpr: Record<string, string>
+  notifications: Record<string, string>
   ethics: Record<string, string>
-  email: Record<string, string>
-  bank: Record<string, string>
+  email: Record<string, any>
+  bank: Record<string, any>
   offers: Record<string, string>
   map: Record<string, string>
   scoutLife: Record<string, string>
@@ -289,6 +291,16 @@ export type MessagesEngType = {
     headline: string,
     title: string,
     text: string,
+  },
+  aboutRuffen: {
+    t0: string,
+    p0: string,
+    t1: string,
+    p1: string,
+    s0: string,
+    p2: string,
+    p3: string,
+    p4: string,
   },
   memberInfo: {
     headline: string,
@@ -586,6 +598,7 @@ export const En: MessagesEngType = {
     familjescouter_time: "18:00",
     familjescouter_place: "Ruffen",
     familjescouter_paragraph: "Familjescouter is for children under eight years of age, together with an adult they feel safe with. This can be a parent, grandparent, relative or another close adult.",
+    familjescouter_photoTitle: "Parum & Magna",
     scouts_title: "Scouts",
     scouts_paragraph: "We have age-separated groups from the age of 8.",
     family_title: "Familjescouter",
@@ -731,7 +744,7 @@ export const En: MessagesEngType = {
   groupsCard: {
     headline: "Groups",
     title: "Age Groups",
-    text: "We have four age-appropriate sections. The program's content is tailored to the scouts' ages to ensure they get experiences and adventures that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout section, you can join from the age of 15.",
+    text: "We have five age-appropriate sections. The program's content is tailored to the scouts' ages to ensure they get experiences and adventures that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout section, you can join from the age of 15.",
   },
   boatsCard: {
     headline: "Scout Life",
@@ -772,7 +785,7 @@ export const En: MessagesEngType = {
     l2: "Crotch strap",
     l3: "Buoyancy of at least 45 N",
     l4: "Size and fit adapted to the scout's weight",
-    l5: "Crotch strap (Sjöhumlor and Kapare branches)"
+    l5: "Crotch strap (Spårarscouts and Upptäckarscouts)"
   },
   safeScout: {
     h0: "Safe Scout",
@@ -820,6 +833,20 @@ export const En: MessagesEngType = {
     l12: "Role in the scout group (only relevant for leaders)",
     l13: "Any awards or decorations"
   },
+  notifications: {
+    prompt: "Welcome to HSS! What is your role in the troop? HSS will send you relevant alerts based on your role. Choose an option:",
+    role1: "Förälder",
+    role2: "Scout",
+    role3: "Ledare",
+    prompt2: "Which group do you belong to?",
+    prompt3: "Which group does your child belong to?",
+    group1: "spårarscouter",
+    group2: "upptäckarscouter",
+    group3: "äventyrarscouter",
+    group4: "utmanarscouter",
+    group5: "familjescouter",
+    submit: "Submit"
+  },
   ethics: {
     s0: "Ethical guidelines for data collection",
     p0: "We never enter a member's health information into Scoutnet.",
@@ -830,20 +857,24 @@ export const En: MessagesEngType = {
     p5: "Through membership, individuals are insured via the Scouts' group insurance. The insurance company requires that data be saved for up to ten years, which is the time limit during which one can claim compensation for an insurance matter."
   },
   email: {
-    "t0": "Email",
-    "s0": "Email to kåren",
-    "p0": "info@hss-scout.org",
-    "s1": "Email about memberships",
-    "p1": "register@hss-scout.org"
+    "title": "Email",
+    "text01": "Email to kåren",
+    "info01": "info@hss-scout.org",
+    "text02": "Email about memberships",
+    "info02": "register@hss-scout.org"
   },
   "bank": {
-    "t0": "Bank details",
-    "s0": "Postgiro",
-    "p0": "404418 - 6",
-    "s1": "Organization number",
-    "p1": "802006 - 2389"
+    "title": "Bank details",
+    "text03": "Postgiro",
+    "info03": "404418 - 6",
+    "text04": "Organization number",
+    "info04": "802006 - 2389"
   },
   offers: {
+    "bigHeader0": "Time",
+    "bigHeader1": "Inclusion",
+    "bigHeader2": "Values",
+    "bigHeader3": "Safety",
     title: "What Scout Life Offers",
     header0: "Life on the waves",
     header1: "Naturally exciting",
@@ -866,7 +897,8 @@ export const En: MessagesEngType = {
     header2: "Stronger together",
     text0: "In the scouts, you learn by doing—testing things yourself and growing through practical experiences together with others.",
     text1: "In the scouts, we dare to do more together and support each other in trying new things.",
-    text2: "In the scouts, we become stronger together, lifting each other up and sharing a warm, safe community."
+    text2: "In the scouts, we become stronger together, lifting each other up and sharing a warm, safe community.",
+    photoText: "Scout life"
   },
   learning: {
     t0: "Learning for life",
@@ -955,6 +987,16 @@ export const En: MessagesEngType = {
     title: "Ruffen",
     text: "Ruffen is our premises located by Hässelby Strandbad. This is where we hold our troop meetings, and it also houses our Optimist dinghies.",
   },
+  aboutRuffen: {
+    t0: "Sea scouting since 1959",
+    p0: "Right where the waves of Lake Mälaren meet the shore lies Ruffen, the historic scout cabin that has been an important part of Hässelby Strand's Sea Scout Troop since 1959.",
+    t1: "With the lake as its closest neighbor",
+    p1: "With its fantastic location, Ruffen is the perfect base for life on the water. From here, it is never more than a few steps to boats, docks, and water. The cabin serves as the troop's natural gathering place where generations of children and youth have met to learn sailing, knots, and seamanship, as well as prepare for exciting adventures.",
+    s0: "Ruffen in brief:",
+    p2: "Home of Hässelby Strand's Sea Scouts",
+    p3: "Active since 1959",
+    p4: "Close to boats and docks by the water in Hässelby Strand"
+  },
   memberInfo: {
     headline: "Scout Life",
     title: "Information",
@@ -983,7 +1025,7 @@ export const En: MessagesEngType = {
   groupCard: {
     headline: "groups",
     title: "Age groups",
-    text: "We have four age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout group, members can join from the age of 15."
+    text: "We have five age groups. The program content is tailored to the scouts' ages so they can gain experiences that suit them. Children can join the scouts from the age of 8. In Utmanarna, our oldest scout group, members can join from the age of 15."
   },
   faqContact: {
     title: "Contact us",
@@ -1007,7 +1049,7 @@ export const En: MessagesEngType = {
     photoTitle: "Join the adventure!"
   },
   myset01: {
-    t0: "Interested in renting Myset?",
+    g0: "Interested in renting Myset?",
     p0: "Email ",
     p1: "to make a booking inquiry."
   },
@@ -1026,100 +1068,100 @@ export const En: MessagesEngType = {
     text: "View floor plan"
   },
   sjohumlornaSpårarscouter: {
-    t0: "Spårarscouts",
+    g0: "Spårarscouts",
     p0: "These scouts are Spårarscouts. Spårarna is the beginning of the scouting journey, where each child gets to grow, explore, and feel pride in what they can accomplish.",
   },
   sjohumlornaAge: {
-    t0: "Age",
+    g0: "Age",
     p0: "The children at Spårarna are between 8 and 9 years old.",
   },
   sjohumlorMeeting: {
-    t0: "Section meetings",
+    g0: "Section meetings",
     p0: "Day: Monday",
     p1: "Ruffen at Hässelby Strandbad.",
   },
   sjohumlorPlace: {
-    t0: "Badges",
+    g0: "Badges",
     p0: "For Spårare, there are plenty of exciting badges. Lighting a lantern for the first time can be a big challenge. Or making popcorn on a storm kitchen. There are also badges that focus on how to be a good friend or how to take care of the environment.",
   },
   sjohumlorButton: "Badge poster for Spårare",
   kaparnaUpptäckarscouter: {
-    t0: "Upptäckarscouts",
+    g0: "Upptäckarscouts",
     p0: "Many at this age are curious about the world around them, and at Kaparna we encourage that engagement. We often work practically and concretely - it can range from solving missions together to learning to take responsibility in small and big situations."
   },
   kaparnaAge: {
-    t0: "Age",
+    g0: "Age",
     p0: "The children at Upptäckascouter are between 10 and 11 years old.",
   },
   kaparnaMeeting: {
-    t0: "Section meetings",
+    g0: "Section meetings",
     p0: "Day: Tuesday",
     p1: "Ruffen at Hässelby Strandbad",
   },
   kaparnaPlace: {
-    t0: "Badges",
+    g0: "Badges",
     p0: "There are plenty of badges that suit Upptäckare. For example, they can show that they can handle a knife and axe. Or one of the many interest badges can serve as a framework for the program. There are badges for everything from first aid, fire-making and cooking to water, darkness and superheroes.",
   },
   kaparnaButton: "Badge poster for Upptäckare",
   utmanarscouter: {
-    t0: "Utmanarscouts",
+    g0: "Utmanarscouts",
     p0: "The Utmanare are given bigger challenges in an increasingly international context. Scouts get the opportunity to explore adult responsibilities, and everyone has room to try different things and discover their own roles. You are trusted with significant responsibility while still being free to be playful, act your age, or simply be yourself.",
   },
   utmanareAge: {
-    t0: "Age",
+    g0: "Age",
     p0: "The scouts in the utmanarscouter section are 15 years and older.",
   },
   utmanareMeeting: {
-    t0: "Section meetings",
+    g0: "Section meetings",
     p0: "Day: Tuesday or Thursday.",
     p1: "Ruffen at Hässelby Strandbad.",
   },
   utmanarePlace: {
-    t0: "Challenges",
+    g0: "Challenges",
     p0: "There are ten challenges. Two of them are done individually and the rest are done together in the Utmanarscouter team. The individual challenges have slightly stricter rules. The others are decided together in the Utmanarscouter team.",
   },
   utmanareButton: "Discover the challenges",
   äventyrarscouter: {
-    t0: "Äventyrarscouts",
+    g0: "Äventyrarscouts",
     p0: "In the adventure scouts, they collaborate, test different roles and take on bigger challenges, both in outdoor life and problem-solving. They also get to have more say themselves, with support from leaders, and develop in taking a stand and seeing different perspectives.",
   },
   konvojenAge: {
-    t0: "Age",
+    g0: "Age",
     p0: "The children at Upptäckascouter are between 12 and 14 years old.",
   },
   konvojenMeeting: {
-    t0: "Section meetings",
+    tg0: "Section meetings",
     p0: "Day: Thursday",
     p1: "Location: Ruffen at Hässelby Strandbad.",
   },
   konvojenPlace: {
-    t0: "Badges",
+    tg0: "Badges",
     p0: "Badges are a fun way to connect knowledge or an experience to something. As an Äventyrare, there are many exciting badges to take. Dare to challenge yourself to bigger adventures and bigger thoughts!",
   },
   konvojenButton: "Badge poster for Äventyrare",
   union: {
-    t0: "Union",
-    p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review."
+    t0: "Union meeting",
+    p0: "We regularly hold general meetings to make collective decisions regarding the association. The minutes and contents of these meetings are documented and available for download and review.",
   },
   download: "Download ",
   BarnOchVuxnaTillsammans: {
-    t0: "Children and Adults Together",
+    g0: "Children and Adults Together",
     p0: "Family Scouting is for children under the age of eight and an adult they feel safe with. Together, you discover scouting through play, adventure, and fun activities.",
     p1: "Children and adults participate side by side, helping each other with the activities. The adult is responsible for the child, but is also an important part of the community and participates just as much as the children.",
     p2: "The adult can be a parent, grandparent, relative, or another close person. The focus of Family Scouting is for children and adults to experience things together and strengthen their relationship."
   },
   ParumMagna: {
-    t0: "Parum & Magna",
+    g0: "Parum & Magna",
     p0: "In Family Scouting, children and adults get to follow the bears Parum and Magna on various adventures. Parum is curious and loves to discover and try new things, while Magna is wise and thinks about how everything connects. Together, they play, meet new friends, and help each other.",
     p1: "Stories and imagination are important parts of Family Scouting. Through the stories, children and adults get something to talk about and reflect on together. The stories also help spark curiosity, excitement, and a cozy atmosphere during the meetings."
   },
   Familjescoutsagor: {
-    t0: "Family Scouting Stories",
+    g0: "Family Scouting Stories",
     p0: "In Family Scouting, we use stories as a tool in our meetings. Through these narratives, children and adults can discover new themes together, spark their imagination, and build curiosity and community.",
     p1: "There are several different Family Scouting stories – both long and short, with and without rhymes. The stories are linked to various themes and activities. They help create a warm and playful feeling where children and adults can listen, reflect, and experience adventures together."
   },
   Märken: {
-    t0: "Badges",
+    g0: "Badges",
     p0: "Family Scouting has its own badges that you can earn through participation. Badges are a fun way to create pride in participating and a wonderful sense of togetherness!"
   },
   familjescouterButton: "Discover All Our Scout Badges",
@@ -1166,10 +1208,10 @@ export const En: MessagesEngType = {
   },
   ruffenDivisions: {
     t0: "Group Meetings",
-    p0: "HSS's four groups hold meetings once a week."
+    p0: "HSS's five groups hold meetings once a week."
   },
   avdelningsledare: {
-    t0: "Group Manager",
+    g0: "Group Manager",
     p0: "Each group has a group manager. Our managers are trained and have completed the mandatory course Safe Meetings."
   },
   scoutnet: {

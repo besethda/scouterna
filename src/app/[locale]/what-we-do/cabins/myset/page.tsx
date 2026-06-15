@@ -7,6 +7,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import MysetHistory from "@/components/MysetHistory";
 import CardWithLogo from "@/components/CardWithLogo";
 import MapWrapper from "@/components/Map/MapWrapper";
+import Image from "next/image";
+import cabin from '../../../../../../public/blueCabin.svg'
+import birds from '../../../../../../public/blueBirds1.png'
 
 const pageItem = "myset"
 const headDescription = "myset"
@@ -23,32 +26,34 @@ const Myset = async ({ params }: { params: Promise<{ locale: string }> }) => {
     const messages = locale === "en" ? En : Sv;
 
     return (
-        <main>
+        <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
             <Breadcrumbs />
             <div className="flex flex-col items-center">
-                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1 logoTopRight/> 
-                <div className="px-4 lg:px-10 py-8  md:py-3 lg:py-6 flex flex-col items-center bg-white mx-4 rounded-3xl mb-10 lg:w-212 2xl:max-w-245">
-                    <div className="">
-                        <ContentSection sectionLayout={["t"]} page="myset01" padding="" child={true} />
-                        <p className="py-2 text-body md:text-body-desktop text-text-black font-albert">{messages?.myset01?.p0} 
+                <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1 logoTopRight />
+                <div className="px-4 lg:px-10 py-8  md:py-3 lg:py-6 flex flex-col items-center bg-white mx-4 lg:mx-0 rounded-3xl mb-10">
+                    <div className="relative">
+                        <ContentSection sectionLayout={["g"]} page="myset01" padding="" child={true} />
+                        <p className="py-2 text-body md:text-body-desktop text-text-black font-albert">{messages?.myset01?.p0}
                             <a href="mailto:myset.hss.scout@gmail.com" className="hover:underline pr-1">myset.hss.scout@gmail.com</a>
                             {messages?.myset01?.p1}
                         </p>
                         <ContentSection sectionLayout={["t", "p", "p"]} page="myset02" padding="" child={true} />
                         <div className="py-4">
                             <a href="https://web.cdn.scouterna.net/uploads/sites/322/2020/02/mysetplanlosning.pdf"
-                            target="_blank"
+                                target="_blank"
                             >
                                 <CTABtn text={messages?.mysetBtn?.text} />
                             </a>
                         </div>
-                        <ContentSection sectionLayout={["t", "p"]} page="myset03"  padding="none" child={true} />
+                        <ContentSection sectionLayout={["t", "p"]} page="myset03" padding="none" child={true} />
+                        <Image src={birds} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-60 lg:right-10 opacity-90 lg:rotate-12" />
+                        <Image src={cabin} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:bottom-15 lg:right-10 opacity-90 " />
                     </div>
                 </div>
                 <MysetHistory />
-                <div className="pb-10 md:pt-6 md:pb-16 lg:max-w-430 lg:px-22 px-4 w-full">
+                <div className="pb-10 md:pt-6 md:pb-16 px-4 w-full">
                     <ContentSection sectionLayout={["t", "p", "p"]} page={"mysetMap"} padding="top" child={true} />
-                    <div className="">
+                    <div className="2xl:pt-12.5">
                         <MapWrapper page="myset" />
                     </div>
                 </div>

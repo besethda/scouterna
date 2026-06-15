@@ -11,8 +11,8 @@ const Instagram = ({ infoText = false, photoObject }: { infoText?: boolean, phot
   const messages = useMessages()
 
   return (
-    <div className="flex w-full overflow-hidden justify-center">
-      <div className="md:pb-25 pb-15 px-4 w-full md:px-17 md:max-w-200 lg:max-w-430">
+    <div className="flex w-full overflow-hidden justify-center lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)]">
+      <div className="md:pb-25 pb-15 px-4 w-full md:max-w-200 lg:max-w-430">
         {!infoText ? <h2 className="text-h2 md:text-h2-desktop text-primary font-fraunces font-bold mx-[1.5%]">{messages?.instagram.head}</h2>
           : <div className="mx-[1.5%]">
             <h2 className="text-h2 md:text-h2-desktop text-primary font-fraunces font-bold mb-3">Instagram</h2>

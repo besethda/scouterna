@@ -31,7 +31,7 @@ const Scoutlife = () => {
   return (
     <>
 
-      <div className="flex flex-col w-full px-4 pb-10 lg:max-w-430 lg:px-22 md:flex md:py-16 md:items-start md:gap-8 items-center">
+      <div className="flex flex-col w-full px-4 pb-10 lg:max-w-430 md:flex md:pb-12.5 md:items-start md:gap-8 items-center">
         <h2 className="font-fraunces font-bold md:text-h2-desktop text-[26px] tracking-[-0.5%] text-primary mb-4 md:mb-0">
           {messages?.scoutLife?.t0}
         </h2>
@@ -55,8 +55,8 @@ const Scoutlife = () => {
 
             ))}
           </div>
-          <div className="">
-            <ImageCard image="/images/DSCF3070.jpg" imageTitle="text" pin="pink" text="" section="scoutLife" page="scout-life" />
+          <div className="flex justify-center">
+            <ImageCard image="/images/DSCF3070.jpg" imageTitle="photoText" pin="pink" text="" section="scoutLife" page="scout-life" />
           </div>
         </div>
       </div>

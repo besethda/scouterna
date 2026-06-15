@@ -85,6 +85,7 @@ type MessagesSvType = {
     familjescouter_time: string,
     familjescouter_place: string,
     familjescouter_paragraph: string,
+    familjescouter_photoTitle: string,
     scouts_title: string,
     scouts_paragraph: string,
     family_title: string,
@@ -260,10 +261,11 @@ type MessagesSvType = {
   vests: Record<string, string>
   lockable: Record<string, string>
   gdpr: Record<string, string>
-  syfte:Record<string, string>
+  syfte: Record<string, string>
+  notifications: Record<string, string>
   ethics: Record<string, string>
-  email: Record<string, string>
-  bank: Record<string, string>
+  email: Record<string, any>
+  bank: Record<string, any>
   offers: Record<string, string>
   map: Record<string, string>
   scoutLife: Record<string, string>
@@ -291,6 +293,16 @@ type MessagesSvType = {
     title: string,
     text: string,
   },
+  aboutRuffen: {
+    t0: string,
+    p0: string,
+    t1: string,
+    p1: string,
+    s0: string,
+    p2: string,
+    p3: string,
+    p4: string,
+  }
   memberInfo: {
     headline: string,
     title: string,
@@ -301,7 +313,7 @@ type MessagesSvType = {
     title: string,
     text: string,
     button: string,
-    buttonMobile: string, 
+    buttonMobile: string,
     downloadUrl: string
   },
   safetyBtn: {
@@ -443,7 +455,7 @@ type MessagesSvType = {
   policy: { title: string, paraph: string, mer: string, desktop: string, },
   moreButton: string,
   secondButton: string,
-  memberScoutnet: {title:string, text01:string, text02:string},
+  memberScoutnet: { title: string, text01: string, text02: string },
   memberScoutnetButton: string,
 
   mysetHistory: {
@@ -597,6 +609,7 @@ export const Sv: MessagesSvType = {
     familjescouter_time: "18:00",
     familjescouter_place: "Ruffen",
     familjescouter_paragraph: "Familjescouting är scouting för barn under åtta år tillsammans med en vuxen de känner sig trygga med. Det kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära vuxen.",
+    familjescouter_photoTitle: "Parum & Magna",
     scouts_title: "Scouter",
     scouts_paragraph: "Vi har åldersindelade avdelningar från och med 8 års ålder. ",
     family_title: "Familjescouting",
@@ -775,7 +788,7 @@ export const Sv: MessagesSvType = {
     l2: "Grenrem",
     l3: "Flytkraft minst 45 N",
     l4: "Storlek och passform anpassad till scoutens vikt",
-    l5: "Grenrem (Sjöhumlor och Kapare)"
+    l5: "Grenrem (Spårare och Upptäckare)"
   },
   safeScout: {
     h0: "Säker scout",
@@ -820,9 +833,23 @@ export const Sv: MessagesSvType = {
     l12: "Roll i kåren (aktuellt endast för ledare)",
     l13: "Eventuella utmärkelser"
   },
-  syfte:{
-     s0: "Uppgiftsinsamlingens syfte",
-     p0: "Syftet med uppgiftsinsamlingen i Scoutnet är att veta vilka våra medlemmar är, för att kunna nå ut med information till dem, för närvaroregistrering, för att se avdelnings- och patrulltillhörighet, och för fakturering.",
+  syfte: {
+    s0: "Uppgiftsinsamlingens syfte",
+    p0: "Syftet med uppgiftsinsamlingen i Scoutnet är att veta vilka våra medlemmar är, för att kunna nå ut med information till dem, för närvaroregistrering, för att se avdelnings- och patrulltillhörighet, och för fakturering.",
+  },
+  notifications: {
+    prompt: "Välkommen till HSS! Vad är din roll i kåren? HSS kommer att skicka dig relevanta aviseringar baserat på din roll. \n Välj ett alternativ:",
+    role1: "Förälder",
+    role2: "Scout",
+    role3: "Ledare",
+    prompt2: "Vilken avdelning tillhör du?",
+    prompt3: "Vilken avdelning tillhör ditt barn?",
+    group1: "spårarscouter",
+    group2: "upptäckarscouter",
+    group3: "äventyrarscouter",
+    group4: "utmanarscouter",
+    group5: "familjescouter",
+    submit: "Bekräfta"
   },
   ethics: {
     s0: "Etiska riktlinjer för uppgiftsinsamling",
@@ -834,20 +861,24 @@ export const Sv: MessagesSvType = {
     p5: "I och med medlemskapet är man försäkrad via Scouternas gruppförsäkring och försäkringsbolaget kräver att uppgifterna sparas i upp till tio år, vilket är den tidsbegränsning som man kan kräva ersättning för ett försäkringsärende."
   },
   email: {
-    t0: "E-post",
-    s0: "E-post till kåren",
-    p0: "info@hss-scout.org",
-    s1: "E-post för medlemsärenden",
-    p1: "register@hss-scout.org"
+    title: "E-post",
+    text01: "E-post till kåren",
+    info01: "info@hss-scout.org",
+    text02: "E-post för medlemsärenden",
+    info02: "register@hss-scout.org"
   },
   bank: {
-    t0: "Bankuppgifter",
-    s0: "Postgiro",
-    p0: "404418 - 6",
-    s1: "Organisationsnummer",
-    p1: "802006 - 2389"
+    title: "Bankuppgifter",
+    text03: "Postgiro",
+    info03: "404418 - 6",
+    text04: "Organisationsnummer",
+    info04: "802006 - 2389"
   },
   offers: {
+    bigHeader0: "TID",
+    bigHeader1: "Inkluderande",
+    bigHeader2: "Värderingar",
+    bigHeader3: "Trygghet",
     title: "Vad Scoutlivet erbjuder",
     header0: "Livet på vågorna",
     header1: "Naturligt spännande",
@@ -871,7 +902,7 @@ export const Sv: MessagesSvType = {
     text0: "Inom scouterna lär man sig genom att göra, testa själv och utvecklas genom praktiska erfarenheter tillsammans med andra.",
     text1: "Inom scouterna vågar vi mer tillsammans och stöttar varandra att våga prova nya saker.",
     text2: "Inom scouterna blir vi starka tillsammans, stöttar varandra och delar en varm och trygg gemenskap.",
-    text: "Scoutliv"
+    photoText: "Scoutliv"
   },
   learning: {
     t0: "Lärande för livet",
@@ -959,6 +990,16 @@ export const Sv: MessagesSvType = {
     title: "Ruffen",
     text: "Ruffen är vår lokal vid Hässelby Strandbad. Här har vi våra avdelningsmöten och den huserar även våra optimistjollar."
   },
+  aboutRuffen: {
+    t0: "Scöscouting sedan 1959",
+    p0: "Precis där Mälarens vågor möter land ligger Ruffen, den anrika scoutstugan som sedan 1959 har varit en viktig del av Hässelby Strands Sjöscouter.",
+    t1: "Med sjön som närmaste granne",
+    p1: "Med sitt fantastiska läge är Ruffen den perfekta basen för sjöliv. Härifrån är steget aldrig långt till båtar, bryggor och glittrande vatten. Stugan fungerar som kårens naturliga samlingslokal där generationer av barn och ungdomar har mötts för att lära sig segling, knopar och sjövett, samt förbereda sig inför spännande äventyr.",
+    s0: "Kort om Ruffen:",
+    p2: "Hemvist för Hässelby Strands Sjöscouter.",
+    p3: "Aktivt sedan 1959.",
+    p4: "Nära båtar och bryggor vid vattnet i Hässelby Strand."
+  },
   memberInfo: {
     headline: "Scoutliv",
     title: "Information",
@@ -969,7 +1010,7 @@ export const Sv: MessagesSvType = {
     title: "HSS Flytvästpolicy",
     text: "För att alla scouter och deras vårdnadshavare ska få tydliga instruktioner om vilka regler som gäller kring användning av flytväst har HSS styrelse tagit fram en flytvästpolicy. Här finns en sammanfattad version. För att läsa flytvästpolicyn i sin helhet, ladda ner PDF:en.",
     button: "Ladda ner flytvästpolicyn som PDF",
-    buttonMobile: "Ladda ner PDF", 
+    buttonMobile: "Ladda ner PDF",
     downloadUrl: "/pdfs/HSS-Flytvastpolicy-2025-Beslutad.pdf"
   },
   safetyBtn: {
@@ -987,7 +1028,7 @@ export const Sv: MessagesSvType = {
   groupCard: {
     headline: "Avdelningar",
     title: "Åldersanpassade avdelningar",
-    text: "Vi har fyra åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
+    text: "Vi har fem åldersanpassade avdelningar. Verksamhetens innehåll utformas efter scouternas åldrar för att scouterna ska få erfarenheter och upplevelser som passar dem.\n\nBarn kan gå med i scouterna från och med 8 års ålder. I Utmarnarna, där våra äldsta scouter går, kan man gå med från och med 15 års ålder."
   },
   faqContact: {
     title: "Kontakta oss",
@@ -996,7 +1037,7 @@ export const Sv: MessagesSvType = {
   joinContent: {
     title: "Scoutledare",
     text: "Som vuxen kan du göra en viktig insats som scoutledare. Du coachar scouterna och skapar en trygg miljö för att ge scouterna utrymme att våga och utvecklas. Alla våra Scoutledare ska gå utbildningen Trygga Möten.",
-    button: "Kom igång med trygga möten",
+    button: "Kom igång med Trygga Möten",
     text02: "Efter kursen Trygga Möten kan du, om du vill, fortsätta utbilda dig. Vi rekommenderar att gå kursen Leda Scouting. Du kan läsa mer om våra utbildningar på Ledarskapsön.",
     button02: "Besök Ledarskapsön",
     title02: "Förälder",
@@ -1010,138 +1051,138 @@ export const Sv: MessagesSvType = {
     photoTitle: "Häng med på äventyr!"
   },
   myset01: {
-    t0: "Nyfiken på att hyra Myset?",
+    g0: "Nyfiken på att hyra Myset?",
     p0: "Mejla ",
     p1: "för att göra en bokningsförfrågan."
   },
   myset02: {
     t0: "Bekvämligheter",
-    p0: "Myset är en trevlig och fräsch scoutstuga. Med element och ett modernt ventilationssystem är det lätt att hålla värmen, och stugan känns alltid välkomnande och hemtrevlig &ndash; oavsett årstid.",
+    p0: "Myset är en trevlig och fräsch scoutstuga. Med element och ett modernt ventilationssystem är det lätt att hålla värmen, och stugan känns alltid välkomnande och hemtrevlig - oavsett årstid.",
     p1: "Stugan rymmer ett stort samlingsrum där en mysig brasa blir en naturlig samlingspunkt. Här finns också ett väl tilltaget kök och två mindre ledarrum som ger plats för både planering och vila.",
   },
   myset03: {
     t0: "Utrustning",
-    p0: "Köket är fullt utrustat med både el- och vedspis, diskmaskin, mikrovågsugn och ett rymligt kylskåp. Det är ett komplett kök som utan problem kan laga och servera mat till upp emot 30 personer &ndash; perfekt för läger, hajker och gemensamma måltider.",
+    p0: "Köket är fullt utrustat med både el- och vedspis, diskmaskin, mikrovågsugn och ett rymligt kylskåp. Det är ett komplett kök som utan problem kan laga och servera mat till upp emot 30 personer, perfekt för läger, hajker och gemensamma måltider.",
   },
   mysetBtn: {
     text: "Se planlösning"
   },
   sjohumlornaSpårarscouter: {
-    t0: "Spårarscouter",
+    g0: "Spårarscouter",
     p0: "Spårarna är början på scoutresan, där varje barn får växa, utforska och känna stolthet över det de klarar av.",
   },
   sjohumlornaAge: {
-    t0: "Ålder",
+    g0: "Ålder",
     p0: "Barnen på Spårarscouterna är mellan 8 och 9 år."
   },
   sjohumlorMeeting: {
-    t0: "Avdelningsmöten",
+    g0: "Avdelningsmöten",
     p0: "Dag: Måndag",
     p1: "Ruffen vid Hässelby Strandbad.",
   },
   sjohumlorPlace: {
-    t0: "Märken",
+    g0: "Märken",
     p0: "För Spårare finns det massvis med spännande märken. Att tända en lykta första gången kan vara en stor utmaning. Eller att få göra popcorn på ett stormkök. Det finns också märken som handlar om hur man är en bra kompis eller hur man tar hand om miljön.",
   },
   sjohumlorButton: "Märkesplansch för Spårare",
   kaparnaUpptäckarscouter: {
-    t0: "Upptäckarscouter",
+    g0: "Upptäckarscouter",
     p0: "Många i den här åldern är nyfikna på världen runt omkring sig, och här uppmuntras det engagemanget. Vi jobbar ofta praktiskt och konkret - det kan vara allt från att lösa uppdrag tillsammans till att lära sig ta ansvar i små och stora situationer."
   },
   kaparnaAge: {
-    t0: "Ålder",
+    g0: "Ålder",
     p0: "Barnen på Upptäckascouterna är mellan 10 och 11 år.",
   },
   kaparnaMeeting: {
-    t0: "Avdelningsmöten",
+    g0: "Avdelningsmöten",
     p0: "Dag: Tisdag",
     p1: "Ruffen vid Hässelby Strandbad"
   },
   kaparnaPlace: {
-    t0: "Märken",
+    g0: "Märken",
     p0: "Det finns massvis med märken som passar Upptäckare. De kan exempelvis visa att de kan hantera kniv och yxa. Eller så kan någon av de många intressemärkena fungera som en stomme för programmet. Det finns märken för allt från sjukvård, eldning och matlagning till vatten, mörker och superhjältar."
   },
   kaparnaButton: "Märkesplansch för Upptäckare",
   utmanarscouter: {
-    t0: "Utmanarscouter",
+    g0: "Utmanarscouter",
     p0: "Här ställs Utmanarna inför större uppgifter i ett allt tydligare internationellt sammanhang. Scouterna provar på vuxenrollen och alla får utrymme att testa och hitta sina roller. Som Utmanarscout får man ta ett stort ansvar samtidigt som det är okej att vara barnslig eller bara vara."
   },
   utmanareAge: {
-    t0: "Ålder",
+    g0: "Ålder",
     p0: "Scouterna på Utmanarna är 15 år och uppåt."
   },
   utmanareMeeting: {
-    t0: "Avdelningsmöten",
+    g0: "Avdelningsmöten",
     p0: "Dag: Tisdag eller torsdag.",
     p1: "Ruffen vid Hässelby Strandbad."
   },
   utmanarePlace: {
-    t0: "Utmaningar",
+    g0: "Utmaningar",
     p0: "Det finns tio utmaningar. Två av dem görs på egen hand och resten görs tillsammans i utmanarlaget. De individuella utmaningarna har lite fastare regler. De andra bestäms tillsammans i utmanarlaget.",
   },
   utmanareButton: "Upptäck utmaningarna",
   äventyrarscouter: {
-    t0: "Äventyrarscouter",
+    g0: "Äventyrarscouter",
     p0: "Äventyrare samarbetar, de testar olika roller och tar sig an större utmaningar, både i friluftsliv och problemlösning. De får också vara med och bestämma mer själva, med stöd av ledare, och utvecklas i att ta ställning och se olika perspektiv.",
   },
   konvojenAge: {
-    t0: "Ålder",
+    g0: "Ålder",
     p0: "Barnen på Äventyrarscouterna är mellan 12 och 14 år.",
   },
   konvojenMeeting: {
-    t0: "Avdelningsmöten",
+    g0: "Avdelningsmöten",
     p0: "Dag: Torsdag",
     p1: "Plats: Ruffen vid Hässelby Strandbad."
   },
   konvojenPlace: {
-    t0: "Märken",
+    g0: "Märken",
     p0: "Märken är ett kul sätt koppla en kunskap eller en upplevelse till något. Som Äventyrare finns det många spännande märken att ta. Våga utmana till större äventyr och större tankar!"
   },
   konvojenButton: "Märkesplansch för Äventyrare",
   union: {
-    t0: "Kårstämma",
-    p0: "Vi håller regelbundet kårstämmor för att fatta gemensamma beslut som rör föreningen. Kårstämmornas innehåll dokumenteras och går att ladda ner och läsa."
+    t0: "Kårstämmor",
+    p0: "Vi håller regelbundet kårstämmor för att fatta gemensamma beslut som rör föreningen. Kårstämmornas innehåll dokumenteras och går att ladda ner och läsa.",
   },
   download: "Ladda ner ",
   BarnOchVuxnaTillsammans: {
-    t0: "Barn och vuxna tillsammans",
+    g0: "Barn och vuxna tillsammans",
     p0: "Familjescouting är till för barn under åtta år och en vuxen som barnet känner sig trygg med. Tillsammans upptäcker ni scouting genom lek, äventyr och roliga aktiviteter.",
     p1: "Barn och vuxna är med sida vid sida och hjälps åt i aktiviteterna. Den vuxna ansvarar för barnet, men är också en viktig del av gemenskapen och deltar lika mycket som barnen.",
     p2: "Den vuxna kan vara en förälder, mor- eller farförälder, släkting eller någon annan nära person. Fokus i Familjescouting är att barn och vuxna får uppleva saker tillsammans och stärka sin relation."
   },
   ParumMagna: {
-    t0: "Parum & Magna",
+    g0: "Parum & Magna",
     p0: "I familjescouting får barn och vuxna följa björnarna Parum och Magna på olika äventyr. Parum är nyfiken och tycker om att upptäcka och prova nya saker, medan Magna är klok och funderar över hur saker hänger ihop. Tillsammans leker de, träffar nya vänner och hjälper varandra.",
     p1: "Sagan och fantasin är viktiga delar i familjescouting. Genom berättelserna får barn och vuxna något att prata och fundera kring tillsammans. Sagorna hjälper också till att skapa nyfikenhet, spänning och en mysig känsla under träffarna."
   },
   Familjescoutsagor: {
-    t0: "Familjescoutsagor",
+    g0: "Familjescoutsagor",
     p0: "I familjescouting använder vi sagor som ett verktyg i våra träffar. Genom berättelser får barn och vuxna upptäcka nya teman tillsammans, väcka fantasin och skapa nyfikenhet och gemenskap.",
     p1: "Det finns flera olika familjescoutsagor – både längre och kortare berättelser, med och utan rim. Sagorna är kopplade till olika teman och aktiviteter. Sagorna hjälper till att skapa en varm och lekfull känsla där barn och vuxna tillsammans får lyssna, fundera och uppleva äventyr."
   },
   Märken: {
-    t0: "Märken",
+    g0: "Märken",
     p0: "Familjescouting har sina egna märken som man kan få genom delaktighet. Märken är ett roligt sätt att skapa stolhet kring deltagande och en härlig känsla av samhörighet!"
   },
   familjescouterButton: "Upptäck alla våra Scoutmärken",
 
   GroupSjohumlorna: {
-    headline: "Avdelningar", 
+    headline: "Avdelningar",
     title: "Spårarscouter",
     text: "De näst yngsta scouterna upptäcker sjölivet genom lek, sång och små äventyr vid vattnet. Här lär man sig samarbeta, knyta sina första knopar och känna sig hemma i naturen.",
   },
   GroupKaparna: {
-    headline: "Avdelningar", 
+    headline: "Avdelningar",
     title: "Upptäckarscouter",
     text: "Nu blir det mer segling och längre utflykter i skärgården. Upptäckare tar mer ansvar, lär sig grunderna i navigation och bygger vänskap som varar långt utanför scoutkåren.",
   },
   GroupKonvojen: {
-    headline: "Avdelningar", 
+    headline: "Avdelningar",
     title: "Äventyrarscouter",
     text: "Här seglar man större jollar och planerar egna hajker tillsammans med ledarna. Äventyrarscouter lär sig leda, fatta beslut och hantera utmaningar både till sjöss och på land.",
   },
   GroupUtmanare: {
-    headline: "Avdelningar", 
+    headline: "Avdelningar",
     title: "Utmanarscouter",
     text: "De äldsta scouterna driver egna projekt, deltar i internationella läger och tar ledarroller för de yngre. Här blir scoutingen ett sätt att forma sig själv och sin omvärld.",
   },
@@ -1167,10 +1208,10 @@ export const Sv: MessagesSvType = {
   },
   ruffenDivisions: {
     t0: "Avdelningsmöten",
-    p0: "HSS fyra avdelningar har avdelningsmöten en gång i veckan. "
+    p0: "HSS fem avdelningar har avdelningsmöten en gång i veckan. "
   },
   avdelningsledare: {
-    t0: "Avdelningsledare",
+    g0: "Avdelningsledare",
     p0: "Varje avdelning har en avdelningsledare. Våra ledare är utbildade och har gått den obligatoriska kursen Trygga Möten."
   },
   scoutnet: {
@@ -1234,7 +1275,7 @@ export const Sv: MessagesSvType = {
   cabinst: "Här träffas vi",
   cabinsmyset: {
     title: "Myset",
-    dpOne: "Myset ligger vackert beläget och är en perfekt miljö vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
+    dpOne: "Myset ligger vackert beläget och är en perfekt miljö för vår härliga lägerbål och andra äventyr. Själva stugan är trevlig och rymlig och en perfekt plats för våra hajker.",
     dpTwo: "Myset finns tillgänglig för uthyrning, och bokningsförågan kan mejlas till myset.hss.scout@gmail.com.",
   },
   mysetbtn: "Läs mer om Myset",

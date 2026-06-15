@@ -40,10 +40,10 @@ const GoodToKnow = () => {
   ]
 
   return (
-    <div className="flex flex-col md:max-w-200 lg:max-w-430 min-w-97.5 min-h-120 gap-4 px-4 pb-10 bg-bg-blue md:px-22 md:pb-15 pt-5 md:pt-10">
+    <div className="flex flex-col md:max-w-200 lg:max-w-430 min-w-97.5 min-h-120 gap-4 px-4 pb-12.5 bg-bg-blue pt-5 md:pt-10">
       <div className=" relative flex flex-col items-start">
         <h2 className="text-primary font-fraunces font-bold text-h2 tracking-[-0.5%] md:text-h2-desktop">{messages?.goodToKnow?.headline}</h2>
-        <Image src={underline} alt="underline" width={96} height={32} className="md:hidden w-35 h-auto"/>
+        <Image src={underline} alt="underline" width={96} height={32} className="md:hidden w-35 h-auto" />
         <Image src={ring} alt="highlighte text" width={400} height={250} className="md:absolute hidden md:block -left-16.5 -top-41.25" />
       </div>
       <div className="flex flex-col gap-4 md:grid lg:max-w-393 md:grid-cols-2 md:grid-rows-2 md:gap-6 md:py-2.5 md:text-[#FFFFFF] ">

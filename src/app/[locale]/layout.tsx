@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Varela_Round, Fraunces, Albert_Sans, Public_Sans, Gochi_Hand } from "next/font/google";
 import "./globals.css";
 import { TranslateContent } from "@/translateContent/translate";
@@ -7,7 +6,7 @@ import { Sv } from "@/messages/sv"
 import { use } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { getSectionById } from "@/lib/utils";
+import PWAdetector from "@/components/PWAdetector";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params
@@ -16,8 +15,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: locale === 'en' ? "Hässelby strands sjöscouter - adventures for kids ages 8 and up 🏕️ | Activities: camping, sailing and collaborate | Safe environment with trained leaders | 👪 Kids under 8 are welcome to join with a parent or friend | Find your nearest group in Stockholm" : "Hässelby strands sjöscouter - äventyr för alla barn från 8 år 🏕️ | Aktivitet med läger, segling och samarbete | Trygg miljö med utbildade ledare | 👪 Barn under 8 år är välkomna tillsammans med förälder/nära vuxen | Hitta din närmaste grupp i Stockholm",
     }
 }
-
-const alert = await getSectionById("bff5f8b7-3ae9-4497-add7-8a018735fb0f", "notifications")
 
 const varela = Varela_Round({
   variable: "--font-varela",
@@ -62,7 +59,8 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
     >
       <body className="min-h-full flex flex-col">
         <TranslateContent value={messages}>
-          <Header alerts={alert}/>
+          <PWAdetector/>
+          <Header/>
           {children}
           <Footer />
         </TranslateContent >
