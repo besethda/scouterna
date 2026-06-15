@@ -7,7 +7,6 @@ import { getId, getSectionById } from "@/lib/utils";
 import CardWithLogo from "@/components/CardWithLogo";
 
 
-
 const Home = async () => {
 
   const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "home_images")

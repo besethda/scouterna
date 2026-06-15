@@ -1,10 +1,7 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import { En } from "@/messages/en";
-import { Sv } from "@/messages/sv";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { use } from "react";
 import Union from "./union";
-/*import Scoutnet from "@/components/Scoutnet/scoutnet";*/
 import ScoutInfo from "@/components/ScoutInfo/scoutInfo";
 import InstagramContainer from "@/components/Instagram/InstagramContainer";
 import CardWithLogo from "@/components/CardWithLogo";
@@ -17,9 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const Information = ({ params }: { params: Promise<{ locale: string }> }) => {
-
-    const { locale } = use(params)
-    const messages = locale === "en" ? En : Sv
+    const {locale} = use(params)
     return (
         <main className="bg-bg-blue w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
             <Breadcrumbs />

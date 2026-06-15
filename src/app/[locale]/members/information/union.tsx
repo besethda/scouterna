@@ -1,7 +1,6 @@
 import Image from "next/image"
 import ContentSection from "@/components/ContentSection"
 import { client } from "@/sanity/lib/client"
-import { urlFor } from "@/sanity/lib/image" 
 import downloadIcon from "../../../../../public/downlodIcon.svg"
 
 interface unionProps {
