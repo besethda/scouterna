@@ -1,11 +1,8 @@
 import { getPageHeadTitle, getSectionById } from "@/lib/utils"
 import ContentSection from "@/components/ContentSection";
 import CTABtn from "@/components/CTA-button";
-import ImageContainer from "./ImageContainer";
-import Link from "next/link";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
-import { use } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MysetHistory from "@/components/MysetHistory";
 import CardWithLogo from "@/components/CardWithLogo";
@@ -27,14 +24,13 @@ const Myset = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
     const { locale } = await params
     const messages = locale === "en" ? En : Sv;
-    const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "cabin_images")
 
     return (
         <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
             <Breadcrumbs />
             <div className="flex flex-col items-center">
                 <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="mysetCard" isH1 logoTopRight />
-                <div className="px-4 lg:px-10 py-8  md:py-3 lg:py-6 flex flex-col items-center bg-white mx-4 lg:mx-0 rounded-3xl mb-10">
+                <div className="px-4 lg:px-10 py-8 shadow-xl md:py-3 lg:py-6 flex flex-col items-center bg-white mx-4 lg:mx-0 rounded-3xl mb-10">
                     <div className="relative">
                         <ContentSection sectionLayout={["g"]} page="myset01" padding="" child={true} />
                         <p className="py-2 text-body md:text-body-desktop text-text-black font-albert">{messages?.myset01?.p0}

@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import hood from '../../public/images/hood.jpg'
 import useMessages from "@/hook/useMessages";
 import CTABtn from '../components/CTA-button'
 import { urlFor } from "@/sanity/lib/image";

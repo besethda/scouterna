@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Varela_Round, Fraunces, Albert_Sans, Public_Sans, Gochi_Hand } from "next/font/google";
 import "./globals.css";
 import { TranslateContent } from "@/translateContent/translate";
@@ -60,7 +59,7 @@ export default function RootLayout({ children, params }: Readonly<{ children: Re
     >
       <body className="min-h-full flex flex-col">
         <TranslateContent value={messages}>
-        <PWAdetector/>
+          <PWAdetector/>
           <Header/>
           {children}
           <Footer />

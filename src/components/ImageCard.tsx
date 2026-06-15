@@ -34,6 +34,8 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
                         "left-20 -top-5 md:left-20 md:-top-2"
                         : page === "scout-life" ?
                             "left-22 -top-2 md:left-33"
+                            :page === "home"
+                                ? "left-22 -top-2 md:left-33 md:-top-4"
                             : page === "group"
                                 ? "left-25 -top-2 md:left-33"
                                 :

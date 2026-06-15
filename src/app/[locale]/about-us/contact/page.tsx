@@ -1,5 +1,4 @@
 import { getPageHeadTitle } from "@/lib/utils"
-import ContentSection from "@/components/ContentSection"
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { En } from "@/messages/en";
 import { Sv } from "@/messages/sv";
@@ -28,7 +27,7 @@ const Contact = ({ params }: { params: Promise<{ locale: string }> }) => {
     <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
       <Breadcrumbs />
       <CardWithLogo image="/mailYellowBg.svg" sectionTitle="contactcard" isH1 />
-      <div className="relative">
+      <div className="relative ">
       <ContactAddress 
       title={messages?.email.title}
       text01={messages?.email.text01}
