@@ -41,7 +41,7 @@ const ImageCard = ({ imageTitle, image, section, page, text, pin }: ImageCardPro
                                     : section === "joinPage"
                                         ? "left-25 -top-2 md:left-34 lg:left-30 xl:left-35 2xl:left-52"
                                         : section === "interstsBtn"
-                                            ? "left-30 -top-2 md:left-33"
+                                            ? "left-[62%] -top-2 -translate-x-[120px] sm:-translate-x-[16vw] md:-translate-0 md:left-33"
                                             :
                                             "left-27 -top-2 md:left-33 md:-top-4"}
             `} />
