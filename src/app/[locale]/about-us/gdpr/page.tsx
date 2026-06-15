@@ -32,8 +32,8 @@ const Gdpr = async ({ params }: { params: Promise<{ locale: string }> }) => {
             </div>
           )
         })}
-        <Image src={heart} alt="heart" height={150} width={150} className="hidden md:block md:absolute md:top-50 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20" />
-        <Image src={anchor} alt="anchor" height={150} width={150} className="hidden lg:block lg:absolute opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:bottom-50 xl:right-20 xl:bottom-50  2xl:right-50 2xl:-rotate-20" />
+        <Image src={heart} alt="heart" height={150} width={150} className="hidden md:block md:absolute md:top-50 md:right-8 opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:top-30 xl:right-20 xl:top-30  2xl:right-50 2xl:-rotate-20 w-37.5 h-37.5" />
+        <Image src={anchor} alt="anchor" height={150} width={150} className="hidden lg:block lg:absolute opacity-70 md:-rotate-12 xl:-rotate-18 lg:right-20 lg:bottom-50 xl:right-20 xl:bottom-50  2xl:right-50 2xl:-rotate-20 w-37.5 h-37.5" />
 
       </div>
 

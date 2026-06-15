@@ -54,7 +54,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                                 <p className="text-text-black text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
                                     {messages?.joinContent?.text}
                                 </p>
-                                <Image src={boat} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:-top-50 lg:right-10 opacity-90 lg:rotate-12" />
+                                <Image src={boat} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:-top-46 lg:right-10 opacity-90 lg:rotate-12 w-37.5 h-37.5" />
                             </div>
                             <a
                                 href="/pdfs/Bilaga-20251012-HSS-Trygga-maten-policy-Beslutad.pdf"
@@ -79,7 +79,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                                 <p className="text-text-black pb-4 text-body lg:max-w-[72%] md:text-body-desktop tracking-[3%]">
                                     {messages?.joinContent?.text03}
                                 </p>
-                                <Image src={heart} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-5 lg:right-10 opacity-80 lg:rotate-12" />
+                                <Image src={heart} alt="birds" height={150} width={150} className="hidden lg:block lg:absolute lg:top-5 lg:right-10 opacity-80 lg:rotate-12 w-37.5 h-37.5" />
                             </div>
                         </section>
                     </div>

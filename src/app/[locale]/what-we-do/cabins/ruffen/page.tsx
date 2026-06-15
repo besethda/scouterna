@@ -35,7 +35,7 @@ const Ruffen = async ({ params }: { params: Promise<{ locale: string }> }) => {
                 <div className="relative bg-white rounded-2xl shadow-xl mb-12.5 mx-4 md:mx-0 md:w-[96%] lg:w-full ">
                     <ContentSection sectionLayout={["t", "p", "t", "p", "s", "p", "p", "p"]} page="aboutRuffen" padding="both" />
                     <Image src={birds} alt="birds" height={150} width={150} className="-top-10 right-0 md:block absolute md:top-15 md:right-10 opacity-90 " />
-                    <Image src={boat} alt="boat" height={150} width={150} className="hidden md:block md:absolute md:bottom-15 md:right-40 opacity-90 " />          
+                    <Image src={boat} alt="boat" height={150} width={150} className="hidden md:block md:absolute md:bottom-15 md:right-40 opacity-90 w-37.5 h-37.5" />          
                 </div>
                 <section className="md:bg-bg-blue flex w-full flex-col items-center">
                     <div className="md:w-[92%] w-[90%] lg:w-full">
