@@ -4,8 +4,12 @@ import Image from "next/image"
 import useMessages from "@/hook/useMessages"
 import ImageCard from "./ImageCard"
 
+type imageType = {
+  url:string
+  alt:string
+}
 
-const Scoutlife = () => {
+const Scoutlife = ({image}:{image:imageType}) => {
 
   const messages = useMessages()
 
@@ -56,7 +60,7 @@ const Scoutlife = () => {
             ))}
           </div>
           <div className="flex justify-center">
-            <ImageCard image="/images/DSCF3070.jpg" imageTitle="photoText" pin="pink" text="" section="scoutLife" page="scout-life" />
+            <ImageCard image={image.url} imageTitle={image.alt} pin="pink" text="" section="scoutLife" page="scout-life" />
           </div>
         </div>
       </div>

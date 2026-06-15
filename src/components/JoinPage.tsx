@@ -10,6 +10,7 @@ interface JoinPageProps {
   title: string;
   text: string;
   buttonText?: string;
+  image: {url:string, alt:string}
   section?: string
   buttonOnClick?: () => void;
   width?: string;
@@ -22,6 +23,7 @@ const JoinPage = ({
   title,
   text,
   buttonText,
+  image,
   section,
   buttonOnClick,
   btnWidth,
@@ -58,7 +60,7 @@ const JoinPage = ({
             <Image src={Arrow} alt="arrow" />
           </div>
           <div className={`md:flex-1 ${section === "join" ? "hidden" : "md:hidden"}`}>
-            <ImageCard imageTitle="photoTitle" image="/images/hood.jpg" section={section === "join" ? "joinPage" : "interstsBtn"} page="join" text="" pin="red" />
+            <ImageCard imageTitle={image.alt} image={image.url} section={section === "join" ? "joinPage" : "interstsBtn"} page="join" text="" pin="red" />
           </div>
           {buttonText && (
             <div
