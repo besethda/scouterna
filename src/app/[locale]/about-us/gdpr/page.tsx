@@ -21,7 +21,7 @@ const Gdpr = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const data = await getId("ec7ef49d-c0a3-4326-98ab-681d90994d8e") as GdprType
 
   if (data?.history_layout.scout_life) return (
-    <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
+    <main className="w-full mx-auto lg:max-w-(--max-w-laptop) 2xl:max-w-(--max-w-desktop)">
       <Breadcrumbs />
       <CardWithLogo image="/informationYellowBg.svg" sectionTitle="gdprcard" isH1 />
       <div className="relative mx-4 lg:mx-0 flex flex-col items-center bg-bg-blue pb-10">

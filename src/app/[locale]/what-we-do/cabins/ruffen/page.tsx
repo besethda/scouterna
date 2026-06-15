@@ -25,7 +25,7 @@ const Ruffen = async () => {
 
 
     return (
-        <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
+        <main className="w-full mx-auto lg:max-w-(--max-w-laptop) 2xl:max-w-(--max-w-desktop)">
             <Breadcrumbs />
             <div className="flex flex-col items-center w-full">
                 <CardWithLogo image="/cabinYellowBg.svg" sectionTitle="ruffen" isH1 logoTopRight />
@@ -46,9 +46,9 @@ const Ruffen = async () => {
                         <DivisionsBox division={"familjescouter"} boxStyle={"info"} data={groupData?.groups.find((e: any) => e.name_slug === "smattarne") || null} />
                     </div>
                 </section>
-                <section className="pb-10 md:pt-6 md:pb-16 px-4 lg:px-[22px] w-full 2xl:px-0 ">
+                <section className="pb-10 md:pt-6 md:pb-16 px-4 lg:px-5.5 w-full 2xl:px-0 ">
                     <ContentSection sectionLayout={["t", "p", "p"]} page={"map"} padding="top" child={true} />
-                    <div className="2xl:pt-[50px]">
+                    <div className="2xl:pt-12.5">
                         <MapWrapper page="ruffen" />
                     </div>
                 </section>

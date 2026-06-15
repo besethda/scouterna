@@ -110,7 +110,7 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
                                     alt={imgbox.alt}
                                     width={300}
                                     height={212}
-                                    className="object-cover aspect-7/5 rounded-3xl"
+                                    className="object-cover aspect-7/5 rounded-3xl w-75 h-53"
                                     priority={index === 1}
                                 />
                                 <div className='text-body mt-2 font-bold group-hover:opacity-70 font-fraunces px-4 rounded-3xl text-center grow text-primary '>{locale === "sv" ? shortenText(imgbox?.title_sv) : shortenText(imgbox?.title_en)}</div>
