@@ -60,7 +60,7 @@ const JoinPage = ({
             <Image src={Arrow} alt="arrow" />
           </div>
           <div className={`md:flex-1 ${section === "join" ? "hidden" : "md:hidden"}`}>
-            <ImageCard imageTitle={image.alt} image={image.url} section={section === "join" ? "joinPage" : "interstsBtn"} page="join" text="" pin="red" />
+            <ImageCard imageTitle={image ? image.alt : ""} image={image? image.url : ""} section={section === "join" ? "joinPage" : "interstsBtn"} page="join" text="" pin="red" />
           </div>
           {buttonText && (
             <div
