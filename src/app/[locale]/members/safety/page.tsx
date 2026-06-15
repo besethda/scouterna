@@ -27,15 +27,15 @@ const Safety = () => {
                     <CardWithLogo image="/informationYellowBg.svg" sectionTitle="safetyCard" isH1 /> 
                 </section>
                 <div className="flex flex-col w-full px-4 lg:px-0 gap-10 lg:max-w-430  md:gap-20 md:pb-16 pb-10" >
-                    <section className="order-2 bg-white rounded-2xl relative"> 
+                    <section className="order-2 bg-white rounded-2xl relative shadow-xl"> 
                         <ContentSection sectionLayout={["h", "w", "p", "s", "p", "s", "p", "s", "p"]} page="safeScout" padding="both" />
                         <Image src={vest} alt="vest" height={150} width={150} className="hidden lg:block lg:absolute lg:bottom-20 lg:right-20 opacity-70 lg:rotate-12 " />
                     </section>
-                    <section className="order-1 bg-primary rounded-2xl relative">
+                    <section className="order-1 bg-primary rounded-2xl relative shadow-xl">
                         <ContentSection sectionLayout={["h", "p", "p", "t", "p", "w", "l", "l", "l", "t", "p", "w", "l", "l", "l", "t", ]} page={"guidelines"} padding="both" color="white"/>
                         <Image src={whiteAnchor} alt="anchor" height={150} width={150} className="hidden lg:block lg:absolute lg:top-30 lg:right-20 opacity-70 lg:-rotate-12 " />
                     </section>
-                    <section className="order-3 bg-primary rounded-2xl">
+                    <section className="order-3 bg-primary rounded-2xl shadow-xl">
                         <ContentSection sectionLayout={["h", "w", "p", "w"]} page="lockable" display="desktop" color="white" padding="both" />
                         <ContentSection sectionLayout={["h", "w", "p", ]} page="vests" display="mobile" padding="both" color="white" />
                     </section>
