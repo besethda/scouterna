@@ -10,7 +10,7 @@ interface JoinPageProps {
   title: string;
   text: string;
   buttonText?: string;
-  image: {url:string, alt:string}
+  image?: {url:string, alt:string}
   section?: string
   buttonOnClick?: () => void;
   width?: string;
