@@ -40,7 +40,7 @@ const Scoutlife = () => {
             {cards.map((card, index) => (
               <div key={index} className="flex flex-row gap-3">
                 <div className="flex flex-col shrink-0">
-                  <Image src={card.logo} alt="logo" height={45} width={48} className="" />
+                  <Image src={card.logo} alt="logo" height={45} width={48} className="h-11.25 w-11.25" />
                 </div>
                 <div>
                   <p className="font-fraunces font-bold md:text-h4-desktop text-[18px] tracking-[-0.5%] text-white">
