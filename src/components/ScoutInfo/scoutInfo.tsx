@@ -19,7 +19,7 @@ const ScoutInfo = () => {
   const currentLocal = params?.local || urlLocale || "sv"
 
   return (
-    <div className="relative bg-white flex flex-col 2xl:items-start 2xl:text-left py-8 md:mb-15 md:mt-5 px-4 mx-4 lg:mx-auto rounded-3xl shrink-0 lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)] md:px-10">
+    <div className="relative bg-white flex flex-col 2xl:items-start 2xl:text-left py-8 md:mb-15 md:mt-5 px-4 mx-4 lg:mx-auto rounded-3xl shrink-0 lg:max-w-[var(--max-w-laptop)] xl:mx-auto 2xl:max-w-[var(--max-w-desktop)] md:px-4 lg:px-10">
       <div className="font-albert w-full flex flex-col gap-4">
         <h2 className="text-h2 md:text-h2-desktop text-primary font-fraunces font-bold">{messages?.good}</h2>
         <div className="flex gap-6 xl:gap-8 flex-col md:mt-5 md:items-stretch">
