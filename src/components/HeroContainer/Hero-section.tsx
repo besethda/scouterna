@@ -1,6 +1,7 @@
 "use client"
 
 import { urlFor } from "@/sanity/lib/image";
+import Image from "next/image";
 
 interface HeroSectionProps {
     bgImages: { mobile: string, desktop: string };
@@ -8,7 +9,7 @@ interface HeroSectionProps {
     title02: string;
     description: string;
     top: string;
-    position?:string;
+    position?: string;
     children?: React.ReactNode;
 
 }
@@ -17,16 +18,27 @@ const HeroSection = ({ bgImages, title01, title02, description, top, position, c
 
     return (
         <>
-            <style>{`
-                .hero-background { background-image: url(${urlFor(bgImages.mobile)})}
-                @media (min-width: 768px){ .hero-background { background-image: url(${urlFor(bgImages.desktop)})}}
-            `}
-            </style>
-            <div className={`hero-background h-165 md:h-185 w-full bg-cover ${position === "center" ? "md:bg-position-[center_60%]" : "md:bg-bottom"} bg-right bg-gray-900 bg-no-repeat flex flex-col gap-10`}>
-                <div className='w-full bg-gray-800/40 h-full'>
+            <div className="relative h-165 md:h-185 w-full bg-gray-900 overflow-hidden ">
+                <div className="hidden md:block absolute inset-0">
+                    <Image src={urlFor(bgImages.desktop).url()}
+                        alt={title01}
+                        fill
+                        priority
+                        className={`object-cover ${position === "center" ? "object-[center_60%]" : "object-bottom"}`}
+                    />
+                </div>
+                <div className="block md:hidden absolute inset-0">
+                    <Image src={urlFor(bgImages.mobile).url()}
+                        alt={title01}
+                        fill
+                        priority
+                        className="object-cover object-right"
+                    />
+                </div>
+
+                <div className="relative z-10 w-full bg-gray-800/40 h-full flex flex-col gap-10">
                     <div className="flex flex-col items-center md:items-start gap-10 md:w-150 lg:ml-37.5 md:gap-7 mx-auto text-left">
-                        <div className="flex md:w-100 w-80 justify-center h-9 bg-primary mx-auto rounded-3xl 
-                            border border-solid border-accent mt-16 md:opacity-60 md:ml-0">
+                        <div className="flex md:w-100 w-80 justify-center h-9 bg-primary mx-auto rounded-3xl border border-solid border-accent mt-16 md:opacity-60 md:ml-0">
                             <p className="text-body-bold font-albert items-center leading-[3] md:mr-2 text-accent flex gap-2 uppercase">
                                 <span className="w-2 h-2 rounded-full bg-accent hidden md:block" />
                                 {top}

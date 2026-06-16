@@ -43,7 +43,7 @@ const JoinPage = ({
           <div className="px-2">
             <div className="gap-0">
               <h2 className={`font-fraunces font-bold text-primary pb-1 md:text-h2-desktop ${section === "join" ? "text-h1" : "text-[22px] "}`}>{head}</h2>
-              {section === "join" ? <Image src={shortLine} alt="line" /> : <Image src={longLine} alt="line" className="sm:max-w-[260px] max-w-[280px] md:max-w-[235px] lg:max-w-[320px] xl:max-w-[350px] 2xl:max-w-[512px]" />}
+              {section === "join" ? <Image src={shortLine} alt="line" /> : <Image src={longLine} alt="line" className="sm:max-w-65 max-w-70 md:max-w-58.75 lg:max-w-[320px] xl:max-w-87.5 2xl:max-w-lg" />}
             </div>
             <h3 className={`text-h2-albert font-fraunces font-bold text-primary md:text-h4-desktop md:pt-3 ${section === "contact" && "hidden md:block"}`}>
               {title}

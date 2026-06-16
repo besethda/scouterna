@@ -23,7 +23,7 @@ const LifeStyle = async () => {
     return (
         <main>
             <HeroContainer bgImages={{ mobile: data.lifestyle_images.lifestyle_hero_mobile.asset._ref, desktop: data.lifestyle_images.lifestyle_hero_desktop.asset._ref }} messageSection={"lifestyleHero"} position={"center"} />
-            <div className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]">
+            <div className="w-full mx-auto lg:max-w-(--max-w-laptop) 2xl:max-w-(--max-w-desktop)">
                 <Breadcrumbs />
                 <div className="flex flex-col ">
                     <CardWithLogo image="/wavesYellowBg.svg" sectionTitle="lifestyle" />

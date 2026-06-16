@@ -9,7 +9,7 @@ const PhotoContainer = ({ backgroundBlue = true, messageTitle }: { backgroundBlu
     ]
 
     return (
-        <div className={`${backgroundBlue && "lg:bg-bg-blue"} items-center pb-10 xl:pt-20 lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)]`}>
+        <div className={`${backgroundBlue && "lg:bg-bg-blue"} items-center pb-10 xl:pt-20 lg:max-w-(--max-w-laptop) 2xl:max-w-(--max-w-desktop)`}>
             <div className="w-full">
                 <ContentSection sectionLayout={["t"]} page={"scoutLife"} padding="" />
             </div>
