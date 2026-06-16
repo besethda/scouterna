@@ -24,14 +24,14 @@ const History = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const data = await getId("c57001b2-94f1-4bf1-ae81-1fcc684e0eee") as HistoryType
 
   return (
-    <main className="w-full mx-auto lg:max-w-[var(--max-w-laptop)] 2xl:max-w-[var(--max-w-desktop)] ">
+    <main className="w-full mx-auto lg:max-w-(--max-w-laptop) 2xl:max-w-(--max-w-desktop) ">
       <Breadcrumbs />
       <CardWithLogo image="/heartYellowBg.svg" sectionTitle="historycard" isH1 />
       <div className="w-full relative">
         <div className="relative flex justify-center">
-            <Image src="/Path.png" alt="line" width={300} height={20} className="absolute w-[204px] top-22 left-8 md:top-28 md:left-10 md:w-[386px] " />
-              {data?.history_layout.scout_life.map((e:any, index:number)=> {return(
-                <div key={index} className={`rounded-3xl rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 mx-4 lg:mx-0 md:px-4 lg:px-10 py-3`}>
+            <Image src="/Path.png" alt="line" width={300} height={20} className="absolute w-51 top-22 left-8 md:top-28 md:left-10 md:w-96.5 " />
+              {data?.history_layout.scout_life.map((e, index:number)=> {return(
+                <div key={index} className={`rounded-3xl w-full shadow-xl ${index%2 === 0 ? "bg-bg-white" : "bg-primary"} my-8 overflow-hidden px-4 mx-4 lg:mx-0 md:px-4 lg:px-10 py-3`}>
                   <SanityFlex data={e.section_array} locale={locale} color={index%2 === 0 ? "black" : "white"}/>
                 </div>
                 )})}   

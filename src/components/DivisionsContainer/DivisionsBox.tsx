@@ -37,7 +37,7 @@ const DivisionsBox = ({ division, imageUrl, data, boxStyle = "basic" }:
         </div>}
         {boxStyle === "image" && <div className="md:text-body-desktop text-body font-albert text-text-black">{messages?.division[`${division}_paragraph`] ?? ""}</div>}
       </div>
-      {boxStyle === "image" && <div className="order-3 md:order-4 md:mt-7 lg:mt-2 w-full mt-5 xl:pl-0 2xl:pl-30">
+      {boxStyle === "image" && <div className="order-3 md:order-4 md:mt-7 lg:mt-2 w-fit mt-5 xl:pl-0 2xl:pl-30">
         <div className="mb-2 h-full w-auto relative lg:max-h-62 md:max-h-72 flex justify-center md:justify-between">
           <ImageCard imageTitle={`${division}_title`} image={urlFor(data.groups.image.asset._ref).url() ? urlFor(data.groups.image.asset._ref).url() : "/images/IMG_5129.JPG"} section="division" page="groups" text="" pin="red" />
         </div>

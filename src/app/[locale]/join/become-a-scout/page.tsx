@@ -15,6 +15,7 @@ import Scoutlife from "@/components/Scoutlife";
 import boat from '../../../../../public/blueBoat1.svg'
 import heart from '../../../../../public/blueHeart1.svg'
 import Image from "next/image";
+import { urlFor } from "@/sanity/lib/image";
 
 const pageItem = "become-a-scout"
 const headDescription = "become-a-scout"
@@ -23,17 +24,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return getPageHeadTitle(locale, pageItem, headDescription)
 }
 
-const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "join_images")
-
-
-const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
-    const { locale } = use(params)
+const BecomeAScout = async ({ params }: { params: Promise<{ locale: string }> }) => {
+    const { locale } = await params
     const messages = locale === "en" ? En : Sv
     if (!messages) {
         return null
     }
 
-    return (
+    const data = await getSectionById('17520090-02e5-4b1c-b8e0-af8801314244', "join_images")
+    console.log(data)
+
+    if(data) return (
         <main>
             <HeroContainer bgImages={{ mobile: data.join_images.join_hero_mobile.asset._ref, desktop: data.join_images.join_hero_desktop.asset._ref }} messageSection={"joinHero"} position={"center"} />
             <div className="lg:max-w-245 2xl:max-w-360 mx-auto">
@@ -42,7 +43,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                     <div className="w-full">
                         <CardWithLogo image="/anchorYellowBg.svg" sectionTitle="joinCard" />
                     </div>
-                    <Scoutlife />
+                    <Scoutlife image={{url: `${data && urlFor(data?.join_images.card_image_1.asset._ref).url()}`, alt: `${data?.join_images.card_image_1.alt}`}}/>
                     <div className=" bg-white mx-4 my-4 md:mt-12.5 py-4 md:mb-12.5 rounded-3xl shadow-xl">
                         <SmallCard title={messages?.becomeScoutSmallCard?.title} subtitle={messages?.becomeScoutSmallCard?.subtitle} secondTitle={messages?.becomeScoutSmallCard?.secondTitle} secondText={messages?.becomeScoutSmallCard?.secondText} thirdtext={messages?.becomeScoutSmallCard?.thirdtext} button={messages?.becomeScoutSmallCard?.button} />
                         <Line hasPadding />
@@ -89,6 +90,7 @@ const BecomeAScout = ({ params }: { params: Promise<{ locale: string }> }) => {
                             title={messages?.joinPage.title}
                             text={messages?.joinPage.text}
                             buttonText={messages?.joinPage.buttonText}
+                            image={{url: `${urlFor(data?.join_images.card_image_2.asset._ref)}`, alt: `${data?.join_images.card_image_2.alt}`}}
                             section="join"
                             width="box"
                             btnWidth="full"

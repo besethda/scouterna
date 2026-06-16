@@ -21,13 +21,13 @@ const LifeStyleSection = ({ }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           {[...Array(4)].map((e, index) => {
             return (
-              <div className="md:p-6 bg-primary md:rounded-xl p-5 rounded-2xl shadow-lg xl:max-w-[478px] 2xl:max-w-full" key={`key${index}`}>
+              <div className="md:p-6 bg-primary md:rounded-xl p-5 rounded-2xl shadow-lg xl:max-w-119.5 2xl:max-w-full" key={`key${index}`}>
                   <div className="flex items-start gap-4">
                     <div className="shrink-0">
                       <Image src={`${imageArray[index]}`} alt={`img${index}`} width={36} height={36} className="object-fill w-9 h-9" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-acc md:text-body text-accent font-fraunces font-bold uppercase pb-[5px]">{messages.offers[`bigHeader${index}`]}</h3>
+                      <h3 className="text-acc md:text-body text-accent font-fraunces font-bold uppercase pb-1.25">{messages.offers[`bigHeader${index}`]}</h3>
                       <h3 className="text-h3 md:text-h3-desktop text-white font-fraunces font-bold pb-2">{messages.offers[`header${index}`]}</h3>
                       <div className="text-body md:text-body-desktop font-albert text-white">{messages.offers[`text${index}`]}</div>
                     </div>

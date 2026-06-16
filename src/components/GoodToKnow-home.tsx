@@ -44,7 +44,7 @@ const GoodToKnow = () => {
       <div className=" relative flex flex-col items-start">
         <h2 className="text-primary font-fraunces font-bold text-h2 tracking-[-0.5%] md:text-h2-desktop">{messages?.goodToKnow?.headline}</h2>
         <Image src={underline} alt="underline" width={96} height={32} className="xl:hidden w-35 md:w-50 h-auto" />
-        <Image src={ring} alt="highlighte text" width={400} height={250} className="md:absolute hidden xl:block -left-16.5 -top-41.25" />
+        <Image src={ring} alt="highlighte text" width={400} height={250} className="md:absolute hidden xl:block -left-16.5 -top-41.25 w-100 h-auto" />
       </div>
       <div className="flex flex-col gap-4 md:grid lg:max-w-393 md:grid-cols-2 md:grid-rows-2 md:gap-6 md:py-2.5 md:text-[#FFFFFF] ">
         {cards.map((card, index) => (
