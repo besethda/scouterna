@@ -65,21 +65,21 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
 
     return (
         <div className='w-full relative pb-6 pt-6 py-4 px-4 overflow-hidden'>
-            {galleryOpen && <div onClick={()=> setGalleryOpen(false)} className='fixed hidden w-screen h-screen bg-gray-800/50 backdrop-blur-sm top-0 left-0 z-70 md:flex items-center justify-center overscroll-contain overflow-hidden'>
-                {currentImage !== null && <div className={'h-[80%] md:w-[80%] w-75% flex flex-col items-center overflow-hidden'}>
-                    <div className='h-[80%] w-full relative rounded-3xl overflow-hidden'>
+            {galleryOpen && <div onClick={()=> setGalleryOpen(false)} className='fixed w-screen h-screen bg-gray-800/50 backdrop-blur-sm top-0 left-0 z-70 md:flex items-center justify-center overscroll-contain overflow-hidden'>
+                {currentImage !== null && <div className={'h-[80%] w-[80%] ml-[10%] top-0 md:ml-0 flex flex-col items-center overflow-hidden'}>
+                    <div className='h-[40%] md:h-[80%] w-full relative rounded-3xl overflow-hidden mt-[80%] md:mt-0'>
                         <Image src={urlFor(images[currentImage].asset._ref).url()} alt={images[currentImage].alt} fill className='object-contain rounded-3xl'/>
                     </div>
-                    <div className='w-fit min-w-50 mt-[1%] max-h-[19%] rounded-3xl bg-bg-white'>
+                    <div className='w-fit min-w-50 mt-[1%] pointer-events-auto overflow-scroll md:max-h-[19%] rounded-3xl bg-bg-white'>
                         <div className='text-primary font-fraunces text-center text-h3 md:text-h3-desktop font-bold py-3 px-5 '>{locale === "sv" ? images[currentImage].title_sv : images[currentImage].title_en}</div>
                         <div className='text-text-black font-fraunces text-center text-body md:text-body-desktop pb-3 px-5 '>{locale === "sv" ? images[currentImage].description_sv : images[currentImage].description_en}</div>
                     </div>
                 </div>}
-                <div className='absolute w-full h-full flex items-center justify-between md:pb-[20vh] lg:px-8'>
-                    <div  className='md:w-20 w-12 h-full flex items-center justify-center'>
+                <div className='absolute w-full h-full flex top-0 items-center justify-between pb-[10vh] md:pb-[20vh] lg:px-8'>
+                    <div  className=' md:w-20 w-9 h-full flex items-center justify-center'>
                         <svg onClick={(e)=> backPhoto(e, (currentImage !==null ? currentImage - 1 : 0))} className="pointer-events-auto active:drop-shadow-none drop-shadow-lg hover:scale-105 -rotate-90 duration-100 fill-text-white active:fill-text-gray/90 active:scale-95 cursor-pointer" width="30" height="30" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m399.44 263.41 189.21 221.68c10.078 11.195 8.3984 29.668-2.8008 39.184-11.195 9.5156-29.668 8.3984-39.184-2.8008l-147.22-170.73-147.22 170.73c-10.078 11.195-27.988 12.875-39.184 2.8008-11.195-10.078-12.875-27.988-2.8008-39.184z"/></svg>
                     </div>
-                    <div className='md:w-20 w-12 h-full flex items-center justify-center'>
+                    <div className='md:w-20 w-9 h-full flex items-center justify-center'>
                         <svg onClick={(e)=> forwardPhoto(e, (currentImage !==null ? currentImage + 1 : 0))} className="pointer-events-auto active:drop-shadow-none drop-shadow-lg hover:scale-105 rotate-90 duration-100 fill-text-white active:fill-text-gray/90 active:scale-95 cursor-pointer" width="30" height="30" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m399.44 263.41 189.21 221.68c10.078 11.195 8.3984 29.668-2.8008 39.184-11.195 9.5156-29.668 8.3984-39.184-2.8008l-147.22-170.73-147.22 170.73c-10.078 11.195-27.988 12.875-39.184 2.8008-11.195-10.078-12.875-27.988-2.8008-39.184z"/></svg>
                     </div>
                 </div>
