@@ -44,7 +44,7 @@ const Gallery = ({caption=false, photoObject}:{caption?:boolean, photoObject: in
 }
 
 const clipWords = (text:string) => {
-  const shortened = `${text.slice(0, 60)}${text.length > 50 ? "..." : ""}`
+  const shortened = `${text.slice(0, 40)}${text.length > 40 ? "..." : ""}`
   return shortened
 }
 
