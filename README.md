@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>HSS Sea Scout Website</h1>
+<img width="1000" height="666" alt="Mobile App Screen Mockup, Mosaic" src="https://github.com/user-attachments/assets/53319834-2e7e-486c-841e-12fa4affff04" />
+</br>
+A responsive, multilingual Next.js web application for the HSS Sea Scout organization in Stockholm, integrated with Sanity CMS for easy client-side content management.</br>
+</br>
+Live Demo: Swedish: https://scouterna.vercel.app/sv | English: https://scouterna.vercel.app/en
 
-## Getting Started
+</br>
+</br>
+<h3>Key Features</h3>
+Multilingual: Smooth dynamic switching between Swedish and English using Next.js routing.
 
-First, run the development server:
+Client CMS: Sanity CMS integration allows clients to update text, images in real-time.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Interactive Maps: React Leaflet maps for scout locations with full zoom and interactive markers.
+
+Forms & Email: React Hook Form and Resend for user contact messages.
+
+Responsive Design: perfect implementation from mobile (375px) to desktop (1920px) via Tailwind.
+</br>
+</br>
+<h3>Menu Structure</h3>
+
+```text
+Home
+├── Join the scouts
+│   ├── Become a sea scout
+│   └── FAQ
+├── Our groups
+│   ├── Our group structure
+│   ├── Spårarscouter
+│   ├── Upptäckarescouter
+│   ├── Äventyrsrscouter
+│   ├── Utmanarsscouter
+│   └── Familjscouter
+├── What we do
+│   ├── Life as a sea scout
+│   ├── Our boats
+│   ├── Our scout cabins
+│   ├── Myset
+│   └── Ruffen
+├── For members
+│   ├── Member information
+│   └── HSS life jacket policy
+└── About HSS
+    ├── Our history
+    ├── Contact
+    └── GDPR
 ```
+</br>
+<h3>Tech Stack</h3>
+<h4>Frontend</h4>
+Framework: Next.js (App Router)</br>
+Language: TypeScript</br>
+Styling: Tailwind CSS</br>
+Form Management: React Hook Form</br>
+Interactive Maps: React Leaflet</br>
+State & Localization: Custom hook (useMessages)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h4>Backend, CMS & Services </h4>
+CMS: Sanity.io (GROQ)</br>
+Email Service: Resend</br>
+Deployment: Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

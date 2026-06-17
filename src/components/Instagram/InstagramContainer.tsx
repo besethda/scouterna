@@ -6,21 +6,27 @@ const InstagramContainer = async ({bgBlue=false, mobileOnly=false, showText=fals
   const fallbackData:Object[] = [
     {
       mediaUrl: "/images/boat12.jpg",
+      caption: "Lugnet före stormen."
     },
     {
       mediaUrl: "/images/DSCF1948.jpg",
+      caption: "Äventyrarscouterna förbereder för segling."
     },
     {
       mediaUrl: "/images/DSCF3076.jpg",
+      caption: "Härligt väder för en båttur."
     },
     {
       mediaUrl: "/images/DSCF3797.jpg",
+      caption: "Båtfix för Utmanarna."
     },
     {
       mediaUrl: "/images/IMG_0184.JPEG",
+      caption: "Äventyrarna kvällsseglar."
     },
     {
       mediaUrl: "/images/IMG_0411.JPEG",
+      caption: "HSS hade sommaravslutning för hela kåren."
     },
   ]
 
@@ -39,7 +45,7 @@ const InstagramContainer = async ({bgBlue=false, mobileOnly=false, showText=fals
     )
   } else {
     const fallbackFilteredData: instaType[]= fallbackData.map((post: any, index:number)=> {
-      return {mediaUrl:post.mediaUrl, permalink: `https://www.instagram.com/hss_scout/`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
+      return {mediaUrl:post.mediaUrl, permalink: `https://www.instagram.com/hss_scout/`, mediaType: "image", caption: post.caption, timestamp: (index*2), imageIndex:index}
     })
     return (
       <div className={`bg-bg-blue ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>
