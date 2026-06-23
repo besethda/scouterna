@@ -1,9 +1,10 @@
 import Instagram from "./Instagram"
 import { instaType } from "../Gallery"
 
-const InstagramContainer = async ({bgBlue=false, mobileOnly=false, showText=false}:{bgBlue?:boolean, mobileOnly?:boolean, showText?:boolean}) => {
+const InstagramContainer = async ({ bgBlue = false, mobileOnly = false, showText = false }: { bgBlue?: boolean, mobileOnly?: boolean, showText?: boolean }) => {
+  console.log("COMPONENT RENDER:", Date.now());
 
-  const fallbackData:Object[] = [
+  const fallbackData: Object[] = [
     {
       mediaUrl: "/images/boat12.jpg",
     },
@@ -26,28 +27,33 @@ const InstagramContainer = async ({bgBlue=false, mobileOnly=false, showText=fals
 
   // Real scouts URL: https://feeds.behold.so/au47cEddhn57lA49VlAe
   // fake URL https://feeds.behold.so/otFUXA0v6yGwlzPbnNuT
-  const response = await fetch("https://feeds.behold.so/au47cEddhn57lA49VlAe")
+
+  console.log("Fetching Instagram API:", new Date().toISOString());
+  console.log("before fetch");
+  const response = await fetch("https://feeds.behold.so/au47cEddhn57lA49VlAe", { cache: "force-cache", next: { revalidate: 3600 } })
   const data = response.ok ? await response.json() : null
-  if(response.ok && (data?.posts && data.posts.length > 5)){
-    const filteredData: instaType[]= data.posts.map((post: any, index:number)=> {
-      return {mediaUrl:post.mediaUrl, permalink: post.permalink, mediaType:post.mediaType, caption:post.caption, timestamp:post.timestamp, imageIndex:index}
+
+  console.log("after fetch");
+  if (response.ok && (data?.posts && data.posts.length > 5)) {
+    const filteredData: instaType[] = data.posts.map((post: any, index: number) => {
+      return { mediaUrl: post.mediaUrl, permalink: post.permalink, mediaType: post.mediaType, caption: post.caption, timestamp: post.timestamp, imageIndex: index }
     })
     return (
       <div className={`bg-bg-blue" ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>
-        <Instagram photoObject={filteredData} infoText={showText}/>
+        <Instagram photoObject={filteredData} infoText={showText} />
       </div>
     )
   } else {
-    const fallbackFilteredData: instaType[]= fallbackData.map((post: any, index:number)=> {
-      return {mediaUrl:post.mediaUrl, permalink: `https://www.instagram.com/hss_scout/`, mediaType: "image", caption:"boat picture", timestamp: (index*2), imageIndex:index}
+    const fallbackFilteredData: instaType[] = fallbackData.map((post: any, index: number) => {
+      return { mediaUrl: post.mediaUrl, permalink: `https://www.instagram.com/hss_scout/`, mediaType: "image", caption: "boat picture", timestamp: (index * 2), imageIndex: index }
     })
     return (
       <div className={`bg-bg-blue ${mobileOnly ? "md:hidden block" : ""} md:pt-10 w-full pt-5`}>
-        <Instagram photoObject={fallbackFilteredData} infoText={showText}/>
+        <Instagram photoObject={fallbackFilteredData} infoText={showText} />
       </div>
     )
   }
-  }
+}
 
 
 export default InstagramContainer

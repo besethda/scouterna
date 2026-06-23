@@ -25,18 +25,18 @@ const Union = async ({locale = "sv"}:{locale:string}) => {
             <div className="pt-4 flex flex-col items-center gap-2 font-albert text-text-white md:gap-9">
                 <div className="w-full px-4 lg:max-w-430 lg:px-10">
                     {data.files.map((item, index:number) => (
-                        <div key={index} className="flex py-2 gap-2 w-full items-center ">
+                        <a key={index}  href={item.fileUrl} target="_blank" className="flex py-2 gap-2 w-fit items-center ">
                             <Image src={downloadIcon} alt={item.name} width={44} height={44} />
                             <div className="">
                                 <p className="font-bold font-h3 font-fraunces">{item.name}</p>
-                                <a href={item.fileUrl} target="_blank" className="justify-center text-body font-albert font-normal" 
+                                <p className="justify-center text-body font-albert font-normal" 
                                 aria-label={`${locale === "sv" ? "Visa och ladda ner" : "View and download"} ${item.name} (PDF)`}
                                 >
                                     {locale === "sv" ? "Visa och ladda ner " : "View and download "}
                                     {item.name}
-                                </a>
+                                </p>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>
