@@ -44,6 +44,24 @@ const Optimister = ({ title, text, images, locale }: OptimisterProps) => {
         checkWindow()
     },[])
 
+    useEffect(() => {
+        if (!galleryOpen) return;
+
+        if(galleryOpen) {
+        document.body.style.overflow = "hidden";
+        document.body.style.touchAction = 'none';
+      } else {
+        document.body.style.overflow = "";
+        document.body.style.touchAction = '';
+      }
+
+      return () => {
+      document.body.style.overflow = "";
+      document.body.style.touchAction = '';
+    }
+
+    },[galleryOpen])
+
     const move = (forward:boolean) => {
         const container = middleImageRef.current;
         container?.scrollBy({left: (forward ? 340 : -340), behavior: 'smooth'})
